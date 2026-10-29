@@ -1,0 +1,32 @@
+{
+  "papers": [
+    {
+      "title": "Universal curve counting under conifold transitions",
+      "author": "Bernd Johannes Wuebben",
+      "orcid": "0009-0002-4588-3284",
+      "date": "2026-10-28",
+      "status": "Preprint; arXiv submission pending",
+      "pdf": "paper/main.pdf",
+      "sha256": "4d8b6ec38834f76f8326560affc3bf546138d308dd30cbdfe70535ea3b6e75d8",
+      "pages": 18,
+      "doi": "10.5281/zenodo.23750047",
+      "concept_doi": "10.5281/zenodo.23750046",
+      "archive_url": "https://zenodo.org/records/23750047",
+      "website_url": "https://bwuebben.github.io/papers/universal-conifold-counting/"
+    },
+    {
+      "title": "A counterexample to integral product exponents in universal curve counting",
+      "author": "Bernd Johannes Wuebben",
+      "orcid": "0009-0002-4588-3284",
+      "date": "2026-10-28",
+      "status": "Preprint; arXiv submission pending",
+      "pdf": "paper2/main.pdf",
+      "sha256": "907387ab4558c515fd37647bfa893ec75b492cc3f702eb895aea169d5aa8ebd3",
+      "pages": 13,
+      "doi": "10.5281/zenodo.23750049",
+      "concept_doi": "10.5281/zenodo.23750048",
+      "archive_url": "https://zenodo.org/records/23750049",
+      "website_url": "https://bwuebben.github.io/papers/universal-integrality-counterexample/"
+    }
+  ]
+}

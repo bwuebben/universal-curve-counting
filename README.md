@@ -19,6 +19,11 @@ Two preprints by [Bernd Johannes Wuebben](https://orcid.org/0009-0002-4588-3284)
 
 Read Paper 1 before Paper 2 for the transition setting. The counterexample paper
 can also be read independently. Both are preprints; arXiv submission is pending.
+
+Archived versions: [Paper 1 — Zenodo:23750047](https://zenodo.org/records/23750047),
+[Paper 2 — Zenodo:23750049](https://zenodo.org/records/23750049).
+Version DOIs: `10.5281/zenodo.23750047` and `10.5281/zenodo.23750049`.
+BibTeX citations are in [CITATION.bib](CITATION.bib).
 See the [Universal curve counting programme](https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting).
 
 ## Reproduce the calculations
