@@ -84,12 +84,14 @@ basis $K_1,K_2,K_3$ is
 \]
 
 \subsection*{Reproducibility}
-The accompanying project retains the exact fan, monomial-section,
-period and coefficient data. From its root, the source numerical
-calculation is reproduced by
+The source code, exact fan, monomial-section, period and coefficient
+data, and reproduction instructions are available at
+\url{https://github.com/bwuebben/universal-curve-counting}.
+All script paths below are relative to the repository root.
+From that directory, the source numerical calculation is reproduced by
 \begin{quote}\ttfamily\small
 sage -python checks/x9\_source\_genus\_zero\_box.py\par
-\quad --source-root ../global\_higgs\_branch\par
+\quad --source-root vendor/global-higgs-branch\par
 \quad --output /tmp/x9-source-genus-zero.json
 \end{quote}
 The source files used for the charge and cubic inputs are pinned by

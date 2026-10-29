@@ -20,9 +20,11 @@ Two preprints by [Bernd Johannes Wuebben](https://orcid.org/0009-0002-4588-3284)
 Read Paper 1 before Paper 2 for the transition setting. The counterexample paper
 can also be read independently. Both are preprints; arXiv submission is pending.
 
-Archived versions: [Paper 1 — Zenodo:23750047](https://zenodo.org/records/23750047),
-[Paper 2 — Zenodo:23750049](https://zenodo.org/records/23750049).
-Version DOIs: `10.5281/zenodo.23750047` and `10.5281/zenodo.23750049`.
+Archived versions: [Paper 1 — Zenodo:23750304](https://zenodo.org/records/23750304),
+[Paper 2 — Zenodo:23750305](https://zenodo.org/records/23750305).
+Version DOIs: `10.5281/zenodo.23750304` and `10.5281/zenodo.23750305`.
+Version 2 adds explicit code links in both manuscripts and aligns the reproduction
+command with the bundled inputs; mathematical content is unchanged.
 BibTeX citations are in [CITATION.bib](CITATION.bib).
 See the [Universal curve counting programme](https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting).
 
@@ -50,7 +52,6 @@ reconstructs Paper 1's printed tables. It uses a temporary directory and does no
 replace the supplied certificates or manuscripts. `--sage /path/to/sage` selects
 another SageMath executable. Individual scripts can also be run directly; for
 `x9_source_genus_zero_box.py`, use `--source-root vendor/global-higgs-branch`.
-The manuscript's original relative input path is replaced by this bundled path.
 
 These checks establish finite rational identities, toric data and table entries.
 The geometric support arguments, stable-pair moduli identification and imported

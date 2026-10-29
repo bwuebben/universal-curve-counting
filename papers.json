@@ -7,12 +7,14 @@
       "date": "2026-10-28",
       "status": "Preprint; arXiv submission pending",
       "pdf": "paper/main.pdf",
-      "sha256": "4d8b6ec38834f76f8326560affc3bf546138d308dd30cbdfe70535ea3b6e75d8",
+      "sha256": "87f67b640c2bad3c295517fe680092f318cdeb163fcf7b6cf746ae0a57628692",
       "pages": 18,
-      "doi": "10.5281/zenodo.23750047",
+      "doi": "10.5281/zenodo.23750304",
       "concept_doi": "10.5281/zenodo.23750046",
-      "archive_url": "https://zenodo.org/records/23750047",
-      "website_url": "https://bwuebben.github.io/papers/universal-conifold-counting/"
+      "archive_url": "https://zenodo.org/records/23750304",
+      "website_url": "https://bwuebben.github.io/papers/universal-conifold-counting/",
+      "version": "2.0",
+      "revision_note": "Adds the public code repository link; mathematical content unchanged."
     },
     {
       "title": "A counterexample to integral product exponents in universal curve counting",
@@ -21,12 +23,14 @@
       "date": "2026-10-28",
       "status": "Preprint; arXiv submission pending",
       "pdf": "paper2/main.pdf",
-      "sha256": "907387ab4558c515fd37647bfa893ec75b492cc3f702eb895aea169d5aa8ebd3",
+      "sha256": "09b2fe2c1afe71091df4a14fc1d9fa6b566dd8ce49a665ed1b941dfadc2c8967",
       "pages": 13,
-      "doi": "10.5281/zenodo.23750049",
+      "doi": "10.5281/zenodo.23750305",
       "concept_doi": "10.5281/zenodo.23750048",
-      "archive_url": "https://zenodo.org/records/23750049",
-      "website_url": "https://bwuebben.github.io/papers/universal-integrality-counterexample/"
+      "archive_url": "https://zenodo.org/records/23750305",
+      "website_url": "https://bwuebben.github.io/papers/universal-integrality-counterexample/",
+      "version": "2.0",
+      "revision_note": "Adds the public code repository link; mathematical content unchanged."
     }
   ]
 }
