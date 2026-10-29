@@ -1,0 +1,44 @@
+\section{Exact calculations}
+
+All local formulas in Section~\ref{sec:local} are rational identities
+in $r$, or polynomial identities after the substitution
+$w=2-r-r^{-1}$. They require no Taylor truncation or numerical
+approximation. The multiplication, pairing and cap data needed to
+reproduce them are printed in \eqref{eq:M}--\eqref{eq:B}.
+As one numerical specialization in exact arithmetic, at $r=2$
+the characteristic coefficients in decreasing powers of $T$ are
+\[
+ 1,\quad\frac{225}{32},\quad\frac{14027}{384},\quad
+ \frac{158613}{4096},\qquad
+ \tr(B^2)=-\frac{72557}{3072}.
+\]
+The general characteristic identity, rather than this single
+specialization, is used in the proof.
+
+The accompanying code gives two implementations: matrix reconstruction
+in \path{checks/local_curve_degree_three.py} and quotient-algebra
+inversion with a resultant in
+\path{checks/degree_three_quotient_check.py}. Both use SymPy 1.14.0.
+The first also checks degrees one and two and the antidiagonal
+eigenvalues \eqref{eq:UV}. The script
+\path{checks/integrality_counterexample.py} checks the connected
+subtraction, the Laurent coefficient \eqref{eq:local-pt}, and all
+56 unordered nontrivial effective decompositions of $(3,4)$.
+Their minimum sum in Lemma~\ref{lem:split} is zero. The lemma's
+three-case argument proves the inequality without this enumeration.
+
+The toric data are printed in \eqref{eq:rays}--\eqref{eq:nef-matrix}.
+The script \path{checks/integrality_counterexample_geometry.py}
+checks the strict support function, anticanonical support, nef lifts
+and lattice-basis test. It reads the same ray and cone lists from
+\path{checks/x9_lift_bound.py}. The latter runs with SageMath and
+checks completeness and smoothness of the fan. The contracted-face
+and surface calculations are reproduced by
+\path{checks/x9_contracted_support.py}, also using SageMath.
+The integer degree table \eqref{eq:degrees} can be recovered from
+the displayed divisors and surface fans.
+
+These finite computations concern the local algebra and toric data.
+The pure-curve filtration, moduli-scheme argument and virtual sign
+are the geometric steps establishing that these data yield a
+compact counterexample.

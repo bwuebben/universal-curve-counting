@@ -1,0 +1,465 @@
+{
+  "scope": "Finite arithmetic for Paper 1; geometric and all-genus inputs are separate proofs.",
+  "input_sha256": {
+    "evidence/x9-source-genus-zero-box.json": "f9cc83fd2133ff6eebc621dfc48db95b44400492e5a570d760b34e6e114a8b2f",
+    "evidence/x9-lift-bound-certificate.json": "e46c52b377512f9043606c49254892f081d1d5f4ea8a9b7650ce1305ac720121"
+  },
+  "generator": "x=x_{0,1}",
+  "coefficient_formula": "A_11=x*P_11+x^2*P_10*P_01",
+  "candidates": [
+    {
+      "degree": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "x_coefficient": "3",
+      "x_squared_coefficient": "-2"
+    },
+    {
+      "degree": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "x_coefficient": "-2",
+      "x_squared_coefficient": "5"
+    },
+    {
+      "degree": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        2
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "-2"
+    },
+    {
+      "degree": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        2
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        0,
+        1,
+        1,
+        0,
+        1,
+        3
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        2
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        3
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        0,
+        1,
+        1,
+        0,
+        2,
+        4
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        0,
+        1,
+        1,
+        0,
+        3,
+        3
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        0,
+        1,
+        1,
+        0,
+        3,
+        4
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        0,
+        1,
+        1,
+        0,
+        3,
+        5
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        0,
+        1,
+        1,
+        0,
+        4,
+        4
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        0,
+        1,
+        1,
+        0,
+        4,
+        5
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        0,
+        1,
+        1,
+        0,
+        5,
+        5
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        2
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      "x_coefficient": "-2",
+      "x_squared_coefficient": "5"
+    },
+    {
+      "degree": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        2
+      ],
+      "x_coefficient": "4",
+      "x_squared_coefficient": "-10"
+    },
+    {
+      "degree": [
+        1,
+        1,
+        1,
+        0,
+        1,
+        3
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "3"
+    },
+    {
+      "degree": [
+        1,
+        1,
+        1,
+        0,
+        2,
+        2
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        1,
+        1,
+        1,
+        0,
+        2,
+        3
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        1,
+        1,
+        1,
+        0,
+        2,
+        4
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        1,
+        1,
+        1,
+        0,
+        3,
+        3
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        1,
+        1,
+        1,
+        0,
+        3,
+        4
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        1,
+        1,
+        1,
+        0,
+        3,
+        5
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        1,
+        1,
+        1,
+        0,
+        4,
+        4
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        1,
+        1,
+        1,
+        0,
+        4,
+        5
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        1,
+        1,
+        1,
+        0,
+        5,
+        5
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        2,
+        1,
+        1,
+        0,
+        1,
+        2
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        2,
+        1,
+        1,
+        0,
+        2,
+        2
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "-2"
+    },
+    {
+      "degree": [
+        2,
+        1,
+        1,
+        0,
+        2,
+        3
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "3"
+    },
+    {
+      "degree": [
+        2,
+        1,
+        1,
+        0,
+        3,
+        3
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        2,
+        1,
+        1,
+        0,
+        3,
+        4
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        2,
+        1,
+        1,
+        0,
+        4,
+        4
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        2,
+        1,
+        1,
+        0,
+        4,
+        5
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    },
+    {
+      "degree": [
+        2,
+        1,
+        1,
+        0,
+        5,
+        5
+      ],
+      "x_coefficient": "0",
+      "x_squared_coefficient": "0"
+    }
+  ],
+  "nonzero_count": 8,
+  "specialization_sum": {
+    "x": "3",
+    "x_squared": "0"
+  },
+  "lower_connected_sums": {
+    "(1, 0)": "0",
+    "(0, 1)": "0",
+    "(1, 1)": "3"
+  }
+}

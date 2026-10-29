@@ -1,0 +1,182 @@
+\section{Complete universal coefficients}\label{sec:calculation}
+
+\subsection{The source genus-zero input}
+We first calculate connected genus-zero invariants on $Y_+$ without
+using the smoothing answer. The charge matrix and triple intersections
+are printed in Appendix~\ref{app:data}. The relevant mirror theorem
+is \cite[Theorem 25 and Corollary 28]{CCIT}. Removing ray $10$
+gives a projective simplicial 24-cone fan and a smooth canonical
+toric Deligne--Mumford stack. Its nonunimodular maximal cones are
+$1369,1389,1459,1489,1569$, all of index two. Every nonsmooth
+orbit has a singleton Newton face and misses the chosen hypersurface.
+The anticanonical support function is integral and convex: the line
+bundle is nef, Cartier on the coarse space, and pulled back to the
+stack. On a genus-zero orbicurve it has trivial stabilizer action and
+nonnegative degree on each component, hence vanishing first cohomology.
+It is therefore convex in the cited theorem. Its transverse zero
+locus is the ordinary smooth threefold $Y_+$, all twisted-sector
+classes restrict to zero, and the Calabi--Yau asymptotics give
+$J=I/W_0$. The 29-cone refinement changes only the missed locus.
+The charge lattice is saturated and the ambient Mori cone is the
+nonnegative orthant in these coordinates. These checks justify
+using the untwisted Gamma series for the actual source invariants.
+
+For the charge matrix $Q$ put $Q_{a*}=\sum_iQ_{ai}$ and
+\[
+ c(n+\rho)=\frac{\Gamma(1+\sum_a(n_a+\rho_a)Q_{a*})}
+ {\prod_i\Gamma(1+\sum_a(n_a+\rho_a)Q_{ai})}.
+\]
+Let $W_0,C_a,\widehat C_{ab}$ be the sums of the scalar, first and
+second derivatives at $\rho=0$ of $c(n+\rho)/c(\rho)$ times $z^n$.
+This quotient removes the universal zeta constants from the derivatives.
+Let $a_n$ denote the coefficients of the genus-zero dilogarithm
+expansion, indexed by the curve class $n$.
+The mirror coordinates and prepotential equations are
+\begin{equation}\label{eq:mirror}
+ q_a=z_a\exp(C_a/W_0),\qquad
+ \sum_{n>0}n_a a_n\operatorname{Li}_2(q^n)
+ =\frac12\sum_{b,c}\kappa_{abc}
+ \left(\frac{\widehat C_{bc}}{W_0}-\frac{C_bC_c}{W_0^2}\right).
+\end{equation}
+These are the Frobenius formulas in \cite[Section 4.4 and Appendix A]{DMM}.
+Derivatives at reciprocal-Gamma zeros are retained.
+
+All calculations are exact in
+\[
+ \QQ[z_1,\ldots,z_6]/(z_1^3,z_2^2,z_3^2,z_4,z_5^6,z_6^6).
+\]
+Its 432 monomials contain all the candidates in the three relevant
+bidegrees and every componentwise smaller exponent. Products,
+inversion and mirror substitution cannot bring an omitted exponent
+back into this set. Solving all six equations \eqref{eq:mirror}
+and extracting the dilogarithm coefficients gives the following
+complete nonzero table, where $(a,b,c)=(n_1,n_5,n_6)$:
+\begin{equation}\label{eq:gwtable}
+\begin{array}{c|rrr}
+(a,b,c)&(n_2,n_3)=(1,0)&(0,1)&(1,1)\\ \hline
+(0,0,0)&1&-2&3\\
+(0,0,1)&-2&1&-2\\
+(1,1,1)&-2&1&-2\\
+(1,1,2)&3&0&4.
+\end{array}
+\end{equation}
+All other entries of these three sectors in the finite quotient
+vanish. Every class in the table is indivisible, so $a_n=N^Y_{0,n}$.
+The finite support bounds ensure that this calculation covers every
+normalized contribution in those sectors.
+
+\subsection{From the numerical table to universal coefficients}
+Put $A=\Z_{Y_+}/\cE_{Y_+}$ and $L=\log A$, and work on the face
+$n_4=0$. Normalization makes the entire bidegree-$(0,0)$ sector
+equal to one. Each nonempty exceptional local coefficient has PT
+realization in $z\QQ[[z]]$ by Lemma~\ref{lem:multiple}; the same is
+true of each nonconstant coefficient of its inverse series, since
+the inverse uses finite products at fixed source degree.
+Theorem~\ref{thm:euler} thus puts every coefficient of $A$ in the
+three stated bidegrees in $z\QQ[[z]]$ after PT evaluation.
+The same holds for $L$: its only additional lower-bidegree products
+have bidegrees $(1,0)$ and $(0,1)$ and start at $z^2$.
+
+Each $L_\gamma$ is primitive and, by indivisibility, killed by
+$\rho_d$ for $d>1$. Lemma~\ref{lem:pt} therefore implies
+\begin{equation}\label{eq:logcoeff}
+ L_\gamma=N^{Y_+}_{0,\gamma}x_{0,1}
+\end{equation}
+in all three sectors. This is the point at which the arbitrary
+exceptional multiplicities in Theorem~\ref{thm:euler} are essential.
+The numerical table alone would not exclude positive-genus primitive
+generators. Higher-genus GW evaluations of $x_{0,1}$ can still be
+nonzero.
+
+Set $x=x_{0,1}$, $r=Q^{b_2}$, $s=Q^{b_3}$,
+$u=Q^{b_1+b_5}$, $v=Q^{b_6}$. Equations
+\eqref{eq:gwtable}--\eqref{eq:logcoeff} give, through these bidegrees,
+\[
+ L=x(rP_{10}+sP_{01}+rsP_{11})\pmod{(r^2,s^2)},
+\]
+where
+\[
+ P_{10}=1-2v-2uv+3uv^2,\quad P_{01}=-2+v+uv,\quad
+ P_{11}=3-2v-2uv+4uv^2.
+\]
+Thus $[rs]A=xP_{11}+x^2P_{10}P_{01}$. Exactly eight of the 37
+candidates have nonzero coefficients:
+\begin{equation}\label{eq:universal-table}
+\begin{array}{c|l}
+ \gamma&(A)_\gamma\\ \hline
+ (0,1,1,0,0,0)&3x-2x^2\\
+ (0,1,1,0,0,1)&-2x+5x^2\\
+ (0,1,1,0,0,2)&-2x^2\\
+ (1,1,1,0,1,1)&-2x+5x^2\\
+ (1,1,1,0,1,2)&4x-10x^2\\
+ (1,1,1,0,1,3)&3x^2\\
+ (2,1,1,0,2,2)&-2x^2\\
+ (2,1,1,0,2,3)&3x^2.
+\end{array}
+\end{equation}
+The remaining 29 coefficients vanish. Four of the nonzero universal
+coefficients have zero connected genus-zero value; they arise from
+the lower-bidegree product. Since $P_{10}(1,1)=P_{01}(1,1)=0$ and
+$P_{11}(1,1)=3$, finite specialization gives
+\begin{equation}\label{eq:sum}
+ \sum_{\pi\gamma=\beta}(A)_\gamma=3x_{0,1}.
+\end{equation}
+The common-blow-up comparison transfers the same normalized table
+to $Y_-$. No smoothing invariant was used in its derivation.
+
+\subsection{Independent calculation on the plane}
+\begin{proposition}\label{prop:target}
+For the smoothing plane of Proposition~\ref{prop:plane},
+\[
+ U_{S,\beta}=3x_{0,1},\qquad
+ U_{S,2\beta}=3x_{0,2}+3x_{0,1}^2-6x_{0,1}.
+\]
+\end{proposition}
+\begin{proof}
+All cycles in these classes lie on $D$. In degree one, purity
+forces the curve scheme to be a reduced line. In degree two a
+generically reduced curve is a plane conic. A pure curve $Z$ with
+cycle $2L$ satisfies $I_L^2\subset I_Z\subset I_L$: the image of
+$I_L^2$ vanishes generically and hence vanishes by purity.
+The rank-one torsion-free sheaf $I_L/I_Z$ is $\mathcal O_L(a)$.
+The normal sequence splits as
+$N_{L/S}=\mathcal O_L(1)\oplus\mathcal O_L(-3)$, so there is a
+surjection $\mathcal O_L(-1)\oplus\mathcal O_L(3)\to\mathcal O_L(a)$.
+It forces $a\ge-1$, whence $\chi(\mathcal O_Z)=a+2\ge1$.
+At equality the $\mathcal O(3)$ subbundle maps to zero, so the
+double line is scheme-theoretically in $D$. Thus every stable pair
+in degrees one or two has Euler characteristic at least one, and
+at equality is a line or conic with its structure sheaf.
+
+Scheme-theoretically the minimal pair spaces are
+$P_1(S,\beta)=(\PP^2)^*$ and $P_1(S,2\beta)=\PP^5$.
+Indeed surjectivity of the pair section follows by Nakayama, giving
+the Hilbert functor. For a degree-$k$ plane divisor $C$, $k=1,2$,
+including a double line, the normal sequence is
+\[
+ 0\to\mathcal O_C(k)\to N_{C/S}\to\mathcal O_C(-3)\to0.
+\]
+The last sheaf has no sections and $h^0(\mathcal O_C(k))$ is $2$
+or $5$. Thus the ambient Hilbert scheme has exactly the tangent
+dimension of its smooth closed plane-curve subscheme, which exhausts
+its points; its local rings are regular and the immersion is an
+isomorphism. The symmetric obstruction theory gives counts
+$(-1)^2e(\PP^2)=3$ and $(-1)^5e(\PP^5)=-6$
+\cite[p.~3]{PT}.
+
+The primitive extremal class $\beta$ has no nontrivial effective
+splitting. Compatibility and Lemma~\ref{lem:pt} give
+$U_{S,\beta}=3x_{0,1}$. In degree two, compatibility makes
+$R=U_{S,2\beta}-3x_{0,2}-3x_{0,1}^2$ primitive and killed by
+every $\rho_d$, $d>1$: the removed coproduct cross terms total
+$(3+6)x_{0,1}\otimes x_{0,1}$. Lemma~\ref{lem:multiple} gives
+$\PT(x_{0,2})\in z^3\QQ[[z]]$, while
+$\PT(x_{0,1}^2)\in z^2\QQ[[z]]$. Consequently
+$\PT(R)=-6z+O(z^2)$ with no nonpositive powers, and
+Lemma~\ref{lem:pt} gives $R=-6x_{0,1}$.
+\end{proof}
+
+This verifies \eqref{eq:sum} using different enumerative input. The
+two target coefficients are full universal polynomials, not genus
+truncations. The source coefficients over $2\beta$ are not calculated
+here; the 183-class bound alone makes no assertion about their values.

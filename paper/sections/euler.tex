@@ -1,0 +1,169 @@
+\section{An Euler-characteristic bound on the resolution}\label{sec:euler}
+
+We now prove the geometric bound which permits a complete universal
+calculation from the genus-zero data. Continue with the resolution
+$Y_+$ and the integral nef divisors of Section~\ref{sec:geometry}.
+
+\begin{theorem}\label{thm:euler}
+Every pure one-dimensional Cohen--Macaulay subscheme $Z\subset Y_+$
+with
+\[
+ H_4[Z]=0,\qquad (H_2[Z],H_3[Z])\in\{(1,0),(0,1),(1,1)\}
+\]
+satisfies $\chi(\mathcal O_Z)\ge1$. No connectedness assumption or
+bound on the multiplicities of exceptional components is required.
+\end{theorem}
+
+\subsection{The contracted surfaces}
+The toric divisor $D_0$ restricts to $H_4$. Its convex integral support
+function defines a semiample contraction. The minimal cones whose
+orbits have positive-dimensional fibers are
+\begin{equation}\label{eq:contracted}
+ (8),\ (9),\ (10),\ (2,4),\ (6,7).
+\end{equation}
+This is a finite face calculation from the fan in Appendix~\ref{app:data}:
+form $P_0=\{m:\langle m,v_i\rangle+\delta_{i0}\ge0\}$.
+For a cone $\sigma$, impose its equalities to obtain $F_\sigma$.
+The image orbit cone has dimension $4-\dim F_\sigma$; the orbit fiber
+is positive-dimensional exactly when this exceeds $\dim\sigma$.
+Taking minimal cones gives \eqref{eq:contracted}.
+
+The divisor $D_{10}$ misses the general hypersurface, since its dual
+Newton face is a vertex with nonzero coefficient. Thus every
+$H_4$-degree-zero curve is supported on
+\[
+ E\cup F\cup C_1\cup C_2,
+ \qquad E=D_9|_{Y_+},\quad F=D_8|_{Y_+},
+\]
+where $C_1,C_2$ come from the orbit closures $67,24$.
+There are no cones containing $678$ or $248$, and the Newton faces at
+$679,249$ are singletons. Hence the $C_i$ miss both surfaces.
+The absence of a cone containing $2467$ makes them disjoint.
+
+We need the actual surfaces, rather than only their intersection forms:
+\begin{equation}\label{eq:surfaces}
+ E\simeq\Bl_{p_1,p_2}\PP^2,\qquad F\simeq\FF_1.
+\end{equation}
+For $E$, the anticanonical face is the primitive edge with endpoints
+$(0,1,-1,-1)$ and $(1,-1,-1,-1)$. Its binomial fixes a nonzero torus
+parameter. Since $D_{10}$ is absent, rays $2,7$ are also excluded
+on $E$. The remaining rays $3,4,5,6,8$ project respectively to
+\[
+ (1,0),\quad(0,1),\quad(-1,0),\quad(0,-1),\quad(1,1),
+\]
+with cones
+$38,84,45,56,63$, the fan of the plane blown up at two distinct
+torus fixed points.
+For $F$, the star away from $D_{10}$ has cones
+$137,147,379,479$. Quotient by the fiber ray $7$ gives base rays
+$(1,0),(0,1),(-1,-1),(-1,0)$, the fan of $\FF_1$.
+The Newton vertex $(1,-1,-1,-1)$ has exponents
+$(0,0,0,1,0,0)$ on rays $1,3,4,7,9,10$; all other vertices have
+fiber exponent zero. The equation is therefore monic linear in the
+fiber coordinate, and its zero locus is a graph over $\FF_1$.
+This proves \eqref{eq:surfaces}.
+
+Write $h$ for the pullback of a plane line and $e_1,e_2$ for the
+exceptional curves of $E$. The two surfaces intersect transversely in
+$s=h-e_1-e_2$, which is the negative section on $F$. The curves
+$e_i$ meet $s$ transversely at distinct points $q_i$. All four curves
+$e_1,e_2,C_1,C_2$ are pairwise disjoint $(-1,-1)$-curves.
+For $e_i$ the normal sequence has subbundle and quotient
+$\mathcal O(-1)$, since $N_{E/Y_+}=K_E$; it splits by
+$H^1(\mathcal O_{\PP^1})=0$. For $C_i$ this is the local node model.
+The integral class identities are
+\begin{equation}\label{eq:surface-classes}
+ \begin{gathered}
+ s=b_2,\quad f=b_3,\quad e_1=b_1+b_5+b_6,\quad e_2=b_6,\\
+ h=b_1+b_2+b_5+2b_6,\qquad [C_1]=b_5,\quad[C_2]=b_1.
+ \end{gathered}
+\end{equation}
+Thus the bidegree $(H_2,H_3)$ of a curve in $E$ is $(h\cdot C,0)$,
+and that of $bs+af$ on $F$ is $(b,a)$. The only irreducible curves
+of bidegree zero in the contracted locus are the four just listed.
+
+\subsection{Multiple exceptional components}
+\begin{lemma}\label{lem:multiple}
+Let $M$ be a pure Cohen--Macaulay curve supported with multiplicity
+$m$ on a smooth rational $(-1,-1)$-curve $C$ in a smooth threefold.
+Then $\chi(\mathcal O_M)\ge2m-1$. If a reduced curve $B$ near
+$p\in C$ lies in a smooth surface transverse to $C$, then
+$\operatorname{length}_p(M\cap B)\le m$.
+\end{lemma}
+\begin{proof}
+The finite conormal filtration has quotients
+$G_k=I_C^k\mathcal O_M/I_C^{k+1}\mathcal O_M$, each a quotient of
+$\mathcal O_C(k)^{\oplus(k+1)}$. If its generic rank is $r_k$,
+its torsion-free quotient has degree at least $kr_k$, because its
+twist by $-k$ is globally generated. Torsion adds nonnegative length,
+so $\chi(G_k)\ge(k+1)r_k$. Since $G_0=\mathcal O_C$ and
+$\sum r_k=m$, summation gives $\chi(\mathcal O_M)\ge1+2(m-1)$.
+
+If $t$ is an equation of the transverse surface, the completed local
+ring of $M$ is finite over $\CC[[t]]$, and is torsion-free because
+$M$ is Cohen--Macaulay and $t$ is a parameter. It is free of rank
+$m$, so its quotient by $t$ has length $m$. Since $t$ vanishes on
+$B$, the asserted intersection length is at most $m$. The argument
+applies to several branches together whenever they lie in the same
+transverse smooth surface.
+\end{proof}
+
+\subsection{Positive-degree components and attachments}
+\begin{proof}[Proof of Theorem~\ref{thm:euler}]
+A pure curve has no embedded points. Isolated primary decomposition
+therefore expresses $Z$ as
+$B\cup M_1\cup\cdots\cup M_k$, where each $M_i$ is a pure multiple
+structure on one of the four disjoint exceptional curves. Every
+positive-bidegree component has generic multiplicity one by nefness
+and the stated bidegrees. Its primary ideal is the contraction of its
+generic localization, of length one, so that primary component is
+reduced. Their union is $B$.
+
+The possibilities for $B$ are
+\[
+\begin{array}{c|l}
+ (1,0)&\text{a strict transform }L\text{ of a plane line, including }s,\\
+ (0,1)&\text{a ruling fiber }f\text{ of }F,\\
+ (1,1)&\text{an irreducible member of }|s+f|\text{ on }F,
+             \text{ or }L\cup f.
+\end{array}
+\]
+Indeed a degree-one curve under $E\to\PP^2$ is a line, and the
+effective cone of $\FF_1$ is generated by $s,f$. All the listed
+irreducible curves are smooth rational. An irreducible member of
+$|s+f|$ misses $s$, and thus misses $E$ and the $e_i$.
+
+A line of class $h$ misses the $e_i$ and meets $s$ once away from
+$q_1,q_2$. A line of class $h-e_i$ meets $e_i$ once away from $q_i$
+and misses $s$. The line $s$ meets both $e_i$ at the $q_i$.
+A ruling fiber meets $s$ once, hence at most one $e_i$.
+All these intersections are transverse. Thus $L\cup f$ is either
+disjoint, with $\chi(\mathcal O_B)=2$, or has one transverse node,
+with $\chi(\mathcal O_B)=1$.
+
+Only one configuration permits two distinct attachments to an
+exceptional curve: $L$ has class $h-e_i$ and $f$ passes through
+$q_i$. Then $L$ and $f$ are disjoint and $\chi(\mathcal O_B)=2$;
+at most one $e_i$ has two attachments. If instead $L=s$ and $f$
+passes through $q_i$, both branches lie in the smooth surface $F$
+transverse to $e_i$. Lemma~\ref{lem:multiple} bounds their combined
+intersection length by $m_i$, rather than $2m_i$.
+
+The union exact sequence now gives
+\[
+ \chi(\mathcal O_Z)=\chi(\mathcal O_B)+
+ \sum_i\bigl(\chi(\mathcal O_{M_i})-
+                    \operatorname{length}(B\cap M_i)\bigr).
+\]
+A multiple component with zero or one attachment contributes at
+least zero. A component with two distinct attachments contributes
+at least $-1$; there is at most one, and it occurs only when
+$\chi(\mathcal O_B)=2$. The result follows in every case.
+\end{proof}
+
+For a stable pair $\mathcal O_{Y_+}\to\mathcal F$, the image is
+$\mathcal O_Z$ for a pure curve $Z$, and the cokernel is
+zero-dimensional. The theorem therefore implies
+$\chi(\mathcal F)\ge1$. Every stable-pair series in the three
+bidegrees starts in positive Euler characteristic, including those
+with arbitrarily large exceptional multiplicities.

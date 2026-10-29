@@ -1,0 +1,162 @@
+\section{Universal exponents and the two local series}\label{sec:universal}
+
+Throughout, a Calabi--Yau threefold is smooth and projective over
+$\CC$, with trivial canonical bundle and
+$H^1(\mathcal O)=H^2(\mathcal O)=0$. Integral second homology is
+assumed torsion-free. All completions in curve classes use degree
+against an ample divisor. Effective integral classes of bounded
+degree form a finite set: norms of a finite collection of smooth
+two-forms bound homology coordinates by K\"ahler area.
+All exponents in nonzero classes of nonpositive ample degree are
+understood to be zero.
+
+\subsection{Rational factorization}
+The Chern-zero part of Pardon's rational algebra is
+\[
+ H=\QQ[x_{g,m}:g\ge0,\ m\ge1],\qquad I=(x_{g,m}).
+\]
+Each coefficient is a polynomial; $H$ is not completed in genus.
+For the monoid $\Gamma_X$ of effective integral curve classes,
+write
+\[
+ \Z_X=\sum_{\beta\in\Gamma_X}U_{X,\beta}Q^\beta,
+ \qquad U_{X,0}=1.
+\]
+Here $U_{X,\beta}$ is the universal class of the compact
+open-and-closed locus of cycles of class $\beta$. Addition and
+integer multiplication of cycles give
+\begin{equation}\label{eq:operations}
+ \begin{split}
+ \Delta x_{g,m}&=\sum_{a+b=m}x_{g,a}\otimes x_{g,b},\qquad x_{g,0}=1,\\
+ \rho_d x_{g,m}&=\begin{cases}x_{g,m/d},&d\mid m,\\0,&d\nmid m,\end{cases}\\
+ \Delta U_{X,\beta}&=\sum_{\eta+\gamma=\beta}U_{X,\eta}\otimes U_{X,\gamma},
+ \qquad \rho_dU_{X,\beta}=U_{X,\beta/d}.
+ \end{split}
+\end{equation}
+A coefficient at a class outside $\Gamma_X$ is zero. These are
+\cite[Definitions 3.9 and 3.12, Lemmas 4.12--4.13 and Theorem 7.6]{Pardon}
+in Chern number zero.
+
+\begin{lemma}\label{lem:factor}
+The series $\Z_X$ has the unique factorization
+\eqref{eq:factor-intro}, with rational exponents and finitely many
+nonzero genera at each effective class.
+\end{lemma}
+\begin{proof}
+Put $p_{g,m}=[q^m]\log f_g(q)$. These are polynomial coordinates
+on $H$, primitive for $\Delta$, with
+$\rho_dp_{g,m}=p_{g,m/d}$ when $d\mid m$ and zero otherwise.
+A primitive polynomial in these coordinates is additive, hence linear
+over $\QQ$. By \eqref{eq:operations}, each coefficient of
+$L=\log\Z_X$ is therefore a finite sum
+$L_\beta=\sum a_{\beta;g,m}p_{g,m}$. Comparing the coefficient of
+$p_{g,1}$ in $\rho_mL_\beta=L_{\beta/m}$ gives
+$a_{\beta;g,m}=a_{\beta/m;g,1}$. Taking
+$e_{\beta,g}=a_{\beta;g,1}$ yields
+\[
+ L_\beta=\sum_{m:\,\beta/m\in\Gamma_X}\sum_g
+ e_{\beta/m,g}p_{g,m}.
+\]
+Every sum is finite, by polynomiality and bounded degree. This proves
+existence, uniqueness and the stated genus support.
+\end{proof}
+
+\subsection{Scalar and elementary evaluations}
+Let $u$ be the GW variable and $q$ the local curve-degree variable.
+Set
+\begin{equation}\label{eq:variables}
+ r=e^{iu},\qquad w=2-r-r^{-1}=(2\sin(u/2))^2,
+ \qquad F_g(q,u)=\GW(f_g(q)),\quad K_g=\log F_g.
+\end{equation}
+By \cite[Section 4.2 and Proposition 4.8]{Pardon}, $F_g$ is the
+residue theory for scalar fiberwise multiplication, which we compute
+at torus weights $(t_1,t_2)=(1,1)$. We choose the balanced splitting
+of degrees $(g-1,g-1)$.
+
+The elementary series is
+\begin{equation}\label{eq:hooks}
+ E_g(q,u)=\sum_\lambda q^{|\lambda|}
+ \prod_{\square\in\lambda}
+       (2\sin(h(\square)u/2))^{2g-2},\qquad J_g=\log E_g,
+\end{equation}
+where $\lambda$ runs over partitions and $h(\square)$ is hook length.
+It is the balanced antidiagonal specialization
+\cite[Proposition 3.3]{IP}. Ionel--Parker's Theorem 8.1 gives integers
+$c_{\beta,g}$ such that
+\begin{equation}\label{eq:comparison}
+ \sum_{\beta,g}e_{\beta,g}K_g(Q^\beta,u)
+ =\GW_X^{\mathrm{conn}}
+ =\sum_{\beta,g}c_{\beta,g}J_g(Q^\beta,u).
+\end{equation}
+We use the standard projective comparison of algebraic and symplectic
+GW invariants \cite[Theorem 0.1]{Siebert}; the symplectic invariants
+in \cite{IP} may be interpreted in the semipositive setting of its
+Remark 1.1. Both connected theories omit class zero, and the
+disconnected theories omit wholly contracted connected components.
+Contracted components attached to a nonconstant connected map remain
+included. The logarithm thus gives the connected series in
+\eqref{eq:comparison} without a degree-zero factor.
+
+The right side of \eqref{eq:comparison} is interpreted in the
+area-and-genus completion of \cite{IP}. We do not assume finite
+genus support for its integers. Each coefficient in $Q^\beta u^{2h-2}$
+used below is a finite expression. In a fixed class, the summands
+come from integer divisors of that class, rather than all additive
+decompositions.
+
+The degree-one terms satisfy
+\begin{equation}\label{eq:degree-one}
+ [q]K_g=[q]J_g=w^{g-1}.
+\end{equation}
+Since $w=u^2+O(u^4)$, these powers form a topological basis of
+$u^{-2}\QQ[[u^2]]$. For every primitive effective class $\alpha$,
+\begin{equation}\label{eq:primitive-equality}
+ e_{\alpha,g}=c_{\alpha,g}\in\ZZ.
+\end{equation}
+This comparison remains valid for an ineffective primitive class,
+with both sequences zero. More generally the elementary coefficients
+at positive-area ineffective classes vanish by induction on degree:
+none of their positive integral divisors can be effective, and
+\eqref{eq:degree-one} detects the remaining coefficients.
+
+Under the local GW/PT correspondence of
+\cite[Corollary 4.9]{Pardon}, the PT variable is $z=-r$, so
+\begin{equation}\label{eq:pt-one}
+ w=\frac{(1+z)^2}{z},\qquad
+ \PT(x_{g,1})=z^{1-g}(1+z)^{2g-2}.
+\end{equation}
+Its lowest Laurent coefficient is $+1$. The geometric PT series
+uses $z^{\chi(\mathcal F)}$ with no additional sign in its coefficients.
+
+\begin{lemma}\label{lem:order}
+We have $F_0=E_0$ and $F_1=E_1$. For $g\ge2$ and $d\ge1$,
+\[
+ [q^d]K_g,\ [q^d]J_g\in u^{2d(g-1)}\QQ[[u^2]],\qquad
+ [q^d](K_g-J_g)\in u^{2d(g-1)+2}\QQ[[u^2]].
+\]
+\end{lemma}
+\begin{proof}
+For genus zero the balanced bundle is
+$\mathcal O_{\PP^1}(-1)^{\oplus2}$. Each summand has zero $H^0$
+on a positive-degree connected stable map, including attached
+contracted components. The obstruction rank equals the virtual
+dimension of the proper map space to $\PP^1$; only the ordinary
+top Chern class contributes. The residue is independent of the
+weights. For genus one, the level-$(0,0)$ formula
+\cite[Theorem 5.2]{BP} gives the number of partitions of $d$ for
+the degree-$d$ coefficient at either action.
+
+For $g\ge2$, the balanced residue formula
+\cite[Section 2.2]{BP} has the form
+\[
+ u^{2d(g-1)}
+ \sum_{\substack{b_1,b_2\ge0\\b_1+b_2\text{ even}}}
+ u^{b_1+b_2}(t_1/t_2)^{(b_2-b_1)/2}I^{(d,g)}_{b_1,b_2},
+\]
+where the intersection numbers $I^{(d,g)}_{b_1,b_2}$ do not depend
+on the weights. The leading term $b_1=b_2=0$ is the same for both
+actions; their difference has two additional powers of $u$.
+The claim passes to logarithms: every product of coefficients in
+curve degree $d$ has total degree $d$, and a difference of products
+contains at least one such difference.
+\end{proof}

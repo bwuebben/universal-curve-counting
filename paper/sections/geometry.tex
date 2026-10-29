@@ -1,0 +1,188 @@
+\section{A compact transition and its finite lifts}\label{sec:geometry}
+
+We use the four-node transition denoted $X_9$ in \cite{WuebbenMirror}.
+For clarity, the numerical label only identifies the toric example
+specified below. Its source fan, divisor basis and smoothing fan are
+printed in Appendix~\ref{app:data}. The general anticanonical
+hypersurfaces are taken nondegenerate with respect to their Newton
+polytopes, with nonzero vertex coefficients.
+
+\subsection{The geometric hypotheses and class marking}
+The nodal model $X'_9$ is projective, normal, has trivial dualizing
+sheaf and $H^1(\mathcal O)=H^2(\mathcal O)=0$. Its four nodes admit
+a projective small resolution $Y_-$. We use the nodal model and the
+integral divisor-evaluation injection of
+\cite[Proposition 3.5, Lemma 9.7 and Section 11.1]{WuebbenMirror}.
+The source $Y_+$ used for the explicit calculation differs from
+$Y_-$ by one flop: the original square diagonals $23,24$ are replaced
+by $67,24$. The relevant square circuits are
+$v_2+v_3=v_6+v_7$ and $v_2+v_4=v_5+v_7$.
+The pentagon with vertices $v_3,v_4,v_5,v_6,v_8$ is subdivided
+at its interior ray $v_9$ in both resolutions. Our ray indexing
+has the pentagon center at $9$ and the divisor missing the
+hypersurface at $10$; these two indices are interchanged in
+\cite{WuebbenMirror}.
+
+Let $H_1,\ldots,H_6$ be the integral nef basis on $Y_+$ given in
+Appendix~\ref{app:data}, and let $b_1,\ldots,b_6$ be the dual curve
+basis. Identify the full integral lattices of $Y_-$ and $Y_+$ by the
+common blow-up, as at the end of Section~\ref{sec:specialization}.
+The four exceptional classes in these coordinates are
+\[
+\begin{array}{c|rrrr}
+ &q_1&q_2&q_3&q_4\\ \hline
+Y_-&b_6&-b_5&b_1+b_5+b_6&b_1\\
+Y_+&b_6& b_5&b_1+b_5+b_6&b_1.
+\end{array}
+\]
+Their relation on $Y_-$ is $(1,-1,-1,1)$. More intrinsically, the
+four divisor-evaluation columns on $Y_-$ are
+\[
+ e_6+e_8-e_3-e_9,\quad e_6+e_7-e_2-e_3,\quad
+ e_5+e_8-e_4-e_9,\quad e_5+e_7-e_2-e_4.
+\]
+On the first three columns, rows $3,4,9$ have determinant $-1$.
+Thus their span is primitive in the ambient integer lattice and in
+the full curve lattice, which injects into it. This proves that the
+source and its exceptional quotient are torsion-free; it is more
+than an ambient rational rank calculation.
+
+The nowhere-zero exceptional relation supplies a global first-order
+smoothing nonzero at every node. The abstract deformation space is
+smooth by the nodal case of Friedman's unobstructedness theorem
+\cite[Theorem 1.6]{Friedman}: the singularities are rational,
+Du~Bois and local complete intersections, and the projective
+resolution satisfies the $\partial\bar\partial$-lemma.
+To obtain an algebraic family of the kind required in
+Theorem~\ref{thm:specialization}, choose a sufficiently high ample
+embedding of $X'_9$. The vanishing of $H^2(\mathcal O)$ lifts its
+line bundle, and the vanishing of $H^1(L^m)$ for large $m$ lifts a
+projective frame. Thus embedded deformations map smoothly to
+abstract deformations. Equivalently one can use the Hilbert-scheme
+construction in \cite[Theorem 4.1]{FMR}. Its local sheaf-generation
+condition follows from a tangent nonzero at each node; surjectivity
+onto all local smoothing parameters simultaneously is not needed.
+Choose a smooth algebraic curve in this Hilbert scheme with the
+specified tangent. The restricted universal family is projective,
+and at each node has equation
+$\sum_{j=1}^4 z_j^2=s_i(t)$ with $s_i'(0)\ne0$.
+Its total fourfold is smooth. Relative duality and base change extend
+the nowhere-vanishing canonical section near the central fiber, so
+the nearby fibers have trivial canonical bundle.
+
+The toric smoothing model in Appendix~\ref{app:data} belongs to this
+smooth deformation component, by \cite[Theorem 9.25]{WuebbenMirror}.
+Fix transport along a path in its smooth-fiber locus, and choose the
+marking for which the smoothing divisors $K_1,K_2,K_3$ descend from
+$H_2,H_3,H_4$. Then the full integral class map is
+\begin{equation}\label{eq:pi}
+ \pi(n_1,\ldots,n_6)=(n_2,n_3,n_4).
+\end{equation}
+The exceptional subgroup is $\ZZ b_1\oplus\ZZ b_5\oplus\ZZ b_6$.
+These class identifications retain the chosen transport path.
+
+\subsection{An explicit bound on the lifts}
+Blow up the ambient pair cones $24,67,49,39$, appending the sums of
+their rays as rays $11,12,13,14$. These four ambient centers meet
+the hypersurface transversely in its four disjoint exceptional
+curves. Their possible mutual intersections are outside the
+hypersurface. The resulting smooth 47-cone fan therefore contains
+$W=\Bl_{\coprod C_i}Y_+$ as the strict transform. The pulled-back
+original anticanonical equation defines this strict transform, since
+none of the ambient centers is contained in the hypersurface. Its
+divisor coefficients are one on the eleven original rays and two
+on the four new rays; its Newton polytope is unchanged.
+Intersecting its ambient Mori cone with zero degree on the four
+exceptional divisors and on $D_{10}$ gives the necessary inequalities
+\begin{equation}\label{eq:outer}
+ \begin{gathered}
+ n_a\ge0,\quad n_6\ge n_1,n_5,\quad
+ n_1\le n_2+n_3,\quad n_1\le n_2+n_5,\\
+ n_6\le n_2+n_3+n_5,\qquad
+ n_1+n_6\le2n_2+n_3+n_5.
+ \end{gathered}
+\end{equation}
+These follow from the 94 invariant walls of the subdivided fan.
+
+One further inequality is needed. On the common blow-up the divisor
+\[
+ \mathcal D=\phi^*(2H_2+3H_3+H_4-H_6)-\sum_i E_i
+\]
+is nef. To check this, its coefficients on rays $0,\ldots,14$ are
+\[
+ d=(0,0,2,0,0,7,7,-5,-5,3,0,1,1,2,2).
+\]
+On the single open toric neighborhood $\widetilde P\setminus D_{10}$
+of $W$, the characters in Table~\ref{tab:characters} give global
+sections of $2\mathcal D$. For each cone $\sigma$ maximal among those
+whose orbits can meet $W$, the displayed character $m$ satisfies
+\[
+ \langle m,v_i\rangle+2d_i\ge0\quad(i\ne10),\qquad
+ \langle m,v_i\rangle+2d_i=0\quad(i\in\sigma).
+\]
+Here the Newton faces are those of the pulled-back original equation.
+There are 99 cones with nonsingleton faces, each a face of one of the
+41 listed cones. The remaining orbits have singleton Newton faces
+and miss the hypersurface. The sections are global on the same open
+set and generate along $W$; hence $2\mathcal D|_W$ is globally
+generated. Pairing with $j\gamma$ gives
+\begin{equation}\label{eq:last-bound}
+ n_6\le2n_2+3n_3+n_4.
+\end{equation}
+
+Let $\beta=(1,1,0)$ on the smoothing. By
+Theorem~\ref{thm:specialization}, all possible nonzero normalized
+source coefficients over $d\beta$ have class $(a,d,d,0,b,c)$, where
+\begin{equation}\label{eq:candidates}
+ 0\le a\le2d,\qquad b\ge\max(0,a-d),\qquad
+ \max(a,b)\le c\le\min(5d,2d+b,3d+b-a).
+\end{equation}
+There are 37 integer solutions for $d=1$, and 183 for $d=2$.
+For $d=1$ they are listed compactly by the permitted values of $c$:
+\[
+\begin{array}{c|rrrrrr}
+a\backslash b&0&1&2&3&4&5\\ \hline
+0&0\!:\!2&1\!:\!3&2\!:\!4&3\!:\!5&4\!:\!5&5\\
+1&1\!:\!2&1\!:\!3&2\!:\!4&3\!:\!5&4\!:\!5&5\\
+2&-&2&2\!:\!3&3\!:\!4&4\!:\!5&5.
+\end{array}
+\]
+These lists are necessary-condition supersets; effectivity and
+nonvanishing are not asserted for each entry. The same inequalities
+give nine candidates in bidegree $(n_2,n_3)=(1,0)$ and ten in
+bidegree $(0,1)$, with $n_4=0$.
+
+\subsection{The plane on the smoothing}
+\begin{proposition}\label{prop:plane}
+The smoothing $S$ contains a plane $D\simeq\PP^2$ with
+$[D]=-2K_1-K_2+K_3$ and normal bundle $\mathcal O(-3)$.
+Its line class is primitive and equals $\beta=(1,1,0)$.
+Every effective cycle of class $d\beta$, $d>0$, is supported on $D$.
+\end{proposition}
+\begin{proof}
+Use the smoothing rays $r_i$ of Appendix~\ref{app:data} and write
+$T_i$ for their divisors. The open set away from $T_4\cup T_5$ has
+cones $1236,0236,0123$, all unimodular, and ray relation
+$r_0+r_1-3r_2+2r_3+r_6=0$. It is
+$\Tot_{\PP^2}(\mathcal O(-3)\oplus\mathcal O(2))$, with fiber
+coordinates $u,v$, and $T_2=\{u=0\}$. The anticanonical equation
+on $u=0$ is $av+q_2(x_0,x_1,x_6)=0$. Its Newton face consists of
+the six quadratics and the vertex monomial $v$, so $a\ne0$.
+There is no cone containing $24$; the only intersection of $T_2$
+with $T_5$ is the fixed point of the cone $01256$, missed by the
+hypersurface. Thus all of $D=S\cap T_2$ lies in this open set and
+is the graph of $v=-q_2/a$ over the plane.
+
+The charge matrix gives $T_0=K_1$, $T_4=K_3$, $T_5=K_2-K_1$,
+and $T_2=-2K_1-K_2+K_3$. Hence $K_1|_D=K_2|_D=h$ and
+$K_3|_D=0$, proving the class and normal bundle statements.
+Subdivide $01256$ by either $\{1256,0256,0125\}$ or
+$\{0156,0126\}$. Both modifications are isomorphisms near $S$.
+Convex support functions give $T_0,T_4$ nef on the first and
+$T_5,T_4$ nef on the second. Thus every effective class
+$(\ell,m,n)$ on $S$ satisfies $\ell\ge0$, $m-\ell\ge0$, $n\ge0$.
+Every component of a cycle in $d\beta$ has class $(a,a,0)$,
+$a>0$, and intersects $D$ in $-3a$. An effective Cartier divisor
+has nonnegative degree on a curve outside it, so all components
+lie in $D$. Finally $K_1\cdot\beta=1$ proves primitivity.
+\end{proof}

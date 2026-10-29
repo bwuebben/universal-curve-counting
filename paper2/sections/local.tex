@@ -1,0 +1,209 @@
+\section{The degree-three local calculation}\label{sec:local}
+
+\subsection{Degree two and its integral correction}
+Put $s_0=2\sin(u/2)$, so $w=s_0^2$. The scalar degree-two formula
+\cite[Section 8]{BP} and the two partitions of two give
+\[
+ [q^2]F_g=s_0^{4g-4}\bigl((4-2s_0)^{g-1}+(4+2s_0)^{g-1}\bigr),
+ \qquad [q^2]E_g=2s_0^{4g-4}(4-s_0^2)^{g-1}.
+\]
+The degree-one terms agree, so these also give their logarithmic
+difference. For $g\ge2$, binomial expansion yields
+\begin{equation}\label{eq:degree-two}
+ \begin{split}
+ [q^2](K_g-J_g)&=\sum_{j=1}^{g-1}a_{g,j}w^{2g-2+j},\\
+ a_{g,j}&=2\,4^{g-1-j}
+ \left(\binom{g-1}{2j}-(-1)^j\binom{g-1}{j}\right)\in\ZZ.
+ \end{split}
+\end{equation}
+Out-of-range binomial coefficients are zero. The first two rows are
+$2w^3$ for $g=2$ and $24w^5-2w^6$ for $g=3$.
+
+\subsection{The Frobenius algebra in degree three}
+We use the multiplication operator of
+\cite[Appendix, equations (29) and (31)]{BP}, the cap of its Lemma 6.3,
+and the starred normalization of its Section 6.4.1.
+Initially keep general nonzero weights $t_1,t_2$, and put
+\[
+ k=t_1t_2,\qquad
+ a=-(t_1+t_2)\frac{r-1}{r+1},\qquad
+ b=-3(t_1+t_2)\frac{r^2-1}{r^2+r+1}.
+\]
+In the partition basis $1=e_{111}$, $x=e_{21}$, $y=e_3$,
+multiplication by $x$ is
+\begin{equation}\label{eq:M}
+ M=\begin{pmatrix}0&-3k&0\\1&a&-2k\\0&3&b\end{pmatrix}.
+\end{equation}
+Since $M1=x$ and $M^21=-3k+ax+3y$, the unit is cyclic. Consequently
+\begin{equation}\label{eq:algebra}
+ \begin{gathered}
+ L_1=I,\qquad L_x=M,\qquad L_y=\frac{M^2-aM+3kI}{3},\\
+ \mathcal A=\QQ(t_1,t_2,r)[x]/\bigl((x-b)(x^2-ax+3k)+6kx\bigr).
+ \end{gathered}
+\end{equation}
+Indeed $My=-2kx+by$ gives the stated relation. Multiplication also gives
+\[
+ y^2=2k^2-\frac{2kb}{3}x+\frac{b^2-ab-3k}{3}y.
+\]
+
+The starred Frobenius pairing in this basis is
+\begin{equation}\label{eq:metric}
+ D=\operatorname{diag}\left(-\frac1{6k^3},\frac1{2k^2},-\frac1{3k}\right).
+\end{equation}
+In general its partition entry is
+$1/(\mathfrak z(\lambda)(-k)^{\ell(\lambda)})$, where
+$\mathfrak z(\lambda)=\prod_j j^{m_j}m_j!$ and $m_j$ is the
+multiplicity of $j$ in $\lambda$. The Appendix Fock pairing differs
+by $(-1)^d$ in degree $d$; its multiplication-operator convention
+has the same sign. Thus \eqref{eq:M} is the multiplication matrix
+in the starred normalization,
+and the handle operator is
+\begin{equation}\label{eq:handle}
+ G=-6k^3I+2k^2M^2-3kL_y^2.
+\end{equation}
+This is multiplication by the Euler element, the sum of each basis
+element times its dual. In the quotient algebra it equals
+\[
+ -18k^3+2k^2(a+b)x+(9k^2+kab-kb^2)y.
+\]
+
+Raising the level-$(-1,0)$ cap covector with \eqref{eq:metric}
+and removing its half-integral phase gives the vector
+\begin{equation}\label{eq:cap}
+ \widetilde\eta_\lambda
+ =(-1)^d t_1^{\ell(\lambda)}
+   \prod_{j=1}^{\ell(\lambda)}(1-r^{-\lambda_j})^{-1},
+ \qquad d=3.
+\end{equation}
+Let $\widetilde A=\sum_\lambda\widetilde\eta_\lambda L_\lambda$
+and let $\widetilde{\bar A}$ interchange $t_1,t_2$. If $A^*$ is
+the unscaled starred level operator, then
+$\widetilde A=r^{d/2}A^*$. The balanced-level operator is therefore
+\begin{equation}\label{eq:B}
+ B=r^3G\widetilde A^{-1}\widetilde{\bar A}^{-1},\qquad
+ [q^3]F_g=\tr(B^{g-1})\quad(t_1=t_2=1).
+\end{equation}
+All operators commute because they act by multiplication.
+The closed starred normalization has exponent
+$d(2-2g+(g-1)+(g-1))=0$, so no further phase multiplies the
+ordinary GW coefficient in \eqref{eq:B}.
+
+\begin{proposition}\label{prop:trace}
+At scalar weights the characteristic polynomial of $B$ is
+\begin{equation}\label{eq:charpoly}
+ \begin{split}
+ \det(TI-B)={}&T^3-w^3(w^2+50w+81)T^2\\
+ &+\frac43w^6(w-6)(w^2+54w-243)T\\
+ &-\frac43w^9(w-4)(w-3)^2(w^2+54w-243).
+ \end{split}
+\end{equation}
+In particular,
+\begin{equation}\label{eq:scalar-traces}
+ \begin{split}
+ [q^3]F_2&=81w^3+50w^4+w^5,\\
+ [q^3]F_3&=2673w^6+9612w^7+2534w^8+\frac{292}{3}w^9+w^{10}.
+ \end{split}
+\end{equation}
+\end{proposition}
+\begin{proof}
+Substitute $t_1=t_2=1$ into \eqref{eq:M}--\eqref{eq:B} and reduce
+using $r^2-(2-w)r+1=0$. The three elementary symmetric functions
+of $B$ are respectively
+\[
+ \begin{gathered}
+ w^3(w^2+50w+81),\qquad
+ \frac43w^6(w-6)(w^2+54w-243),\\
+ \frac43w^9(w-4)(w-3)^2(w^2+54w-243).
+ \end{gathered}
+\]
+These give \eqref{eq:charpoly}; the trace and the identity
+$\tr(B^2)=(\tr B)^2-2\sigma_2(B)$ give \eqref{eq:scalar-traces}.
+The calculation can also be made entirely in \eqref{eq:algebra}:
+invert $\widetilde\eta^2$, multiply by $r^3$ times the Euler
+element, and take the resultant of its characteristic equation with
+the monic cubic defining $\mathcal A$. This uses the same printed
+algebraic data and avoids a matrix inverse.
+\end{proof}
+
+At antidiagonal weights the same construction has eigenvalues $U,U,V$,
+where
+\begin{equation}\label{eq:UV}
+ U=w^3(4-w)(3-w)^2,\qquad V=w^3(3-w)^2.
+\end{equation}
+These are exactly the three partition contributions in
+\eqref{eq:hooks}. The leading scalar coefficient
+$2673=6^4+3^4+6^4$ also agrees with the unramified degree-three
+cover count for a genus-three base.
+
+One consequence already concerns the local PT generator:
+\begin{equation}\label{eq:local-pt}
+ [z^{-9}]\PT(x_{3,3})=20+\frac{292}{3}=\frac{352}{3}.
+\end{equation}
+Indeed, after \eqref{eq:pt-one}, only $w^{10}$ and $w^9$ in
+\eqref{eq:scalar-traces} contribute. This is an equivariant residue
+of a rational universal generator, not an invariant of a proper
+stable-pair space. A compact counterexample requires the geometric
+argument below.
+
+\subsection{The connected obstruction}
+Since the degree-one terms agree,
+\begin{equation}\label{eq:log-three}
+ [q^3](K_g-J_g)
+ =[q^3](F_g-E_g)-w^{g-1}[q^2](F_g-E_g).
+\end{equation}
+Use $[q^3]E_g=2U^{g-1}+V^{g-1}$, \eqref{eq:degree-two}, and
+\eqref{eq:scalar-traces}. Exact subtraction gives
+\begin{equation}\label{eq:connected-difference}
+ \begin{split}
+ [q^3](K_2-J_2)&=120w^4-20w^5+2w^6,\\
+ [q^3](K_3-J_3)&=14448w^7-1136w^8+\frac{4720}{3}w^9\\
+ &\hspace{16mm}-332w^{10}+40w^{11}-2w^{12}.
+ \end{split}
+\end{equation}
+
+\begin{proposition}\label{prop:congruence}
+For every primitive class $\alpha$ on a smooth projective
+Calabi--Yau threefold with torsion-free second homology,
+\[
+ e_{3\alpha,10}=c_{3\alpha,10}-\frac{4720}{3}c_{\alpha,3}.
+\]
+In particular $e_{3\alpha,10}$ is integral if and only if
+$c_{\alpha,3}$ is divisible by three.
+\end{proposition}
+\begin{proof}
+Primitivity and torsion-freeness imply that the only positive integral
+divisors of $3\alpha$ are $\alpha$ and $3\alpha$. Subtract the two
+sides of \eqref{eq:comparison} at this class and use
+\eqref{eq:primitive-equality}. The degree-one terms at $3\alpha$
+give
+\[
+ \sum_h(c_{3\alpha,h}-e_{3\alpha,h})w^{h-1}
+ =\sum_g c_{\alpha,g}[q^3](K_g-J_g).
+\]
+By Lemma~\ref{lem:order}, the terms for $g=0,1$ vanish, and those
+for $g\ge4$ have order at least $u^{20}$, hence $w^{10}$.
+The genus-two term in \eqref{eq:connected-difference} ends at
+$w^6$. The coefficient of $w^9$ is therefore exactly
+$(4720/3)c_{\alpha,3}$. The change of coordinate
+$w=u^2+O(u^4)$ is formal; no numerical evaluation of an infinite
+genus sum is involved. Since $c_{3\alpha,10}\in\ZZ$ and
+$4720\equiv1\pmod3$, the last assertion follows.
+\end{proof}
+
+\begin{corollary}\label{cor:small-divisibility}
+If a nonzero class has divisibility one or two in integral second
+homology, all its scalar-local exponents are integers.
+\end{corollary}
+\begin{proof}
+The primitive case is \eqref{eq:primitive-equality}. For
+$\beta=2\alpha$ with $\alpha$ primitive, the degree-two comparison
+\eqref{eq:degree-two} gives
+\[
+ e_{2\alpha,h}=c_{2\alpha,h}
+ -\sum_{\substack{g\ge2,\ 1\le j\le g-1\\2g-1+j=h}}
+ a_{g,j}c_{\alpha,g}.
+\]
+Every summand is integral, and the sum is finite for each $h$.
+The same formula applies when $\alpha$ is ineffective, with its
+primitive exponents zero.
+\end{proof}

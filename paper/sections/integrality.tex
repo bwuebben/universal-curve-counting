@@ -1,0 +1,74 @@
+\section{Product exponents and local-curve conventions}\label{sec:integrality}
+
+The factorization of Lemma~\ref{lem:formal} is rational. The
+compatible series $f_0(Q)^{1/2}$ shows that the formal axioms alone
+cannot imply integral exponents. For projective Calabi--Yau
+threefolds, integer exponents in this particular product expansion
+are the content of \cite[Conjecture 1.4]{Pardon}.
+
+The local series and the elementary series of Ionel--Parker
+\cite{IP} arise from different torus actions. The distinction is
+visible in an exact degree-two calculation.
+Let $F_g(q,u)=1+\sum_{d\ge1}\GW(x_{g,d})q^d$, where $q$ records
+curve degree and $u$ is the GW variable. Pardon's
+Proposition 4.8 identifies this with the residue theory for scalar
+fiberwise scaling. Let $E_g(q,u)$ be the exponential of the
+connected elementary series of \cite[Proposition 3.3]{IP}, given by
+the antidiagonal specialization
+\[
+ E_g(q,u)=\sum_\mu q^{|\mu|}
+    \prod_{\square\in\mu}(2\sin(h(\square)u/2))^{2g-2}.
+\]
+Both use balanced level $(g-1,g-1)$. Put $s=2\sin(u/2)$.
+The scalar formula of Bryan--Pandharipande
+\cite[Section 8]{BP}, and the two partitions of two in
+the hook formula, respectively give
+\[
+ [q]F_g=[q]E_g=s^{2g-2},
+\]
+\[
+ [q^2]F_g=s^{4g-4}\bigl((4-2s)^{g-1}+(4+2s)^{g-1}\bigr),
+ \qquad [q^2]E_g=2s^{4g-4}(4-s^2)^{g-1}.
+\]
+In particular
+\begin{equation}\label{eq:discrepancy}
+ [q^2](\log F_2-\log E_2)=2s^6,\qquad
+ F_2(q,u)=E_2(q,u)E_4(q^2,u)^2\pmod{q^3}.
+\end{equation}
+Thus direct identification fails, although this first correction
+has an integer exponent. More generally, for $g\ge2$ binomial
+expansion gives
+\[
+ F_g(q,u)=E_g(q,u)\prod_{j=1}^{g-1}
+ E_{2g-1+j}(q^2,u)^{a_{g,j}}\pmod{q^3},
+\]
+\[
+ a_{g,j}=2\,4^{g-1-j}
+ \left(\binom{g-1}{2j}-(-1)^j\binom{g-1}{j}\right)\in\ZZ,
+\]
+with out-of-range binomial coefficients zero. The degree-two
+discrepancy vanishes for $g=0,1$.
+
+At degree three the comparison has a fractional correction. For a
+primitive class $\alpha$, write $c_{\alpha,g}$ for the integer
+exponents in the elementary expansion of \cite[Theorem 8.1]{IP},
+and $e_{\alpha,g}$ for the scalar-local exponents of
+\eqref{eq:factor}. The companion paper \cite{WuebbenIntegrality}
+proves
+\[
+ e_{3\alpha,10}=c_{3\alpha,10}-\frac{4720}{3}c_{\alpha,3}.
+\]
+On the resolution $Y_+$ of Section~\ref{sec:geometry}, the primitive
+class $\alpha=3b_2+4b_3$ has $c_{\alpha,3}=-14$. Consequently
+$e_{3\alpha,10}\in\ZZ+2/3$. This disproves the integer-exponent
+assertion of \cite[Conjecture 1.4]{Pardon} for its scalar generators,
+even with torsion-free second homology. It does not contradict the
+integer elementary expansion or the distinct integral geometric
+generators in \cite[Theorem 1.2]{Pardon}.
+
+Corollary~\ref{cor:integral} describes how the rational exponents
+specialize. Its integrality consequence applies whenever the source
+exponents are integral; the counterexample shows that this condition
+cannot be inferred from projectivity and the Calabi--Yau hypothesis.
+None of the support arguments or universal coefficient calculations
+above requires it.

@@ -1,0 +1,88 @@
+\section{Introduction}
+
+Curve-counting invariants of a Calabi--Yau threefold change under a
+conifold transition by summing over curve classes on the small
+resolution. The numerical formula holds in every genus, but its
+interpretation in a universal coefficient algebra requires a single
+support bound valid before any numerical evaluation. Such a bound
+must also account for the whole exceptional contribution and specify
+the completion in which specialization is performed.
+
+We combine Pardon's universal curve-counting algebra with the
+numerical conifold formula to obtain this interpretation, and then
+compute every source contribution in one nonexceptional class of a
+compact example. The geometric step in the computation is an
+Euler-characteristic bound for pure curves, including nonreduced
+exceptional components. It makes a finite genus-zero calculation
+sufficient to determine the full universal coefficients.
+
+For the first result, let $Y\to X_0\rightsquigarrow S$ be a
+projective conifold transition with trivial canonical bundles,
+torsion-free second integral homology, and a smoothing whose total
+space is a smooth algebraic fourfold. Fix the common-complement
+marking, giving $\pi:H_2(Y;\ZZ)\to H_2(S;\ZZ)$. Pardon's local
+generators $x_{g,m}$ form the rational polynomial coefficient
+algebra $H$, and $f_g(z)=1+\sum_{m\ge1}x_{g,m}z^m$ is the local
+series. Write $\Z_V$ for the universal effective-cycle series of a
+threefold $V$. Theorem~\ref{thm:specialization} proves
+\[
+ \Z_S=\Sp_\pi\left(\frac{\Z_Y}{\prod_i f_0(Q^{[C_i]})}\right),
+\]
+where $C_i$ are the exceptional curves. Every coefficient is a finite
+sum of polynomials in $H$. The proof uses an ample divisor on the
+common blow-up to bound all effective lifts in bounded target degree.
+Empty-contact degeneration then controls universal logarithmic
+support. We apply the total-space-class form of degeneration to
+handle projected classes which might be ineffective on the smoothing.
+
+The compact application uses a four-node toric hypersurface
+transition, specified in Section~\ref{sec:geometry} and
+Appendix~\ref{app:data}. Its smoothing contains a plane whose
+primitive line class is $\beta=(1,1,0)$. In a fixed integral source
+basis, $\pi(n_1,\ldots,n_6)=(n_2,n_3,n_4)$. There are 37 possible
+normalized contributions over $\beta$ under our finite support
+bound. Section~\ref{sec:euler} proves that every pure curve in the
+three bidegrees needed for this calculation has Euler characteristic
+at least one, even after adding arbitrary multiple exceptional
+components. The proof identifies the contracted locus as two
+rational surfaces and two isolated rational curves, then bounds
+intersection lengths with multiple $(-1,-1)$-curves. This removes
+all positive-genus primitive generators from the relevant universal
+logarithm. Section~\ref{sec:calculation} consequently determines
+every one of the 37 coefficients, of which eight are nonzero.
+Their sum is $3x_{0,1}$.
+
+An independent stable-pair calculation on the smoothing plane gives
+\[
+ U_{S,\beta}=3x_{0,1},\qquad
+ U_{S,2\beta}=3x_{0,2}+3x_{0,1}^2-6x_{0,1}.
+\]
+These are identities in $H$. The Euler-characteristic arguments,
+rather than agreement of finitely many GW invariants, exclude the
+remaining primitive generators.
+
+Pardon's structure theorem and connected evaluations are the algebraic
+inputs throughout \cite{Pardon}. The all-genus numerical conifold
+formula and its finite class sums are already established by
+Lee--Lin--Wang \cite[Proposition 2.1]{LLW}. Lin--Wang give
+disconnected GW and PT transition formulas with exceptional factors
+\cite[Proposition 3.5]{LW}, and a transfer theorem for stationary
+descendent correspondence. Our unmarked statement does not extend
+that descendent theorem. Its content is the coefficientwise finite
+identity in the universal algebra, together with the complete
+source calculation just described. The values $3$ and $-6$ on the
+plane are familiar local-curve-counting values; their role here is
+to determine universal polynomials and to check the compact
+specialization independently.
+
+The product exponents obey a finite sum formula,
+Corollary~\ref{cor:integral}, so integrality on the resolution implies
+integrality on the smoothing. The hypothesis is substantive: the
+scalar equivariant local generators do not give integer exponents
+for every projective Calabi--Yau threefold. The companion paper
+\cite{WuebbenIntegrality} constructs a counterexample on the same
+resolution $Y_+$ used here. Section~\ref{sec:integrality} explains
+the distinction from the integer elementary expansion of
+Ionel--Parker and records the scope of the transfer statement.
+The specialization theorem and the compact calculation use only
+the rational universal algebra.

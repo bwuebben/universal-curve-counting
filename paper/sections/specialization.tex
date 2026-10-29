@@ -1,0 +1,220 @@
+\section{Support and specialization}\label{sec:specialization}
+
+Let $\mathscr X\to B$ be a flat projective morphism from a smooth
+complex algebraic fourfold to a smooth curve, with central fiber $X_0$
+having only ordinary double points. Suppose a nearby fiber $S$ and a
+projective small resolution $p:Y\to X_0$ are smooth Calabi--Yau
+threefolds with trivial canonical bundles and torsion-free second
+integral homology. Fix a marking of the common complement of the node
+neighborhoods and a relatively ample line bundle, restricting to $H_0$
+and $H_S$. Write $C_i$ for the exceptional curves and set
+\[
+ W=\Bl_{\coprod_i C_i}Y,\quad \phi:W\to Y,\quad q=p\phi,
+ \quad E=\sum_i E_i,\quad
+ j=\PD_W^{-1}\phi^*\PD_Y.
+\]
+Here $j$ is an integral homology map, not the strict transform of a
+chosen curve. Effective means represented by an effective integral
+one-cycle, not merely belonging to a closed real cone.
+
+\begin{proposition}\label{prop:finite}
+The marking gives an integral surjection
+\[
+ \pi:H_2(Y;\ZZ)\longrightarrow H_2(S;\ZZ),\qquad
+ \ker\pi=\langle[C_i]\rangle.
+\]
+The set
+\begin{equation}\label{eq:F}
+ F=\{\gamma\ne0:j\gamma\text{ is effective on }W\}
+\end{equation}
+is contained in $\Gamma_Y$, is additive after adjoining zero, contains
+no class in $\ker\pi$, and has finitely many elements of bounded
+$H_S\cdot\pi\gamma$ degree. The monoid
+$\Gamma_T=\langle\Gamma_S\cup\pi(F)\rangle$ has positive, locally
+finite degree $H_S\cdot(-)$.
+\end{proposition}
+\begin{proof}
+Let $U$ be the common compact complement and
+$L=\coprod_i(S^2\times S^3)$ its boundary. The local resolution pieces
+retract to $S^2$, with boundary inclusion inducing an isomorphism on
+$H_2$; the smoothing pieces retract to $S^3$. If
+$a:H_2(L)\to H_2(U)$ is inclusion, integral Mayer--Vietoris gives
+\[
+ H_2(Y)=\bigl(H_2(U)\oplus\ZZ^r\bigr)/
+       \{(a(v),-v):v\in\ZZ^r\}\simeq H_2(U),
+ \qquad H_2(S)=H_2(U)/a(\ZZ^r).
+\]
+This proves the asserted quotient, including its integral meaning.
+
+Locally a node is the affine cone over $\PP^1\times\PP^1$ with
+polarization $\mathcal O(1,1)$. Blowing up its vertex gives
+$\Tot(\mathcal O(-1,-1))$, as does blowing up the zero section of
+either small resolution. These identifications glue, so
+$W=\Bl_{\operatorname{Sing}X_0}X_0$. In particular $-E$ is $q$-ample,
+and for some fixed integer $N>0$ the divisor
+\[
+ A=Nq^*H_0-E
+\]
+is ample. The projection formula gives $\phi_*j\gamma=\gamma$.
+Restriction of $\phi^*\PD_Y\gamma$ to $E_i$ factors through
+$H^4(C_i)=0$, hence $E_i\cdot j\gamma=0$. The marked polarization
+agrees on $U$, and therefore
+\begin{equation}\label{eq:ample-bound}
+ A\cdot j\gamma=N H_S\cdot\pi\gamma.
+\end{equation}
+For $\gamma\in F$ the left side is positive. Pushforward proves
+effectivity on $Y$, and sums of effective lifts prove additivity.
+Bounded projected degree bounds ample degree on $W$. The homology
+boundedness argument of Section~\ref{sec:universal}, and injectivity
+of $j$, prove finiteness. Finally, the generators of $\Gamma_T$ of
+degree at most $D$ form a finite set, and a sum of degree at most $D$
+uses at most $D$ nonzero generators. This proves the final assertion.
+\end{proof}
+
+The integral blow-up decomposition also gives
+\begin{equation}\label{eq:zero-contact}
+ \operatorname{im}j=\bigcap_i\ker(E_i\cdot-).
+\end{equation}
+Indeed $H_2(W)=jH_2(Y)\oplus\bigoplus_i\ZZ a_i$, where $a_i$ is a
+fiber of $E_i\to C_i$ and $E_i\cdot a_j=-\delta_{ij}$.
+
+\begin{theorem}\label{thm:specialization}
+Under the hypotheses of this section, put
+\[
+ \cE_Y=\prod_i f_0(Q^{[C_i]}),\qquad A_Y=\Z_Y/\cE_Y.
+\]
+Then $\Supp(A_Y-1)\subset F$. Coefficientwise summation along $\pi$
+is finite in bounded target degree, and
+\begin{equation}\label{eq:specialization}
+ \Z_S=\Sp_\pi A_Y
+   \quad\text{in }H\llbracket\Gamma_T\rrbracket.
+\end{equation}
+Here $\Z_S$ is extended by zero outside $\Gamma_S$, and
+$[T^\beta]\Sp_\pi A_Y=\sum_{\pi\gamma=\beta}(A_Y)_\gamma$.
+\end{theorem}
+
+\begin{proof}
+We first remove the entire exceptional contribution. The divisor
+$p^*H_0$ is nef and vanishes precisely on contracted curves, so
+$\Gamma_Y\cap\ker\pi$ is a face of $\Gamma_Y$, consisting of sums
+$\sum m_i[C_i]$ with $m_i\ge0$. Restriction to this face commutes
+with products, inverses and logarithms. In the resolved local node
+$V=\Tot_{\PP^1}(\mathcal O(-1)^{\oplus2})$, the only compact
+degree-$m$ cycle is $m[\PP^1]$: a compact curve maps to a point in the
+affine node and must lie in the exceptional fiber. In Pardon's
+Definition 4.7, one can take $N=0$ and no cut-down sections, giving
+$(V,1_{m[\PP^1]})=x_{0,m}$. Locality and the product operation for
+the disjoint node neighborhoods give
+\[
+ (Y,1_{\sum m_i C_i})=\prod_i x_{0,m_i}.
+\]
+At fixed class there are finitely many multiplicity vectors, bounded
+by an ample degree on $Y$. Summing over them shows that the face
+restriction of $\Z_Y$ is exactly $\cE_Y$, even when the exceptional
+classes satisfy relations. Thus $A_Y$ restricts to $1$ on this face.
+
+Next deform $Y$ to the normal cone of $\coprod C_i$. Its central
+fiber is $W\cup_E\coprod_i\PP_{C_i}(N_{C_i/Y}\oplus\mathcal O)$.
+For total relative class $\delta$ on $W$, contact order $\mu$ and
+number of relative markings $\rho$, the virtual dimension is
+\begin{equation}\label{eq:vdim}
+ c_1(W)\cdot\delta+\rho-\mu=\rho-2\mu,
+\end{equation}
+since $K_W=E$. This holds also for disconnected $W$ parts by summing
+over vertices. If contacts are nonempty, $\mu\ge\rho>0$, and the
+virtual class vanishes. A surviving connected noncontracted term
+lies entirely on $W$; a term on a projective bundle pushes to a
+multiple of $[C_i]$. Equation~\eqref{eq:zero-contact} therefore gives
+\begin{equation}\label{eq:relative}
+ N^Y_{h,\gamma}=N^{(W,E)}_{h,j\gamma\mid\varnothing}
+      \qquad(\pi\gamma\ne0).
+\end{equation}
+This is the unmarked resolution comparison used by Lee--Lin--Wang
+\cite[Section 2.1]{LLW}. In particular all genera vanish when
+$\pi\gamma\ne0$ and $\gamma\notin F$. For $L_Y=\log A_Y$, connected evaluation at a
+noncontracted class equals $N^Y_{h,\gamma}$; at a contracted nonzero
+class $L_Y$ itself is zero. The support consequence of
+Lemma~\ref{lem:formal} gives $\Supp L_Y\subset F$, and additivity
+of $F\cup\{0\}$ gives $\Supp(A_Y-1)\subset F$.
+
+Proposition~\ref{prop:finite} now licenses all sums in $\Sp_\pi A_Y$,
+including products. Coproduct commutes with the finite sums. For
+division, only $\gamma=d\eta$ contributes, and torsion-freeness of
+the target gives
+\[
+ \rho_d\sum_{\pi\gamma=\beta}(A_Y)_\gamma
+ =\sum_{\pi\eta=\beta/d}(A_Y)_\eta.
+\]
+Thus the specialization is compatible. The zero extension of $\Z_S$
+is compatible as well: sums and positive multiples of effective
+classes remain effective.
+
+It remains to compare connected evaluations also at classes of
+$\Gamma_T$ which need not be effective on $S$. Semistable reduction
+of the smoothing gives a smooth total space $\mathscr V$ with central
+fiber $W\cup_E\coprod_i Q_i$, where $Q_i$ is a smooth quadric
+threefold and $E_i$ is its hyperplane section
+\cite[Section 3.1]{LW}. If $i:S\to\mathscr V$ and
+$i_0:W\to\mathscr V$ are inclusions, the common-complement marking
+gives
+\begin{equation}\label{eq:total-class}
+ i_{0*}j\gamma=i_*\pi\gamma.
+\end{equation}
+Indeed a representative in $U$ has zero exceptional intersections on
+$W$, hence represents $j\gamma$ by \eqref{eq:zero-contact}; its
+transport through the smooth complement supplies the required
+cylinder. Node monodromy is trivial on $H_2(S)$, and the invariant
+cycle theorem gives rational injectivity of $i_*$, as in
+\cite[Lemmas 2.18 and 3.4]{LW}. Its integral kernel is torsion and
+therefore zero here.
+
+For every $\beta\in\Gamma_T$, the class $i_*\beta$ is effective in
+$\mathscr V$: this holds for generators from $S$, and for generators
+from $F$ by \eqref{eq:total-class}, then for their sums. Apply the
+degeneration formula graded by this total-space class
+\cite[Theorem 2.16]{LW}, retaining connected dual graphs.
+This grading restricts the virtual-cycle formula to open-and-closed
+components of the map moduli space, so its smoothing side may be
+empty. It is zero when $\beta$ is ineffective on $S$; injectivity of
+$i_*$ otherwise identifies its sole class with $\beta$.
+Nonempty contacts again vanish by \eqref{eq:vdim}. A nonzero
+empty-contact curve on $Q_i$ is impossible because $E_i$ is ample.
+Surviving classes on $W$ are exactly $j\gamma$ with
+$\gamma\in F$ and $\pi\gamma=\beta$. Consequently, for all
+$0\ne\beta\in\Gamma_T$ and every $h$,
+\[
+ N^S_{h,\beta}=\sum_{\substack{\gamma\in F\\\pi\gamma=\beta}}
+ N^{(W,E)}_{h,j\gamma\mid\varnothing}
+ =\sum_{\substack{\gamma\in F\\\pi\gamma=\beta}}N^Y_{h,\gamma}.
+\]
+These are precisely the connected evaluations of the two compatible
+series in \eqref{eq:specialization}. Lemma~\ref{lem:formal} proves
+their equality. In particular no preservation of effectivity under
+smoothing was assumed.
+\end{proof}
+
+\begin{corollary}\label{cor:integral}
+The rational product exponents satisfy
+\[
+ e_{\beta,g}(S)=\sum_{\substack{\gamma\in F\\\pi\gamma=\beta}}
+ e^{\mathrm{red}}_{\gamma,g}(Y).
+\]
+In particular an integral product expansion on $Y$ implies one on $S$.
+\end{corollary}
+\begin{proof}
+Take logarithms in \eqref{eq:specialization} and compare the
+$p_{g,1}$ coefficients in Lemma~\ref{lem:formal}. Normalization
+changes only exceptional exponents, so the reduced and original
+exponents agree at every noncontracted class. All sums are finite.
+\end{proof}
+
+There is a useful chamber independence in this formulation. If $Y_-$
+and $Y_+$ are two projective small resolutions of the same nodal
+threefold, their blow-ups are the same $W$. The maps $j_\pm$ have
+common image \eqref{eq:zero-contact}, so
+$\Phi=\phi_{+*}j_-$ is an integral isomorphism satisfying
+$j_+\Phi=j_-$ and $\Phi(F_-)=F_+$. Their normalized series agree
+under this identification: \eqref{eq:relative} identifies all
+connected evaluations in the common positive completion, and
+reconstruction applies. A flopped exceptional class changes sign;
+this statement does not identify the unnormalized effective expansions.

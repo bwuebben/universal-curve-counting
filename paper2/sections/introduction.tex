@@ -1,0 +1,82 @@
+\section{Introduction}
+
+Pardon's universal curve-counting algebra expresses the enumeration
+of effective cycles on a projective Calabi--Yau threefold in terms of
+local curves \cite{Pardon}. Its rational generators $x_{g,m,0}$ are
+defined by the equivariant theory of degree-$m$ cycles in a rank-two
+bundle over a genus-$g$ curve, with scalar multiplication on the fibers.
+Write $x_{g,m}=x_{g,m,0}$ and
+\[
+ f_g(q)=1+\sum_{m\ge1}x_{g,m}q^m.
+\]
+The coproduct and cycle-division operations imply a unique rational
+factorization of the universal cycle series,
+\begin{equation}\label{eq:factor-intro}
+ \Z_X=\prod_{\beta\ne0,\,g\ge0}f_g(Q^\beta)^{e_{\beta,g}(X)},
+ \qquad e_{\beta,g}(X)\in\QQ,
+\end{equation}
+when $H_2(X;\ZZ)$ is torsion-free. Each class has only finitely many
+nonzero exponents. Conjecture~1.4 of \cite{Pardon} asserts that the
+exponents in this factorization are integers. We give a counterexample.
+
+The compact threefold used below is a general anticanonical
+hypersurface in the smooth projective toric fourfold specified in
+Section~\ref{sec:geometry}. It contains a surface $F\simeq\FF_1$.
+Let $s$ be its negative section and $f$ a ruling fiber.
+
+\begin{theorem}\label{thm:main}
+The threefold $Y$ of Section~\ref{sec:geometry} is a smooth projective
+Calabi--Yau threefold with torsion-free $H_2(Y;\ZZ)$. The class
+$\alpha=3s+4f$ is primitive, and its scalar-local product exponents satisfy
+\[
+ e_{\alpha,3}(Y)=-14,\qquad
+ e_{3\alpha,10}(Y)\in\ZZ+\frac23.
+\]
+\end{theorem}
+
+The arithmetic mechanism is a general comparison formula. Denote by
+$c_{\beta,g}(X)$ the integer elementary exponents in the expansion of
+Ionel--Parker \cite[Theorem 8.1]{IP}. Their elementary local series
+uses the antidiagonal action on a balanced local curve
+\cite[Proposition 3.3]{IP}. These integers differ from the scalar
+exponents in \eqref{eq:factor-intro} and, in general, from the usual
+Gopakumar--Vafa numbers. We prove in Proposition~\ref{prop:congruence}
+that every primitive class $\alpha$ satisfies
+\begin{equation}\label{eq:obstruction-intro}
+ e_{3\alpha,10}(X)
+ =c_{3\alpha,10}(X)-\frac{4720}{3}c_{\alpha,3}(X).
+\end{equation}
+Thus integrality of the exponent on the left requires
+$3\mid c_{\alpha,3}(X)$. For our class, $c_{\alpha,3}(Y)=-14$.
+The unknown integer $c_{3\alpha,10}(Y)$ need not be calculated.
+
+The proof has two parts. First, the Frobenius algebra of
+Bryan--Pandharipande \cite{BP} determines the scalar local series in
+degree three. We give its multiplication matrix, pairing, cap and
+characteristic polynomial, retaining the signs and phases distinguishing
+scalar from antidiagonal residues. The connected comparison has a
+$4720/3$ coefficient in the genus-ten term. A leading-order estimate
+excludes contributions from all higher local genera.
+
+Second, nef divisors on the compact hypersurface force every cycle
+in a multiple of $\alpha$, and every effective summand of $\alpha$,
+onto $F$. Cycle support alone does not exclude transverse nonreduced
+curve schemes. A filtration by the powers of the ideal of $F$ proves
+that a stable pair in class $\alpha$ has Euler characteristic at least
+$-2$. At equality its curve is a divisor in $|3s+4f|\simeq\PP^{13}$.
+We identify this minimal moduli space scheme-theoretically, including
+its nonreduced divisors, and obtain virtual count $-14$. The same
+filtration shows that lower products in the logarithm have nonnegative
+Euler characteristic. The primitive genus-three coefficient is
+therefore exactly $-14$.
+
+The geometry also occurs in the conifold specialization calculation of
+\cite{Transition}. Here the needed fan, nef divisors, contracted locus
+and surface identifications are supplied directly. No transition
+formula is used to prove Theorem~\ref{thm:main}. The universal algebra
+and local TQFT are imported from \cite{Pardon,BP}; the integer elementary
+expansion is imported from \cite{IP}. The result concerns the proposed
+integer product expansion in the specified scalar generators. Pardon's
+integral geometric-generator description \cite[Theorem 1.2]{Pardon}
+and ordinary numerical Gopakumar--Vafa integrality are compatible with
+the counterexample.

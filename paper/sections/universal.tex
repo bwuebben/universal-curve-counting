@@ -1,0 +1,129 @@
+\section{Universal series and reconstruction}\label{sec:universal}
+
+We use the Chern-zero, virtual-dimension-zero part of Pardon's
+semi-Fano universal curve-counting algebra \cite[Theorem 1.2]{Pardon}.
+With rational coefficients it is
+\[
+ H=\QQ[x_{g,m}:g\ge0,\ m\ge1],\qquad
+ I=(x_{g,m}),\qquad f_g(z)=\sum_{m\ge0}x_{g,m}z^m,
+ \quad x_{g,0}=1.
+\]
+Each element of $H$ is a polynomial; there is no completion in genus.
+The coproduct and division operations are algebra homomorphisms with
+\begin{equation}\label{eq:operations}
+ \Delta x_{g,m}=\sum_{a+b=m}x_{g,a}\otimes x_{g,b},\qquad
+ \rho_d x_{g,m}=\begin{cases}x_{g,m/d}&d\mid m,\\0&d\nmid m.
+ \end{cases}
+\end{equation}
+These are the Chern-zero specializations of
+\cite[Definitions 3.9, 3.12, Lemmas 4.12--4.13 and Theorem 7.6]{Pardon};
+the specialization also uses vanishing in negative virtual dimension.
+
+Let $\Gamma$ be an additive submonoid of a finite-rank torsion-free
+lattice, equipped with an integral degree positive off zero and having
+finite sublevel sets. The notation $H\llbracket\Gamma\rrbracket$ means
+completion in this degree. A series $A=\sum A_\gamma Q^\gamma$, with
+$A_0=1$ and $A_\gamma\in I$ for $\gamma\ne0$, is called compatible if
+\begin{equation}\label{eq:compatible}
+ \Delta A_\gamma=\sum_{\alpha+\eta=\gamma}A_\alpha\otimes A_\eta,
+ \qquad \rho_d A_\gamma=A_{\gamma/d}.
+\end{equation}
+The last coefficient is zero when $\gamma/d$ does not belong to
+$\Gamma$. This condition expresses compatibility with addition and
+integer multiplication of cycles.
+
+For a smooth projective Calabi--Yau threefold $V$ with torsion-free
+$H_2(V;\ZZ)$, let $\Gamma_V$ be its monoid of effective integral curve
+classes. An ample divisor gives the required degree. To see finiteness,
+represent a basis of the dual real homology space by smooth two-forms.
+Their bounded norms bound every coordinate of an effective cycle by a
+constant times its K\"ahler area. Bounded area thus bounds its integral
+class. The cycle locus $\mathscr C_\gamma(V)$ is compact and open and
+closed in the cycle space. Its characteristic function defines
+\[
+ U_{V,\gamma}=(V,1_{\mathscr C_\gamma(V)})\in H,
+ \qquad \Z_V=\sum_{\gamma\in\Gamma_V}U_{V,\gamma}Q^\gamma.
+\]
+Pulling back the characteristic function under cycle addition gives
+$\sum_{\alpha+\eta=\gamma}1_\alpha\boxtimes1_\eta$, and pullback under
+multiplication by $d$ gives $1_{\gamma/d}$. Thus $\Z_V$ is compatible.
+The constant term represents the empty cycle.
+
+Write $\lambda_h=\GW_{h,0}$ for connected, unmarked GW evaluation.
+Pardon's triangularity result \cite[Lemma 7.7]{Pardon} gives
+\begin{equation}\label{eq:detectors}
+ \lambda_h(I^2)=0,\qquad \lambda_h(x_{g,1})=0\ (g>h),
+ \qquad \lambda_h(x_{h,1})=1.
+\end{equation}
+For $\gamma\ne0$, $\lambda_h(U_{V,\gamma})=N^V_{h,\gamma}$.
+Contracted components attached to a nonconstant connected stable map
+are included; wholly contracted connected components are excluded from
+the corresponding disconnected series.
+
+\begin{lemma}\label{lem:formal}
+Compatible series are determined by their connected evaluations in all
+classes and genera. Each has a unique factorization
+\begin{equation}\label{eq:factor}
+ A=\prod_{\gamma\ne0,\,g\ge0}f_g(Q^\gamma)^{e_{\gamma,g}},
+ \qquad e_{\gamma,g}\in\QQ,
+\end{equation}
+with finitely many nonzero exponents at each class.
+\end{lemma}
+\begin{proof}
+Put $p_{g,m}=[z^m]\log f_g(z)$. These are polynomial coordinates on
+$H$, and are primitive. A primitive polynomial in these coordinates is
+additive, hence linear over $\QQ$. Moreover
+$\rho_dp_{g,m}=p_{g,m/d}$ if $d\mid m$, and zero otherwise. By applying
+$\rho_M$ at the largest multiplicity in a finite linear combination,
+\begin{equation}\label{eq:primitive}
+ \Prim(H)\cap\bigcap_{d>1}\ker\rho_d
+   =\bigoplus_{g\ge0}\QQ x_{g,1}.
+\end{equation}
+At a least-degree class where two compatible series differ, the
+difference is primitive and killed by all $\rho_d$, $d>1$. Its least
+nonzero genus coefficient is detected by \eqref{eq:detectors}.
+This proves reconstruction.
+
+For factorization, each coefficient of $L=\log A$ is primitive.
+Write $L_\gamma=\sum a_{\gamma;g,m}p_{g,m}$. Comparing the coefficient
+of $p_{g,1}$ in $\rho_mL_\gamma=L_{\gamma/m}$ gives
+$a_{\gamma;g,m}=a_{\gamma/m;g,1}$. Thus
+\[
+ L_\gamma=\sum_{m:\,\gamma/m\in\Gamma}\sum_g
+ e_{\gamma/m,g}p_{g,m},\qquad e_{\gamma,g}=a_{\gamma;g,1}.
+\]
+This proves both existence and uniqueness. Polynomiality and bounded
+degree make every displayed coefficient a finite sum.
+\end{proof}
+
+We also use the following support consequence. If $F\subset
+\Gamma\setminus\{0\}$ is closed under positive integer multiplication,
+and $\lambda_h((\log A)_\gamma)=0$ for every $h$ and $\gamma\notin F$,
+then $\Supp\log A\subset F$. Indeed, every proper divisor of a class
+outside $F$ is outside $F$. Induction on degree, followed by
+\eqref{eq:primitive} and \eqref{eq:detectors}, proves the assertion.
+Since $\lambda_h$ kills $I^2$, it is equivalent to test $A_\gamma$.
+
+\begin{lemma}\label{lem:pt}
+For every $g\ge0$,
+\[
+ \PT(x_{g,1})=z^{1-g}(1+O(z)).
+\]
+If $R\in\Prim(H)\cap\bigcap_{d>1}\ker\rho_d$ and
+$\PT(R)\in z\QQ[[z]]$, then $R=([z]\PT(R))x_{0,1}$.
+\end{lemma}
+\begin{proof}
+Choose a genus-$g$ curve $C$ and a degree-$g-1$ line bundle $L$ with
+$H^0(L)=H^1(L)=0$; for $g=0$ use $\mathcal O(-1)$.
+The bundle $L\oplus K_C L^{-1}$ has no cohomology and determinant
+$K_C$. Every compact degree-one cycle in its total space is the graph
+of a section, hence is $C$. Pardon's definition of $x_{g,1}$ can
+therefore be taken with no cut-down sections. Purity forces a curve
+scheme with this cycle to be $C$ itself. The minimal stable pair is
+$\mathcal O\to\mathcal O_C$, at Euler characteristic $1-g$; its
+moduli space is a smooth point, with virtual count $+1$.
+This proves the leading term. By \eqref{eq:primitive}, $R$ is a finite
+sum of $x_{g,1}$. Its largest genus would contribute a unique lowest
+power of $z$. All positive genera therefore vanish under the stated
+lower bound.
+\end{proof}

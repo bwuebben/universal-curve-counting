@@ -1,0 +1,157 @@
+\section{The primitive genus-three count}\label{sec:pairs}
+
+Put $D=3s+4f$ on $F\simeq\FF_1$. The intersection numbers are
+\[
+ s^2=-1,\quad sf=1,\quad f^2=0,\quad K_F=-2s-3f,
+ \qquad D^2=15,\quad K_FD=-11.
+\]
+Thus $p_a(D)=3$. In the presentation $F=\Bl_p\PP^2$,
+$D=4H-E_p$; consequently
+\begin{equation}\label{eq:linear-system}
+ h^0(F,\mathcal O_F(D))=5+4+3+2=14,\qquad |D|\simeq\PP^{13}.
+\end{equation}
+We must control all stable pairs in class $\alpha$, including
+curves with nonreduced structure transverse to $F$.
+
+\subsection{A surface inequality}
+For $a,b\ge0$, the Euler characteristic of a divisor of class
+$as+bf$ is
+\begin{equation}\label{eq:phi}
+ \phi(a,b)=\frac{a(a+1)}2+b(1-a),
+ \qquad \phi(3,4)=-2.
+\end{equation}
+This follows from the surface Riemann--Roch formula
+$\chi(\mathcal O_C)=-C(C+K_F)/2$.
+
+\begin{lemma}\label{lem:split}
+If $\sum_i(a_i,b_i)=(3,4)$ is a sum of at least two nonzero
+pairs of nonnegative integers, then $\sum_i\phi(a_i,b_i)\ge0$.
+\end{lemma}
+\begin{proof}
+Partition the positive $a_i$'s. If the partition is $(3)$,
+let $t\ge1$ be the total $b$-coefficient on the other terms.
+The sum is $-2+3t\ge1$. For the partition $(2,1)$, write
+$b_A,b_B$ for the two $b$-coefficients and $t$ for the remaining
+total. The sum is $4-b_A+t=b_B+2t\ge0$.
+For $(1,1,1)$ the sum is $3+t\ge3$. These are all possibilities.
+\end{proof}
+
+\subsection{Transverse thickenings}
+\begin{proposition}\label{prop:minimum}
+Every pure one-dimensional Cohen--Macaulay subscheme $Z\subset Y$
+of class $\alpha$ satisfies $\chi(\mathcal O_Z)\ge-2$.
+Equality forces $Z$ to be a divisor in $|D|$ on $F$, with its
+scheme structure contained in $F$.
+\end{proposition}
+\begin{proof}
+The cycle of $Z$ is supported on $F$ by Proposition~\ref{prop:support}.
+The filtration by powers of its ideal $I_F$ is finite. Since
+$N_{F/Y}=K_F$, its graded quotients have the form
+\begin{equation}\label{eq:layers}
+ G_j=I_F^j\mathcal O_Z/I_F^{j+1}\mathcal O_Z
+ \simeq K_F^{-j}\otimes(\mathcal O_F/J_j)
+\end{equation}
+for ideal sheaves $J_j\subset\mathcal O_F$. On the smooth surface,
+the divisorial hull of $J_j$ is $\mathcal O_F(-D_j)$ for an
+effective divisor $D_j$. The quotient
+$\mathcal O_F(-D_j)/J_j$ has finite length $\ell_j\ge0$.
+Additivity of Euler characteristic gives
+\begin{equation}\label{eq:layer-chi}
+ \chi(G_j)=\chi(\mathcal O_{D_j})-jK_FD_j+\ell_j,
+ \qquad\sum_j[D_j]=[D].
+\end{equation}
+The last equality holds in the divisor-class group of $F$, since
+its two coefficients are detected by $H_2,H_3$. Each twist
+$-jK_FD_j$ is nonnegative because $-K_F$ is ample.
+
+If at least two $D_j$ are nonzero, Lemma~\ref{lem:split} shows
+$\chi(\mathcal O_Z)\ge0$. Otherwise there is exactly one
+nonzero divisorial layer. At the generic point of every component,
+a nonzero higher layer requires a nonzero zeroth layer, so the
+unique divisorial layer must be the zeroth one. Then
+$I_F\mathcal O_Z$ is supported at finitely many points.
+As a subsheaf of the pure sheaf $\mathcal O_Z$, it is zero.
+Thus $Z$ is contained in $F$ scheme-theoretically. A pure curve
+on a smooth surface is an effective Cartier divisor, so
+$Z\in|D|$ and $\chi(\mathcal O_Z)=-2$.
+This also excludes a transverse thickening confined to finitely
+many points, which cycle support alone would not detect.
+\end{proof}
+
+For a stable pair $\mathcal O_Y\to\mathcal F$, its image is
+$\mathcal O_Z$ for a pure curve and its cokernel is
+zero-dimensional. The exact sequence
+\[
+ 0\longrightarrow\mathcal O_Z\longrightarrow\mathcal F
+ \longrightarrow Q\longrightarrow0
+\]
+therefore gives $\chi(\mathcal F)\ge-2$. At equality,
+$Q=0$ and $Z\in|D|$.
+
+\subsection{The minimal moduli scheme}
+\begin{proposition}\label{prop:pt-count}
+The stable-pair moduli space $P_{-2}(Y,\alpha)$ is
+scheme-theoretically $\PP^{13}$. Its virtual count is $-14$, and
+$P_n(Y,\alpha)$ is empty for $n<-2$.
+\end{proposition}
+\begin{proof}
+The set-theoretic assertions follow from Proposition~\ref{prop:minimum}.
+Every pair section at Euler characteristic $-2$ is surjective.
+Fiberwise surjectivity and Nakayama's lemma identify the pair
+functor with the corresponding Hilbert functor. The surface divisors
+give a closed immersion $|D|\hookrightarrow P_{-2}(Y,\alpha)$
+which exhausts the closed points.
+
+For every $C\in|D|$, including nonreduced divisors, the normal
+sequence for the regular embeddings $C\subset F\subset Y$ is
+\begin{equation}\label{eq:normal}
+ 0\longrightarrow\mathcal O_C(D)\longrightarrow N_{C/Y}
+ \longrightarrow K_F|_C\longrightarrow0.
+\end{equation}
+We have $H^0(F,K_F)=0$ and
+\[
+ H^1(F,K_F-D)=H^1(F,D)^*=0,
+\]
+by Serre duality and Kodaira vanishing, since
+$D-K_F=5s+7f$ is ample. Restriction of $K_F$ to $C$ therefore
+has no sections. Rationality of $F$ and \eqref{eq:linear-system}
+give $h^0(\mathcal O_C(D))=13$. By \eqref{eq:normal} the
+ambient Hilbert tangent space has dimension thirteen at every
+point of the closed $\PP^{13}$. Its local dimension is at least
+thirteen, so its local rings are regular of dimension thirteen.
+The closed immersion is consequently an isomorphism.
+
+The Calabi--Yau stable-pair obstruction theory is symmetric. On a
+smooth proper moduli space of dimension $r$ its virtual degree is
+$(-1)^r\chi_{\mathrm{top}}$ \cite[p.~3]{PT}. Hence
+\begin{equation}\label{eq:minus-fourteen}
+ P_{-2,\alpha}=(-1)^{13}\chi_{\mathrm{top}}(\PP^{13})=-14.
+\end{equation}
+\end{proof}
+
+\subsection{Passing to the connected coefficient}
+Taking the logarithm of the geometric PT series adds products
+over at least two nonzero effective summands of $\alpha$ to its
+coefficient at $\alpha$. Each constituent cycle lies in $F$.
+Collect the divisorial layers \eqref{eq:layers} of all constituent
+curves. They give at least two nonzero effective terms with total
+class $D$. Lemma~\ref{lem:split} and \eqref{eq:layer-chi} show
+that the sum of their Euler characteristics is nonnegative.
+The twists, zero-dimensional torsion and pair cokernels only
+increase this sum. Thus none of these lower products contributes
+a negative power of the PT variable $z$.
+
+It follows that the connected coefficient has no term below
+$z^{-2}$ and has coefficient $-14$ at $z^{-2}$. By primitivity,
+Lemma~\ref{lem:factor} and \eqref{eq:pt-one} give exactly
+\begin{equation}\label{eq:primitive-pt}
+ [Q^\alpha]\log\PT(\Z_Y)
+ =\sum_{g\ge0}e_{\alpha,g}z^{1-g}(1+z)^{2g-2}.
+\end{equation}
+This sum has finite genus support. Its largest nonzero genus
+contributes a unique lowest Laurent power, with coefficient one.
+Consequently
+\begin{equation}\label{eq:primitive-count}
+ e_{\alpha,g}=0\ (g>3),\qquad
+ e_{\alpha,3}=c_{\alpha,3}=-14.
+\end{equation}

@@ -1,0 +1,32 @@
+{
+  "scope": "Exact arithmetic only; geometric and virtual-class proofs are in Paper 2.",
+  "variable": "w=2-r-r^-1; PT z=-r",
+  "degree_three_scalar_characteristic_coefficients": [
+    "1",
+    "-w**3*(w**2 + 50*w + 81)",
+    "4*w**6*(w - 6)*(w**2 + 54*w - 243)/3",
+    "-4*w**9*(w - 4)*(w - 3)**2*(w**2 + 54*w - 243)/3"
+  ],
+  "scalar_F2_degree_three": "w**5 + 50*w**4 + 81*w**3",
+  "scalar_F3_degree_three": "w**10 + 292*w**9/3 + 2534*w**8 + 9612*w**7 + 2673*w**6",
+  "connected_difference_base_genus_two": "2*w**6 - 20*w**5 + 120*w**4",
+  "connected_difference_base_genus_three": "-2*w**12 + 40*w**11 - 332*w**10 + 4720*w**9/3 - 1136*w**8 + 14448*w**7",
+  "scalar_local_PT_z_minus_9": "352/3",
+  "F1_class_s_f": [
+    3,
+    4
+  ],
+  "nontrivial_effective_decompositions_checked": 56,
+  "minimum_sum_surface_chi_over_nontrivial_decompositions": 0,
+  "surface_curve_chi": -2,
+  "linear_system_dimension": 13,
+  "signed_projective_space_euler": -14,
+  "primitive_divisor_pairing_H3_minus_H2": 1,
+  "geometric_exponent_integer_shift": "66080/3",
+  "geometric_exponent_fractional_part": "2/3",
+  "input_sha256": {
+    "checks/local_curve_degree_three.py": "4eee3defda9ce0801e505ee87d7dac878d0316288925ee960c69acbecbeb2952",
+    "checks/degree_three_quotient_check.py": "93476603b9f70e3e09b47caef7b14717a86678d1a6e351db73944d4a1c354d27",
+    "evidence/x9-contracted-support-certificate.json": "b1d81fc154bf189ca9250a84038288e5197d445b849c96eea0c667eaadc71513"
+  }
+}

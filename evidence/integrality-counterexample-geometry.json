@@ -1,0 +1,105 @@
+{
+  "scope": "Toric arithmetic only; support and smooth hypersurface interpretation require the proof.",
+  "strict_support_function": [
+    10100091,
+    10101101,
+    10093030,
+    10099085,
+    10092023,
+    10097069,
+    10091016,
+    10094044,
+    10098081,
+    10084965,
+    10086984
+  ],
+  "minimum_off_cone_slack": 5047,
+  "maximal_cones_checked_unimodular": 29,
+  "nef_lifts_H1_through_H6": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      -1,
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      2,
+      2,
+      -1,
+      -1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      4,
+      4,
+      -3,
+      -2,
+      2,
+      1
+    ],
+    [
+      0,
+      0,
+      2,
+      0,
+      0,
+      5,
+      4,
+      -3,
+      -2,
+      2,
+      1
+    ],
+    [
+      0,
+      0,
+      2,
+      0,
+      0,
+      5,
+      5,
+      -3,
+      -2,
+      2,
+      1
+    ]
+  ],
+  "polytope_vertex_lattice_basis_indices": [
+    0,
+    1,
+    3,
+    4
+  ],
+  "primitive_pairing": 1
+}
