@@ -21,9 +21,10 @@ with LaTeX sources and reproducible exact calculations.
    [abstract and citation](https://bwuebben.github.io/papers/antidiagonal-universal-curve-counting/).
    Assuming Pardon's universal Gromov–Witten evaluation for analytic families,
    the balanced antidiagonal local factors give a unique product with integral
-   elementary-cluster exponents on smooth projective Calabi–Yau threefolds with
-   torsion-free second homology. A stable-pair argument gives a second proof
-   of exponent integrality.
+   elementary-cluster exponents indexed by effective classes in full integral
+   homology on every smooth projective Calabi–Yau threefold. The cluster
+   evaluation characterizes the compatible universal factor, and agreement
+   in degree two forces the splitting degrees to be balanced.
 
 Read Paper 1 before Paper 2 for the transition setting. The counterexample paper
 can also be read independently. Paper 3 returns to the same compact series and compares the two choices of local factors.
@@ -32,7 +33,7 @@ Zenodo archives and current editions:
 
 - [Conifold transitions](https://doi.org/10.5281/zenodo.23750046) · [edition 3.0](https://doi.org/10.5281/zenodo.24433173).
 - [Integrality counterexample](https://doi.org/10.5281/zenodo.23750048) · [edition 3.0](https://doi.org/10.5281/zenodo.24433174).
-- [Antidiagonal local curves](https://doi.org/10.5281/zenodo.24432700) · [edition 1.0](https://doi.org/10.5281/zenodo.24432701).
+- [Antidiagonal local curves](https://doi.org/10.5281/zenodo.24432700) · [edition 2.0, revised 22 November 2026](https://doi.org/10.5281/zenodo.24447953).
 
 The 21 November revision of the conifold and counterexample papers supplies Zenodo DOIs for the author’s cited preprints.
 BibTeX citations are in [CITATION.bib](CITATION.bib).

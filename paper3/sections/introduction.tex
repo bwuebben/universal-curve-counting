@@ -4,13 +4,21 @@ Let $C$ be a smooth projective curve of genus $g$ and let $Y\to C$ be
 a rank-two vector bundle with determinant $K_C$. Two circle actions
 on the total space give different answers to a question about
 integrality. Scalar multiplication is intrinsic to the bundle.
-If the bundle splits, one can instead act on one summand by $t$ and on
-the other by $t^{-1}$. This antidiagonal action preserves the
-holomorphic volume form of $Y$. For a splitting of degrees
+For a splitting into two lines the fiber-scaling torus acts on a
+holomorphic volume form by pullback with character $(s,t)\mapsto st$.
+Its kernel is the antidiagonal torus. Up to inversion its only faithful
+one-parameter parametrization has weights $(1,-1)$. For a splitting of degrees
 $(g-1,g-1)$, called \emph{balanced}, Bryan and Pandharipande computed
-its Gromov--Witten series \cite[Corollary~7.3]{BP}. Ionel and Parker
-identified the logarithm of that series with the connected
-contribution of an elementary cluster \cite[Proposition~3.3]{IP}.
+the antidiagonal Gromov--Witten series \cite[Corollary~7.3]{BP}.
+The same opposite weights occur in the normal operator of an elementary
+cluster. In the spin model of Ionel and Parker the normal operator
+is the direct sum of two copies of a real Cauchy--Riemann operator.
+Real rotations of these copies commute with that operator. In the
+fiber coordinates $v_1+i v_2$ and $v_1-i v_2$ the rotations have
+characters $t$ and $t^{-1}$. In the obstruction-bundle calculation,
+specializing to these weights gives the Chern class signs of the dual
+index bundle and hence the elementary-cluster contribution
+\cite[Propositions~3.2--3.3, (3.2)--(3.3)]{IP}.
 
 Pardon associates a universal class to each compact open-and-closed
 locus in the space of one-cycles on a complex threefold.
@@ -25,7 +33,8 @@ $\ZZ+2/3$. It leaves open whether the elementary local series
 themselves have geometric representatives in the universal algebra.
 We construct such representatives using the antidiagonal action.
 
-Write $H$ for the above rational algebra. For a smooth projective
+Write $H$ for the Chern-zero, virtual-dimension-zero part of
+Pardon's rational semi-Fano algebra. For a smooth projective
 Calabi--Yau threefold $X$ over $\CC$, let $\Gamma_X$ be its monoid of
 effective integral curve classes. We use the convention
 $K_X\simeq\cO_X$ and $H^1(X,\cO_X)=H^2(X,\cO_X)=0$.
@@ -53,8 +62,7 @@ let $L$ be a line bundle of degree $g-1$ on $C$.
 The antidiagonal action on $L\oplus(K_C\otimes L^{-1})$ defines
 classes $a_{g,m}\in H$ for $m\geq 1$ which depend only on $g$ and
 $m$. Put $A_g(q)=1+\sum_{m\geq1}a_{g,m}q^m$.
-For every smooth projective Calabi--Yau threefold $X$ with
-torsion-free $H_2(X;\ZZ)$,
+For every smooth projective Calabi--Yau threefold $X$,
 \begin{equation}\label{eq:main}
  \Z_X=\prod_{\beta\in\Gamma_X\setminus\{0\}}\prod_{g\geq0}
              A_g(Q^\beta)^{c_{\beta,g}(X)} .
@@ -76,8 +84,12 @@ these functions can be normalized for either sign of the weight.
 In the coproduct calculation the two summands of a cycle lie over
 independent Borel bases. The diagonal of those bases has just one
 K\"unneth summand that survives in virtual dimension zero.
-These facts yield geometric local factors whose numerical
-evaluations determine them by reconstruction \cite[\S2]{Transition}.
+Reconstruction identifies the resulting factor as the unique series
+compatible with both operations whose evaluation is the elementary
+cluster series (Corollary~\ref{cor:characterization}). For compact $X$
+we keep the full class in $H_2(X;\ZZ)$. When several effective classes
+have the same $d$-fold multiple, pullback under multiplication by $d$
+sums their contributions.
 
 Sections~\ref{sec:local} and~\ref{sec:operations} construct the classes
 and prove their compatibility with cycle operations independently of the

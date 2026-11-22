@@ -65,7 +65,22 @@ $m(2-2g+\deg L_++\deg L_-)=0$. Formula~\eqref{eq:hook} now
 follows from \cite[Corollary~7.3]{BP}.
 \end{proof}
 
-To pass from this evaluation to a class in $H$, we recall the
+The degree-two term distinguishes the balanced degrees among all
+splittings with determinant $K_C$. Indeed, take line degrees
+$g-1+\ell,g-1-\ell$ and retain the antidiagonal action. Write
+$E_{g,\ell}$ for its disconnected residue series, so $E_{g,0}=E_g$.
+In the formula of \cite[Corollary~7.2]{BP} the change of degrees in
+degree two multiplies the two partition contributions by
+$e^{i\ell u}$ and $e^{-i\ell u}$. Indeed, the partitions $(2)$ and
+$(1,1)$ have opposite total contents $\pm1$ and the same hook
+lengths, and the sign in degree two is $(-1)^{2\ell}=1$. Thus
+\begin{equation}\label{eq:balance}
+ [q^2]E_{g,\ell}=\cos(\ell u)\,[q^2]E_g .
+\end{equation}
+The balanced coefficient is a nonzero Laurent series. Equality
+with the elementary-cluster coefficient therefore forces $\ell=0$.
+
+To pass from this evaluation to a class in $H$, we extend the
 reconstruction argument of \cite[\S2]{Transition}. Write
 $x_{h,j}=x_{h,j,0}$ for Pardon's scalar generators,
 $x_{h,0}=1$, and set
@@ -79,16 +94,21 @@ Theorem~7.6]{Pardon} give \eqref{eq:operations} for $x_{h,m}$.
 Thus $p_{h,j}$ is primitive for $\Delta$, and $\rho_d p_{h,j}$
 is $p_{h,j/d}$ if $d\mid j$ and zero otherwise.
 
-Let $\Gamma$ be a submonoid of a torsion-free lattice, with positive
-integral degree off zero and finite sublevel sets. Call a series
+Let $\Gamma$ be a submonoid of a finitely generated abelian group with
+an additive degree on $\Gamma$, positive and integral off zero, and
+with finite sublevel sets. Complete the monoid ring in this degree.
+Call a series
 $U=\sum_\beta U_\beta Q^\beta$ \emph{compatible} if $U_0=1$, its
 other coefficients lie in the augmentation ideal of $H$, and
 \begin{equation}\label{eq:compat}
  \Delta U_\beta=\sum_{\gamma+\eta=\beta}U_\gamma\otimes U_\eta,
- \qquad \rho_d U_\beta=U_{\beta/d}.
+ \qquad \rho_d U_\beta=\sum_{\substack{\gamma\in\Gamma\\ d\gamma=\beta}}U_\gamma .
 \end{equation}
-Coefficients outside $\Gamma$, including those at nonexistent
-integral roots, are understood to be zero.
+The second identity says that $\rho_d U=\psi_d U$, where
+$\rho_d$ acts on coefficients and $\psi_d$ substitutes
+$Q^\gamma\mapsto Q^{d\gamma}$. The latter is a continuous ring
+endomorphism even when multiplication by $d$ identifies distinct
+classes. The coefficient at $\beta$ sums all their contributions.
 
 \begin{lemma}\label{lem:reconstruction}
 A compatible series is determined by its disconnected
@@ -106,23 +126,45 @@ such a polynomial detects all its coefficients at $j$. Set
 $w=(2\sin(u/2))^2$. The scalar degree-one evaluations are
 $\GW(x_{h,1})=w^{h-1}$ by the degree-one local formula
 \cite[\S8]{BP}. These functions are linearly independent by their
-distinct lowest powers of $u$. At a first class of difference
-between two compatible series, their difference is just such an
-$R$ by \eqref{eq:compat}. Equal evaluations force $R=0$.
+distinct lowest powers of $u$. If two compatible series differ,
+choose a class $\beta$ of least degree at which they differ.
+Every decomposition of $\beta$ into two nonzero summands uses
+lower degrees. The first identity in \eqref{eq:compat} therefore
+makes the difference at $\beta$ primitive. For $d>1$ each root
+$d\gamma=\beta$ has degree $\deg(\beta)/d$, so the second identity
+kills the difference under $\rho_d$. Equal evaluations force it
+to vanish.
 
 For the expansion, every coefficient of $\log U$ is primitive.
-Write it as $\sum_{h,j}b_{\beta;h,j}p_{h,j}$. Taking the
-$p_{h,1}$ coefficient of $\rho_j(\log U)_\beta$ gives
-$b_{\beta;h,j}=b_{\beta/j;h,1}$. Hence
-$\log U=\sum_{\beta,h}b_{\beta;h,1}\log f_h(Q^\beta)$.
-Each coefficient in $H$ is a polynomial, which gives finite genus
-support. Exponentiating proves existence and uniqueness.
+Indeed the coproduct identity gives $\Delta U=(U\otimes1)(1\otimes U)$
+with one common monoid variable, so taking the logarithm gives the
+primitive identity coefficientwise. Write
+$[Q^\beta]\log U=\sum_{h,j}b_{\beta;h,j}p_{h,j}$. Since $\rho_j$
+and $\psi_j$ commute with logarithms, comparison of the $p_{h,1}$
+coefficients gives
+\[
+ b_{\beta;h,j}=\sum_{j\gamma=\beta} b_{\gamma;h,1}.
+\]
+This is exactly the $p_{h,j}Q^\beta$ coefficient of
+$\sum_{\gamma\ne0,h}b_{\gamma;h,1}\log f_h(Q^\gamma)$.
+The sums are finite in each degree, because positive-class degrees
+are at least one and each coefficient in $H$ is a polynomial.
+Exponentiating gives the expansion. Its exponents are unique since
+$p_{h,1}Q^\gamma$ in the logarithm recovers $b_{\gamma;h,1}$.
 \end{proof}
 
-For any two balanced models of the same genus, Proposition~\ref{prop:operations}
-gives compatible series on $\Gamma=\mathbb N$.
-Proposition~\ref{prop:evaluation} gives the same evaluation for both.
-By Lemma~\ref{lem:reconstruction} their coefficients agree in $H$.
-This proves the independence asserted in Theorem~\ref{thm:main},
-including independence under interchange of the line summands.
-We now write $a_{g,m}$ and $A_g$ for these classes and series.
+\begin{corollary}\label{cor:characterization}
+Assume the universal Gromov--Witten evaluation for analytic families.
+For each $g$ there is exactly one compatible series in $H\llbracket q\rrbracket$
+whose disconnected evaluation is the contribution of a genus-$g$
+elementary cluster. Every balanced antidiagonal model of genus $g$
+represents this series.
+\end{corollary}
+\begin{proof}
+Propositions~\ref{prop:operations} and~\ref{prop:evaluation} give
+existence, since the elementary-cluster contribution is $E_g$
+\cite[Proposition~3.3]{IP}. Lemma~\ref{lem:reconstruction} with
+$\Gamma=\mathbb N$ gives uniqueness. In particular the coefficients
+are independent of the curve, the line bundle, and the order of
+the two summands. We denote them by $a_{g,m}$ and the series by $A_g$.
+\end{proof}

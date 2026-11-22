@@ -22,14 +22,17 @@ $f_g(Q^\beta)$ in the scalar factorization of $\Z_X$, and put
 \[
  F_g=\GW(f_g),\qquad K_g=\log F_g,\qquad J_g=\log E_g .
 \]
-At an effective class $\alpha$ primitive in $H_2(X;\ZZ)$, the
-multiplicity-one terms give $e_{\alpha,g}=c_{\alpha,g}$. The only
-proper integral divisor of $3\alpha$ is $\alpha$. Comparison of
-the two connected series at this class gives
+Let $\alpha$ be an effective class whose image in
+$H_2(X;\ZZ)/\mathrm{tors}$ is primitive. If $d\gamma=3\alpha$ with
+$d>1$, passage to the free quotient gives $d=3$. The effective
+roots $\gamma$ all have the same primitive image as $\alpha$, so
+they have no proper integral roots and $e_{\gamma,g}=c_{\gamma,g}$.
+Comparison of the two connected series at $3\alpha$ gives
 \[
  \sum_h(c_{3\alpha,h}-e_{3\alpha,h})w^{h-1}
-       =\sum_g c_{\alpha,g}[q^3](K_g-J_g).
+       =\sum_{3\gamma=3\alpha}\sum_g c_{\gamma,g}[q^3](K_g-J_g),
 \]
+where the sum is over effective roots.
 The scalar local calculation of \cite[\S3]{Counterexample} gives
 \begin{align*}
  [q^3](K_2-J_2)&=120w^4-20w^5+2w^6,\\
@@ -44,14 +47,16 @@ Passing to the logarithmic difference subtracts the quadratic
 cross term $w^2(24w^5-2w^6)$. For $g=0,1$ the local series
 agree, and for $g\ge4$ their cubic difference is
 $O(u^{6(g-1)+2})$ \cite[\S2]{Counterexample}. Thus only the
-genus-three row contributes to $w^9$. This recovers
+genus-three row contributes to $w^9$. Taking this coefficient gives
 \begin{equation}\label{eq:three}
- e_{3\alpha,10}=c_{3\alpha,10}-\tfrac{4720}{3}c_{\alpha,3}.
+ e_{3\alpha,10}=c_{3\alpha,10}
+       -\tfrac{4720}{3}\sum_{3\gamma=3\alpha}c_{\gamma,3}.
 \end{equation}
 
 On the smooth projective toric hypersurface of \cite{Counterexample}
 there is a first Hirzebruch surface with negative section $s$ and
-ruling fiber $f$. The class $\alpha=3s+4f$ is primitive. The
+ruling fiber $f$. The group $H_2(X;\ZZ)$ is torsion-free, and the
+class $\alpha=3s+4f$ is primitive, so the sum has only one term. The
 minimal stable-pair moduli space in this class is $\PP^{13}$,
 and the primitive genus-three coefficient is $c_{\alpha,3}=-14$.
 For this threefold \eqref{eq:three} becomes

@@ -1,18 +1,23 @@
 \section{The product expansion on a compact threefold}\label{sec:factor}
 
-Let $X$ satisfy the hypotheses of Theorem~\ref{thm:main}.
-For $\beta\in\Gamma_X$ denote the compact open-and-closed locus of
-cycles of class $\beta$ by $\mathscr C_\beta(X)$, and put
-$U_{X,\beta}=(X,1_{\mathscr C_\beta(X)})\in H$. The monoid
-$\Gamma_X$ satisfies the finiteness hypothesis of
-Lemma~\ref{lem:reconstruction}. Indeed, choose a K\"ahler form
-representing an integral polarization and smooth closed two-forms
-whose periods give coordinates on the free homology lattice.
-The period of each form on an effective cycle is bounded in absolute
-value by a constant times its K\"ahler area. Bounded ample degree
-therefore bounds a set of integral coordinates. Pullback of the
-characteristic functions under addition and multiplication of
-cycles gives \eqref{eq:compat} for $\Z_X=\sum_\beta U_{X,\beta}Q^\beta$.
+Let $X$ be a smooth projective Calabi--Yau threefold. Choose a
+projective embedding of $X$ and use its degree on $\Gamma_X$.
+Every nonempty effective cycle has positive degree. The integral
+homology class is locally constant on the cycle space
+\cite[\S2.1]{Pardon}. The Chow variety of cycles of each fixed degree
+is compact, so its image in the discrete group $H_2(X;\ZZ)$ is finite.
+Thus $\Gamma_X$ has finite degree sublevel sets, and the locus
+$\mathscr C_\beta(X)$ of cycles of class $\beta$ is compact and
+open and closed, including when different classes have the same
+image modulo torsion.
+
+Put $U_{X,\beta}=(X,1_{\mathscr C_\beta(X)})\in H$. Addition pulls the
+characteristic function back to the sum over decompositions of $\beta$.
+Under multiplication $D\mapsto dD$, the inverse image of
+$\mathscr C_\beta(X)$ is the disjoint union of the
+$\mathscr C_\gamma(X)$ over all effective $\gamma$ with $d\gamma=\beta$.
+Pullback of its characteristic function counts each locus once.
+This proves \eqref{eq:compat} for $\Z_X=\sum_\beta U_{X,\beta}Q^\beta$.
 
 \begin{proof}[Proof of Theorem~\ref{thm:main}]
 Use the symplectic form of the polarization. Proposition~3.3 and
@@ -26,15 +31,21 @@ Here $\log\GW(\Z_X)$ is the connected positive-class series. The
 integers in \eqref{eq:cluster} have finite genus support at each
 $\beta$ by \cite[Definition~3.45 and Theorem~3.50]{DIW},
 which gives finiteness for this elementary expansion itself.
-The comparison of virtual classes is applied in each class and
-connected genus; the semipositive description of the symplectic
-invariants is recalled in \cite[Remark~1.1]{IP}.
+Both the cluster expansion and the comparison of virtual classes
+are indexed by $H_2(X;\ZZ)$. In particular \cite[(8.9)]{IP} sums
+over every pair $(d,B)$ with $dB=A$ in integral homology. Siebert's
+comparison fixes the integral class and the connected genus. The
+semipositive description of the symplectic invariants is recalled
+in \cite[Remark~1.1]{IP}.
 
 Only classes of positive symplectic area can occur in the sum.
 Suppose $\beta$ has positive ample degree and is ineffective for
-the projective structure on $X$. Every proper integral divisor
-$\beta/d$ is then ineffective as well, since a positive multiple
-of an effective cycle is effective. Compare coefficients in
+the projective structure on $X$. Every $\gamma$ with $d\gamma=\beta$,
+$d>1$, is then ineffective, since a positive multiple of an
+effective cycle is effective. There are finitely many such pairs
+because $d$ divides $\deg(\beta)$ and the roots for a fixed $d$,
+if any, form a coset of the finite kernel of $d$ on $H_2(X;\ZZ)$.
+Compare coefficients in
 \eqref{eq:cluster}, inductively on the positive integral degree.
 The left side vanishes at $\beta$, and all terms from proper
 divisors already vanish. Thus
@@ -46,16 +57,27 @@ The right side of \eqref{eq:main} is now well defined in
 $H\llbracket\Gamma_X\rrbracket$. There are finitely many effective
 classes of bounded degree, finitely many contributing genera per
 class, and polynomial coefficients in each factor. Products and
-inverses preserve compatibility since $\Delta$ and $\rho_d$ are
-algebra maps. In particular,
-$\rho_d A_g(Q^\beta)=A_g(Q^{d\beta})$, where $\rho_d$ acts on the
-coefficients. Proposition~\ref{prop:evaluation} and
+inverses preserve the coproduct identity. By
+\eqref{eq:operations}, $\rho_d A_g(Q^\beta)=A_g(Q^{d\beta})
+=\psi_d A_g(Q^\beta)$. Both $\rho_d$ and $\psi_d$ are ring
+endomorphisms, so the full product also satisfies the root sum
+in \eqref{eq:compat}. Proposition~\ref{prop:evaluation} and
 \eqref{eq:cluster} identify the disconnected GW evaluation of
 the product with $\GW(\Z_X)$. Lemma~\ref{lem:reconstruction}
 identifies the universal series. Uniqueness follows upon evaluation
 from the unique elementary expansion, or by comparing the
 multiplicity-one term at a first class of difference.
 \end{proof}
+
+The elementary-cluster evaluation in Corollary~\ref{cor:characterization}
+is essential to the characterization. For example, fix $g\ne h$ and
+replace $A_g(q)$ by $A_g(q)A_h(q^2)$, keeping every other factor.
+The new series is compatible and has the same multiplicity-one
+coefficient as $A_g$. In the compact product its exponent stays
+$c_{\beta,g}$, and the exponent of $A_h(Q^\beta)$ becomes
+$c_{\beta,h}-\sum_{2\gamma=\beta}c_{\gamma,g}$. Thus this change
+preserves integer exponents in every class, although it changes the
+degree-two evaluation of the genus-$g$ factor.
 
 \subsection{Integrality from stable pairs}
 There is a second way to see why the choice of action in
