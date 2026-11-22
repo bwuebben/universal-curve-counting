@@ -1,0 +1,85 @@
+\section{Introduction}
+
+Let $C$ be a smooth projective curve of genus $g$ and let $Y\to C$ be
+a rank-two vector bundle with determinant $K_C$. Two circle actions
+on the total space give different answers to a question about
+integrality. Scalar multiplication is intrinsic to the bundle.
+If the bundle splits, one can instead act on one summand by $t$ and on
+the other by $t^{-1}$. This antidiagonal action preserves the
+holomorphic volume form of $Y$. For a splitting of degrees
+$(g-1,g-1)$, called \emph{balanced}, Bryan and Pandharipande computed
+its Gromov--Witten series \cite[Corollary~7.3]{BP}. Ionel and Parker
+identified the logarithm of that series with the connected
+contribution of an elementary cluster \cite[Proposition~3.3]{IP}.
+
+Pardon associates a universal class to each compact open-and-closed
+locus in the space of one-cycles on a complex threefold.
+Gromov--Witten and stable-pair invariants
+are evaluations of this class. His scalar equivariant local classes
+freely generate the Chern-zero, virtual-dimension-zero part of the
+rational semi-Fano algebra \cite[Theorem~1.2]{Pardon}. For the local
+series formed from those generators, Conjecture~1.4 of \cite{Pardon}
+predicts a product expansion with integer exponents. The compact
+example of \cite{Counterexample} has a scalar exponent in
+$\ZZ+2/3$. It leaves open whether the elementary local series
+themselves have geometric representatives in the universal algebra.
+We construct such representatives using the antidiagonal action.
+
+Write $H$ for the above rational algebra. For a smooth projective
+Calabi--Yau threefold $X$ over $\CC$, let $\Gamma_X$ be its monoid of
+effective integral curve classes. We use the convention
+$K_X\simeq\cO_X$ and $H^1(X,\cO_X)=H^2(X,\cO_X)=0$.
+The coefficient of $Q^\beta$ in the universal series $\Z_X$ is the
+class of the characteristic function of the compact cycle locus of
+class $\beta$; the constant term is $1$.
+We complete the monoid ring in degree against an ample divisor.
+Write $c_{\beta,g}(X)$ for the coefficient of the genus-$g$
+elementary cluster at class $\beta$ in the connected Gromov--Witten
+expansion \cite[Theorem~8.1]{IP}. It multiplies the logarithm of
+the genus-$g$ local hook series \eqref{eq:hook} evaluated at $Q^\beta$.
+
+For the identification of the local factors and the compact product
+formula we assume Pardon's universal Gromov--Witten evaluation
+\cite[\S\S3.4--3.5]{Pardon}. Its definition requires stable-map spaces
+over arbitrary separated submersions of reduced complex analytic
+spaces of relative dimension three. Pardon indicates how the
+construction for algebraic families should extend and notes that he
+knows no reference for this step \cite[Remark~1.8]{Pardon}.
+
+\begin{theorem}\label{thm:main}
+Assume the universal Gromov--Witten evaluation for analytic families.
+Let $C$ be a smooth connected projective curve of genus $g$ and
+let $L$ be a line bundle of degree $g-1$ on $C$.
+The antidiagonal action on $L\oplus(K_C\otimes L^{-1})$ defines
+classes $a_{g,m}\in H$ for $m\geq 1$ which depend only on $g$ and
+$m$. Put $A_g(q)=1+\sum_{m\geq1}a_{g,m}q^m$.
+For every smooth projective Calabi--Yau threefold $X$ with
+torsion-free $H_2(X;\ZZ)$,
+\begin{equation}\label{eq:main}
+ \Z_X=\prod_{\beta\in\Gamma_X\setminus\{0\}}\prod_{g\geq0}
+             A_g(Q^\beta)^{c_{\beta,g}(X)} .
+\end{equation}
+The exponents are unique, integral, and zero for all sufficiently
+large $g$ at each fixed $\beta$.
+\end{theorem}
+
+The integer exponents and their genus finiteness are known for the
+\emph{numerical} elementary expansion
+\cite[Theorem~8.1]{IP}, \cite[Theorem~3.50]{DIW}. The assertion of
+\eqref{eq:main} is the identity in $H\llbracket\Gamma_X\rrbracket$.
+The construction must therefore respect the operations on cycles
+before numerical evaluation. For a cycle of degree $m$ over $C$,
+the elementary symmetric functions of its two fiber projections
+have opposite weights. Their common vanishing over sufficiently
+many points of $C$ isolates $m[C]$. The relative Euler classes of
+these functions can be normalized for either sign of the weight.
+In the coproduct calculation the two summands of a cycle lie over
+independent Borel bases. The diagonal of those bases has just one
+K\"unneth summand that survives in virtual dimension zero.
+These facts yield geometric local factors whose numerical
+evaluations determine them by reconstruction \cite[\S2]{Transition}.
+
+Sections~\ref{sec:local} and~\ref{sec:operations} construct the classes
+and prove their compatibility with cycle operations independently of the
+family evaluations. The second integrality argument in
+Section~\ref{sec:factor} assumes the corresponding stable-pair evaluation.

@@ -1,0 +1,69 @@
+\section{Addition and multiplication of cycles}\label{sec:operations}
+
+The coproduct $\Delta$ in $H$ is defined by pullback under cycle
+addition; the operation $\rho_d$ is pullback under $D\mapsto dD$,
+for $d\geq1$ \cite[Definitions~3.9 and~3.12]{Pardon}. The two
+arguments of the coproduct are cycles on independent families of
+threefolds. In the Borel construction this distinction introduces
+the class of the diagonal in a product of two projective spaces.
+
+\begin{proposition}\label{prop:operations}
+For a fixed balanced pair $(C,L)$, write $a_m=a_m(C,L)$. Then
+\begin{equation}\label{eq:operations}
+ \Delta a_m=\sum_{s+t=m}a_s\otimes a_t,\qquad
+ \rho_d a_m=
+ \begin{cases}a_{m/d}&d\mid m,\\0&d\nmid m.\end{cases}
+\end{equation}
+\end{proposition}
+\begin{proof}
+The preimage of $Z_m$ under multiplication by $d$ is empty unless
+$d\mid m$. Otherwise pull the tuple of Lemma~\ref{lem:support}
+back to $Z_{m/d}$. The pulled-back functions have the same weights,
+with common zero $(m/d)[C]$. Naturality of the relative Thom class
+and Lemma~\ref{lem:stabilization} give the formula for $\rho_d$.
+
+For the coproduct fix $s+t=m$. Over the diagonal in $B_N^2$, addition
+gives a map from the common-base family of $Z_s\times Z_t$ to
+$Z_{m,N}$. In the two-base description of $\Delta$
+\cite[(4.17)--(4.21)]{Pardon}, the $(s,t)$ component is represented
+by pulling back $u_N(F)$ along addition and then applying the
+oriented Gysin map $\delta_{N!}$ over this diagonal. Its target is
+the independent product $Z_{s,N}\times Z_{t,N}$. We can take
+$|F|=N$ with common zero $m[C]$. The tuple pulled back along
+addition has common zero $(s[C],t[C])$, since both summands are
+effective cycles.
+
+Choose compactly supported cut-downs given by tuples $F_s,F_t$ on
+the two factors, of lengths $n_s,n_t$, and set $M=n_s+n_t$. On
+the common-base family their concatenation also has compact common
+zero set. The proof of Lemma~\ref{lem:stabilization}, applied to
+the diagonal action on $Z_s\times Z_t$, identifies its class at
+stage $M$ with the pulled-back class at stage $N$ after
+stabilization. We may make this substitution before applying the
+diagonal Gysin map. Indeed, for the simultaneous hyperplane
+inclusion $i$ the identity
+\[
+ (i\times i)_!\,\delta_{N!}=\delta_{N+1,!}\,i_!
+\]
+follows by composition of oriented embeddings on the bases.
+Hyperplane pushforward in each of the two independent bases
+preserves the image of the corresponding relative class.
+
+At stage $M$ the concatenated class on the diagonal is the
+restriction of $u_M(F_s)\boxtimes u_M(F_t)$. By the projection
+formula its diagonal pushforward is this external product times
+\[
+ [\delta_M(B_M)]=\sum_{i+j=M}h_1^ih_2^j .
+\]
+The two factors of the $(i,j)$ summand have relative cohomological
+degrees $2(n_s+i-M)$ and $2(n_t+j-M)$, whose sum is zero.
+A positive degree here is a negative virtual dimension. Its image
+in the semi-Fano algebra vanishes by \cite[Theorem~1.2]{Pardon},
+as in the proof of \cite[Theorem~7.6]{Pardon}. Consequently only
+$i=n_t$, $j=n_s$ survives. Multiplication by these powers of the
+hyperplane classes completes each tuple to length $M$ at stage
+$M$, giving $a_s\otimes a_t$ with coefficient one.
+An empty factor admits the empty tuple and the same argument, with
+any extra copies of $h$ represented by the Euler class of
+$\cO(1)$. Summation over $s+t=m$ proves \eqref{eq:operations}.
+\end{proof}

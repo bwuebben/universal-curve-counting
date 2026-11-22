@@ -1,0 +1,116 @@
+\section{The product expansion on a compact threefold}\label{sec:factor}
+
+Let $X$ satisfy the hypotheses of Theorem~\ref{thm:main}.
+For $\beta\in\Gamma_X$ denote the compact open-and-closed locus of
+cycles of class $\beta$ by $\mathscr C_\beta(X)$, and put
+$U_{X,\beta}=(X,1_{\mathscr C_\beta(X)})\in H$. The monoid
+$\Gamma_X$ satisfies the finiteness hypothesis of
+Lemma~\ref{lem:reconstruction}. Indeed, choose a K\"ahler form
+representing an integral polarization and smooth closed two-forms
+whose periods give coordinates on the free homology lattice.
+The period of each form on an effective cycle is bounded in absolute
+value by a constant times its K\"ahler area. Bounded ample degree
+therefore bounds a set of integral coordinates. Pullback of the
+characteristic functions under addition and multiplication of
+cycles gives \eqref{eq:compat} for $\Z_X=\sum_\beta U_{X,\beta}Q^\beta$.
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Use the symplectic form of the polarization. Proposition~3.3 and
+Theorem~8.1 of Ionel and Parker \cite{IP} and the projective
+comparison theorem of Siebert \cite[Theorem~0.1]{Siebert} give
+\begin{equation}\label{eq:cluster}
+ \log\GW(\Z_X)=
+    \sum_{\beta\ne0}\sum_{g\ge0}c_{\beta,g}(X)\log E_g(Q^\beta,u).
+\end{equation}
+Here $\log\GW(\Z_X)$ is the connected positive-class series. The
+integers in \eqref{eq:cluster} have finite genus support at each
+$\beta$ by \cite[Definition~3.45 and Theorem~3.50]{DIW},
+which gives finiteness for this elementary expansion itself.
+The comparison of virtual classes is applied in each class and
+connected genus; the semipositive description of the symplectic
+invariants is recalled in \cite[Remark~1.1]{IP}.
+
+Only classes of positive symplectic area can occur in the sum.
+Suppose $\beta$ has positive ample degree and is ineffective for
+the projective structure on $X$. Every proper integral divisor
+$\beta/d$ is then ineffective as well, since a positive multiple
+of an effective cycle is effective. Compare coefficients in
+\eqref{eq:cluster}, inductively on the positive integral degree.
+The left side vanishes at $\beta$, and all terms from proper
+divisors already vanish. Thus
+$\sum_g c_{\beta,g}(X) w^{g-1}=0$, using
+$[q]\log E_g(q,u)=w^{g-1}$. Linear independence gives
+$c_{\beta,g}(X)=0$ for every $g$.
+
+The right side of \eqref{eq:main} is now well defined in
+$H\llbracket\Gamma_X\rrbracket$. There are finitely many effective
+classes of bounded degree, finitely many contributing genera per
+class, and polynomial coefficients in each factor. Products and
+inverses preserve compatibility since $\Delta$ and $\rho_d$ are
+algebra maps. In particular,
+$\rho_d A_g(Q^\beta)=A_g(Q^{d\beta})$, where $\rho_d$ acts on the
+coefficients. Proposition~\ref{prop:evaluation} and
+\eqref{eq:cluster} identify the disconnected GW evaluation of
+the product with $\GW(\Z_X)$. Lemma~\ref{lem:reconstruction}
+identifies the universal series. Uniqueness follows upon evaluation
+from the unique elementary expansion, or by comparing the
+multiplicity-one term at a first class of difference.
+\end{proof}
+
+\subsection{Integrality from stable pairs}
+There is a second way to see why the choice of action in
+\eqref{eq:main} yields integer exponents. It uses the
+Gromov--Witten/stable-pair correspondence for $H$ and the
+form of the local hook series. We first obtain rational exponents
+with finite genus support without using the numerical
+cluster decomposition.
+
+By Lemma~\ref{lem:reconstruction} the compatible $A_g(q)$ is a
+product of rational powers of $f_h(q^d)$. Its degree-one evaluation
+is $w^{g-1}$. Thus the entire factor at $d=1$ is $f_g(q)$, by the
+independence of the powers $w^{h-1}$. All other factors have
+$d\geq2$. At each multiplicity $m$ this gives
+\begin{equation}\label{eq:triangular}
+ a_{g,m}=x_{g,m}+P_{g,m}\bigl(\{x_{h,j}:1\le j<m\}\bigr)
+\end{equation}
+with $P_{g,m}$ a finite rational polynomial. Induction on $m$
+inverts the substitution $x_{g,m}\mapsto a_{g,m}$. It is therefore
+an automorphism of the polynomial algebra $H$. The identities
+\eqref{eq:operations} show that it intertwines both the coproduct
+and each $\rho_d$. Apply Lemma~\ref{lem:reconstruction} to the
+inverse image of $\Z_X$, then apply the automorphism. This gives
+a product in the $A_g(Q^\beta)$ with rational exponents
+$n_{\beta,g}$ and finite genus support in every class.
+
+Write $z$ for the stable-pair variable. Pardon's Theorem~1.7
+\cite{Pardon}, extended by linearity over $\QQ$, identifies
+$\PT(a_{g,m})$ with the expansion at $z=0$ of the rational
+function $[q^m]E_g(q,u)$ under $e^{iu}=-z$. The identification
+is unambiguous since expansion at $e^{iu}=1$ determines a rational
+function. For a box of hook length $k$ one has
+\[
+ (2\sin(ku/2))^2=2-(-z)^k-(-z)^{-k}
+                 =-(-z)^{-k}(1-(-z)^k)^2 .
+\]
+This is a unit in $\ZZ((z))$. Hence every coefficient of
+$\PT(A_g(q))$ lies in $\ZZ((z))$, including when $g=0$ and
+the hook factors are inverted. The compact stable-pair invariants
+$\PT(U_{X,\beta})$ also lie in $\ZZ((z))$
+\cite[\S3.5]{Pardon}.
+
+Suppose all exponents in classes of smaller ample degree than
+$\beta$ are known to be integral. Divide the stable-pair series by
+the corresponding powers of the local factors. Their constant
+terms are one, so the residual series still has coefficients in
+$\ZZ((z))$. Its coefficient at $\beta$ is
+\begin{equation}\label{eq:residual}
+ \sum_g n_{\beta,g}\,z^{1-g}(1+z)^{2g-2},
+\end{equation}
+by the degree-one hook formula. In this finite sum the highest
+genus with nonzero exponent has the unique lowest Laurent power,
+and its local factor has leading coefficient one. The coefficient
+of that power is therefore the exponent itself. It is integral.
+Subtract its summand in \eqref{eq:residual} and continue in
+descending genus. This proves integrality for every $\beta$.
+Equation~\eqref{eq:cluster} identifies these integers as
+$c_{\beta,g}(X)$.

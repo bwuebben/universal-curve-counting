@@ -1,0 +1,127 @@
+\section{The antidiagonal local classes}\label{sec:local}
+
+Set $L_+=L$, $L_-=K_C\otimes L^{-1}$ and
+$Y=\Tot(L_+\oplus L_-)$. The torus acts trivially on $C$ and by
+$(v_+,v_-)\mapsto(tv_+,t^{-1}v_-)$ on the fibers. Denote by $Z_m$
+the space of compact effective one-cycles in $Y$ of degree $m$ over
+$C$. Every irreducible component maps finitely onto $C$. Indeed, an
+affine plane fiber contains no complete curve, and the projection
+of each compact component is proper. The space $Z_0$ is the point
+representing the empty cycle. Since $K_Y$ is trivial, all these
+cycles have Chern number zero and belong to the semi-Fano locus.
+
+\subsection{Symmetric functions on the fibers}
+For $p\in C$ the fiber intersection of $D\in Z_m$ is a multiset of
+$m$ points in $Y_p$. Project it to each of $L_{+,p}$ and $L_{-,p}$.
+For $1\leq j\leq m$ the $j$th elementary symmetric function of a
+projection gives an element
+\[
+ b_{\pm,j}(D)(p)\in L_{\pm,p}^{\otimes j}.
+\]
+These evaluations are continuous functions of $D$ by the
+fiber-intersection map of \cite[(4.15)]{Pardon}.
+
+\begin{lemma}\label{lem:support}
+For $m>0$, choose $1+\max\{0,m(g-1)\}$ distinct points of $C$.
+The common zero set of the functions $b_{\pm,j}$ evaluated at these
+points consists of $m[C]$. This cycle is also the unique fixed point
+of the circle on $Z_m$.
+\end{lemma}
+\begin{proof}
+The coefficients $b_{\pm,j}(D)$ are holomorphic sections on $C$.
+To see this across a branch point, normalize each irreducible
+component. Its finite map to the smooth base curve is flat. In a
+local trivialization of the line, the fiber coordinate acts by
+multiplication on the finite locally free direct image of the
+structure sheaf. Its characteristic polynomial records the projected
+branches with multiplicities. Take the product of these polynomials
+over the components, raising each to its cycle multiplicity. The
+$j$th coefficient, up to the sign $(-1)^j$, transforms as a
+section of $L_\pm^{\otimes j}$.
+
+Both line bundles have degree $g-1$. If all the chosen evaluations
+vanish, each coefficient vanishes identically by the degree bound.
+The two projected polynomials are thus $T^m$ on every fiber. All
+points of the multiset have both coordinates zero, which forces
+$D=m[C]$. Conversely $m[C]$ is a common zero. For a circle-fixed
+cycle the circle preserves each finite fiber multiset. Connectedness
+forces it to fix each point individually. The origin is the only
+fixed point of the fiber action.
+\end{proof}
+
+For later use, $Z_m$ is finite dimensional. Embed $Y$ in the bundle
+of lines in $\cO_C\oplus L_+\oplus L_-$. On the open chart $Y$
+the relative $\cO(1)$ is trivial. Tensoring it with a sufficiently
+ample line bundle pulled back from $C$ gives a projective
+polarization whose degree on $D$ is $m$ times its degree on the
+zero section. Thus $Z_m$ is the open subset of a fixed-degree
+projective Chow space parametrizing cycles disjoint from the divisor
+at infinity. This description gives the compact-cycle topology on
+that open set and the bounded dimension needed for equivariant
+localization.
+
+\subsection{The finite Borel construction}
+Write $B_N=\PP^N$, $h=c_1(\cO_{B_N}(1))$, and
+\[
+ Z_{m,N}=\big((\CC^{N+1}\setminus\{0\})\times Z_m\big)/\CC^\times
+        \longrightarrow B_N
+\]
+for the diagonal quotient. It is the relative degree-$m$ cycle
+space of the corresponding Borel family of local threefolds.
+Trivializing $L_\pm$ at each chosen point makes the tests of
+Lemma~\ref{lem:support} into functions of weights $+j$ and $-j$.
+A function $f$ of weight $r$ gives a section of the pullback of
+$\cO_{B_N}(r)$. Our sign convention follows from the quotient:
+the class of $(v,s)$ of weight one defines the functional on
+$\CC v$ taking $v$ to $s$.
+
+For any tuple $F=(f_1,\ldots,f_n)$ of equivariant functions of
+nonzero weights $r_i$ with compact common zero set, put
+\begin{equation}\label{eq:cut}
+ u_N(F)=\frac{1}{\prod_i r_i}\,
+    F^*\operatorname{Th}\!\left(\bigoplus_{i=1}^{n}\cO_{B_N}(r_i)\right)
+        \quad\text{in } H_c^{2n}(Z_{m,N};\QQ).
+\end{equation}
+Here the Thom class is taken relative to the complement of the
+zero section. Its pullback has support in the common zero set over
+$B_N$, which is compact. In particular the definition allows
+noncompact individual zero sets and needs no transversality. On
+forgetting supports the normalized Euler class of a single section
+is $c_1(\cO(r))/r=h$ for either sign of $r$.
+
+\begin{lemma}\label{lem:stabilization}
+The universal image of $u_N(F)$ depends only on $n-N$ for the given
+local model and degree.
+\end{lemma}
+\begin{proof}
+For the inclusion $i:B_N\hookrightarrow B_{N+1}$ of a hyperplane
+use the same symbol for the inclusion of Borel families.
+The class $u_{N+1}(F)$ restricts to $u_N(F)$, so the hyperplane
+Gysin map gives
+\[
+ i_!u_N(F)=h\,u_{N+1}(F)=u_{N+1}(F,f)
+\]
+for every additional function $f$ of nonzero weight. The second
+equality uses the compact support already supplied by $F$, which
+allows the last relative Euler class to be replaced by its ordinary
+class. The first equality is the projection formula for the complex
+normal line pulled back from the base. The product description
+locally over the base suffices even for a singular cycle space.
+
+These Gysin maps induce the stabilization of relative classes in
+\cite[(4.5)--(4.7)]{Pardon}. Given two tuples of lengths $n,n'$ at
+stages $N,N'$ with $n-N=n'-N'$, append the second tuple to the
+first and the first to the second. Both products now live at
+stage $N+n'=N'+n$, and the even Thom factors commute. Hence the
+images in the universal group coincide.
+\end{proof}
+
+Take $n=N$ in \eqref{eq:cut} and let $a_m(C,L)$ denote the image
+in Pardon's algebra. Such a tuple exists by Lemma~\ref{lem:support}.
+The oriented base has real dimension $2N$, so a compact class of
+degree $2n$ has relative degree $2n-2N$ \cite[Lemma~3.5]{Pardon}.
+The class $a_m(C,L)$ has virtual dimension and Chern number zero
+and therefore lies in $H$. In particular its expression in the
+scalar generators is a polynomial. The counit evaluates on the
+empty cycle, hence vanishes on $a_m(C,L)$ for $m>0$. We set
+$a_0(C,L)=1$, as given by the empty tuple at $N=0$.

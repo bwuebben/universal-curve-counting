@@ -1,0 +1,64 @@
+\section{Comparison with scalar local curves}\label{sec:comparison}
+
+The first discrepancy between the two actions can be read in
+$H$ itself. Equation~\eqref{eq:triangular}, or reconstruction in
+degree one, gives $a_{g,1}=x_{g,1}$. Thus the difference
+$a_{2,2}-x_{2,2}$ is primitive: the mixed coproduct term in
+each case is $x_{2,1}\otimes x_{2,1}$. It is killed by all
+$\rho_d$ with $d>1$ and hence is a finite linear combination of
+$x_{h,1}$. Each partition of two has hook lengths $1,2$. Its
+genus-two contribution to \eqref{eq:hook} is $w^2(4-w)$.
+At scalar weights the corresponding total is $8w^2$
+\cite[\S8]{BP}. The difference of the evaluations is $-2w^3$,
+which is the evaluation of $-2x_{4,1}$. It follows that
+\begin{equation}\label{eq:two}
+ a_{2,2}=x_{2,2}-2x_{4,1}.
+\end{equation}
+
+In degree three the change of local factors affects the integrality
+of compact product exponents. We give the comparison to fix the
+direction of the change. Let $e_{\beta,g}$ be the exponent of
+$f_g(Q^\beta)$ in the scalar factorization of $\Z_X$, and put
+\[
+ F_g=\GW(f_g),\qquad K_g=\log F_g,\qquad J_g=\log E_g .
+\]
+At an effective class $\alpha$ primitive in $H_2(X;\ZZ)$, the
+multiplicity-one terms give $e_{\alpha,g}=c_{\alpha,g}$. The only
+proper integral divisor of $3\alpha$ is $\alpha$. Comparison of
+the two connected series at this class gives
+\[
+ \sum_h(c_{3\alpha,h}-e_{3\alpha,h})w^{h-1}
+       =\sum_g c_{\alpha,g}[q^3](K_g-J_g).
+\]
+The scalar local calculation of \cite[\S3]{Counterexample} gives
+\begin{align*}
+ [q^3](K_2-J_2)&=120w^4-20w^5+2w^6,\\
+ [q^3](K_3-J_3)&=14448w^7-1136w^8+\tfrac{4720}{3}w^9
+                       -332w^{10}+40w^{11}-2w^{12}.
+\end{align*}
+For the second row the scalar disconnected coefficient is
+$2673w^6+9612w^7+2534w^8+(292/3)w^9+w^{10}$. The three
+antidiagonal partitions contribute $2U^2+V^2$, with
+$U=w^3(4-w)(3-w)^2$ and $V=w^3(3-w)^2$.
+Passing to the logarithmic difference subtracts the quadratic
+cross term $w^2(24w^5-2w^6)$. For $g=0,1$ the local series
+agree, and for $g\ge4$ their cubic difference is
+$O(u^{6(g-1)+2})$ \cite[\S2]{Counterexample}. Thus only the
+genus-three row contributes to $w^9$. This recovers
+\begin{equation}\label{eq:three}
+ e_{3\alpha,10}=c_{3\alpha,10}-\tfrac{4720}{3}c_{\alpha,3}.
+\end{equation}
+
+On the smooth projective toric hypersurface of \cite{Counterexample}
+there is a first Hirzebruch surface with negative section $s$ and
+ruling fiber $f$. The class $\alpha=3s+4f$ is primitive. The
+minimal stable-pair moduli space in this class is $\PP^{13}$,
+and the primitive genus-three coefficient is $c_{\alpha,3}=-14$.
+For this threefold \eqref{eq:three} becomes
+\[
+ e_{3\alpha,10}=c_{3\alpha,10}+\frac{66080}{3}.
+\]
+The antidiagonal exponent on the right is an integer by
+Theorem~\ref{thm:main}, while the scalar exponent on the left
+has fractional part $2/3$. Both products represent the same
+universal cycle series.

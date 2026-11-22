@@ -1,7 +1,7 @@
 # Universal curve counting
 
-Two preprints by [Bernd Johannes Wuebben](https://orcid.org/0009-0002-4588-3284),
-28 October 2026, with LaTeX sources and reproducible exact calculations.
+Preprints by [Bernd Johannes Wuebben](https://orcid.org/0009-0002-4588-3284),
+with LaTeX sources and reproducible exact calculations.
 
 1. **Universal curve counting under conifold transitions** — [PDF](paper/main.pdf),
    [source](paper/main.tex), [abstract and citation](https://bwuebben.github.io/papers/universal-conifold-counting/).
@@ -16,14 +16,23 @@ Two preprints by [Bernd Johannes Wuebben](https://orcid.org/0009-0002-4588-3284)
    exponent with fractional part `2/3`. The paper also proves integrality in
    classes of divisibility at most two. The counterexample concerns the specified
    scalar generators; the integer elementary expansion is an input to the proof.
+3. **Antidiagonal local curves and integral exponents in universal curve counting** —
+   [PDF](paper3/main.pdf), [source](paper3/main.tex),
+   [abstract and citation](https://bwuebben.github.io/papers/antidiagonal-universal-curve-counting/).
+   Assuming Pardon's universal Gromov–Witten evaluation for analytic families,
+   the balanced antidiagonal local factors give a unique product with integral
+   elementary-cluster exponents on smooth projective Calabi–Yau threefolds with
+   torsion-free second homology. A stable-pair argument gives a second proof
+   of exponent integrality.
 
 Read Paper 1 before Paper 2 for the transition setting. The counterexample paper
-can also be read independently. Both are preprints; arXiv submission is pending.
+can also be read independently. Paper 3 returns to the same compact series and compares the two choices of local factors.
 
 Archived versions: [Paper 1 — Zenodo:23750304](https://zenodo.org/records/23750304),
 [Paper 2 — Zenodo:23750305](https://zenodo.org/records/23750305).
 Version DOIs: `10.5281/zenodo.23750304` and `10.5281/zenodo.23750305`.
-Version 2 adds explicit code links in both manuscripts and aligns the reproduction
+Paper 3 is archived on [Zenodo](https://doi.org/10.5281/zenodo.24432700), edition [1.0](https://zenodo.org/records/24432701).
+Version 2 of Papers 1 and 2 adds explicit code links and aligns the reproduction
 command with the bundled inputs; mathematical content is unchanged.
 BibTeX citations are in [CITATION.bib](CITATION.bib).
 See the [Universal curve counting programme](https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting).
@@ -59,7 +68,7 @@ comparison theorems are given in the papers.
 
 ## Build the manuscripts
 
-Each manuscript is independent. From `paper/` or `paper2/`, run:
+Each manuscript is independent. From `paper/`, `paper2/`, or `paper3/`, run:
 
 ```sh
 latexmk -pdf main.tex

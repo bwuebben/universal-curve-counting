@@ -31,6 +31,22 @@
       "website_url": "https://bwuebben.github.io/papers/universal-integrality-counterexample/",
       "version": "2.0",
       "revision_note": "Adds the public code repository link; mathematical content unchanged."
+    },
+    {
+      "title": "Antidiagonal local curves and integral exponents in universal curve counting",
+      "author": "Bernd Johannes Wuebben",
+      "orcid": "0009-0002-4588-3284",
+      "date": "2026-11-11",
+      "status": "Preprint",
+      "pdf": "paper3/main.pdf",
+      "sha256": "cb197837bea1731ef44018886ec4cee4d136b9828d612c247e21734fe8e98015",
+      "pages": 9,
+      "doi": "10.5281/zenodo.24432700",
+      "concept_doi": "10.5281/zenodo.24432700",
+      "version_doi": "10.5281/zenodo.24432701",
+      "archive_url": "https://doi.org/10.5281/zenodo.24432700",
+      "website_url": "https://bwuebben.github.io/papers/antidiagonal-universal-curve-counting/",
+      "version": "1.0"
     }
   ]
 }

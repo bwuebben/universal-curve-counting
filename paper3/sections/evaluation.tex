@@ -1,0 +1,128 @@
+\section{Local Gromov--Witten evaluation and reconstruction}\label{sec:evaluation}
+
+Let $u$ be the Gromov--Witten variable and $q$ the local curve-degree
+variable. We use disconnected maps with no wholly contracted
+connected components. Contracted components attached to positive-degree
+maps are included. For each partition $\lambda$ let $h(b)$ denote the
+hook length of a box $b$ of its Young diagram. The empty partition
+contributes $1$ to the following series:
+\begin{equation}\label{eq:hook}
+ E_g(q,u)=\sum_{\lambda} q^{|\lambda|}
+       \prod_{b\in\lambda}\bigl(2\sin(h(b)u/2)\bigr)^{2g-2}.
+\end{equation}
+
+\begin{proposition}\label{prop:evaluation}
+The disconnected Gromov--Witten evaluation of
+$\sum_{m\ge0}a_m(C,L)q^m$ is $E_g(q,u)$.
+\end{proposition}
+\begin{proof}
+Fix $m>0$ and the Euler characteristic of the source.
+The stable-map cycle map is proper at fixed Euler characteristic,
+and its equivariant virtual pushforward defines the Gromov--Witten
+class on $Z_m$ \cite[\S3.5, (3.21)--(3.23)]{Pardon}.
+By Lemma~\ref{lem:support} its fixed-locus localization is a class
+$v$ at $m[C]$. More precisely, equivariant homology after inverting
+$h$ identifies with that of the fixed locus by
+\cite[Proposition~4.5]{Pardon}, and $v$ is the inverse image under
+fixed-locus pushforward. Indeed, off $m[C]$ the tuple of
+Lemma~\ref{lem:support} is a nowhere-zero section. Its Euler
+class $(\prod_i r_i)h^n$ vanishes there, so $h^n$ annihilates
+the equivariant homology of the complement. The fixed-locus
+isomorphism follows from the localization sequence. The class $v$
+is a scalar because the virtual dimension is zero.
+
+We check that the compact class \eqref{eq:cut} makes precisely this
+scalar an ordinary universal evaluation. Fix a tuple of length $n$
+as in Lemma~\ref{lem:support}. At each Borel stage its compact class
+restricts on the fixed section to $h^n$. Thus capping with the
+equivariant virtual class and pushing forward to the point gives
+$h^n v$ after inverting $h$, by the projection formula. The compact
+support of the cut-down already defines this pushforward over
+$\QQ[h]$, which injects into $\QQ[h,h^{-1}]$. At stage $N=n$ the
+ordinary integral is $v$ since $\int_{B_n}h^n=1$. This is the
+evaluation of $a_m(C,L)$, by the finite Borel description in
+\cite[Proposition~4.8]{Pardon}.
+
+It remains to identify $v$. A fixed map has fixed image cycle, so
+all its positive-degree components map into $C$. Attached contracted
+components map into $C$ as well. Conversely every stable map into
+$C$ is fixed. Write $\mathcal F$ for this proper fixed moduli stack
+and $p$ for the cycle map. Along $C$ the tangent bundle splits as
+$T_C\oplus L_+\oplus L_-$. The fixed part of the obstruction theory
+is the stable-map theory of $C$; the moving virtual normal complex
+is $R\pi_*f^*L_+\oplus R\pi_*f^*L_-$ with the respective
+characters $+1,-1$, where $(\pi,f)$ is the universal curve and map.
+Both characters stay nonzero on the antidiagonal. Equivariant
+virtual localization and proper pushforward give
+\[
+ v=(p|_{\mathcal F})_*
+    \left(\frac{[\mathcal F]^{\mathrm{vir}}}
+    {e_{S^1}(N^{\mathrm{vir}})}\right).
+\]
+This is the residue integral of \cite[\S2.2]{BP}. Its degree-$m$
+normalization shifts the power of $u$ by
+$m(2-2g+\deg L_++\deg L_-)=0$. Formula~\eqref{eq:hook} now
+follows from \cite[Corollary~7.3]{BP}.
+\end{proof}
+
+To pass from this evaluation to a class in $H$, we recall the
+reconstruction argument of \cite[\S2]{Transition}. Write
+$x_{h,j}=x_{h,j,0}$ for Pardon's scalar generators,
+$x_{h,0}=1$, and set
+\[
+ f_h(q)=\sum_{j\geq0}x_{h,j}q^j,\qquad
+ p_{h,j}=[q^j]\log f_h(q)\quad(j>0).
+\]
+Over $\QQ$ the $p_{h,j}$ are polynomial coordinates on $H$.
+Pardon's scalar formulas \cite[Lemmas~4.12--4.13 and
+Theorem~7.6]{Pardon} give \eqref{eq:operations} for $x_{h,m}$.
+Thus $p_{h,j}$ is primitive for $\Delta$, and $\rho_d p_{h,j}$
+is $p_{h,j/d}$ if $d\mid j$ and zero otherwise.
+
+Let $\Gamma$ be a submonoid of a torsion-free lattice, with positive
+integral degree off zero and finite sublevel sets. Call a series
+$U=\sum_\beta U_\beta Q^\beta$ \emph{compatible} if $U_0=1$, its
+other coefficients lie in the augmentation ideal of $H$, and
+\begin{equation}\label{eq:compat}
+ \Delta U_\beta=\sum_{\gamma+\eta=\beta}U_\gamma\otimes U_\eta,
+ \qquad \rho_d U_\beta=U_{\beta/d}.
+\end{equation}
+Coefficients outside $\Gamma$, including those at nonexistent
+integral roots, are understood to be zero.
+
+\begin{lemma}\label{lem:reconstruction}
+A compatible series is determined by its disconnected
+Gromov--Witten evaluation. It admits a unique product expansion
+in the $f_h(Q^\beta)$ with rational exponents and finite genus
+support in each class.
+\end{lemma}
+\begin{proof}
+The primitive polynomials in the $p_{h,j}$ are precisely their
+finite linear combinations, since an additive polynomial over
+$\QQ$ is linear. If a primitive $R$ is killed by every $\rho_d$
+for $d>1$, it is a linear combination of $p_{h,1}=x_{h,1}$.
+Indeed applying $\rho_j$ for the largest multiplicity $j>1$ in
+such a polynomial detects all its coefficients at $j$. Set
+$w=(2\sin(u/2))^2$. The scalar degree-one evaluations are
+$\GW(x_{h,1})=w^{h-1}$ by the degree-one local formula
+\cite[\S8]{BP}. These functions are linearly independent by their
+distinct lowest powers of $u$. At a first class of difference
+between two compatible series, their difference is just such an
+$R$ by \eqref{eq:compat}. Equal evaluations force $R=0$.
+
+For the expansion, every coefficient of $\log U$ is primitive.
+Write it as $\sum_{h,j}b_{\beta;h,j}p_{h,j}$. Taking the
+$p_{h,1}$ coefficient of $\rho_j(\log U)_\beta$ gives
+$b_{\beta;h,j}=b_{\beta/j;h,1}$. Hence
+$\log U=\sum_{\beta,h}b_{\beta;h,1}\log f_h(Q^\beta)$.
+Each coefficient in $H$ is a polynomial, which gives finite genus
+support. Exponentiating proves existence and uniqueness.
+\end{proof}
+
+For any two balanced models of the same genus, Proposition~\ref{prop:operations}
+gives compatible series on $\Gamma=\mathbb N$.
+Proposition~\ref{prop:evaluation} gives the same evaluation for both.
+By Lemma~\ref{lem:reconstruction} their coefficients agree in $H$.
+This proves the independence asserted in Theorem~\ref{thm:main},
+including independence under interchange of the line summands.
+We now write $a_{g,m}$ and $A_g$ for these classes and series.
