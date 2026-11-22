@@ -28,12 +28,13 @@ with LaTeX sources and reproducible exact calculations.
 Read Paper 1 before Paper 2 for the transition setting. The counterexample paper
 can also be read independently. Paper 3 returns to the same compact series and compares the two choices of local factors.
 
-Archived versions: [Paper 1 — Zenodo:23750304](https://zenodo.org/records/23750304),
-[Paper 2 — Zenodo:23750305](https://zenodo.org/records/23750305).
-Version DOIs: `10.5281/zenodo.23750304` and `10.5281/zenodo.23750305`.
-Paper 3 is archived on [Zenodo](https://doi.org/10.5281/zenodo.24432700), edition [1.0](https://zenodo.org/records/24432701).
-Version 2 of Papers 1 and 2 adds explicit code links and aligns the reproduction
-command with the bundled inputs; mathematical content is unchanged.
+Zenodo archives and current editions:
+
+- [Conifold transitions](https://doi.org/10.5281/zenodo.23750046) · [edition 3.0](https://doi.org/10.5281/zenodo.24433173).
+- [Integrality counterexample](https://doi.org/10.5281/zenodo.23750048) · [edition 3.0](https://doi.org/10.5281/zenodo.24433174).
+- [Antidiagonal local curves](https://doi.org/10.5281/zenodo.24432700) · [edition 1.0](https://doi.org/10.5281/zenodo.24432701).
+
+The 21 November revision of the conifold and counterexample papers supplies Zenodo DOIs for the author’s cited preprints.
 BibTeX citations are in [CITATION.bib](CITATION.bib).
 See the [Universal curve counting programme](https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting).
 

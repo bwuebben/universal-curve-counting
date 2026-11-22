@@ -7,14 +7,16 @@
       "date": "2026-10-28",
       "status": "Preprint; arXiv submission pending",
       "pdf": "paper/main.pdf",
-      "sha256": "87f67b640c2bad3c295517fe680092f318cdeb163fcf7b6cf746ae0a57628692",
+      "sha256": "1dd5227a4c3d5e137ca4dae6cd25bb9c3be651c303a7efb496f61a180451fbbc",
       "pages": 18,
-      "doi": "10.5281/zenodo.23750304",
+      "doi": "10.5281/zenodo.23750046",
       "concept_doi": "10.5281/zenodo.23750046",
-      "archive_url": "https://zenodo.org/records/23750304",
+      "archive_url": "https://doi.org/10.5281/zenodo.23750046",
       "website_url": "https://bwuebben.github.io/papers/universal-conifold-counting/",
-      "version": "2.0",
-      "revision_note": "Adds the public code repository link; mathematical content unchanged."
+      "version": "3.0",
+      "revision_note": "The bibliography cites the author’s preprints by their Zenodo concept DOIs.",
+      "version_doi": "10.5281/zenodo.24433173",
+      "revision_date": "2026-11-21"
     },
     {
       "title": "A counterexample to integral product exponents in universal curve counting",
@@ -23,14 +25,16 @@
       "date": "2026-10-28",
       "status": "Preprint; arXiv submission pending",
       "pdf": "paper2/main.pdf",
-      "sha256": "09b2fe2c1afe71091df4a14fc1d9fa6b566dd8ce49a665ed1b941dfadc2c8967",
+      "sha256": "dca3144b08b4566293ae7ff0e807eff8ffff0cb60c12025e084a2ba10a6fa9e8",
       "pages": 13,
-      "doi": "10.5281/zenodo.23750305",
+      "doi": "10.5281/zenodo.23750048",
       "concept_doi": "10.5281/zenodo.23750048",
-      "archive_url": "https://zenodo.org/records/23750305",
+      "archive_url": "https://doi.org/10.5281/zenodo.23750048",
       "website_url": "https://bwuebben.github.io/papers/universal-integrality-counterexample/",
-      "version": "2.0",
-      "revision_note": "Adds the public code repository link; mathematical content unchanged."
+      "version": "3.0",
+      "revision_note": "The bibliography cites the author’s preprints by their Zenodo concept DOIs.",
+      "version_doi": "10.5281/zenodo.24433174",
+      "revision_date": "2026-11-21"
     },
     {
       "title": "Antidiagonal local curves and integral exponents in universal curve counting",
