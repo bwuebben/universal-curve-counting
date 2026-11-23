@@ -1,0 +1,151 @@
+\section{Lifting the product to the complex cycle algebra}\label{sec:product}
+
+\subsection{Stabilization of the integers}
+At cutoff $\Lambda$, let $N^\Lambda_{\gamma,h}$ be the sum of the signs
+of the elementary factors of genus $h$ and core class $\gamma$ in
+Proposition~\ref{prop:finite}. These integers are zero outside a finite
+set of pairs. Suppose two decompositions, possibly one obtained by
+truncating a decomposition at a higher bound, give different integers.
+Cancel their common lower-degree factors and take a class $\beta$ in
+the first degree of disagreement. Because every nonconstant term of a
+factor in class $\gamma$ has degree at least that of $\gamma$, comparison
+of the coefficients of $Q^\beta$ gives
+\[
+           \sum_h (N^\Lambda_{\beta,h}-\widetilde N_{\beta,h})\,
+                       \Phi(x_{h,1})=0 .
+\]
+Here we used $a_{h,1}=x_{h,1}$. Theorem~\ref{thm:independence} gives
+equality in every genus, a contradiction. The same induction proves
+that $N^\Lambda_{\beta,h}=0$ when $\beta$ is ineffective for the
+original projective structure. The compact series has coefficient
+zero there, and sums of effective lower labels are effective.
+
+For the chosen polarization denote the stabilized counts by
+$n_{\beta,h}$. Taking $\Lambda$ equal to the degree of $\beta$ proves
+finite genus support at $\beta$. Thus Proposition~\ref{prop:finite}
+has already given the product of Theorem~\ref{thm:main} after
+application of $\Phi$. We need only multiplicity-one independence to
+lift this identity.
+
+\subsection{Primitive classes}
+Let $P=\QQ[X_{h,m}:h\ge0,\ m\ge1]$ and $X_{h,0}=1$. The map
+$p:P\to H$ taking $X_{h,m}$ to $x_{h,m}$ is surjective by the
+geometric generation theorem \cite[Theorem~6.13]{Pardon}.
+The Chern numbers of the generators of virtual dimension zero are
+nonnegative, so only generators of Chern number zero can enter
+this summand. The scalar classes respect the coproduct $\Delta$ from
+addition of cycles and pullback $\rho_d$ under multiplication by $d$.
+Their formulas are
+\[
+ \Delta X_{h,m}=\sum_{r+s=m}X_{h,r}\otimes X_{h,s},
+ \qquad
+ \rho_d X_{h,m}=
+ \begin{cases}X_{h,m/d}& d\mid m,\\ 0& d\nmid m.\end{cases}
+\]
+For the scalar classes, apply the division formula and the diagonal
+calculation of \cite[\S4, in particular Lemma~4.13]{Pardon}. Each term
+with a nonzero shift has one tensor factor of negative virtual dimension
+and thus vanishes by \cite[Theorem~6.13]{Pardon}. The same vanishing
+removes the shifted terms in the balanced calculation
+\cite[\S3]{PaperIII}. Thus both operation formulas use only the
+geometric generation and dimension statements on the complex side. The augmentation on both algebras is
+restriction to the empty cycle.
+
+In the triangular coordinates
+$v_{h,m}=[q^m]\log(\sum_{j\ge0}X_{h,j}q^j)$ the generators are
+primitive and $\rho_d v_{h,m}=v_{h,m/d}$ for $d\mid m$, zero otherwise.
+Suppose the kernel of $p$ contains a nonzero polynomial $f$ of smallest
+total polynomial degree in these coordinates. Its constant term is zero
+by augmentation. Its reduced coproduct lies in the tensor square of
+polynomials of strictly lower degree. The map $p$ is injective on
+this vector space and remains so on its tensor square. Since the
+reduced coproduct maps to zero, $f$ is primitive. Over $\QQ$ an
+additive polynomial is linear, by differentiating $f(v+w)=f(v)+f(w)$
+at $w=0$. Applying $\rho_j$ for the largest multiplicity $j$ occurring
+in $f$ gives a nonzero formal combination of the $X_{h,1}$ in the
+kernel. Their images even under $\Phi p$ are independent by
+Theorem~\ref{thm:independence}. Hence $p$ is an isomorphism.
+
+\begin{lemma}\label{lem:primitive-division}
+Let $\operatorname{Prim}(H)$ denote the primitive subspace for $\Delta$.
+Then
+\[
+  \operatorname{Prim}(H)\cap\bigcap_{d>1}\ker\rho_d
+      =\bigoplus_{h\ge0}\QQ x_{h,1}.
+\]
+\end{lemma}
+\begin{proof}
+In the coordinates $p(v_{h,m})$ a primitive is an additive polynomial,
+hence linear. If its largest multiplicity is $j>1$, applying $\rho_j$
+leaves exactly the coefficients at multiplicity $j$, now on the
+linearly independent classes $x_{h,1}$. Conversely, each $x_{h,1}$
+is primitive and is killed by every $\rho_d$ with $d>1$.
+\end{proof}
+
+\subsection{The first coefficient of disagreement}
+Write $F$ for either the compact series or the product with the
+stabilized exponents, formed in $H\llbracket\Gamma_X\rrbracket$.
+Each has $F_0=1$ and satisfies
+\begin{equation}\label{eq:ops}
+ \Delta F_\beta=\sum_{\gamma+\delta=\beta}F_\gamma\otimes F_\delta,
+ \qquad
+ \rho_d F_\beta=\sum_{\substack{\gamma\in\Gamma_X\\d\gamma=\beta}}F_\gamma .
+\end{equation}
+For the compact series take inverse images of the entire class locus
+under addition and multiplication. For the other series use the
+formulas on the balanced elements, multiply, and take inverses for
+negative exponents. The substitution $Q^\gamma\mapsto Q^{d\gamma}$
+is multiplicative even when several exponents have the same image.
+Each effective root occurs separately in \eqref{eq:ops}.
+
+If $R_\beta$ is a nonzero difference at a least ample degree, the
+terms with two positive summands cancel in its coproduct. It is
+primitive. For $d>1$ all the roots on the right of \eqref{eq:ops}
+have smaller degree, so $\rho_d R_\beta=0$. By
+Lemma~\ref{lem:primitive-division}, $R_\beta$ is a linear combination
+of the $x_{h,1}$.
+The finite-energy identity says $\Phi(R_\beta)=0$.
+Theorem~\ref{thm:independence} now forces $R_\beta=0$.
+This proves the product formula. Uniqueness follows by comparing the
+first degree of disagreement between any two systems of exponents.
+A second polarization yields an identity in the same coefficients. For either polarization there are finitely many effective sublabels
+of any given $\beta$, and their possible decompositions are finite.
+Uniqueness therefore identifies the two systems.
+
+\subsection{Identification with the elementary-cluster coefficients}
+It remains to identify the integers already obtained with those of
+the connected Gromov--Witten expansion. Apply fixed-target connected
+counts to the \emph{geometric decompositions} of
+\S\ref{sec:clusters}. For a compact open insertion $u$ let
+$\epsilon(u)$ be its value at the empty cycle, and let $D_k(u)$ be
+its localized positive-energy connected genus-$k$ count. The same
+open part of the stable-map space computes this count on excision
+into a target neighborhood. For the compact symplectic targets
+and paths in that section the localized counts are additive on
+partitions and invariant under transport
+\cite[Lemma~3.8 and Proposition~3.10]{DIW}. On disjoint targets a
+connected map lies in just one of the two, hence
+\[
+                D_k(uv)=D_k(u)\epsilon(v)+\epsilon(u)D_k(v).
+\]
+Extend the equality coefficientwise with the integral class labels.
+Each of our normalized series has empty-cycle value one as a series.
+Thus connected counts add under their multiplication and change sign
+on inversion, which can equally be calculated in the truncated
+series algebra. This applies along the exact fold, subdivision and
+endpoint relations used to obtain each finite product.
+
+For genus $h$ the elementary connected contribution is
+\[
+ G_h(q,t)=\log\!\left(1+
+ \sum_{m\ge1}q^m\sum_{\lambda\vdash m}
+       \prod_{\square\in\lambda}
+           \bigl(2\sin(\ell(\square)t/2)\bigr)^{2h-2}\right),
+\]
+where $\ell(\square)$ is the hook length \cite[Proposition~3.3]{IP}.
+Thus the signed occurrences of each factor give the coefficients of
+$G_h(Q^\beta,t)$ in the connected expansion of $X$. Uniqueness is
+\cite[Theorem~3.50]{DIW}. At the first degree of disagreement, the
+least remaining genus is distinguished by
+$[q]G_h(q,t)=t^{2h-2}+O(t^{2h})$. This identifies the integers of
+\eqref{eq:product} and completes the proof of Theorem~\ref{thm:main}.

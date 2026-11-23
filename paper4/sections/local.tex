@@ -1,0 +1,200 @@
+\section{The class of an elementary curve}\label{sec:local}
+
+For a smooth genus-$g$ curve $C$ and $L\in\operatorname{Pic}^{g-1}(C)$
+write $L_+=L$ and $L_-=K_C L^{-1}$. On a cycle of degree $m$ in
+$\Tot(L_+\oplus L_-)$, evaluate the elementary symmetric functions of
+the two fiber projections at $1+\max(0,m(g-1))$ distinct points of $C$.
+The $j$th coefficients are holomorphic sections of $L_\pm^j$, including
+at ramification by taking the characteristic polynomial on the finite direct
+image from the normalization of each irreducible component and raising
+it to the multiplicity of that component. Their vanishing at the chosen points implies
+their identical vanishing for $1\le j\le m$. Thus the common zero set is
+$m[C]$. In chosen frames the evaluations form an equivariant tuple $F$
+of nonzero weights $r_1,\ldots,r_N$. On the associated bundle over
+$\PP^N$ it defines a section of the pullback of $\bigoplus_j\cO(r_j)$.
+The class
+\[
+ u_N=(\textstyle\prod_jr_j)^{-1}F^*\operatorname{Th}
+                     \bigl(\textstyle\bigoplus_j\cO(r_j)\bigr)
+\]
+has compact support on the fixed section. Here $\operatorname{Th}$ is
+the relative Thom class of the zero section. If $f$ is an additional test and
+$i:\PP^N\hookrightarrow\PP^{N+1}$ is a hyperplane inclusion, then
+$i_!u_N(F)=h\,u_{N+1}(F)=u_{N+1}(F,f)$, where $h=c_1(\cO(1))$.
+The first equality is the hyperplane projection formula and the second
+is multiplication by the normalized Euler class of the appended
+line. Concatenation of two tuples therefore identifies their universal images
+\cite[\S2]{PaperIII}. This construction defines $a_{g,m}$. It applies
+also to continuous equivariant tests on an invariant neighborhood when
+their common zero set is the same section.
+
+\subsection{Deformation of the spin model}
+Fix $L^2=K_C$ and a disk bundle $U$ about the zero section in
+$L\oplus L$. Give the two summands the same Hermitian metric. On $U$
+use a Kähler form invariant under real rotations of the copies of $L$.
+In a spin frame $e^2=dz$ the holomorphic two-form in the construction of
+\cite[Proposition~3.2]{IP} is
+\[
+                  \alpha=dz\wedge(w_1\,dw_1+w_2\,dw_2).
+\]
+It is the sum of the pullbacks of the tautological two-forms on the
+two line summands. The metric and $\alpha$ are rotation invariant.
+Hence the Lee almost-complex structures $J_{t\alpha}$ are invariant
+for $0\le t\le T$ with $T>0$ small. On the two eigenlines
+$w_1\pm iw_2$ the rotations have weights $+1,-1$.
+
+\begin{proposition}\label{prop:local}
+For $m>0$, the image of $a_{g,m}$ in $S$ equals the characteristic
+function of the single cycle $m[C]$ in the elementary germ.
+\end{proposition}
+\begin{proof}
+Let $Z_m$ be the integrable degree-$m$ cycle space in $U$, and let
+$W_m$ be the corresponding space over the Lee interval. Each nonconstant
+compact component has positive degree over $C$ by tameness and the
+retraction of $U$ onto $C$. Image localization
+\cite[Proposition~3.2]{IP} places every such component on $C$ for
+$t>0$. Thus $W_m$ is the union of $\{0\}\times Z_m$ and
+$[0,T]\times\{m[C]\}$, glued at $(0,m[C])$. Both subsets are closed
+in the topology of parameter, support and current. Collapsing the
+interval gives a continuous proper equivariant retraction onto $Z_m$.
+Its inverse image of a compact set is that set together with the
+interval if the set contains $m[C]$.
+
+Pass to the associated bundles for the Hopf circle bundle over $\PP^N$.
+At $t=0$ the unit-sphere reduction identifies this with the holomorphic
+Borel family restricted to the disk. The pullback of $u_N$ under the
+proper retraction has compact support on $\PP^N\times[0,T]$. At $t>0$
+it is the normalized Euler class
+$(\prod_jr_j)^{-1}\prod_j(r_jh)=h^N$, where $h=c_1(\cO(1))$.
+Its integral is $+1$. By the interval relation of \S\ref{sec:families}
+the two endpoints give the same class. At the positive endpoint the
+Gysin map from a point of $\PP^N$ identifies $h^N$ with the unit at
+$m[C]$ in the corresponding target fiber. Excision at the fixed section
+permits any smaller disk. The retraction commutes with hyperplane
+inclusion, so stabilization respects the entire interval.
+\end{proof}
+
+The class in $H$ itself is independent of the balanced splitting.
+In a relative Picard chart choose the marked evaluation points as
+disjoint local sections and trivialize the evaluation lines. The
+fiberwise degree argument gives the same compact section of zeros
+over a closed path segment. Its relative Thom class identifies the
+endpoints in the analytic diagram under the interval relation.
+The variety $\operatorname{Pic}^{g-1}(C)$ is connected. To vary $C$,
+take successive charts in connected Teichmüller space, with the
+relative degree-$(g-1)$ bundle $\cO((g-1)p)$ for a local marked section
+$p$. The fixed-curve comparison identifies choices at common endpoints.
+Use piecewise real-analytic paths in the charts, so each segment has
+an analytic thickening. For genus zero use the constant sphere and for
+genus one use marked elliptic curves. This also joins different spin
+choices through balanced splittings.
+
+\subsection{General elementary neighborhoods}
+In an elementary neighborhood in the sense of
+\cite[Definition~3.1]{IP}, the core is the only irreducible curve,
+and its normal operator is the double of a real Cauchy--Riemann
+operator $D_0$ on a complex line. Every branched-cover pullback of
+this operator is injective. These conditions suffice to identify the
+point insertion of the given germ with the class in
+Proposition~\ref{prop:local}.
+
+Let $C$ be the core. Choose a tubular chart of its normal bundle
+$N$ adapted to the complex splitting along $C$, and pull back
+the almost-complex structure $J$ to that chart. On a smaller fixed
+disk use $J_s=\delta_s^*J$, $0<s\leq1$, where $\delta_s$ scales
+the normal fibers by the positive real number $s$. The family
+extends smoothly to the homogeneous almost-complex structure
+$J_{\mathfrak d}$ determined by the normal Cauchy--Riemann
+operator $\mathfrak d$. Indeed the only block in the pullback with
+a negative power of $s$ is $s^{-1}B(x,sv)$ from tangent to normal. Since
+$B(x,0)=0$, its extension at zero is obtained by integrating
+$\partial_v B(x,\tau sv)[v]$ over $0\leq\tau\leq1$. Identification
+of the limit with $J_{\mathfrak d}$ is the normal rescaling formula.
+For $s>0$ the elementary isolation condition gives only the cycles
+$m[C]$ in this disk. At zero an irreducible curve off the core
+would project to a branched cover $f$ of $C$ with a nonzero section
+in $\ker(f^*\mathfrak d)$, contrary to super-rigidity. Thus for
+each $m>0$ the singleton insertion continues across this ordinary
+interval~\cite[Lemmas~3.6 and~3.10 and Proposition~3.12]{DW} and
+\cite[Definition 3.1]{IP}.
+
+By the elementary splitting, $\mathfrak d=D_0\oplus D_0$ on
+$L\oplus L$, with $D_0$ a real Cauchy--Riemann operator on a
+complex line of degree $g-1$. Identify its underlying smooth
+complex line bundle with that of a holomorphic spin line. On
+this bundle join $D_0$ to the spin Dolbeault operator by affine
+interpolation of the zero-order terms. The corresponding normal
+models $J_{D_t\oplus D_t}$ project holomorphically to $C$, induce
+the usual structure on each fiber and commute with real fiber
+dilations and real rotations of the copies. These properties follow
+from the construction of $J_{\mathfrak d}$ from the operator. A lift over a holomorphic $f$ is a pair of sections of
+$f^*L$ satisfying $f^*D_t$. All models agree as almost-complex
+structures along $C$. Thus one fixed Kähler form $\omega$ for the spin model
+tames the whole path on a sufficiently small closed disk, by
+compactness of $C\times[0,1]$.
+
+Fix $m>0$ and let $r(Z)$ be the maximum fiber norm on the support
+of a cycle, using a rotation-invariant metric. For a radius $a>0$
+in the interior of the disk the locus $T_m$ of all $r(Z)=a$,
+including the parameter $t$, is compact. Its supports lie in a
+fixed compact set, and the taming form has integral precisely
+$m\int_C\omega$ on each such cycle. Geometric compactness and
+continuity of the radius give the claim. There are no circle-fixed
+cycles in $T_m$. Each nonconstant irreducible component projects
+to a finite holomorphic cover, since a fiber contains no compact
+curve. An invariant cycle would therefore have a finite invariant
+set in every fiber. The connected rotation group fixes every
+element of such a set, and the origin is the only fixed vector~\cite[Theorem 2.11]{DIW}.
+
+On a compact Hausdorff circle space without fixed points there
+are finitely many continuous functions of nonzero weights having
+no common zero. At a point $x$ its stabilizer is $\mu_k$ for some
+$k\geq1$. The function $gx\mapsto g^k$ on its closed orbit
+extends continuously to the space by Tietze extension applied to
+the real and imaginary parts. Its weight-$k$ Fourier projection
+agrees with the original function on the orbit. The nonvanishing
+loci so obtained cover the space, hence a finite set suffices.
+Apply this to $T_m$. For a test $f$ there, define a test on the
+whole degree-$m$ cycle family by
+
+\[
+ \widehat f(Z)=
+ \begin{cases}
+ r(Z)\,f\bigl(t,(\delta_{a/r(Z)})_*Z\bigr),&r(Z)>0,\\
+ 0,&r(Z)=0 .
+ \end{cases}
+\]
+
+Homogeneity ensures that the rescaled cycle lies in $T_m$.
+Away from zero the formula is continuous by geometric convergence.
+At zero it is continuous because $f$ is bounded. The tests retain
+their weights and vanish simultaneously precisely at $m[C]$ in
+each fiber. If $T_m$ is empty the family already consists of the
+singleton in each fiber, and the empty tuple suffices.
+
+Take Borel stage $N$ equal to the number of tests and pull back
+their normalized relative Thom class. It has compact support on
+the distinguished section over $\mathbb P^N\times[0,1]$. At the
+super-rigid end its restriction is $h^N$ and gives the unit at
+$m[C]$. At the integrable spin end it gives $a_{g,m}$ because the tests
+are continuous circle-equivariant functions, and concatenation
+with the holomorphic evaluation tuple after hyperplane stabilization
+identifies their normalized Thom classes by the hyperplane formula.
+
+The ordinary rescaling and this Borel deformation give the asserted
+identity for the original germ. Write $b_{g,m}=\Phi(a_{g,m})$ and
+$b_{g,0}=1$. On the point representatives, pullback by addition counts
+the ordered pairs $(r[C],s[C])$ with $r+s=m$. Pullback by multiplication
+by $d$ selects $(m/d)[C]$ when $d\mid m$ and is zero otherwise.
+Both pullbacks preserve compact supports on these families. For addition,
+the support and mass of either effective summand are bounded by those
+of the sum, so compactness follows from \cite[Theorem~2.11]{DIW}.
+The same reasoning applies to multiplication by $d$.
+On these representatives the diagonal of the point base is a point.
+The summands are external products of degree-zero classes, giving
+\[
+  \Delta b_{g,m}=\sum_{r+s=m}b_{g,r}\otimes b_{g,s},
+  \qquad
+  \rho_d b_{g,m}=
+       \begin{cases} b_{g,m/d}&d\mid m,\\ 0&d\nmid m .\end{cases}
+\]

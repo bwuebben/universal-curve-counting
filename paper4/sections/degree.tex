@@ -1,0 +1,429 @@
+\section{The local virtual degree}\label{sec:degree}
+
+The putative relation of Lemma~\ref{lem:relation} would kill a
+regular point orientation in the presence of other, possibly singular
+and noncompact, components of the moduli space. We use an implicit atlas
+on a neighborhood of the compact support of such a vanishing. First
+we construct its pairing with compactly supported cohomology. We then
+obtain the charts, including their orientation at nodal maps, from
+fixed-target gluing. In this section references to numbered axioms,
+deformation spaces and gluing charts are to \cite{Atlas}.
+
+\subsection{A functional on a finite union of regular footprints}
+In an implicit atlas, $X_I$ denotes the thickening belonging to a
+finite set $I$ of indices, with obstruction space
+$E_I=\bigoplus_{\alpha\in I}E_\alpha$, section $s_I:X_I\to E_I$,
+and group $\Gamma_I=\prod_{\alpha\in I}\Gamma_\alpha$.
+The footprint is the image of the zero locus under the quotient map
+to the moduli space. The regular footprint uses the regular part of
+the thickening. The local orientation system is the virtual
+orientation system of the atlas.
+
+\begin{proposition}\label{prop:functional}
+Let $M$ be locally compact Hausdorff. Suppose we have the chart,
+footprint and transversality data of an oriented topological implicit
+atlas of virtual dimension $n$ on a neighborhood of a compact set.
+We use no boundary on these charts. Let $O$ be an open set covered
+by regular footprints of a finite set of indices $A$, allowing
+multi-indices formed from $A$. All coefficients are rational.
+There is a functional
+
+\[
+                   H_c^n(O)\longrightarrow\mathbb Q
+\]
+
+for this choice of charts. Suppose a point $p\in O$ has an oriented
+manifold neighborhood of dimension $n$ in the zero locus. For some
+index set $I\subset A$ assume its zero-coordinate lifts near $p$
+are regular, are freely permuted in fibers of size $|\Gamma_I|$,
+and that $s_I$ on this regular thickening is a submersion there.
+Orient the neighborhood of $p$ by the virtual orientation. The
+functional sends the point orientation class extended by zero to
+$+1$.
+\end{proposition}
+\begin{proof}
+For $I\subset J\subset A$ take the deformation
+space $Y_{IJ}=X_{I,J,A}$ of Pardon's Definition 4.2.1. It is a
+manifold with corners of dimension $n+\dim E_A+|I|$. Write
+$e:Y_{IJ}\to E_A$ for its obstruction projection. On $e^{-1}(0)$
+there is a continuous footprint map to the unthickened space.
+Delete the part of $e^{-1}(0)$ lying over the complement of $O$,
+an ordinary closed subset, and call the resulting open manifold
+$Y^O_{IJ}$. Write $Z_{IJ}$ for its full zero locus and
+$\pi:Z_{IJ}\to O$ for the footprint map. These restrictions commute
+with the maps (4.2.1) for the one fixed set $A$. Away from $e=0$
+no map to $O$ is required.
+
+Let $O^+$ be the one-point compactification (with a disjoint point
+if $O$ is compact). To a compact $K\subset O^+$ associate the
+complex of relative singular chains
+
+\[
+ F_{IJ}^\bullet(K)=
+ C_{n+\dim E_A-\bullet}
+ \big(Y^O_{IJ},Y^O_{IJ}\setminus\pi^{-1}(K\cap O);
+                     o_{E_A}^{\vee}\big)^{\Gamma_A}.
+\]
+
+Here $\pi^{-1}(K\cap O)$ is closed in $Y^O_{IJ}$, including when
+$K$ contains infinity. Use the normalized transition maps of
+Definition 4.2.6 and take their finite homotopy colimit $F^\bullet$.
+This is the one-point compactification argument of Pardon's proof
+of Lemma A.6.4 applied to each of the deformation spaces.
+
+We give the descent checks. The assignments on compact subsets
+are homotopy K-sheaves. The value at the empty set is zero, and the
+two-compact-set axiom is singular-chain excision for the open
+complements. For decreasing compact neighborhoods, a singular chain
+has compact image. Its intersection with $Z_{IJ}$ is compact, and
+the image of that intersection in $O^+$ is compact. If the chain
+misses $\pi^{-1}(K\cap O)$, its footprint therefore misses a compact
+neighborhood of $K$ as well. This proves continuity under shrinking
+neighborhoods, including at infinity. Finite group invariants are
+exact over $\mathbb Q$. Finite homotopy colimits preserve these
+conditions.
+
+At each $x\in O$, the stalk calculation is the one in Lemma 4.3.1
+and Proposition 4.3.3. Excision away from the deleted zero loci
+does not change the relative chains at $x$. The footprint diagrams
+give $o_{M,x}$ in degree zero and zero in every other degree.
+Coverage is required only over $O$. At infinity every relative
+chain complex is zero. For the uniform lower bound in the purity
+criterion, use Poincaré--Lefschetz duality with closed support in
+the finite-dimensional manifolds $Y^O_{IJ}$, as in Lemma A.6.4.
+The relative homology vanishes above their dimensions. There are
+finitely many pairs and finitely many nondegenerate strings in
+their indexing poset. Thus their shifted homotopy colimit still
+has a uniform lower bound, also on neighborhoods of infinity.
+The resulting degree-zero sheaf is $j_!o_O$ for $j:O\hookrightarrow
+O^+$, by adjunction and the stalk calculations. Proposition A.5.4
+now identifies $H^*(F^\bullet(O^+))$ with $H_c^*(O;o_O)$~\cite[\S\S4.2--4.3, Proposition A.5.4 and Lemma A.6.4]{Atlas}.
+
+At $K=O^+$ the complement in each pair is the complement of the
+\emph{whole} zero set in $Y^O_{IJ}$. Projection to $E_A$ therefore
+defines a map to the relative chains of $(E_A,E_A\setminus0)$.
+In the convention where the transition $J\to J'$ is the ordinary
+pushforward divided by $|\Gamma_{J\setminus J'}|$, take the
+projection on the $IJ$ term divided by $|\Gamma_J|$. Indeed
+$|\Gamma_J|=|\Gamma_{J'}||\Gamma_{J\setminus J'}|$, and the
+obstruction projection is unchanged by the transition. This gives
+a chain map from the homotopy colimit by the augmentation on
+strings of length zero, with value zero on higher strings. In
+degree $n$, identify the resulting obstruction-space orientation
+class with $1$. This gives the functional. Applying the projection
+directly to chains relative to a proper compact subset of a larger
+zero set would lack this map of pairs.
+
+\par\smallskip\noindent\emph{Normalization at the regular point.} Let $V_I\subset O$ be the regular
+footprint for $I$, intersected with $O$. In the diagonal term
+$I=J$, take the slice $t_i=1$ for $i\in I$. It is the open part
+of $E_{A\setminus I}\times X_I^{\rm reg}$ obtained by deleting
+zeros over the complement of $O$. Its obstruction projection is
+$(e',x)\mapsto(e',s_I(x))$. Its entire zero set is closed in
+this open manifold and has proper finite quotient onto $V_I$.
+Indeed it is the restriction of the finite group quotient of the
+zero-coordinate chart to its invariant open regular locus.
+
+Here is the slice calculation directly from Definition 4.2.1.
+Denote the slice by $D$ and its zero set by $Z_D$. Before removal
+of the zeros outside $O$ the closed set over a compact $K\subset O$
+in this slice is
+
+\[
+       \{0\}\times\big((s_I|_{X_I^{\rm reg}})^{-1}(0)
+                       \cap\psi_{\emptyset I}^{-1}(K)\big)
+       \ \subset\ E_{A\setminus I}\times X_I^{\rm reg}.
+\]
+
+The pair uses the complement of this entire set. This detail
+matters in using (4.3.14), whose displayed complement takes the
+product of $E_{A\setminus I}$ with the complement in the second
+factor. For example, take a point with trivial groups,
+$X_\emptyset=\{p\}$ regular, and one additional chart
+$X_\alpha=\mathbb R$ with $s_\alpha=\mathrm{id}$. For
+$I=J=\emptyset$, Definition 4.2.5 gives
+$H_1(\mathbb R,\mathbb R\setminus\{0\})=\mathbb Q$.
+The pair $(\mathbb R,\varnothing)$ would give zero in degree one.
+
+For any compact $K\subset O^+$ put $L=\pi^{-1}(K\cap O)$ in
+$Y=Y_{II}^O$. On the interior $Y^\circ$, all $t_i>0$ and
+$(t,e',x)$ are product coordinates, with $e_i=s_i(x)/t_i$.
+In these coordinates the pair $(Y^\circ,Y^\circ\setminus L)$
+is $(\mathbb R_{>0})^{I}$ times
+$(D,D\setminus(L\cap D))$. Retraction of the first factor to
+$(1,\ldots,1)$ proves the slice isomorphism on the interior.
+The inclusion of this interior pair into $(Y,Y\setminus L)$
+induces an isomorphism as well. To see it, apply Poincaré--Lefschetz
+duality (A.6.6) to the closed set $L$ in $Y$ and to its intersection
+with $Y^\circ$ in the open manifold $Y^\circ$. The coefficient
+sheaf on $L$ in the first duality is the extension by zero of the
+orientation sheaf from $L\cap Y^\circ$. Inclusion of chains is the
+corresponding extension on compactly supported cohomology. This
+naturality follows from the relative-chain map in the proof of
+Lemma A.6.4, which is the orientation identification on interior
+stalks and has zero source at boundary stalks. Both dual groups are
+therefore the same. Tensoring with $o_{E_A}^\vee$ and taking
+finite-group invariants preserves the isomorphism. The argument
+also covers $K=O^+$, where $L$ is the whole zero set.
+
+Applying Lemma A.6.4 once more to $Z_D$ in the slice, then taking
+finite-group invariants as in (4.3.7), identifies the diagonal
+term on $O^+$ with $H_c^*(V_I;o_O)$. The map of this term into
+the homotopy colimit induces the identity of orientation sheaves
+on $V_I$ by Proposition 4.3.3. Its source sheaf is extension by
+zero from $V_I$. By adjunction this specifies the map of sheaves
+on all of $O^+$, so on cohomology it is precisely extension by
+zero $H_c^*(V_I;o_O)\to H_c^*(O;o_O)$.
+
+Take a ball at $p$ on which the zero-locus cover splits into
+$|\Gamma_I|$ sheets. Pullback of its point orientation to the
+cover gives coefficient one on each sheet. In the relative chains
+of the slice these classes are small oriented normal disks at the
+lifts. Submersivity lets us choose them with boundary disjoint
+from the entire zero set and obstruction projection of local degree
+one. In chains with obstruction orientation coefficients, first
+average one disk over $\Gamma_{A\setminus I}$, which fixes its
+lift and acts simultaneously on the complementary obstruction
+coordinates and their orientation coefficients. Its projected
+degree remains one. Sum its translates over $\Gamma_I$ to obtain
+the invariant representative on the free sheets. The
+previous paragraph identifies its image in the full complex with
+the point orientation extended by zero. Projection of the orbit sum
+and division by $|\Gamma_I|$ therefore give one. This also works when regularity of
+the unperturbed \emph{fixed-domain} operator fails. It uses an ordinary
+submersion in one nonempty chart over the smooth ball.
+\end{proof}
+If the local orientation at $p$ vanished in $H_c^n(M)$, it would
+already vanish with support in a compact set $K_0$ containing
+$p$. Choose finitely many regular footprints covering $K_0$ and
+an open $O$ inside their union containing $K_0$. Excision for
+support in $K_0$ would make its image in $H_c^n(O)$ zero. The
+functional contradicts this.
+
+\subsection{An implicit atlas for maps in the fibers}
+Let $\pi:E\to W$ be the smooth family of Lemma~\ref{lem:relation},
+with $W$ open in $\CC^r$ and $n=2r$. Choose a smooth horizontal distribution
+and give $E$ the almost-complex structure given by the vertical
+structure and the lift of the standard structure on $W$.
+Every connected compact holomorphic map to $E$ projects to a
+constant. Holomorphic functions on each normalized component are
+constant and agree at nodes. Thus unperturbed fixed-target maps
+are exactly the maps into the fibers, including their Gromov
+topology. Their Chern number in $E$ equals their vertical Chern
+number since $TW$ is trivial.
+
+The fixed-target construction can be used separately in each
+homology class of maps to $E$. This class is locally constant in
+the labeled-domain topology: on nearby domains collapse the
+plumbing necks to the nodes, compare maps into a small tubular
+neighborhood of the limiting graph, and use short geodesics in
+$E$ to homotope to the limiting map composed with the collapse.
+The collapse sends the fundamental cycle to the sum of the
+fundamental cycles of the limiting components. Equivalently one
+can integrate the corresponding integral currents in a compact
+neighborhood and use local constancy of the integral current
+homology class in the flat topology. A compact set of maps meets
+only finitely many such sectors. The test also restricts to
+nonconstant maps. A constant map has an image neighborhood
+in a coordinate ball with an exact taming form, which excludes a closed
+nonconstant holomorphic curve in that ball.
+
+Use the indices of \cite[\S9.2]{Atlas} for the fixed target $E$ with \emph{vertical}
+perturbation sections. Use actual codimension-two incidence disks
+in $E$ and the usual marked-domain orbifold charts. The positivity
+of rank of the differential on every unstable nonconstant component
+gives the stabilizing disks of Lemma 9.2.8. In a small target
+trivialization one can thicken a transverse disk in the fiber in
+all base directions and round its edge away from the marked
+intersections. For each finite index set $I$, take the fixed-target
+thickening with these vertical perturbations. Every solution, at
+arbitrary vertical obstruction coordinates, still projects
+holomorphically to $W$ and lies in a single fiber. The spaces, group
+actions, footprint quotients, obstruction coordinates and forgetful
+maps are therefore the ordinary data of Definitions 9.2.1--9.2.4.
+The finite group need not act effectively on its marked-domain chart.
+
+Choose indices on sufficiently small marked-domain charts. On each
+one we can also specify a complex $\Gamma_\alpha$-representation
+$P_\alpha$ of dimension $kr$, where $k$ is the fixed arithmetic
+genus, and equivariant perturbation forms whose projection induces
+an isomorphism
+
+\[
+           P_\alpha \ \simeq\
+             H^1(T,\mathcal O_T)\otimes\mathbb C^r
+\]
+
+on each labeled domain $T$ in the chart. Here is the construction.
+At the central stabilized curve use the right-hand space as the
+representation. Smooth $(0,1)$ forms supported in the smooth locus
+away from the marked points span its first factor by duality with
+dualizing differentials. Such a differential vanishing on the smooth
+locus is zero, including at every branch of a node. Choose a complex
+linear right inverse and average over the finite group. The forms
+extend on disks in the smooth locus of the universal curve. Extend
+and average again, keeping the original equivariant values at the
+center. The classes still give a basis after shrinking the chart.
+Indeed the dual Hodge bundle is locally free for the proper flat
+family of connected nodal curves of fixed genus. In a Hodge frame
+the pairing with these disk forms is continuous up to the central
+fiber, by integration over a fixed compact set away from the nodes.
+The extension may be chosen smooth on the total smooth locus.
+This also handles normalization components on which the map is
+constant. Take the horizontal lifts of the resulting
+$\mathbb C^r$-valued forms on $\mathcal C_\alpha\times E$. They
+are allowed perturbations in Definition~9.2.1(vi) of \cite{Atlas}. For relative duality and base change see \cite[Tags 0E6N and 0E6S]{Stacks}.
+
+For example, take the rational nodal genus-one curve obtained by
+identifying $0$ and $\infty$, with a stabilizing mark at $1$. The
+involution $\tau(z)=1/z$ acts by $-1$ on the dualizing differential
+$dz/z$, hence by $-1$ on $H^1(\mathcal O_T)$. Choose a form
+$\phi$ supported on a disk near $2$ pairing nontrivially with
+$dz/z$. The form $(\phi-\tau^*\phi)/2$ is anti-invariant and has
+the same nonzero pairing. An invariant horizontal coordinate
+would miss this cokernel. Taking $P_\alpha$ with its actual
+stabilizer representation deals with this node without passing to
+an unlabeled quotient.
+
+For each nonempty $I$ select for the moment $\alpha\in I$. Replace
+the datum at $\alpha$ by the same datum with obstruction space
+$E_\alpha\oplus P_\alpha$ and the additional horizontal perturbations.
+Keep every other datum unchanged. This is an ordinary collection
+of Pardon's fixed-target indices. On any simultaneous thickening
+containing $\alpha$ the projected perturbed equation reads
+
+\[
+        \bar\partial w+\eta_\alpha(h)=0,\qquad
+        w=\pi u,\quad h\in P_\alpha .
+\]
+
+Taking its Dolbeault class gives $h=0$, and then $w$ is constant.
+Conversely every solution of the original vertical thickening
+is a solution with $h=0$. This is a homeomorphism of the two
+thickenings. All marks and domain labels are identical, the graph
+topologies agree, and the extra coordinate on one side is constantly
+zero. If the distinguished index is retained, the homeomorphism
+also intertwines the footprint maps on the locus where the new
+obstruction coordinates are zero.
+
+The regularity test in Definition 9.2.5 is independent of which
+$\alpha\in I$ is chosen for this purpose. At a solution the
+horizontal block of the fixed-domain linearization is
+$(\xi,h)\mapsto\bar\partial\xi+\eta_\alpha(h)$. Its cokernel is
+zero, and its kernel is the constant horizontal displacement
+$T_bW$. Derivatives of the horizontal forms with respect to domain
+labels have coefficient $h=0$. In the kernel of this block the
+remaining equation is exactly the vertical linearization with
+free base value $b$. Transverse intersections with incidence disks,
+used to define the labels in (9.2.3), move smoothly with the map
+on the fixed domain. Thus the full augmented operator is surjective
+if and only if the vertical operator with free base is surjective.
+Triviality of the automorphism group is the same on both sides.
+
+Define regularity on nonempty thickenings by this intrinsic test,
+and set the regular locus of the empty chart to the empty set.
+For $I\subset J$ with $I$ nonempty, augment \emph{one index in $I$}
+on both sides of the inclusion. Under the two homeomorphisms just
+proved, fixed-target Proposition 9.2.6 gives the required openness
+and the topological submersion onto $E_{J\setminus I}$. The
+auxiliary space never occurs in this quotient. For $I$ empty the
+submersion and regular-footprint freeness requirements have empty
+domains of verification. The footprint and quotient axioms still
+hold there without a regularity assumption. The dimension in the
+augmented model is
+
+\[
+       2r(1-k)+\dim_{\mathbb R} E_I+2rk=n+\dim_{\mathbb R}E_I
+\]
+
+for unmarked maps in the Chern-zero sector.
+
+For coverage choose a stabilizing disk and finite-dimensional
+vertical perturbations spanning the fixed-domain \emph{vertical}
+cokernel, as in the proof of Lemma 9.2.9. At the unperturbed map
+the label derivatives of these vertical perturbations have zero
+coefficients. Perturbations supported away from all special points
+suffice by that lemma's elliptic argument. Extend the sections
+locally in the vertical tangent bundle and use the induced finite
+group representation for equivariance. The choice of a labeled
+domain chart removes the residual automorphisms of the lifted object.
+This produces a nonempty regular footprint at every point. The construction
+uses compactness of the domain curves, and only finitely many indices
+are needed near a compact $K_0$. Pardon's compact-target assumption
+in the global GW application supplies compactness of the entire
+unperturbed space. Proposition 9.2.6 itself is a gluing calculation
+near a single compact map. Its stabilized fixed-target model in
+Appendix B.1 uses a smooth almost-complex target and transverse
+disks. All the maps in this local calculation stay near the fixed compact image. Local compactness of the unperturbed
+space also follows from the regular footprints themselves. Each is
+an open set in the Hausdorff moduli space and the finite-group
+quotient of the closed zero locus in a locally compact regular
+chart. These footprints cover.
+
+\subsection{Orientation on overlaps} At a smooth-domain regular
+point of $X_I$, retain the same domain labels and incidence disks.
+For $\alpha,\beta\in I$, write $H_T=H^1(T,\mathcal O_T)\otimes
+\mathbb C^r$ and denote the two maps to this quotient by
+$A_\alpha:P_\alpha\to H_T$ and $A_\beta:P_\beta\to H_T$.
+Identify $P_\alpha$ with $P_\beta$ by the complex isomorphism
+$G=A_\beta^{-1}A_\alpha$. On the common linearized domain consider
+the horizontal perturbation forms
+
+\[
+            \eta_s=(1-s)\eta_\alpha+s\,\eta_\beta G,
+            \qquad 0\leq s\leq1 .
+\]
+
+Every $\eta_s$ projects to $A_\alpha$. Thus
+$(\xi,h)\mapsto\bar\partial\xi+\eta_s(h)$ is onto for the whole
+path, and its kernel always has $h=0$ and $\xi$ constant. This
+also describes the horizontal equation with domain variations,
+since the projection of the original map is constant and the
+horizontal perturbation coefficient at the solution is zero.
+On this kernel the remaining linear equation, including the old
+perturbations and moving incidence marks, is the same for every
+$s$. Regularity therefore gives a path of surjective linearizations
+with the very same tangent kernel. The canonical determinant
+orientation varies continuously along that path in the fixed
+kernel. Identifying its two auxiliary factors by $G$ preserves
+their real orientations. This proves equality of the two
+orientations of the regular thickening at the smooth point.
+Only a path of linear operators at that point is needed. The
+construction commutes with relabeling, since $G$ is defined by
+the induced maps to the same horizontal cohomology group.
+
+Each augmented chart already has a continuous orientation
+identification by Proposition 9.2.6(iii). Both live on the same
+topological regular locus by the homeomorphisms above. By \cite[\S B.12]{Atlas}
+the plumbing parameters can all be nonzero arbitrarily close to
+every nodal point of that locus. The two identifications therefore
+agree there as well, since their ratio is a locally constant sign.
+For $I\subset J$ with $I$ nonempty, choose an index in $I$ on both
+sides. On the regular footprint the forgetful map at zero extra
+coordinates is a finite covering of an open set in $X_I^{\rm reg}$.
+Smooth-domain lifts are dense on this covering. On these lifts the
+ordinary determinant exact sequence for adding $E_{J\setminus I}$
+gives the orientation transition for the vertical charts, since
+the same oriented $P_\alpha$ cancels from both sides. Continuity
+gives the transition at the nodal lifts. For a triple of nested
+nonempty index sets one may choose the same index in the smallest
+one throughout, so the transition maps compose. All extra complex
+factors have even real dimension. This verifies orientation descent
+on the regular nodal overlaps used by the compact-support test~\cite[Proposition 9.2.6 and \S\S B.12--B.13]{Atlas}.
+
+\begin{proof}[Proof of Theorem~\ref{thm:independence}]
+Use the regular point over the least genus in Lemma~\ref{lem:relation}.
+Its normal bundle is acyclic, its map automorphism group is trivial,
+and the family is constant over a ball at its marked parameter.
+In any nonempty regular chart covering this point the map to the
+vertical obstruction coordinates is a submersion near its lift.
+Indeed the unperturbed linearization with domain variations is onto.
+On this smooth domain the implicit function theorem solves the perturbed
+equation with arbitrary prescribed small obstruction coordinates.
+Transverse intersections recover the stabilizing marks. The kernel
+is the tangent to the graph of the unperturbed solutions, oriented
+by the complex normal operator and the base. There are $|\Gamma_I|$
+lifts. Proposition~\ref{prop:functional} therefore pairs the local
+point orientation to $+1$ on a neighborhood of every compact set
+containing it. The vanishing of Lemma~\ref{lem:relation} is impossible.
+\end{proof}

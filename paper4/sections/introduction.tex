@@ -1,0 +1,89 @@
+\section{Introduction}\label{sec:intro}
+
+Let $X$ be a smooth projective complex threefold with $K_X\simeq\cO_X$
+and $H^1(X,\cO_X)=H^2(X,\cO_X)=0$. For each effective class $\beta$, the characteristic function of the
+compact space of cycles representing $\beta$ defines a class $U_{X,\beta}$ in
+the Chern-number-zero, virtual-dimension-zero part $H$ of Pardon's rational
+algebra of semi-Fano one-cycles \cite[\S\S2--3]{Pardon}. Write
+$\Gamma_X\subset H_2(X;\ZZ)$ for the monoid of effective integral classes
+and put $U_{X,0}=1$. We use the completion by degree against an ample
+integral divisor. A bounded degree contains only finitely many effective
+classes, by compactness of the Chow spaces and local constancy of the
+integral cycle class.
+
+There are two geometric descriptions of the local curves which enter
+this problem. On a smooth curve $C$ of genus $g$, take a line bundle $L$
+of degree $g-1$ and set $N=L\oplus(K_C\otimes L^{-1})$. The circle of
+weights $+1,-1$ on these two summands fixes the multiple zero sections
+$m[C]$. The associated equivariant Thom classes define elements
+$a_{g,m}$ of $H$. Write $A_g(q)=1+\sum_{m\ge1}a_{g,m}q^m$.
+The second description, due to Ionel and Parker, uses an almost-complex
+structure for which every compact curve in a neighborhood of $C$ is
+supported on $C$ and the normal operator is injective on every cover.
+The contribution of such an elementary cluster is known numerically
+\cite[\S3]{IP}. We compare the two descriptions on the space of cycles.
+
+\begin{theorem}\label{thm:main}
+For $X$ as above there are unique integers $n_{\beta,g}(X)$ indexed by
+$\beta\in\Gamma_X\setminus\{0\}$ and $g\ge0$, zero for all
+sufficiently large $g$ at each fixed $\beta$, such that
+\begin{equation}\label{eq:product}
+ \sum_{\beta\in\Gamma_X}U_{X,\beta}Q^\beta
+ =\prod_{\beta\in\Gamma_X\setminus\{0\}}\prod_{g\ge0}
+       A_g(Q^\beta)^{n_{\beta,g}(X)}
+ \qquad\text{in }H\llbracket\Gamma_X\rrbracket .
+\end{equation}
+The integer $n_{\beta,g}(X)$ is the signed multiplicity of genus-$g$
+elementary clusters of core class $\beta$ in a cluster decomposition
+at any energy bound containing $\beta$. It equals the coefficient of
+the genus-$g$ elementary series at $\beta$ in the connected
+Gromov--Witten expansion of Ionel and Parker.
+\end{theorem}
+
+The balanced factors and their operations were constructed in
+\cite[\S\S2--3]{PaperIII}. Theorem~1.1 of that paper obtained
+\eqref{eq:product} assuming a universal Gromov--Witten evaluation on
+analytic families. Here the integer exponents are determined by
+deformation of cycles, before taking the connected numerical invariant.
+The proof still uses compactness and gluing for stable maps of fixed genus.
+Integral homology is used throughout, including when multiplication by
+an integer identifies distinct classes.
+
+The local comparison starts with a spin line $L$ and the real rotations
+of the two copies of $L$ in $L\oplus L$. These rotations preserve the
+Lee deformation of Ionel and Parker. On the integrable fiber the
+circle has opposite weights. On each positive fiber the only cycle of
+degree $m$ is $m[C]$. A compactly supported class on the total cycle
+space restricts to the antidiagonal Thom class at one end and to the
+normalized point class at the other (\S\ref{sec:local}).
+One can see the effect of the choice of circle already at the double of
+a genus-two curve. If $x_{g,m}$ denotes Pardon's scalar class, then
+\[
+                      a_{2,2}-x_{2,2}=-2x_{4,1}.
+\]
+In \S\ref{sec:double} we obtain the two negative terms separately from
+the two families of branched double covers of a generic balanced curve.
+
+To pass to $X$, we use the cluster isotopy of Ionel--Parker and
+Doan--Ionel--Walpuski \cite[\S7]{IP}, \cite[\S3]{DIW}. In a bounded
+energy range the disjoint connected supports can be separated in $X$.
+A cycle with components in several of the resulting open sets gives a
+product of compactly supported classes. At a fold two factors cancel
+up to factors of higher multiples of the core class. Iteration gives a
+finite signed product in an algebra of almost-complex families
+(\S\S\ref{sec:families}--\ref{sec:clusters}).
+
+The difficulty in returning to the complex cycle algebra is that a
+relation among classes of curves can run over parameter spaces of
+arbitrary dimension. Only the multiplicity-one classes need to be
+distinguished. At the least genus in a putative relation the image-cycle
+map from stable maps singles out one embedded curve, regular with
+local degree one. Sections~\ref{sec:genus} and~\ref{sec:degree} show
+that its point orientation survives in compactly supported cohomology.
+A comparison of the first coefficient where two products differ then
+gives \eqref{eq:product}. The result concerns the balanced antidiagonal
+classes. The dependence of the other geometric local elements in
+\cite[Remark~6.8]{Pardon} on their defining geometry is a separate question.
+
+\subsection*{Acknowledgements}
+I am grateful to John Pardon for a helpful discussion of the local curve classes.

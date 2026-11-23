@@ -53,6 +53,23 @@
       "version": "2.0",
       "revision_date": "2026-11-22",
       "revision_note": "The factorization retains full integral homology classes, and the elementary-cluster evaluation characterizes the compatible universal local factor."
+    },
+    {
+      "title": "A geometric product formula for universal curve counting on Calabi–Yau threefolds",
+      "author": "Bernd Johannes Wuebben",
+      "orcid": "0009-0002-4588-3284",
+      "date": "2026-11-23",
+      "revision_date": "2026-11-23",
+      "status": "Preprint",
+      "pdf": "paper4/main.pdf",
+      "sha256": "a4835111b3be79f123d1d61436efdd1cab532a90629382bef58d367fe3f9a25d",
+      "pages": 23,
+      "doi": "10.5281/zenodo.24455518",
+      "concept_doi": "10.5281/zenodo.24455518",
+      "version_doi": "10.5281/zenodo.24455519",
+      "archive_url": "https://doi.org/10.5281/zenodo.24455518",
+      "website_url": "https://bwuebben.github.io/papers/geometric-universal-curve-product/",
+      "version": "1.0"
     }
   ]
 }

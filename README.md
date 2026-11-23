@@ -25,15 +25,18 @@ with LaTeX sources and reproducible exact calculations.
    homology on every smooth projective Calabi–Yau threefold. The cluster
    evaluation characterizes the compatible universal factor, and agreement
    in degree two forces the splitting degrees to be balanced.
+4. **A geometric product formula for universal curve counting on Calabi–Yau threefolds** — [PDF](paper4/main.pdf), [source](paper4/main.tex), [abstract and citation](https://bwuebben.github.io/papers/geometric-universal-curve-product/).
+   For smooth projective threefolds with trivial canonical bundle and vanishing first and second structure-sheaf cohomology, the balanced factors give the universal series in Pardon’s rational cycle algebra. Deformation and excision identify the exponents with signed elementary-cluster multiplicities.
 
 Read Paper 1 before Paper 2 for the transition setting. The counterexample paper
-can also be read independently. Paper 3 returns to the same compact series and compares the two choices of local factors.
+can also be read independently. Paper 3 returns to the same compact series and compares the two choices of local factors. Paper 4 gives the geometric proof of the antidiagonal product.
 
 Zenodo archives and current editions:
 
 - [Conifold transitions](https://doi.org/10.5281/zenodo.23750046) · [edition 3.0](https://doi.org/10.5281/zenodo.24433173).
 - [Integrality counterexample](https://doi.org/10.5281/zenodo.23750048) · [edition 3.0](https://doi.org/10.5281/zenodo.24433174).
 - [Antidiagonal local curves](https://doi.org/10.5281/zenodo.24432700) · [edition 2.0, revised 22 November 2026](https://doi.org/10.5281/zenodo.24447953).
+- [Geometric product formula](https://doi.org/10.5281/zenodo.24455518) · [edition 1.0](https://doi.org/10.5281/zenodo.24455519).
 
 The 21 November revision of the conifold and counterexample papers supplies Zenodo DOIs for the author’s cited preprints.
 BibTeX citations are in [CITATION.bib](CITATION.bib).
@@ -70,7 +73,7 @@ comparison theorems are given in the papers.
 
 ## Build the manuscripts
 
-Each manuscript is independent. From `paper/`, `paper2/`, or `paper3/`, run:
+Each manuscript is independent. From `paper/`, `paper2/`, `paper3/`, or `paper4/`, run:
 
 ```sh
 latexmk -pdf main.tex

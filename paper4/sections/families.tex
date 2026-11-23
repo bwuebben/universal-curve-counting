@@ -1,0 +1,102 @@
+\section{Cycle classes in families}\label{sec:families}
+
+Let $Y\to B$ be a family of almost-complex six-manifolds. The base $B$
+is a finite simplicial complex. On each closed simplex the family is
+a smooth submersion with a smooth vertical almost-complex structure,
+in charts extending across the faces. The restrictions agree on common
+faces. Open and empty targets are allowed. Write $Z(Y/B)$ for the space of
+compact effective pseudoholomorphic one-cycles in the fibers, including
+the empty cycle. Its topology records the base parameter, the Hausdorff
+limit of the supports and weak convergence of their integration currents
+\cite[Definition~2.6]{DIW}. Empty support is a separate open and closed
+locus. A morphism of families is an inclusion of simplicial bases and
+a fiberwise almost-complex open embedding into the restricted target,
+smooth on every closed simplex.
+
+For a locally compact Hausdorff space $\pi:Z\to B$ put
+\[
+             V(Z/B)=H_c^0(Z;\pi^*\omega_B),
+\]
+where $\omega_B$ is the rational dualizing complex. Cohomology here
+and below is sheaf cohomology. In cellular form the summand over
+an oriented $p$-simplex $\sigma$ consists of the compactly supported
+cochains of $Z|_\sigma$ shifted by $p$. The second differential takes
+signed restrictions to the faces. This follows by resolving $\omega_B$
+by the constant sheaves on the closed simplices with the indicated shifts
+\cite[Definitions~2.2 and~3.1, Lemma~3.4]{Pardon}.
+
+\subsection{Topology and operations}
+Over a small base chart we can identify a neighborhood of any compact
+support with an open part of a product. Parallel transport on one
+closed simplex gives such a trivialization after shrinking about the
+compact set. A cutoff Hermitian form at the central parameter is
+uniformly positive on nearby complex lines, so convergence of currents
+bounds their masses in the chart. Consequently changes of trivialization
+preserve convergence. Requiring the supports to lie in a relatively
+compact neighborhood and imposing a closed bound on mass gives a
+compact containing set by \cite[Theorem~2.11]{DIW}. For this application
+one may extend the structures by cutoff to the fixed central fiber
+on a slightly larger neighborhood. Strict inequalities give a
+neighborhood of the prescribed cycle. The finite gluing along closed
+face spaces gives a locally compact Hausdorff space over $B$.
+
+On a complex analytic family the topology on each simplex agrees with
+Barlet's topology on compact cycles. Apply the support and volume
+criterion of \cite[\S1]{Barlet} in the complexification of the
+simplex. Only the vertical $(1,1)$ part of a test two-form pairs with
+a complex curve. Differences of positive Hermitian forms suffice for
+these tests on a compact set. A positive form supported near a given
+point of the limiting curve detects lower continuity of supports.
+Conversely, compact cutoffs and uniform approximation on a set of
+bounded mass give Barlet's continuous volume tests.
+
+Let $S$ be the rational vector-space colimit of $V(Z(Y/B)/B)$ over
+these families, identifying subdivisions. A closed base inclusion
+includes the corresponding face summands. An open embedding of targets
+extends by zero on the open subset of cycles contained in the source.
+These two operations commute by restriction of extension by zero.
+The external product, with disjoint union of the two targets over the
+product base, defines a commutative multiplication on $S$. The empty
+target over a point gives the unit. These are the smooth counterparts
+of the operations of \cite[\S3.1]{Pardon}. Extension by zero from the
+open semi-Fano cycle locus, followed by passage to the underlying
+almost-complex family, thus gives a ring homomorphism
+\[
+                          \Phi:H\longrightarrow S .
+\]
+On the summand defining $H$ the relative cohomological degree is zero.
+
+If the base is a point, the characteristic function of a compact open
+subset of its cycle space gives a class of $S$. Such a class remembers
+the ambient almost-complex manifold. An insertion on a family over
+$B\times[0,1]$, with $B$ a closed oriented manifold of dimension $n$,
+can also be represented by a compactly supported $n$-cocycle.
+Restrict it to each top simplex and sum with the product orientations.
+In the shifted complex this is a cochain of degree $-1$. Interior
+faces cancel in its differential, leaving the difference of the two
+endpoint insertions. We use this relation both for characteristic
+functions over an interval and for Thom classes over a finite Borel
+construction.
+
+For the addition operation, retain all relative degrees in $V$ and
+write $S^*$ for the resulting graded group. Proper pullback by addition
+over the same base followed by pushforward along the diagonal of bases
+takes values in $S^*\otimes S^*$, as in
+\cite[Definitions~2.3 and~3.9]{Pardon}. Here the external product is
+an isomorphism for the bivariant groups over two independent bases.
+Indeed, for the compactly supported cohomology of two locally compact
+Hausdorff spaces use their one-point compactifications relative to
+the added points. On the compact product finite rectangular covers
+are cofinal. The nerve of a product cover maps to the product of the
+two nerves by taking marginal barycentric coordinates, with a section
+given by their products. Linear interpolation gives a homotopy on
+each product of simplices, also on the relative subspaces at infinity.
+Finite-polyhedron Künneth over $\QQ$ therefore passes to relative
+Čech cohomology, hence to compactly supported sheaf cohomology.
+Filtering the two finite face complexes by dimension gives the
+bivariant assertion, since the product is an isomorphism on the first
+pages. Use product subdivisions containing the diagonal for the
+base pushforward. Additivity of support of effective cycles makes
+this construction commute with open extension, and restriction to
+faces commutes with both operations. The same argument for
+multiplication by $d$ gives $\rho_d$.

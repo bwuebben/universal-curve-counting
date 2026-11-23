@@ -1,0 +1,243 @@
+\section{A double curve of genus two}\label{sec:double}
+
+In genus two the first difference between the two circle actions can
+be calculated inside the complex cycle algebra. The identity also
+follows under numerical reconstruction in \cite[\S6]{PaperIII}.
+
+\begin{proposition}\label{prop:double}
+In $H$ one has $a_{2,2}=x_{2,2}-2x_{4,1}$.
+\end{proposition}
+\begin{proof}
+Let $C$ be a smooth genus-two curve with hyperelliptic involution
+$\iota$. Choose distinct non-Weierstrass points $p,q$ in distinct
+orbits. Choose $L$ with $L^2=\mathcal O(p+q)$, possible by
+surjectivity of multiplication by two on the Jacobian. Put
+$M=K_C L^{-1}$. The divisors of chosen sections $s_L,s_M$ of
+$L^2,M^2$ are $p+q,\iota p+\iota q$, respectively. Indeed
+$p+\iota p\sim q+\iota q\sim K_C$. Each section spans its space
+of global sections by Riemann--Roch, since neither divisor is
+canonical. A section of $L$ would give a square section with a
+double zero, which is impossible. The same holds for $M$. Also
+$ML^{-1}=K_C(-p-q)$ is a nontrivial degree-zero line bundle.
+By the deformation of balanced pairs in \S\ref{sec:local} and the
+scalar construction \cite[\S4.3]{Pardon}, both classes can be
+computed on this splitting.
+
+In $Y=\operatorname{Tot}_C(L\oplus M)$, every irreducible compact
+curve projects finitely onto $C$. A degree-two cycle has zero trace
+in both fiber coordinates $u,v$, because $H^0(L)=H^0(M)=0$.
+Its two fiber points, with multiplicity, thus have the form
+$\pm(u,v)$. The three quadratic invariants give global sections
+
+\[
+        u^2=a s_L,\qquad v^2=b s_M,\qquad uv=d\in H^0(K_C).
+\]
+
+They extend over ramification by symmetric evaluation on the finite
+maps from the normalizations of the components. Since
+$d^2=ab\,s_Ls_M$ and the four zeros of $s_Ls_M$ are simple,
+$ab=0$ and $d=0$. Conversely each point of the two coordinate
+axes gives a cycle. On the first axis it is
+$D_a=\{u^2=a s_L,\ v=0\}$, and there is an exchanged formula
+on the second. The origins are the same cycle $2[C]$. These
+parametrizations are continuous, including at zero, by the finite
+flat families of spectral divisors. Their inverse is continuous by
+fiber evaluation away from the zeros. This identifies the underlying
+cycle space equivariantly with the union of the two complex lines.
+For nonzero amplitude each cover is smooth and connected, with
+two simple branch points. Riemann--Hurwitz gives genus four. The
+two independent scalings of $L,M$ act on $a,b$ with characters
+$(2,0),(0,2)$.
+
+\smallskip\noindent\emph{The two Borel classes.}
+Set $B=\mathbb P^1\times\mathbb P^1$ and let $h_1,h_2$ be the
+positive hyperplane classes. Twist $L,M$ by the hyperplane lines
+from the first and second factors, respectively. The relative
+degree-two cycle space $W$ is the union of the total spaces
+$P_+=\operatorname{Tot}\mathcal O(2,0)$ and
+$P_-=\operatorname{Tot}\mathcal O(0,2)$, glued along their zero
+sections $B$. Write $U_+,U_-$ for the complex Thom classes of
+these two line bundles. Use the two base inclusions
+
+\[
+            i_s(z)=(z,z),\qquad i_a(z)=(z,\bar z),
+\]
+
+orienting the source by its complex orientation in both cases.
+The first restricts the target family to the scalar Borel family.
+On the second, the second hyperplane line identifies real analytically
+and fiberwise complex linearly with $\mathcal O(-1)$ by the
+Hermitian metric. Thus its restriction is the antidiagonal Borel
+family. A real analytic base map and real analytic bundle
+identification suffice here. On real simplices they complexify to
+the family germs of \cite[Definition~3.1]{Pardon}. The Gysin map of either
+embedding preserves the universal image. One can use a product
+triangulation subdivided along the diagonal, and transport it by
+conjugation of the second factor for the second graph. Both give
+the canonical concordance class of immersed real analytic
+triangulations of $B$. In the shifted compactly supported
+description the pushforward is the oriented normal Thom map, as
+in Pardon's diagonal computation~\cite[\S3.1, Lemma 3.5 and proof of Lemma 4.13]{Pardon}.
+
+At Borel stage one the scalar cut is $(a+b)^*\mathrm{Th}/2$,
+where the sum is in $\mathcal O(2)$. For the antidiagonal cut
+use $a+j(b)$, where the Hermitian conjugate-linear identification
+$j:\mathcal O(-2)\to\mathcal O(2)$ reverses the real fiber
+orientation. Again divide by two. Each cut vanishes exactly on the
+common zero section. These choices represent the published
+normalizations. To check this even for the continuous test $j$,
+use the standard Hermitian metrics at every finite Borel stage.
+The tests restrict along hyperplanes, and each ordinary normalized
+Euler class is $h$. Append a defining tuple from \cite[\S2]{PaperIII} to the
+one-test tuple and append this test to the defining tuple. The two
+resulting compactly supported Thom products coincide at the common
+stage by naturality and the projection formula of the stabilization
+lemma. The same argument identifies the scalar test with that of \cite[Definition~4.7]{Pardon}.
+
+The Poincaré duals of the two base graphs are $h_1+h_2$ and
+$-h_1+h_2$, respectively. For the second sign, integrate $h_1$
+and $h_2$ on the graph to obtain $1,-1$. Naturality of the
+normal Thom map under restriction to either branch gives the
+following table in $H_c^4(P_\pm;\mathbb Q)$.
+\[
+\begin{array}{lcc}
+ & P_+ & P_- \\ \hline
+\text{scalar} & (h_1+h_2)U_+/2 &(h_1+h_2)U_-/2\\
+\text{antidiagonal} & (-h_1+h_2)U_+/2 &(h_1-h_2)U_-/2\\
+\text{difference} &-h_1U_+ &-h_2U_-
+\end{array}
+\]
+These restrictions determine the class on $W$. For the proper
+map $\nu:P_+\sqcup P_-\to W$ the difference of restrictions
+to $B$ gives the exact sequence
+$0\to\mathbb Q_W\to\nu_*\mathbb Q_{P_+\sqcup P_-}
+\to\mathbb Q_B\to0$. There are no higher direct images since the
+fibers are finite. Now $H^3(B)=0$, so restriction of $H_c^4(W)$
+to the two branches is injective.
+
+For the positive class $(h_1U_+,0)$, fix one point on the first
+base factor, trivialize its hyperplane line there, and fix a nonzero
+amplitude $a_*$. Over the remaining base $\mathbb P^1$, take
+the complex point class of $a_*$ in the amplitude line and extend
+by zero from a disk avoiding zero. Pushing forward from the base
+slice gives precisely $(h_1U_+,0)$ by the Thom isomorphism. Its
+support misses the other branch. The exchanged construction
+represents $(0,h_2U_-)$. It remains to compute the universal
+image of the class on each base slice.
+
+\smallskip\noindent\emph{The class of a branch.}
+We treat the first branch. The family over the remaining
+$B'=\mathbb P^1$ has first summand $L$ and second summand
+$M\otimes\mathcal O_{B'}(1)$. Write $S=\operatorname{Tot}_C L$.
+Deform the threefolds as affine line bundles over $S$, retaining
+the projection to $S$. Choose independent sections
+$\sigma_0,\sigma_1$ of $\mathcal O_{B'}(1)$. Let $z_0$ be
+the simple zero of $\sigma_0$. Choose a nonzero class
+
+\[
+     c\in H^1(C,ML^{-1})\simeq\mathbb C .
+\]
+
+Cover $C$ by a disk $V$ avoiding the zeros of $s_L$, and the
+complement $U$ of its center. These two Stein sets and their
+intersection compute this cohomology. Represent $c$ on $U\cap V$.
+For $t\in[0,1]$, add the following translation to the usual
+transition of the second fiber coordinate, written intrinsically
+in the common line over the overlap. The added term is
+
+\[
+     t\,c\,u\,
+          \big[\sigma_0+(u^2/s_L-a_*)\sigma_1\big].
+\]
+
+This is holomorphic on the whole overlap, including $u=0$.
+The two-set gluing with inverse translation defines a holomorphic
+family, also for complex $t$. The relative tangent determinant
+in each threefold is the pullback of $TC\otimes L\otimes M$, up
+to a constant line on the fiber, so the cycles stay semi-Fano.
+
+Fix $a$ in a small disk about $a_*$ avoiding zero. Any cycle
+of degree two with this amplitude projects onto the smooth
+spectral divisor $D_a\subset S$ with degree one. Indeed its
+projected cycle is determined by $u^2=a s_L$, and no component
+can lie in an affine line fiber. The finite degree-one map to the
+smooth divisor is an isomorphism on the normalization and the lift
+is a section of the affine line bundle over $D_a$. Conversely
+every such section gives the embedded cycle. Write
+$\pi:D_a\to C$. The identity
+$\pi_*\mathcal O_{D_a}=\mathcal O_C\oplus L^{-1}$ gives
+
+\[
+   H^0(D_a,\pi^*M)=0,\qquad
+   H^1(D_a,\pi^*M)=H^1(C,ML^{-1}) .
+\]
+
+The lifting obstruction is
+$t[\sigma_0(z)+(a-a_*)\sigma_1(z)] [c\,u]$.
+Here multiplication by $u$ identifies $c$ with its nonzero
+class in the odd summand of the displayed direct image. Hence a
+lift exists precisely when this expression vanishes. When it does,
+the translations on the divisor are themselves zero, and the zero
+section in the two local charts gives the unique lift.
+
+Pull back the Thom class of $a-a_*$ on this amplitude disk. It
+defines a supported class throughout the prism $B'\times[0,1]$.
+Its zero set consists of the section $D_{a_*}$ over all of $B'$
+at $t=0$, together with $D_{a_*}$ over $z_0$ for every $t$.
+This set is compact. The amplitude is continuous by fiber
+evaluation in the projection to $S$. On the zero-obstruction
+locus the explicit local zero graphs vary continuously by their
+spectral equations. Thus the parametrization above is also a
+homeomorphism over the disk. Extension by zero and the oriented
+prism relation identify the endpoint insertions. At $t=1$, the
+relative cycle space near the support is the graph
+
+\[
+                  a=a_*-\sigma_0(z)/\sigma_1(z).
+\]
+
+The function on the right has nonzero derivative at $z_0$.
+The insertion has local degree $+1$ on this graph. Projection
+of the graph to the base is a complex orientation preserving local
+isomorphism, so the Gysin image from the fiber over $z_0$ of the
+unit on the isolated curve is exactly this class.
+
+For regularity in that fiber, the normal sequence of $D=D_{a_*}$
+has subbundle $\pi^*M$ and quotient $\pi^*L^2$. The latter is
+the normal line to $D$ in $S$, by its divisor equation.
+Its space of sections is generated by the amplitude variation
+$da=1$, since $H^0(L^2)=\mathbb C s_L$ and $H^0(L)=0$.
+The normal connecting map sends this variation to
+$\pm\sigma_1(z_0)[c\,u]$, by differentiating the transition
+on $D_a$ at $a=a_*$. It is an isomorphism. Also
+$H^1(D,\pi^*L^2)=H^1(L^2)\oplus H^1(L)=0$. It follows that
+$H^0(N_{D/Y_{z_0,1}})=H^1(N_{D/Y_{z_0,1}})=0$.
+
+Finally deform the ambient germ along this smooth curve to the
+total space of its normal bundle $N$. One model is the blow-up
+of $Y_{z_0,1}\times\mathbb C$ along $D\times0$, with the
+strict transform of the central fiber removed. The copy of $D$
+persists and is isolated and regular in every fiber, including
+the normal bundle fiber. Near a smooth embedded curve of multiplicity
+one the relative cycles are embedded deformations, and vanishing
+of both normal cohomology groups makes the relative space locally
+the base. Thus the section over a closed parameter interval is
+compact and open in the relative cycle space there, and its unit
+continues to the zero section of $N$. Every degree-one compact
+cycle in $N$ is a holomorphic section, so its degree-one cycle
+space is the single point $H^0(D,N)=0$. In \cite[Definition~4.7]{Pardon} one can take Borel stage zero and the empty tuple,
+since the whole degree-one locus is compact and its class is the unit.
+To identify the indices, adjunction gives
+$\deg N=2g(D)-2=6$, since the fiber threefold has trivial
+canonical bundle. Thus $c_1(T\operatorname{Tot}N)[D]=0$.
+Pardon's scalar construction applies to any rank-two holomorphic
+bundle on a smooth proper curve of this genus and Chern number.
+This includes the possibly nonsplit $N$ obtained from the normal
+sequence. With $m=1$ the empty tuple at stage zero therefore gives
+$+x_{4,1}$, with the sign fixed by the local degree on the graph~\cite[Remark 4.1 and Definition 4.7]{Pardon}.
+
+Exchanging $L$ and $M$ preserves the assumptions, including
+nontriviality of the degree-zero ratio, so the second positive
+branch class has the same image. Substitution in the last row of
+the table gives $-2x_{4,1}$ for the difference.
+\end{proof}

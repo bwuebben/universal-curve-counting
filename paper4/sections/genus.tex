@@ -1,0 +1,219 @@
+\section{Detection by maps of fixed genus}\label{sec:genus}
+Write $x_{h,m}$ for the scalar classes of
+\cite[Definition~4.7]{Pardon}. The map $\Phi$ of \S\ref{sec:families}
+will only have to distinguish scalar classes of multiplicity one.
+
+\begin{theorem}\label{thm:independence}
+The images $\Phi(x_{h,1})$, $h\ge0$, are linearly independent over $\QQ$.
+\end{theorem}
+
+We first reduce an arbitrary linear relation to a statement about a
+single moduli space. Section~\ref{sec:degree} proves the required
+nonvanishing there.
+
+\subsection{The image cycle}
+Let $Y\to B$ be a family as in \S\ref{sec:families}. Let $M_k$ be
+the coarse moduli space of connected unmarked stable maps in the fibers,
+of arithmetic genus $k$, with nonconstant image and vertical Chern number
+zero. Write $z_k:M_k\to Z(Y/B)$ for the map taking the image cycle.
+A component is counted with its degree over the normalization of its
+image. Contracted components contribute zero.
+\begin{lemma}\label{lem:proper}
+The map $z_k$ is continuous and proper.
+\end{lemma}
+\begin{proof}
+Gromov convergence gives convergence of the weighted currents and the
+Hausdorff supports. Contracted components have image in the nonconstant part of the
+image because the domain is connected. For properness, take a
+sequence above a compact subset of $Z(Y/B)$ and pass to a subsequence whose
+cycles converge. Work over one closed simplex, in a local target
+trivialization about the limiting support. Hausdorff convergence puts
+all the images in one relatively compact neighborhood. The masses of
+the cycles bound the energies of the maps, with multiplicity included.
+Indeed one can test against a cutoff Hermitian form of the limiting
+parameter, uniformly positive on all nearby complex lines in this
+neighborhood. For the fixed parametrizing surface in
+Ivashkovich--Shevchishin's theorem take a closed oriented surface
+of genus $k$. Each connected nodal domain of arithmetic genus $k$
+is the quotient of such a surface by pinching disjoint circles,
+as one sees by smoothing its nodes. The boundary condition in
+their theorem is empty. The images stay in a common compact set,
+and the structures on its neighborhood converge smoothly after
+trivialization. Their theorem now gives a convergent subsequence
+of stable maps. On smooth parts away from the nodes elliptic
+regularity upgrades convergence to the smooth Gromov topology for
+these smoothly converging structures. If the limit map were constant,
+all nearby images would lie in a coordinate ball on which a fixed
+exact two-form tames the nearby structures. Its integral over a
+nonconstant closed curve is positive, whereas Stokes' theorem gives
+zero. Thus the limit is nonconstant and its image cycle is the
+prescribed limit. The empty cycle has a neighborhood disjoint from
+all nonempty cycles, and the integer Chern number is locally constant
+in the Gromov topology. These observations preserve the restrictions
+defining $M_k$. The compactness argument applies in metrizable local
+charts for the two topologies and over a finite union of simplices.
+For compactness see \cite[Theorem~1.1]{IS}, and for the image-cycle map see \cite[Definition~2.14]{DIW}.
+\end{proof}
+
+\subsection{A regular map over the least genus}
+Use a smooth curve $C$ of genus $h$ and a degree $h-1$ line $L$
+outside the theta divisor. For $h=0$ take $\mathcal O(-1)$ and for
+$h=1$ a nontrivial line of degree zero. Serre duality and
+Riemann--Roch give $H^0(C,N)=H^1(C,N)=0$ for
+$N=L\oplus K_C L^{-1}$. Every compact degree-one cycle in $N$ is a
+section. Indeed it has one irreducible component mapping with degree
+one to $C$, no compact curve lies in an affine fiber, and the
+normalization gives the graph of a holomorphic section. Hence the
+core is isolated in that degree and the point insertion represents
+$x_{h,1}$, as in \S\ref{sec:local}.
+
+For a stable map over this insertion, exactly one normalized
+component maps with degree one to $C$ and it maps isomorphically.
+Arithmetic genus equals the sum of the component genera plus the
+first Betti number of the dual graph. It is at least $h$. In the
+equality case the dual graph is a tree and every other vertex is a
+contracted rational component. Any nontrivial such tree has a
+contracted leaf, violating stability in the absence of markings.
+Thus $z_h^{-1}([C])$ is the single embedded map, with trivial map
+automorphisms in every genus. Its unparametrized deformation and
+obstruction spaces are $H^0(C,N)$ and $H^1(C,N)$, since the
+domain tangent complex cancels the tangential part of the target
+complex. The map is regular with complex orientation $+1$.
+
+In this splitting the whole degree-one cycle locus is the singleton
+$[C]$. For both circles its unit represents the local class, by the
+empty equivariant tuple at Borel stage zero. In particular
+$a_{h,1}=x_{h,1}$. For $k<h$ the fiber of $z_k$ over this cycle is empty.
+
+\begin{lemma}\label{lem:relation}
+Suppose a finite relation among $\Phi(x_{h,1})$ has least genus $k$
+with nonzero coefficient. There is a smooth family of almost-complex
+six-manifolds over an open subset of $\CC^r$ for which the point
+orientation at one regular map, in a product neighborhood of a
+marked parameter, has zero image in $H_c^{2r}(M_k;\QQ)$.
+\end{lemma}
+\begin{proof}
+Represent the sum on a finite disjoint
+union of vertex targets, one per nonzero coefficient. In this
+comparison diagram the filtered-quotient argument of Pardon's Lemma
+3.2 applies. Take disjoint unions for common targets. For parallel
+inclusions, attach a cylinder on the source base between their two
+images. Use the corresponding pulled-back larger target near each
+end and the source open target across the middle. Stacking three
+cylinders permits simplicial attachment even when the endpoint
+images overlap. The resulting target is Hausdorff since near the middle slice only the common open target is present, with
+larger pieces on opposite sides. It is simplexwise smooth.
+The two inclusions induce equal maps after attachment by the
+constant-cylinder prism on compactly supported cochains and open
+extension. A subdivision likewise has a triangulated product
+concordance. Thus every finite vanishing relation is witnessed in
+one family $X/B$ after these attachments. Distinct marked vertices
+of the initial disjoint-union base remain distinct under its
+inclusion~\cite[Lemmas 3.2--3.4]{Pardon}.
+
+At each marked vertex $b$ attach a new closed interval to $B$ by
+one endpoint only, and use the constant family with fiber $X_b$
+on that interval. Its other endpoint $b'$ has an open neighborhood
+in the enlarged base on which the family is a product.
+The original base is a subcomplex, so its zero relation still
+vanishes after inclusion. The compact point insertion crosses the
+new edge by the interval relation for a constant family. Indeed
+the insertion extended constantly over the edge has the difference
+of its vertex insertions as its face boundary. Use distinct new
+endpoints for the different marks. Relabel the enlarged complex
+$B$ and use these endpoints as the marked parameters below.
+
+Embed a subdivision of $B$ as a subcomplex in an oriented Euclidean
+space and take a compact PL regular neighborhood, with $B$ in its
+interior $W$. After subdivision there is a PL neighborhood retraction
+onto $B$ that fixes $B$. Pull the family back along this retraction. The inclusion
+of $B$ takes the zero relation to zero by the bivariant pushforward.
+Equivalently, the dualizing complex of the neighborhood restricts
+in the interior to $\mathbb Q[n]$, and the closed-base pushforward
+has support on $B$ in that interior. One can use the pushforward
+directly with target $W$, by properness of the closed inclusion,
+so no restriction of compact supports across an arbitrary open set
+is needed. Increase the ambient dimension if necessary. On $W$
+the relation is therefore zero in $H_c^n(Z(X_W/W);\mathbb Q)$.
+This is the base thickening used in the proof of Pardon's Theorem
+5.15. It requires only a PL retraction for the present families~\cite[proof of Theorem 5.15]{Pardon}.
+
+The closed-base pushforward for $i:B\hookrightarrow W$
+uses the counit $i_*\omega_B=i_*i^!\omega_W\to\omega_W$.
+Pull back this counit to the cycle space and use proper base change
+for the closed inclusion of its restriction over $B$. This formula
+also gives functoriality for a vertex followed by $i$, and commutes
+with pulling back to the stable-map space by the proper map $z_k$.
+
+Continuity of the retraction gives a Euclidean ball about each new
+endpoint mapping into its constant-family neighborhood. Over this
+ball the targets, cycle spaces and stable-map spaces are products.
+The singleton cycle is open in the original open target and remains
+open in the larger fiber by open embedding of the cycle spaces.
+It is compact there as well. The oriented point Gysin map in the
+ball is the external product of this singleton insertion and the
+orientation at the marked parameter. Pullback by $z_k$ computes
+the two factors separately. At a higher-genus mark the inverse image
+of the singleton is empty by the genus bound above. At the least-genus mark it consists
+of the one regular embedded map, so over the ball it is precisely
+a copy of the ball. The pulled-back class is its point orientation
+extended by zero, with a nonzero coefficient. This proves the reduction.
+
+It remains to smooth the dependence of the targets on the parameter.
+Let $P$ denote the compact triangulated PL neighborhood just constructed,
+with interior $W$ open in Euclidean space. Increase its dimension to
+an even integer $2r$. The family on $P$ is simplexwise smooth after
+subdivision. Using the attached constant intervals, choose
+disjoint Euclidean balls $B_{4\delta}(b)\Subset W$ around the
+marked parameters on each of which the entire family is a product.
+Use a common $\delta>0$ for these finitely many marks. The point
+orientation on the distinguished stable-map graph maps to zero in
+$H_c^{2r}(M_k)$ for a putative dependence. Subdivide to mesh
+smaller than $\delta/4$.
+
+For every vertex $v$ of the subdivision take its open star in $P$.
+Choose a partition of unity $\lambda_v$ with closed supports contained
+in these stars, smooth on the interior in the Euclidean smooth
+structure. It can be obtained by restricting a smooth partition of
+unity from an open Euclidean cover near $P$. Define $F:P\to P$ by
+the barycentric combination of the vertices with weights
+$\lambda_v(y)$. At $y$, the vertices whose closed supports contain
+$y$ belong to the least simplex containing $y$. Since the cover is
+finite, all other weights vanish in a whole neighborhood of $y$.
+Consequently $F$ maps that neighborhood into a \emph{single} simplex
+and its barycentric coordinates there are smooth in $W$. The
+straight-line homotopy from $y$ to $F(y)$ stays in its simplex and
+moves points by at most the mesh. In particular it preserves the
+boundary of $P$.
+
+Modify $F$ to fix the marked balls. Choose a smooth function
+$\chi$ equal to zero on the balls of radius $\delta$ and one
+outside the balls of radius $2\delta$. Replace $F(y)$ by
+$(1-\chi(y))y+\chi(y)F(y)$, choosing $0\leq\chi\leq1$. This
+map remains in the least simplex containing $y$, moves points by
+less than $\delta/4$, and agrees with the old map near the boundary
+of $P$. Where it changes, its source and image lie in one of the
+balls of radius $3\delta$ with constant target family. Outside
+the modifying balls the earlier factorization through one simplex
+applies. Write $F$ for the modified map.
+
+Set $W'=F^{-1}(W)$. The restriction $W'\to W$ is proper, as a base
+change of the continuous map of compact spaces $P\to P$, and $W'$
+lies in the Euclidean interior of $P$. Pull the target family back
+along this map. It is a smooth submersion with smooth vertical
+almost-complex structure on $W'$. On the modifying balls it is a
+product. Elsewhere it is the pullback of a smooth simplex model.
+On overlaps of simplex models the maps factor through the common
+face and the prescribed identifications are smooth. The product
+trivializations are the specified constant families on the attached
+intervals, so they agree with the simplex models there. For the stable-map
+spaces this is a Cartesian pullback, including their Gromov topologies,
+so their induced map is also proper.
+
+For a marked $b$, the preimage of $B_{\delta/2}(b)$ equals that
+ball and $F$ is its identity. Indeed any preimage lies within
+$3\delta/4$ of $b$ by the displacement bound. Consequently the
+proper pullback of the point orientation on the distinguished graph
+is the very same point orientation extended by zero. It still
+vanishes in the global compactly supported group.
+\end{proof}
