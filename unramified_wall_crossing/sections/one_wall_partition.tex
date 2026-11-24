@@ -1,0 +1,175 @@
+\section{The partition function and the highest changing genus}
+\label{sec:partition}
+
+Write $h=g(Y)$, $b=h-1=2(g-1)$, $y=e^{iv}$ and
+$z_j=2-y^j-y^{-j}$, so that $z=z_1=(2\sin(v/2))^2$.
+For a box $a=(i,j)$ in a partition $\lambda$, let $\ell(a)$ be its
+hook length and put $c(\lambda)=\sum_{(i,j)\in\lambda}(j-i)$.
+For $p\ge1$ define
+\begin{equation}\label{eq:positiveseries}
+ Z_p(Q,y)=\sum_{\lambda}(-1)^{p|\lambda|} Q^{|\lambda|}
+ y^{p c(\lambda)}\prod_{a\in\lambda}z_{\ell(a)}^{\,p}.
+\end{equation}
+The empty partition supplies the constant term.
+
+\begin{proposition}\label{prop:evaluation}
+For the character path of Theorem~\ref{thm:character} and each $e\ge1$ the connected contribution on $Y$ is
+\[
+ L^Y_e(B_1;v)=[Q^e]\log Z_b(Q,y).
+\]
+Put $c=g-1$. On $C$ the
+positive and negative endpoints have disconnected series
+\[
+ Z_c(q,y),\qquad Z_c(q,y)\,Z_b(q^2,y)^{-1}
+ \pmod {q^{M+1}}
+\]
+at the endpoints through degree $M$ specified in that theorem.
+\end{proposition}
+
+\begin{proof}
+The flat frame upstairs identifies the two lines with
+$L_1=\mathcal O_Y$ and $L_2=K_Y$. At $t=1$, the order-zero term in
+$B_1$ sends each summand to the other by a conjugate-linear map.
+Scale this term by $\tau\in[0,1]$. For every $\tau$ the resulting
+real operator commutes with the circle of weights $(1,-1)$, hence
+with the complex structure $J'=(i,-i)$ on sections and on
+bundle-valued forms.
+
+Let $\pi$ and $a$ be the universal curve and map over
+$\mathcal M=\overline{\mathcal M}_k(Y,e)$ and set
+$W_i=-R\pi_*a^*L_i$ in complex $K$-theory. Put $s=k-1-be$.
+Riemann--Roch gives $r_1=\operatorname{rk}W_1=k-1$,
+$r_2=\operatorname{rk}W_2=k-1-2be$ and
+$r_1+r_2=2s=\dim^{\mathrm{vir}}_{\CC}\mathcal M$.
+At $\tau=1$ the pullback operators are injective. Their cokernels
+form a bundle $V$ with
+\begin{equation}\label{eq:massclass}
+ [V,J']=W_1+\overline{W_2}.
+\end{equation}
+Indeed, the entire homotopy consists of complex-linear Fredholm maps
+for $J'$, including the matching conditions at the nodes. In a nodal
+chart one stabilizes the family by forms on the thick part, taking
+their complex span for $J'$ and their translates under the finite
+stabilizer. Enlarging the stabilization preserves the index. This
+gives a single family index over $\mathcal M\times[0,1]$ by the nodal
+family construction of \cite[\S2.4]{zinger}. At $\tau=0$ its negative
+is the sum of the first Dolbeault cokernel index and the complex
+conjugate of the second. The Dolbeault resolution in families of nodal
+curves identifies these indices with the classes in
+\eqref{eq:massclass} \cite[\S4]{siebertnodal}.
+
+At $\tau=0$ the change from the ordinary complex determinant
+orientation to the $J'$ orientation conjugates both cohomology groups
+of the second line. The relative sign is
+$(-1)^{h^0(a^*L_2)+h^1(a^*L_2)}=(-1)^{r_2}$. Transporting both
+orientations along the homotopy gives
+\[
+ e_{\mathrm{det}}(V)=(-1)^{r_2}c_{2s}(W_1+\overline{W_2})
+      =[u^0]\,e_u(W_1)e_{-u}(W_2).
+\]
+Here $e_u(W)=u^{\operatorname{rk}W}\sum_{j\ge0}u^{-j}c_j(W)$.
+The expression is valid also for negative virtual ranks. For $e=1$
+and $k=h$, the identity map has a zero-dimensional cokernel and the
+sign is $(-1)^b=1$.
+
+Only the coefficient of $u^0$ has the cohomological degree of the
+virtual class. Pairing with this class gives the antidiagonal residue
+integral of \cite[\S2.2]{bp08}, using the comparison of virtual
+classes for the projective target $Y$ \cite[Theorem~0.1]{siebertgw}.
+The line degrees $(0,2b)$ sum to $2h-2$, so the genus-variable shift
+in the residue convention is zero. Exponentiation of the connected
+integrals counts unordered collections of positive-degree connected
+components with their automorphism weights. Corollary~7.2 of
+\cite{bp08} gives \eqref{eq:positiveseries} for the result.
+Transposing the summation partition reverses the content and preserves
+the hooks, so either order of the two levels gives this expression.
+The same argument on $C$ uses the lines $E$ and $K_C\otimes E$ of
+degrees $(0,2c)$. Theorem~\ref{thm:character} now gives the
+negative-side series by subtraction in the connected logarithm.
+\end{proof}
+
+Write $n_{e,l}$ for the exponent at $(e,l)$ of $P^H(B_1)$
+for the character path of Theorem~\ref{thm:character}. Thus $n_{e,l}$ is the jump
+of the downstairs exponent in degree $2e$ and genus $l$. For the
+balanced factor $A_l$, denote its evaluated logarithm by
+\[
+ G_l(Q,y)=\log\!\left(\sum_\lambda Q^{|\lambda|}
+                  \prod_{a\in\lambda}z_{\ell(a)}^{\,l-1}\right).
+\]
+This is the balanced specialization \cite[Corollary~7.3]{bp08}.
+In particular $[Q]G_l=z^{l-1}$. Finite genus support at each degree
+in the geometric factorization gives the coefficientwise identity
+\begin{equation}\label{eq:balancedextraction}
+ \log Z_b(Q,y)=\sum_{r\ge1}\sum_{l\ge0} n_{r,l}G_l(Q^r,y).
+\end{equation}
+
+\begin{theorem}\label{thm:highest}
+For the character path, in projection degree $2e$ the highest genus of a changing elementary
+exponent is $1+be^2$, and its change is $+1$.
+\end{theorem}
+
+\begin{proof}
+For a partition of $e$, let $P_R$ and $P_C$ count unordered pairs of
+boxes sharing a row and a column, respectively. Counting arms and legs
+gives $\sum_a\ell(a)=e+P_R+P_C$ and $c(\lambda)=P_R-P_C$. The
+highest power of $y$ contributed by $\lambda$ in
+\eqref{eq:positiveseries} is therefore $b(e+2P_R)$. Its maximum
+$be^2$ occurs only in the single row and has coefficient $1$.
+Products of lower-degree terms in the logarithm have strictly
+smaller highest power, since $\sum_i e_i^2<e^2$ for every
+decomposition of $e$ into two or more positive summands.
+
+First observe that $n_{r,l}=0$ for $l<1+br$. Riemann--Hurwitz on
+the positive-degree components of a connected map of degree $r$ to
+$Y$ gives this lower bound on its arithmetic genus. Consequently
+$[Q^r]\log Z_b$ vanishes to order at least $2br$ in $v$.
+Subtract proper-divisor contributions in \eqref{eq:balancedextraction}
+in order of increasing $r$. A preceding factor at degree $d\mid r$
+with $l-1\ge bd$ contributes a term of order at least
+$2(l-1)r/d\ge 2br$, by the hook formula for $G_l$. The remaining
+finite sum $\sum_l n_{r,l}z^{l-1}$ has terms of distinct initial
+orders, proving the lower bound by induction.
+
+For $l\ge1$ and $j\ge1$, the highest Laurent power in
+$[Q^j]G_l$ is at most $(l-1)j(j+1)/2$. Indeed
+$P_R+P_C\le\binom j2$, and products in the logarithm satisfy the
+same bound by superadditivity. Suppose inductively that $l-1\le bd^2$
+for every nonzero exponent at a smaller degree $d$. At degree $e$
+each proper divisor $d$, with $j=e/d>1$, contributes powers no higher
+than
+\[
+ bd^2\,j(j+1)/2 < be^2.
+\]
+The term $y^{be^2}$ with coefficient $1$ thus survives subtraction
+of every proper-divisor term. In the remaining polynomial
+$\sum_l n_{e,l}z^{l-1}$ the top Laurent coefficient of $z^{be^2}$
+is $(-1)^{be^2}=1$ since $b$ is even. This proves both assertions,
+including the starting degree $e=1$.
+\end{proof}
+
+\subsection{The quartic correction}
+The upstairs degree-one logarithm is $z^b$, so the sole new factor
+in projection degree two is $A_{b+1}(q^2)$. The partitions of size
+two have hooks $1,2$ and total contents $\pm1$. At upstairs degree
+two the quadratic logarithm term $-z^{2b}/2$ is common to
+$\log Z_b$ and $G_{b+1}$. Subtracting the latter gives
+\begin{equation}\label{eq:quarticgenus}
+ \sum_l n_{2,l} z^{l-1}
+     = z^{2b}(4-z)^b\big(y^b+y^{-b}-2\big),
+\end{equation}
+since $z_2=z(4-z)$. The last parenthesis is a polynomial in $z$
+with linear term $-b^2 z$, as follows by expansion at $v=0$.
+Thus the first changing elementary exponent in projection degree
+four occurs in genus $2b+2$, with change $-b^2 4^b$.
+
+For $g=2$ one has $b=2$ and $y^2+y^{-2}-2=-z(4-z)$.
+Formula~\eqref{eq:quarticgenus} becomes
+\[
+ -z^5(4-z)^3=-64z^5+48z^6-12z^7+z^8.
+\]
+The four jumps occur in genera six through nine. There is already
+a connected contribution in genus five. Indeed the leading
+coefficient of $[Q^2]\log Z_b$ at $z^{2b}$ is
+$2\cdot4^b-\tfrac12=(2^{2h}-1)/2$, which is $63/2$ at $h=3$.
+It counts the connected unramified doubles of $Y$ with weight
+$1/2$ each and is entirely accounted for by $A_{b+1}(q^2)$.

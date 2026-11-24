@@ -1,0 +1,47 @@
+\section{A congruence and individual signs in degree four}\label{sec:quartic}
+Let \(C\) be a genus-\(g\) curve, \(g\ge2\), with normal bundle of rank two and degree \(2g-2\). Let \(D\) be regular on all connected étale covers of degrees \(1,2,4\). Write \(\epsilon\) for its base determinant sign and \(n_d\) for the coefficient of the balanced exponent in degree \(d\) at genus \(1+d(g-1)\). For operators alone use the equivalent triangular extraction from the signed étale cover counts. For an isolated germ admitting the geometric factorization, these are actual product exponents. The distinction matters here since signs of four-sheeted unramified covers do not account for higher-genus stable maps.
+
+\emph{Theorem.} The primitive quartic coefficient obeys the sharp congruence
+\begin{equation}
+n_4\equiv \binom{-\epsilon n_2}{2}\pmod 2.                 \label{eq:quartic-congruence}
+\end{equation}
+On a genus-two curve the path between the positive repeated-spin and distinct-spin endpoints must reverse the twist determinant on each of 480 different \(S_4\) quartics and on the faithful plane of each of 96 dihedral quotients. Each of the latter quotients supplies two inequivalent quartic covers singular together at the plane crossing. A primitive \(S_4\) crossing can change \(n_4\) by two while keeping every connected étale cover sign in degrees at most three fixed. Thus even that whole collection of lower-degree signs does not determine \(n_4\) modulo four. These statements about crossings concern fixed finite covers and their linear operators. The two full quartic endpoint signs in a dihedral pair include their respective intervening double characters.
+
+\subsection{Inverting the étale counts}
+
+Set \(\Gamma=\pi_1(C)\). For a binary character \(a\ne0\) let \(p_a\) be the determinant sign of the operator twisted by its sign line, and \(K\) the number of negative \(p_a\). At the least source genus only connected étale covers occur. If a connected cover corresponds to \(U\le\Gamma\), its sign is the product of the twist signs of the constituents of the real permutation system \(\mathbb R[\Gamma/U]\), counted with multiplicity. In particular the sign of the double for \(a\) is \(\epsilon p_a\). Möbius inversion of the stabilizer counts assigns the individual orbit coefficient
+\[\frac1{|N_\Gamma(U)/U|}\sum_{U\le J\le\Gamma}
+                \mu(U,J)\operatorname{sign}\big(D^{\mathbb R[\Gamma/J]}\big).\]
+Summing over conjugacy classes of index \(d\) gives \(n_d\): reinducing the virtual transitive orbits counts the towers of connected covers with their inverse deck orders, exactly the proper-divisor terms of the triangular relation. This inversion uses only the interval above the particular subgroup. For degree two it gives \(n_2=-\epsilon K\). The underlying determinant marks and their compatibility with finite quotients are proved in Theorem~\ref{thm:endpoints}. The formula also follows by transitive-set inversion on any finite quotient through which the covers in question factor, taking regular endpoints on that quotient after a small perturbation preserving the required signs.
+
+For a cyclic quartic, the new plane is of complex type and has positive sign. Its orbit coefficient vanishes. For a Klein four quotient the three binary signs \(p,q,r\) give coefficient \(\epsilon(pqr-p-q-r+2)/4\), equal to \(\epsilon\) precisely when at least two signs are negative. Every pair of negative characters spans one binary plane. A plane with three negative signs is counted three times by this pair count and gives only one orbit coefficient. Thus all Klein four contributions sum to \(\epsilon(\binom K2-2T)\), where \(T\) counts the planes with three negative signs.
+
+For a dihedral quotient of order eight the two reflection-stabilizer actions have deck order two. Each contains the base, its own intervening binary character (\(a\) or \(b\)), and the common faithful plane of sign \(s\). Their combined coefficient is \(\epsilon(s-1)(p_a+p_b)/2\). For a primitive \(A_4\) or \(S_4\) cover the new constituent is the faithful three-dimensional augmentation representation of sign \(s\). There is no intermediate and the deck order is one, giving \(\epsilon(s-1)\). This exhausts transitive subgroups of \(S_4\). Both the dihedral pair and the primitive term are even; reduction modulo two gives \eqref{eq:quartic-congruence}.
+
+To speak of individual crossings use the finite common normal closure of the selected degree-at-most-four covers. In the unrestricted fixed-symbol space the equivariant Brill--Noether theorem gives generic avoidance of simultaneous inequivalent singular twists, and a simple transverse real-type block at each crossing. The local variations realize arbitrary zeroth-order tensors and their jets on a disk, with unique continuation for the equation and adjoint. Each twist has index zero, and the singular sets for complex- and quaternionic-type blocks have real codimension at least two. These are the equivariant incidence theorems of \cite{dwbn}. Covers involving the same singular constituent can of course be singular simultaneously.
+
+\subsection{Which quartics cross between positive spin endpoints?}
+
+Let \(w\ne0\) be the difference of the two spin characters and let \(\ell(a)=\langle w\smile a,[C]\rangle\). At the repeated endpoint every twist is positive. At the distinct endpoint the sign on a real twist \(V\) is \((-1)^{\ell(w_1(V))}\) by the mod-two index formula in Proposition~\ref{prop:spin-sign}. There are \(2^{2g-1}\) binary twists with negative sign. No binary plane has three negatives. For a dihedral plane the determinant is \(a+b\) for the two reflection normalizers, hence the combined dihedral endpoint term vanishes. The \(A_4\) augmentation determinant is trivial. The \(S_4\) augmentation determinant is its ordinary permutation sign.
+
+Fix a nonzero permutation sign with \(\ell(a)=1\). Surjective \(S_3\) resolvents of this sign correspond to the nonzero classes of \(H^1(C;\mathbb F_{3,a})\) modulo negation, since \(S_3\) is an extension of the sign group by its additive three-element module. Invariants and degree-two cohomology vanish, so the number of resolvents is \((3^{2g-2}-1)/2\). The extension \(S_4=V\rtimes S_3\) with \(V=\mathbb F_2^2\) describes lifts of a specified resolvent by classes of \(H^1(C;V)\). The \(S_3\)-action is irreducible and symplectic, so this space has dimension \(4g-4\). A nonsurjective lift must be a complement. Every complement is conjugate to the split one since \(H^1(S_3;V)=0\), by restriction to the normal subgroup of order three, which has no invariants on \(V\). The centralizer of the surjective resolvent in \(S_3\) is trivial, leaving \(2^{4g-4}-1\) surjective lifts modulo conjugacy. Therefore exactly
+\[P=2^{2g-2}(3^{2g-2}-1)(2^{4g-4}-1)\]
+different \(S_4\) quartics reverse their twist sign. Each has a singularity along every such path. On a generic path the corresponding faithful twists have distinct crossing parameters. The signed primitive change at a single such crossing has magnitude two and no other quartic affected by that constituent: the kernel of its monodromy representation determines the faithful quotient, and the \(S_3\) point stabilizers of that quotient are conjugate. This proves sharpness of \eqref{eq:quartic-congruence}. Summing the endpoint coefficients gives \(n_4=\binom{2^{2g-1}}2-2P\). At genus two the decomposition is \(28-960=-932\).
+
+For the dihedral count, the central extension of the two binary reflection coordinates has class \(b\smile a\). A pair \(a,b\) of independent characters lifts exactly when \(\langle b\smile a,[C]\rangle=0\). Then the lifts form a torsor for the \(2^{2g}\) central characters. They are all surjective since the extension has no complement. The four inner changes over the fixed ordered coordinates act freely, and interchanging the two reflection coordinates identifies the orders. Thus each admissible unordered pair determines \(2^{2g-2}\) distinct quotient kernels. To reverse the plane sign choose \(a\) with \(\ell(a)=1\) and \(b\ne0\) with \(\ell(b)=\langle a\smile b,[C]\rangle=0\). These two linear conditions are independent since \(a\ne w\). The resulting number of dihedral planes forced to cross is \(2^{4g-3}(2^{2g-2}-1)\). At genus two it is 96.
+
+
+For the two-spin example with $g=2$, $\epsilon=1$, and nonzero spin
+difference, the first four least-genus exponents are $1,-8,-64,-932$.
+Here is a direct evaluation of the last entry. The disconnected signed
+cover series through degree four has coefficients $1,1,0,9,144$, since
+only the self-conjugate partitions contribute and the hook product for
+$(2,1)$ is three and that for $(2,2)$ is twelve. Its connected degree-four coefficient is $539/4$.
+The unsigned disconnected genus-two series has coefficients
+$1,1,8,81,1424$: at four the five squared hook products are
+$576,64,144,64,576$. Taking its logarithm gives
+$C_4(2)=5275/4$; also $C_2(3)=63/2$. Hence
+\[
+ n_4=539/4-C_4(2)+8C_2(3)=-932 .
+\]
+

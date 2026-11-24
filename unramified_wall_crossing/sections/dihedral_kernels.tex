@@ -1,0 +1,288 @@
+\section{Kernels on finite covers}\label{sec:kernels}
+
+Let $p:Z\to C$ be a connected unramified principal $G$-cover, where
+$G=D_n$ is the group of order $2n$ acting by the symmetries of a regular
+$n$-gon, $n\geq3$. Write $V$ for its real reflection representation
+and $\mathcal V=Z\times_G V$ for the associated flat Euclidean plane.
+Rotation through $2\pi/n$ has no real invariant line, so $V$ is
+irreducible. Moreover $\operatorname{End}_G(V)=\RR$. An endomorphism
+commuting with this rotation is complex multiplication in the oriented
+plane, and commutation with a reflection makes its multiplier real.
+
+For any real Euclidean local system $\mathcal W$, denote by
+$D^{\mathcal W}$ the twist of $D$ by $\mathcal W^*$. Its sections
+are real homomorphisms $\mathcal W\to N$, and on a flat frame the
+equation $D^{\mathcal W}S=0$ means that $D$ kills every column of $S$.
+The Euclidean form identifies the dual with $\mathcal W$.
+A transverse crossing on $\mathcal V$ at $t_0$ means that
+$\ker D_{t_0}^{\mathcal V}$ is a real line and that differentiation
+in $t$ induces an isomorphism from this line to the cokernel. Both
+spaces have the same dimension by the index formula for an unramified twist.
+For a map $u:X\to C$ from a connected curve, let $K_u\leq G$ be the
+image of $\pi_1(X)$ under the monodromy of $u^*Z$. The choice of a
+lift of the base point identifies parallel sections of $u^*\mathcal V$
+with $V^{K_u}$.
+
+\begin{theorem}\label{thm:kernels}
+For a residual set of smooth paths of real Cauchy--Riemann operators
+on $N$ with fixed symbol, every interior parameter where
+$D_t^{\mathcal V}$ has a kernel is a transverse crossing. At any
+such parameter let $S$ generate that kernel and put $D=D_t$. The map
+$S:\mathcal V\to N$ is injective as a real map on every fiber. For
+every smooth connected finite holomorphic cover $u:X\to C$, with
+arbitrary branching,
+\begin{equation}\label{eq:central-kernels}
+ \ker u^*D
+  =(u^*S)\bigl(H^0_{\rm flat}(X,u^*\mathcal V)\bigr)
+  \simeq V^{K_u}.
+\end{equation}
+The path may have prescribed endpoints. Conversely, for every $p:Z\to C$
+as above there exists a smooth path with a transverse crossing satisfying
+these conclusions.
+\end{theorem}
+
+We first work at a prescribed section $S$ and later prove the generic
+evaluation and the existence assertions. Suppose $D^{\mathcal V}S=0$
+and that on a disk the two columns $s_1,s_2$ of $S$ in a flat frame
+form a complex basis of $N$. Choose a closed subdisk in this disk with
+nonempty interior. Let $\mathcal A_S$ be the space of smooth real
+zeroth-order variations supported in the closed subdisk that annihilate
+both columns. This closed real subspace of the space of smooth bundle
+maps has its usual Fr\'echet topology.
+
+\subsection{Perturbations preserving two solutions}
+Write $F=\Lambda^{0,1}T^*C\otimes_{\CC}N$, and let $F^\dagger$
+denote its real dual tensored with densities. The infinite-order Petri
+condition at $x$ means that a real tensor of local solution and
+adjoint-solution germs is zero whenever its pointwise product in
+$N\otimes_{\RR}F^\dagger$ vanishes to infinite order at $x$.
+Arbitrarily small unrestricted smooth real zeroth-order variations in
+any neighborhood of $x$ attain this condition for the Cauchy--Riemann
+symbol \cite[Definition~5.1 and Corollary~5.10]{wendl}. The formal-jet
+version is given in \cite[Definition~1.6.3 and Theorems~1.6.17,~2.5.3]{dwbn}.
+
+The condition at any point in the interior of the subdisk is dense
+also in $D+\mathcal A_S$. To see this, start with an unrestricted
+nearby operator $D'$ having the condition at $x$. On a small disk
+about $x$ choose solutions $s'_j$ of $D's'_j=0$ close to $s_j$.
+In a local frame $D'=\bar\partial+M'$ with $M'$ real linear.
+If $T$ is the Cauchy transform on a disk of radius $r$, then
+$\|T\|_{L^\infty\to L^\infty}\leq c r$. Thus
+$w_j=-T(D's_j+M'w_j)$ has a solution for small $r$, and
+$s'_j=s_j+w_j$ has the required equation. The sup norm of $w_j$
+tends to zero as $D'$ approaches $D$. Interior elliptic estimates
+on a smaller disk give closeness in any prescribed finite number of
+smooth seminorms. The complex gauge $U$ sending $s_j$ to $s'_j$ is
+then close to the identity. The conjugate $U^{-1}D'U$ has the same
+symbol and kills $s_1,s_2$. The Petri condition is invariant under
+this conjugation using the output action on $F$ and its contragredient
+on $F^\dagger$. Multiply $U^{-1}D'U-D$ by a cutoff supported inside
+the subdisk and equal to one near $x$. This proves the claimed density
+at $D$ and, by the same construction, at every point of $D+\mathcal A_S$.
+
+Consider an irreducible real orthogonal local system $\mathcal W$
+of finite monodromy on $C$ minus finitely many points. Retain only
+punctures with nontrivial inertia on $\mathcal W$.
+At such a puncture use the orbifold disk whose stabilizer has the
+order of the inertia action. This gives a Fredholm operator
+$D^{\mathcal W}$ on orbifold sections. Equivalently, one can take
+equivariant sections on the smooth compactification of the finite
+normal cover defined by the monodromy. The two descriptions identify
+kernels also after passage to a common normal cover. A bounded
+invariant solution descends off the branch values and extends over
+them by removability for the Cauchy--Riemann equation
+\cite[Propositions~2.7.3 and~2.8.3]{dwbn}.
+
+Let $w$ be a nonzero twisted solution with columns $w_1,\ldots,w_r$
+in a real orthonormal flat frame of $\mathcal W$. If $\mathcal W$ is
+inequivalent to $\mathcal V$, these columns together with $s_1,s_2$
+are linearly independent as real global solutions on a common
+connected normal cover. Indeed $w$ induces a nonzero intertwiner
+from the irreducible fiber representation to the real solution space.
+It is injective, and its image has zero intersection with the
+inequivalent irreducible plane given by $S$. For $\mathcal W=\mathcal V$
+the same independence holds for every nonzero $w$ orthogonal to $S$
+in $L^2$. In this case two copies with a common nonzero vector
+would coincide, and the two intertwiners with that image would differ
+by a real scalar since $\operatorname{End}_G(V)=\RR$. In either case
+strong unique continuation implies independence of the infinite
+jets of these solutions at any regular point.
+
+Choose a disk of flat frames in the variation region disjoint from
+the branch values, and a point $x$ there at which $D$ satisfies the
+Petri condition. We claim that the equation on nonzero sections,
+linearized in sections and variations from $\mathcal A_S$, is surjective
+at $w$. For $\mathcal W=\mathcal V$ use the $L^2$-complement of $S$
+as section space. Omitting $S$ leaves the image of the section
+derivative unchanged. An element of the annihilator consequently
+solves the twisted adjoint equation. Write its columns on the disk
+as $v_i$ in dual output densities. Testing against all local real
+variations that kill $s_1,s_2$ gives the pointwise identity
+\begin{equation}\label{eq:petri-constrained}
+  \sum_{i=1}^r w_i\otimes v_i
+      =s_1\otimes\alpha_1+s_2\otimes\alpha_2
+\end{equation}
+for smooth dual densities $\alpha_1,\alpha_2$. This is the annihilator
+of the subspace of real maps vanishing on
+$\operatorname{span}_{\RR}(s_1,s_2)$.
+Both $\alpha_j$ satisfy the local adjoint equation. Indeed, test
+\eqref{eq:petri-constrained} against $[D,\Phi]$ for a compactly
+supported complex endomorphism $\Phi$ of $N$, with its induced action
+on $F$. This commutator is zeroth order. Integration of the left
+side gives $\sum_i\int\langle v_i,D(\Phi w_i)\rangle=0$.
+The corresponding expression on the right is
+$\sum_j\int\langle\alpha_j,D(\Phi s_j)\rangle$. The two test sections
+$\Phi s_1$ and $\Phi s_2$ can be prescribed independently since
+$s_1,s_2$ are a complex basis. Thus $D^\dagger\alpha_j=0$.
+Taking infinite jets in \eqref{eq:petri-constrained}, the Petri
+condition and independence of the input jets force every $v_i$
+to vanish to infinite order. Adjoint unique continuation on the
+connected punctured normal cover gives a zero annihilator. The
+section derivative is Fredholm, so the asserted surjectivity follows.
+
+\subsection{Exclusion of further kernels}
+For each ramification type and representation, the distinct positions
+of the effective punctures give local coordinates on its marked
+configuration space. Write $s$ for their number and
+$c_x=\dim_{\RR}(\mathcal W_x/\mathcal W_x^{I_x})$ for the codimension
+of the invariants of local inertia on a nearby regular fiber.
+The orbifold index formula \cite[Proposition~2.8.6]{dwbn} gives
+\[
+  \operatorname{ind}_{\RR}D^{\mathcal W}
+   =(\dim_{\RR}\mathcal W)\operatorname{ind}_{\RR}D
+       -(\operatorname{rank}_{\CC}N)\sum_x c_x
+   =-2\sum_x c_x.
+\]
+In the incidence of projective kernel lines the moving punctures add
+$2s$ parameters and passing to lines removes one. Thus the projection
+index is $2s-1-2\sum_x c_x\leq-1$. For $\mathcal W=\mathcal V$ the
+twist is unramified and fixed. Restriction to the complement of $S$
+lowers its index by one more.
+
+We spell out how to apply this count in the smooth constrained
+parameter space. The finite monodromy groups, irreducible representations
+up to equivalence, and homomorphisms from a punctured surface group
+to a finite group give countably many discrete choices.
+The compactified normal covers vary smoothly on a chart of distinct
+branch positions by using the local maps $z\mapsto z^e$ at the
+branches. Exhaust the configuration charts by countably many
+compact subsets, chosen small enough that each subset misses some
+open disk in the interior of the prescribed variation region. Here
+it is the branch divisors that must miss the disk. The unramified
+system $\mathcal V$ is a separate discrete choice.
+
+Over each compact parameter subset the absence of a nonzero solution
+(a complementary solution for $\mathcal V$) is open. Indeed
+$L^2$-normalized solutions satisfy uniform elliptic estimates on
+the smooth family of compact normal covers. To prove density, first
+attain the Petri condition at a single point on the chosen open disk.
+At that operator the normalized zeros over the compact parameter
+subset form a compact set. By the surjectivity just proved, finitely
+many allowed smooth operator variations suffice for surjectivity near
+all these zeros. Shrinking their common parameter ball ensures that
+all nearby zeros over the compact subset lie in those neighborhoods.
+In section Sobolev completions the implicit function theorem now
+gives finite-dimensional projective incidences over this ball,
+of dimension strictly less than that of the ball by the index count.
+Sard's theorem, applied on open chart neighborhoods, gives arbitrarily
+small parameters with no zero over the compact subset. Local
+normalization of kernel lines is legitimate since the scaling
+direction maps to zero in the differential. Intersecting these open
+dense conditions gives the asserted residual set in $D+\mathcal A_S$.
+
+To deduce \eqref{eq:central-kernels}, pass to a finite normal cover
+dominating $Z$ and the given $X$. Every irreducible summand in
+its kernel supplies a twisted solution for the corresponding
+monodromy system. Ineffective inertia can be omitted by descent
+and removability. The only possible summand is $V$ pulled back
+from $G$. Its multiplicity is one, since all such intertwiners
+descend to $Z$ and the complement of $S$ in $\ker D^{\mathcal V}$
+is zero. Descent through the sheet stabilizer of $X$ identifies
+$\ker u^*D$ with the invariants of its image $K_u$ on this single
+copy. Deleting preimages of the finite branch set does not affect
+that image, since the lower cover $Z\to C$ is unramified.
+
+\subsection{Generic paths and realization}
+It remains to obtain the complex basis disk and fiberwise real
+injectivity on generic paths. With $p$ fixed, consider the equation
+$D^{\mathcal V}S=0$ at a nonzero $S$, varying $D$ without constraints
+in this paragraph. On $Z$ two flat basis vectors map to independent
+global real solutions by irreducibility. Their values are real
+independent on an open dense subset. Indeed, on an open disk where two
+values are proportional and one is nonzero, the ratio is a smooth
+real function $a$. The product rule gives $(\bar\partial a)s_j=0$,
+so $a$ is constant there, contradicting global independence by
+unique continuation. Thus, on some disk away from a specified point,
+variations of $D$ can prescribe the two inhomogeneous columns
+independently. An annihilating adjoint vanishes on that disk and hence
+everywhere. This proves universal transversality.
+
+Evaluation of both columns at any marked point is submersive on
+this incidence. To check the augmented equation, a distributional
+adjoint annihilating the variations satisfies the homogeneous adjoint
+equation off the mark and vanishes there by the same argument.
+Its support is the mark, so it has finite order. Prescribe arbitrary
+column values there for a test section and arrange that its image
+under $D^{\mathcal V}$ vanishes to higher order than the distribution.
+Such jets follow recursively from the solved $\bar\partial$ equation
+in a coordinate, with the pure holomorphic Taylor coefficients free.
+Cutoff Taylor polynomials realize them. Pairing with the augmented
+equation first kills the evaluation multiplier and then, by elliptic
+regularity, the point-supported adjoint.
+
+For fixed $p$, the projection of the projectivized kernel incidence
+to operators has index $-1$. Adding a path parameter therefore gives
+regular isolated crossings on a generic path. A higher-dimensional
+kernel would give a positive-dimensional projective fiber. At a
+regular isolated crossing the time derivative maps the kernel line
+isomorphically to the cokernel. The two evaluated real four-vectors
+have rank one in real codimension three and rank zero in codimension
+eight. Moving the marked point adds only two dimensions, so neither
+stratum occurs at any crossing on a generic path. At one fixed point
+the locus of complex rank one has real codimension two and the rank-zero
+locus has codimension eight. Thus the columns also form a complex
+basis on a disk at each crossing. All these rank strata are invariant
+under nonzero real scaling, so the marked incidence calculation
+passes to projective lines. Parametric transversality can be
+applied with finitely many smooth variations on compact exhaustions
+of the normalized solution charts as above, with cutoffs in the
+interior of the time interval.
+
+Mark a transverse crossing and choose a local linear normalization of
+its generator. Variation of the section in a complement to its kernel
+maps isomorphically onto the image of $D^{\mathcal V}$, and the time
+variation spans the remaining cokernel. The implicit function theorem
+therefore continues the marked crossing uniquely over an open path
+chart. One may use a finite regularity completion and restrict to
+smooth paths by elliptic regularity. On this chart, absence of the
+additional twisted kernels over any one of the compact configuration
+subsets is open. For the distinguished system the complement to the
+continued line varies continuously. Density follows by perturbing
+at the marked crossing while keeping its particular $S$ fixed, as
+proved above, then multiplying the perturbation by a smooth time
+cutoff equal to one near that crossing. The center and its generator
+still solve the equation and hence are their own continuations.
+Such crossing charts admit a countable cover, and their maps to
+path space are local homeomorphisms. The exceptional subsets are
+therefore meagre in path space. This proves the generic assertion
+simultaneously at all interior crossings.
+
+Finally start with an arbitrary connected principal $D_n$-cover
+$Z\to C$. Choose a smooth real bundle map $S:\mathcal V\to N$.
+Transversality to the real rank strata, of codimension three and
+eight, gives a choice injective everywhere. At a fixed point we may
+at the same time avoid the deficient complex rank strata. Choose any
+real Cauchy--Riemann operator $D_*$. For a local flat $v$ prescribe
+the real zeroth-order correction by
+\[
+                   P(Sv)=-D_*(Sv).
+\]
+Flat transition functions make this a smooth map on the subbundle
+$S(\mathcal V)$, and a real bundle complement extends it to $N$.
+Then $(D_*+P)^{\mathcal V}S=0$. The constrained perturbation proved
+above gives an operator $D_0$ with this same $S$ and precisely the
+kernels \eqref{eq:central-kernels}. Its twisted cokernel is a line.
+On the complex basis disk an unrestricted real variation $Q$ can
+prescribe both columns of $QS$ independently. A nonzero twisted
+adjoint cannot vanish on the disk, so some such $Q$ pairs nontrivially
+with it. The path $D_0+tQ$ has the required transverse crossing.

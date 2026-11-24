@@ -1,0 +1,675 @@
+\section{The elliptic suspension and its projective example}
+\label{sec:elliptic-series}
+
+Let $f$ be a smooth symplectomorphism of standard $\RR^4$.
+Take the quotient of $\RR^4\times\RR^2$ by
+\[
+  (x,s,t)\longmapsto(f(x),s+1,t),\qquad
+  (x,s,t)\longmapsto(x,s,t+1).
+\]
+Give the horizontal planes the complex structure of the base elliptic
+curve and the vertical planes any compatible almost-complex structure.
+Section~\ref{sec:suspension} shows that every compact irreducible
+pseudoholomorphic curve is the horizontal leaf of a finite orbit.
+Let $U\Subset\RR^4$ be open. Assume that any finite orbit contained
+in $\bar U$ lies in $U$. For $k\ge1$ set
+\[
+ U_k=\bigcap_{j=0}^{k-1}f^{-j}U,\qquad
+ I_k=\deg(\operatorname{id}-f^k,U_k,0).
+\]
+These are the local fixed point indices of the iterates, restricted to
+orbits staying in $U$. The integrality of their M\"obius transforms is
+the subject of Dold's iteration congruences \cite{Dold}.
+
+Let $H$ denote the Chern-number-zero, virtual-dimension-zero part of
+Pardon's rational algebra of semi-Fano complex one-cycles \cite{pardon}.
+Here semi-Fano means that every irreducible component has nonnegative
+Chern number. All components at the complex targets below have Chern
+number zero.
+Use the comparison $\Phi:H\to S$ to the algebra defined using smooth
+almost-complex families \cite[\S2]{WueProduct}. A compact open set of cycles in
+a target defines an element of $S$ by its characteristic function. Take
+the series $P_U(q)$ of these classes for the cycles supported on orbits
+in $U$, graded by projection degree over the elliptic base, with constant
+term one. The compactness needed for this definition holds separately
+in each degree. For a nontorsion degree-zero line $L$ on an elliptic curve
+$C$, let $F_1(q)$ be the series in $H$ of the point insertions at
+$m[C]$ in the total space of $L\oplus L^{-1}$, including the empty cycle.
+These are the scalar local classes in genus one
+\cite[Definition~4.7]{pardon}. Put $E(q)=\Phi(F_1(q))$.
+
+\begin{theorem}\label{thm:index}
+With the isolation assumption above,
+\[
+ P_U(q)=\prod_{d\ge1} E(q^d)^{b_d},\qquad
+ b_d=\frac{1}{d}\sum_{k\mid d}\mu(d/k) I_k\in\ZZ .
+\]
+Equality of two such series is equivalent to equality of all their local
+iterate indices. Through degree $K$ the formula requires isolation only
+for orbits of period at most $K$.
+\end{theorem}
+
+Ionel and Parker related the numerical Gromov series of symplectic
+mapping tori to the Lefschetz zeta function of the return map
+\cite[Theorems~0.1 and~4.1]{IPmaps}. In real dimension six their formula
+uses the genus-one numerical invariants. Dold's indices already determine
+the product expansion of the local dynamical zeta function.
+Theorem~\ref{thm:index} identifies their contribution to the
+cycle classes themselves, before an enumerative evaluation. The step
+that makes this identification possible is the calculation at one orbit.
+A saddle-center bifurcation expresses the positive hyperbolic contribution
+as the inverse of the elliptic one. At period doubling an additional
+embedded torus accounts for a factor in twice the primitive class.
+Ionel and Parker describe the corresponding relations for numerical
+generating functions and their connection with Taubes's torus counts
+\cite[Remark~3.4]{IPmaps}. Here compact continuation gives the relations
+for the classes represented by the characteristic functions of the entire cycle loci. They determine
+the contribution of every four-dimensional symplectic return whose
+relevant iterates are nondegenerate. For each degree bound a small
+Hamiltonian perturbation then treats arbitrary degeneracies in the isolated set.
+
+\subsection{Compact curves in a suspension}\label{sec:suspension}
+
+The product horizontal distribution on the covering space descends to the
+suspension. A metric on its vertical symplectic bundle gives a compatible
+vertical complex structure by polar decomposition. Choices of compatible
+structures form a contractible space and can be made smoothly along a
+path of symplectomorphisms. Use the direct sum of the vertical and
+horizontal structures throughout. The standard symplectic form of the
+fiber descends to a closed two-form $\Omega$ whose kernel is the horizontal
+plane. It is pulled back from the five-dimensional mapping torus over the
+$s$ circle. That mapping torus has the homotopy type of a circle, since
+its fiber is contractible. In particular $\Omega$ is exact.
+
+\begin{lemma}\label{lem:sheets}
+The compact irreducible pseudoholomorphic curves are the suspended
+periodic orbits. A curve from an orbit of least period $j$ is an embedded
+elliptic curve of degree $j$ over the base and has Chern number zero.
+\end{lemma}
+\begin{proof}
+On the normalization of a compact irreducible curve the integral of
+$\Omega$ is zero. In a holomorphic local coordinate its area density is
+the squared norm of the vertical part of the first derivative, using the
+compatible vertical metric. The vertical derivative vanishes everywhere.
+The normalization therefore maps to a single horizontal leaf, where
+projection to the base is locally biholomorphic. A nonconstant map from
+a compact connected curve to that leaf is open and has closed image, by
+lifting it in the flat foliation charts. Its image is the whole leaf.
+A compact leaf meets a transverse fiber in one finite orbit, and
+conversely a finite orbit of length $j$ gives the embedded quotient with
+periods $j,i$ in the base coordinate $s+it$. The tangent line to the
+leaf is trivial. Its vertical normal symplectic bundle is pulled back
+from the $s$ circle, so its first Chern class vanishes.
+\end{proof}
+
+In a compact-fiber suspension the same proof identifies all the curves
+of zero $\Omega$-area, since the area density stays nonnegative.
+For a cycle in the local suspension, intersect with the fiber over the
+origin of the elliptic base. This gives an $f$-invariant multiset of
+length equal to the degree of the cycle. Conversely, an invariant
+multiset is a union of finite orbits with constant multiplicity on
+each orbit, so determines a unique cycle. This correspondence allows
+several formerly distinct orbits to specialize to the same multiple
+leaf. In a flat target chart the invariant points give constant
+horizontal sheets. Convergence of the finite multiset thus gives
+Hausdorff convergence of the supports and weak convergence of their
+currents, the topology used in \cite[\S2]{WueProduct}. Finitely many strips
+cover the base and the same argument works when their gluing map varies.
+
+For a fixed degree $m$ consider all the invariant multisets in
+$\operatorname{Sym}^m\bar U$. They form a closed subset of this compact
+space. Every constituent orbit has period at most $m$, so boundary
+isolation puts the entire multiset inside $U$. Its continuous
+parametrization of the cycles is a homeomorphism onto its image by
+compactness and the Hausdorff property. This image is open in the
+degree-$m$ cycle space. Indeed, for a retained cycle all its intersection
+points with the transverse fiber lie in $U$. Nearby supports avoid the
+closed complement on that fiber, by compactness of the original
+support and upper Hausdorff continuity. The degree itself is locally
+constant, by testing the currents against the base area form with a
+cutoff equal to one near the compact support. Over a compact parameter
+interval with boundary isolation the argument applies in the relative
+symmetric power and gives a compact open family. Its end characteristic
+functions agree in $S$ by the interval relation \cite[\S2]{WueProduct}.
+
+For disjoint neighborhoods of finitely many closed leaf supports, choose
+disjoint open tubes in the suspension containing those supports.
+For each distribution of the total degree among the tubes, external
+product followed by open extension represents the characteristic function
+of the corresponding cycles. Summing over all distributions gives the
+product of the local series. A single orbit of least period $j$ has
+deck gluing $f^j$ in its tubular germ over the elliptic curve of first
+period $j$. In terms of the original base degree its series is obtained
+from the local one by the substitution $q\mapsto q^j$.
+
+\subsection{The contribution of a nondegenerate orbit}\label{sec:returns}
+
+Let $x$ have least period $d$ under the symplectomorphism $f$, and put
+$T=D_xf^d$. A transverse disc at $x$, followed for $d$ periods,
+gives the germ of the primitive leaf as a suspension of $f^d$ over an
+elliptic curve with first period $d$. We use $q$ for the class of this
+leaf. In the grading by degree over the original base its contribution
+is obtained by substituting $q^d$ for $q$. Our deck transformation
+advances the first base coordinate by one and acts on the fiber by
+$f$. Thus positive parallel transport has holonomy $f^{-1}$.
+The periodic orbits are the same, and
+$\det(I-T^{-j})=\det(I-T^j)$ since $T$ is symplectic and its real
+dimension is even.
+
+\begin{proposition}\label{prop:return}
+Suppose $\det(I-T^j)\ne0$ for $1\le j\le K$, and put
+$\sigma_j=\operatorname{sign}\det(I-T^j)$ in this range. For $K\ge2$
+the local series of the primitive leaf is
+\begin{equation}\label{eq:primitive-return}
+ E(q)^{\sigma_1} E(q^2)^{(\sigma_2-\sigma_1)/2}
+ \pmod {q^{K+1}} .
+\end{equation}
+The sign $\sigma_j$ is $\sigma_1$ for odd $j$ and $\sigma_2$ for
+even $j$. For $K=1$ the series is $E(q)^{\sigma_1}$ modulo $q^2$.
+If every iterate is nondegenerate, \eqref{eq:primitive-return} holds
+as an identity of formal series.
+\end{proposition}
+
+For a sum of two symplectic planes write $P_{A,B}$ for its local
+series, using $e,+,-$ for elliptic, positive hyperbolic and negative
+hyperbolic blocks. Fix the second block $B$ with its first $K$ iterates
+nondegenerate. A saddle-center bifurcation and a period doubling give,
+respectively, modulo $q^{K+1}$,
+\begin{equation}\label{eq:return-walls}
+ P_{+,B}(q)P_{e,B}(q)=1,\qquad
+ P_{-,B}(q)P_{e,B^2}(q^2)=P_{e,B}(q).
+\end{equation}
+Each elliptic symbol refers to the rotation at its indicated endpoint.
+The two points exchanged at period doubling give one leaf of base degree
+two. Its return on the second plane is $B^2$, which explains both the
+single factor and the substitution in the second identity.
+
+\begin{proof}
+Work in a Darboux chart centered at the return point and denote
+the primitive return germ by $g$. For $0<\lambda\le1$ the maps
+$g_\lambda(y)=\lambda^{-1}g(\lambda y)$ are symplectic and extend
+smoothly to $g_0=T$. For each $j\le K$ their $j$th iterates have
+the form $T^j y+O(\|y\|^2)$ uniformly in $\lambda$. Since the
+finitely many $I-T^j$ are invertible, there is a common ball in
+which zero is the only fixed point of these iterates. To realize the
+family of germs in a suspension, the isotopy $T^{-1}g_\lambda$
+has a Hamiltonian on a smaller ball, obtained by integrating the
+closed one-form of its generating vector field. A cutoff of this
+Hamiltonian, followed by composition with $T$, extends the family
+to $\RR^4$ while preserving it on a neighborhood of zero. The
+characteristic insertion of each multiple through degree $K$ has
+compact support along the central leaf over the parameter interval.
+Continuation identifies its class with that of the linear suspension.
+The same argument identifies the insertions along any path of
+linear maps satisfying the stated nondegeneracy conditions.
+
+First suppose $T$ is a sum of two real symplectic planes. A planar
+block is elliptic if it is conjugate to a rotation, and positive or
+negative hyperbolic if its eigenvalues are distinct positive or
+negative reciprocal reals, respectively. Blocks of
+either hyperbolic type can be joined within that type by symplectic
+conjugation and variation of the real eigenvalues. Such paths avoid
+all resonances. We retain the angle of each elliptic block until its
+contribution has been determined.
+
+For two elliptic blocks choose a complex structure making both
+rotations unitary. The suspension is the total space of two flat
+holomorphic lines on the elliptic base. Each power of either line
+of order $1,\ldots,K$ is nontrivial, since a holomorphically trivial
+unitary flat line has trivial holonomy. For a cycle of degree
+$m\le K$, the elementary symmetric coefficients of its fiber
+projection to a line $L$ are holomorphic sections of $L^j$ for
+$1\le j\le m$. This follows across branch points from the
+characteristic polynomial on the finite direct image of the
+normalization, using the cycle multiplicities. All these coefficients
+vanish. Thus the degree-$m$ cycle is the $m$-fold zero section.
+In the elliptic Picard variety the complement of the torsion points
+of orders at most $K$ is path connected. Move the two lines there
+independently to a nontorsion pair $L,L^{-1}$. At every stage the
+same multiple zero sections give compact point insertions. At the inverse pair these are precisely the point insertions defining
+$F_1$. It follows that $P_{e,e}=E$, for either angular
+orientation and every base modulus
+\cite[Definition~4.7]{pardon}, \cite[\S3]{WueProduct}.
+
+Fix a second planar block $B$. On the first plane consider the
+time-$\delta$ Hamiltonian map of
+\[
+ H_a(u,v)=\tfrac12v^2+\tfrac13u^3-au .
+\]
+For small $a<0$ it has no equilibrium in a disc about the origin.
+For $a>0$ the critical points at $u=\sqrt a,-\sqrt a$, $v=0$,
+give an elliptic and a positive hyperbolic fixed point. For a
+second family take negation composed with the time-$\delta$ map of
+\[
+ J_a(u,v)=\tfrac12v^2+\tfrac14u^4-\tfrac a2u^2 .
+\]
+Negation commutes with this flow. At $a<0$ the origin is elliptic.
+At $a>0$ it is negative hyperbolic and the two minima at
+$u=\pm\sqrt a$ are exchanged. They give one orbit of period two.
+The second iterate at a minimum is the time-$2\delta$ elliptic
+linearized flow on the first plane and acts by $B^2$ on the second.
+
+For both families take a Hamiltonian cutoff equal to one on a
+larger disc, even under negation in the second family. The resulting
+vector fields have a common Lipschitz bound $L_0$ for $a$ in a
+compact interval about zero. A nonconstant periodic trajectory of
+period $\tau$ has $\tau L_0\ge1$. Indeed, its velocity has mean
+zero, and the difference of the velocities at two times is bounded
+by $L_0\tau$ times the maximum speed. Evaluate the mean difference
+at a point of maximum speed. Choose $2K\delta L_0<1$. In the first
+family any point fixed by the $j$th iterate is fixed by the
+time-$j\delta$ flow. In the second it is fixed by the time-$2j\delta$
+flow. Hence the only periodic points through the cutoff in the
+smaller disc are the equilibria just described, including the
+degenerate one at $a=0$. The second block contributes only its
+origin. Choose the regular endpoint parameters to avoid the finitely
+many forbidden elliptic resonances. All retained orbits lie in the
+interior of the disc throughout. Their invariant multisets in each
+degree form a compact family, so the interval relation applies to
+the whole insertion across either collision.
+
+Excision into the distinct orbit neighborhoods at the endpoints now gives
+\eqref{eq:return-walls}. In the second identity the squared block is
+needed only through degree $\lfloor K/2\rfloor$. At $K=1$ its factor
+is omitted.
+
+First use \eqref{eq:return-walls} with $B$ elliptic. The
+two-elliptic calculation at each endpoint gives $P_{+,e}=E^{-1}$
+and $P_{-,e}=E/E(q^2)$ for every admissible second angle.
+Interchanging the planes now determines $P_{e,B}$ for either
+hyperbolic type and every admissible first angle. Applying
+\eqref{eq:return-walls} once more yields
+\[
+ P_{+,+}=E,\qquad P_{+,-}=E(q^2)/E,\qquad P_{-,-}=E .
+\]
+For a planar elliptic block the determinant signs are positive
+at every allowed power. A positive hyperbolic block has negative
+sign at every power, and a negative hyperbolic block has positive
+sign at odd powers and negative sign at even powers. Multiplying
+the two signs proves the proposition for the split cases.
+
+For general $T$, take a small coordinate ball in
+$\operatorname{Sp}(4,\RR)$ on which the first $K$ determinants
+remain nonzero. This ball contains a matrix of simple spectrum.
+Indeed the discriminant of the characteristic polynomial is a real
+analytic function on the connected symplectic group and is nonzero
+on a diagonal matrix with distinct reciprocal pairs. A path in the
+ball to a simple-spectrum matrix preserves the local insertion and
+every relevant sign. In the complexification, the symplectic form
+pairs eigenlines only when their eigenvalues are reciprocal. A real
+reciprocal pair or a conjugate pair on the unit circle therefore
+determines a real symplectic plane, reducing these cases to the
+calculation above.
+
+The remaining spectrum consists of a nonreal quartet
+$\lambda,\bar\lambda,\lambda^{-1},\bar\lambda^{-1}$ off the unit
+circle. The real stable and unstable planes are Lagrangian by
+invariance of the symplectic form under forward and backward
+iteration, respectively. In dual bases of the two planes the
+matrix has the form $\operatorname{diag}(A,A^{-\mathsf T})$.
+Choose the stable basis to give $A=rR_\theta$, with $0<r<1$
+and $R_\theta$ a rotation, and change the unstable basis dually.
+Deforming $\theta$ to zero keeps the spectrum off the unit circle.
+The endpoint splits into two positive hyperbolic planes with
+eigenvalues $r,r^{-1}$ on each. Its contribution is $E$, and all
+its determinant signs are positive. This proves
+\eqref{eq:primitive-return} through the prescribed cutoff for
+every $T$. Open excision identifies the coefficients obtained in
+smaller neighborhoods as $K$ increases, giving the formal identity
+when all iterates are nondegenerate.
+\end{proof}
+
+\subsection{Fixed point indices of the iterates}\label{sec:indices}
+
+Fix $K\ge1$ and assume that every orbit of period at most $K$
+contained in $\bar U$ lies in $U$. This condition persists under a
+sufficiently small perturbation of $f$ in the compact-open topology.
+Indeed, from a sequence of perturbed orbits in $\bar U$ meeting
+$\partial U$, take a subsequence of one fixed period and choose a
+boundary point on each orbit. Compactness gives a limiting orbit of
+$f$ in $\bar U$ with a point on $\partial U$.
+
+For a path $f_t$ satisfying this condition, put
+\[
+ U_{k,t}=\bigcap_{i=0}^{k-1}f_t^{-i}U,\qquad 1\le k\le K .
+\]
+A zero of $\operatorname{id}-f_t^k$ on $\partial U_{k,t}$ would give
+a forbidden boundary orbit. The retained zero sets have compact
+union in the product of the parameter interval with $\bar U$.
+Indeed, one may replace $U$ by $\bar U$ in their definition and
+then use the isolation assumption. At any $t_0$ choose an open
+set $W\Subset U_{k,t_0}$ containing the retained zeros. For nearby
+$t$ we have $\bar W\subset U_{k,t}$ by continuity, and $W$ still
+contains every retained zero by compactness. If there is no zero at
+$t_0$, this remains true on a short interval. Excision and homotopy
+invariance of the Brouwer degree on $W$ show that $I_k$ is constant
+along the path. The series $P_U$ is constant through degree $K$ by
+the compact family of invariant multisets in
+\S\ref{sec:suspension}.
+
+\begin{lemma}\label{lem:finite-perturbation}
+There is an arbitrarily small Hamiltonian perturbation $g$ of $f$
+for which every orbit in $U$ of least period $j\le K$ is
+nondegenerate at every iterate of order $aj\le K$.
+\end{lemma}
+\begin{proof}
+We successively postcompose the map with compactly supported
+Hamiltonian diffeomorphisms, proceeding in order of least period
+$j=1,\ldots,K$. Suppose that the orbits of smaller least period
+already have the required property. There are finitely many of
+them, by compactness and nondegeneracy. Around their points choose
+disjoint inverse function neighborhoods for the finitely many
+iterate equations of order at most $K$. For an iterate fixing a
+point, its unique continued zero is the continuation of the
+primitive periodic point. For every other iterate the
+neighborhood can be chosen disjoint from its fixed points.
+These properties persist under small $C^1$ perturbations.
+
+Write $F$ for the current map. Outside smaller neighborhoods of the
+reserved points, the set of $x\in\bar U$ with $F^j x=x$ and orbit
+in $\bar U$ is compact and consists of points of exact period $j$.
+At each such $x$ take a Darboux ball disjoint from the other points
+of its orbit. Four smooth Hamiltonians supported in this ball can
+be chosen with Hamiltonian vectors spanning $T_x\RR^4$ at $x$.
+For the postcomposition of $F$ with their flows, the derivatives
+of the $j$th iterate in these four time parameters receive a
+contribution only at the last return to $x$. They therefore span
+$T_x\RR^4$. This rank condition persists on a neighborhood of $x$.
+
+Finitely many such neighborhoods cover the compact set. Compose all
+their flows in one family with independent parameters. At zero
+parameters the four columns belonging to each chosen ball retain
+the rank just computed, even if different balls overlap. The
+parameter-dependent iterate is consequently transverse to the
+diagonal near all the relevant zeros. Compactness and boundary
+isolation place all nearby retained zeros in these neighborhoods or
+in the reserved ones. By parametric transversality an arbitrarily
+small choice gives transversality at each of the remaining fixed
+points of the $j$th iterate. They now form a finite set.
+
+Select one point on each of the new orbits and choose disjoint
+Darboux balls there that avoid every other orbit point of period
+at most $j$ in $U$. A quadratic Hamiltonian centered at the chosen
+point and cut off in its ball fixes the orbit and multiplies the
+linear return on the left by a prescribed symplectic matrix near
+the identity: take the Hamiltonian logarithm of this matrix as the
+infinitesimal linear map. For each $1\le a\le\lfloor K/j\rfloor$
+the equation $\det(1-T^a)=0$ defines a proper real analytic subset
+of the connected symplectic group. We can therefore perturb the
+primitive return $T$ arbitrarily little so that all these
+determinants are nonzero. The other points of the orbit have
+conjugate return matrices. The previously transverse fixed points
+of the iterates of order at most $j$ persist uniquely, and
+compactness excludes new ones for a sufficiently small perturbation.
+This completes the induction. All the composing flows can be taken
+small enough to give a path from $f$ to $g$ preserving boundary
+isolation through $K$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:index}]
+Use the perturbation of Lemma~\ref{lem:finite-perturbation}. For
+an orbit of $g$ of least period $j\le K$, let $T$ be its primitive
+return matrix and $s=\operatorname{sign}\det(1-T)$. If $2j\le K$,
+put $t=\operatorname{sign}\det(1-T^2)$. The sign at the $a$th
+power of $T$ is $s$ for odd $a$ and $t$ for even $a$, as follows
+from the planar blocks and the symplectic deformations in
+Proposition~\ref{prop:return}. The $j$ points of the orbit thus
+contribute $js$ to $I_k$ for odd $k/j$, $jt$ for even $k/j$,
+and zero if $j$ does not divide $k$.
+
+By Proposition~\ref{prop:return} the orbit contributes
+\[
+       E(q^j)^s\, E(q^{2j})^{(t-s)/2}
+\]
+through degree $K$, omitting the second factor when $2j>K$.
+Excision into disjoint orbit tubes multiplies these factors.
+Write $e_d$ for the resulting exponent of $E(q^d)$ for $d\le K$.
+Each $e_d$ is an integer. In the divisor sum $\sum_{d\mid k}d e_d$
+the first factor of this orbit contributes $js$ at each multiple
+of $j$. Its second adds $j(t-s)$ at the even multiples. These
+are exactly the local index contributions above. Hence
+\[
+        I_k=\sum_{d\mid k} d e_d,\qquad 1\le k\le K .
+\]
+M\"obius inversion gives the stated formula for $b_d=e_d$.
+Both the series and the indices agree for $f$ and $g$ through
+this order. The exponents thus depend only on the original
+indices, and the products for successive $K$ agree in the
+overlapping degrees.
+
+Finally write $E(q)=1+cq+O(q^2)$. The class $c=\Phi(x_{1,1})$
+is nonzero by multiplicity-one detection \cite[Theorem~5.1]{WueProduct}.
+If two exponent sequences first differ at $d$, their products
+first differ in degree $d$ by the difference of the two exponents
+times $c$. This is nonzero over $\QQ$. Equality of the series is
+therefore equivalent to equality of the exponents and hence, by
+the divisor sum, to equality of the iterate indices.
+\end{proof}
+
+In particular, when the retained orbits split among disjoint open
+sets, each orbit lying wholly in one of them, index excision gives
+the product of the corresponding series. The moving-domain argument
+also applies along any path with boundary isolation. It allows
+permutation of individual orbits while preserving the series
+graded by degree over the base.
+
+
+Under an isolated deformation the retained periodic orbits can be
+permuted. The index formula recovers exactly the unlabelled iterate
+indices. In the following example the labels in integral homology
+also distinguish the individual section orbits.
+
+\subsection{A projective quotient with sixteen section classes}\label{sec:compact}
+
+Let $A$ be the product of two elliptic curves with a translation-invariant
+product K\"ahler form $\omega_A$. Set
+\[
+ E'=\CC/(2\ZZ+i\ZZ),\qquad B=\CC/(\ZZ+i\ZZ),\qquad
+ X=(A\times E')/\langle (x,z)\longmapsto(-x,z+1)\rangle .
+\]
+The projection $p:X\to B$ is an abelian surface bundle. The involution
+acts freely and preserves a nowhere-vanishing holomorphic three-form,
+so $X$ is smooth and projective with $K_X$ trivial. Its invariant
+one-forms come from $E'$, and its invariant two-forms come from $A$.
+In particular $h^{1,0}(X)=h^{2,0}(X)=1$. The Hodge vanishing assumptions
+of the compact product theorem of \cite{WueProduct} fail for this quotient.
+
+Write $\Omega$ for the closed semipositive form on $X$ induced by
+$\omega_A$. Let $\Gamma^0$ consist of the integral homology classes
+of effective one-cycles on $X$ that pair to zero with $\Omega$,
+including the class of the empty cycle. This is a face of the effective
+monoid since $\Omega$ pairs nonnegatively with every irreducible curve.
+For $\gamma\in\Gamma^0$ let $U_{X,\gamma}\in H$ be the class of
+the characteristic function of the class-$\gamma$ locus in the cycle
+space. With $\Lambda=H_1(A;\ZZ)$, identify $A[2]$ with
+$\Lambda/2\Lambda$ by $v\mapsto v/2\bmod\Lambda$. Denote by
+$\beta_v$ the class of the section through this point and by
+$F_1(q)$ the scalar local series of an elliptic curve.
+
+\begin{theorem}\label{thm:face}
+The sixteen classes $\beta_v$ are distinct and generate $\Gamma^0$.
+They satisfy $2\beta_v=2\beta_0$ for every $v$. In the monoid
+algebra over $H$ completed by degree over $B$ one has
+\begin{equation}\label{eq:face}
+  \sum_{\gamma\in\Gamma^0}U_{X,\gamma}Q^\gamma
+       =F_1(Q^{2\beta_0})^{-8}
+          \prod_{v\in\Lambda/2\Lambda}F_1(Q^{\beta_v}).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Write $z=s+it$. As a smooth manifold $X$ is $M\times S^1_t$,
+where $M$ is the mapping torus of negation on $A$. On its universal
+cover a lattice translation $T_v$ acts on the fiber and the first
+period acts by $R(x,s)=(-x,s+1)$. The relation
+$RT_vR^{-1}=T_{-v}$ gives
+\[
+ H_1(M;\ZZ)=(\Lambda/2\Lambda)\oplus\ZZ .
+\]
+The positively oriented $s$-loop based at $v/2$ lifts to the deck
+transformation $T_vR$, of class $(v,1)$. Taking its cross product with
+$[S^1_t]$ gives $\beta_v$ with its complex orientation. This cross
+product identifies $H_1(M;\ZZ)$ with a direct summand of
+$H_2(X;\ZZ)$ by the integral K\"unneth formula. It follows that the
+sixteen labels are distinct and that their doubles coincide.
+
+On the normalization of an irreducible curve the pullback of $\Omega$
+is pointwise nonnegative. If its integral vanishes, the differential
+has zero vertical component, so the curve is a compact horizontal
+leaf, as in \S\ref{sec:suspension}. At the complex structure on $X$
+these leaves correspond to the one- and two-element orbits of
+negation. A two-element orbit traverses two $s$-periods, with deck
+transformation $R^2$ and zero lattice translation. The class of its
+leaf is therefore $2\beta_0$. This proves the assertion about the
+monoid. Its generators all have base degree one. There are finitely
+many labels of bounded base degree, and any ample degree on $X$
+gives the same completion on this face since the degrees of its
+finitely many generators have positive minimum and finite maximum.
+
+\smallskip
+\noindent\emph{Deformation of the return.}
+Choose period-one real coordinates $(u_1,v_1,u_2,v_2)$ in which
+$\omega_A$ is a positive constant multiple of $du_j\wedge dv_j$
+on the $j$th plane. Let $\varphi^\tau$ be the Hamiltonian flow of
+\[
+ G(u_1,v_1,u_2,v_2)
+       =\sum_{j=1}^2\bigl(\cos(2\pi u_j)+\cos(2\pi v_j)\bigr).
+\]
+It commutes with negation. Put $f_\tau=(-1)\circ\varphi^\tau$
+and suspend $f_\tau$ as in \S\ref{sec:suspension}, with descended
+vertical form $\Omega_\tau$. Choose compatible vertical complex
+structures smoothly in the parameter, starting with the product
+complex structure, and retain the flat horizontal complex line
+throughout. Under the resulting identification of the underlying
+manifolds, $[\Omega_\tau]=[\Omega]$. Indeed, choose a smooth
+function $h$ on the fundamental strip $0\le s\le1$, identically zero
+near $0$ and one near $1$. The map from the initial suspension to the
+one at $\tau$ given on this strip by
+$(x,s,t)\mapsto(\varphi^{\tau h(s)}x,s,t)$ respects the seams.
+The change of vertical form is $\pm\tau h'(s)\,ds\wedge dG$.
+It has a primitive $\mp\tau h'(s)G\,ds$ vanishing near both seams.
+This identification fixes the sixteen section tori since the points
+of $A[2]$ are equilibria.
+
+For any parameter, every component in a cycle of a face class is
+horizontal, by the nonnegativity of its vertical area. At a fixed
+base degree $m$, intersecting with the fiber over $0\in B$ identifies
+the horizontal cycles with the $f_\tau$-invariant elements of
+$\operatorname{Sym}^m A$. The inverse takes the union of the
+corresponding horizontal sheets with multiplicity. In flat charts
+convergence of such multisets gives Hausdorff convergence of supports
+and weak convergence of the integration currents. Over a compact
+parameter interval the invariant multisets form a closed subset of
+the product of that interval with $\operatorname{Sym}^m A$ and are
+therefore compact.
+
+The integral class is locally constant on this family, including its
+torsion component. To see this also in the ambient relative cycle
+space, take disjoint tubular neighborhoods of the distinct leaf
+tori supporting a given cycle. All sufficiently nearby supports lie
+in these tubes. In each tube a closed cycle has integral class a
+multiple of the core since the tube retracts onto the torus. Pair
+with the pullback of an area form of integral one on $B$. Its value
+on the core is the positive degree of that leaf. The integral in
+each tube is continuous at the given cycle, by a cutoff equal to
+one near the part of its support in that tube. Being a multiple of
+the core degree, it is locally constant. The argument persists with
+the parameter under the smooth identification just constructed.
+Thus the locus of each face class is compact and open over the
+interval. Its characteristic function yields the endpoint relation
+in $S$.
+
+Fix a positive integer $K$. For all sufficiently small $\tau>0$,
+every point of $f_\tau$ of period at most $K$ is one of the sixteen
+equilibria. Indeed $f_\tau^j x=x$ implies
+$\varphi^{2j\tau}x=x$. Write $V$ for the lifted periodic Hamiltonian
+vector field on $\RR^4$. Bounded speed ensures that any closed
+trajectory on $A$ of sufficiently short period lifts to a closed
+trajectory in $\RR^4$. If $V$ has Lipschitz constant $L$ and such a
+lift has period $T$, its velocity has zero average. At a point of
+maximum speed $M_0$, subtracting this average and bounding the
+difference of the two velocities gives $M_0\le LT M_0$. Taking
+$2K\tau$ smaller than both short-time bounds excludes every
+nonconstant trajectory in question.
+
+At an equilibrium, the return derivative on either plane is minus
+the exponential of the linear Hamiltonian flow. A definite Hessian
+on that plane gives an elliptic block, and an indefinite Hessian
+gives a negative hyperbolic block. We may choose $\tau$ in the
+preceding interval to give irrational rotation angles divided by
+$\pi$ on all the elliptic blocks, by omitting countably many values.
+For the full return derivative $D_v$ at $v/2$ we have
+\[
+ \operatorname{sign}\det(1-D_v)=+1,\qquad
+ \operatorname{sign}\det(1-D_v^2)=(-1)^{\operatorname{ind}_{v/2}(G)} .
+\]
+Indeed each negative hyperbolic plane reverses precisely the second
+sign and has Morse index one. Each elliptic plane has even Morse
+index. There are eight odd-index equilibria since each cosine
+coordinate independently contributes zero or one negative Hessian
+direction. The local return formula of Proposition~\ref{prop:return}
+therefore gives $E(Q^{\beta_v})$ at the even-index points and
+$E(Q^{\beta_v})/E(Q^{2\beta_v})$ at the odd-index points,
+where $E=\Phi(F_1)$. All cycles through degree $K$ at this endpoint
+are supported on the sixteen disjoint tori. Excision into disjoint
+tubes makes their local series multiply, retaining the integral
+label of each summand. The endpoint relation and $2\beta_v=2\beta_0$
+now give \eqref{eq:face} after $\Phi$, through degree $K$. Each
+cutoff compares with the same complex endpoint, so equality in $S$
+holds in every degree.
+
+\smallskip
+\noindent\emph{Lifting the identity.}
+Let $V_\gamma$ denote the coefficient of either side of
+\eqref{eq:face} before applying $\Phi$. The coproduct $\Delta$
+induced by addition and pullback $\rho_d$ under multiplication of
+cycles give
+\[
+ \Delta V_\gamma=
+    \sum_{\eta+\xi=\gamma}V_\eta\otimes V_\xi,\qquad
+ \rho_d V_\gamma=\sum_{d\eta=\gamma}V_\eta .
+\]
+For the class loci these identities follow from their inverse images.
+Nonnegative vertical area puts every effective summand and effective
+root of $\gamma$ in $\Gamma^0$. In particular every section label
+is a root of the common double. For the product the identities follow
+directly on the nontorsion inverse pair defining $F_1$. Its entire cycle
+locus of degree $m$ is the point $m[C]$. Under addition its preimage
+consists of the ordered pairs of multiples whose degrees sum to $m$.
+Under multiplication by $d$ the preimage is empty unless $d\mid m$,
+when it is the point $(m/d)[C]$. Substitution $Q^\eta\mapsto Q^{d\eta}$ is a
+ring homomorphism even when several monomials have the same image, and
+preserves inverses of series with constant term one.
+
+If there were a first base degree of disagreement, the difference
+of the coefficients at any such label would be primitive for
+$\Delta$, since the summands of smaller positive degree agree.
+Every proper division would kill this difference, since all roots
+in its division formula have smaller base degree. By the
+primitive-division lemma of \cite[Lemma~7.1]{WueProduct} the difference
+is a finite linear combination of the multiplicity-one scalar
+classes $x_{h,1}$. Their images under $\Phi$ are linearly
+independent by \cite[Theorem~5.1]{WueProduct}. The identity in $S$ just
+proved makes this difference zero, a contradiction.
+\end{proof}
+
+After forgetting the torsion labels, the exponents at degrees one
+and two are $16$ and $-8$. Their divisor sums give fixed point
+indices $16$ on the odd iterates and $0$ on the even iterates, in
+agreement with the Lefschetz numbers of negation on $A$ and the
+iteration formula of Dold \cite{Dold}. For comparison, put
+$\mathcal E(q)=\prod_{j\ge1}(1-q^j)^{-1}$, the numerical elliptic
+partition. The Lefschetz zeta function here is
+$\zeta(q)=(1+q)^8/(1-q)^8$, whence
+\[
+ \mathcal E(q)^{16}\mathcal E(q^2)^{-8}
+          =\prod_{j\ge1}\zeta(q^j).
+\]
+Ionel and Parker use a M\"obius-normalized Gromov series in their
+mapping-torus formula. In real dimension six it concerns the
+genus-one numerical series. Their distinguished-section hypothesis
+requires $\det(1-f_*|_{H_1(A)})=\pm1$, whereas negation on $A$ has
+determinant $\det(1-f_*|_{H_1(A)})=16$
+\cite[Theorems~0.1 and~4.1]{IPmaps}. Equation~\eqref{eq:face}
+retains all sixteen integral section labels before numerical
+specialization.

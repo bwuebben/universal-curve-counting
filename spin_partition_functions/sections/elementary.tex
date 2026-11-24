@@ -1,0 +1,75 @@
+\section{The largest genus in the elementary factorization}\label{sec:highest}
+
+The source-genus expansion of a fixed positive-degree term of
+\eqref{eq:fixed-target} generally has infinitely many coefficients.
+Its elementary multiplicities have finite support. The last nonzero
+genus can be read from the two extreme diagrams in the antidiagonal
+formula. Write \(n_{m,j}\) for the multiplicities defined after
+Theorem~\ref{thm:spin}, using the compact realization and fixed-target
+comparison of \cite[Proposition~3.1 and its proof]{WueUnramified}.
+
+\begin{theorem}\label{thm:highest}
+Suppose the hypotheses of Theorem~\ref{thm:spin} hold.
+If \(w_1(F)=0\) and \(s>0\), the largest \(j\) with
+\(n_{m,j}\ne0\) is \(1+D_m\) in each degree \(m\ge1\), where
+\[
+ D_m=mb_0+(b_0+s)\binom m2,\qquad
+ n_{m,1+D_m}=(-1)^{m(b_0+s)+D_m}.
+\]
+For \(w_1(F)=0\) and \(s=0\), the only elementary multiplicity is
+\(n_{1,g}=1\). For \(w_1(F)\ne0\), one has \(n_{1,g}=\epsilon\);
+for \(m\ge2\) the largest genus is \(1+D_m\), with
+\[
+ D_m=b_0\binom{m+1}2,\qquad
+ n_{m,1+D_m}=-2\epsilon(-1)^{mb_0+D_m}.
+\]
+\end{theorem}
+\begin{proof}
+Use Laurent degree in \(t\), so that \(X_i\) has degree \(i\).
+The sum of the hooks of \(\lambda\vdash m\) is \(m\) plus the number
+of pairs of boxes in a common row or column. It is at most
+\(\binom{m+1}2\), with equality only for a single row or column.
+The total content is at most \(\binom m2\), attained only by the
+row. For \(s>0\) the row alone therefore contributes the top term
+of degree \(D_m\), with coefficient \((-1)^{m(b_0+s)}\).
+When \(s=0\), Theorem~\ref{thm:spin} gives \(Z_D=B_g\).
+
+For \(w_1(F)\ne0\) and \(m>1\) neither extreme diagram is
+self-conjugate. Thus the numerator in degree \(m\), and hence the
+degree-\(m\) term in \(\log Z_D\), has Laurent degree strictly less
+than \(D_m\): in passing to the logarithm, products from smaller
+degrees are strictly below the bound by strict superadditivity.
+For the same reason the top term in the balanced genus-\(g\) logarithm
+is contributed by the row and column alone, with coefficient
+\(2(-1)^{mb_0}\). It enters the elementary subtraction for \(d=1\)
+with multiplicity \(\epsilon\).
+
+It remains to eliminate proper divisors \(m=de\) with \(d,e>1\).
+The degree-\(e\) coefficient in \(\log B_j\) has Laurent degree at
+most \((j-1)\binom{e+1}2\). Induct on \(m\). In the nonorientable
+case the smaller-degree contributions are strictly below \(D_m\)
+because \(\binom{d+1}2\binom{e+1}2<\binom{de+1}2\).
+In the orientable case the corresponding difference is
+\[
+ D_m-D_d\binom{e+1}2=
+ \frac{de(e-1)}4\big((b_0+s)(d+1)-2b_0\big)>0.
+\]
+For \(m>1\), the degree-one balanced logarithm in the orientable
+subtraction also falls below \(D_m\), since \(s>0\).
+What remains in degree \(m\) is \(\sum_jn_{m,j}X_1^{j-1}\).
+Since the top Laurent coefficient of \(X_1^D\) is \((-1)^D\),
+the two leading coefficients give the asserted signs.
+\end{proof}
+
+The orientable formula also recovers \(s\) at degree two. The two
+diagrams are transposes, so the disconnected coefficient is
+\(2\cos(sv)(X_1X_2)^{b_0}\); its first term after the leading one
+distinguishes every \(s\ge0\). At zero mass the bound for \(s>0\)
+is attained by the cyclic spectral curve \(y^m=\sigma\) in
+\(L_+=aM\), taking the labelling with \(\deg M=s\). For \(m\ge2\)
+choose a section \(\sigma\) of \(L_+^m\) with simple zeros
+(\(\deg L_+^m\ge2g\)); total ramification over these zeros gives
+genus \(1+D_m\). For a nonorientable genus-two target with positive
+sign, expansion of Corollary~\ref{cor:cubic} in \(v\), in place of
+\(X_1\), gives the connected invariants \(28/3,-25/3,589/180,-61/81\)
+in source genera four through seven.

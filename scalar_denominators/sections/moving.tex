@@ -1,0 +1,243 @@
+\section{Comparison with the scalar local curve}\label{sec:triplecomparison}
+
+Let $D\subset X$ satisfy Proposition~\ref{prop:isolation}, with $h=g(D)$
+equal to three or four. Write $N=N_{D/X}$, and put
+\[
+                 H=3h+1,\qquad r_3=8,\qquad r_4=288 .
+\]
+Theorem~\ref{thm:classification} gives $r_h$ families of embedded
+genus-$H$ curves in the total space of $N$. Write $\Phi$ for the map from complex to smooth families of
+threefolds in the universal cycle algebra. We compare the scalar
+insertion at $3[D]$ in this bundle with the compact open class $J_3$
+of the isolated cycle in $X$. Write $G_k(X,3D)$ for the local virtual
+degree of connected unmarked stable maps of arithmetic genus $k$ with
+image cycle $3[D]$. It includes maps with contracted subcurves.
+The inverse image of the isolated cycle is open and closed
+in the degree-three stable-map space over a sufficiently small tube.
+It is proper by fixed-genus compactness. The ordinary algebraic
+stable-map virtual class restricts to it, using a projective completion
+and the open set of maps with image in $X$.
+
+\begin{proposition}\label{prop:borel}
+Let $w=(2\sin(u/2))^2$, and let $S^{\rm sc}_{h,3}(u)$ be the connected
+scalar residue in degree three. In the smooth cycle algebra, and in the
+fixed-target connected Gromov--Witten theory, respectively, one has
+\begin{align}
+ \Phi(J_3)&=\Phi(x_{h,3})+\frac{r_h}{3}\Phi(x_{H,1}),
+           \label{eq:cubic-smooth-comparison}\\
+ \sum_k G_k(X,3D)u^{2k-2}
+     &=S^{\rm sc}_{h,3}(u)+\frac{r_h}{3}w^{H-1}.
+           \label{eq:cubic-residue-comparison}
+\end{align}
+\end{proposition}
+
+\begin{proof}
+\emph{The scalar insertion.}
+Choose $p\in D$ outside the branch divisors of the $r_h$ families and
+a linear form $\ell$ on $N_p$ nonzero on each of their defining
+sublines. For a degree-three cycle let $F$ be the product of the
+three values of $\ell$ over $p$, with multiplicities. On a family
+$y^3=a s_i$ of Theorem~\ref{thm:classification}, this product is
+$c_i a$ with $c_i\ne0$. Thus its unique zero is $3[D]$. Under
+scalar dilation $F$ has weight three.
+
+Take $B=\mathbb P^1$ and $L=\mathcal O_B(1)$. In the diagonal Borel
+quotient a function of weight one is a section of $L$. Indeed a
+pair $(v,z)$ defines the functional on $\mathbb Cv$ taking $v$ to
+$z$, which is unchanged under simultaneous scaling. The function
+$F$ therefore gives a section of $L^3$ on the relative cycle space.
+The pullback of its Thom class divided by three, over the oriented
+base $B$, represents $x_{h,3}$ by the scalar construction
+\cite[\S4.3]{Pardon}.
+
+We identify its algebraic virtual pairing before deforming the
+insertion. Compactify the normal bundle by
+$\mathbb P_D(\mathcal O\oplus N)$ and extend the supported class by
+zero. The only fixed maps meeting its support are maps to $D$. On
+their proper connected moduli stack
+$\overline{\mathcal M}_k(D,3)$, with universal curve $\pi$ and map
+$f$, the moving virtual normal complex is $R\pi_*f^*N$ with scalar
+character one. If $\eta$ is the equivariant parameter, the
+normalized test restricts to $3\eta/3=\eta$. The virtual localization
+formula \cite{GP} gives the equivariant pushforward
+\[
+              \eta\,[u^{2k-2}]S^{\rm sc}_{h,3}(u).
+\]
+Here the inverse moving Euler class is exactly the fixed-target
+residue of \cite[\S2.2]{BP}. It applies to $N$ since its
+$K$-class on $D$ is determined by rank and determinant and its
+scalar character is common to both normal directions. Passing to the
+associated bundle over $B$ substitutes $c_1(L)$ for $\eta$, and
+$\int_Bc_1(L)=1$. This computes the pairing of the relative
+algebraic virtual class with the test in source genus $k$: on a
+trivialization of the frame torsor the universal source, universal
+map and their relative obstruction complex are pulled back from the
+fixed-target equivariant data, and these identifications descend
+with the scalar character.
+
+\emph{The deformation.}
+Form the deformation to the normal cone of $D\subset X$ and delete
+the proper transform of $X\times\{0\}$. Denote its parameter by $t$.
+The fibers over $0$ and over $t\ne0$ are $N$ and $X$, respectively.
+Give $t$ weight $-1$ and fix the original $X$ coordinate. In normal
+coordinates $n=y/t$ the action at $t=0$ is scalar of weight one.
+The associated family of threefolds thus lies over
+$E=\operatorname{Tot}_B(L^{-1})$. Its restriction to the zero
+section is the preceding Borel family. Over the complement of that
+section the original $X$ coordinate trivializes the family.
+
+The test extends over a neighborhood of the marked cycle in this
+family. Choose adapted local coordinates $(x,y_1,y_2)$ near $p$ with
+$D=\{y_1=y_2=0\}$ and take the transverse surface $x=x(p)$.
+For a nearby cycle its three intersections with this surface near $p$,
+counted with multiplicity, give a continuous unordered triple. In
+the deformation coordinates use the product of their values under
+$\ell(y/t)$. The divided coordinates extend over $t=0$, and the
+product has weight three. It restricts there to $F$ and vanishes on
+the marked triple in every fiber. On smooth embedded curves transverse
+to the surface the evaluation is holomorphic.
+
+Choose a small section $v\in H^0(B,L^3)$ with three simple zeros.
+Choose a small smooth section $\tau$ of $L^{-1}$ with a single
+transverse zero $b_*$ disjoint from those of $v$. The metric dual of
+a holomorphic section of $L$ with a simple zero gives such a section
+of local index $-1$. On the zero section first deform $F$ to $F-v$.
+Keep this translated test fixed and move the parameter over the
+graphs $t=s\tau(b)$, $0\le s\le1$.
+
+These intersections have compact support through both homotopies.
+Use a closed normal disk of small radius over $D$. At $t=0$ the
+maximum normal radius on the $i$th curve is a positive constant
+times $|a|^{1/3}$. Hence $|F|$ is bounded below away from zero
+where a cycle reaches the boundary of this disk, uniformly over
+$B$ in unitary frames and over the finitely many families. Choose
+$\|v\|$ smaller than this bound. If $t\ne0$, the disk maps into
+an $O(|t|)$ tube about $D$ in the original target. For $|t|$
+sufficiently small its only degree-three cycle is $3[D]$ by
+Proposition~\ref{prop:isolation}. Within the closed disk, a common
+closed taming form in each local smooth trivialization bounds the
+masses by the fixed homology class $3[D]$. Relative cycle compactness
+on a slightly larger disk therefore includes any limit across
+$t=0$ \cite[Theorem~2.11]{DIW}. These choices can be made uniform
+on the compact base. In particular the compactly supported
+cohomology class on cycles is transported in the smooth colimit
+\cite[\S2]{WueProduct}. For the algebraic pairing use the relative
+virtual class over the smooth algebraic base $E$ and intersect it
+with the Thom class of the oriented parameter graph and the test.
+The inverse images of the compact supports are proper at each fixed
+$k$. The homotopic graphs give equal pairings. At the zero section
+the refined fiber restriction is the virtual class of the Borel
+family by base change \cite[Proposition~7.2]{BF}.
+
+\emph{Intersections on the final graph.}
+Over each of the three zeros of $v$, the parameter $\tau$ is nonzero.
+The only supported cycle is the isolated triple in $X$. Its local
+intersection is the simple zero of $-v$, of positive index. It gives
+$\Phi(J_3)$ in the smooth colimit and $G_k(X,3D)$ in the relative
+virtual pairing, since the family is a product there.
+
+Over $b_*$ there is one solution $a=v(b_*)/c_i\ne0$ on each
+normal family. The local relative Hilbert scheme is smooth with
+coordinates $(b,a)$ and maps to $(b,0)\in E$. Indeed the only
+fixed-fiber tangent direction is the variation of $a$, and the
+$t$ direction surjects onto the one-dimensional fixed-fiber
+obstruction space by Proposition~\ref{prop:isolation}. The
+normal curves themselves supply the smooth two-dimensional family
+in $t=0$. On this chart the graph equation is $-\tau(b)=0$,
+and the remaining equation has nonzero complex derivative $c_i$
+in $a$. Their intersection sign is $-1$. The graph has the
+orientation of the vertical complex line in $E$, and the test
+has its complex orientation. Interchanging their normal factors
+preserves orientation.
+
+The Hilbert chart here satisfies the hypotheses of
+Proposition~\ref{prop:moving-embedded-curve}. In particular the
+motion of $t$ surjects onto the fixed-curve obstruction and the
+graph is transverse before testing the amplitude. The shear argument
+of Lemma~\ref{lem:signed-embedded-cycle} is local along the embedded
+image. At the finitely many supporting points choose disjoint smooth
+submersion coordinates away from the evaluation and ramification
+fibers. These coordinates extend over a smaller parameter neighborhood
+by smooth local trivialization. The required normal variations are
+compactly supported there; a projection from the whole threefold to
+the original curve is unnecessary. On the cycle space the lemma gives
+$-\Phi(x_{H,1})$ for each such image. The proper degree-one map stack
+over the same chart accounts for the virtual contribution in every
+source genus, equal by \eqref{eq:embedded-degree-one} to
+$-[u^{2k-2}]w^{H-1}$. The embedded image has trivial automorphisms
+as a map to the threefold; contracted components of maps to it retain
+their ordinary stack multiplicities.
+
+Summing the two sets of local intersections before the scalar
+normalization gives
+\[
+        3\Phi(J_3)-r_h\Phi(x_{H,1}),\qquad
+        3G_k(X,3D)-r_h[u^{2k-2}]w^{H-1}.
+\]
+After division by three these are respectively $\Phi(x_{h,3})$
+and the coefficient of $u^{2k-2}$ in $S^{\rm sc}_{h,3}$ computed
+above. This proves both identities.
+\end{proof}
+Let $\Phi$ denote the change from complex families to smooth families
+of almost-complex threefolds in the Chern-number-zero universal
+algebra. We recall the detection results used here
+\cite[\S\S5--7]{WueProduct}. In the complex algebra a primitive class
+annihilated by every proper division of cycles belongs to the finite
+rational span of the $x_{j,1}$. Their images under $\Phi$ are linearly
+independent. The latter assertion uses proper pullback to connected
+stable maps of increasing arithmetic genus. In genus below $j$ that
+pullback is zero for $x_{j,1}$, and in genus $j$ the regular embedding
+gives a nonzero class. Neither assertion requires an evaluation by a
+virtual fundamental class for arbitrary analytic families.
+
+\begin{proof}[Proof of the universal identity in Theorem~\ref{thm:isolated}]
+Let $J_0=x_{h,0}=1$. On the tube provided by
+Proposition~\ref{prop:isolation}, the inverse image of the supported
+point $d[D]$, $1\le d\le3$, under cycle addition is the union of the
+pairs $(a[D],b[D])$ for $a+b=d$. The preimage under multiplication
+by $m$ is the divided point if $m\mid d$, and is empty otherwise.
+The maps pull back unit cochains, so there are no stabilizer factors.
+Thus the $J_d$ and the scalar $x_{h,d}$ have the same coproduct and
+division laws through degree three. In particular
+\[
+ \Delta J_d=\sum_{a+b=d}J_a\otimes J_b,\qquad
+ \rho_m J_d=
+ \begin{cases}
+ J_{d/m}&m\mid d,\\
+ 0&m\nmid d .
+ \end{cases}
+\]
+For the scalar classes these formulas follow from
+\cite[\S4]{Pardon} in Chern number zero.
+
+For $d=1,2$ deformation to the normal bundle preserves the isolated
+section $d[D]$. Indeed a sequence of additional cycles would, by normal
+dilation and compactness as in \S\ref{sec:neighborhood}, give an
+off-section cycle of degree at most two in the linear normal model.
+The entire degree-$d$ cycle space of that model is a point, and the
+empty tuple represents $x_{h,d}$. Consequently
+$\Phi(J_d)=\Phi(x_{h,d})$. At the first degree of a possible difference
+the displayed operations make $J_d-x_{h,d}$ primitive and killed by
+proper divisions. Detection therefore gives $J_d=x_{h,d}$ successively
+in degrees one and two. For $d=3$ subtract also $(r_h/3)x_{H,1}$.
+This correction is primitive and killed by all proper divisions.
+The difference lies in the same multiplicity-one span, and has zero
+smooth image by Proposition~\ref{prop:borel}. This proves
+\eqref{eq:main-class}. The numerical identity is the separate
+algebraic pairing in that proposition.
+\end{proof}
+
+
+In the compact example, change just the cubic coefficient of the
+genus-three scalar factor to $J_3$.
+Its logarithm gains $(8/3)x_{10,1}$. The new exponent at $3\alpha$
+in genus ten is therefore $c_{3\alpha,10}-(4720/3+8/3)c_{\alpha,3}
+=c_{3\alpha,10}-1576c_{\alpha,3}$. Thus the isolated local unit
+accounts for the fractional part even though the complete change
+from equal to opposite weights also has an integral part.
+
+In genus five the quotient by dilation contains pencils. A single
+cubic evaluation no longer suffices; two independent point products
+give the least tuple in Theorem~\ref{thm:cubic-evaluations}. Theorem~\ref{thm:pencil}
+in Appendix~\ref{app:pencils} proves the comparison in this case,
+including the virtual multiplicity of a cuspidal normalization.

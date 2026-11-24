@@ -1,0 +1,234 @@
+\section{Normal kernels on the sextic Galois closure}\label{sec:heptic}
+In degree seven the normal kernel at a ramified cubic has two real directions on its Galois closure. Projectivizing this plane does not separate the equations at the different nodes. We identify the one remaining real equation after solving the complex matching equations.
+\subsection{The cubic and its Galois closure}\label{p14-sec:kernels}
+
+Fix a complex rank-two bundle $N$ of degree $2g-2$ over a closed Riemann
+surface $C$ of genus $g\ge2$. A real Cauchy--Riemann operator $D$ on $N$
+has the Dolbeault symbol and a real-linear term of order zero. All kernels,
+cokernels and indices below are real. Let $f:Y\to C$ be a connected cubic
+with monodromy $S_3$ and $b>0$ distinct simple branch values. Write
+$Z\to C$ for the smooth Galois closure and $V$ for the real plane
+$\{(a_1,a_2,a_3):\sum a_i=0\}$ with its permutation action. Locally
+the involution at a ramification point acts by $z\mapsto-z$, with
+$w=z^2$ on the base. The fixed-target Hurwitz space of $f$ has complex
+dimension $b$.
+
+Let $D=D_0$ be invertible on $C$. At an \emph{ordinary transverse
+cubic crossing} of a path $D_t$, the kernel of $D_f=f^*D$ is a line
+$\mathbb R\xi$, the graph of $\xi$ in $N$ is embedded, and differentiation
+at $\xi$ in the branch positions and increasing time gives an isomorphism
+\begin{equation}\label{p14-eq:lowertransverse}
+ W_f:T_f\mathcal H_f\oplus\mathbb R\longrightarrow
+          \operatorname{coker}D_f .
+\end{equation}
+Indeed $\operatorname{ind}D_f=-2b$. The trace of $\xi$ is zero by
+removability on $C$ and base invertibility. Its three conjugates on $Z$
+therefore span one copy of $V$. Over a regular disk they give three
+solutions with sum zero. Evaluation of this plane will have real rank
+two at regular points and complex span of dimension two on at least
+one regular disk. We explain both the generic assertion and a construction
+on any prescribed $f$.
+
+\begin{lemma}\label{p14-lem:kernelplane}
+Suppose two of the sheet values form a complex frame on a regular disk.
+For a residual set of arbitrarily small smooth variations on this disk
+preserving the three solutions, every connected smooth finite cover
+$u:X\to C$ has
+\[
+                     \ker u^*D=V^{K_u}.
+\]
+Here $K_u\le S_3$ is the image in the lower monodromy of a sheet
+stabilizer for $X$ in the joint monodromy of $X$ and $Z$. The
+identification uses pullback to a common normal cover.
+\end{lemma}
+
+\begin{proof}
+Use real variations annihilating the two frame vectors $s_1,s_2$.
+On any smaller disk a dense set of these variations attains the
+infinite-order Petri condition at a specified interior point. This
+condition says that a tensor of formal solution and adjoint-solution
+jets with zero pointwise product jet is zero. For unrestricted
+variations use \cite[Corollary~5.10]{wendl} and
+\cite[Theorems~1.6.17 and~2.5.3]{dwbn}. For a nearby unrestricted
+operator $D'$ with such a jet, solve $D's'_j=0$ locally with $s'_j$
+close to $s_j$: a Cauchy right inverse on a disk of radius $r$ has
+norm $O(r)$ on bounded functions, and interior elliptic estimates
+give closeness in any prescribed finite smooth norm. Conjugate by the
+complex gauge taking $s_j$ to $s'_j$, then cut off the difference from
+$D$ away from the point. This preserves the Petri condition there and
+annihilates the original columns on the entire disk.
+
+Consider an irreducible real finite monodromy system $W$ inequivalent
+to the prescribed standard system, with its ineffective punctures
+removed. A nonzero twisted solution provides columns $w_i$ which,
+together with $s_1,s_2$, are real linearly independent as germs on a
+common normal cover. This follows from inequivalence, irreducibility
+and unique continuation. An annihilator of the section and operator
+variations has adjoint columns $v_i$ with
+\[
+        \sum_i w_i\otimes v_i=s_1\otimes\alpha_1+s_2\otimes\alpha_2.
+\]
+This identity is the pointwise annihilator condition for maps killing
+the two prescribed columns. Test it against $[D,\Phi]$, with $\Phi$ a
+compactly supported complex-linear endomorphism of $N$. The integral
+on the left vanishes. The sections $\Phi s_1,\Phi s_2$ are
+independently arbitrary, so both $\alpha_j$ solve the adjoint equation
+on the disk. The Petri condition and independence of the input jets
+force all $v_i$ to vanish to infinite order. Adjoint unique
+continuation gives surjectivity.
+
+If the $a$ effective punctures move, the projective incidence has
+projection index
+\[
+       2a-1-2\sum_x\dim(W/W^{I_x})\le -1 ,
+\]
+by the orbifold index formula \cite[Proposition~2.8.6]{dwbn};
+$I_x$ denotes inertia at $x$. Exhaust each configuration chart by
+compact blocks whose punctures avoid a common smaller test disk.
+At a good Petri jet over a block, the unit-normalized solution set is
+compact by elliptic estimates on the compactified normal covers.
+Finitely many allowed variations give surjectivity near that set.
+Finite-dimensional Sard gives arbitrarily small perturbations excluding
+all such solutions over the block. Absence is open there. There are
+countably many blocks and discrete monodromy types. The remaining
+type $V$ is faithful, so each of its copies on a common normal cover
+descends to $Z$. Each has a one-dimensional invariant line on $Y$;
+openness of the given simple kernel on the fixed $Y$ permits just one
+copy. Taking stabilizer invariants proves the formula, by bounded
+descent and removability over the branch points.
+\end{proof}
+
+At an ordinary crossing on a generic path the required regular-fiber
+evaluation is injective everywhere. Indeed the two independent
+differences of the three heights at a marked regular value can be
+varied independently. For completeness, the universal section
+equation at a cubic with complex frame disk admits arbitrary trace-free
+forcing there by variation of $D$. In the adjoint test the trace
+vanishes by base invertibility, hence the annihilator vanishes off
+the marked points by unique continuation. Any remaining adjoint
+distribution has finite order and is supported at the marks. Prescribe
+holomorphic value and derivative jets there and solve recursively
+for mixed jets so that the image under $D_f$ vanishes to higher
+order than that distribution. Taylor polynomials with cutoffs realize
+these jets. Independence of the resulting two value differences
+kills their multipliers, and elliptic regularity removes the supported
+adjoint. The same argument with a holomorphic
+linear jet at the ramifying point gives independent variations of the
+height difference at the two points in a branch fiber and the
+ramification derivative. One may perform these tests without first
+assuming a complex frame disk: two real-independent sheet values
+suffice for the forcing test. Such a disk of real independence exists,
+since collinear nonzero solutions on an open disk have constant real
+ratio by their equation, contradicting the standard monodromy.
+Real rank one for a pair of real four-vectors has codimension three,
+and rank zero has codimension eight. The regular mark contributes
+only two parameters along a transverse crossing. The complex
+dependence locus at a fixed regular mark has codimension two.
+These tests give the claimed ranks, including complex independence
+on some disk. On continued transverse crossing charts the preceding
+residual perturbations are available by multiplication by a time
+cutoff.
+
+If a nonzero section on a positive component is described by
+$a\in V^{K_u}$, the component factors through
+$Z/\operatorname{Stab}(a)$. Each nonzero stabilizer orbit has size
+three or six. At a branch value the heights have values $u,u,-2u$
+with $u\ne0$ by embeddedness. The kernel of evaluation is the
+negative eigenline of inertia, generated, in a suitable ordering, by
+$(1,-1,0)$. A nonzero vector in this line has trivial stabilizer.
+Thus a positive component with a nonzero section vanishing somewhere
+factors through $Z$.
+
+In total degree seven some positive component must have zero height.
+Connectedness forces a nonzero component to meet height zero since
+contracted components carry constant sections. The degree count
+leaves exactly one copy of $Z$ and one copy of $C$. Up to the deck
+group their nonzero height on $Z$ is a scalar multiple of a fixed
+root $s$, negated by a transposition $\tau$. Over each branch value
+$x_i$ there is a unique ramification point $r_i$ of $Z$ fixed by
+$\tau$. Its height is zero. The other two heights over $x_i$ are
+nonzero and opposite. At a regular value the six heights are
+distinct by real injectivity. At all three ramification points the
+vertical derivatives are nonzero, being proportional to the
+difference of two distinct coordinates of the root times the
+ramification derivative of the lower embedded graph. The sextic
+graph is therefore embedded. Its intersections with the zero section
+are precisely the $b$ points just described, with vertical and
+horizontal tangent lines respectively. The direct nodes or connected
+contracted subcurves joining the two components determine a unique
+nonempty subset $I$ of these points. No point is used twice since
+the positive normalizations are embedded. Riemann--Hurwitz gives
+$g(Z)=1+6(g-1)+3b/2$. Joining at $j$ points before attaching any
+contracted components gives genus $1+7(g-1)+3b/2+j$.
+
+\subsubsection{Construction on a fixed covering curve}
+Here and in Section~\ref{p14-sec:joins}, prescribing the crossing permits
+variation of the operator and its solution, with $C,N,f$ fixed.
+
+\begin{proposition}\label{p14-prop:realize}
+Every connected simply branched cubic $f$ as above admits an ordinary
+transverse crossing with the stated evaluation ranks and central kernels.
+Its branch weights can be chosen in any prescribed chamber of the
+nonempty subset-sum hyperplanes.
+\end{proposition}
+
+\begin{proof}
+Over the regular locus map the flat $V$-bundle real-linearly to
+$N_{\mathbb R}$. At a branch send an even and an odd basis vector to
+$e_0$ and $zv_0$, where $e_0,v_0$ form a complex basis.
+This is equivariant under $z\mapsto-z$. Fix also a complex frame on
+a regular disk. Extend relatively over the complement by a smooth
+bundle map; transversality avoids the rank-one and rank-zero strata
+of codimensions three and eight over the surface. The maps of the
+three sheet vectors define an embedded cubic graph. Start with a
+normal operator equal to $\bar\partial$ in the branch frames. Off
+the branches prescribe a real zeroth-order correction on the image
+of the flat plane by sending each parallel column to minus its
+image under this operator. Extend smoothly on a complement, using
+the zero correction near the branch centers. This makes the
+prescribed heights solutions.
+
+We verify regularity on the fixed $f$. On the frame disk variations
+killing the two heights can first make $D$ invertible. A nonzero
+base kernel vector cannot belong to their real span on an open
+disk: its two real coefficients would have zero $\bar\partial$ and
+be constant, contrary to the absence of an invariant in $V$.
+Testing such a vector against a nonzero adjoint therefore gives
+a nonzero kernel-to-cokernel matrix entry, by variation of $D$
+and unique continuation. In a finite reduction the rank increases
+under a small multiple of this variation. Iterate until the
+index-zero base problem is invertible.
+
+Augment $D_f$ by $b$ complex pole columns at the ramifying points.
+Each column is the image off the pole of $\chi a/z$, where $a$ is
+in the complex derivative line of the height there and $\chi$ is an
+even cutoff. The pulled-back antilinear coefficient contains a
+factor $\bar z$, so the forcing lies in $L^p$, $p>2$. The derivative
+of the inverse sheet $(w-\alpha)^{1/2}$ is $-\alpha/(2z)$, giving
+exactly the branch-motion column modulo the regular domain. The
+augmented index is zero and the known kernel line persists. Suppose
+an additional augmented solution exists. Its trace extends by
+cancellation of the two odd poles at each ramifying pair and is zero
+by invertibility. The adjoint of the augmented problem also has
+trace zero by testing base pullbacks. Two of its three components
+are real-independent on an open dense subset: proportionality on
+an open set would give a constant real relation by the adjoint
+equation and hence on the normal cover, whereas the nonzero
+trace-free conjugates span the irreducible standard representation.
+Writing the three conjugates of the extra solution as $h_i$, annihilation
+of the constrained variations would put both $h_1-h_3,h_2-h_3$ in
+the real span of $s_1,s_2$ there. Their coefficients would again be
+constant. By trace zero and continuation all $h_i$ would lie in
+the original standard copy and have no poles, so its sheet-invariant
+line is the only possibility. Thus a rank-increasing variation exists
+until the augmented kernel is just the prescribed line. One unrestricted
+time variation on the disk then pairs nontrivially with the remaining
+adjoint: the available forcing on the three sheet heights is any
+triple of sum zero. This proves \eqref{p14-eq:lowertransverse}.
+Lemma~\ref{p14-lem:kernelplane} applies in its open regular neighborhood.
+
+Section~\ref{p14-sec:joins} below proves the assertion concerning strict
+branch weights by changing the coefficients at the branch points and
+restoring the equation on this same $Y$. This step also supplies the
+additional regularity needed for the signed local degrees.
+\end{proof}

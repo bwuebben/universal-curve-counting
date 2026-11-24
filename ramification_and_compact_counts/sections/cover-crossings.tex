@@ -1,0 +1,355 @@
+\subsection{Smooth covers at a crossing}\label{p10-sec:incidence}
+
+Let $f:Y\to C$ be a smooth connected cover, and write $D_f=f^*D$.
+We regard covers up to isomorphism over $C$. Let $\mathcal H$ denote
+the fixed-target Hurwitz space of the ramification type of $f$.
+At a point $(f,t)$ with kernel $K$ and cokernel $P$ the differential
+of the family of operators induces a map
+\begin{equation}\label{p10-eq:cubic-intrinsic}
+ W:T_f\mathcal H\oplus\RR_t\longrightarrow
+                  \operatorname{Hom}_{\RR}(K,P).
+\end{equation}
+It is obtained by differentiating on $K$ and then dividing by the
+image of $D_f$, so it is independent of the trivializations. When
+$K$ is a line and $W$ is an isomorphism, write $\eta_f$ for its sign.
+We orient the source by the complex orientation of the Hurwitz space
+and increasing time. On the target we use the full Cauchy--Riemann
+determinant orientation, continued from complex-linear operators.
+Indeed $\dim_{\RR}P=2\dim_{\CC}\mathcal H+1$ in this case, and
+$\det\operatorname{Hom}_{\RR}(K,P)$ differs from
+$(\det D_f)^*$ by an even tensor power of $K^*$. This convention
+also applies to a double cover.
+
+\begin{proposition}\label{p10-prop:incidence}
+Fix endpoints rigid through degree three. For a residual set of smooth
+paths between them with fixed symbol and invertible base operator,
+every smooth cubic cover with kernel has monodromy $S_3$, trivial deck
+group, and only simple ramification over distinct branch values. Its
+kernel is a real line, the graph of a generator is embedded, and
+\eqref{p10-eq:cubic-intrinsic} is an isomorphism. At that parameter every
+other smooth connected cubic cover and every smooth connected double
+cover have injective pullback, in every source genus.
+\end{proposition}
+
+\begin{proof}
+We first vary the operator and a nonzero kernel vector $u$ on one
+cubic cover. On an unramified disk write $u_1,u_2,u_3$ for its three
+values. Their sum is single-valued on the punctured target and
+solves $D$ there. It is bounded at the branch points and hence
+extends across them by removal of singularities. Base invertibility
+gives $u_1+u_2+u_3=0$. On the connected Galois closure these three
+sections span the real sum-zero representation of the monodromy
+group. In fact the map from the permutation representation sending
+the coordinate vectors to the three conjugate sections kills the
+invariant vector, and the remaining real plane is irreducible for
+either transitive group $C_3$ or $S_3$. In particular each pair of
+sheet values is real-linearly independent on an open dense subset.
+A relation $u_i=a u_j$ on an open set with $u_j\ne0$ and $a$ real
+gives $(\bar\partial a)u_j=0$, so $a$ is constant. Unique
+continuation on the Galois closure contradicts the representation
+just computed.
+
+Consider the universal equation $D_fu=0$. A covector $p$ annihilating
+its differential in the section and operator directions solves the
+homogeneous adjoint equation. On an unramified disk use the base
+coordinate to write $p_i$ for its sheet values, with the density
+in the real duality pairing expressed in that coordinate.
+An arbitrary real zeroth-order variation $A$ of $D$ supported there
+gives the variations $(Au_1,Au_2,Au_3)$. Where the first two vectors
+are real-linearly independent, these range over all triples of form
+values with sum zero. Thus $p_1=p_2=p_3$ on such a disk. Testing the
+section variation $f^*w$ gives $\langle p,f^*(Dw)\rangle=0$ for
+all smooth $w$. Every smooth base form equals $Dw$ by base
+invertibility, so $\sum_i p_i=0$ on every unramified disk. Hence
+$p$ vanishes there and identically by unique continuation. The
+differential is surjective since its range contains the closed
+finite-codimensional image of $D_f$.
+
+Suppose the cover has $b$ simple and $q$ totally ramified values.
+These exhaust the cubic profiles. In a chart with ordered branch
+values, the $b+q$ distinct values are local complex coordinates.
+Indeed the finite covering of their complement is locally fixed by
+monodromy and has a unique completion by the prescribed power maps.
+Riemann--Roch and Riemann--Hurwitz give
+$\operatorname{ind}_{\RR}D_f=-2(b+2q)$. Quotienting the vector by
+nonzero real scaling removes one kernel direction. The projectivized
+incidence thus projects to the space of operators with index
+\[
+                    2(b+q)-2(b+2q)-1=-1-2q .
+\]
+Relative path transversality excludes $q>0$ and leaves a regular
+zero-dimensional incidence for $q=0$. A kernel of dimension greater
+than one would give a positive-dimensional projective fiber. A cyclic
+cubic has no invariant kernel vector, by descent to the invertible
+base, and every nontrivial irreducible real representation of $C_3$
+has dimension two. Thus the monodromy is $S_3$. A point stabilizer
+in $S_3$ is self-normalizing, so the deck group is trivial. At the
+remaining covers, projection of the regular linearization to $P$ gives
+the surjectivity of $W$. Both sides have dimension $2b+1$.
+
+We give the marked transversality argument because separation of two
+cubic covers will require a condition on their complex sheet spans.
+At distinct points of a fiber evaluate the difference of their values.
+At a ramification point take the complex-linear first derivative of
+the section in a frame pulled back from $C$. Its antiholomorphic
+derivative already vanishes at a solution since $df=0$ there.
+Finally, over a fixed regular base point, evaluate the pair
+\[
+                     (u_1-u_3,u_2-u_3)\in N_x^2.
+\]
+Each of these linear maps $J$ on sections kills all base pullbacks.
+To check surjectivity for the equation augmented by $J$, hold the
+marks fixed and let $(p,\gamma)$ annihilate the section and operator
+variations. Off the marks $p$ solves the homogeneous adjoint equation.
+The same test with base pullbacks kills its trace, and the localized
+variations $A$ force $p$ to vanish on an unmarked disk. By unique
+continuation $p$ is supported on the marks. A distribution supported
+at these finitely many points has finite order. At each mark we may
+prescribe the value and the holomorphic first derivative of a test
+section $w$ while arranging that $D_fw$ vanish to any fixed jet order.
+In a local expression $D_f=\bar\partial+B$ the Taylor coefficients
+with positive antiholomorphic degree are determined successively,
+leaving the holomorphic coefficients free. Multiplying the resulting
+polynomials by cutoffs gives the required global sections. Now
+$\langle p,D_fw\rangle+\gamma(Jw)=0$ forces $\gamma=0$. Elliptic
+regularity for the remaining adjoint equation gives $p=0$.
+
+The coincidence of two values has real codimension four. The base
+point in an unramified fiber varies in two real dimensions, and a
+mark over a branch value, including the pair consisting of the
+ramified and the unramified preimage, is discrete over its cover.
+Vanishing of the derivative at a ramification point likewise imposes
+four real conditions at a discrete mark. A generic path avoids all
+three defects, so the graph is an injective immersion of a compact
+curve. For the last evaluation the pair has complex rank one in real
+codimension two and rank zero in codimension eight. Taking a countable
+dense set of fixed base points shows that at every crossing there
+is an unramified disk on which the two differences, and hence
+$u_1,u_2$, are complex-linearly independent. The rank condition is
+unchanged by relabeling the sheets.
+
+It remains to exclude a second cover at the same time. Use separate
+Hurwitz and section variables and a common variation $A$ for the
+two equations. An annihilating pair of adjoints solves the homogeneous
+adjoint equation on each cover and has zero trace on each by the
+base-pullback test. For a nonzero cubic adjoint the three values on
+an unramified disk span a real plane on an open dense set. Indeed,
+view the adjoint there as a dual-bundle-valued differential in the
+base coordinate. On the connected regular cover of the complement of
+the branch set the trace-free conjugates form the same irreducible
+plane as above. Real proportionality on a disk forces a constant
+ratio by their common adjoint equation. The argument needs no
+extension of the adjoint divided by the base differential across a
+branch point.
+
+The tensor pairing with $A$ on that disk is
+$\sum_i u_i\otimes p_i$. Substituting the trace identities gives
+coefficient matrix
+$\left(\begin{smallmatrix}2&1\\1&2\end{smallmatrix}\right)$ in the
+first two values of each triple. Thus, when both pairs are
+real-linearly independent, the tensor has real rank two and image
+$\operatorname{span}_{\RR}(u_1,u_2)$. For a double cover the
+corresponding tensor is $2u_1\otimes p_1$, of rank one on an open
+dense set for nonzero adjoint. Tensors of these different ranks
+cannot cancel. This proves surjectivity for a cubic and a double
+cover with marked kernel lines.
+
+For two cubics restrict to the open locus where the first kernel
+has a complex-independent pair on some disk. If both adjoints
+are nonzero, cancellation for all $A$ forces the two real sheet
+planes to agree on a smaller disk on which all the rank conditions
+hold. Express any kernel sheet of the second cover as $a u_1+b u_2$
+there, with $a,b$ real. Its equation gives
+$(\bar\partial a)u_1+(\bar\partial b)u_2=0$. Complex independence
+makes $a,b$ constant. On the connected regular cover of the common
+punctured target defined by the intersection of the two monodromy
+kernels, unique continuation extends all these relations. The two
+planes of conjugate sections coincide as representations of the
+punctured target's fundamental group. The sum-zero representation
+of a transitive cubic monodromy group is faithful, so the monodromy
+kernels agree. In their common quotient, all index-three subgroups
+are conjugate, both for $S_3$ and for $C_3$. The two covers are
+isomorphic on the punctured curve and then on its unique normal
+completion. This excludes cancellation for distinct covers. If
+only one adjoint were nonzero, its tensor would already have
+positive rank. The paired universal equation is therefore
+transverse off the diagonal. Its projection index is the sum of the
+two single-cover indices, at most $-2$. Here the double-cover index
+is $-1$ by the same branch count and Riemann--Hurwitz. A generic
+path avoids these pairs.
+
+All uses of transversality may be made on sheet-labelled Hurwitz
+charts, with Sobolev order large enough for moving first jets and a
+higher differentiability class for coefficient variations. Scaling
+is a free kernel direction before taking projective lines. The
+equations augmented by evaluations have closed finite-codimensional
+range in the section variables. Consequently smooth coefficient
+variations suffice for all the surjections above. More explicitly,
+exhaust each marked chart by compact subsets away from the relevant
+diagonals and normalize kernel vectors in $L^2$. On each compact
+subset elliptic estimates give precompactness of the vectors for
+smoothly converging paths. Transversality there is open and can be
+achieved by finite-dimensional smooth perturbations supported away
+from the endpoints, by the parametric transversality theorem. For the
+open locus in the paired calculation one also exhausts the locus
+where a specified complex minor is nonzero. Countably many such
+charts, profiles and genera suffice. This yields the asserted residual
+set in the smooth topology. For the analogous double-cover marked
+incidence see \cite[Lemmas~5.11 and~5.15]{bai}.
+\end{proof}
+
+\begin{proposition}\label{p10-prop:smoothjump}
+Suppose a path as in Proposition~\ref{p10-prop:incidence} meets the wall
+at a smooth cubic cover $f:Y\to C$ of genus $h$, at time zero. There
+is a punctured interval of operators rigid through degree three. For
+any sufficiently small $t_-<0<t_+$ the series on the original curve
+satisfy
+\[
+ L_3(D_{t_+};v)-L_3(D_{t_-};v)=2\eta_f x^{h-1},
+ \qquad
+ L_d(D_{t_+};v)=L_d(D_{t_-};v)\quad(d=1,2).
+\]
+At a simple double crossing of genus $h$, the corresponding
+degree-two change is $\eta_f x^{h-1}$.
+\end{proposition}
+
+\begin{proof}
+Fix a generator $\xi$ of $K$ at the cubic cover. For a simply
+branched cover the quotient of $TY\to f^*TC$ is torsion of length
+$b$, the number of simple branch values. Its $H^0$ is the Hurwitz
+tangent and its $H^1$ vanishes. Thus the tangential deformation
+problem is regular and contributes the complex orientation.
+
+We realize the path in a neighborhood of the zero section by
+prescribing the graph equation over a holomorphic projection
+$\varphi:Y'\to C$ to be
+\begin{equation}\label{p10-eq:cubic-graphequation}
+ \varphi^*D_t u+\varphi^*B(u)=0 .
+\end{equation}
+Here $B$ is a smooth fiberwise real quadratic with values in
+$\Omega^{0,1}_C\otimes N$ and $\varphi^*$ pulls back its form argument.
+In a connection splitting, the horizontal-to-vertical block of the
+almost complex structure prescribes precisely the zeroth-order term
+in this equation, with standard complex structure on the fibers
+\cite[Lemma~5.9]{bai}.
+Cut off this block outside a disk to extend the structures to
+$\PP(N\oplus\CC)$. A fiber Fubini--Study form extended using a
+unitary connection, plus a sufficiently large multiple of a positive
+base form, tames the compact family. The extension can be made for
+all fiber dilations used below on a fixed disk of radius greater than
+one, by applying the cutoff outside that disk.
+
+Choose a nonzero adjoint $p$ annihilating
+$W(T_f\mathcal H)(\xi)\subset P$. On an unramified disk where one
+of its values $p_1$ is nonzero and the three $\xi_i$ lie on
+distinct real lines, choose smooth real covectors $\alpha_2,\alpha_3$
+with $\alpha_i(\xi_i)=0$ and $\alpha_i(\xi_1)=1$. Multiplying
+$\alpha_2(u)\alpha_3(u)$ by a compactly supported vector-valued
+form pairing positively with $p_1$ gives $B$ with
+$\langle p,f^*B(\xi)\rangle\ne0$. Only the first sheet contributes.
+This choice is possible for a cubic because its deck group is trivial.
+
+Use local Hurwitz coordinates $y$ and a real kernel amplitude $z$.
+Write $u=z(\xi+w)$ with $w$ in a fixed complement of $K$. After
+division by $z$ the image equation determines $w=w(y,t,z)$ by the
+implicit function theorem. The remaining equation is $F(y,t,z)=0$
+in $P$. Its $(y,t)$ derivative at zero is $W(\cdot)(\xi)$, and
+$F_z$ pairs nontrivially with $p$ by the choice of $B$. The terms
+from differentiation of $w$ lie in the image of $D_f$. Thus the
+solution is $(y(z),t(z))$, where $t(0)=0$ and $t'(0)\ne0$. The
+undivided reduced equation is $zF=0$. There is one nonzero graph
+on each nearby slice, and it is embedded since dilation by $1/z$
+makes it converge smoothly to $(f,\xi)$.
+
+For the fixed-time reduced section $zF$, order its columns by the
+complex-oriented $y$ variables followed by $z$. Along the nonzero
+branch the first $2b$ columns are $zF_y$, and modulo these the last
+is $-zt'(z)F_t$. The identifications of the invertible image
+complement and the tangential determinant are the same as those
+used in \eqref{p10-eq:cubic-intrinsic}. The normal determinant sign of
+the embedded graph is consequently
+\[
+             -\operatorname{sgn}\bigl(z^{2b+1}t'(z)\bigr)\eta_f
+                    =-\operatorname{sgn}(t)\eta_f .
+\]
+Changing $\xi$ changes the orientations induced on $z$ and on $P$
+together. The signed number of nonzero curves therefore changes by
+$-2\eta_f$. This is the smooth-domain bifurcation of
+\cite[Theorem~4.12(ii)]{bai}, realized here for the prescribed path
+of first-order operators.
+
+We next isolate these supports in all normalization genera. Suppose
+there are additional simple curves of degree at most three contained
+in tubes shrinking to the zero section at parameters tending to zero.
+Divide their heights by their fiber maxima $\rho>0$. Their equations
+on the unit disk have quadratic term $\rho B$ and converge smoothly
+to the linear graph equation. Their image cycles have bounded mass
+for a common taming form, since its class on the disk bundle comes
+from the base and the projection degrees are bounded. Cycle compactness
+gives a limiting holomorphic cycle with convergence of currents and
+Hausdorff convergence of supports \cite[Theorem~2.11]{diw}. Integration
+of a pulled-back area form preserves projection degree, and the limit
+contains a point of height one. Every irreducible component has
+positive projection degree, since a compact complex curve in an
+affine fiber is constant. The normalization of a component reaching
+positive height therefore carries a nonzero pullback kernel. By
+Proposition~\ref{p10-prop:incidence} this component is the graph of a
+nonzero multiple of $\xi$. Its degree exhausts the available three.
+The limit is thus embedded of multiplicity one.
+
+Near such a cycle the simple parametrizations are embeddings and
+converge up to reparametrization
+\cite[Theorem~2.20 and Proposition~2.21]{diw}. In particular their
+genus stabilizes, and elliptic regularity gives smooth convergence.
+After scaling back, the covers and sections belong to the Hurwitz
+chart just analyzed. This proves the existence of one closed tube
+and one interval with no additional simple supports. Shrink the
+interval so the nonzero branches lie strictly inside. For the linear
+endpoint equation use the same argument with unit-height kernel
+graphs for a sequence of nonzero times tending to zero, retaining the
+mapping multiplicity in each pushforward cycle. The embedded
+multiplicity-one limit again gives convergence of the covers and
+normalized sections. The reduced equation for this linear problem is
+$F(y,t,0)=0$, whose unique nearby solution is $(0,0)$. Thus on
+the punctured interval all smooth pullbacks through degree three are
+injective. On a nodal domain every positive normalization then has
+zero section and the matched constants on contracted components are
+zero as well.
+
+Fix an arithmetic genus $k$ and a positive degree $d\le3$. The
+stable maps whose images lie in the closed tube form an open and
+closed part of the parametrized moduli in the compact completion.
+Indeed all their simple supports lie in the interior, and compactness
+preserves containment in the closed tube. Their endpoint virtual
+degrees agree by deformation invariance
+\cite[\S3.1, (3.4)--(3.5)]{diw}. Maps supported on $C$ contribute
+the fixed-target Euler number by
+\cite[Theorem~1.2, (1.7) and~(1.10)]{zinger}. Using even one nonzero graph
+exhausts degree three, so a map with that support has degree one onto
+the embedded graph, with arbitrary contracted components.
+
+For clarity, let $D'$ be the invertible normal operator of one such
+embedded curve. A degree-one stable map to the curve has one effective
+normalization mapping isomorphically, and each connected contracted
+subcurve attaches at just one point. For any deformation of $D'$,
+restriction to the effective normalization identifies the kernels
+of the base and pullback operators and is a left inverse on their
+cokernels. Thus the quotient of the two Fredholm complexes has
+zero kernel throughout, and the stabilized quotient cokernels form a
+bundle, including over nodal maps \cite[Appendix~B]{bai}.
+At an invertible endpoint its orientation differs from the full
+normal orientation by the determinant sign of $D'$. The complex
+normal degree is $2h-2$, since the ambient first Chern class vanishes
+on the disk bundle. Deform to the Dolbeault operator of two acyclic
+lines of degree $h-1$. The quotient bundle there has complex
+orientation, and its degree-one Euler series is $x^{h-1}$ by
+\cite[Theorem~2]{pandhodge}. Consequently the change contributed by
+the nonzero graphs is $-2\eta_f x^{h-1}$, including every contracted
+configuration at its own fixed arithmetic genus. Conservation gives
+the asserted change on $C$ and constancy in lower degrees.
+
+For a double cover the involution negates its kernel generator and
+identifies the two nonzero amplitudes in an odd cubic perturbation.
+The fixed-target comparison then gives the change $\eta_f x^{h-1}$
+in degree two (Theorem~\ref{p9-thm:wall}).
+\end{proof}

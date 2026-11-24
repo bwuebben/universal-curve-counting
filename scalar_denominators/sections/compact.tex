@@ -1,0 +1,218 @@
+\section{Scalar exponents on a compact threefold}\label{sec:compact}
+
+\begin{corollary}\label{cor:arith-roots}
+Let the image of $\alpha$ in $H_2(X;\ZZ)/\mathrm{tors}$ be primitive,
+where $X$ is a smooth projective Calabi--Yau threefold. For each $g$
+let $C_g=\sum_{3\gamma=3\alpha}c_{\gamma,g}$, summing over the
+effective integral roots. The common denominator of the scalar product
+exponents $e_{3\alpha,h}$ is $3^M$, where
+\[
+ M=\max\bigl(\{0\}\cup
+       \{s_n-v_3(C_{n+1}): n\ge0,\ C_{n+1}\ne0\}\bigr).
+\]
+In particular all these exponents are integral if and only if
+$3^{s_n}\mid C_{n+1}$ for every $n\ge0$.
+\end{corollary}
+\begin{proof}
+By \eqref{eq:compact-prime}, the polynomial of differences at this
+class is $\sum_{n\ge0}C_{n+1}D_n$. There are finitely many occupied
+genera, and $c_{3\alpha,h}$ is an integer for each $h$ by
+\cite[Theorem~1.1]{WueProduct}. For $M>0$ scale by $3^M$ and reduce
+modulo three. Each maximizing index contributes a nonzero unit times
+the corresponding reduced polynomial of Theorem~\ref{thm:arith-rows}.
+Their monomial supports, $\{9k\}$ or $\{9k+2,9k+3\}$, are disjoint
+for distinct indices. This proves equality of the denominator; the
+sum over torsion-distinct roots of a single genus has already been
+taken in $C_g$. For $M=0$ all rows in the sum are integral.
+\end{proof}
+
+In particular \eqref{eq:arith-row} gives
+\begin{equation}\label{eq:arith-ten}
+ e_{3\alpha,10}=c_{3\alpha,10}-\tfrac{4720}{3}C_3.
+\end{equation}
+Indeed $D_1$ has degree six, and for $n\ge3$ the smallest possible
+power of $w$ is $3n+1$ by Theorem~\ref{thm:main}.
+
+Let $Y$ be the smooth anticanonical threefold in the toric resolution
+of $X_9$ whose fan is specified in Appendix~\ref{sec:geometry}. Its second homology is
+torsion-free and it contains a divisor $F\simeq\mathbb F_1$ with
+normal line $K_F$. Let $s,f$ be the negative section and a ruling fiber.
+For $a=12j+3$, $j\ge0$, set
+\[
+ \alpha_a=as+(a+1)f,\quad G=a(a-1)/2,\quad k=(G-1)/2.
+\]
+We use the same notation for curve classes on $F$ and their images in
+$Y$. Two integral nef divisors on $Y$ recover the coefficients of
+$s,f$ by intersection. Their difference takes value one on $\alpha_a$.
+The four other nef degrees of \eqref{eq:degrees} vanish on both
+$s$ and $f$. Their common zero face confines every effective curve of
+class $\alpha_a$, and every effective summand, to $F$. Thus $\alpha_a$
+has primitive free image and it is the sole integral root at
+$3\alpha_a$.
+
+These are the classes in Theorem~\ref{thm:arith-compact}.
+
+\subsection{The highest primitive genus}
+
+Put $D=as+(a+1)f$. In the presentation $F=\operatorname{Bl}_p\PP^2$
+one has $D=(a+1)H-E$. Its arithmetic genus is $G$, and
+\[
+ N=h^0(F,\mathcal O_F(D))=\binom{a+3}{2}-1
+                          =\tfrac12(a+1)(a+4).
+\]
+We show that the compact elementary exponents satisfy
+\begin{equation}\label{eq:arith-minimum}
+ c_{\alpha_a,h}=0\quad(h>G),\qquad
+ c_{\alpha_a,G}=(-1)^{N-1}N.
+\end{equation}
+
+First consider stable pairs on $Z=\operatorname{Tot}(K_F)$. All
+positive compact curves are supported on $F$: affine fibers contain
+no complete curves, and on a normalization projecting nontrivially
+to $F$ the tautological section of the negative canonical line
+vanishes. For an effective decomposition $D=\sum D_i$, with at
+least two nonzero classes $D_i=a_i s+b_i f$, $a_i,b_i\ge0$, we claim
+\begin{equation}\label{eq:arith-split}
+ \sum_i\chi(\mathcal O_{D_i})-\chi(\mathcal O_D)
+ =\sum_{i<j}D_iD_j
+ =\sum_i b_i(a-a_i)-\sum_{i<j}a_i a_j>0.
+\end{equation}
+These numbers depend only on the divisor classes by Riemann--Roch.
+Choose $A=\max a_i$ and $t=a-A$. For $t>0$ the first sum in the
+last expression is at least $(a+1)t$, and the second is at most
+$At+t(t-1)/2$. Their difference is at least $t(t+3)/2$. For $t=0$
+some positive multiple of a fiber lies in a different summand, giving
+an intersection of at least $a$.
+
+For a pure curve $W\subset Z$ filter $\mathcal O_W$ by powers of
+the ideal of $F$. The graded quotients are of the form
+$K_F^{-i}\otimes\mathcal O_F/J_i$. The divisorial hull of $J_i$ is
+$\mathcal O_F(-D_i)$, and its quotient by $J_i$ has finite length
+$l_i$. The sum of the divisor classes $[D_i]$ is $[W]$. The Euler
+characteristic of the $i$th layer is
+$\chi(\mathcal O_{D_i})-iK_FD_i+l_i$, with both corrections
+nonnegative. By \eqref{eq:arith-split}, two nonzero divisor layers
+in class $D$ give $\chi(\mathcal O_W)>1-G$. If there is only one,
+it is the zeroth layer, since a nonzero higher layer along a curve
+requires a nonzero zeroth layer along that curve. Then
+$I_F\mathcal O_W$ has finite support and vanishes by purity. Such a
+curve is an effective Cartier divisor in $|D|$. The section of a
+stable pair has image $\mathcal O_W$ and finite-length cokernel.
+It follows that the minimum pair Euler characteristic is $1-G$ and
+all pairs at the minimum are quotient pairs in $|D|$. For a product
+of pairs in a nontrivial additive splitting of $D$, apply
+\eqref{eq:arith-split} to their combined divisor layers. Its total
+Euler characteristic is strictly greater than $1-G$.
+
+The minimum pair space is $\PP^{N-1}$ as a scheme. Indeed
+surjectivity of the section in a family follows from Nakayama's
+lemma, identifying it with the corresponding Hilbert functor.
+For every $W\in|D|$, the normal sequence for $W\subset F\subset Z$
+has terms $\mathcal O_W(D)$, $N_{W/Z}$ and $K_F|_W$. The last has
+no sections since $H^0(F,K_F)=0$ and $H^1(F,K_F-D)=0$. The latter
+follows from duality and Kodaira vanishing, as $D-K_F$ is ample.
+Thus $h^0(N_{W/Z})=h^0(\mathcal O_W(D))=N-1$ by rationality of
+$F$. The closed immersion of $|D|$ exhausts the closed points, so the
+local dimension and the embedding dimension of the Hilbert space
+both equal $N-1$ there. Its local rings are regular, proving the
+scheme assertion. The symmetric pair obstruction theory on this smooth
+proper scheme has degree $(-1)^{N-1}N$ \cite{PT}. The strict product
+inequality implies that the coefficient of the formal logarithm of
+the stable-pair series at $Q^D$ has the same lowest term,
+$(-1)^{N-1}N z^{1-G}$ in the pair variable $z$.
+
+To identify this term with a compact elementary exponent, deform $Y$
+to the normal line of $F$. Blow up $Y\times\mathbb A^1$ at
+$F\times0$ and remove the strict transform of $Y\times0$. The resulting
+smooth family has fibers $Y$ off zero and $Z$ over zero and contains
+a Cartier divisor $F\times\mathbb A^1$. In each positive face class
+all connected maps have image in that divisor by the nef degrees on
+$Y$ and negativity on $Z$. This is true as a statement about families
+of maps: on every geometric source the Cartier line restricts to the
+pullback of $K_F$. Sections vanish on every positive component by
+negativity, then on all contracted components by connectedness. In a
+two-term presentation of the derived direct image the first differential
+is therefore fiberwise injective and locally split injective. The
+canonical section vanishes on the universal domain, including over
+nonreduced bases. Hence the relative moduli is the product of the
+proper map stack of $F$ and the parameter line. Deformation invariance
+of its ordinary relative stable-map class gives equality of the
+connected GW degrees of $Y$ and $Z$ in each face class.
+
+The fixed-target toric correspondence \cite[Theorem~1]{PP} applies
+to $Z$. The pair spaces in these classes are proper: in the projective
+line completion of $K_F$ their geometric supports are on the zero
+section, and a flat specialization of a pair supported there remains
+set-theoretically on that section. For instance a power of its ideal
+annihilating the generic pair sheaf annihilates the flat family over
+a discrete valuation ring. Thus the equivariant degrees have their
+ordinary specialization. Since $K_Z$ is trivial there is no prefactor
+in the empty-insertion correspondence under $z=-e^{iu}$. Taking the
+formal logarithm through class $D$ uses only the finitely many
+positive summands on this face, with disconnected maps nonconstant on
+each connected component. The result identifies the connected fixed-target
+GW series for $Y$ in $\alpha_a$ with the rational function of $z$
+whose lowest term was computed above.
+
+On the compact projective $Y$, the algebraic and symplectic GW degrees
+agree \cite{Siebert}. At a class with primitive free image the finite
+elementary-cluster expansion of \cite{IP,DIW} is
+$\sum_h c_{\alpha_a,h}w^{h-1}$, with these same compact exponents by
+\cite[Theorem~1.1]{WueProduct}. Since $w=(1+z)^2/z$, this is a rational
+function of $z$. Equality of the expansions at $z=-1$ gives equality
+of rational functions. At $z=0$ the summand of largest genus $h$ has
+lowest Laurent power $1-h$ with coefficient $c_{\alpha_a,h}$.
+Comparison with the lowest pair term proves~\eqref{eq:arith-minimum}.
+
+\begin{proof}[Proof of Theorem~\ref{thm:arith-compact}]
+For $a=12j+3$ the integer $G=2k+1$ is odd and $N\equiv2\pmod3$.
+In \eqref{eq:compact-prime} the top occupied row is $D_{2k}$.
+Theorem~\ref{thm:arith-rows} shows that its denominator is $3^k$ and
+that $3^kD_{2k}$ reduces to $2(-1)^kw^{9k}$. Every lower row has
+denominator dividing $3^{k-1}$. The coefficient multiplying the top
+row is a unit at three by~\eqref{eq:arith-minimum}, while the
+compact elementary exponents are integral. This proves the exact
+denominator at output genus $9k+1$. For $a=3$ one has $G=3$, $N=14$
+and $c_{\alpha_3,3}=-14$. Equation~\eqref{eq:arith-ten} gives
+$e_{3\alpha_3,10}=c_{3\alpha_3,10}+66080/3$. For $a=15$ the
+corresponding genus is $469$ and the denominator is $3^{52}$.
+\end{proof}
+
+\subsection{The first possible fractional exponents}
+If the free image of a class is primitive its scalar and opposite-weight
+exponents agree. At free divisibility two, \eqref{eq:compact-prime}
+and the integral coefficients of \eqref{eq:arith-two} imply
+integrality in all genera, summing over every integral double root.
+There is also a uniform statement in small genus. For all effective
+$\beta$ on a smooth projective Calabi--Yau threefold as above,
+\[
+ e_{\beta,h}=c_{\beta,h}\quad(0\le h\le3),\qquad
+ e_{\beta,4}=c_{\beta,4}-2\sum_{2\gamma=\beta}c_{\gamma,2}.
+\]
+Indeed pull the logarithms of the two compact products back to
+connected maps in source genus at most four. A positive-degree
+map to a core of genus $g\ge2$ in projection degree $d$ has source
+genus at least $1+d(g-1)$ by normalization and Riemann--Hurwitz.
+The zero and one core genera agree in every degree. At the remaining
+small degrees Theorem~\ref{thm:main} and \eqref{eq:arith-two} leave
+precisely the term $2x_{4,1}$ from $(g,d)=(2,2)$ through source genus
+four. This assertion also holds for the equivariant cycle insertions:
+their supported pullbacks are over the zero-section multiple, hence
+empty below that same genus. Induct on ample degree, reading source
+genera in increasing order by the proper detection of
+\cite[Sections~5--6]{WueProduct}. Proper multiples of a genus-four change
+can first be detected in genus seven. This gives the displayed identities.
+
+One may also try to deduce integrality from the scalar stable-pair
+series. If all scalar local pair coefficients were integral Laurent
+series in the pair variable $z$, division of a compact integral pair
+series by already determined lower factors would leave an integral
+coefficient $\sum_g e_{\beta,g}z^{1-g}(1+z)^{2g-2}$ in the next
+class. The largest occupied genus has a unique lowest Laurent term
+with unit coefficient; descending induction would give integral
+exponents. The local hypothesis fails. In the genus-three scalar
+cubic the disconnected trace in \eqref{eq:scalar-traces}, under
+$w=(1+z)^2/z$, has coefficient $20+292/3=352/3$ at $z^{-9}$.
+Here one uses the fixed-target equivariant local GW/pairs correspondence
+\cite[Section~4.2]{Pardon}; the lowest compact proper pair count used
+in Theorem~\ref{thm:arith-compact} is integral.

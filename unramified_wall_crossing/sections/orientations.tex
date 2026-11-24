@@ -1,0 +1,71 @@
+\section{The orientation on an exact monodromy stratum}\label{sec:oriented}
+Partition the proper stack of degree-\(d\), genus-\(h\) connected stable maps to \(C\) by its exact subgroup type \((K_u)\). For each \(H\) the lifts to \(T_H\) form a representable finite étale cover of its image, including at the nodal boundary. Its fiber over a specified map is \((G/H)^{K_u}\). Formal étaleness gives continuation of lifts; properness of the stack of maps to the finite target cover gives closed image. The subgroup marks of all transitive sets distinguish conjugacy classes, so the exact-type loci are open and closed. The horizontal virtual class pulls back, since the covering differential identifies the target tangent bundles. The normal obstruction complex and its determinant orientation pull back as well.
+
+Fix an exact monodromy type \((K)\). Pass to its stack of lifts
+\(a:X\to T_K\) of representable degree \(|N_G(K)/K|\). Write \(F_t\) for
+the base operator on \(T_K\). At the central parameter its kernel pulls
+back isomorphically onto the full normal kernel on \(X\), by the central
+classification. Its cokernel injects into the full cokernel. Indeed, if
+\((a^*F_0)s=a^*\alpha\) for a smooth form \(\alpha\), average the values of
+\(s\) on one positive normalization over a regular fiber of \(a\). The
+average satisfies \(F_0\bar s=\alpha\). The average is bounded near a
+branch point. Testing on complements of shrinking disks, the boundary
+terms are bounded by a constant times their perimeter. The average is
+therefore a weak solution on the whole base, hence a smooth solution.
+We use the reduction of the normal complex of
+\cite[Appendix~B]{bai}, on the lifted stratum. Stabilize $F_t$ by a fixed
+space $E$ of smooth forms mapping onto its cokernel at zero. At a lift
+$a$, stabilize $a^*F_t$ by the pullbacks of these forms and by
+additional equivariant forms in a space $W$ supported away from the
+nodes. In a chart of the universal curve the resulting two-term
+complexes and the pullback between them have the form
+\[
+           [P\longrightarrow E]\ \longrightarrow\
+                      [P'\longrightarrow E\oplus W].
+\]
+Here $P$ and $P'$ consist of solutions of the stabilized equations, and
+the arrows of the complexes record their form parameters. Pullback on
+$P$ is injective, since each domain has a component surjecting onto
+$T$. The quotient complex is $[P'/P\to W]$. The linear gluing of
+\cite[(B.5)--(B.10)]{bai} gives continuous bundles and maps also at
+nodal domains. In degree one over $T$, marking preimages of auxiliary regular target
+points stabilizes the component mapping isomorphically to $T$. The
+contracted components are already stable with their attaching points. The same construction
+then applies in that degree. The auxiliary markings are temporarily ordered in the chart and forgotten after the stabilization comparison.
+
+By the cohomology sequence, the kernel isomorphism and cokernel
+injection just proved imply that $P'/P\to W$ is injective at the
+center. This is open, and its cokernel is a bundle there. Under common
+enlargements of the stabilizations these cokernels agree, giving the
+reduced cokernel bundle on a neighborhood of time zero on the compact
+lifted substack. Its orientation is specified by the exact determinant
+isomorphism
+\[
+       \det(a^*F_t)\simeq
+       \det\bigl((a^*F_t)_{\rm red}\bigr)\otimes\det F_t
+\]
+and the absolute orientations of the full and base operators
+\cite[(6.8)--(6.13)]{bai}. At a nearby regular time the base complex
+is acyclic. The full and reduced cokernels then identify, and their
+orientations differ by the determinant sign $\epsilon(F_t)$. Thus the
+Euler numbers of the full cokernel on the two sides agree up to the
+ratio of the determinant signs on $T$.
+
+
+The construction works over the compact lifted stratum at fixed \((d,k)\)
+and for finitely many parameters. Only finitely many charts are needed;
+surjectivity persists on shrinking their parameter neighborhoods.
+The determinant of \(F_t\) changes across the \(i\)th wall in exactly
+\(\dim V_i^K\) real directions. Thus if \(I_K(*)\) denotes the positive-corner
+downstairs integral on the exact \(K\)-stratum, its value at \(*J\) is
+\((-1)^{\sum_{i\in J}\dim V_i^K}I_K(*)\). Division by the degree of the
+stack of lifts restores all automorphism weights. Although the
+neighborhood used in this comparison may depend on \(k\), the Euler number
+is constant in each degree-bounded rigid orthant; therefore any
+designated corners in the box give the same comparison.
+
+The alternating sum on the \((K)\) locus is therefore \(I_K(*)\prod_{i\in I}(1-(-1)^{\dim V_i^K})\). Each factor is the ordinary Euler characteristic of the \(K\)-fixed unit sphere, with value zero for the empty sphere. It is the \(K\)-mark of the equivariant Euler characteristic: use a finite equivariant triangulation subdivided so that a cell stabilizer fixes that cell pointwise. Multiplication of marks corresponds to Cartesian products. Summing the mark identity for \(B_I\) against the \(I_K(*)\), and using the lift counts \(|(G/H)^K|\), proves the connected formula in \eqref{eq:mixed}.
+
+On each rigid target at each corner, compact realization and finite cluster decomposition give the isolated insertion its balanced lift. If the quotient of the two sides of the proposed identity first differs at degree \(d\), all elementary factors in proper divisors cancel. The connected degree-\(d\) series of this quotient would be a finite sum \(\sum_s b_s(2\sin(v/2))^{2s-2}\), with coefficients the different elementary exponents. The first formula makes this sum zero, and its distinct leading powers force each \(b_s=0\). This proves the second formula through \(M\).
+
+Across a square of walls \(i,j\), apply \eqref{eq:mixed} to each edge with the other sign fixed. On any opposite pair of edges, the quotient of the two corrections equals the product for \(B_{\{i,j\}}\). To compute one order, take the \(i\)-wall transfers across the \(j\)-wall on each target \(T_H\). The restricted \(H\)-representation \(V_j|_H\) can contain repeated or trivial summands. On an upstairs map of exact monodromy \(K\le H\), the same reduction on \(Z/K\) gives the sign \((-1)^{\dim V_j^K}\). Thus the upstairs change has the marks of \(\operatorname{Res}^G_H\chi^G(S(V_j))\), without a separate generic crossing hypothesis upstairs. For a virtual \(G\)-set \(b\), inducing its restriction from \(H\) to \(G\) gives \([G/H]b\). Extended linearly over the orbits of the \(i\)-wall transfer, this computes the product \(B_{\{i,j\}}\). Reversing the order gives the same product. Geometrically a lift to both quotient targets is a lift to their fiber product, whose components are the transitive summands of the Cartesian product of the two \(G\)-sets. Thus both orders give the same oriented transfer, including each common lift. The compact cluster realization uses the same primitive homology label for the marked support at all corners. This proves Theorems~\ref{thm:square} and~\ref{thm:mixed}.

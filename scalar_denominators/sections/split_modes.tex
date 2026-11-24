@@ -1,0 +1,403 @@
+\section{Individual coefficients on a split genus-three curve}\label{app:split}
+Let $L$ be general of degree two on a smooth curve $C$ of genus three,
+and let $M=K_C L^{-1}$. For this appendix $g=m=3$ unless otherwise
+specified. The split bundle is useful for distinguishing the
+individual weight coefficients. The eight lines in
+Theorem~\ref{thm:classification} instead occur on a general stable
+bundle with the same determinant.
+
+\subsection{A proper incidence space for a weight coefficient}
+For arbitrary $g,m$ put $a=k-1-m(g-1)$ and let $P_A=R\pi_*f^*A$ on
+the proper stack of connected genus-$k$ maps to $C$ of degree $m$.
+Localization gives
+\[
+ N_{k,m,j}=\int_{[\overline{\mathcal M}_k(C,m)]^{\rm vir}}
+           c_{a-j}(-P_L)c_{a+j}(-P_M).
+\]
+For $1\le j\le a$ represent $P_M$ as $[U\to V]$. A global
+presentation is obtained by the dual evaluation into a sufficiently
+positive relatively generated line on the universal curve tensored
+with its relative section-space dual: tensor by $f^*M$, take the
+quotient and push forward. Source flatness, relative Serre vanishing
+and the sequence give two locally free terms. On the projectivization
+of lines $\PP(U)$ the tautological map to $V$ cuts out the proper
+stack $Y$ of sections up to nonzero scalar. Let $\alpha_Y$ be its
+refined zero-section class on the pullback of the stable-map virtual
+class. With $\xi=c_1(\cO(1))$ the projective-bundle formula gives
+\[
+ N_{k,m,j}=\int_{\alpha_Y}\xi^{j-1}c_{a-j}(-P_L).
+\]
+Indeed the pushforward of $\xi^{j-1}c_{\mathrm{rk}V}(V(1))$
+is $c_{a+j}(V-U)$, since $\mathrm{rk}V-\mathrm{rk}U=a$.
+
+At a genus-three cubic the first possible source genus of mode
+$j>0$ is $7+j$ by Theorem~\ref{thm:main}. Here the fixed-genus
+integral is also the leading multiplicity-one coefficient. For
+$j=1,\ldots,6$ these values are
+\[
+ 3612,\quad 1228,\quad 506/3,\quad 21/2,\quad 8/27,\quad 1/324 .
+\]
+To recover them directly, at $z=1,\ldots,7$ evaluate
+$\tr B_3(z)^2-w^2\tr B_2(z)^2+w^6/3$ in the matrices of
+Appendix~\ref{app:handle} and their degree-two analogues. A symmetric
+Laurent polynomial through exponent six is a polynomial of degree at
+most six in $z+z^{-1}$. Interpolation at these seven distinct values,
+followed by extraction at $w^{6+j}z^j$, gives the list. Alternatively
+interpolate the odd and even parts separately at pairs $\pm z$.
+On one normal axis the six coefficient weights have product
+$2^2 3^4=324$, so for $j=3,4,5,6$ the corresponding degrees before
+this division are $54648,3402,96,1$. Mode five has no contribution
+through genus eleven.
+
+In genus eight the degree $3612$ is integral on an automorphism-free
+space of smooth ramified covers. For a general $M$ no connected
+\'etale double or triple admits a section of its pullback. Indeed
+there are finitely many such covers, and their trace-free bundles
+are semistable of degree zero and rank at most two, being trivialized
+by a finite \'etale cover. After a general degree-two twist there
+are no sections by \cite[Proposition~1.6.2]{Raynaud}. A nonzero
+height on a connected stable map must be nonzero on a nonconstant
+component. A degree-three component then has normalization genus
+at least eight, while a double plus a degree-one component has genus
+sum at least nine. Thus at genus eight the source is smooth.
+A cyclic triple with total ramification two would have one branch
+value, contrary to the abelian monodromy relation. The transitive
+monodromy is $S_3$ and its centralizer is trivial. The deformation
+complex of a finite smooth-source map to $C$ is its torsion
+ramification cokernel, so the Hurwitz chart is smooth. The degree
+comes from an integral refined Euler class and permits excess.
+
+At genus ten it matters whether one extracts $u^{18}$ or $w^9$.
+For positive weights one and three the change of variable gives the
+following decomposition. Each entry is a contribution to $[w^9]$.
+\[
+\begin{array}{c|rrr}
+ \text{source genus}&j=1&j=3&4\text{ times the sum}\\ \hline
+ 8&3612(161/720)&0&48461/15\\
+ 9&-2391(2/3)&0&-6376\\
+ 10&60659/60&506/3&23593/5\\ \hline
+ \text{total}&674/3&506/3&4720/3
+\end{array}
+\]
+Indeed $u=2\arcsin(\sqrt{w}/2)$ gives the indicated source multipliers;
+the raw numbers are obtained from the same handle polynomial by
+$w=2-2\cos u$. Opposite weights exchange under inversion, explaining
+the factor four. The genus-ten row is integral at three after summing
+the modes. The pole at three in the final column enters through
+the genus-eight term.
+
+The cancellation of denominators at fixed genus ten is also visible
+in the restrictions of the two integrands, although it does not imply
+descent of their sum to the coarse incidence space. Consider an
+order-three automorphism of a point of $Y$, and put $t=c_1(\chi)$ for
+a generating character. If it acts nontrivially on the section line,
+then in $A^2(B\mu_3)=(\ZZ/3)t^2$ one has
+\[
+ c_2(-P_L)=-t^2,\qquad \xi^2=t^2.
+\]
+Indeed invariance of the fiber multiset under cubic dilation forces a
+cyclic spectral triple, with normalization of genus nine or ten (as
+classified below). In genus ten the two summands of
+$-R\Gamma(f^*L)$ of nontrivial character give $\chi+2\chi^2$ up
+to inversion: the covering eigenlines have degrees $-1,-2$.
+In genus nine their degrees are both $-1$, since for local exponents
+one and two the square eigensheaf is normalized by division by
+a local parameter at the second point. Their contributions are then
+$\chi+\chi^2$, together with one additional character from the nodal
+or contracted part. In fact for the normalization of all positive
+components the correction to $-R\Gamma$ is the sum of the sections
+of the finite sheaves $(f_{\rm norm,*}\cO)/f_*\cO$ and
+$R^1 f_*\cO$, tensored with $L$. In either case the pairwise products
+of the character exponents sum to $-1$ modulo three.
+
+When the automorphism fixes the section its $\xi^2$ restricts to
+zero, and it fixes the positive normalizations pointwise: a nonzero
+section parametrizes its spectral image birationally in prime degree,
+and the only possible additional positive component has degree one.
+For $c$ positive components of genera $h_i$ the finite-sheaf
+correction has dimension $10-\sum h_i+c-1$, with at least $c-1$
+trivial characters coming from independent constants. A nonzero second
+Chern restriction thus requires $\sum h_i\le8$. The preceding
+genus bounds leave a single genus-eight component. Such a point
+exists since its virtual degree is 3612. Attach to it the contracted
+genus-two tail $y^2=x^6-1$ at $x=0$; the action $x\mapsto\zeta x$
+fixes the attachment and has characters $\chi,\chi^2$ on the two
+differentials $dx/y,x\,dx/y$. It gives
+$c_2(-P_L)=2t^2\ne0$ and $\xi^2=0$. This excludes descent of
+$c_2(-P_L)+\xi^2$ as a three-local operational Chow class. The
+restriction to a stabilizer does not by itself compute a stratum's
+virtual degree.
+
+\subsection{The support and multiplicity of the third mode}
+In genus ten two independent quadratic coefficient tests on the
+projective section have class $4\xi^2$. Their common zero on $Y$
+has spectral polynomial $y^3=b$ with $0\ne b\in H^0(M^3)$, up to
+scale. Indeed the trace vanishes and there are two independent
+coordinates on $H^0(M^2)$. A meromorphic cube root of $b$ would be
+holomorphic, contrary to $H^0(M)=0$. The sole nonconstant component
+is the normalization of the integral spectral cubic. Its genus is
+$7+r$ with $r$ the number of distinct zeros whose multiplicities
+are nonzero modulo three. Thus $r\le3$; the case $r=2$ gives an
+actual genus-ten map on attaching a contracted elliptic tail.
+
+Put $A=M^3$. For every $p$, $h^0(A(-3p))=1$: a higher dimension
+requires $A=K_C(3p-q)$, a locus of dimension at most two. Two
+triple zeros would require $A\in3W_2$, also excluded. The sections
+with a triple zero therefore form a curve in $|A|$ with normalization
+$C$, and the determinant of the order-two jet bundle gives its
+degree $3\deg A+3\deg K_C=30$. On this curve a genus drop occurs
+on divisors $3p+2q+s$. The weighted Abel map has degree
+$3!(3\cdot2)^2=216$: the tangent columns scale holomorphic volume
+by $3\cdot2$, hence real volume by its square, relative to the
+ordinary degree-six Abel map. General $A$ avoids branch and collision
+loci. The other possible divisors consist of three double zeros,
+one for each of the 64 square roots $B$ of $A$, all with a unique
+reduced effective divisor. Their cubic images have three cusps and
+smooth normalizations of genus ten.
+
+Each isolated three-cusp polynomial contributes $2/3$ to the integral
+of $\xi^2$. To see the virtual multiplicity, take $B^2=M^3$ and a
+section $s$ with its three simple zeros $p_i$. The smooth normalization
+has $t^3=s$ in $B/M$ and $y=t^2$. Fix the amplitude of $b_0=s^2$
+by a linear form $\lambda(b_0)=1$. This removes the cyclic stabilizer
+on a framing cover of degree three. Vary both quadratic tests by
+$q=\epsilon^2Q$, with $Q\in H^0(M^2)$ nonzero at the $p_i$;
+$M^2$ is generated there for a general $M$. In coordinates at these
+points the equations are $F_i=y^3+\epsilon^2Q_i(x)y-x^2-\beta_i(x)$
+where $b=b_0+\beta$ and $\beta\in\ker\lambda$. Evaluation
+of $\ker\lambda$ at the three points is invertible. Thus $F_i=F_{i,x}=0$
+determine $\beta$ and the three $x_i$ as functions of the three
+$y_i$. The residual equations after $y_i=\epsilon z_i$ are
+$3z_i^2+Q_i(x_i)=0$. There are eight simple solutions for small
+$\epsilon$, and no others since the $z_i$ are bounded. Each singular
+point is nodal by its Hessian. The parametric Morse lemma and cubic
+Weierstrass preparation bound the local delta invariant by one.
+Total delta three is necessary, so all three nodes must occur, and
+each resulting normalization is the unique lift of its curve.
+
+At these immersed maps an infinitesimal solution fixing the quadratic
+tests has $\dot\beta$ zero at all three nodes by differentiating the
+image equation, hence identically zero. The normal sheaf of an
+immersion is a line, so a normal section vanishing on the smooth image
+is zero. These are eight reduced intersections on the framing cover.
+Near their limit the Hurwitz base is smooth of dimension six,
+and in $\PP(U)$ the rank of the defining section plus the two
+quadratic tests equals the ambient dimension. Conservation of the
+isolated refined intersection degree gives length eight also at
+the limit. Divide first by three for the framing, then by four for
+the class of the tests. This gives $2/3$. Consequently the moving
+degree-thirty family together with its boundary contributes
+$506/3-64(2/3)=126$. This computation leaves the separate degrees
+over the smooth part and the 216 limiting values undetermined.
+
+\subsection{Axis support after the lower coefficient tests}\label{sec:matching}
+Consider the lower elementary symmetric coefficients of each projection
+in a balanced split bundle. Impose vanishing of all orders less than
+$m$ on both axes. The pure-axis families are the vector spaces of
+sections of $L^m$ and $M^m$, parametrizing the monic spectral divisors.
+For general $L$, the following table gives exactly the degrees in
+which these two spaces, with their origins identified, exhaust the cut:
+\[
+\begin{array}{c|l}
+ g&\text{covering degrees with only axis cycles}\\ \hline
+ 2&1,2,3,4,5,6,7,9\\
+ 3&1,2,3,4,5,6\\
+ 4,5&1,2,3\\
+ g\ge6&1,2 .
+\end{array}
+\]
+Here generality is for each fixed $m$. The subsequent constructions
+of mixed cycles work for every $L$ in the asserted existence ranges.
+This criterion concerns the separate projected equations; a fixed
+finite subgroup action specifies how the two root sets must be matched.
+Put $K=K_C$ and $M=K/L$ in the proof.
+\subsubsection{Reduction to a connected root cover}
+
+Away from the zero divisors of $b$ and $c$ each projection has $m$ distinct simple values. A fiber of a mixed cycle therefore defines a bijection of the two root torsors, compatible with continuation along the punctured curve. Choose base roots and label the torsors by $\mathbb Z/m$. Each monodromy acts by a translation on either set. The two translation representations have the same kernel, because a permutation of either set determines the permutation of the other via the bijection. Thus the common image is cyclic of order $d\mid m$. Its orbits on each set have size $d$. A single orbit of the matching gives a connected component over the punctured curve, and its closure gives an irreducible degree-$d$ cycle. Both of its projected $d$-th powers are single valued, extending holomorphically over the missing points by boundedness. The two projected lower coefficients vanish on that degree-$d$ cycle. On this orbit choose the generator acting on the first coordinate by a primitive $d$-th root $\zeta$. It acts on the other by $\zeta^k$ for a unit $k\bmod d$. Equivalently
+\[
+ v=\phi u^k,\qquad \phi\in H^0_{\rm mer}(C,M/L^k)
+\]
+on this component. Here $k$ is any positive representative of the slope. The relation follows by invariance of $v/u^k$ under the cyclic action on the function field. The case $d=1$ requires a nonzero global section of $L$, excluded for general $L$.
+
+Conversely every mixed cut cycle of degree $d$ gives one of degree $m$ whenever $d\mid m$. Take the sum of its rotations under $(u,v)\mapsto(\zeta_m^j u,\zeta_m^j v)$ for $0\le j<m/d$. At a general fiber the translated sets partition the roots of $u^m=b_d^{m/d}$ and of $v^m=c_d^{m/d}$. This argument needs only the two projected polynomials. In prime degree, disconnectedness of a mixed cycle would force $d=1$, which explains the irreducibility assertion.
+
+For genus three the slopes $1$ and $-1$ are excluded for generic $L$. For slope $1$ the curve lies in a saturated line subbundle $J\subset L\oplus M$ mapping nontrivially to both factors. The nonzero invariant $d$-th power of its fiber coordinate gives a section of $J^d$. A positive $\deg J$ would force $L=M$ or $L/M\in C-C$, both excluded for general $L$. Hence $J$ is torsion of order dividing $d$ and $L$ belongs to one of finitely many translates of $W_2$, also excluded. For slope $-1$ the invariant $uv$ is a nonzero canonical differential $t$. Thus $\operatorname{div}(b_d)$ is a degree-$2d$ effective subdivisor of $d\operatorname{div}(t)$. Its possible line bundles range over a closed set of dimension at most two, by the finite-subdivisor incidence over $\mathbb P H^0(K)$, whereas $L\mapsto L^d$ is finite surjective onto a Picard variety of dimension three.  
+
+All unit slopes for $d\mid m$, with $m=1,2,3,4,6$, are covered by these cases. When either $b$ or $c$ vanishes the cycle lies on the corresponding axis and is determined by the other monic polynomial, including its multiplicities.
+
+\subsubsection{Exclusion of the remaining slopes at degree five}
+
+Interchanging the two coordinates replaces $k$ by its inverse, so the only additional slope to consider is $k=2$. Write $P=(\phi)_\infty$ and $Q=(\phi)_0$ with disjoint support. Then $\deg P-\deg Q=2$ and $\mathcal O(P-Q)=L^2/M$. Since the latter line of degree two is general as $L$ varies, $\deg P\ge3$. Holomorphicity of $v=\phi u^2$ implies
+\[
+ (b)\ \ge\ \sum_x \left\lceil\tfrac52\operatorname{ord}_x P\right\rceil x .
+\]
+The left side has degree ten, giving $\deg P\le4$. If $\deg P=4$, equality forces $P=2D$ and $(b)=5D$ with $\deg D=2$. Thus $L$ is a torsion translate of an effective degree-two line, excluded for general $L$.
+
+If $\deg P=3$ then $Q=q$ is a point. If $P$ is reduced, $(b)=3P+x$ for some point $x$. Using $\mathcal O(P)=(L^2/M)(q)$ gives $M^3/L=\mathcal O(3q+x)$. The target line of degree four is general because $L\mapsto K^3/L^4$ is finite surjective. The locus of divisors $3q+x$ has dimension at most two, so this is impossible for general $L$.
+
+Otherwise $P=2p+r$, allowing $p=r$. The inequality gives $(b)=5p+3r+S$ with an effective divisor $S=s_1+s_2$. This also holds for $p=r$, where the minimum required vanishing is eight. Eliminating $L$ from the two identities
+\[
+ L^3/K=\mathcal O(2p+r-q),\qquad L^5=\mathcal O(5p+3r+s_1+s_2)
+\]
+gives
+\[
+ K^5=\mathcal O(5p+4r+5q+3s_1+3s_2).
+\]
+The fiber of this weighted Abel map has dimension at most two. Stratify by the coincidences of its five marked points. At $n$ distinct points the differential has rank equal to the rank of their canonical evaluations since all combined weights are positive. Five distinct points impose rank three, since no canonical differential has five zeros. Four distinct points impose rank at least two, since a fiber of the genus-three canonical morphism contains at most two distinct points. Indeed in the hyperelliptic case that map is two-to-one onto a conic and otherwise it is the plane quartic embedding. For $n\le3$ the rank is at least one by base-point freeness. On each stratum the tangent dimension of the fiber is consequently at most two. The points determine $L^5$ and hence finitely many $L$. Properness of the weighted Abel incidence shows that its image in the Picard variety of $L$ lies in a closed subset of dimension at most two. This excludes the remaining slope for genus three.
+
+\subsubsection{Construction of mixed cycles}
+
+Fix a positive integer $k$ coprime to $m$ and a nonzero meromorphic section $\phi$ of $M/L^k$. If a nonzero section $b\in H^0(L^m)$ satisfies
+\[
+ k(b)\ \ge\ m(\phi)_\infty ,
+\]
+the graph $v=\phi u^k$ on the normalization of the spectral cycle $u^m=b$ gives a compact mixed cycle in $\operatorname{Tot}(L\oplus M)$. Indeed the coordinate $v$ extends holomorphically at every point of the normalization by the valuation inequality. Projection onto the $u$ coordinate identifies the generic image cycle with the original spectral cycle. Since $k$ is a unit, over a general fiber the $m$ values of $v$ are exactly the distinct roots of $v^m=\phi^m b^k$. This proves all the cut equations even when the normalization is disconnected.
+
+For odd $m\ge9$, take $k=2$, a point $q\in C$, and $P\in|(L^2/M)(q)|$. The degree of this last line is three, so such a divisor exists. The meromorphic section with divisor $q-P$ has pole divisor bounded by $P$. Let $a=(m+1)/2$. Since $\deg L^m(-aP)=(m-3)/2\ge3$, Riemann–Roch gives a nonzero $b$ in this space. It satisfies the required inequality.
+
+For $m=7$ use the same construction with $a=4$. The line in which to find $b$ after imposing $4P$ is
+\[
+ L^7(-4P)=(M^4/L)(-4q).
+\]
+The degree-six bundle $M^4/L$ has four independent sections. Its complete linear series has a point $q$ with a section vanishing to order at least four. For instance the Wronskian is a nonzero section of $(M^4/L)^4\otimes K^6$ in characteristic zero, of positive degree. Its zeros are precisely the points where vanishing orders differ from $0,1,2,3$, forcing some vanishing order at least four. Thus this choice of $q$ supplies $b$. Existence of $P$ still follows from its degree.
+
+For $m=8,10$, use $k=3$, $P\in|L^3/M|$ and $\operatorname{div}(\phi)=-P$. The degree of $P$ is four. The line $L^m(-\lceil m/3\rceil P)$ has degree four for both values of $m$ and therefore a nonzero section. For $m=12$, choose an effective degree-four divisor $D$ with $\mathcal O(2D)=L^5/M$: square roots exist on the complex Picard variety and every degree-four line on $C$ is effective. With $k=5$ and $\operatorname{div}(\phi)=-2D$, any nonzero $b\in H^0(L^{12}(-5D))$ satisfies $5(b)\ge24D$, since $25D\ge24D$. The residual degree is four.
+
+Every even integer at least eight either has an odd divisor at least seven or is divisible by $8,10$ or $12$. For the last assertion its odd part, when below seven, is $1,3$ or $5$. The constructions and the degree-multiplication observation finish the theorem. 
+
+\subsubsection{Dependence on the genus}
+
+The genus-three threshold depends on the degree and genus together. For example mixed solutions of degree five already exist for every $L$ if $g\ge4$. With $k=2$ choose $P\in |(L^2/M)(q)|$ as above, now of degree $g$. The line $L^5(-3P)$ identifies with $(M^3/L)(-3q)$ of degree $2g-5$. For $g\ge5$ this is effective by degree. For $g=4$ the degree-six line $M^3/L$ has at least three sections by Riemann–Roch. If it has more than three sections every $q$ works. Otherwise its three-dimensional complete series has positive Wronskian degree, and a ramification point supplies the order-three zero. In either case the valuation condition constructs the cycle. For a general $L$ its normalization cover is connected since five is prime.
+
+\emph{Genus two.} For a genus-two curve and general $L\in\operatorname{Pic}^1 C$, the degrees with axis-only support are exactly $1,2,3,4,5,6,7,9$. In particular the first prime admitting mixed cycles here is eleven.
+
+For slope $1$, a saturated common line of positive degree would force $L=M$. A common degree-zero line carrying a nonzero $d$-th power is a $d$-torsion translate of the trivial line, and would put $L$ in a finite union of translates of the effective degree-one locus. For slope $-1$ the canonical subdivisor argument applies with parameter dimension one. For the remaining slopes at $m=5,7,9$ the connected orbit reduction still applies. Lower-degree divisors of these $m$ have only the excluded slopes. In each case use the inverse slope as well, by interchanging the two normal lines.
+
+For slope $2$ in any odd degree, write $P$ for the pole divisor and $Q$ for the zero divisor of $\phi$. Here $\deg P-\deg Q=1$, and degree one for $P$ would force $L^2/M$ effective, excluded generically. Thus $\deg P\ge2$. The valuation bound $2(b)\ge mP$ forces $\deg P=2$ and equality throughout. Since $m$ is odd, $P=2p$ and $(b)=mp$, excluded up to $m$-torsion. This handles both remaining unit slopes for $m=5$.
+
+At $m=7$ one must also consider slope $3$ and its inverse $5$. Now $\deg P-\deg Q=2$, and $3(b)\ge7P$ bounds $\deg P\le3$. Degree three forces $P=3p$ and $(b)=7p$ by equality and coprimality. At degree two $Q=0$ and $\mathcal O(P)=L^3/M$ is general of degree two. Its only effective representative is generically reduced, since divisors $2p$ vary in dimension one. Thus $(b)\ge3P$, forcing the degree-one line $M^3/L^2=L^7(-3P)$ to be effective, again excluded for general $L$.
+
+At $m=9$ the additional inverse pair comprises slopes $4,7$. For $k=4$ we have $\deg P-\deg Q=3$ and $\deg P\le4$. Degree four forces $P=4p$ and $(b)=9p$. At degree three, $Q=0$ and $\mathcal O(P)=L^4/M$. If $P$ is reduced, $(b)=3P$ so the degree-zero line $M^3/L^3$ must be trivial. If $P=3p$ then $L^4/M$ belongs to a locus of dimension one. If $P=2p+r$ with $p\ne r$, write $(b)=5p+3r+x$. Elimination gives
+\[
+ K^9=\mathcal O(7p+6r+5x).
+\]
+The corresponding fiber of the weighted Abel map has dimension at most one. Three distinct points impose canonical evaluation rank two since a genus-two differential has degree two, and two or fewer distinct points impose rank at least one. These points determine $L^9$, so the excluded $L$ again form a subset of dimension at most one. This proves the axis-only assertions.
+
+For the complementary degrees the valuation construction uses that every degree-two line on $C$ is effective. For $m\ge8$ with $3\nmid m$ take $k=3$, $\operatorname{div}(\phi)=-P$ with $P\in|L^3/M|$ of degree two. The residual degree $m-2\lceil m/3\rceil$ is at least two (including $8$ and $10$). For odd $m\ge15$ divisible by three, take $k=4$, $\operatorname{div}(\phi)=-P$, $P\in|L^4/M|$ of degree three. The residual degree $m-3\lceil m/4\rceil$ is at least two: the first cases are $15,21$, and it holds for all $m\ge17$. For $m=12,18$ use $k=5$ and $\operatorname{div}(\phi)=-2D$ where $\mathcal O(2D)=L^5/M$ and $\deg D=2$. Imposing $(b)\ge\lceil2m/5\rceil D$ leaves degree two in both cases. An even multiple of three is divisible by twelve or is twice an odd multiple of three. In the latter case the odd half is $3,9$ or at least $15$. Degree multiplication completes the classification.
+
+\emph{All higher genera.} For $g=4,5$ the only axis-only degrees are $1,2,3$. For every $g\ge6$ they are $1,2$. Each exclusion holds for general $L$, while each existence statement below holds for every $L$.
+
+Write $a=g-1$. To construct a slope-one solution, choose $J\in\operatorname{Pic}^j C$ with $J^m$, $L/J$, and $M/J$ all effective. Nonzero sections of the last two bundles map the line $J$ into $N$. The map is injective on the generic fiber. The image of the compact spectral cycle $w^m=b_J$, for a nonzero $b_J\in H^0(J^m)$, therefore has both projected $m$-th powers nonzero and satisfies the lower coefficient cuts. Simultaneous vanishing of the two line maps at an exceptional point of the base leaves the proper image of the spectral curve well defined.
+
+In $\operatorname{Pic}^j C$ the three effectivity loci are an isogeny pullback of $W_{mj}$ and two translated inversions of $W_{a-j}$. By the Poincaré formula $[W_e]=\theta^{g-e}/(g-e)!$ for $0\le e<g$ and $W_e=\operatorname{Pic}^e C$ for $e\ge g$. Their classes thus have nonzero product whenever
+\[
+ \max(g-mj,0)+2(j+1)\le g,\qquad 0\le j\le a .
+\]
+Indeed the isogeny pullback multiplies the polarization class by $m^2$, and every power of the principal polarization of exponent at most $g$ is nonzero. The nonzero product has support in the triple intersection, which is therefore nonempty, even for the linked translates specified by $L$ and $K/L$. With $j=1$ the inequality holds for $g\ge4$, $m\ge4$. With $j=2$ it holds for $g\ge6$, $m=3$. \cite[Introduction]{Debarre}
+
+In degree two the only unit slope is $-1\bmod 2$ and the canonical subdivisor argument applies for every $g$. For $m=3$, $g=4,5$, a remaining mixed cycle needs slope $1$ and a saturated common line $J$ as before. If $j=\deg J>0$, the ratio $L/M$ lies in $W_{a-j}-W_{a-j}$. For general $L$ this requires $2(a-j)\ge g$, hence $j=1$ in these genera. Degree zero is excluded by the finite torsion translates. The possible $J$ with $J^3$ effective range over a locus of dimension at most three. For each fixed $J$ the sum of the divisors of the two nonzero maps to $L,M$ belongs to $|K/J^2|$, of dimension $g-4+h^0(J^2)$. Each divisor in this system has finitely many bipartitions of the prescribed degrees and each choice determines $L$. Where $h^0(J^2)=0$ the dimension of this incidence is at most $g-1$. Where $h^0(J^2)=1$ the possible $J$ lie in the finite pullback of $W_2$, restoring the same bound. If $h^0(J^2)=2$ then $C$ is hyperelliptic and $J^2$ is its unique degree-two pencil, so $J$ ranges over a finite set. No higher value occurs. These constructible strata therefore miss general $L$ and complete the classification.
+
+For a given order $m\ge2$, the antidiagonal action of $\mu_m$ on a
+nonzero fiber point is free. An invariant multiset of length $m$
+meeting the complement of the origin is a single orbit. A mixed orbit
+would have slope $-1$ and is excluded for general $L$ by the
+canonical-divisor argument above. Thus in degree $m$ the finite
+subgroup has only the two pure axes for general $L$, including degrees
+where the lower projected equations alone admit mixed curves.
+
+In the genus-three cubic the intermediate quadratic cut is consequently
+the union $E_+\cup_BE_-$ of two vector bundles of rank four over
+$B=\PP^i\times\PP^{12-i}$. On the first branch the product of the
+eight cubic Thom classes restricts, with support in the zero section,
+to $(3y)^4\operatorname{Th}(E_+)$, and on the second to
+$(3x)^4\operatorname{Th}(E_-)$, where $x,y$ are the hyperplanes.
+The Thom class on the moving axis comes from its own fiber coordinates;
+the other four tests vanish identically on that axis. The two
+restrictions divided by $3^4$ agree on $B$, with value $3^4x^4y^4$.
+Mayer--Vietoris with support in $B$ identifies the degree-sixteen
+classes on the union with the kernel of the difference of restrictions
+(the preceding $H^{15}(B)$ is zero). Thus their common class on the
+union is divisible by $3^4$. Cup product with the four quadratic
+Thom classes, supported on the union, maps this divisibility into the
+cohomology of the ambient cycle space with support in $B$. Formally
+this is the module action on $i^!\ZZ$ for the closed inclusion $i$ of
+the union, followed by composition of supports. The original
+denominator $2^4 3^8$ consequently bounds the 3-part of every weight
+coefficient by $3^4$ after cancellation. The outer coefficient
+$x_{13,1}/324$ in Lemma~\ref{lem:outer} attains this bound.
+
+\subsection{The genus of a mixed integral cubic}\label{sec:szego}
+On the same genus-three base a stronger statement about irreducible
+curves holds even before imposing any coefficient tests. For general
+$L$, every cubic projecting nontrivially to both $L$ and $M$ has
+normalization genus at most nine.
+
+Let $F$ denote its smooth normalization, $h=g(F)$ and
+$T=\ker(f_*\cO_F\to\cO_C)$, of degree $7-h$. The two trace-free
+coordinates give $N^*\to T$, $N=L\oplus M$. If its generic rank is
+one, the fiber values belong to a common line of degree at most zero,
+since $L\ne M$ and $L/M\notin C-C$. Its spectral divisor in this
+line has arithmetic genus at most seven by adjunction. Otherwise
+the quotient has length $11-h$. Set $A=L^3/K_C$ and use a hat for
+the complementary line $\widehat P=K_C/P$. The four summands of
+$V=\operatorname{Sym}^3N\otimes K_C^{-1}=A\oplus L\oplus M\oplus\widehat A$
+are acyclic for general $L$. In genus eleven the cubic specifying
+the cover would be a section of $V$ by the triple-cover
+correspondence \cite[Sections~3--4]{Miranda}. In genus ten its
+Tschirnhausen bundle is $W=\ker(N\to k(p))$ at one point. The
+binary cubic is now a section of $V(p)$ uniquely determined by its
+principal part, which is pure cube in the kernel direction.
+An axis direction would give a generic pure cube of zero discriminant,
+impossible for a separable field extension.
+
+For an acyclic degree-two line $P$ the residue-one Szeg\H{o} kernel
+in $(P\boxtimes\widehat P)(\Delta)$ exists uniquely by the diagonal
+sequence and K\"unneth \cite{BB}. In local complementary frames its
+scalar expansion is
+$(z-w)^{-1}+a_P(w)+b_P(w)(z-w)+\cdots$.
+Interchanging the two arguments gives
+$a_{\widehat P}=-a_P$, $b_{\widehat P}=b_P-a'_P$.
+In frames $X$ of $L$ and $Y=dz/X$ of $M$ write a mixed direction
+as $X+qY$, $q\ne0$. The four coefficients of the unique meromorphic
+binary cubic with principal part $(X+qY)^3$ are the kernels
+$s_A,3qs_L,3q^2s_M,q^3s_{\widehat A}$, with the common determinant
+frame suppressed. Set $\ell=X+qY$. The coefficient of $\ell Y^2$
+has constant term $3q^2(a_A-3a_L)$; that of $Y^3$ has constant term
+$-2q^3(a_A-3a_L)$ and first-order term $-q^3(a_A-3a_L)'$.
+Since $W$ is generated locally by $\ell,(z-w)Y$, membership in
+$\operatorname{Sym}^3W\otimes K_C^{-1}(p)$ forces a multiple zero
+of $\eta=(a_A-3a_L)dz$ at $p$. This is a global differential: the
+changes in $a_Pdz$ are $-d\log\lambda_P+
+\tfrac12d\log\phi'$ for a frame change $\lambda_P$ and coordinate
+change $\phi$, and $\lambda_A=\lambda_L^3/\phi'$.
+
+For completeness the general differential so obtained has only simple
+zeros, including on a hyperelliptic base. On the smooth locus of
+$\Theta=W_2$, write $L_0=\cO(x+y)$ with unique generators
+$v_0,w_0$ of $L_0,\widehat L_0$. The product $v_0w_0$ annihilates
+the tangent of $\Theta$ by differentiating the Abel map. The Gauss
+map is generically finite since every differential has only finitely
+many degree-two subdivisors; its image is therefore dense. A general
+such product has four simple zeros. The map $P:L\mapsto L^3/K_C$
+does not preserve $\Theta$. If it did, multiplication by three on
+tangents would leave the Gauss map invariant and force
+$\deg(P|_\Theta)=1$. The projection formula on the surface $\Theta$
+gives instead $9^2$ using the action on the polarization. We may thus
+choose $L_0$ with $P(L_0)$ acyclic. On an algebraic transverse arc
+through $L_0$, multiply the normalized kernel by the smallest
+power $t^e$ giving a regular specialization. Here $e>0$, since
+$h^0(L_0(w))=1$ for general $w$ and no section has the requisite
+simple pole. The nonzero limit has zero residue and is therefore
+a nonzero multiple of $v_0\boxtimes w_0$. The kernel for $P(L_0)$
+stays regular by acyclicity. On taking finite parts along the diagonal
+$t^e\eta$ consequently tends to a nonzero multiple of $v_0w_0$.
+Algebraicity of the kernels on the acyclic locus and closedness of the
+multiple-zero locus prove the assertion for general $L$.
+
+In particular a reduced integral cubic on an axis of normalization
+genus at least ten has no nearby mixed cubics. Indeed nearby cycles
+are integral of multiplicity one by properness of Chow addition,
+and a fixed normalization genus below ten in a convergent sequence
+would give a limiting stable map with a positive component birational
+to the central curve, which requires genus at least ten. The two axes
+are closed and meet only in the zero-section multiple.

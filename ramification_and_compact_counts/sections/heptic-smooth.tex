@@ -1,0 +1,260 @@
+\section{Smooth degree-seven covers near a change of sign}\label{sec:global}
+Changing the sum of the weights at a fixed set of flags through zero reverses the degree of the local smoothing equation. Smooth maps near the join account for this difference.
+\subsection{Smooth covers approaching a joined map}\label{p14-sec:smooth}
+
+Fix a simply branched cubic $Y\to C$ with monodromy $S_3$ and
+$b=2\ell>0$ branch values. Let $I$ be a nonempty subset of these
+values. Write $j=|I|$, $h_j=1+7(g-1)+3\ell+j$, and $f_I$ for the
+finite map obtained by joining its Galois closure $Z$ to $C$ at
+the selected flags fixed by one transposition. We use increasing
+$t$ as the positive direction across a cubic wall. A crossing on a
+smooth cover is counted once for each isomorphism class over $C$ and
+each parameter, with the sign of the derivative of the normalized
+kernel equation in the complex-oriented Hurwitz directions and the
+oriented path direction.
+
+\begin{theorem}\label{p14-thm:smooth-covers}
+On the prescribed cubic and normal bundle there is a two-parameter
+family of operators $D_{a,t}$ with the following properties.
+Along $t=0$ the prescribed cubic has a normal kernel, transverse in
+the $t$ direction. There is a sequence of parameters approaching a point
+of this segment for which smooth connected degree-seven covers with a
+nonzero normal section converge to $f_I$ and its root section. Their source genus is $h_j$ and their monodromy
+is $S_7$. If $I$ consists of all branch values, the graphs in the
+convergent sequence are embedded after discarding finitely many terms.
+
+There are also arbitrarily small Hurwitz neighborhoods $U$ of $f_I$
+and rectangles $[a_-,a_+]\times[-\delta,\delta]$ as above with the
+following signed count. Let $d_L,d_R$ denote the local degrees in the
+uniformizing chart of the joined map along the left and right edges.
+On the lower and upper edges, oriented by increasing $a$, take
+sufficiently small generic perturbations relative to their ends.
+Their smooth crossings in $U$ are regular, have simple branching over
+distinct values, trivial deck group and embedded kernel graph. Their
+signed counts $N_-,N_+$ satisfy
+\begin{equation}\label{p14-eq:smooth-edge}
+                 2(N_+-N_-)=d_R-d_L\in\{-2,2\}.
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+\emph{Changing the degree.}
+Take a short segment $c(a)\in\mathbb R^b$ crossing the hyperplane
+$\sum_{i\in I}c_i=0$ at a point of no other subset hyperplane.
+In the branch coordinates of Section~\ref{p14-sec:joins}, $H_i$ is
+a nonzero real functional on a complex smoothing plane. Choose
+nonzero $\gamma_i(a)$ smoothly with $H_i(\gamma_i(a))=c_i(a)$.
+A right inverse of $H_i$ plus a fixed nonzero vector in its kernel
+gives such a choice even when $c_i=0$. Assign the antilinear
+coefficient at the $i$th center so that
+$2\overline{\gamma_i(a)}[B_iv_i]=[e_i]$.
+The local replacement and restoration on a disk of regular values in
+Section~\ref{p14-sec:joins} apply with one cutoff radius for this compact
+segment. Indeed the prescribed coefficients and the right inverses
+in the restoration are uniformly bounded. Thus the weights on the
+restored cubic are uniformly close to $c_i(a)$. Take the radius
+small enough to retain opposite signs of the $I$-sum at the two ends
+and to keep every other subsum away from zero. The ordinary and polar
+operators on the fixed covers retain the ranks used in the nodal
+derivative. The cubic remains transverse to one common time direction.
+The kernel at $f_I$ remains the odd real line: evaluation at any
+chosen flag removes the even section on $Z$.
+
+Write $q_i$ for the complex smoothing parameters, and $h$ for the
+remaining chart coordinates and time, centered at $f_I$, $t=0$.
+Trivialize the reduced obstruction equation over the parameter
+segment by stabilizing on disks of regular values and normalizing the
+root section by a real linear functional. The center kernel and
+cokernel have constant rank, so supplements and normalizations can be
+continued along the segment. By Proposition~\ref{p14-prop:signs} the end
+zeros are isolated and have opposite degrees in this uniformizing
+chart. On the boundary of every sufficiently small ball in $(h,q)$
+a zero occurs at some intermediate $a$, by homotopy invariance of
+degree. Passing to a sequence of shrinking balls and a convergent
+subsequence of parameters, put $r=\max_{i\in I}|q_i|$. The nodal
+derivative is uniformly injective, hence $r>0$ at every noncentral
+zero sufficiently close to the center and $|h|=O(r\log(1/r))$.
+After division by $r\log(1/r)$ the matching equation of
+Section~\ref{p14-sec:joins} places every subsequential limit of $(q_i/r)$
+on the real line spanned by $(\beta_i)_{i\in I}$ at the limiting
+parameter. Here $2\overline{\beta_i}[B_i v_i]=[e_i]$. Every coordinate
+of the generator is nonzero. Thus all $|q_i|$ are comparable to $r$.
+The remaining adjoint row, divided by $r$, now gives
+$\sum_{i\in I}H_i(\beta_i)=0$ at the limit. These estimates are
+uniform on the segment, since they use the bounds for the stabilized
+inverse and the leading nodal and matching maps, all of which retain
+their ranks at resonance. Every selected node has smoothed. The
+domain is connected, of arithmetic genus $h_j$, and the normalized
+sections converge to the odd section. This proves existence of the
+asserted sequence.
+
+\emph{Ramification and separation.}
+On the three local sheets involved at a selected flag, the projection
+in the neck coordinate $z$ is
+\[
+              w-c_i'=(z+p_i)^2+q_i/z .
+\]
+Here $c_i'$ is the displacement of the branch center.
+Both $c_i'$ and $p_i$ are $O(r\log(1/r))$. Put $d_i^3=q_i/2$.
+The critical equation is $2z^2(z+p_i)=q_i$, with three distinct
+simple roots $z/d_i=\zeta+o(1)$, $\zeta^3=1$. At such a root,
+\[
+        w-c_i'=(z+p_i)(3z+p_i)=3d_i^2(\zeta^2+o(1)).
+\]
+These critical values have mutual distances comparable to $r^{2/3}$.
+The two other local quadratic factors have critical values at
+distance $O(r\log(1/r))$ from the original branch value. Consequently
+each of the three displayed values supports exactly one simple
+ramification point. At each unselected branch disk the three
+quadratic factors persist. In total the ramification degree is
+$B=3b+2j$. A solitary simple branch gives a transposition on the
+seven sheets. The graph of the conjugates of that transposition has
+components permuted transitively by the monodromy, so their common
+size divides seven. There is an edge, hence this graph is connected
+and its edge transpositions generate $S_7$.
+
+For the full join the two limiting images coincide only at the
+selected points. On a selected disk the normalized height on the
+cubic factor has the expression $U_0(w)+zU_1(w)+z^2U_2(w)$. In the
+fixed-base polynomial presentation its coefficients converge in
+$W^{1,p}$ for some $2<p<4$, hence uniformly, by the stabilized
+inverse in Section~\ref{p14-sec:joins}. Centrally $U_1(0)=v_i\ne0$ and
+$U_2=0$. The difference of the heights at distinct roots $z,z'$
+over the same $w$, divided by $z-z'$, is
+\[
+                          U_1(w)+(z+z')U_2(w).
+\]
+Its norm is bounded below on a smaller disk. At a simple critical
+point with local coordinate $w=w_0+\eta^2$, the smooth height has
+zero antiholomorphic derivative at $\eta=0$, by the pullback
+equation. Taking the difference at $\eta$ and $-\eta$ gives vertical
+derivative in the $z$ coordinate equal to
+$U_1(w_0)+2z_0U_2(w_0)\ne0$. Thus this factor also immerses at
+ramification. The other two quadratic factors stay separated by
+their distinct nonzero limiting heights. Their normalized heights
+converge in $C^1$ on smaller source disks by ordinary elliptic
+regularity and have nonzero limiting vertical derivative at the
+ramification points. Away from these disks the projections are
+unramified and the central heights are pairwise separated on a
+compact set. The resulting injective immersion of a compact source is
+an embedding.
+
+\emph{Isolating a neighborhood for paths of operators.}
+To obtain signed counts, the neighborhood must lie in Hurwitz space
+alone, independent of $a$ and $t$. Arrange the infinite-order Petri
+condition at two distinct points of a regular disk where two cubic
+heights form a complex frame, by the local gauge construction of
+Section~\ref{p14-sec:kernels} and \cite[Corollary~5.10]{wendl}. Restore
+the cubic, and choose its transverse time direction, on another
+subdisk. Both Petri jets are then fixed along the family. Vary the
+central segment relative to its ends on the frame disk by small
+$a$-dependent tensors flat at the test points and annihilating the two
+current cubic heights. This preserves the prescribed cubic.
+
+For connected smooth covers sufficiently close to $f_I$, monodromy
+outside the branch disks contains the regular $S_3$ on six sheets
+fixing the seventh. Connectedness now implies double transitivity.
+The reduced real sheet representation $W$ is absolutely irreducible
+of dimension six: the complex commuting algebra of the permutation
+representation has dimension two by the two orbits on ordered pairs.
+The constant sector is invertible. The six components of a nonzero
+solution in $W$ and the two independent cubic heights are linearly
+independent as real solution germs on a regular disk. Indeed on the
+joint normal cover they span inequivalent irreducible systems, and
+unique continuation identifies their linear relations on the disk.
+
+Here is the constrained transversality argument. An adjoint
+annihilating the allowed variations gives on the disk a tensor
+identity
+\[
+           \sum_{k=1}^{6}u_k\otimes v_k
+                    =s_1\otimes\alpha_1+s_2\otimes\alpha_2,
+\]
+where $u_k,v_k$ are the test solution and adjoint components and the
+$s_i$ are the prescribed cubic heights. The smooth frame gives the
+$\alpha_i$ smoothly across the test points. Pair with $[D,\Phi]$ for
+compactly supported complex-linear endomorphisms $\Phi$.
+The left integral vanishes by the solution and adjoint equations.
+Since $\Phi s_1,\Phi s_2$ can be chosen freely, both $\alpha_i$ solve
+the adjoint equation. The Petri condition on infinite jets and
+independence of the eight solution germs force the jets of all
+$v_k$ to vanish. Unique continuation gives $v_k=0$. This is the
+local-system Petri argument of \cite[\S\S1.6, 2.7--2.9]{dwbn}
+with the two prescribed solutions retained.
+
+A smooth branching profile with $s$ distinct values has complex
+dimension $s$. The pullback operator has real index $-2B$ by
+Riemann--Roch. After allowing $a$ and dividing by real kernel
+scalings the expected dimension is $2s-2B$. The preceding test
+gives transversality for a generic constrained central segment.
+To apply it on the noncompact smooth strata, exhaust their
+projective incidences by countably many compact subsets. Finitely
+many supported variations suffice near the zeros on each such set,
+and their parameter cutoffs preserve the end collars. The regularity
+conditions on compact subsets are open, so the countable
+intersection gives regular segments. Only simple branching at
+distinct values remains, in dimension zero. The uniform matching
+estimate above excludes partially smoothed zeros sufficiently near
+the center throughout the segment. Thus all off-center zeros at
+$t=0$ sufficiently near $f_I$ form a countable set.
+
+Choose arbitrarily small invariant Hurwitz balls $U$ with radii
+outside the set of radii of these zeros. Compactness gives a
+$\delta>0$ for which $\partial U$ is free of kernels throughout the
+rectangle. The uniform estimates exclude all nonsmooth zeros on
+the horizontal faces after shrinking the ball and $\delta$, since
+a zero with $q=0$ can only be the center at $t=0$.
+The sign condition at each end leaves only the joined zero on each
+vertical face. Small perturbations of the horizontal paths preserve
+these boundary properties. Applying the preceding transversality
+test there with unrestricted operator variations gives regular
+zeros, with distinct simple branch values and one-dimensional
+kernel. There is a transposition, hence full monodromy by the prime
+degree argument. The deck group, the centralizer in $S_7$, is trivial.
+
+For completeness, the marked tests for embeddedness are also
+transverse. At two distinct preimages over a common value, equality
+of heights has real codimension four, while a free base value has
+two real parameters and a branch value is already determined.
+Vanishing of the vertical complex derivative at a ramification
+point gives another four real conditions. For either test a
+putative annihilator solves its adjoint equation away from the
+marked fiber. Its invariant part vanishes distributionally by base
+invertibility: each test vanishes on sections pulled back from the
+base. One of the two Petri points lies away from the marked value.
+The unrestricted adjoint test there and unique continuation kill the
+reduced part away from the marks. To test the remaining point-supported
+distributions, vary a local section with prescribed value or
+holomorphic first derivative. Its equation can be made zero to
+any given finite order, since the coefficients involving a
+$\bar\partial$ derivative are determined recursively by its pure
+holomorphic jet. These variations kill the marked multipliers,
+and the remaining homogeneous adjoint vanishes by elliptic regularity.
+At a zero of a marked test it vanishes also on the infinitesimal
+rescaling. The resulting negative expected dimensions exclude both
+coincidences and nonimmersions. The signed zero sets on the compact
+horizontal faces are therefore finite and have embedded graphs.
+
+\emph{Boundary orientations.}
+Orient the parameter rectangle by $da\wedge dt$. On the product of
+its boundary with the uniformizing Hurwitz ball, the total signed
+degree is zero because the section extends over the product and has
+no zeros on the Hurwitz boundary. The right and left faces contribute
+$d_R$ and $-d_L$. On each horizontal face a smooth zero has two
+lifts, interchanged by the central involution. Their signs agree.
+Indeed this involution acts complex linearly on the Hurwitz chart.
+On the normalized obstruction target it preserves orientation,
+as follows by equivariance from the nonzero local degree at either
+vertical end. This orientation character persists across the
+rectangle. The lower and upper faces thus contribute $2N_-$ and
+$-2N_+$, respectively. This proves \eqref{p14-eq:smooth-edge}.
+\end{proof}
+
+When $I$ contains every branch value, complementary nonempty proper
+subsets have opposite sums at the limiting weights. In particular the
+size-$b/2$ terms cancel in either adjacent chamber. Weights of one
+sign give the largest sum of absolute changes over all genera and
+belong to different chambers. Equation~\eqref{p14-eq:smooth-edge}
+determines the difference of the two counts in $U$. Extending that
+identity to counts in the whole Hurwitz space would require control
+of its complement.

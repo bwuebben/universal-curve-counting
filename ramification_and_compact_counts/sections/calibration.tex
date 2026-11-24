@@ -1,0 +1,428 @@
+\section{Comparison with the double-cover count on a closed threefold}\label{sec:normalization}
+We turn to a second compact consequence. The chamber weight for smooth double covers is normalized at a complex-linear operator. In the elementary cluster expansion the reference is the balanced local curve. Computing the two references gives a correction in twice the primitive class.
+Let $v$ be the genus parameter. Write $s=2\sin(v/2)$ and $x=s^2$. For a partition $\lambda$ and a box
+$u$ of its diagram, let $\ell(u)$ denote its hook length. The connected
+elementary series of a curve of genus $g$ is
+\[
+ G_g(q,v)=\log\!\left(\sum_{\lambda}q^{|\lambda|}
+            \prod_{u\in\lambda}(2\sin(\ell(u)v/2))^{2g-2}\right).
+\]
+The empty diagram contributes one before taking the logarithm.
+Ionel--Parker's $e^{\rm IP}_{B,h}$ is the coefficient of
+$G_h(Q^B,v)$ in the connected Gromov--Witten series
+\cite[Proposition~3.3 and (8.1)]{ip}. In particular
+$[q]G_g=x^{g-1}$. The normal weights in the elementary series are
+opposite. The class variable $Q$ records integral homology classes.
+
+For a generic compatible almost complex structure, denote the
+determinant sign of the normal operator $D_C$ of an embedded curve $C$
+by $\epsilon_C$. The Bai--Swaminathan count in genus $h$ is
+\[
+ \operatorname{Gr}^{\rm BS}_{2A,h}
+ =\sum_{\substack{[C]=2A\\g(C)=h}}\epsilon_C
+       +\sum_{[C]=A}\epsilon_C w_{2,h}(D_C).
+\]
+Here $w_{2,h}$ is the oriented intersection number with the wall of
+smooth genus-$h$ double covers carrying an anti-invariant kernel
+\cite[(1.5), Definitions~5.8 and~5.17]{bai}. Its value at a
+double-cover-rigid complex-linear reference is zero. We use the
+coorientation and path convention of that definition throughout.
+We extend $w_{2,h}$ by zero when $h<g(C)$.
+
+\begin{theorem}\label{p9-thm:global}
+Let $X$ be a closed symplectic six-manifold with $c_1(TX)=0$ and torsion-free $H_2(X;\ZZ)$. For every primitive class $A$ of
+positive area and every $h\ge0$,
+\begin{equation}\label{p9-eq:global}
+ e^{\rm IP}_{2A,h}(X)-\operatorname{Gr}^{\rm BS}_{2A,h}(X)
+       =\sum_{g\ge0} e^{\rm IP}_{A,g}(X)\,a_{g,h}.
+\end{equation}
+The coefficient $a_{g,h}$ vanishes for $g=0,1$. For $c=g-1\ge1$ and
+$j=h-(2g-1)$ it is
+\begin{equation}\label{p9-eq:coeff}
+ a_{g,h}=
+ \begin{cases}
+  2\,4^{c-j}\left(\binom{c}{2j}-(-1)^j\binom{c}{j}\right),&1\le j\le c,\\[2pt]
+  0,&\text{otherwise}.
+ \end{cases}
+\end{equation}
+A binomial coefficient outside its usual range is zero.
+\end{theorem}
+
+The first two nonzero rows of the correction, written in the variable
+$x$ with genus $h$ contributing $x^{h-1}$, are $2x^3$ and
+$24x^5-2x^6$. On the compact threefold of Section~\ref{p9-sec:example},
+a primitive class $A$ has $e^{\rm IP}_{A,3}=-14$ and no higher-genus
+primitive coefficient. Only the term $(-14)(-2)$ contributes in
+genus seven. Corollary~\ref{p9-cor:example} gives a family on the same
+threefold for which the absolute differences grow quadratically.
+
+\subsection{The fixed-target comparison}
+Let $C$ be a smooth closed connected Riemann surface of genus $g$ and
+let $N\to C$ be a complex bundle of rank two and degree $2g-2$. Let $D$
+be a real Cauchy--Riemann operator on $N$. Its index on $C$ is zero.
+When $D$ is invertible, $\epsilon(D)$ is its sign for the determinant
+orientation obtained by transport from complex-linear operators.
+Suppose also that $f^*D$ is injective for every smooth connected
+double cover $f$ of $C$. We call such an operator rigid through degree
+two. On a nodal stable map of degree two one can normalize the positive
+components, each of degree one or two. Kernel sections vanish there,
+and the constants on each connected contracted subcurve vanish by
+matching. Hence all stable pullbacks are injective.
+
+Write $M_k=\overline{\mathcal M}_k(C,2)$ for the stack of connected
+degree-two stable maps with unmarked source of arithmetic genus $k$.
+The oriented real cokernels of $f^*D$ give a bundle on $M_k$ of real rank
+$2r$, where $r=2k-2-2(2g-2)$ is the complex virtual dimension of $M_k$. Define
+\[
+ L_{2,k}(D)=\int_{[M_k]^{\rm vir}} e(\operatorname{coker} f^*D),
+ \qquad B_{2,g}^{\rm bal}(v)=[q^2]G_g(q,v).
+\]
+The superscript $\rm bal$ denotes the balanced antidiagonal series.
+The integral is zero for empty moduli. We use the orientation of the
+full pullback determinant for $L_{2,k}$, including its sign in rank
+zero. In the orientation relative to the base operator, this number
+is $\epsilon(D)L_{2,k}(D)$ \cite[Remark~6.4]{bai}.
+
+\begin{theorem}\label{p9-thm:local}
+For every operator rigid through degree two one has
+\begin{equation}\label{p9-eq:local}
+ \epsilon(D)\sum_{k\ge0}L_{2,k}(D)v^{2k-2}
+    = B_{2,g}^{\rm bal}(v)+
+       \sum_{h\ge0}\bigl(w_{2,h}(D)+a_{g,h}\bigr)x^{h-1}.
+\end{equation}
+The equality is coefficientwise in $v$. In genus zero the series may
+have a pole of order two.
+\end{theorem}
+
+\subsection{Comparison with the chamber weight}\label{p9-sec:comparison}
+
+\subsubsection{Transport from a complex-linear operator}
+Fix $C$ and $N$ as in Theorem~\ref{p9-thm:local}. Use an invertible
+complex-linear operator $\beta$ rigid through degree two as a reference.
+Such operators exist by the complex-operator transversality in
+\cite[Lemmas~5.3, 5.6 and~5.15(ii), Definition~5.17]{bai}. Base acyclicity is
+open and is achieved by taking a direct sum of degree-$g-1$ line
+bundles off the theta divisor, or $\mathcal O(-1)^{\oplus2}$ when
+$g=0$. The reference need not split holomorphically.
+
+Choose a generic path from $\beta$ to $D$ in the affine space of real
+Cauchy--Riemann operators with fixed symbol. At an ordinary crossing
+of the base wall the kernel is a real line of nowhere-zero sections.
+At an ordinary crossing of a double-cover wall its anti-invariant
+kernel line gives an embedded graph and its intrinsic derivative
+\eqref{p9-eq:wall-differential} is invertible. Here one uses the
+one-parameter transversality and embeddedness of the kernel graphs
+\cite[Lemmas~5.6, 5.11, 5.15--5.16]{bai}. The variations in these tests
+are variations of the zeroth-order real tensor on an unramified disk.
+The fixed-symbol space also has the proper degree-at-most-two wall of
+\cite[Definition~2.6, Proposition~2.7 and Theorem~3.40]{dw}. In
+particular, up to any prescribed genus there are only finitely many
+crossings.
+
+We give the transversality detail that separates a base crossing from
+an odd crossing. Mark real kernel lines on the base and in the
+anti-invariant part of a smooth cover with $b$ branch points. For a
+fixed cover the Fredholm indices of the two operators are $0$ and
+$-2b$. Projectivizing both kernels and allowing the branch values to
+vary gives index $-2$. For surjectivity of the universal section,
+an adjoint pair annihilating all variations of the operators would,
+on an unramified disk, annihilate all pairs of values
+$(A\xi_0,A\xi_1)$, where $A$ is a localized real tensor and the two
+generators are evaluated on one sheet. The odd kernel and its
+adjoint both change sign on the second sheet, so the contributions
+of the sheets add. The generators are real independent on a disk.
+Otherwise on a disk of nonvanishing a real multiple relating two
+solutions has zero $\bar\partial$, hence is constant. Unique
+continuation on the connected cover then contradicts their opposite
+deck characters. Arbitrary variations of $A$ on the disk force both
+adjoints to vanish there and hence globally. Thus a generic path
+misses this incidence. Taking the countable intersection over source
+genera preserves genericity.
+
+Put $E_{2,k}(D)=\epsilon(D)L_{2,k}(D)$ on regular slices. At a base
+crossing with no odd kernel this reduced Euler number extends across
+the crossing. To see this, for a smooth positive component of degree
+two the invariant sections in the pullback kernel descend away from the
+branch values. They are bounded there in a target trivialization.
+Removable singularities for the real Cauchy--Riemann equation extend
+them across the branch values. Since there is no odd kernel, all kernel
+sections are therefore pulled back from the base. If there are two
+degree-one components, their base sections agree at a point, either at
+a common node or along the chain of contracted components joining
+them. Their difference vanishes everywhere because a nonzero base
+kernel section is nowhere zero. Constants on each contracted subcurve
+are determined by their nodal values. The same description on a single
+positive component is compatible with any further node. Consequently
+the kernel on every stable map is precisely the base pullback.
+
+Represent the base and pullback families by compatible stabilized
+two-term complexes of finite-dimensional bundles as in
+\cite[Appendix~B, (B.7)--(B.10)]{bai}. The reduced complex is the
+quotient in this finite-dimensional presentation. To see that its
+degree-zero cohomology vanishes, it remains, by the cohomology exact
+sequence and the kernel computation above, to check that pullback
+is injective on cokernels. Represent a base cokernel class by a smooth
+form $\alpha$. If $f^*D u=f^*\alpha$ on a single effective double
+normalization, averaging $u$ over the two sheets gives a base solution
+of $D\bar u=\alpha$ off the branch values. It extends by bounded
+removability for the inhomogeneous equation. On two degree-one components
+either restriction supplies such a solution. Thus the base class
+vanishes. The finite-dimensional reduced differential is injective
+over the whole compact stable-map space at the crossing.
+Its cokernels form an oriented bundle across the base crossing. The
+determinant identity is
+\[
+ \det(f^*D)\simeq\det D\otimes\det((f^*D)_{\rm red}).
+\]
+In particular the reduced integral on either side is $E_{2,k}$.
+
+At a double-cover crossing the base sign is constant. In the convention
+of \cite[(5.59)--(5.60)]{bai}, the forward change of $w_{2,H}$ is
+$\epsilon(D_0)\eta_f$ for a cover of genus $H$. Applying
+Theorem~\ref{p9-thm:wall} and summing the jumps within each source genus
+gives
+\begin{equation}\label{p9-eq:transport}
+ \sum_{k\ge0}\bigl(E_{2,k}(D)-E_{2,k}(\beta)\bigr)v^{2k-2}
+       =\sum_{h\ge0} w_{2,h}(D)x^{h-1}.
+\end{equation}
+At the initial endpoint $w_{2,h}(\beta)=0$ by the constant path in its
+definition. The equality follows for every formal coefficient using
+compactness only through that coefficient's genus.
+
+\subsubsection{The Euler integral at the reference}
+Let $\pi$ and $f$ now denote the universal curve and evaluation map
+over $M_k$. At $\beta$ the class $-R\pi_* f^*N$ is represented by its
+actual complex cokernel. Its rank is $r=\dim_{\CC}^{\rm vir}M_k$ and
+the base determinant has positive sign. Thus its ordinary top Chern
+number is $E_{2,k}(\beta)$. To compute it give $N$ scalar torus weight
+$t$. If $V$ is the virtual index class of rank $r$, its equivariant Euler
+class is $t^r c_{1/t}(V)$, with $c_z$ the total Chern polynomial.
+Integration on the virtual cycle selects $c_r(V)$. This description
+also permits deformation of the holomorphic structure to a sum of
+two lines of degree $g-1$, since the family index class extends along
+the deformation, including at split operators with kernel.
+
+Equal weights compute the reference number, whereas opposite weights
+compute the elementary contribution already assigned to the base curve.
+The scalar and antidiagonal specializations have the same degree-one
+term $x^{g-1}$. In degree two taking the connected logarithm subtracts
+the same half-square from both. The scalar formula of
+\cite[\S8]{bp08} and the two antidiagonal hook products in
+\cite[Corollary~7.2]{bp08} therefore give
+\begin{align*}
+ \sum_{k\ge0} E_{2,k}(\beta)v^{2k-2}-B_{2,g}^{\rm bal}(v)
+  =x^{2g-2}\bigl((4-2s)^{g-1}+(4+2s)^{g-1}
+                           -2(4-x)^{g-1}\bigr).
+\end{align*}
+The bracket vanishes for $g=1$. For $g=0$ the sum of the first
+two reciprocals is $2/(4-x)$. For $c=g-1>0$ the odd powers of $s$
+cancel. The coefficient of $x^{2c+j}$ is \eqref{p9-eq:coeff} for
+$h=2g-1+j$, and the constant term in the bracket vanishes. Together
+with \eqref{p9-eq:transport} this proves Theorem~\ref{p9-thm:local}.
+
+\subsubsection{Passage to the compact invariants}
+Choose a generic compatible almost complex structure for which all
+simple curves of index zero are embedded, regular, super-rigid and
+pairwise disjoint \cite[\S1]{bai}. The image of a connected stable
+map in class $2A$ lies on a single such support. Indeed, two distinct
+effective images cannot meet, and contracted components can only join
+them at a common image point. If the map has degree $m$ on its support
+of class $B$, then $mB=2A$. Primitivity and the torsion-free lattice
+give $m=1$, $B=2A$, or $m=2$, $B=A$. The same argument in class $A$
+gives only degree one.
+
+Through any fixed source genus there are finitely many contributing
+simple supports, by compactness at fixed genus and super-rigidity
+\cite[\S\S3,5]{bai}. The degree-one series on a support of genus $g$
+is $\epsilon_C x^{g-1}$, by the degree-one calculation in
+Theorem~\ref{p9-thm:wall}. Hence $e^{\rm IP}_{A,g}$ is the sum of signs
+of genus-$g$ supports of class $A$. In class $2A$ first subtract their
+degree-two elementary terms $\epsilon_C B_{2,g}^{\rm bal}$. By
+\eqref{p9-eq:local}, the remaining coefficient of $x^{h-1}$ on each such
+support is $\epsilon_C(w_{2,h}(D_C)+a_{g,h})$. A support in $2A$
+contributes its degree-one determinant sign in its own genus. The
+latter signs and the terms $\epsilon_C w_{2,h}$ give exactly
+\cite[(1.5)]{bai}. The remaining terms sum to \eqref{p9-eq:global},
+proving Theorem~\ref{p9-thm:global}.
+\subsection{A compact threefold with unbounded discrepancy}\label{p9-sec:example}
+
+Let $X_9$ be a general nondegenerate anticanonical hypersurface in the smooth
+projective toric fourfold with rays and maximal cones
+\cite[(23)--(24)]{WueCounter}. We equip it with a K\"ahler form.
+It has trivial canonical bundle and torsion-free $H_2(X_9;\ZZ)$
+\cite[\S4.1]{WueCounter}. The divisor corresponding to ray $8$ cuts out
+a surface $T\simeq\mathbb F_1$. Write $s$ for its negative section, $f$ for a
+ruling fiber and $i:T\hookrightarrow X_9$ for the inclusion. For $d\ge3$ let
+$D_d=ds+(d+1)f$ and $A_d=i_*D_d$. Set
+\begin{equation}\label{p9-eq:compact-classes}
+ G=\frac{d(d-1)}2,\qquad N=\frac{(d+1)(d+4)}2 .
+\end{equation}
+
+\begin{corollary}\label{p9-cor:example}
+The class $A_d$ is primitive, and
+\[
+ e^{\rm IP}_{2A_d,3G-2}(X_9)-\operatorname{Gr}^{\rm BS}_{2A_d,3G-2}(X_9)
+     =(-1)^{d+1}(d+1)(d+4).
+\]
+In particular, the two counts differ by $28$ in class $2i_*(3s+4f)$
+and genus seven. Their differences are unbounded on $X_9$.
+\end{corollary}
+
+\subsubsection{The surface classes}
+The semiample divisor $H_4$ of \cite[\S4.2]{WueCounter} contracts curves
+only in $T$, in a second surface $E\simeq\operatorname{Bl}_{p_1,p_2}\PP^2$,
+or in two rational curves $C_1,C_2$. On $E$ the effective cone is generated
+by its exceptional curves $e_1,e_2$ and the strict transform of the line
+through the two points, which equals $s=E\cap T$. The six integral nef
+divisors of \cite[Lemma~4.1 and (30)]{WueCounter} have degrees
+\[
+\begin{array}{c|rrrrrr}
+ & H_1&H_2&H_3&H_4&H_5&H_6\\ \hline
+ s   &0&1&0&0&0&0\\
+ f   &0&0&1&0&0&0\\
+ e_1 &1&0&0&0&1&1\\
+ e_2 &0&0&0&0&0&1\\
+ C_1 &0&0&0&0&1&0\\
+ C_2 &1&0&0&0&0&0
+\end{array}
+ .
+\]
+In particular $H_3-H_2$ pairs to one with $A_d$, and $H_2,H_3$
+distinguish all classes on $T$. Each effective summand of $A_d$ has zero
+$H_1,H_4,H_5,H_6$ degrees. These conditions exclude $C_1,C_2$ and force
+any component on $E$ to have class proportional to its negative curve $s$.
+Such a component equals $s$. Thus every summand is represented entirely
+on $T$. This is the argument of \cite[Proposition~4.2]{WueCounter}
+for arbitrary $d$.
+
+\subsubsection{The primitive coefficient}
+Adjunction gives $N_{T/X_9}=K_T$. To compute the connected invariants on
+these classes, we deform $T\subset X_9$ to $Z=\operatorname{Tot}(K_T)$. Blowing up $T\times 0$ in $X_9\times\mathbb A^1$ and removing
+the strict transform of the central fiber gives a smooth family $V$ with
+fibers $X_9$ away from zero and $Z$ over zero. It contains the Cartier
+divisor $\mathcal T=T\times\mathbb A^1$ and has a natural morphism to $X_9$.
+Use this morphism to label curve classes. In $Z$ every complete irreducible
+curve lies in $T$. Its projection must be nonconstant since the fibers are
+affine lines, and the tautological fiber coordinate on its normalization
+is a section of a line bundle of negative degree.
+
+For every positive class on this face, stable maps from connected domains to
+the fibers of $V$ factor through $\mathcal T$ in families. Indeed on a
+geometric fiber the image lies in $T$ by the preceding support calculation.
+The pullback of $\mathcal O_V(\mathcal T)$ then has negative degree on
+each nonconstant component and is trivial on each contracted component.
+Matching at the nodes makes its space of sections zero. For a family of
+nodal domains the derived direct image of this line bundle is locally a
+two-term complex of vector bundles in degrees zero and one. Fiberwise
+injectivity of its differential implies that its degree-zero cohomology
+sheaf vanishes after every base change. The defining section of $\mathcal T$
+therefore pulls back to zero, giving the asserted factorization also over
+nonreduced bases. The relative stable-map stack in the specified class
+and genus is consequently the product of a proper stable-map stack of $T$
+with $\mathbb A^1$. Deformation invariance of its relative virtual class
+identifies the connected invariants of $X_9$ and $Z$ in every genus.
+
+Write $D=D_d$. On $T=\operatorname{Bl}_p\PP^2$ it is the class of a plane
+curve of degree $d+1$ through $p$ with one imposed simple base point.
+Thus $p_a(D)=G$ and $h^0(T,\mathcal O_T(D))=N$. We claim that the least
+power of $z$ in the stable-pair partition function of $Z$ in class $D$ is
+$z^{1-G}$, with coefficient $(-1)^{N-1}N$, and that this term survives
+in the logarithm. The case $d=3$ of the following moduli calculation appears
+in \cite[Propositions~5.2--5.3]{WueCounter}.
+
+For any splitting $D=\sum_j D_j$ into at least two nonzero effective classes
+on $T$, write $D_j=a_js+b_jf$ with $a_j,b_j\ge0$. From
+$s^2=-1$, $sf=1$ and $f^2=0$ we get
+\[
+ \sum_j\chi(\mathcal O_{D_j})-\chi(\mathcal O_D)
+  =\sum_{j<k}D_jD_k
+  =\sum_j b_j(d-a_j)-\sum_{j<k}a_ja_k>0.
+\]
+Indeed, let $m=\max a_j$ and $r=d-m$. If $r>0$, the positive sum is
+at least $(d+1)r$, and the sum being subtracted is at most
+$mr+r(r-1)/2$. The difference is at least $r(r+3)/2$.
+If $r=0$, the remaining terms are positive multiples of $f$, giving a
+difference of at least $d$.
+
+The image of a stable pair is the structure sheaf of a pure curve $B$,
+and its cokernel has finite length. Filter $\mathcal O_B$ by powers of
+the ideal of $T$. Its $j$th quotient is
+$K_T^{-j}\otimes(\mathcal O_T/J_j)$ for some ideal $J_j$, since the
+conormal bundle is $K_T^{-1}$. Write
+$J_j^{\vee\vee}=\mathcal O_T(-D_j)$ and
+$\ell_j=\operatorname{length}(J_j^{\vee\vee}/J_j)$. Then
+\[
+ \chi(\mathcal O_B)=
+ \sum_j\bigl(\chi(\mathcal O_{D_j})-jK_TD_j+\ell_j\bigr),
+ \qquad \sum_j[D_j]=[B].
+\]
+The correction terms are nonnegative because $-K_T$ is ample. If there
+are several divisorial layers, the strict inequality above gives
+$\chi(\mathcal O_B)>1-G$ in class $D$. If there is only one, it is the
+zeroth layer by Nakayama's lemma at the generic points. The ideal of
+$T$ then generates a subsheaf of $\mathcal O_B$ of finite support, which
+vanishes by purity. Hence equality occurs precisely for quotient pairs
+$\mathcal O_Z\to\mathcal O_B$ with $B\in|D|$. For a product of pairs
+in two or more nonzero classes summing to $D$, their combined filtrations
+have at least two nonzero divisorial layers. The same strict inequality
+shows that all product terms in the logarithm occur above $z^{1-G}$.
+
+The quotient pairs give a closed $\PP^{N-1}=|D|$ in the minimum
+pair space. They exhaust its closed points, and surjectivity of their
+sections persists in every infinitesimal deformation by Nakayama's lemma.
+For every $B\in|D|$, including nonreduced $B$, the normal sequence is
+\[
+ 0\longrightarrow\mathcal O_B(D)\longrightarrow N_{B/Z}
+   \longrightarrow K_T|_B\longrightarrow0.
+\]
+Now $H^0(K_T)=0$ and $H^1(K_T-D)=H^1(\mathcal O_T(D))^*=0$ by Kodaira
+vanishing, since $D-K_T=(d+2)s+(d+4)f$ is ample.
+Thus $H^0(K_T|_B)=0$, while $h^0(\mathcal O_B(D))=N-1$ by rationality
+of $T$. The Hilbert tangent dimension is $N-1$ at every closed point.
+It equals the local dimension, so the pair space is regular and the closed
+immersion is an isomorphism. Its symmetric obstruction theory has virtual
+degree $(-1)^{N-1}\chi_{\rm top}(\PP^{N-1})=(-1)^{N-1}N$
+\cite[\S1]{pt}.
+
+Finally, apply the toric Gromov--Witten/stable-pairs correspondence
+\cite[Theorem~1]{pp} to $Z$, with empty insertions and $-z=e^{iu}$.
+The Calabi--Yau condition gives prefactor one. The stable-map and
+stable-pair spaces in these classes are proper. For pairs, compactify $Z$
+to the projective line bundle over $T$. In a flat family over a valuation
+ring the support is the closure of the generic support, so a pair
+supported set-theoretically on the zero section specializes there as well.
+Thus the open space of pairs supported in $Z$ is proper, and the
+equivariant integrals give ordinary virtual degrees. The disconnected
+Gromov--Witten series in this correspondence omits degree-zero connected
+components, so taking its logarithm gives the connected series.
+The equality applies to every effective summand on the face.
+
+On the projective fiber, the algebraic and symplectic virtual degrees
+agree \cite{siebertgw}. By primitivity, the coefficient of class $A_d$ in
+the connected elementary expansion is the finite sum of degree-one terms
+\cite[Proposition~3.3 and Theorem~8.1]{ip}, \cite{diw}. It follows that
+\[
+ [Q^D]\log Z_{\rm PT}^{Z}(z,Q)
+     =\sum_{g\ge0} e^{\rm IP}_{A_d,g}(X_9)
+           \left(\frac{(1+z)^2}{z}\right)^{g-1}.
+\]
+Both sides are rational in $z$. The correspondence identifies their expansions
+at $-z=e^{iu}$, since $(2\sin(u/2))^2=(1+z)^2/z$, and therefore also
+their Laurent expansions at zero. Each summand of genus $g$ has lowest
+power $z^{1-g}$ with leading factor one. The minimum computed above gives
+\begin{equation}\label{p9-eq:compact-primitive}
+ e^{\rm IP}_{A_d,G}(X_9)=(-1)^{N-1}N,\qquad
+ e^{\rm IP}_{A_d,g}(X_9)=0\quad(g>G).
+\end{equation}
+
+\begin{proof}[Proof of Corollary~\ref{p9-cor:example}]
+In \eqref{p9-eq:global} a row with base genus $g<G$ vanishes in
+genus $3G-2$ by \eqref{p9-eq:coeff}. All rows with $g>G$ vanish by
+\eqref{p9-eq:compact-primitive}. The remaining coefficient in
+\eqref{p9-eq:coeff} is $a_{G,3G-2}=-2(-1)^{G-1}$. Multiplication by
+$(-1)^{N-1}N$ gives the formula, since $G+N-2=d(d+2)$.
+For $d=3$ the minimum pair space is $\PP^{13}$ and its virtual degree
+is $-14$, giving $(-2)(-14)=28$. For $d=15$ the difference is $304$
+in genus $313$. As $d$ ranges through $12\ell+3$ these positive differences
+tend to infinity.
+\end{proof}

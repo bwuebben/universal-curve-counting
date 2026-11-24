@@ -1,0 +1,248 @@
+\section{Relative degeneration and the sign of a handle}\label{app:spinproof}
+
+We prove Theorem~\ref{thm:spin}. Deformation of the metric and the
+normal rescaling theorem in \cite[Proposition~15.4 and Appendices~D--E]{WueUnramified} identify the
+fixed-target integral for any of the stated germs with its value at a
+harmonic linear representative. At each fixed degree and source genus
+this continuation takes place over the compact stable-map stack. The
+vertical area identity on positive normalizations, followed by
+matching on contracted components, keeps the normal family injective.
+
+\subsection{The orientable normal bundle}
+In the splitting \(E=L_+\oplus L_-\), the two degrees are
+\(b_0+s\) and \(b_0-s\). Choose an orthogonal product metric.
+Let \(\pi\) and \(f\) denote the universal source and universal map
+over \(\overline{\mathcal M}_k(C,m)\), and put \(W_\pm=-R\pi_*f^*L_\pm\),
+\(n=k-1-mb_0\). The antilinear term of \(D\) exchanges the lines;
+the family from Dolbeault to the positive operator is complex-linear
+in the complex structure \((i,-i)\). At its positive end the kernel is
+zero. At its Dolbeault end the orientation change on the second
+summand is \((-1)^{n+ms}\), since this is the parity of its
+Dolbeault index. Stabilization by forms supported away from the nodes
+continues the family index, including the complex equations at the
+nodes, across jumps in the individual cohomology bundles. Thus
+\begin{equation}\label{eq:oriented}
+ e(V_D)=(-1)^{n+ms}c_{2n}(W_++\overline W_-).
+\end{equation}
+The right side is the cohomological degree \(2n\) term (in complex
+degrees) of the equivariant Euler product for weights \(+1,-1\).
+All other terms integrate to zero. Bryan--Pandharipande's
+antidiagonal formula \cite[Corollary~7.2]{bp08} now gives the first
+line of the theorem. Exchanging the weight convention transposes all
+diagrams and preserves the sum.
+
+\subsection{Two smoothings of the spin pair}
+Pinch a nonseparating circle on \(C\); denote the normalization of
+the central target by \(B\) and its ordered inverse images of the
+node by \(p,q\). For each \(\epsilon\) we need one smoothing of a
+pair of spins whose ratio has nontrivial holonomy around the loop
+of the dual graph. The unmarked component classification in
+\cite[Appendix~E]{WueUnramified} then applies to every pair of that sign.
+For \(\epsilon=1\) use the exceptional spin at an index-two node.
+The two spin structures restrict to the same theta characteristic
+on \(B\) and differ by a sign in sewing at \(q\). Over an exceptional
+rational component the spin has degree one, so its sections interpolate
+the two end values uniquely. Both extensions thus have the same
+parity. For \(\epsilon=-1\), take the two locally free extensions of
+\(A^2=K_B(p+q)\) at an ordinary node. Riemann--Roch gives
+\(h^0(A)-h^0(A(-p-q))=1\); the line of end values is isotropic for
+the sum of squared residues, by the residue theorem. Hence exactly one
+of the two isotropic clutch lines admits the extra section. The two
+parities differ. The roots smooth after a local base change, by
+smoothness of the relative Picard space at a line and étaleness of
+squaring; parity is preserved in spin smoothing \cite[\S6]{cornalba}. In both cases their
+ratio has trivial inertia and its central double torsor is connected
+by the nontrivial clutch. This persists under smoothing. See
+Calculation~D1 of \cite{WueSupplement} for the square frames.
+Use \(d=2\) for the exceptional spin and \(d=1\) for the locally free
+spin.
+
+After \(\delta=z^2\), resolve the local smoothing \(UV=\delta\)
+before taking the stabilizer quotient. The two central components
+are the \(d\)-th root of \(B\) at \(p,q\) and the two-ended
+rational component \([\PP^1/\mu_d]\) with its rotation action.
+Both have coarse covering degree \(m\), by intersection with the
+exceptional component in the surface. We use the simultaneous
+relative expansions at \(p,q\) of \cite[\S\S4.4--4.7]{af}.
+In a frame whose square is the logarithmic differential, take the
+antilinear term proportional to \(U\,d\bar U-V\,d\bar V\) on the neck.
+Its coefficient relative to the conjugate logarithmic differential is
+\(|U|^2+|V|^2\) on a smooth fiber and can be joined by positive
+interpolation to the metric off the neck. Pullback by contraction
+makes it zero on the inserted components.
+
+Stokes' identity on a main normalization gives nonnegative interior
+energy and opposite end residues weighted by the coarse contact
+orders; orbifold integration cancels the uniformizer index. The
+square of a holomorphic solution on an inserted component is
+constant. Conservation of contact order thus cancels the end
+residues on the glued source. The solution vanishes on each
+nonconstant main component, then on all components by matching.
+In particular contracted subcurves of arbitrarily high genus do not
+create a kernel. Stabilization with forms off the nodes gives an
+oriented cokernel bundle on the plumbing charts. The antilinear term
+is the pullback of a bounded ambient coefficient on each half-neck,
+so the nodal estimates of \cite[Appendix~B]{bai} apply with this term.
+The family Euler product restricts under virtual Gysin to the paired
+Euler insertion on the central splitting. The expanded family and
+virtual restriction are described in
+Calculations~D6--D7 of \cite{WueSupplement}.
+
+\subsection{Eliminating the two-ended component}
+On a connected exceptional relative source of arithmetic genus \(j\)
+let \(S\) denote the pulled-back sign line. Its space of constants
+is a line or zero according as its double torsor is trivial or
+connected; for \(d=1\) it is always a line. These alternatives are
+locally constant on the relative stack. The normalization sequence
+gives the two real cokernels a common complex quotient
+\(A=R^1\pi_*S\). Mumford's Hodge relation on the coarse double torsor,
+divided by the same relation on its invariant summand, gives
+\(c(A)c(A^\vee)=1\). In positive rank \(c_{\rm top}(A)^2=0\), so the
+paired insertion vanishes. In rank zero eliminate the surjective
+exceptional Dolbeault equations. The remaining equations involve the
+main operator, its evaluations at the ends and one constant for each
+trivial-torsor vertex. Pass to the finite étale cover framing the
+invariant end lines by square-compatible frames. The residual choices
+are finite signs, and on every such sector the insertion is pulled
+back from the main relative space. Finite transfer thus reduces the
+exceptional integral to its virtual class paired against \(1\).
+
+The log tangent of the two-ended target is trivial. A connected
+positive-degree exceptional source with \(a\) ends meets both colors,
+so its virtual dimension \(2j-2+a\) is nonnegative. Integration against
+\(1\) vanishes in positive dimension. Only genus zero with two ends
+survives. Stability and Riemann--Hurwitz then leave the power map
+of degree \(k\), branched only at the two ends; unbranched rubber
+levels give the same relative map. The two profiles agree, say
+\(\mu=(k_1,\ldots,k_r)\). The following multiplicity allows repeated
+parts as well as even contacts.
+\begin{lemma}\label{lem:twoends}
+Suppose the surviving maps over the two-ended component are power
+cylinders with coarse contact profile \(\mu=(k_i)\) and the insertion
+is pulled back from the main relative factor. For one prescribed
+matching of the separately labelled ends the weight is \(\prod_i k_i\).
+Against the main integral with both lists unlabelled it is
+\(z_\mu=|\operatorname{Aut}\mu|\prod_i k_i\). This holds for target
+index \(d=1\) and \(d=2\).
+\end{lemma}
+\begin{proof}
+At one flag of coarse order \(k\) put \(a=(d,k)\), \(f=d/a\)
+and \(c=k/a\). The primitive representable source index is \(f\);
+in a uniformizer the contact has order \(c\). The inverse-band
+matching diagonal of the rigidified evaluation sector
+\(B(\mu_d/\mu_f)\) has degree \(a\): its fiber is the torsor of
+isomorphisms between two given evaluations. Choose one auxiliary
+twist \(R\) divisible by every \(c\). The target index becomes
+\(dR\), the source index \(dR/k\), and the map of rigidified
+sectors to the primitive sector is a \(\mu_c\)-gerbe. Comparison
+of the diagonals contributes \(c\) per flag. The single target
+gluing gerbe of degree \(1/R\) and the central multiplicity \(R\)
+cancel on the common expansion base. Thus the flag factor is
+\(ac=k\) \cite[\S\S5.5--5.10, Lemma~5.15 and Proposition~5.18]{af}.
+
+With \(N=dR\), the cylinder is the index-\(k\) rotation quotient
+\([{\PP}^1/\mu_{N/k}]\to[{\PP}^1/\mu_N]\). The simply connected
+atlas gives a unique connected cover for this subgroup. Its log
+differential is an isomorphism, and its deck group has order \(k\).
+The two matching factors and its virtual degree give \(k^2/k=k\).
+In particular for \(d=2\) and \(k\) even the two relative spin
+clutches each carry weight \(k/2\): the deck action changes both
+primitive signs together, and the two resulting orbits have
+stabilizer of order \(k/2\). The pullback assumption gives the
+same insertion on these two orbits.
+
+Labelling equal cylinders introduces the divisor
+\(A=|\operatorname{Aut}\mu|\) once, simultaneously on both ends.
+The unlabelled main integral divides the separately labelled integral
+by \(A^2\). Their ratio gives \(A\prod_i k_i\), as asserted.
+\end{proof}
+
+\subsection{The orientation at a contact}
+In the primitive chart the sign line has an invariant matching fiber
+at order \(k_i\) exactly when \(d\mid k_i\). Write \(I=\{i:d\mid k_i\}\).
+On a surviving cylinder in \(I\), elimination of its constant at the
+first end leaves the complex equation \(q_i-\sigma_i p_i=0\), where
+\(p_i,q_i\) are the end values in square frames and \(\sigma_i=\pm1\).
+Changing the target clutch negates each \(\sigma_i\).
+On the cut main source Stokes' boundary inequality, after a common
+phase rotation of the frames, is
+\[
+ \sum_{i\in I} k_i\operatorname{Re}(p_i^2-q_i^2)\ge0
+\]
+with equality only for the zero solution of the main equations.
+For \(0\le u\le1\) impose instead
+\[
+ \operatorname{Re}p_i-u\sigma_i\operatorname{Re}q_i=0,\qquad
+ \operatorname{Im}q_i-u\sigma_i\operatorname{Im}p_i=0 .
+\]
+Each term in the boundary sum then equals
+\(k_i(u^2-1)((\operatorname{Re}q_i)^2+(\operatorname{Im}p_i)^2)\le0\).
+The augmented operators remain injective throughout. Their endpoint
+at \(u=0\) is independent of the clutch. At \(u=1\) the transformation
+from the original complex row to the new two real rows has
+determinant \(-\sigma_i\). Thus each changed invariant matching
+fiber reverses the orientation once. For \(d=2\) the number of even
+parts has parity \(m-r\); for \(d=1\) all \(r\) parts contribute.
+The mixed insertion equals the repeated square multiplied by
+\begin{equation}\label{eq:clutch}
+ (-1)^{|I|}=\epsilon^m(-1)^{m-r}.
+\end{equation}
+Before this comparison one must keep the two spin matchings at an
+even contact separate. After it the sign depends only on \(\mu\),
+so finite transfer preserves the formula.
+
+\subsection{The repeated square and the trace}
+Let \(H\) denote the spin pulled back to the closed source after the
+cylinders have been attached, and \(W_H=-R\pi_*H\). The square of
+the Euler class of an oriented real \(2n\)-plane bundle is its top
+Pontryagin class. Continuation to Dolbeault gives
+\[
+ e(V_H)^2=(-1)^n c_{2n}(W_H+\overline W_H).
+\]
+We compare this square with an ordinary index on the coarse source.
+Choose a locally free spin \(L\) on the ordinary nodal target. Pull
+it back to the twisted target. Its square agrees with that of \(H\)
+in logarithmic frames, so \(F'=HL^{-1}\) on the target is a sign
+line. There \([H]-[L]=[F']-1\) in the perfect \(K\)-group: express
+\(L\) by divisors off the node and tensor the resulting point
+sheaves by \(F'\). Pull this identity back along the universal map
+before pushing it down to the parameter space. The zeroth
+cohomologies of the sign and trivial lines have finite monodromy;
+the positive even Chern characters of their first cohomologies
+vanish by the Hodge relation on the coarse double torsor and its
+invariant summand. Conjugation cancels the odd Chern characters.
+Consequently
+\(c_{2n}(W_H+\overline W_H)=c_{2n}(W_L+\overline W_L)\) rationally,
+including on the twisted sectors. On normalizing the \(r\) power
+cylinders the two complex rows at each cylinder cancel its single
+constant, leaving \(W_L=W_B+\mathcal O^r\) after framing. Here \(W_B\)
+is the ordinary relative index on the main coarse source. It
+descends with the relative virtual class by
+\cite[Theorem~2.1]{acw} and \cite[Theorem~1.1.2]{amw}.
+
+For equivariant weight \(s_0\), the inverse antidiagonal pairing on
+a profile of length \(r\) is \(z_\mu(-s_0^2)^r\);
+the required degree of the equivariant Euler product of \(W_B\)
+contributes \((-1)^{n-r}s_0^{-2r}c_{2n}(W_B+\overline W_B)\).
+Their product is \(z_\mu\) times the repeated square. The factor
+\(z_\mu\) agrees with Lemma~\ref{lem:twoends} on unlabelled relative
+maps. This establishes the normalization and the orientation for the
+full contraction, including both clutch types. The arithmetic genus
+of the disconnected cut source, defined by \(1-\chi(\mathcal O)\),
+is \(k-r\). The relative shift contributes \(2r\) to its genus
+exponent, restoring \(2k-2\).
+
+Let \(A_m\) be the balanced two-point operator of genus \(g-1\) and
+levels \((b_0,b_0)\) in the antidiagonal relative theory. The
+degree-\(m\) coefficient of \(Z_D\) is now
+\(\epsilon^m\operatorname{Tr}(\Omega A_m)\), where
+\(\Omega e_\mu=(-1)^{m-\ell(\mu)}e_\mu\) in the relative basis
+indexed by contact profiles. In the idempotent indexed by
+\(\lambda\), the coefficient of \(e_\mu\) is proportional to
+\(\dim(\lambda)\chi^\lambda(\mu)\), with the remaining factor
+depending only on \(m,\mu,s_0\). Tensoring the character with sign
+therefore gives \(\Omega v_\lambda=v_{\lambda^\top}\), with unit
+coefficient. The eigenvalue of \(A_m\) is
+\(\prod_{u\in\lambda}X_{h(u)}^{b_0}\) by the handle and level
+eigenvalues in \cite[\S7]{bp08}. Taking the trace proves the second
+line of Theorem~\ref{thm:spin}.

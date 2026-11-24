@@ -1,0 +1,114 @@
+\section{The two estimates in the smoothing at a cubic branch}\label{app:joined-estimates}
+We use the parameters $h,(q_i)$, the nodal derivative $J$, and its
+remaining real adjoint $\Lambda$ from \S\ref{p14-sec:joins}.
+The different orders of the matching and adjoint equations determine
+the degree at a join. Here we prove \eqref{p14-eq:fullestimate}
+and \eqref{p14-eq:rowestimate} for the stabilized equation.
+
+Choose thick stabilizing forms representing $P_I$ away from the
+moving disks and fix a real normalization of the height, equal to one
+on $s$. Solving the stabilized equation and taking its forcing
+coordinate gives a continuous column $F(h,(q_i))$ with values in
+$P_I$. The model \eqref{p14-eq:cubicpolynomial} permits computation in
+a fixed vector bundle over $C$. Values at the three roots identify
+its sections with sections of the pullback away from the branches.
+The conjugates $\bar z,\bar z^2$ are replaced by their polynomial
+interpolants of degree at most two. At the central fiber this imposes
+the ordinary matching of the two normalizations at the node. For
+$2<p_0<4$ these matrices are continuous as $L^{p_0}$ multipliers
+in the parameters, by the divided-difference bound
+$O(1+|w+p^2/3|^{-1/2})$. Bounded sections on the source extend over
+the branches. Interpolation identifies the central stabilized kernel
+by even and odd decomposition on the double sheet and matching
+to the third sheet. At the smooth branch factors the same argument
+applies, and the indices agree by the complex-linear finite projection formula.
+Forms on thick unramified disks span both cokernels by adjoint
+continuation and the matching sequence. Choose a minimal common
+supplement. Both stabilized problems have a line of solutions nearby
+by continuity of the pullback stabilization \cite[Appendix~B]{bai}.
+Evaluation identifies the lines and their forcing coordinates.
+The details of this comparison for the algebra \eqref{p14-eq:cubicpolynomial} are in \S\ref{p10-sec:nodes}.
+
+Set $Q_i=q_i\log(1/|q_i|)$, with $Q_i=0$ when $q_i=0$.
+First, in the entire supplement one has
+\begin{equation}\label{p14-eq:fullestimate}
+ F=Jh+2\iota\big((\overline Q_i B_i v_i)_{i\in I}\big)
+                     +o(|h|+\max_i|Q_i|).
+\end{equation}
+Here is the coefficient of the logarithm. On a single disk put
+$\ell=\max(|p|,|q|^{1/3})$. Outside $|w|\le A\ell^2$, take
+$r^2=w$ and expand the roots in $p/r,q/r^3$. The quadratic
+coefficient of the interpolant of $\bar z$ has linear $q$-term
+\[
+  -\frac32\left(\frac{\bar q}{|w|^2}
+                   -\frac{\bar r}{r}\frac{q}{w^2}\right).
+\]
+Only its first summand has nonzero angular mean. For a fixed
+H\"older test the integrated logarithmic term is
+$-2\pi\bar Q\delta_0$ in the $z^2$ component. Indeed the inner
+integral is $O(\ell^3)$, the outer quadratic error is
+$O(|p|^2+|pq|/\ell+|q|^2/\ell^3)$, and if $|q|<|p|^3$ the
+logarithmic terms are already $o(|p|)$. All other entries have
+integrable $q$-derivatives. The full matrix difference has $L^1$
+norm $O(|p|+|Q|)$. Continuous convergence of the normalized
+stabilized solution in $W^{1,p_0}\subset C^0$ therefore permits
+using its central value in this pairing to first order. The section
+$\chi z^2 S(w)a/w$, with $S(0)=1$ a local real frame of solutions,
+has ordinary forcing of class $\iota(a)$ and point forcing
+$\pi a z^2\delta_0$. Their sum pairs to zero with a central
+adjoint. Apply this to the generator with derivative $v_i$.
+The disks are disjoint, which proves \eqref{p14-eq:fullestimate}.
+
+The missing row requires a smaller remainder. Put
+$R_0=\max_i|q_i|$. On each cone $|h|\le C R_0\log(1/R_0)$ on
+which all $|q_i|$ are comparable and positive, one has
+\begin{equation}\label{p14-eq:rowestimate}
+                       \Lambda F=\sum_{i\in I} H_i(q_i)+o(R_0).
+\end{equation}
+We give the estimate on one disk. The half-trace of the forcing
+$a_0+a_1z+a_2z^2$ is $a_0+w a_2$. Write $\varepsilon=|q|^{1/3}$,
+$R=|w|^{1/2}$. On $|w|\le A\varepsilon^2$ the roots are
+$O(\varepsilon)$ and their diameter is bounded below by
+$c\varepsilon$: their mean is $O(p)=o(\varepsilon)$ and their
+product is $-q$. The constant and quadratic coefficients of the
+interpolant of $\bar z$ are $O(\varepsilon)$ and $O(1/\varepsilon)$.
+The weighted inner integral is therefore $O(\varepsilon^5)$.
+The central odd height is $z u_1(w)$ with $u_1(0)=v_i$ and
+$u_1(w)-v_i=O(|w|)$, by oddness and the pulled-back equation.
+On the exterior the weighted quadratic error from the three roots is
+$O(R(|p|/R+|q|/R^3)^2)$. Integration against $O(R^3\,dR)$ gives
+$O(|p|^2+|pq|+|q|^2/\varepsilon)=o(|q|)$. The linear terms are bounded
+by $C(|p|+|q|/|w|)$; restoring their inner integrals costs $o(|q|)$.
+Smooth center and time changes of the coefficients and collars have
+Taylor remainder \(O(|h|^2)\). Their products with the varying
+interpolation matrix have integral \(O(|h|(|h|+R_0\log(1/R_0)))\)
+by the full matrix bound. Both are \(o(R_0)\) on the comparable cone. Other simple branch centers may be fixed by
+translation on their disjoint source disks. Without translation the
+angular multiplier on such a disk has first and second derivative
+$O(|w|^{-1})$ and $O(|w|^{-2})$, giving integrated Taylor error
+$O(|h|^2(1+|\log|h||))$.
+
+For the varying generator, the worst unweighted matrix change in
+$L^{p_0}$ on a joining disk is bounded by
+\[
+ C\big(\varepsilon^{4/p_0-1}
+       +|p|\varepsilon^{4/p_0-2}\big).
+\]
+Use the root diameter on the inner disk and the outer bound
+$CR^{-1}(|p|/R+|q|/R^3)$ elsewhere. Thus the bounded normalized
+stabilized inverse gives $O(R_0^\delta)$ convergence of the generator
+in $W^{1,p_0}$ on the comparable cone, for some $\delta>0$.
+The product with the $L^1$ multiplier variation
+$O(|h|+R_0\log(1/R_0))$ is $o(R_0)$ in the adjoint pairing; the
+principal-part variation on the thick collars satisfies the same
+bound. This justifies differentiation of the frozen height in
+the half-trace pairing. At fixed regular target point the two
+sextic roots move by $-q/(2w)$ to first order. Their averaged
+variation has pole $-qv_i/(2w)$ at $y_i$ on the quotient cubic.
+Away from that point the differentiated forcing is the cubic
+operator applied to this sheet variation, including its collar cutoff.
+Green's formula against the adjoint gives minus $\pi$ times
+the real pairing with the residue, since
+$\partial_{\bar w}(1/w)=\pi\delta_0$. The bounded remainder has
+zero limiting boundary pairing. The $h$-derivative pairs to zero
+by $\Lambda J=0$. Adding the integrals proves \eqref{p14-eq:rowestimate}.

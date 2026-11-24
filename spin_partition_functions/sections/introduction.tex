@@ -1,0 +1,171 @@
+\section{The local contribution of a curve}\label{sec:partition}
+
+How much does the normal operator of an embedded curve tell us about
+the contribution of its multiple covers? Even if every cover is
+isolated in the normal directions, counting the unramified covers with
+their determinant signs gives only the first possible source genus in
+each degree. Higher genera allow branching, nodes and contracted
+components. We compute their combined contribution for a curve with
+positive maximal flat symplectic normal holonomy. Already in degree
+two, changing one of two identical spin structures can make the entire
+disconnected contribution vanish. The reason appears when the target
+is cut at a nonseparating node. Reversing one spin gluing tensors the
+boundary character with the sign representation. It exchanges a Young
+diagram with its transpose, so only self-conjugate diagrams contribute
+when the two ends are glued back together.
+
+Let \(C\) be a smooth projective complex curve of genus \(g\ge2\), and
+let \(\rho:\pi_1(C)\to{\rm Sp}(4,\RR)\) be the holonomy of a flat
+symplectic four-plane bundle. We use the convention that \(\rho\) is
+\emph{positive maximal} if its compatible complex rank-two bundle
+has degree \(2g-2\). In particular the total space has first Chern
+number zero on its zero section.
+The harmonic reduction gives a holomorphic bundle \(E\) and a
+nondegenerate symmetric pairing \(\gamma:E\otimes E\to K_C\).
+Choose a theta characteristic \(a\), that is, a holomorphic square
+root of \(K_C\). Untwisting the pairing gives the complex orthogonal
+bundle \(F=E\otimes a^{-1}\), the underlying bundle of the Cayley
+correspondence of Bradlow, Garc\'ia-Prada and Gothen \cite{bgg}. Its first Stiefel--Whitney class \(w_1(F)\) measures
+whether its transition functions can be chosen in \({\rm SO}(2,\CC)\).
+In that case its two isotropic lines give \(F=M\oplus M^{-1}\);
+write \(s=|\deg M|\). For \(w_1(F)\ne0\) monodromy interchanges the
+isotropic directions, so an antidiagonal action scaling the two
+lines separately need not exist.
+
+A Hermitian metric turns the symmetric pairing into an antilinear map
+\(R_\gamma:E\to\Lambda^{0,1}C\otimes E\) by taking the metric dual and
+conjugating the form factor. The positive normal operator is
+\(D=\bar\partial_E+R_\gamma\). In a split model \(E=a_1\oplus a_2\)
+with \(a_i^2=K_C\), the pairing is the sum of the two square maps and a
+product metric gives two independent real spin operators. For
+\(w_1(F)\ne0\), every unmarked deformation type has a representative
+of this form with \(a_1\ne a_2\). Conversely, the direct sum of the two uniformizing spin lifts realizes each such pair. Write \(\epsilon\) for the
+determinant sign of \(D\) on \(C\), with orientation continued from the
+complex Dolbeault operator. On such a representative
+\(\epsilon=(-1)^{h^0(a_1)+h^0(a_2)}\).
+Isolation, reduction to these representatives and invariance under
+normal rescaling are proved in
+\cite[Lemma~14.1, Propositions~14.2 and~15.4, and Appendices~D--E]{WueUnramified}.
+
+Let \(\overline{\mathcal M}_k(C,m)\) be the proper stack of connected
+unmarked stable maps of arithmetic genus \(k\) and degree \(m>0\) to
+this fixed \(C\). Over a map \(f\), the antilinear term of \(D_f\)
+uses \(df\), and sections on the branches of a node must agree.
+The kernel is zero on every nonconstant component by the spin energy
+identity. Matching then kills the constants on every contracted
+subcurve. Its oriented real cokernel \(V_D\) consequently has rank
+\(4(k-1-m(g-1))\), the real virtual dimension of the stack.
+The ordinary connected local invariant and its disconnected series are
+\begin{equation}\label{eq:fixed-target}
+ L_{m,k}=\int_{[\overline{\mathcal M}_k(C,m)]^{\rm vir}}e(V_D),
+ \qquad
+ Z_D(Q,v)=\exp\!\left(\sum_{m\ge1,\,k}L_{m,k}Q^m v^{2k-2}\right).
+\end{equation}
+The sum starts at \(k=1+m(g-1)\) by Riemann--Hurwitz on the
+normalization. Every connected component counted by \(Z_D\) has
+positive degree. At the least genus each connected cover contributes its determinant sign divided by its deck order. Giving each cover the positive reciprocal of its deck order instead would recover the ordinary unramified Hurwitz number.
+
+Bryan and Pandharipande computed the residue invariant of a direct sum
+of two holomorphic line bundles with opposite torus weights
+\cite[Corollaries~7.2--7.3]{bp08}. Their answer is a sum over all
+partitions of the covering degree. Our first formula identifies the
+real normal Euler integral with their residue invariant in the
+orientable case. For a nonorientable \(F\), the sewing of the normal
+operators changes that sum.
+
+For a box \(u\) in a Young diagram \(\lambda\), write \(h(u)\) for
+one plus the number of boxes strictly to its right or below it in its
+row or column. Put \(a(\lambda)=\sum_{(i,j)\in\lambda}(j-i)\), the
+total content. With \(t=e^{iv}\), let \(X_j=2-t^j-t^{-j}\) and
+\(b_0=g-1\). Thus \(X_j=4\sin^2(jv/2)\).
+
+\begin{theorem}\label{thm:spin}
+For the positive maximal normal operator above, in every degree and
+source genus the disconnected fixed-target series is
+\[
+ Z_D(Q,v)=
+ \begin{cases}
+ \displaystyle\sum_{\lambda}(-1)^{s|\lambda|}Q^{|\lambda|}
+ t^{s a(\lambda)}\prod_{u\in\lambda}X_{h(u)}^{b_0},
+       &w_1(F)=0,\\[5pt]
+ \displaystyle\sum_{\lambda=\lambda^\top}(\epsilon Q)^{|\lambda|}
+ \prod_{u\in\lambda}X_{h(u)}^{b_0},&w_1(F)\ne0.
+ \end{cases}
+\]
+The empty diagram contributes one. The same series gives the local
+invariants of a marked horizontal section of a flat symplectic
+four-plane germ with this derivative holonomy and the split horizontal
+and compatible vertical almost-complex structures.
+\end{theorem}
+
+The obstruction to the second comparison occurs at the seam of a
+single handle. Pinch a nonseparating circle on \(C\), and choose the
+two spin structures to agree on the normalization and to differ in the
+identification of the two end fibers. For a relative map, the contact
+orders make a partition \(\mu\) of \(m\). The mixed spin Euler integral
+acquires the sign \(\epsilon^m(-1)^{m-\ell(\mu)}\) relative to the
+square for a repeated spin. The second factor is the sign of a
+permutation of cycle type \(\mu\). In the character basis, tensoring
+by sign interchanges a partition and its transpose. Gluing the handle
+takes a trace. A partition contributes to that trace exactly when
+it is fixed by transposition. The orientation calculation has to
+include even contacts and contracted components to give this sign
+on the full relative virtual class.
+
+Self-conjugate diagrams also occur in the local Real Gromov--Witten
+theory of Georgieva and Ionel \cite[Theorem~1.1 and Corollary~9.14]{gi}.
+Their domain and target carry antiholomorphic involutions and the
+maps intertwine them. For their canonically oriented Real
+Calabi--Yau series \(R_G(q,u)\) on a connected symmetric curve of
+genus \(G\), the formal expression in the second line is precisely
+\(R_{2g-1}((-1)^{g-1}\epsilon Q,iv)\). Indeed the crosscap sign in
+their formula is raised to the even power \(2g-2\), and each
+hyperbolic sine acquires a factor of \(i\). Our moduli in
+\eqref{eq:fixed-target} are ordinary complex stable maps; the
+orientation change comes from the \emph{normal spin matching} over
+one node. In particular, taking the logarithm here selects connected
+ordinary domains. In the Real theory the logarithm also counts pairs
+of components exchanged by the involution \cite[(2.16)]{gi}.
+
+For a concrete consequence, put \(x=X_1\). A balanced genus-\(j\)
+factor is the disconnected antidiagonal local series of a curve of
+genus \(j\) with both normal lines of degree \(j-1\); denote it
+by \(B_j(Q,v)\). Its logarithm starts with \(Qx^{j-1}\).
+The \emph{elementary multiplicities} \(n_{d,j}\) of a compactly
+realized isolated germ are the integers in the factorization
+\(Z_D=\prod_{d,j} B_j(Q^d,v)^{n_{d,j}}\), as justified by
+\cite[Proposition~3.1]{WueUnramified}. The balanced local factor is the elementary curve of Ionel and Parker under the comparison of \cite[\S3]{WueProduct}. These multiplicities record a genus of the elementary
+curve and differ from the integrals at a specified source genus.
+
+\begin{corollary}\label{cor:cubic}
+For two distinct spin structures of the same parity on a genus-two
+target, the connected degree-three series is
+\(28x^3/3-6x^4+x^5\). Its nonzero degree-three elementary
+multiplicities in increasing genus are
+\[
+ (n_{3,4},n_{3,5},n_{3,6},n_{3,7})=(-64,64,-20,2).
+\]
+\end{corollary}
+\begin{proof}
+There is no self-conjugate partition of two. In degree three there
+is just \((2,1)\), with hooks \(3,1,1\). Thus the logarithm gives
+\(X_3x^2+x^3/3\), with \(X_3=9x-6x^2+x^3\). The only proper
+divisor of three is one. Subtracting the degree-three term of the
+balanced genus-two logarithm,
+\(220x^3/3-70x^4+21x^5-2x^6\), gives the four stated integers.
+\end{proof}
+
+The degree-three answer is the same for any two distinct even
+spin structures on a given genus-two curve. It gives the integral
+of a product, summed over all stable maps. To recover the individual
+classes one must locate them on the moduli space. We identify the
+cokernel of a single spin operator with a real form of the residue
+space at the ramification points. This gives a signed divisor formula
+on the surface of covers with two simple branch points. On the
+four-dimensional closure of the cubic covers with four simple branch
+points the individual spin corrections have square \(6\) and mixed
+pairing \(-1/3\) for any two of the ten distinct even spins
+(Theorem~\ref{thm:gram}). Their common support is detected by the
+difference of two squared Szeg\H{o} kernels. These intersections
+explain what the partition sum forgets about an individual square
+root of \(K_C\).

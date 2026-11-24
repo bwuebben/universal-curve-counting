@@ -1,0 +1,267 @@
+\section{Fiber weights and spectral polynomials}\label{sec:weights}
+
+\subsection{The class over a product of projective spaces}
+Pardon's algebra $H$ is obtained from compactly supported cohomology on
+spaces of cycles in families of threefolds. A closed oriented real
+parameter space of dimension $b$, together with a compactly supported
+$b$-cocycle on its relative cycle space, gives a class of relative
+degree zero. A cocycle over an interval of such families equates its
+two restrictions if its support stays compact. One may also restrict
+the target to an open neighborhood containing that support.
+Multiplication uses the disjoint union of targets. We use the complex
+families of \cite[\S3]{Pardon} and their map $\Phi$ to the corresponding
+algebra of almost-complex families \cite[\S2]{WueProduct}. The latter
+allows smooth oriented parameter chains.
+
+Take the two lines general in their Picard varieties subject to $LM=K_C$.
+Thus $H^0(C,L)=H^0(C,M)=0$ and $L^2\ne K_C$.
+For $A=L,M$, the vector space $H^0(C,A^i)$ has dimension
+$(i-1)(g-1)$ for $i\ge2$, by Riemann--Roch and Serre duality.
+A compact curve in the rank-two bundle projects finitely onto $C$,
+since a fiber is affine. With multiplicities included, a cycle of
+covering degree $m$ gives on each axis a monic polynomial of degree
+$m$. Its coefficient of order $i$ is a holomorphic section of $A^i$.
+In families these coefficients are continuous functions of the image
+cycle. Near a transverse base fiber the local sheets give elementary
+symmetric functions. Their extension at a branch value is the
+characteristic polynomial of multiplication in the finite divisor on
+the line axis. Equivalently one can push the cycle to the line and use
+the coordinates on its space of monic spectral divisors
+\cite[\S2]{WueBalanced}.
+
+Fix a basis of the dual of each coefficient space using linear
+combinations of evaluations at finitely many points of $C$.
+Write $F\subset C$ for their union. These are $n_m$ tests on each
+axis. They all vanish precisely on $m[C]$.
+Let $P,Q$ denote the hyperplane lines on the factors of
+$B_i=\PP^i\times\PP^{2n_m-i}$. Twist $L,M$ by $P,Q$ respectively.
+Each test now takes values in $P^s$ or $Q^s$, where $s$ is its
+order. Put
+\[
+ W_{g,m}=\prod_{s=2}^m s^{2(s-1)(g-1)}.
+\]
+On the relative cycle space take the pullback of the Thom class of
+the direct sum of all test lines and divide by $W_{g,m}$. We denote
+its image in $H$ by $Y_i$. Its cohomological degree equals
+$\dim_{\RR}B_i$, and its support is the compact family of core cycles.
+The choice of a general splitting computes the same normalized
+one-circle classes as any splitting of the specified degrees.
+Along a path in the Picard variety use a fixed sufficiently large
+number of fiber evaluations and frames on small intervals. They
+separate all coefficients throughout the path. Appending a redundant
+test multiplies the insertion by its normalized Euler class and is
+exactly the hyperplane stabilization of the Borel construction
+\cite[\S2]{WueBalanced}.
+
+\begin{lemma}\label{lem:weights}
+For nonzero integral fiber weights $r,s$ the corresponding class is
+\[
+               X_{g,m}(r/s)=\sum_{i=0}^{2n_m}(r/s)^{i-n_m}Y_i .
+\]
+It is invariant under inversion of the weight ratio. The logarithmic
+coefficient $P_{m,j}$ is primitive for the coproduct induced by addition
+of cycles. Pullback $\rho_e$ under multiplication of cycles by $e$
+sends $P_{m,j}$ to $P_{m/e,j}$ if $e\mid m$, and to zero otherwise.
+\end{lemma}
+\begin{proof}
+Over two large projective spaces form the same supported tuple.
+Pull it back by the pair of degree-$|r|,|s|$ Veronese maps from
+$\PP^{2n_m}$, conjugating the corresponding source when a weight is
+negative. On that oriented real-analytic base the resulting lines are
+the lines of Chern classes $rH,sH$, where $H$ is the hyperplane
+class. The extra scalar needed for the one-circle normalization is
+$r^{-n_m}s^{-n_m}$. The fundamental class of the graph of the pair
+maps to the sum of the coordinate linear products
+$[\PP^i\times\PP^{2n_m-i}]$ with coefficients $r^is^{2n_m-i}$,
+as is seen by pairing with the two hyperplane classes. Pairing a base
+chain with the supported test cocycle commutes with its boundary:
+the cocycle restrictions on common faces agree in the shifted
+cochain complex for the dualizing sheaf of the base
+\cite[\S2.4 and Remark~3.6]{Pardon}. These chain relations can be
+taken real analytic on each simplex. Indeed embed the product of
+projective spaces as Hermitian projectors, approximate a subdivided
+bounding chain by affine interpolation of vertices followed by the
+analytic tubular retraction, and use the straight interpolation and
+retraction on the boundary prism. The support over each simplex is
+the compact core family. This proves the polynomial formula. Swapping
+the lines and moving the splitting along the Picard variety gives
+its symmetry. For each pair of weights the cycle addition and
+multiplication identities for the normalized tests are those of
+\cite[\S3]{WueBalanced}; their proofs use only the orders and the
+nonvanishing of the weights. Taking the logarithm and comparing
+coefficients as Laurent polynomials gives the asserted operations.
+\end{proof}
+
+The degree in $z$ of the degree-$l$ logarithm is at most $n_l$ by
+superadditivity of $n_l$. If $|j|>n_d$ for the largest proper divisor
+$d$ of $m$, the primitive $P_{m,j}$ is therefore killed by every
+proper division. By \cite[Lemma~7.1]{WueProduct} it is a finite linear
+combination of $x_{h,1}$. This use of the primitive-division criterion
+is independent of any evaluation by numerical invariants.
+
+We recall the geometric detection that will determine the coefficients.
+On the space of connected stable maps of a fixed arithmetic genus $k$
+to fibers of a smooth family, the map to the image cycle is proper
+over compactly supported insertions \cite[\S5]{WueProduct}. Pullback of
+the insertion, with the oriented parameter chain, gives a class
+$T_k$ in the corresponding colimit of map-space cohomology groups.
+The construction annihilates products of positive-degree classes
+represented on disjoint targets. In an acyclic balanced normal bundle
+the only degree-one image is its zero section, so
+$T_k(x_{h,1})=0$ if $k<h$. At $k=h$ the only map to this cycle is
+the regular embedding, and $T_h(x_{h,1})\ne0$ by the fixed-genus
+detection theorem of \cite[\S\S5--6]{WueProduct}. We shall use only
+these properties of $T_k$. They require no numerical functional on a
+family of singular maps.
+
+\subsection{The algebraic pairing}
+Let $\mathcal F=\overline{\mathcal M}_k(C,m)$ be the proper stack of
+connected unmarked stable maps, with universal source $\pi$ and map
+$f$. Write $V_A=R\pi_*f^*A$ for $A=L,M$ and
+$a=k-1-m(g-1)$. Riemann--Hurwitz on the positive components gives
+$a\ge0$ if $\mathcal F$ is nonempty. Both complexes have virtual
+rank $-a$, and $\mathcal F$ has virtual complex dimension $2a$.
+Expanding the two inverse moving Euler classes in the fiber
+characters gives
+\begin{equation}\label{eq:chern}
+ N_{k,m,j}=
+  \int_{[\mathcal F]^{\rm vir}}
+    c_{a-j}(-V_L)c_{a+j}(-V_M),\qquad |j|\le a ,
+\end{equation}
+and $N_{k,m,j}=0$ outside this range
+\cite[\S2]{BP}. The ranks refer to Euler characteristics and are
+unchanged by jumps of the spaces of sections.
+
+The pairing of the normalized tuple over $B_{n_m+j}$ with the
+fiberwise algebraic stable-map virtual class is precisely
+$N_{k,m,j}$. To verify it, first use the compactification
+$\PP_C(\mathcal O\oplus L\oplus M)$ over a point. The tuple with
+two independent torus characters $x,y$ is supported on maps into
+the core and extends by zero to the projective stable-map space.
+The only fixed component meeting this support is $\mathcal F$:
+invariant finite multisets in the affine fiber lie at its origin.
+The fixed obstruction theory there is the one for maps to $C$. The
+moving theory is $V_L\otimes x\oplus V_M\otimes y$, where the
+characters also denote their weight lines. Virtual localization
+\cite{GP} identifies the equivariant pushforward with
+\[
+       x^{n_m} y^{n_m}\sum_{l}N_{k,m,l}(x/y)^l .
+\]
+The monomial comes from the normalized Euler class of the tests on the
+fixed locus. The pushforward is an ordinary equivariant polynomial
+because the support is proper. In the associated projective bundle
+over $B_{n_m+j}$ the fiberwise obstruction theory is the descent of
+the fixed-target theory. Keeping the residual two-torus action thus
+substitutes $x+c_1(P),y+c_1(Q)$ in this polynomial. Integrating over
+the base at $x=y=0$ gives the claimed coefficient, including when
+$a>n_m$. This calculation uses the stable-map theory for the family
+of threefolds over $B_{n_m+j}$. Maps to the total projective variety
+considered as a single target have a different obstruction theory.
+
+\subsection{Avoidance of multiples}
+Assume $j>0$ by symmetry. Keep the $L$ tests equal to zero and
+translate the $M$ tests to homogeneous polynomials of their respective
+orders on $\PP^{n_m-j}$. Along the linear homotopy the image cycle is
+confined to the $M$ axis. The prescribed coefficients determine one
+relative monic divisor in each fiber, with multiplicities. Its graph
+over the parameter base and the interval is compact.
+
+Let $e>1$ divide $m$ and put $s=m/e$. The $e$th powers of monic
+spectral polynomials of degree $s$ form a closed subvariety of the
+affine coefficient space of codimension $n_m-n_s$. Indeed the first
+$s$ coefficients of a power successively recover those of its monic
+root by division by $e$. The remaining coefficients are polynomials
+in the recovered coefficients, of the required orders under scaling.
+This argument works also for polynomials whose divisors are reducible.
+A section whose values are general homogeneous polynomials avoids the
+union of the power loci if $j>n_d$: evaluation is surjective at every
+point of the projective base and its dimension is less than every
+such codimension. A neighborhood of the compact translated insertion
+then misses all cycle multiples, since a convergent sequence of
+multiples has a convergent subsequence of roots by compactness of
+bounded cycles. In particular this is possible for every nonzero Laurent exponent in the stated range
+when $m$ is prime. A divisor in the permitted neighborhood can still
+have individual repeated components.
+
+At the first excluded positive weight for composite $m$, take
+$s=d$, $e=m/d$ and $j=n_d$. The equations on the remaining
+coefficients, of orders $i>d$, are sections of $\mathcal O(i)$ with
+$(i-1)(g-1)$ copies for each $i$. Their top Chern number on
+$\PP^{n_m-n_d}$ is
+\[
+                \prod_{i=d+1}^m i^{(i-1)(g-1)} >0 .
+\]
+Thus the entire power locus cannot be avoided by choosing other
+homogeneous values. In fact $\rho_eP_{m,n_d}=P_{d,n_d}\ne0$:
+the latter has nonzero connected minimum-genus detection at its
+outermost weight, as we verify next.
+
+\begin{lemma}\label{lem:outer}
+For $s\ge2$ the coefficients at the two outermost weights of
+$P_s(z)=\sum_jP_{s,j}z^j$ are both
+\[
+ \frac{x_{H_s,1}}{A_s},\qquad H_s=1+(g-1)\binom{s+1}{2},
+ \qquad A_s=\prod_{i=2}^s i^{(i-1)(g-1)} .
+\]
+\end{lemma}
+\begin{proof}
+At $j=n_s$ the second projective factor is a point.
+Translate its $M$-tuple to a smooth integral spectral divisor $D$,
+for example $v^s=b$ with $b$ having a simple zero and all zeros
+simple. For general $M$ such a $b$ exists: the Abel map for degree
+$s(g-1)\ge g$ is dominant and the reduced divisors are dense.
+Eisenstein's criterion gives integrality; adjunction gives genus
+$H_s$. The other tests still vanish, so the unique supported
+cycle is $D$ with zero $L$ field. For the projection $f:D\to C$ the
+monic equation gives $f_*\mathcal O_D=\bigoplus_{i=0}^{s-1}M^{-i}$.
+Consequently $R=f^*L$ has $H^0(D,R)=0$. In the surface the normal
+line $J=f^*M^s$ satisfies $JR=K_D$, so $H^1(J)=0$. Coefficient
+variation gives all $H^0(J)$ of dimension $n_s$. Their tests cut
+these surface deformations with degree one.
+On the smooth spectral locus these are all the curves: the $M$ projection is
+birational to a smooth divisor and the lift is a
+section of $R$, which vanishes. This describes its topology as well,
+by the family of monic divisors and the continuous inverse given by
+their coefficients. The normalized $L$ tests there give the ordinary
+Euler class $c_1(\mathcal O(1))^{n_s}$. Base Gysin replaces
+$\PP^{2n_s}$ by a linear $\PP^{n_s}$. What remains is the point class
+of the fixed smooth divisor in the coefficient space, divided by $A_s$.
+
+We identify that point class in the universal algebra. Choose a basis
+$c_1,\ldots,c_{n_s}$ of $H^1(D,R)$ and a class
+$\delta\in H^1(D,RJ^{-1})$ inducing an isomorphism
+$H^0(J)\to H^1(R)$ by multiplication. Indeed $H^1(RJ^{-1})$ is
+dual to $H^0(J^2)$. Choose $n_s$ points whose evaluations in fixed
+frames form a basis of $H^0(J)^*$, and take the sum of evaluations in
+the squared frames. The pairing induced by this functional is
+nondegenerate. On a cover of $C$ by two affine opens represent the
+$c_i$ and $\delta$ by cocycles on their preimages in $D$. The monic
+basis lifts them to polynomials in $v$ on the overlap with the
+appropriate line twists. Write $P_*(v)$ for the fixed monic equation.
+In the $L$ line change the transition by adding the translation
+\[
+  t\Big(\sum_{i=1}^{n_s}\sigma_i\widetilde c_i(v)
+     +\sigma_0 P_*(v)\widetilde\delta(v)\Big),
+       \qquad 0\le t\le1 ,
+\]
+where the $\sigma_i$ are the homogeneous coordinates on
+$\PP^{n_s}$. The point test is still the equation of the fixed $M$ spectral divisor. On $D$ the translation splits for every parameter at $t=0$,
+and for $t>0$ precisely at $[1:0:\cdots:0]$, with unique lift.
+Thus the point test has compact support throughout this deformation.
+Near the final point the lifting obstruction is a holomorphic section
+of $H^1(R)\otimes\mathcal O(1)$, using reduction modulo the variable
+monic polynomial to identify the cohomology in families.
+Its derivative in the projective coordinates is the basis $(c_i)$
+and its derivative in the divisor coordinates is multiplication by
+$\delta$, up to a common sign. Both are isomorphisms. Its zero
+scheme is a graph over either set of coordinates. The lifts vary
+holomorphically on this graph by cohomology and base change and
+$H^0(R)=0$. The divisor point test on the graph is therefore a
+positive parameter point class. In that fixed target the normal
+sequence of the lifted curve has subline $R$, quotient $J$, and
+connecting isomorphism on $H^0(J)$ just computed. Its normal bundle
+is acyclic. Deformation to the normal bundle identifies the point
+class with $x_{H_s,1}$. Finally every product in the logarithmic
+subtraction has strictly smaller weight than $n_s$. This proves the
+formula, including its normalization.
+\end{proof}

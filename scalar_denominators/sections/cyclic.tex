@@ -1,0 +1,87 @@
+\section{The isolated triple in genera three and four}\label{sec:covers}
+Let $D$ be a smooth projective curve of genus $h$ and $K=K_D$.
+\begin{theorem}\label{thm:classification}
+Suppose $h=3$ or $4$, and let $N$ be a general stable bundle of
+rank two with determinant $K$. The smooth connected degree-three
+covers $f:F\to D$ for which $H^0(F,f^*N)\ne0$, up to isomorphism
+over $D$, are in bijection with the degree-one subbundles
+$S\subset N$ such that $H^0(D,S^3)\ne0$. There are eight if $h=3$
+and $288$ if $h=4$. Each cover is cyclic, has source genus $3h+1$,
+and satisfies $h^0(F,f^*N)=1$.
+
+The effective degree-three cycles in $\operatorname{Tot}_D N$ are
+$3[D]$ and the smooth embedded curves
+\[
+                   y^3=a s,\qquad a\in\mathbb C^*,
+                   \qquad y\in\operatorname{Tot}_D S ,
+\]
+where $s$ is a generator of $H^0(D,S^3)$ for one of these subbundles.
+The resulting parameter lines meet only at $a=0$, and scalar
+multiplication by $\lambda$ acts on them by $a\mapsto\lambda^3a$.
+For $h=2$ a general $N$ with the same determinant condition is
+$3$-rigid and its only effective degree-three cycle is $3[D]$.
+\end{theorem}
+
+
+\begin{proof}
+The spectral description in the proof of Theorem~\ref{thm:cubic-evaluations}
+leaves only degree-one lines, since $\lfloor(h-1)/2\rfloor=1$ for
+$h=3,4$. Corollary~\ref{cor:cubic-fiber-count} gives the two counts.
+On the finite \'etale pullback of $\operatorname{Sym}^3D$, the loci of
+multiple zeros and of nonunique effective divisors in a complete
+linear system have dimension at most two. Indeed three general points
+impose independent conditions on differentials. Adding the extensions
+of $KS^{-1}$ by $S$ leaves dimension at most $3h-4$ over these loci.
+Thus $h^0(S^3)=1$ and the divisor is reduced. Riemann--Hurwitz gives
+$3h+1$. Each point of this finite incidence has a unique subbundle map
+up to a constant. The quotient of its Tschirnhausen bundle $S\oplus S^2$ by the unique
+degree-two subline recovers $S$, and its inclusion in $N$ is unique up
+to scalar. Thus distinct sublines give distinct covers over $D$.
+To identify the normal sections on a given cover, write $f_*\cO_F=\cO_D\oplus S^{-1}\oplus S^{-2}$. The last summand
+tensored by $N$ has no sections because $N$ has no subline of degree
+two or more. The middle summand gives the unique inclusion. Finally at
+$h=2$ the cubic space is a point. A nonzero section on a connected
+stable map would be nonzero on some normalized nonconstant component
+since sections on attached complete contracted curves are constant.
+The vanishing just proved on smooth covers through degree three
+excludes this possibility.
+\end{proof}
+Put $r_3=8$, $r_4=288$ and $H=3h+1$.
+An integral insertion on an open and closed compact subset of a
+cycle space is the extension by zero of its unit. Products use disjoint
+targets. In genus $h$ let $x_{h,d}$ be the rational universal class
+associated to degree $d$ in the normal bundle with scalar action on
+both directions \cite[Definition 4.7]{Pardon}. For $d=1$ this is
+the integral class of an isolated unobstructed embedded curve.
+If $D$ is embedded in a smooth quasi-projective threefold $X$ and
+$d[D]$ is isolated in a tube about $D$, denote its integral unit
+by $J_d$. The local degree here is the coefficient of $[D]$ under
+retraction of the tube to $D$. Excision identifies the unit in
+every smaller tube.
+
+In source arithmetic genus $k$, let $G_k(X,3D)$ be the ordinary
+connected Gromov--Witten degree on the maps with this image cycle,
+once it is isolated. For comparison let $S^{\rm sc}_{h,3}(u)$ be the
+connected degree-three residue of $\Tot N$ for scalar multiplication
+on the fibers, with $u^{2k-2}$ recording the source genus. It can be
+evaluated on the proper stack of stable maps to $D$ by equivariant
+localization \cite{BP}. The distinguished rational universal class
+$x_{h,3}$ is the coefficient before taking a logarithm, whereas the
+numerical series uses connected domains throughout.
+
+\begin{theorem}\label{thm:isolated}
+Let $h=3$ or $4$, let $N$ be general with determinant $K_D$, and let
+the embedding $D\subset X$ in a smooth quasi-projective threefold
+have normal bundle $N$ and a second jet whose obstruction at each of the finitely many dilation lines is nonzero, as defined in Section~\ref{sec:neighborhood}. Then $3[D]$ is isolated in a neighborhood of $D$. Such
+neighborhoods exist in smooth algebraic threefolds. In the rational
+complex universal algebra,
+\begin{equation}\label{eq:main-class}
+           J_3=x_{h,3}+\frac{r_h}{3}x_{H,1}.
+\end{equation}
+In the fixed-target Gromov--Witten theory,
+\begin{equation}\label{eq:main-gw}
+   \sum_k G_k(X,3D)u^{2k-2}
+      =S^{\rm sc}_{h,3}(u)+\frac{r_h}{3}(2\sin(u/2))^{2H-2}.
+\end{equation}
+In degrees one and two one has $J_d=x_{h,d}$.
+\end{theorem}

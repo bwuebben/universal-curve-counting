@@ -1,0 +1,551 @@
+\section{The double-cover displacement and its elliptic tails}\label{sec:smooth-crossings}
+We prove the double-cover displacement used in \S\ref{p10-sec:incidence} and separate its first contracted elliptic contribution into the moving and ramification-point terms.
+\subsection{The local contribution at a double-cover wall}\label{p9-sec:wall}
+
+Let $C$ be a smooth curve of genus $g$, and let $N\to C$ be a complex
+bundle of rank two and degree $2g-2$. Consider a smooth path $D_t$ of
+real Cauchy--Riemann operators on $N$, with $D_0$ invertible. We orient
+the parameter interval by increasing $t$. Write $\mathcal H$ for the
+space of smooth connected double covers of the fixed target, locally
+taken in a uniformizing chart. At a cover $f:Y\to C$ with $b$ branch
+values, these values are local complex coordinates up to ordering.
+The deck involution acts trivially on these coordinates.
+
+Suppose $K=\ker f^*D_0$ is a real line, and put $P=\operatorname{coker}
+f^*D_0$. Differentiating the family of pullback operators on a section
+in $K$ and projecting to $P$ gives the intrinsic derivative
+\begin{equation}\label{p9-eq:wall-differential}
+ W_f:T_f\mathcal H\oplus\RR_t\longrightarrow
+                  \operatorname{Hom}_{\RR}(K,P).
+\end{equation}
+We use the complex orientation of $\mathcal H$ and the absolute
+Cauchy--Riemann determinant orientation of $f^*D_0$. Indeed,
+Riemann--Hurwitz gives $\dim_{\RR}P=2b+1$, and the determinant of the
+space on the right is $(K^*)^{\otimes 2b}\otimes(\det f^*D_0)^*$.
+Write $\eta_f$ for the sign of \eqref{p9-eq:wall-differential} when it is an
+isomorphism. This sign uses the full pullback operator, including its
+invariant summand \cite[(4.59) and (5.59)--(5.60)]{bai}.
+
+\begin{theorem}\label{p9-thm:wall}
+Fix an arithmetic genus bound $k_*$. Suppose the smooth connected
+double covers of genus at most $k_*$ with nonzero pullback kernel at
+$t=0$ form a finite set up to isomorphism. For each such $f$, assume
+that the kernel is an anti-invariant real line, the map
+$(f,\xi):Y\to N$ is an embedding for a generator $\xi$, and
+\eqref{p9-eq:wall-differential} is an isomorphism. For sufficiently small
+$\delta>0$ the pullback operators at the two endpoints are injective on every
+degree-two stable map of genus at most $k_*$. In each
+genus $k\le k_*$ the change of the absolute normal Euler number is
+\begin{equation}\label{p9-eq:wall-jump}
+ L_{2,k}(D_{\delta})-L_{2,k}(D_{-\delta})
+ =\sum_{f:Y\to C}\eta_f\,[v^{2k-2}]
+                \bigl(2\sin(v/2)\bigr)^{2g(Y)-2}.
+\end{equation}
+Each summand is the change supported on stable maps that factor through a degree-one
+stable map to the source of the indicated cover. In particular a single wall with smooth
+source of genus $H$ contributes the series
+$\eta_f(2\sin(v/2))^{2H-2}$ coefficientwise.
+\end{theorem}
+
+\begin{proof}
+We first treat a single cover $f$ of genus $H$. Choose a complex
+connection on $N$. On a disk bundle about the zero section we realize
+$D_t$ as the normal operator of an almost complex structure with
+holomorphic projection and standard complex structure on each fiber.
+For a holomorphic map $h$ to $C$, prescribe the equation of a lift
+$(h,u)$ by
+\begin{equation}\label{p9-eq:wall-cubic}
+ h^*D_t u+h^*B(u,u,u)=0 ,
+\end{equation}
+where $B$ is a smooth real symmetric trilinear form on $N$ with
+values in $\Omega_C^{0,1}\otimes N$. Here pullback of the form includes
+composition with $dh$. In a connection splitting, the difference of
+$D_t$ from the connection Dolbeault operator and the cubic both specify
+vertical-valued $(0,1)$-forms in the horizontal variable. Such a form
+specifies the off-diagonal block of the almost complex structure, giving
+\eqref{p9-eq:wall-cubic} for every $h$ \cite[Lemma~5.9]{bai}. We multiply
+the change of horizontal structure by a radial cutoff equal to one in
+the disk under consideration and extend across $\PP(N\oplus\CC)$.
+A unitary connection gives a closed form restricting to the
+Fubini--Study form on the fibers. Adding a sufficiently large multiple
+of a positive area form from $C$ tames the extended family, since the
+horizontal terms are bounded on the compact bundle.
+
+\smallskip
+\noindent\emph{The smooth branch and its sign.}
+The invariant part of $f^*D_0$ has index zero. To see this, deform
+equivariantly to a pullback Dolbeault operator and use
+$(f_*\mathcal O_Y)^+=\mathcal O_C$, together with exactness of
+invariants under the deck group in characteristic zero. The hypothesis
+on $K$ thus implies that $P$ is entirely anti-invariant. Take
+equivariant complements to the kernel and image in a Sobolev completion
+of \eqref{p9-eq:wall-cubic} over the Hurwitz chart. The implicit function
+theorem solves the image equation for the kernel complement. In local
+coordinates $y$ on the chart and with kernel coordinate $a\xi$, the
+remaining equation is
+\[
+                    a F(y,t,a)=0,\qquad F(y,t,-a)=F(y,t,a).
+\]
+Indeed the zero section solves the equation at all $(y,t)$ and the
+deck change negates both $a$ and the obstruction in $P$. The
+differential of $F$ in $(y,t)$ at the origin equals $W_f$ evaluated
+on $\xi$. Its coefficient of $a^2$ at $(y,t)=0$ is the image of
+$f^*B(\xi,\xi,\xi)$ in $P$. The solution in the kernel complement
+starts in degree three there, and its linear image projects to zero.
+
+Let $p$ be a nonzero adjoint section annihilating the image of the
+Hurwitz directions in $P$. On an unramified disk where $p$ and $\xi$
+are nonzero on one sheet, prescribe an arbitrary compactly supported
+form on that sheet as $f^*B(\xi,\xi,\xi)$. This uses a real covector
+taking value one on $\xi$ and its third tensor power. Such a disk
+exists by unique continuation. On the other sheet both the prescribed
+form and the adjoint change sign, so their two integrals agree.
+Choose the form to give a nonzero pairing. The implicit function
+theorem for $F=0$ now gives even functions $y(a),t(a)$ with
+\[
+                     t(a)=c a^2+O(a^4),\qquad c\ne0 .
+\]
+The two signs of $a$ give the same curve by the deck action. Dividing
+its vertical coordinate by $a$ gives smooth convergence to
+$(f,\xi)$, so the curve for small $a>0$ is embedded and has trivial
+stabilizer.
+
+At a nonzero solution the derivative of $aF$ in $(y,a)$ has first
+columns $aF_y$. Its last column modulo these is $-a t'(a)F_t$ by
+differentiation along the branch. It is invertible, and comparison
+with $W_f$ gives the sign $-\operatorname{sgn}(t)\eta_f$. In this
+comparison the tangential deformation of the cover has the complex
+Hurwitz orientation. Indeed its holomorphic deformation complex reduces
+to the torsion cokernel of $df$, supported at the simple ramification
+points. At the zero section the vertical and tangential determinants
+split, and continuation gives the determinant of the embedded graph.
+This is the absolute sign convention of
+\cite[Theorem~4.12 and (4.30), (4.59)]{bai}. Thus the change in the
+signed number of embedded curves with nonzero vertical coordinate is
+$-\eta_f$.
+
+\smallskip
+\noindent\emph{Isolation through genus $k_*$.}
+Suppose there were other simple curves, of degree at most two over $C$
+and normalization genus at most $k_*$, in arbitrarily small closed
+tubes at parameters tending to zero. Pass to a sequence with fixed
+normalization genus. There is no nonconstant compact curve in an
+affine fiber. In degree one the projection of the normalization is an
+isomorphism, and invertibility of $D_0$ excludes a small nonzero graph.
+Equivalently, a sequence of such graphs can be divided by its maximum
+norm, and elliptic compactness over the fixed base would give a
+nonzero element of $\ker D_0$.
+
+In degree two write the maps from the smooth normalizations as
+$(h_n,u_n)$ and put $\rho_n=\max |u_n|>0$. The graphs
+$(h_n,u_n/\rho_n)$ solve \eqref{p9-eq:wall-cubic} with cubic coefficient
+$\rho_n^2B$. On a disk bundle of radius greater than one these
+structures extend to a smooth two-parameter family in $(t,\rho)$
+including $(0,0)$. A common taming form as above has bounded area on
+the graphs, since its cohomology class on the disk bundle is pulled
+back from $C$ and the projection degree is fixed. Gromov compactness,
+with a point marked where the norm is one, gives a stable limit in
+the linear structure of $D_0$ whose vertical coordinate is nonzero.
+Forget the extra mark and stabilize. If two normalized components
+had degree one, invertibility of $D_0$ would force both sections to
+vanish and all constant components would have the same zero vertical
+coordinate at their attachments. Thus the unique effective
+normalization is a smooth double cover with a nonzero kernel section.
+By hypothesis its graph is an embedded curve $\Gamma=(f,\lambda\xi)(Y)$,
+with $\lambda\ne0$.
+
+The stable limit factors in degree one through $\Gamma$. Its effective
+normalization maps isomorphically to $\Gamma$, so no self-node
+identifies two points on that normalization. Each maximal connected
+contracted subcurve attaches at a single point, since its image has a
+single preimage on the effective normalization. For the resulting
+map $w$ to $\Gamma$ and every real normal Cauchy--Riemann operator
+$D_\Gamma$, restriction and pullback give inverse isomorphisms
+\begin{equation}\label{p9-eq:wall-degree-one-ker}
+                     \ker w^*D_\Gamma \simeq \ker D_\Gamma .
+\end{equation}
+A section on a contracted component is holomorphic with values in a
+fixed vector space, hence constant, and the node conditions prescribe
+its value on the whole contracted subcurve. The compactness theorem
+for sequences of simple maps to a finite-dimensional family of almost
+complex structures \cite[Theorem~3.1 and Remark~3.2(b)]{bai} says that
+a limit over an embedded curve, unless the limiting map is an
+isomorphism to that curve, has a normal kernel section outside the
+pullbacks from the embedded curve. By \eqref{p9-eq:wall-degree-one-ker}
+the limit is an isomorphism. We thus have smooth convergence modulo
+parametrization. The original graphs eventually belong to the
+Hurwitz chart and its implicit-function neighborhood, contradicting
+their choice.
+
+We also need injectivity at the endpoints on the entire fixed-target
+space in genus $k\le k_*$. Apply the same compactness argument to
+graphs of normalized kernel sections of the linear operators at
+$t_n\to0$. The invariant part of any smooth double-cover kernel
+descends to a base section. It descends on the unramified locus by
+invariance and extends across the branch values by bounded
+removability for the base equation. Since $D_t$ remains invertible,
+the kernel sections are odd. Their nonzero graphs are simple because
+the two sheets have different values wherever the section is nonzero.
+After smooth convergence in the rescaling argument, the linear problem
+in the Hurwitz chart reduces to $F(y,t,0)=0$, whose only solution
+near the origin is $(0,0)$ by \eqref{p9-eq:wall-differential}.
+Thus all smooth covers through the cutoff have injective pullback for
+small $0<|t|$. For a nodal source, restriction to its effective
+normalizations and the constant matching on its contracted components
+give injectivity as well. At $t=0$ the same reasoning shows that every
+stable map with kernel lifts in degree one to $Y$ via its graph in
+$\Gamma$. Conversely every such lift carries the pullback of $\xi$.
+
+\smallskip
+\noindent\emph{Conservation of the local degree.}
+The isolation just proved gives a closed tube of some radius $r>0$
+and an interval about zero in which the only simple curves in that
+tube through the cutoff are $C$ and the embedded curves found above.
+Shrink the interval so the latter lie in the tube of radius $r/2$.
+Every effective component of a degree-two stable map contained in the
+closed tube factors through a simple normalization of degree at most
+two and genus at most $k_*$. Connectedness therefore prevents any
+such map from meeting the boundary. In the compactified target these
+maps form a compact open and closed part of the parametrized stable-map
+space. Compactness gives closedness, and support in the interior gives
+openness. Its virtual degrees at the two ends agree by fixed-genus deformation invariance and the splitting of the virtual
+class over open and closed substacks \cite[\S3.1, (3.4)--(3.5)]{diw}.
+
+At an endpoint the maps supported on $C$ contribute $L_{2,k}(D_t)$
+by the normal Euler comparison \cite[Theorem~1.2, (1.7)]{zinger}.
+The maps on the additional embedded curve, when present, have degree
+one over it. We compute their degree including its orientation.
+Let $D'$ be the invertible normal operator on that embedded curve
+of genus $H$. For any deformation of $D'$ on the curve, the pullback and base operators
+admit compatible finite-dimensional stabilizations. The quotient of the
+two resulting complexes has zero kernel on every degree-one stable
+map $w$. Indeed
+\eqref{p9-eq:wall-degree-one-ker} identifies the kernels, and restriction
+to the effective normalization is a left inverse on cokernels to the
+pullback of base forms. The quotient cokernel is therefore a vector
+bundle throughout the deformation, by the stabilized construction in
+\cite[Appendix~B, (B.8)--(B.10)]{bai}. Its determinant is the
+quotient of the pullback and base determinants. At an invertible
+endpoint the Euler class in the absolute orientation is the Euler
+class of this bundle multiplied by $\epsilon(D')$.
+
+The normal bundle has degree $2H-2$, since the ambient first Chern
+class on the tube vanishes. Deform $D'$ to the Dolbeault operator of
+two line bundles of degree $H-1$ off the theta divisor, using
+$\mathcal O(-1)^{\oplus2}$ if $H=0$. There the cokernel has its
+complex orientation and its virtual Euler degree is the ordinary
+degree-one local invariant. Pandharipande's degree-one formula
+\cite[Theorem~2]{pandhodge} gives, in our genus variable, the series
+$(2\sin(v/2))^{2H-2}$. This also gives the degree of the reduced
+cokernel at $D'$ by deformation. The change from the embedded curves
+off $C$ is consequently $-\eta_f$ times this series through the
+cutoff. Conservation gives \eqref{p9-eq:wall-jump} with the opposite
+sign on $C$.
+
+\smallskip
+\noindent\emph{Simultaneous covers.}
+For finitely many covers $f_i$ a single cubic $B$ can be chosen
+outside the finite union of hyperplanes in the adjoint tests above.
+The compactness argument then gives one branch in each indicated
+Hurwitz chart and the sum in \eqref{p9-eq:wall-jump}. To identify the
+individual supported changes, we separate their times. With generators
+$\xi_i$ and adjoints $p_i$ as above, the conormal to the $i$th wall
+on real zeroth-order variations of the base operator is
+\[
+                   \ell_i(A)=\langle p_i,f_i^*A\,\xi_i\rangle .
+\]
+For distinct covers these functionals are nonproportional. Work on a
+common unramified disk where the sections and adjoints in question
+are nonzero. The two sheet integrals for each $\ell_i$ agree. Testing
+with arbitrary real-linear $A$ on this disk, proportionality would
+therefore imply proportionality of the rank-one tensor densities,
+and in particular real proportionality $\xi_i=c\xi_j$ on chosen
+sheets. The two sections solve the same equation there, so
+$\bar\partial c=0$ and $c$ is a nonzero constant. Off the union of
+the branch values the two covers have distinct nonzero mod-two
+characters, since a cover of the complement has a unique finite
+normal completion. Their characters are independent and their fiber
+product is connected. Unique continuation extends the equality over
+this fiber product. A deck transformation flipping only the first
+sheet then negates exactly one side, a contradiction.
+
+Choose $\chi(t)$ equal to one near zero and supported away from the
+endpoints. Write $t_i(s)$ for the crossing time of $f_i$ in the
+family $D_t+s\chi(t)A$. Then
+\[
+              t_i'(0)=-\ell_i(A)/\ell_i(\dot D_0).
+\]
+The denominators
+are nonzero by \eqref{p9-eq:wall-differential}. Pairwise
+nonproportionality lets us choose $A$ so all derivatives are distinct.
+The compactness argument for the linear graphs, now including $s$,
+confines all kernels through the cutoff to the same charts. Thus the
+perturbation separates the crossings and preserves their signs.
+
+For completeness, let $M=\overline{\mathcal M}_{k}(C,2)$, let $I$
+be the time interval, and let $Z$ be the closed noninjectivity locus
+in $M\times I$. On its complement the absolutely oriented pullback
+cokernel has an Euler class $e$. The image of $e$ under the
+connecting morphism of the pair $(M\times I,(M\times I)\setminus Z)$
+pairs with $[M]^{\rm vir}\times[I,\partial I]$ to give the final
+Euler degree minus the initial one. At $s=0$ the kernel supports of
+the distinct covers are disjoint compact images of
+$\overline{\mathcal M}_k(Y_i,1)$, since the effective normalization
+recovers $f_i$. Choose disjoint neighborhoods. For sufficiently small
+$s$ all kernels remain in them and avoid their boundaries, by
+properness and the local stabilized operators
+\cite[Appendix~B, (B.8)]{bai}. The relative class for the whole
+$(t,s)$-family splits over these neighborhoods by excision. Pairing
+over the product virtual family shows that each summand has the same
+degree at $s=0$ as at small positive $s$. There each is the
+single-cover contribution already computed. All compactness choices
+were made at the prescribed finite cutoff.
+\end{proof}
+
+On a fixed-target path with finitely many degree-at-most-two wall
+times in all genera, the coefficients in Theorem~\ref{p9-thm:wall} may
+be evaluated at common regular endpoints on either side of a single
+time. On a regular parameter interval the pullback cokernels form an
+oriented bundle on each compact fixed-genus map space, so their
+Euler degrees are constant there. For generic fixed-target paths the
+finiteness assertion follows from \cite[Definition~2.6,
+Proposition~2.7 and Theorem~3.40]{dw}.
+\subsection{A contracted elliptic tail at a ramification point}\label{p9-sec:tail}
+
+Let $C$ be a smooth curve of genus $g\geq 2$, let $N\to C$ be a complex
+bundle of rank two and degree $2g-2$, and let $D_t$ be a smooth path of
+real Cauchy--Riemann operators on $N$. Fix a smooth connected cover
+$f:Y\to C$ of degree $m$ and genus $H$, with $b$ simple ramification
+points over distinct values. Write $G=\operatorname{Aut}_C(f)$ and
+$a=|G|$. The fixed-target Hurwitz stack $\mathcal H$ is smooth of complex
+dimension $b$ at $f$. Indeed, the quotient of $T_Y\to f^*T_C$ is a
+skyscraper sheaf of length $b$, with one summand at each ramification point.
+
+Suppose $K=\ker f^*D_0$ is a real line and the intrinsic derivative
+\begin{equation}\label{p9-eq:tail-core}
+ T_f\mathcal H\oplus\RR_t
+ \longrightarrow \operatorname{Hom}_{\RR}(K,\operatorname{coker} f^*D_0)
+\end{equation}
+is an isomorphism. Its sign $\eta$ uses the complex orientation of
+$\mathcal H$, increasing time and the absolute determinant orientation
+transported from complex-linear operators. For $0\ne\xi\in K$ assume
+$d\xi_r\ne 0$ at each ramification point $r$. In a frame pulled back from
+the target, $d\xi_r:T_rY\to N_{f(r)}$ is independent of the connection
+because $df_r=0$, and is complex-linear by the pullback equation.
+
+\begin{theorem}\label{p9-thm:tail}
+In source genus $k=H+1$, the stable maps obtained by attaching a
+contracted one-pointed curve of arithmetic genus one to $f$ form an
+isolated compact part of the locus with nonzero normal kernel at the
+crossing. The local degree of the change of the absolute normal Euler class
+supported on this family is
+\begin{equation}\label{p9-eq:tail-total}
+ -\frac{2\eta}{a}\left(\frac{m(g-1)}{12}+\frac{b}{24}\right)
+ =-\frac{2\eta}{a}\frac{H-1}{12}.
+\end{equation}
+The first term comes from the component on which the tail persists.
+The second is the sum over ramification points on the component on
+which the attaching node smooths. The corresponding local degree at the smooth cover in genus $H$ is
+$2\eta/a$. When the endpoint pullbacks are injective in the genus under
+consideration, each local degree is a summand of the difference of the
+endpoint Euler numbers.
+\end{theorem}
+
+\begin{proof}
+For fixed $k$ let $X=\overline{\mathcal M}_k(C,m)$ be the stack of
+connected stable maps, let $I$ be the parameter interval, and let
+$U\subset X\times I$ be the open set where the pullback normal operator
+is injective. Its oriented real cokernel bundle $Q_U$ has rank
+$d=4(k-1-m(g-1))$, the real virtual dimension of $X$. The relative class
+\begin{equation}\label{p9-eq:tail-half}
+ u=\tfrac12\delta e(Q_U)\in H^{d+1}(X\times I,U;\QQ)
+\end{equation}
+defines the local degrees in the statement. Here $\delta$ is the
+connecting homomorphism. With injective endpoints,
+$2u$ paired with the image of $[X]^{\rm vir}\times[I,\partial I]$
+is the difference of the endpoint Euler numbers by the boundary formula.
+Excision gives the summand of this pairing supported near an isolated
+compact part of the complement of $U$. This local pairing also makes
+sense when other covers have kernel at the same time.
+
+Near a map with kernel line $K$ and cokernel $Q$, stabilization gives
+a finite-dimensional presentation of the normal operator
+\cite[\S6.1 and Appendix~B, (B.8)]{bai}. In its matrix space the
+stratum with kernel line has normal space $\operatorname{Hom}_{\RR}(K,Q)$.
+Its determinant is $(K^*)^{\otimes d}\otimes(\det D)^*$, where $\det D$
+denotes the Fredholm determinant at that map. Thus the absolute
+orientation coorients this stratum. On the link of a normal disc,
+choosing a generator of $K$ identifies the universal cokernel with
+the tangent bundle of $S^d$. Its Euler degree is two with the boundary
+orientation. For $d=0$ the two invertible matrices have opposite
+determinant signs. Hence \eqref{p9-eq:tail-half} pulls back the positive
+Thom class of this stratum on the corank-at-most-one neighborhood.
+Two stabilizations admit a common sum, which adds an identity block
+after a change of splitting. The normal space and its orientation are
+preserved. In particular \eqref{p9-eq:tail-core} gives local degree
+$\eta/a$ for $u$ at the smooth cover.
+
+Write $(E,e)$ for the pointed tail, $p$ for the attaching point on $Y$,
+and $\mathbb E$ for the Hodge line on $\overline{\mathcal M}_{1,1}$.
+The compact family over $(f,0)$ is
+\[
+ T=[(Y\times\overline{\mathcal M}_{1,1})/G].
+\]
+We describe the fixed-target virtual class near $T$. The cover
+deforms unobstructedly, and evaluation of the constant value on $E$
+eliminates the matching condition at the node. The remaining obstruction
+space is $T_{f(p)}C\otimes H^1(E,\mathcal O_E)$. Parameters consist of
+the cover, the point $p$, the pointed tail, and the attaching parameter
+$q\in T_pY\otimes T_eE$. The node-preserving maps exist for every value
+of the first three parameters, so their scalar holomorphic obstruction
+equation has the form $q F=0$. On $q=0$ its derivative in the smoothing
+direction is $df_p\otimes\delta_e$, where
+$\delta_e:T_eE\to H^1(E,\mathcal O_E)$ is the boundary map for
+$\mathcal O_E(e)$. Indeed, substitution of the plumbing relation into
+the linear term of the core map gives the simple principal part on $E$.
+The dual of $\delta_e$ is evaluation of a dualizing differential at the
+mark, an isomorphism also on the irreducible nodal elliptic curve.
+Thus $F$ is a unit away from ramification. At a simple ramification
+point it vanishes simply as $p$ varies. Locally there are two smooth branches
+$B=\{q=0\}$ and $M=\{F=0\}$ near such a point. The fixed-target
+virtual class is the divisor of the scalar obstruction section and hence
+the sum of their fundamental cycles, each with multiplicity one. At a
+nodal tail the modulus of the pointed elliptic curve includes the
+independent smoothing parameter of its self-node.
+
+On $B$, normalizing at the attaching node identifies the normal kernel
+with the core kernel. Constant tail sections evaluate onto the matching
+fiber, so the cokernel over $T$ is the sum of the core cokernel and the
+complex two-plane $V=f^*N\otimes\mathbb E^\vee$. Taking the Thom class
+along \eqref{p9-eq:tail-core} leaves the Euler class of
+$\operatorname{Hom}_{\RR}(K,V)$. On the cover
+$Y\times\overline{\mathcal M}_{1,1}$, $K$ is constant and either
+generator induces the complex orientation on this excess bundle. The
+degree on $B$ is therefore
+\begin{equation}\label{p9-eq:tail-moving}
+ \frac{\eta}{a}\int_{Y\times\overline{\mathcal M}_{1,1}}
+ c_2(f^*N\otimes\mathbb E^\vee)
+ =-\frac{\eta}{a}\frac{2m(g-1)}{24}.
+\end{equation}
+Indeed $c_2=-c_1(f^*N)c_1(\mathbb E)$ and
+$\int_{\overline{\mathcal M}_{1,1}}c_1(\mathbb E)=1/24$.
+The latter degree follows from the Weierstrass presentation as the
+weighted projective stack of weights $4,6$, with Hodge line
+$\mathcal O(1)$. Transfer from the
+cover accounts for the action of $G$, including its action on $K$.
+
+It remains to restrict $u$ to $M$ at a ramification point $r$. Work on
+a uniformizing chart before division by $G$. Choose core and target
+coordinates so that $w=w_0+z^2$. On the pointed elliptic family choose
+a meromorphic function $P$ with its sole pole of order two at $e$.
+This choice extends locally across the nodal fiber by base change for
+$\mathcal O_E(2e)$, which has two sections, with only the constants
+in $H^0(E,\mathcal O_E(e))$. Take a coordinate $y$ with $P=y^{-2}$
+near $e$. The plumbing
+\begin{equation}\label{p9-eq:tail-plumbing}
+ zy=q,\qquad
+ w=w_0+z^2\quad\text{on the core},\qquad
+ w=w_0+q^2P\quad\text{on the tail}
+\end{equation}
+gives maps agreeing on the overlap. Varying the marked ramification
+cover and the elliptic modulus gives every tangent to $M\cap B$, and $q$
+smooths the attaching node to first order. The inverse function theorem
+on the smooth branch $M$ proves that these are local parameters there.
+
+Use cokernel representatives supported on the core outside the attaching
+disc and on the tail away from both nodes. The former span by unique
+continuation for the adjoint equation, the latter by duality with the
+Hodge line. Stabilization by these spaces is surjective with kernel a
+real line near the central map. Normalize its section $s$ by a real
+evaluation on the thick part of the core, giving $\xi$ at the center.
+The stabilized kernels are continuous across the nodal fibers
+\cite[Appendix~B]{bai}. In the plumbing norms, a continuous local
+section is uniformly bounded and converges on compact subsets away from
+the nodes \cite[\S\S4.3--4.4, Proposition~4.15]{siebert}. For the
+pulled-back zeroth-order term the multiplication norm is bounded by the
+sup norm of the section times the weighted $L^p$ norm of the map
+derivative. A map holomorphic on the total space has bounded derivative
+on each half-collar in its larger coordinate, so this latter norm tends
+to zero on shrinking collars. On the remaining compact sets the
+coefficients vary smoothly. The elliptic
+obstruction coefficient $c_E$ vanishes identically along $q=0$, where
+the stabilized core section extends by its constant value to the tail.
+
+We compute $c_E$ to first order. In a holomorphic frame for a reference
+Dolbeault operator on the target disc, the equation on the truncated
+elliptic side $|y|\geq |q|/\rho$ reads
+\[
+ \bar\partial s+A_t(w)(s)\,\overline{dw}=\theta_E(c_E).
+\]
+Here $A_t(w)$ is real-linear on the fibers. Normalize the forcing
+$\theta_E$ by pairing with a regular differential
+$\omega=(a_0+O(y))\,dy$ near $e$. With the trace convention for
+$\delta_e$, the boundary integral in Stokes' formula becomes
+\[
+ q a_0\,\frac{1}{2\pi i}\oint_{|z|=\rho}s(z)\frac{dz}{z^2}
+       + O_\rho(|q|^2).
+\]
+For fixed $\rho$ the contour coefficient tends to that of $\xi$ as all
+parameters approach the chosen point of $T$. Since $\bar\partial\xi(r)=0$,
+it is $\partial_z\xi(0)+O(\rho)$ in the limit. For fixed small $c>0$,
+the zeroth-order term on $|q|/\rho\leq |y|\leq c$ is bounded by
+\[
+ C|q|^2\int_{|q|/\rho}^c u^{-2}\,du\leq C\rho |q|.
+\]
+Outside this disc $dw=q^2dP$ and the integral of $|dP|\,|\omega|$ is
+uniformly bounded, also on a smoothing $uv=\tau$ of the self-node.
+Indeed $\omega$ is a bounded multiple of $du/u$, and the derivative
+of the regular function $P(u,\tau/u)$ is bounded on $|u|\geq
+\sqrt{|\tau|}$. The other half is covered by $v$. On the nodal fiber the two
+residues in Stokes' formula cancel by matching of $s$ on the normalization.
+
+Dividing by $q$, then sending $\rho$ to zero, gives the elliptic
+coefficient to order $o(|q|)$ as all parameters tend to the wall. Its
+linear term in the attaching direction is the intrinsic homomorphism
+\begin{equation}\label{p9-eq:tail-jet}
+ \begin{aligned}
+ T_rY\otimes T_eE &\longrightarrow
+ \operatorname{Hom}_{\RR}\bigl(K,N_{f(r)}\otimes H^1(E,\mathcal O_E)\bigr),\\
+ v\otimes v'&\longmapsto
+ \bigl[\xi\longmapsto d\xi_r(v)\otimes\delta_e(v')\bigr].
+ \end{aligned}
+\end{equation}
+This limit holds along arbitrary simultaneous variations of the cover,
+time and elliptic modulus. Compactness of $\overline{\mathcal M}_{1,1}$
+gives a uniform estimate in finitely many charts. The map
+\eqref{p9-eq:tail-jet} embeds the complex smoothing line since $d\xi_r\ne0$.
+In a tubular neighborhood extend the splitting of the obstruction space
+from the divisor. The straight-line homotopy from the elliptic
+coefficient to the extended linear term stays nonzero for $q\ne0$
+after shrinking the neighborhood. With this coefficient fixed, retract
+the core coefficient to its restriction at $q=0$, where its derivative
+is \eqref{p9-eq:tail-core}. These homotopies require only continuity of the
+core coefficient in $q$. They apply over the whole ramification-marked
+family: the leading map transforms as the tensor in \eqref{p9-eq:tail-jet},
+and splittings can be chosen equivariantly using a metric and common
+stabilizations.
+
+After these two Thom isomorphisms the excess bundle on the deck cover
+is the complex line
+\[
+ \mathbb E^\vee\otimes
+ \bigl(N_{f(r)}/d\xi_r(T_rY)\bigr).
+\]
+Its degree is $-1/24$. The smoothing line has its complex orientation.
+Interchanging it with the oriented real normal space
+to the wall of smooth covers preserves the sign.
+Thus the degree of $u$ on $M$ for the orbit of $r$ is
+$-\eta/(24|\operatorname{Aut}_C(f,r)|)$. Summation over the orbits
+gives $-\eta b/(24a)$. The transversality on $B$ and the nonvanishing
+for $q\ne0$ on $M$ isolate $T$ in the kernel locus. Adding the two
+virtual-cycle contributions, doubling by \eqref{p9-eq:tail-half}, and
+using $2H-2=2m(g-1)+b$ proves \eqref{p9-eq:tail-total}.
+\end{proof}
+
+For a double cover of a genus-two target with two branch points,
+$H=4$ and $a=2$. The smooth-cover jump is $\eta$. In genus five
+the moving attachment contributes $-\eta/6$, and smoothing at either
+ramification point contributes $-\eta/24$, giving $-\eta/4$ in all.
+In general the ratio $-(H-1)/12$ of the two successive jumps is the
+quadratic coefficient of $(\sin(v/2)/(v/2))^{2H-2}$, as in the
+degree-one formula \cite[Theorem~2]{pandhodge}.

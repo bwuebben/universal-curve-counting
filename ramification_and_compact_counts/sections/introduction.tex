@@ -1,0 +1,187 @@
+\section{Introduction}\label{sec:intro}
+A connected triple cover of a genus-two curve, simply branched at two
+values, has genus five. Suppose the curve is embedded in a symplectic
+six-manifold and we vary its normal Cauchy--Riemann operator while
+keeping the curve fixed. A deformation of the cover away from the
+curve becomes possible when its pullback normal operator acquires a
+kernel. We show that passage through this wall can change the local
+curve count both in the class of the triple cover and in degree seven. Every
+connected unramified cover through degree seven
+can have the same determinant sign on both sides.
+
+To specify the local count, let \(C\) have genus \(g\ge2\) and let
+\(N\to C\) be a complex rank-two bundle of degree \(2g-2\), as for the
+normal bundle of a curve in a threefold of vanishing first Chern class.
+A real Cauchy--Riemann operator \(D\) on \(N\) defines an almost
+complex structure on its total space. Over a holomorphic map \(u\),
+a section \(\xi\) of \(u^*N\) gives a holomorphic graph precisely when
+\(u^*D\xi=0\).
+Call \(D\) rigid through degree \(m\) if every connected smooth finite
+cover of degree at most \(m\) has zero pullback kernel, and super-rigid
+if this holds in all degrees. On an unramified cover the normal
+operator has index zero. At a rigid endpoint its determinant has
+a sign, taken with the orientation continued from complex-linear operators.
+
+The contribution of an isolated curve in class \([C]\) has an integral
+decomposition into the elementary clusters of Ionel and Parker
+\cite{ip,diw,WueProduct}. We write \(n_{d,h}\) for the signed multiplicity
+of the elementary factor of genus \(h\) in class \(d[C]\) in the
+isolating neighborhood. Its normalization is the local series of a
+genus-\(h\) curve with opposite normal weights. Bai and Swaminathan coorient the wall of smooth double covers and
+describe the bifurcation of a smooth cubic cover
+\cite[Theorem~4.12(ii)]{bai}. We realize the cubic crossing on a
+prescribed cover and compute the higher-degree change due to its nodal
+joins. Doan and Walpuski study chambered invariants of real
+Cauchy--Riemann operators \cite{dw}. Along paths of the realized unramified crossings, the local series on
+intermediate covers determine the change on the original curve
+\cite[Theorems~4.1 and~7.1]{WueUnramified}. We ask what the unramified determinant signs can miss
+at a branched crossing.
+
+At an ordinary crossing the pullback kernel is a real line with
+embedded graph. Differentiating the pullback equation on a generator
+in the branch values and the path parameter identifies those
+parameters with the cokernel. We write \(\Delta\) for the value after
+a crossing minus the value before it.
+
+\begin{theorem}\label{thm:invisible}
+On any genus-two curve there is an ordinary crossing on a prescribed connected \(S_3\) triple cover with two distinct simple branch values, with super-rigid endpoints arbitrarily close on opposite sides. All determinant signs on the connected unramified covers of degree at most seven agree at these endpoints. The local elementary changes satisfy
+\[
+       |\Delta n_{3,5}|=2,\qquad |\Delta n_{7,13}|=1 .
+\]
+\end{theorem}
+
+The cover of degree three has trivial deck group. A displacement produces one embedded graph on each side of the
+crossing. Their fixed-parameter normal signs are opposite. Subtracting
+the incoming count therefore gives two contributions of the same sign. In degree seven a normal height on the
+sextic Galois closure vanishes above each branch value, where its
+graph can join the zero section.
+The proof of Theorem~\ref{thm:invisible} is completed in
+\S\ref{p14-sec:chambers}.
+
+\subsection{The wall in degree seven}
+For a rigid operator, matching across nodes also gives zero kernel
+on connected stable maps in the same degree. Its oriented cokernels
+form a real bundle \(V_D\) on the compact moduli stack
+\(\overline{\mathcal M}_k(C,d)\) of unmarked connected degree-\(d\)
+stable maps from curves of arithmetic genus \(k\). Its real rank
+is twice the virtual complex dimension \(2k-2-2d(g-1)\). Set
+\[
+ L_{d,k}(D)=\int_{[\overline{\mathcal M}_k(C,d)]^{\rm vir}}e(V_D),
+ \qquad L_d(D;v)=\sum_{k\ge0}L_{d,k}(D)v^{2k-2},
+ \qquad x=(2\sin(v/2))^2.
+\]
+The normal obstruction comparison identifies this Euler integral with
+the local threefold invariant \cite[Theorem~1.2]{zinger}. An elementary
+factor of genus \(h\) contributes \(x^{h-1}\) in its first degree
+\cite[Theorem~2]{pandhodge}. This distinction between the domain genus
+\(k\) and the elementary genus \(h\) will matter whenever a stable map
+has contracted components. Write \(H_d=1+d(g-1)\) for the genus of
+an unramified degree-\(d\) cover.
+
+Fix a connected simply branched cubic \(f:Y\to C\) with monodromy
+\(S_3\). Write \(E\) for its set of branch values, \(b=|E|=2\ell>0\),
+and \(h_j=1+7(g-1)+3\ell+j\). The sextic closure has genus
+\(1+6(g-1)+3\ell\). Attaching it to \(C\) at \(j\) distinct points
+gives precisely the arithmetic genus \(h_j\).
+
+\begin{theorem}\label{p14-thm:wall}
+At a generic transverse cubic crossing there is one punctured interval
+on which every pullback to a connected stable map of degree seven is
+injective, in every source genus. Choose super-rigid endpoints on
+opposite sides in this interval and write \(\Delta\) for the value on
+the positive side minus the value on the negative side. There are real
+weights \(w_i\) indexed by \(E\), with all nonempty subsums nonzero, and
+one orientation sign \(\kappa\) such that, with
+\(a_I=\kappa(-1)^{|I|}\sgn(\sum_{i\in I} w_i)\),
+\begin{align}
+ \sum_{k\geq0}\Delta L_{7,k}\,v^{2k-2}
+     &=\sum_{\varnothing\ne I\subseteq E}a_I x^{h_{|I|}-1},
+            \label{p14-eq:main-series}\\
+ \Delta n_{7,h_j}&=\sum_{|I|=j}a_I .\label{p14-eq:main-exponents}
+\end{align}
+All other degree-seven elementary multiplicities are constant across
+the crossing. For fixed \(f\) and \(N\), every chamber of the real hyperplanes
+where a nonempty subsum vanishes occurs in this way. The common sign can equivalently be absorbed
+by reversing all the weights.
+\end{theorem}
+
+The interval assertion concerns degree exactly seven. For the endpoint
+factorizations we also need rigidity in other degrees, which is a
+residual condition on operators \cite{wendl,dwbn}. On a generic path
+through the prescribed crossing one may ensure super-rigidity at a
+countable dense set of noncentral times on both sides: evaluation at
+each of these times is a submersion on paths with fixed first jet at
+zero, by variations supported away from zero. Intersect the corresponding
+countably many residual conditions. Rigidity in all degrees on the
+whole punctured interval is unnecessary.
+
+
+\subsection{The sign at the nodes}
+The three sheet values of a cubic kernel section have sum zero. On
+the sextic Galois closure their conjugates span the real standard
+representation of \(S_3\). Fix one transposition \(\tau\). Over each branch value the three
+ramification points of the sextic have the three different inertia
+transpositions. Exactly one is fixed by \(\tau\). At each of these
+chosen points a height in the negative eigenspace of \(\tau\) vanishes:
+its value equals its own negative. A nonzero vector on this line has
+trivial stabilizer, so its graph requires all six sheets. In
+degree seven only one sheet remains to carry the zero height.
+Selecting a nonempty set of joins connects the two components.
+
+At a chosen node there are two complex variables: one moves the
+attaching point along the graph and the other smooths the node.
+Modulo the tangent of the graph, the leading matching term is
+antilinear in the smoothing variable. It contributes one minus sign
+per node. The other line of the standard representation, fixed by the
+transposition, supplies an even height on the entire sextic component.
+Every matching equation sees this same real parameter. After the
+complex variables are eliminated there is one real equation left.
+Pairing the next term at each node with the cubic adjoint gives a real
+weight \(w_i\). The coefficient of the common height is, up to common
+sign, \(\sum_{i\in I}w_i\). In particular one cannot recover the sign
+of a two-node join from the individual node signs. For two branch
+values on a genus-two target the four possible pairs
+\((\Delta n_{7,12},\Delta n_{7,13})\) are
+\[
+             (-2,1),\qquad (0,1),\qquad (0,-1),\qquad (2,-1).
+\]
+A displacement replaces each isolated join by regular graphs.
+Degree-one maps to these graphs account for contracted tails and bridges
+and give the full factor \(x^{h_j-1}\).
+
+\subsection{Compensation on a compact target}
+When the normal model is realized on a closed threefold, deformation
+invariance constrains the curves outside its isolating tube. At each
+generic endpoint perturbation the bounded-energy cycle space splits
+into parts supported in the tube and in its complement. Call the
+elementary multiplicities of the latter part complementary.
+\begin{theorem}\label{p14-thm:torus}
+On the standard symplectic six-torus, fix a genus-\(g\) symplectic
+curve of primitive class \(A\) as in \S\ref{p14-sec:compact}. For each
+positive even \(b\) the cubics in Theorem~\ref{p14-thm:wall} with \(b\)
+branch values can be realized on this curve. The changes in the
+complementary elementary multiplicities in class \(7A\) are the
+negatives of \eqref{p14-eq:main-exponents}. The sharp maximum of the sum
+of their absolute values over all genera is \(2^b-1\).
+\end{theorem}
+
+
+The exterior change is determined in each integral class and genus
+even when the curves realizing it differ at the two endpoints. With
+all branch weights of the same sign, all subsets of a given size
+contribute with the same sign, which gives the sharp bound.
+
+The smooth-cover calculation and the first nodal comparison, where
+a double cover joins the original curve, occupy
+\S\S\ref{sec:chamber-statement}--\ref{sec:cubic}. The application to two spin endpoints in \S\ref{p10-sec:examples}
+uses the absolute series of \cite[Theorem~1.1]{WueSpin}. For the
+degree-seven theorem we classify the central kernels in
+\S\ref{sec:heptic}, compute the local degree at the joins in
+\S\ref{p14-sec:joins}, and count contracted components in
+\S\ref{p14-sec:virtual}. Sections~\ref{sec:global}
+and~\ref{p14-sec:compact} give the smooth degree-seven covers near a
+change of sign and the compact compensation. Appendix~\ref{sec:normalization}
+compares two normalizations at a double wall, using the compact
+example of \cite{WueCounter}. Appendix~\ref{sec:quartic} treats the
+first possible genera in higher degrees. Simultaneous crossings of
+several branched covers remain open.

@@ -1,0 +1,205 @@
+\section{Compensation in a fixed integral homology class}\label{p14-sec:compact}
+Let \((X,\omega)\) be a closed symplectic six-manifold with
+\(c_1(TX)=0\). At an endpoint \(J\) of a smooth path of
+\(\omega\)-tame structures, mark finitely many disjoint embedded
+curves \(C_i\) in nonzero integral classes \(A_i\). Suppose each admits
+arbitrarily small tubes in which the only cycles below a prescribed energy
+bound are its multiples. Suppose also that each marked cycle series
+has a geometric factorization into elementary clusters. These
+hypotheses hold for the super-rigid homogeneous germs used in
+Theorem~\ref{p14-thm:wall}: projection expresses each irreducible compact
+curve in the bundle as a finite map with a height section, and a
+vertical fiber contains no compact curve. The cluster construction
+below then applies to the insertion consisting of the multiple zero
+sections at each energy bound.
+
+Let \(H\) be the virtual-dimension-zero, Chern-number-zero part of
+Pardon's rational algebra of complex curves \cite{pardon}.
+Write \(S\) for its almost-complex cycle-space counterpart and
+\(\Phi:H\to S\) for the comparison of \cite[\S2]{WueProduct}. In \(S\)
+a compact open and closed part of the relative cycle space defines an
+insertion. Excision on disjoint supports gives multiplication, and
+the two restrictions of such an insertion over a closed interval
+agree. Denote by \(F_h\) the normalized balanced factor of a genus-\(h\)
+elementary curve: it is the equivariant series on the sum of two
+degree-\(h-1\) line bundles with product the canonical bundle and
+circle weights \(+1,-1\). Its linear term is the multiplicity-one
+class \(x_{h,1}\) and its image under \(\Phi\) is the elementary
+cluster series \cite[\S\S3--4]{WueProduct}. We use the full integral
+label \(\beta\in H_2(X;\ZZ)\) in the monomial \(Q^\beta\).
+Products at a fixed energy cutoff are taken modulo terms above that
+cutoff. For each marked curve send the local variable \(q^d\) to
+\(Q^{dA_i}\), and let \(P_J\) be the product of its marked factors
+over all the marked curves.
+
+\begin{proposition}\label{p14-prop:exterior}
+At each such endpoint there is a product \(R_J\) of elementary factors
+with integral exponents, obtained from the connected supports outside
+the marked sectors after a generic perturbation. It is independent
+of the perturbation, the cluster decomposition, and sufficiently
+small isolating tubes. For endpoints of a smooth tame path,
+\begin{equation}\label{p14-eq:conservation}
+                    P_{J_-}R_{J_-}=P_{J_+}R_{J_+}.
+\end{equation}
+The equality holds in the class-labelled completion with coefficients
+in \(H\). It holds also when the marked curves differ at the two ends.
+\end{proposition}
+\begin{proof}
+First take an integral taming form and fix an energy cutoff \(L\).
+Choose smaller disjoint tubes \(V_i\) with closure in the respective
+isolation neighborhoods. At the endpoint no nonempty cycle contained
+in \(\overline V_i\) meets its boundary. This persists for nearby
+structures: a contrary sequence would have a bounded-mass subsequence
+converging as cycles with Hausdorff convergence of supports
+\cite[Theorem~2.11]{diw}. A nonempty limit has positive energy, and
+integrality prevents a sequence of positive cycles from limiting to
+the empty cycle. Thus containment in each tube is open and closed
+in the bounded-energy cycle space over a short path to a generic
+endpoint perturbation.
+
+At the perturbed endpoint distinct irreducible supports are disjoint.
+The bounded-energy space of connected supports, counted with possible
+multiplicities in the compactification, splits into compact open and
+closed parts according to containment in the marked tubes and their
+complement. To see closedness, a limit of connected supports is
+connected, and disjointness of distinct irreducible curves forces it to
+have a single irreducible support. The respective unions of supports
+are disjoint compact subsets of \(X\). Restriction to disjoint open
+neighborhoods splits each effective current into currents labelled by
+the parts. This factors the entire insertion in \(S\), with mixed
+configurations included by multiplying the part series. In particular
+\(R_J\) is constructed from configurations all of whose connected
+supports are complementary.
+
+Subdivide each part by a finite cluster partition. Cluster isotopy,
+excision and the fold relation decompose each cluster into a signed
+elementary factor and corrections in classes \(d\gamma\), \(d\geq2\),
+if the original class is \(\gamma\)
+\cite[Propositions~3.18, 3.21 and Theorem~3.25]{diw}
+\cite[\S4]{WueProduct}. The latter reference gives the identities of
+cycle insertions needed here. Each step decreases
+\(\lfloor L/\omega(\gamma)\rfloor\). This yields finite products for
+the parts with integral exponents. The image of their product under
+\(\Phi\) is precisely the insertion of the entire target at this
+cutoff. For each integral class the entire class locus is compact
+over the original path by cycle compactness; the class is locally
+constant. The interval relation identifies its two endpoint
+insertions. The argument requires isolation of the marked sectors
+only at the endpoints.
+
+To prove uniqueness, cancel factors in order of increasing positive
+energy. At a first differing label \(\beta\), the difference of
+the comparison images is a finite sum
+\(\sum_h d_h\Phi(x_{h,1})\). All nonlinear terms at this label are
+composed of smaller-energy contributions. Other labels at the same
+energy have distinct monomials, also when they differ by torsion.
+Independence of the multiplicity-one classes
+\cite[Theorem~5.1]{WueProduct} gives \(d_h=0\) for every \(h\). This
+proves equality of the two total products, uniqueness at an endpoint
+and consistency on increasing the cutoff. Applying the same argument
+in each isolating region fixes the marked factors. Equation
+\eqref{p14-eq:conservation} and independence of the exterior follow.
+
+For an arbitrary taming form, approximate its cohomology class on
+the compact path by a rational class represented by a nearby closed
+taming form and rescale the latter to integral periods. The energies
+are uniformly comparable on the complex lines along this path. At a
+fixed endpoint let \(M_J\) be the monoid of classes of effective cycles.
+Any nonzero exponent of the full product has label in \(M_J\):
+induct on positive integral energy. At an ineffective class the entire
+insertion is zero and smaller effective labels have sums in \(M_J\).
+Multiplicity-one detection forces all the new exponents there to
+vanish. This also applies to the marked products in their tubes.
+Cycle compactness and local constancy of class imply finiteness of
+effective labels at bounded energy. Two choices of taming form
+therefore give products in a common locally finite completion at this
+endpoint, since their energies are comparable on \(M_J\).
+Their images coincide at each label and the same induction identifies
+their exponents. Subtracting the marked multiplicities identifies the
+complementary ones as well.
+\end{proof}
+
+For example, in class $7A$ over the genus-two core with two branch
+values the change in the marked Euler integral of source genus
+thirteen is
+\[
+ a_{\{1,2\}}-\tfrac{11}{12}(a_{\{1\}}+a_{\{2\}}).
+\]
+Indeed $x^{11}=v^{22}-(11/12)v^{24}+O(v^{26})$, whereas
+$x^{12}=v^{24}+O(v^{26})$. In the elementary product the two genera
+give separate integral changes. The exterior multiplicities in
+genera twelve and thirteen have the opposite changes, respectively,
+by Proposition~\ref{p14-prop:exterior}.
+
+\begin{proof}[Proof of Theorem~\ref{p14-thm:torus}]
+On \(X=\RR^6/\ZZ^6\) with its standard symplectic form there exists a
+constant tame linear complex structure admitting no nonempty compact
+effective curve. To see this, identify the integral classes with
+integral bivectors. For every nonzero integral bivector \(B\) the
+equation \((\Lambda^2J)B=B\) defines a proper analytic subset of the
+space of positive linear complex structures. Indeed this space is the
+connected homogeneous space \(\mathrm{GL}^+(6,\RR)/\mathrm{GL}(3,\CC)\).
+If the equation held on an open subset, the standard \(J\) would fix
+the span of the entire \(\mathrm{GL}^+\)-orbit of \(B\) in the exterior
+square. A diagonal matrix with distinct pairwise products of its
+diagonal entries extracts the nonzero coordinate bivectors by
+polynomial interpolation; oriented signed permutations then give every
+basis bivector in the span. The standard \(J\) does not fix a wedge
+of real coordinate vectors from two different complex lines.
+Baire's theorem applied to the open tame subset gives a constant
+\(J\) avoiding these equations for all \(B\ne0\). The structure descends
+under translations. Every effective current would give an invariant
+integral bivector by integration of its complex tangent planes, with
+positive symplectic area. Hence the total series is one there.
+The space of tame structures is path connected, so
+Proposition~\ref{p14-prop:exterior} gives \(R_J=P_J^{-1}\) at every marked
+endpoint on this torus.
+
+In a product of two symplectic two-tori smooth the positive transverse
+intersections of one horizontal torus with \(g-1\) vertical tori,
+using \(zw=\delta\) in disjoint coordinate balls. The intersection
+graph is a tree. The result is a genus-\(g\) symplectic surface of
+class \([T_1]+(g-1)[T_2]\). Take its product with a point of the last
+two-torus. The resulting class \(A\) is primitive by pairing with
+the area class of the first factor. Its symplectic normal bundle has
+Chern number \(2g-2\); unitary bundles of rank two over a surface are
+classified by this number. A tubular identification thus realizes the
+given homogeneous structure with its prescribed normal derivative.
+It is tame near the zero section. Cutting off in a chart of tame
+structures extends it over \(X\) while preserving the germ. At every
+positive even \(b\) a connected cubic as required exists on the same
+base: send all puncture loops to \((12)\), one handle generator to
+\((123)\), and the rest to the identity, and fill the finite cover
+over the punctures. Applying Theorem~\ref{p14-thm:wall} changes the
+exterior multiplicities by \(-c_j\) at \(h_j\), and by zero in every
+other genus at label \(7A\). The binomial bound of
+\S\ref{p14-sec:chambers} proves sharpness.
+\end{proof}
+
+In particular at least one of the two endpoints attaining this
+maximum has \(\sum_h|n^{\rm ext}_{7A,h}|\geq2^{b-1}\), by the
+triangle inequality and integrality. The area and the class are fixed
+as \(b\) increases. These endpoints may approach a smooth reference
+structure whose marked section is itself super-rigid. Use, for example,
+the homogeneous split spin model of \cite[Lemma~14.1]{WueUnramified} on the
+same bundle. All the homogeneous structures agree with it along
+\(C\). On a tube of radius \(R\), cutting off their difference in a
+smooth chart gives sup norm at most \(K_b R\) and first derivative
+bounded by \(K_b\); the constant may depend on the crossing. For each
+\(b\) take \(R_b\) so small that \(K_b R_b^{1/b}\leq 1/b\).
+Interpolation yields convergence in every \(C^{0,\alpha}\),
+\(0<\alpha<1\). Real dilations of the full-join graphs in
+\S\ref{p14-sec:smooth} likewise place their embedded representatives
+in arbitrarily small tubes, using the operators of that construction.
+Their genus is \(h_b=1+7(g-1)+5b/2\). It is unbounded along this
+sequence of smooth tame structures at fixed symplectic area.
+
+\smallskip
+The compensation determines the total signed change outside the
+isolating tube at the two endpoints. Allocating that change to the
+individual intermediate curves of an arbitrary compact deformation
+remains open. For simultaneous ramified crossings there is a further
+local question: several independent heights can match on a common
+component, and the resulting strata need not have a common
+dimension or stabilizer. The single adjoint equation of
+\S\ref{p14-sec:joins} treats the prescribed cubic crossing.

@@ -1,0 +1,41 @@
+\section{Single walls in degrees two and three}\label{sec:chamber-statement}
+Set \(c=g-1\), and let \(\mathcal U\) be the open set of operators invertible on \(C\). The sign \(\epsilon(D)\) is the sign of the determinant at the base. Along a generic path in \(\mathcal U\), the numbers of smooth covers crossing with a kernel are signed using the derivative on the moving branch values and path parameter.
+Consider a generic oriented path from $D_-$ to $D_+$ in $\mathcal U$,
+with both endpoints rigid through degree three. For $d=2,3$ let
+$W_{d,l}$ count pairs $(t,f)$, up to isomorphism of $f$ over $C$,
+for which the pullback of $D_t$ to the smooth connected cover $f$
+has a kernel and $f$ has $2l$ simple branch values. The term $l=0$
+counts unramified covers. The source genus is $1+dc+l$.
+Each pair is counted once with the determinant sign of the
+Hurwitz and path derivative on its kernel line
+\eqref{p10-eq:cubic-intrinsic}. Put $W_d(x)=\sum_l W_{d,l}x^l$ and
+$\Delta L_d=L_d(D_+;v)-L_d(D_-;v)$.
+
+\begin{theorem}\label{p10-thm:chambers}
+For a generic path as above the polynomials $W_2,W_3$ have finite
+support. With $\epsilon=\epsilon(D_-)=\epsilon(D_+)$ one has
+\begin{equation}\label{p10-eq:chambers}
+\begin{aligned}
+ x^{-2c}\Delta L_2 &= W_2(x),\\
+ x^{-3c}\Delta L_3 &= 2W_3(x)
+        +\epsilon\bigl(W_2(x(1-x)^2)-W_2(x)\bigr).
+\end{aligned}
+\end{equation}
+In particular all the integers $W_{3,l}$ depend only on the endpoints.
+\end{theorem}
+
+A smooth cubic crossing of source genus $h$ contributes twice its
+sign times $x^{h-1}$. At a double crossing with $2l$ branch values,
+a connected cubic map may join the cover to the identity at any
+nonempty subset of these values. The change for $j$ joins has sign
+$(-1)^j\epsilon\eta_f$, where $\eta_f$ is the double crossing sign.
+The factor $(1-x)^{2l}$ in \eqref{p10-eq:chambers} results from the sum over
+these subsets. The sign at a join is the real degree of an antilinear
+smoothing equation (Theorem~\ref{p10-thm:nodes}).
+
+
+For a smooth simply branched or unramified covering \(f\) of genus \(h\) with a single transverse kernel and an embedded graph isolated in the first affected degree, the two real amplitudes give \(2\eta_f/|\operatorname{Deck}f|\) after quotienting by the covering symmetries acting on the line. The genus-\(h\) sine monomial already incorporates every higher-genus contracted decoration of the displaced embedded curve. For a double the deck involution exchanges the amplitudes. For the ramified \(S_3\) cubic the deck group is trivial. In the next arithmetic genus the coefficient is \(-(2\eta_f/|\operatorname{Deck}f|)(h-1)/12\). For the double with two branch values on a genus-two target it splits into \(-\eta_f/6\) on the moving-tail locus and \(-\eta_f/24\) at each branch value.
+The double-cover displacement and the separate elliptic-tail terms
+are proved in Appendix~\ref{sec:smooth-crossings}. We first establish
+the corresponding smooth cubic calculation. The joined maps enter
+the chamber formula in \S\ref{sec:cubic}.

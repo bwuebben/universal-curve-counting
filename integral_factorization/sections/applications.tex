@@ -1,0 +1,252 @@
+\section{Rational curves on a contracted face}\label{sec:ruling}
+
+For a genus-zero curve the scalar and balanced factors coincide. Write
+$A_0(q)=\sum_{m\ge0}x_{0,m}q^m$. A family of resolved nodes shows how
+a negative power of this factor can arise even though every cycle is
+effective. We give the family first because it also computes the
+contribution of a moving exceptional ruling.
+
+Let $E$ be the nonsplit extension of $\cO$ by $\cO(-2)$ over $\PP^1$.
+Then $E\simeq\cO(-1)^{\oplus2}$, since the boundary map from
+$H^0(\cO)$ to $H^1(\cO(-2))$ is an isomorphism. Let
+$u:\tot E\to\CC$ be the quotient coordinate. For a smooth complex
+function $f$ on a closed disc, nonzero on the boundary, form the
+fiber product $u=f(t)$ over its interior. A complex-horizontal
+right inverse $h$ to $du$ gives this threefold an almost-complex
+structure: in the splitting of a tangent vector as
+$(a,k+h(df(a)))$ use multiplication by $i$ on $a$ and the vertical
+complex structure on $k$. The projection to the disc is holomorphic
+and each surface fiber retains its original complex structure.
+For holomorphic $f$ this is the complex fiber product.
+
+\begin{lemma}\label{lem:fold}
+The series of compact cycles in this family, graded by their degree
+over $\PP^1$, is $\Phi(A_0(q))^{\deg(f,0)}$ in the smooth algebra.
+For holomorphic $f$ it is $A_0(q)^{\deg(f,0)}$ in $H$.
+\end{lemma}
+\begin{proof}
+A compact irreducible curve projects constantly to the disc. The only
+compact irreducible curve in $\tot E$ is its zero section, by negativity
+after pullback to the normalization. Thus over a zero of $f$ there is
+one rational curve, and there are no others. The full degree-$m$ cycle
+locus is $\Sym^m(f^{-1}(0))$: the parametrization by sums is continuous
+in support and current and is a continuous bijection from a compact
+space to a Hausdorff space. The same construction over a compact path
+without boundary zeros transports its unit. For separated zero sets
+one can excise into disjoint targets, so their series multiply.
+
+A positive simple zero can be deformed to the identity map, and there
+the family is an open neighborhood of the zero section of $E$.
+Its factor is $\Phi(A_0)$. At a negative regular zero the germ deforms
+to complex conjugation by linearizing at the zero and moving within
+the orientation-reversing linear isomorphisms. The local homotopies
+avoid boundary zeros on a small disc. In the family
+$f_s(x+iy)=x^2-s+iy$ there are no zeros for $s<0$ and two regular
+zeros of opposite signs for $s>0$. The two factors therefore multiply
+to one. Translation of any $f$ by a sufficiently small regular value
+counts its simple zeros with Brouwer signs, proving the assertion.
+For holomorphic $f$ the small translations are a holomorphic family
+and the simple zeros are positive; the same computation is made
+directly on complex cycles.
+\end{proof}
+
+For $f(t)=t^k-s$, continuation around $s=0$ permutes the $k$ supports
+cyclically. The limiting single support has factor $A_0^k$. In bundle
+coordinates its transition at $s=0$ is
+$v'=z^2v+zt^k$, $t'=t$. Thus for distinct $k,l>r$ the $r$th
+infinitesimal neighborhoods of the zero curves agree while their series
+differ already in degree one. This is a dependence on the nonlinear
+neighborhood that persists however large the prescribed jet order is.
+
+\begin{proposition}\label{prop:ruled}
+Let $p:X\to W$ be a birational contraction from a smooth projective
+threefold with $K_X\simeq\cO_X$ to a projective variety. Suppose $p$ is an
+isomorphism off a smooth divisor $D=\PP_B(V)$, and contracts exactly
+its ruling fibers to the smooth connected curve $B\simeq p(D)$. If $b=g(B)$ and
+$\ell$ is a fiber class, the complete universal series on the contracted
+face is $A_0(Q^\ell)^{2b-2}$.
+\end{proposition}
+\begin{proof}
+The pullback of an ample divisor on $W$ exposes the contracted face.
+Every irreducible component there is a ruling fiber, and in class
+$m\ell$ the cycle locus is $\Sym^m B$. All fibers have the same
+integral class because $B$ is connected. An ample degree on $X$
+distinguishes its multiples, even when $\ell$ is divisible in
+$H_2(X;\ZZ)$. Deform $D$ to its normal
+bundle in $X$ by blowing up $D\times0$ in $X\times\CC$ and deleting
+the strict transform of the central fiber. The normal bundle is $K_D$.
+A compact curve on the special fiber with contracted pushforward lies
+over one point of $B$. On that ruling the normal bundle is $\cO(-2)$,
+so the curve is the zero section. The relative fixed-label locus over
+a closed parameter interval remains $\Sym^m B$ times that interval,
+by the same compact continuous parametrization as in Lemma~\ref{lem:fold}.
+
+Use the convention of lines in $V$. The relative Euler sequence gives
+\[
+ 0\longrightarrow K_D\longrightarrow
+ \cO_D(-1)\otimes\pi^*(V^\vee\otimes K_B)
+ \xrightarrow{u}\pi^*K_B\longrightarrow0 ,
+ \qquad \pi:D\to B.
+\]
+Replace the zero section on the right by a transverse smooth section
+of $K_B$. Locally this is the family in Lemma~\ref{lem:fold}, since
+on each ruling the Euler extension is nonsplit. A complex-linear
+horizontal splitting gives the same fiberwise structures as in that
+lemma and can be exchanged with a local product splitting by a homotopy.
+Globally the projection to $B$ remains pseudoholomorphic. Each curve
+of zero base degree therefore stays in one fiber; along the homotopy
+of sections the relative symmetric powers of the compact zero loci
+give compact support in every degree. The signed number of zeros of
+the section is $2b-2$. Multiplying the local factors proves the assertion
+after applying $\Phi$. Both complex series satisfy addition and
+division in the integer label $m$, since every effective summand or
+root of a contracted cycle is contracted. Lemma~\ref{lem:detect}
+lifts the equality. For $b\ge1$ one can equally use a nonzero
+holomorphic differential and count its zeros holomorphically.
+The cotangent obstruction and its Euler number in the numerical
+type III theory are due to Wilson \cite[\S4]{Wilson}.
+\end{proof}
+
+\section{Specialization across a conifold transition}\label{sec:transition}
+
+Suppose a flat projective family over a smooth curve has smooth
+algebraic total space of dimension four and central fiber with only
+ordinary double points. Let $X_s$ be a smooth nearby fiber and let
+$Y\to X_0$ be a projective small resolution. Assume the two smooth
+threefolds have trivial canonical bundles and torsion-free second
+integral homology. Fix the common-complement marking and a relatively
+ample line bundle. Write $\pi:H_2(Y;\ZZ)\to H_2(X_s;\ZZ)$ for the
+resulting quotient by the exceptional curve classes $[C_i]$.
+Writing $U_X$ for the series in \eqref{eq:compact}, the universal
+specialization identity of \cite[Theorem~3.2]{WueConifold} reads
+\begin{equation}\label{eq:transition}
+ U_{X_s}=\pi_*\left(U_Y\prod_i A_0(Q^{[C_i]})^{-1}\right).
+\end{equation}
+Here $\pi_*$ adds coefficients of classes with the same image.
+Finiteness requires the exceptional normalization inside the parentheses.
+In the blowup $\phi:\widetilde Y\to Y$ along the $C_i$, put
+$j=\mathrm{PD}_{\widetilde Y}^{-1}\phi^*\mathrm{PD}_Y$. After normalization
+all nonzero labels belong to
+$F=\{\gamma\ne0:j\gamma\text{ is effective on }\widetilde Y\}$.
+This set is closed under addition, avoids $\ker\pi$, and has finite
+sublevel sets for the projected ample degree
+\cite[Proposition~3.1]{WueConifold}. Indeed the ample degree of $j\gamma$
+for a suitable polarization on the blowup is a fixed positive
+multiple of the projected degree, since $j\gamma$ pairs to zero with
+every exceptional divisor. The support assertion in \eqref{eq:transition}
+in that generality uses the numerical reconstruction of
+\cite[\S2]{WueConifold}. It assumes that the indicated connected unmarked
+Gromov--Witten evaluations descend to the relevant relations in the
+rational cycle algebra, including those arising from families of
+complex targets. The analytic-family input to that descent is discussed
+in \cite[Remark~1.8]{Pardon}. There is a direct argument using only
+fixed-target counts when both endpoints also have
+$H^1(\cO)=H^2(\cO)=0$.
+
+The normalized series has integral balanced exponents
+$\widetilde n_{\gamma,h}$, obtained by subtracting one at each
+exceptional factor with its actual class. On the latter projective
+domain let $G_h(q,u)$ denote the connected numerical series of the
+elementary genus-$h$ curve. The signed-cluster comparison of
+\cite[\S7.4]{WueProduct} identifies the connected invariants of each fixed
+endpoint with the sum of $n_{\gamma,h}G_h(Q^\gamma,u)$. Write
+$w=(2\sin(u/2))^2$; the coefficient of $q$ in $G_h$ is $w^{h-1}$.
+The contracted face consists exactly of sums of the disjoint resolved
+nodes, so subtracting their $G_0$ removes all connected contributions
+on that face. For $\pi\gamma\ne0$ the ordinary degeneration of the
+resolution gives its connected invariant as the empty-contact
+relative invariant of $j\gamma$ on the blowup. The nonempty contact
+strata have negative virtual dimension on the blowup side. In
+particular every connected coefficient at $\gamma\notin F$ vanishes
+after normalization \cite[\S2.1]{LLW}, \cite[\S3]{WueConifold}.
+
+Induct on an ample degree on the resolution. If $\gamma\notin F$,
+every proper root of $\gamma$ is outside $F$, since $F$ is closed
+under multiplication by positive integers. After the lower-degree
+terms have vanished, the connected coefficient at $\gamma$ is
+$\sum_h\widetilde n_{\gamma,h}w^{h-1}=0$. This is a finite Laurent
+polynomial and its least power has a distinct leading order in $u$.
+All its coefficients therefore vanish. Thus every remaining exponent
+is supported in $F$, and its product may be pushed forward in finite
+sums. The connected smoothing formula in the total-space class adds
+the fixed-target resolution counts with that image, also for classes
+ineffective on the smoothing \cite[\S3, proof of Theorem~3.2]{WueConifold},
+\cite[Theorem~2.16 and \S3]{LW}. Comparing with the pushed-forward
+product, the same induction now in the smoothing degree identifies
+its exponents. This proves \eqref{eq:transition} on the stated
+projective domain without a theory of evaluations on general families.
+With the numerical reconstruction assumed in the broader case, the
+support theorem in \cite[\S3]{WueConifold} and successive division by
+factors in $F$ give the same exponent formula. In either case,
+for every nonzero effective $\beta$ on the smoothing,
+\[
+ n_{\beta,h}(X_s)=\sum_{\substack{\gamma\in F\\\pi\gamma=\beta}}
+                       \widetilde n_{\gamma,h}.
+\]
+The proof applies in the monoid generated by the effective smoothing
+classes and $\pi(F)$, extending the series by zero. This also describes
+the cancellation when an image class is ineffective. Two small
+resolutions have the same blowup and their normalized series agree
+under its common zero-contact identification \cite[\S3]{WueConifold}.
+The same summation for scalar product exponents preserves their
+integrality whenever the source exponents are integral
+\cite[Corollary~3.3]{WueConifold}. The scalar exponent in
+\S\ref{sec:intro} explains the need for this hypothesis.
+
+One can bound the sum explicitly on the classical transition of a
+quintic containing a plane \cite{Rossi}.
+Let $f,g$ be general quartics on $\PP^4$. The central quintic
+$x_3f+x_4g=0$ has sixteen nodes on the plane $x_3=x_4=0$.
+Indeed the two restricted quartics meet transversely, and at each
+intersection $x_3,x_4,f,g$ are local coordinates. Away from the
+plane smoothness follows from Bertini. In $\PP^1_{[s:t]}\times\PP^4$
+the equations $s x_3+t x_4=0$ and $-s g+t f=0$ give its projective
+small resolution $Y$. The projection selects the kernel line of the
+two-by-two coefficient matrix, with an entire ruling over each node.
+Adjunction gives $K_Y=\cO_Y$. Adding a general multiple of a quintic
+nonvanishing at all sixteen nodes gives a smoothing with smooth total
+space near the central fiber. Write $B,H$ for the hyperplane classes
+from the two factors. Integral Lefschetz for the two ample divisors gives
+coordinates $(a,d)=(B\cdot\gamma,H\cdot\gamma)$ on $H_2(Y;\ZZ)$,
+and the smoothing map is $(a,d)\mapsto d$. Each exceptional curve
+has class $(1,0)$.
+
+In this example $F$ satisfies $0\le a\le 4d$, $d\ge1$. To see the
+upper bound, write $u=f/s=g/t$ and $v=x_4/s=-x_3/t$. These sections
+have classes $4H-B$ and $H-B$. The sections $u,vh$, with $h$ ranging
+over cubics, generate the ideal of the exceptional curves after twisting
+by $4H-B$. Indeed their common ideal is locally $(u,v)$, the two normal
+coordinates in the small resolution of the node. Thus on the blowup
+$\phi^*(4H-B)-E$ is generated by global sections, where $E$ is the
+sum of the exceptional divisors. Pairing this nef divisor and $\phi^*B$
+with $j\gamma$ proves both inequalities. A line in the plane missing
+the nodes lifts to the graph of the degree-four map $[f:g]$ on the
+line. Its proper transform has class $j(4,1)$, so the upper bound is
+attained in $F$. After division by $A_0(q)^{16}$ the coefficient in
+smoothing degree $d>0$ is therefore a polynomial in the exceptional
+variable $q$ of degree at most $4d$. Membership in this support bound
+alone does not establish that a coefficient is nonzero.
+
+In the four-node toric transition let $\beta=(1,1,0)$ be the
+primitive line class of the smoothing plane. In the resolution basis
+of \cite[\S4]{WueConifold} the marking takes
+$(n_1,\ldots,n_6)$ to $(n_2,n_3,n_4)$. The following individual source and smoothing coefficients use
+the stable-pair evaluation of geometric local classes assumed in
+\cite[\S\S5--6]{WueConifold}; see also \cite[Remark~1.8]{Pardon}.
+The conifold specialization proved above uses the fixed-target
+Gromov--Witten comparison. Of the 37 candidate lifts of
+$\beta$, eight contribute. Their complete coefficients are given in
+\cite[(21)--(24)]{WueConifold}. The reconstruction also uses a bound on the Euler characteristic of a pure curve. The quadratic terms cancel upon specialization, so
+the eight polynomials sum to $3x_{0,1}$. On the smoothing the minimal
+pair spaces for lines and conics are the dual plane and $\PP^5$.
+Their signed Euler characteristics $3$ and $-6$ give
+\[
+ U_{X_s,\beta}=3x_{0,1},\qquad
+ U_{X_s,2\beta}=3x_{0,2}+3x_{0,1}^2-6x_{0,1}
+ \qquad\text{\cite[Proposition~6.1]{WueConifold}}.
+\]
+The line spans an extremal ray and the only effective splitting of its
+double is $\beta+\beta$. Thus the first factor on the ray is
+$A_0(Q^\beta)^3$. At $2\beta$ its contribution is
+$3x_{0,2}+3x_{0,1}^2$. The remaining $-6x_{0,1}$ is the leading
+coefficient of $A_0(Q^{2\beta})^{-6}$.

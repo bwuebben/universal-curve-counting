@@ -1,0 +1,62 @@
+\section{Exact prime-power denominators at the least genus}\label{sec:prime}
+Let \(r\) be the number of distinct characters and \(b\) the dimension of their span over \(\mathbb F_2\). Their joint cover \(Z\to C\) has degree \(a=2^b\). Write \(m=2^{r-b}\). For the \(r\)-fold difference of the connected fixed-target contributions in degree \(d\) at source genus \(h=1+d(g(C)-1)\), write \(\delta_d\). Use the alternating sum with coefficient \(+1\) at the all-positive corner. Let \(\epsilon\) be the absolute determinant sign of the normal operator on \(Z\) at that corner; this sign is constant as a corner germ.
+
+\begin{theorem}\label{thm:prime} For each prime $p$ and integer $j\ge1$,
+\begin{equation}
+\frac{p^j}{m}\,\delta_{a p^j}\in\mathbb Z,
+ \qquad \frac{p^j}{m}\,\delta_{a p^j}\equiv\epsilon\pmod p,
+ \qquad
+ \operatorname{den}(\delta_{a p^j})=\frac{p^j}{\gcd(p^j,m)} .           \label{eq:denominator}
+\end{equation}
+In particular every such projected degree has a nonzero mixed contribution in its least possible source genus. In degree four at the square of two independent double characters the mixed elementary exponent is also nonzero, by Theorem~\ref{thm:square}. At the higher labels in \eqref{eq:denominator} the assertion concerns the connected invariant, to which lower elementary factors can contribute.
+
+\end{theorem}
+
+\subsection{The integral series of unramified covers}
+
+For a regular normal germ on a curve \(T\) of genus \(H\ge2\) put \(h_e(T)=1+e(H-1)\) and
+\[c_e(T)=L^T_{e,h_e(T)}
+       =\sum_{[f:Y\to T]}\frac{\epsilon(f^*D_T)}{|\operatorname{Aut}_T f|},\]
+the sum over connected unramified degree-\(e\) covers. Indeed Riemann--Hurwitz and the genus of the dual graph force one smooth unramified positive component at the minimum genus. To see this with possibly disconnected positive components after normalization, each additional positive component adds one to the sum of their genera. A contracted positive-genus component or a loop also raises arithmetic genus, and an unmarked tree of contracted rational components attached to one smooth component is unstable. The horizontal obstruction theory at an unramified cover is regular. Thus only the displayed smooth covers occur, with their normal determinant signs and stack deck weights. See Proposition~\ref{prop:factors}.
+
+Let \(C_e(H)\) be the unweighted-by-sign groupoid cardinality of the same connected covers. The exponential \(U_H(q)=\exp(\sum_{e\ge1} C_e(H)q^e)\) counts disconnected unramified covers. It belongs to \(1+q\mathbb Z[[q]]\). In fact the degree-\(n\) coefficient is \(|\operatorname{Hom}(\pi_1 T,S_n)|/n!\); the surface character formula and the hook-length formula give
+\[[q^n]U_H=\sum_{\lambda\vdash n}\prod_{v\in\lambda}h(v)^{2H-2},\]
+where \(h(v)\) is the hook length of the box \(v\). The empty partition contributes one. The unsigned integrality and the congruences for the pointed counts \(e C_e(H)\) are already in \cite[Appendix~C, Lemmas~C1--C4]{bp01}. The same unsigned series is the least-genus part of the elementary local curve formula used in Proposition~\ref{prop:factors}. The following argument incorporates the real normal determinant signs and applies the result to the mixed wall contribution.
+
+Fix a cutoff \(E\). Write \(n_l\) for the integral exponent at label \(l\) and its minimum genus \(h_l(T)\) in the balanced factorization through \(E\). No smaller genus occurs. Proposition~\ref{prop:factors} gives \(c_e(T)=\sum_{l\mid e} n_l C_{e/l}(h_l(T))\) for \(e\le E\). Its proof is degreewise and applies to the truncated rigid products of Corollary~\ref{cor:cutoff}. Consequently
+\[\exp\!\left(\sum_{e=1}^{E}c_e(T)q^e\right)
+   =\prod_{l=1}^E U_{h_l(T)}(q^l)^{n_l}
+                \pmod{q^{E+1}}\]
+has integral coefficients. Every such series has unique integer exponents \(b_l\) in a product of \((1-q^l)^{-b_l}\) through \(E\): divide out the factors in increasing order using the current integer coefficient at the next degree. Taking the logarithmic derivative gives the integer
+\[G_e=e c_e(T)=\sum_{l\mid e} l b_l,\qquad b_1=\epsilon(D_T).\]
+More generally \(G_{np^j}\equiv G_{np^{j-1}}\pmod{p^j}\) if \(p\nmid n\) and \(np^j\le E\). For \(n=1\) this implies \(G_{p^j}\equiv\epsilon(D_T)\pmod p\). Apply the formula on \(T=Z\) with \(E=p^j\). The character-wall transfer gives \(\delta_{ap^j}=m c_{p^j}(Z)\) since the least genera upstairs and downstairs agree in these degrees. This proves \eqref{eq:denominator} at each cutoff, hence for the orthant germs. The prime-power congruence for one isolated curve follows already from its integral least-genus factorization; its occurrence in the mixed geometric change uses the simultaneous wall theorem.
+
+\subsection{Independent check from oriented regular covers}
+
+One can obtain the residue modulo \(p\) without an integral factorization. For \(e=p^j\) the deck group of a connected cover acts freely on any fiber, so \(e/|\operatorname{Aut}f|\) is integral. In \(e c_e(T)\) all terms except the regular covers vanish modulo \(p\). A regular cover has deck group \(Q\) of order \(p^j\). If \(p=2\) every determinant sign is \(1\) modulo \(2\). For odd \(p\) the determinant sign on a regular cover equals the sign of the base operator. Indeed squaring permutes \(Q\), and every nontrivial irreducible complex character \(\chi\) has Frobenius--Schur indicator \(|Q|^{-1}\sum_x\chi(x^2)=0\). The nontrivial characters thus occur in distinct conjugate pairs \(\chi,\bar\chi\). On each real pair the endomorphism \(I=i(e_\chi-e_{\bar\chi})\), where the \(e_\chi\) are the central idempotents in the complex group algebra, is real and squares to \(-1\). It commutes with the pulled-back operator all along a path to a complex-linear reference. Its determinant orientation is consequently constant along the path.
+
+At the reference compare \(I\) with the reference complex structure \(J\) on the normal bundle. In the \(J\)-complex character decomposition of the pair, \(I=J\) on the \(\chi\) block and \(I=-J\) on its conjugate block. The latter has complex index zero: by unramified descent it consists of \(\dim\chi\) copies of the reference operator twisted by the dual flat character representation, whose degree is zero as a flat factor. Riemann--Roch and \(\deg N_T=2g(T)-2\) give index zero. Reversing complex structure on that block therefore changes determinant orientation by \((-1)^{\dim_\mathbb C\ker+\dim_\mathbb C\operatorname{coker}}=1\). This compares the sign conventions also at a possibly singular complex-linear reference. The invariant summand is the base operator, proving the sign assertion.
+
+Finally the number of regular covers is the number of normal subgroups of index \(p^j\) in the finitely generated surface group \(\Pi\). Intersect those finitely many kernels. The quotient \(P\) is a finite \(p\)-group, and all normal subgroups of \(P\) of that index correspond to the kernels counted. There is at least one since \(\Pi\) surjects onto \(\mathbb Z/p^j\). The number is \(1\pmod p\). Here is the elementary counting argument. In a finite \(p\)-group the number of subgroups of a specified order \(p^k\) dividing its order is \(1\pmod p\). For \(k=0\) this is immediate. Otherwise choose a central order-\(p\) subgroup \(A\); the subgroups containing \(A\) are counted by induction in \(P/A\). For each subgroup of order \(p^{k+1}\) that arises as \(BA\) with \(|B|=p^k\) and \(A\cap B=1\), the choices of complement to the central \(A\) in \(B\times A\) are the graphs of \(\operatorname{Hom}(B,A)\). Its order is divisible by \(p\) because \(B\) is a nontrivial \(p\)-group. This proves the congruence for all subgroups. Conjugation then shows it for normal subgroups, since every nonfixed orbit has size a multiple of \(p\). Summing the determinant signs of the regular covers gives the same residue as \eqref{eq:denominator}.
+
+
+\begin{example}\label{ex:prime}
+Take two independent double covers of a genus-two curve. Their common
+cover has degree four and genus five. Put $\epsilon=\epsilon_Z(D_{++})$.
+The first mixed connected coefficient is $\epsilon$ in genus five.
+At degree eight the least genus is nine. The coefficient there is
+\[
+ \frac12\sum_{0\ne\lambda\in H^1(Z;\mathbb F_2)}
+            \epsilon(D_{++}|_{Z_\lambda}) .
+\]
+There are $2^{10}-1=1023$ summands, all signs. Its reduced denominator
+is two for every such square. At degree twelve the least genus is
+thirteen. Each regular cyclic triple of $Z$ has the base sign
+$\epsilon$, and there are $(3^{10}-1)/2$ such triples. Each other
+connected triple has deck order one. Thus the degree-twelve coefficient
+is congruent to $\epsilon/3$ modulo integers, in agreement with
+Theorem~\ref{thm:prime}. These are connected coefficients; their
+higher-label elementary exponents also involve the subtractions in
+\eqref{eq:triangular}.
+\end{example}
+

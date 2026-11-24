@@ -1,0 +1,352 @@
+\section{The common algebraic family for the residue comparison}\label{sec:deformations}
+
+Let $C$ be a smooth projective curve of genus at least two and $B$ a
+smooth projective variety. We start with
+\[
+ X_0=\operatorname{Tot}\big((L\boxtimes P)\oplus(M\boxtimes Q)\big)
+       \longrightarrow C\times B,
+ \qquad L\otimes M=K_C ,
+\]
+where $P,Q$ are line bundles on $B$. Fix a degree $m>0$ over $C$.
+By the support of a cycle we mean the union of its distinct image
+curves. If $A=\sum_i e_i A_i$ is a cycle, its reduced cycle is
+$\sum_i A_i$. A \emph{proper multiple} is a cycle $eA'$ with
+$e>1$ and $A'$ effective. Necessarily $e\mid m$.
+
+Let $\tau$ be a tuple of the coefficient evaluations of
+\S\ref{sec:weights}, translated by a section of its test bundle
+$T\to B$. For this section it suffices that the evaluations be
+linear combinations of symmetric functions of the intersection with
+finitely many framed fibers over $F\subset C$, that the translation
+be smooth, and that $\operatorname{rk}_{\mathbb C}T=\dim_{\mathbb C}B$.
+We allow the supported Thom class to be localized in an open set of the
+degree-$m$ cycle space, provided its zero set there is compact. All
+motions below refer to that localized class. They preserve any scalar
+factor in its normalization.
+
+\begin{theorem}\label{thm:separate}
+Suppose the compact zero set of $\tau$ contains no proper multiple.
+For every $K$ there is a smooth quasi-projective variety $S$ smooth
+over $B$, an algebraic section $i:B\to S$, and a smooth family of
+Zariski locally trivial fibrations $X\to C\times S$ with fiber $\mathbb A^2$ restricting along $i$ to $X_0$.
+There is a homotopy of the parameter section and the tests, with compact
+joint zero set in the chosen cycle neighborhoods, with the following
+properties.
+\begin{enumerate}
+\item At its endpoint, the zeros with connected support and sum of
+normalization genera at most $K$ are finitely many smooth embedded
+curves of multiplicity one. The relative space of embedded curves is
+smooth of dimension $\dim S$ there. The target variations surject onto the normal obstruction space
+there. The relative space meets the parameter graph transversely, and
+the tests have transverse zero on this intersection.
+\item On the single algebraic family $X/S$, the products of the test
+Thom class with the normal Thom classes of the parameter graphs have
+equal compactly supported classes at the two ends. At the initial end,
+capping the relative stable-map virtual class with the graph class
+restricts it to the relative stable-map class of $X_0/B$.
+\end{enumerate}
+In particular every connected stable map of arithmetic genus at most
+$K$ on the endpoint zero set has one of the indicated image cycles.
+\end{theorem}
+
+The tests in this statement may have zeros of disconnected support.
+The compact support in the second assertion includes such zeros. We
+impose connectedness only in determining the image of a connected
+stable map. We first describe the target deformations used in the
+proof.
+
+\subsection{Deformations at finitely many fibers}
+
+Consider a family already constructed over a smooth quasi-projective
+$S\to B$. Off a finite subset $P_0\subset C$, disjoint from $F$,
+keep its identification with the pullback of $X_0$. Initially $S=B$
+and $P_0$ is empty. Fix $p\notin F\cup P_0$. On a Zariski neighborhood
+$U$ of $p$ choose frames for $L,M$ and a uniformizer $t$ regular
+there with its only zero at $p$. Shrink $U$ to avoid the old punctures.
+In these frames the fiber variable $y$ takes values in the pullback
+of the plane bundle $E=P\oplus Q$ over $B$.
+
+Let $b,r$ be positive integers. On $U\setminus\{p\}$ use the change
+of coordinates
+\begin{equation}\label{eq:shear-gluing}
+ y\longmapsto y+(\iota_\ell\Omega)
+           \sum_{a=1}^b\sum_{v=0}^{r-1} c_{av}t^{-a}\ell(y)^v,
+ \qquad
+ \ell\in E^\vee,\quad \Omega\in\bigwedge^2 E,\quad c_{av}\in\mathbb C .
+\end{equation}
+All the displayed parameters are coordinates on a vector bundle over
+$S$. Since $\ell(\iota_\ell\Omega)=0$, this automorphism preserves
+$\ell(y)$, has inverse obtained by negating the $c_{av}$, and has
+Jacobian determinant one in the fiber. At $p$ we glue a new copy of
+the original affine chart by a composition of two such automorphisms
+with independent parameters. For a finite set of new punctures use
+the old target on their complement. Each new chart is chosen to miss
+every other puncture. On the intersection of two new charts use their
+transitions through the old chart. This gives an algebraic family
+$X'\to C\times S'$ with $S'$ the total space of the new parameter
+bundle. It restricts to the old family whenever all $c_{av}=0$,
+including at the algebraic zero section $S\to S'$. Off the union of
+the old and new punctures the original identification is preserved.
+Since the inserted determinants are one, the relative tangent
+determinant over $C$ in each threefold is still pulled back from
+$L\otimes M$. Every compact curve in it has threefold Chern number
+zero. The affine-plane fibers contain no compact curves.
+
+Here is the infinitesimal effect. Let
+$h_i:D_i\to X_s$ be the smooth normalizations of the distinct
+positive components of a cycle, with finite projections
+$f_i:D_i\to C$. Set $D=\coprod_iD_i$, $f=\coprod_i f_i$, and let
+$V|_{D_i}=h_i^*T_{X_s/C}$. Over a general $p$ the covers are
+unramified and all $r=\sum_i\deg f_i$ sheet values in the affine
+plane are distinct. Indeed the normalized maps are birational onto
+different curves. The number $r$ counts the sheets of the reduced
+cycle. Choose two independent forms $\ell$ which each separate their
+values at $p$, and use a nonzero $\Omega$. These choices exist since
+only finitely many lines in $E^\vee$ are forbidden.
+
+\begin{lemma}\label{lem:shear-jets}
+Let $Z$ be a finite subscheme of the smooth domains, disjoint from
+$f^{-1}(p)$. For sufficiently large $b$, variations of the
+coefficients $c_{av}$ in the two factors of \eqref{eq:shear-gluing},
+at $c=0$, span the obstruction space $H^1(D,V(-Z))$ for deforming
+the graphs with fixed covers and prescribed restriction to $Z$.
+\end{lemma}
+
+\begin{proof}
+Since $f^*p$ has positive degree on each component, we can arrange
+\[
+ H^1(D,V(bf^*p)(-Z))=0 .
+\]
+The connecting morphism from
+principal parts of order $b$ over $p$ then surjects onto
+$H^1(D,V(-Z))$. On each sheet, multiplication by $t^b$ identifies
+these principal parts with two copies of
+$R_b=\mathbb C[t]/(t^b)$. Write $y_1(t),\ldots,y_r(t)$ for the
+formal sheet values. For either $\ell$ the matrix
+$(\ell(y_j(t))^v)_{1\le j\le r,\ 0\le v<r}$ has Vandermonde
+determinant a unit in $R_b$. For each $v$ the coefficients
+$\sum_{a=1}^b c_{av}t^{b-a}$ run through $R_b$. Thus one shear
+prescribes arbitrary principal parts on every sheet in the direction
+$\iota_\ell\Omega$. The two directions span the plane. Differentiation
+of the transition on the punctured overlap gives exactly the resulting
+connecting class, up to the choice of sign for the \v Cech
+differential. Prescribing the graph on $Z$ replaces $V$ by $V(-Z)$
+because the difference of two local lifts vanishes on $Z$.
+\end{proof}
+
+We will need this lemma on a compact set of smooth normalization
+tuples, simultaneously for $Z$ of lengths zero, one and two.
+The corresponding relative symmetric powers of the disjoint smooth
+source curves are proper over the tuple space. For each tuple
+one can take three good punctures, so that at least one avoids the
+base images of any such $Z$. At a given puncture $b$ can be chosen
+uniformly over these subschemes by relative Serre vanishing for the
+ideal of the universal divisor. Surjectivity of the graph deformation
+problem with the jets imposed is open by the rank condition on a two-term
+resolution of the sections of $V(-Z)$. Its differential augmented by
+the parameter variations is surjective. This remains true where the dimensions of
+its kernel or of $H^1(D,V(-Z))$ change. Compactness gives finitely
+many choices of directions on neighborhoods of the tuples and their
+marked subschemes. Distinct choices of $\ell,\Omega$ at the same
+Borel parameter can be placed in separate factors of the parameter
+bundle. Extend each choice locally over $B$ and then smoothly by a
+cutoff. With the $c_{av}$ still zero, moving the parameter section to
+these reference values leaves the target family unchanged. Coincident
+choices of new punctures can also be accommodated by composing their
+shears in the same transition. The linearized variations add at $c=0$.
+
+\subsection{Specialization of the weighted images}
+
+We give the compactness argument for the tuples to which the lemma
+will be applied. Each $X'\to C\times S'$ is affine of finite type by
+Zariski descent, and $C\times S'$ is quasi-projective. Hence $X'$ is
+quasi-projective, and admits a projective closure over $S'$. In each
+threefold fiber the projection to $C$ has contractible fibers. Thus
+on degree-$m$ curves any chosen relative polarization has fixed
+degree locally in the parameter. On compact sets of parameters these
+degrees are bounded. The degree of a positive summand is bounded by
+that of the whole cycle for the polarization.
+
+Choose a relatively compact open neighborhood of the original compact
+zero set, with closure in the given open locus of cycles. Such
+neighborhoods can be taken in the fixed-degree relative Chow space
+of a projective closure, on the open set of cycles with support in
+the affine target. They can also be obtained from a compact bound
+on supports and masses \cite[Theorem~2.11]{DIW}. For $e\mid m$ the
+image of multiplication by $e$ is closed in this locus. Along a
+convergent sequence of multiples the roots have the same supports
+and their masses are divided by $e$. A subsequential limit of the
+roots is therefore a root of the limiting cycle. Choose the closure
+disjoint from these images for all $e>1$. Its boundary misses the
+zero set. Whenever the parameter family is enlarged, take such a
+neighborhood of the whole current compact zero set in the enlarged
+relative cycle space, with closure on the old graph inside the
+preceding neighborhood. The compact boundary misses the simultaneous
+zero of the old graph and tests. It continues to miss this zero for
+all sufficiently small motions of both. The supported Thom product
+in the new neighborhood thus restricts to the previous product by
+excision. Applied successively, this construction keeps compact
+support also for zeros whose normalizations exceed the genus cutoff.
+
+For a cycle $A=\sum_{i=1}^r e_iA_i$ write $d_i$ for the projection
+degree and $h_i$ for the normalization genus of $A_i$. Set
+\[
+       \lambda(A)=\left(\sum_i d_i,\ \sum_i h_i,\ -r\right)
+\]
+with the lexicographic order. The first entry uses the reduced cycle.
+Only finitely many values occur for $\sum_i h_i\le K$.
+
+\begin{lemma}\label{lem:weighted-specialization}
+For a convergent sequence in the chosen neighborhood with fixed
+$\lambda$, the limiting value of $\lambda$ is at most that of the
+sequence, and the sum of normalization genera cannot increase. If
+$\lambda$ stays equal, then, after relabeling and taking a
+subsequence, the normalization maps converge to the smooth
+normalizations of the limiting cycle, with their original weights.
+Connected supports have connected limit.
+\end{lemma}
+
+\begin{proof}
+Keep the degrees, genera and weights of the individual labels constant
+along a subsequence. Stable-map compactness applied to their
+unweighted normalization maps gives a stable limit of each label.
+One can take these limits in the projective closure. The bounds on the
+component degrees give properness there, and the limiting total support
+lies in the affine open. The weighted sum of their image cycles is
+the given limit. Write $A'_j$ for its distinct image curves and
+$b_{ij}$ for the sum of the covering degrees onto $A'_j$ in the
+$i$th stable limit. With $d'_j=\deg(A'_j/C)$ one has
+\[
+       d_i=\sum_j b_{ij}d'_j,\qquad e'_j=\sum_i e_i b_{ij}.
+\]
+Every column sum of $(b_{ij})$ is positive. It follows that the
+reduced degree drops unless every column sum is one. Each $A'_j$
+has normalization genus at least two since it covers $C$. By
+Riemann--Hurwitz any component covering it has at least its genus.
+The genus formula for the nodal sources now bounds the sum of the
+distinct normalization genera by $\sum_i h_i$.
+
+At equal reduced degree every positive component maps with degree
+one onto a different image, and each old label has at least one
+positive component. Thus the number of distinct images cannot
+decrease. If the entire triple is unchanged, each label has only one
+positive component, with its full genus. The dual graph is a tree and
+all contracted vertices are rational. Any nontrivial such tree has a
+contracted leaf, contrary to stability without markings. The
+limiting maps are therefore smooth and birational onto their images,
+and retain the corresponding weights. Finally, a Hausdorff limit of
+nonempty compact connected sets is connected.
+\end{proof}
+
+\subsection{Separation through a fixed genus}
+
+\begin{proof}[Proof of Theorem~\ref{thm:separate}]
+Consider the current constrained cycles of connected support whose
+normalization genera sum to at most $K$. Suppose the values of
+$\lambda$ below a given value have been treated, with finitely many
+transverse multiplicity-one embedded zeros retained. Around each
+of these the embedded smooth maps form an open set of the full cycle
+space \cite[Proposition~2.21]{DIW}. After any one enlargement of
+the family the implicit function theorem preserves this isolated zero
+with its sign under sufficiently small motions of the graph and tests.
+Take smaller disjoint neighborhoods of the retained zeros.
+
+On the complement, take the least remaining value of $\lambda$. The
+normalization tuples with this value over the current constrained set
+form a compact set up to finite relabeling. Indeed their total cycles
+have compact closure as above. Lemma~\ref{lem:weighted-specialization}
+places the limit in the same bounded connected locus. Minimality
+forces equality of the triples and hence convergence in the smooth
+normalization charts. The same argument along sequences of
+perturbations tending to the current graph has two consequences. An
+earlier absent value cannot occur on this complement under sufficiently
+small perturbations. Every new zero of the present value must have
+its tuple in the chosen neighborhoods of the compact original tuples.
+If there is no remaining value, the induction ends.
+
+Enlarge the family using Lemma~\ref{lem:shear-jets} on this compact
+set. The space of ordered smooth graph maps over the enlarged
+parameter $S'$ is smooth near the tuples. To see this, first deform
+their finite covers of $C$ in the smooth Hurwitz stacks. For a smooth
+finite source cover $f_i$, the cokernel of
+$T_{D_i}\to f_i^*T_C$ has finite length and the kernel vanishes.
+After these cover deformations and the parameter in $B$ have been
+prescribed, the remaining obstruction for the graphs lies in
+$\bigoplus_i H^1(D_i,V_i)$, spanned by the parameter variations.
+Thus the graph space submerses onto the product of the Hurwitz
+stacks and $B$. It has complex dimension $\dim S'$, since the
+unmarked threefold index of each component is its Chern number zero
+and the target parameters occur only once. Each graph has trivial
+stabilizer by birationality. This calculation only counts distinct
+normalized components. Their weights enter the tests through the
+cycle sum.
+
+Mark a critical point of a cover. This marking is finite over its
+Hurwitz stack, while nonimmersion requires the two vertical first
+derivatives of the graph to vanish. Mark instead two distinct source
+points over the same base value, on the same or on different
+components. This adds at most one complex dimension over the covers.
+Coincidence of the two images then imposes two vertical equations.
+Take smooth strata of these marked spaces over the Hurwitz stacks
+and pull back by the submersion just proved. The fixed-cover jet
+variations of Lemma~\ref{lem:shear-jets} are transverse to the
+equations on every such stratum at a zero. In the second calculation
+a common change of target coordinates cancels in the variation of the
+difference of two equal images. In the first calculation it preserves
+the vanishing of the derivative at a critical point. Hence both bad
+loci have dimension strictly less than $\dim S'$. The length-two
+subschemes in the lemma include the limits of two marks approaching
+one another.
+
+Move the parameter graph by finitely many smooth sections spanning
+its vertical normal directions along the compact base $B$. Move the
+tests independently by smooth sections spanning $T$ there. The graph
+condition and the tests together have real codimension $2\dim S'$,
+and the auxiliary directions span their joint normal bundle even on
+the marked strata. Sard's theorem on countably many smooth charts
+gives arbitrarily small choices transverse on the unmarked spaces and
+missing all the bad strata. We can impose transversality to the
+parameter graph alone at the same time. A connected constrained tuple
+of the present type now has one component, since distinct embedded
+images in the tuple are disjoint. Its weight is one, since the collar
+excludes proper multiples. The surviving zeros of this type are
+finite by Lemma~\ref{lem:weighted-specialization}, compactness, and
+transversality in the smooth charts. They are isolated in the full
+cycle space on the parameter graph with the tests imposed, again by
+embedded-cycle openness. Add them to the retained list. An enlargement
+preserves regularity of the parameterized graph equations at the old
+zeros, since the old parameter directions are still present at its
+zero section. Openness then gives the same regularity at their
+continuations. At an embedded curve the obstruction for the fixed
+target is $H^1$ of its normal bundle. Since the parameterized graph
+problem has zero obstruction, its target variations surject onto
+this group. There are only finitely many values of $\lambda$ to
+treat.
+
+Take $S$ to be the final parameter scheme. Its algebraic zero sections
+embed every preceding family in this last family. Concatenating the
+smooth parameter paths gives the claimed homotopy. The reference
+values of $\ell,\Omega$ can be moved before each small perturbation
+inside $c=0$, where the target and tests are constant. The compact
+joint support there is just transported along the reference path.
+The successive collars and excision give a homotopy of the joint
+Thom product, relative to the complement of its compact support.
+A connected stable map of genus at most $K$ has connected support,
+and its arithmetic genus bounds the sum of the genera of the distinct
+image normalizations by Riemann--Hurwitz. It consequently maps to
+one of the retained embedded curves with degree one.
+
+Finally, maps to fibers of the smooth open $X/S$ form an open
+substack of the relative stable-map stack for a projective closure.
+The obstruction theory on this open, relative to the prestable source
+and to $S$, is dual to the derived sections of the pullback of
+$T_{X/S}$. It gives the vertical virtual class in Borel--Moore homology
+after taking cycle classes. The universal domain and this obstruction
+theory commute with base change at the regular algebraic section $i$.
+Its refined Gysin pullback gives the relative virtual class of the
+original family \cite[\S7]{BF}. The normal Thom class computes the
+same Gysin map on cycle classes. For each connected source genus the inverse
+image of the compact supporting set on cycles is compact by
+properness of the image-cycle map \cite{WueProduct}. This proves the second
+assertion and completes the proof.
+\end{proof}

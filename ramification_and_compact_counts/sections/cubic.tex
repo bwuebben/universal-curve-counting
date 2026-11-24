@@ -1,0 +1,207 @@
+\section{A double cover joined to the zero section}\label{sec:cubic}
+For a double wall the first reducible support occurs already in degree three. A branch point supplies a joining flag, and different flags may occur together. This leads to a relation between the signed counts of smooth double and cubic covers.
+\subsection{Smoothing a double cover joined to the identity}\label{p10-sec:nodes}
+
+Let $D_t$ be a smooth path of real Cauchy--Riemann operators with fixed
+symbol on a complex rank-two bundle $N$ of degree $2g-2$ over $C$.
+Suppose $D=D_0$ is invertible, of determinant sign $\epsilon$.
+Let $f:Y\to C$ be a connected smooth double cover with $b>0$ simple
+ramification points over distinct values. Suppose that $K=\ker f^*D$
+is a real line, that its generator $\xi$ is odd under the deck
+involution, and that $(f,\xi):Y\to N$ is an embedding. Put
+$P_f=\operatorname{coker}f^*D$. Write $s$ for the $b$ complex branch
+parameters and the increasing real path parameter together. We assume
+the double crossing is transverse, so that the derivative of the
+pullback operator on its kernel induces an isomorphism
+\[
+  W_f:T_{(f,0)}(\mathcal H_2\times\RR)
+          \longrightarrow \operatorname{Hom}_{\RR}(K,P_f).
+\]
+Here $\mathcal H_2$ denotes the fixed-target double Hurwitz chart.
+Write $\eta_f$ for the sign of $W_f$ with the absolute Fredholm
+orientation, obtained by deformation to a complex operator.
+
+Choose a nonempty subset $I$ of the ramification points. Join each
+$r_i\in I$ to $x_i=f(r_i)$ on one copy of $C$, and denote the resulting
+finite cubic map by $h_I$. Its arithmetic genus is
+$H=g(Y)+g+j-1$, where $j=|I|$. Near $r_i$ take coordinates
+$w=z^2$ centered at $x_i,r_i$, and a local frame holomorphic for the
+complex-linear part of $D$. Write $D=\bar\partial+B(w)\,d\bar w$ with
+$B(w)$ antilinear, and put $v_i=\partial_z\xi(r_i)$. Since $df(r_i)=0$,
+$d\xi(r_i)$ is complex linear, and embeddedness gives $v_i\ne0$.
+The condition
+\begin{equation}\label{p10-eq:node-jet}
+                 B(x_i)v_i\ne 0\quad\text{in }N_{x_i}/\CC v_i
+\end{equation}
+is independent of the coordinates, complex frame and real generator.
+Indeed the change of frame adds only a complex-linear term to the
+zeroth-order coefficient, and $\xi(r_i)=0$.
+
+\begin{theorem}\label{p10-thm:nodes}
+With the double crossing and joining set $I$ as above, assume \eqref{p10-eq:node-jet} at every point
+of $I$. The pullback kernel at $h_I$ is isolated in the full fixed-target
+chart of genus $H$ times the path. Its local contribution to the change
+of the absolutely oriented normal Euler number is
+\[
+                         (-1)^j\epsilon\eta_f .
+\]
+If \eqref{p10-eq:node-jet} holds at every ramification point, summing over
+all choices of $j$ joins gives $\binom bj(-1)^j\epsilon\eta_f$.
+Condition \eqref{p10-eq:node-jet} holds at all such crossings on a generic
+smooth path of base-invertible fixed-symbol operators with rigid endpoints.
+\end{theorem}
+
+The attaching parameter moves the common value along the tangent of
+the double graph. The smoothing parameter contributes in the
+quotient by that tangent. Its leading term is conjugate-linear after
+a radial change of variable, which accounts for the sign at a node.
+
+The full local calculation is given in Appendix~\ref{app:double-equation}.
+Its normalized equation has one complex tangent column from the
+moving branch and one complex antilinear column from the smoothing
+at each selected point. The projected coefficient in
+\eqref{p10-eq:node-jet} makes both columns regular after the radial
+change of variable. The base determinant and the absolute crossing
+coorientation supply the two remaining signs. Unlike the sextic
+calculation below, the double has only an odd kernel line; imposing
+its normalization leaves no even height common to the nodes.
+
+To pass from this local degree to the Gromov--Witten change, one must
+also allow contracted curves at the joins and at smooth points of
+the two branches. The displacement comparison of
+Theorem~\ref{p10-thm:descendants} replaces the joined map by regular
+embedded graphs of genus \(H\). In source genus \(k\) their degree-one
+contribution is \([v^{2k-2}]x^{H-1}\) times the signed degree above.
+Proposition~\ref{p10-prop:compact} gives the finiteness needed to sum
+these contributions along a generic path.
+
+\subsection{The chamber formula and the balanced product}\label{p10-sec:chamberproof}
+\begin{proof}[Proof of Theorem~\ref{p10-thm:chambers}]
+By Proposition~\ref{p10-prop:compact} and its double-cover counterpart
+there are finitely many crossings on the path. At a smooth double
+wall with $2l$ branch values the degree-two change is $\eta_f x^{2c+l}$
+(Theorem~\ref{p9-thm:wall}). At a smooth cubic wall with the same
+branch count the degree-three change is $2\eta_f x^{3c+l}$ by
+Proposition~\ref{p10-prop:smoothjump}. The separation in
+Proposition~\ref{p10-prop:incidence} applies to covers of every genus.
+
+Consider the degree-three virtual cylinder at a double crossing.
+A nonzero section must restrict nontrivially to a nonconstant
+normalization, since matching determines its values on every
+connected contracted block. There is no cubic normalization with
+kernel at this parameter. There must therefore be a degree-two
+normalization carrying the odd kernel and a copy of $C$ at zero
+height. Both graphs are embedded. Their common image points are the
+$2l$ ramification points, each with one preimage on each graph.
+There is no self-node and a contracted block has at most two
+nonconstant attaching branches. Thus at least one of these $2l$
+points is used to connect the graphs, either directly or by a
+contracted bridge. The set $I$ of such points determines the compact
+locus of Theorem~\ref{p10-thm:descendants}; every other contracted
+component belongs to its allowed decorations. When $l=0$ there
+is no connected support of this type.
+
+Put $j=|I|$. The arithmetic genus of the bare join is
+$(1+2c+l)+(1+c)+j-1=1+3c+l+j$. Theorem~\ref{p10-thm:descendants}
+therefore gives the total change at this double crossing as
+\[
+  \sum_{j=1}^{2l}\binom{2l}{j}(-1)^j\epsilon\eta_f x^{3c+l+j}
+   =\epsilon\eta_f x^{3c+l}\big((1-x)^{2l}-1\big).
+\]
+For each fixed source genus the supported Euler change is additive
+on the finite collection of disjoint compact loci just classified.
+Outside them the ordinary oriented cokernel extends over the
+parameter. Summing coefficientwise over all arithmetic genera proves
+\eqref{p10-eq:chambers}. Substitution $x\mapsto (2\sin(v/2))^2$ is
+injective on polynomials, since the substituted series begins with
+$v^2$. The first equation determines $W_2$ from the endpoints and
+the second then determines $W_3$.
+\end{proof}
+
+Let $H$ be Pardon's rational algebra of complex cycle families
+\cite{pardon}, and $F_h$ the balanced antidiagonal local curve series
+of genus $h$ in this algebra \cite{WueProduct}. In the comparison
+algebra $S$ of almost complex cycle families, let $P_d(D)$ denote
+the class of the isolated cycle $d[C]$ for the homogeneous normal
+equation $D$. The variable $q$ records the degree over $C$. A
+\emph{balanced lift through degree three} is a product of
+$F_h(q^d)$ with integer exponents, finite at each $d\le3$, whose
+image under the comparison $H\to S$ agrees with
+$1+\sum_{d=1}^3P_d(D)q^d$ modulo $q^4$.
+
+\begin{theorem}\label{p10-thm:product}
+Each endpoint in Theorem~\ref{p10-thm:chambers} has a unique balanced lift
+$P^H_{\le3}(D)$ through degree three. Set
+$V(x)=2W_3(x)+\epsilon(W_2(x(1-x)^2)-W_2(x))$. Then
+\[
+ \frac{P^H_{\le3}(D_+)}{P^H_{\le3}(D_-)}
+ =\prod_{l\ge0}F_{1+2c+l}(q^2)^{W_{2,l}}\,
+  \prod_{l\ge0}F_{1+3c+l}(q^3)^{[x^l]V(x)}
+       \pmod{q^4}.
+\]
+\end{theorem}
+\begin{proof}
+We apply the finite-degree factorization of \cite[Corollary~3.2]{WueUnramified}
+using only the stated endpoint rigidity. Smooth the intersections of a
+horizontal torus with $g-1$ parallel vertical tori in a product of
+two symplectic two-tori, and include the product in a six-torus. The
+resulting genus-$g$ surface represents a primitive class $A$,
+as pairing in the first two factors with a vertical torus gives
+one. Its symplectic normal bundle has degree $2g-2$. Identify the
+normal germ with the given one along the surface and extend its graph
+almost complex structure to a global tame structure, by interpolation
+to a compatible extension in a sufficiently small tube
+\cite[proof of Proposition~3.1]{WueUnramified}.
+
+Through energy $3\omega(A)$ the only cycles contained in the
+closed tube are multiples of the zero section. Indeed a component
+in that tube projects holomorphically in positive degree; a component
+of nonzero height would give a nonzero kernel on its smooth
+normalization. The degree agrees with the positive energy label since
+the tube retracts to $C$. The cycles in the interior give a compact
+open and closed insertion through this cutoff. Compactness of cycles
+and convergence of supports preserve separation from the tube
+boundary under a small perturbation of the ambient structure
+\cite{diw}. Transport to a generic perturbation and finite-energy
+cluster decomposition express this insertion as a product of the
+images of the balanced factors with integral exponents
+\cite[Corollary~3.2]{WueUnramified}. Their coefficients generate the integral
+cycle algebra by \cite[Theorem~1.1]{WueGenerators}. The construction at that energy involves
+only labels through three. Lift each factor to $H$. If two products
+first differed at label $d$, the difference at that label would be
+a finite linear combination of $[q]F_h(q)$ whose image vanishes
+in $S$. Independence of these images under fixed-genus detection
+\cite[Theorem~5.1]{WueProduct} gives
+uniqueness.
+
+It remains to identify the exponents of these geometric products.
+At each endpoint, fixed-target comparison in the compact realization
+\cite[Theorem~1.2]{zinger} identifies the connected local series
+in degrees $1,2,3$ with the integrals defining $L_d$. The series
+of an elementary factor in its first label is $x^{h-1}$
+\cite[Theorem~2]{pandhodge}. In degree one the endpoint factor is
+$F_g(q)^{\epsilon}$ at both ends. At labels two and three the only
+proper divisor is one. Its contribution to the logarithm of the
+ratio cancels, and an exponent difference in genus $h$ at either
+new label therefore contributes exactly its multiple of $x^{h-1}$.
+The finite Laurent monomials in $x$ are linearly independent after
+sine substitution. Equation~\eqref{p10-eq:chambers} determines all
+the differences asserted above.
+\end{proof}
+
+Write $n_{d,h}(D)$ for the exponents in this lift. The original
+fixed-target series in degree $d$ vanishes below genus $1+dc$ by
+Riemann--Hurwitz. For $d=2,3$ the only proper-divisor contribution
+comes from the genus-$g$ balanced reference in label one, whose
+degree-$d$ term satisfies the same bound. The remaining monomials
+$x^{h-1}$ have distinct leading orders, so $n_{d,h}(D)=0$ for
+$h<1+dc$ \cite[Proposition~3.1 and Corollary~3.2]{WueUnramified}. Set
+$N_d(D;x)=\sum_{l\ge0} n_{d,1+dc+l}(D)x^l$.
+\begin{corollary}
+The polynomial $N_3(D;x)-N_2(D;x+x^3)+N_2(D;x)$ modulo two is
+constant between rigid endpoints joined in $\mathcal U$.
+\end{corollary}
+\begin{proof}
+The two exponent changes are $\Delta N_2=W_2$ and $\Delta N_3=V$.
+Modulo two one has $x(1-x)^2=x+x^3$, $2W_3=0$ and $\epsilon=1$.
+\end{proof}

@@ -1,0 +1,303 @@
+\section{Collision divisors and elliptic tails}\label{p8-sec:hurwitz}
+
+Fix a smooth compact curve \(C\) of genus \(g\ge 2\), put
+\(H_m=1+m(g-1)\), and let \(m\ge 2\). Inside the stack of connected
+stable maps \(\overline{\mathcal M}_{H_m+1}(C,m)\), let
+\(\mathcal F_m=\mathcal F_m(C)\) be the locus of maps finite over \(C\).
+These maps are flat, since the source is a nodal curve and its
+structure sheaf is torsion-free over the smooth target. The locus is
+open by properness of the universal curve and openness of
+quasi-finiteness. Its complement is a union of open and closed
+elliptic-tail loci, as proved in Section~\ref{p8-sec:tails}. Thus
+\(\mathcal F_m\) is proper. Bryan and Pandharipande introduced this
+surface and its branch morphism in their calculation of local
+invariants of curves \cite[\S\S1.3.2, 4]{bp01}.
+
+For a finite map, Riemann--Hurwitz on the normalization and the genus
+formula for a nodal curve give
+\[
+           2=\deg R+2\,\#\{\text{nodes}\},
+\]
+where \(R\) is the ramification divisor on the normalization. Thus a
+nodal map has one node and its normalization is \'etale. At a smooth
+ramification point of index \(b\) the local presentation \(w=z^b\)
+identifies the relative cotangent complex with the module
+\(\mathcal O/(z^{b-1})\) in degree zero. At the node there are
+coordinates \(uv=0\), \(w=u+v\), since both branches are unramified.
+Writing its local algebra over the target as
+\(\mathcal O_C[u]/(u^2-wu)\) gives the relative cotangent complex
+\(\mathcal O/(2u-w)\) in degree zero. Here \(2u-w=u-v\) is a
+nonzerodivisor and the quotient has length two. In each case the
+module has projective dimension one. Its sheaf \(\mathcal{H}\!om\)
+to \(\mathcal O\) vanishes, and its sheaf \(\mathcal{E}\!xt^1\) has the
+same finite length as the module. The local-to-global sequence for
+deformations over \(C\) consequently gives tangent dimension two and
+zero obstruction. This proves smoothness of the stack and identifies
+its virtual class with its fundamental class.
+
+The branch morphism
+\(\beta:\mathcal F_m\to C^{(2)}\) sends a smooth cover to its branch
+divisor and a nodal one to twice the image of the node. Let
+\(\Delta=\{2x:x\in C\}\). The connected components of the reduced
+preimage of \(\Delta\) are of three kinds.
+\begin{itemize}
+\item \(N_i\) consists of nodal covers. The two points above the node
+  belong to a possibly disconnected \'etale normalization.
+\item \(T_j\) consists of smooth covers having a single ramification
+  point of index three.
+\item \(U_k\) consists of smooth covers having two distinct simple
+  ramification points over the same point of \(C\).
+\end{itemize}
+For any such component \(B\), write \(a_B:B\to C\) for its branch
+value and \(d_B=\int_B a_B^*[{\rm pt}]\). This is a stack degree.
+For a fixed branch value it sums \(1/|\operatorname{Aut}_C(f)|\)
+over the corresponding isomorphism classes. Indeed, the monodromy
+data over the complement of the branch value are discrete and finite
+in fixed degree, and move uniquely up to isomorphism in a disk of
+branch values. In the nodal case the data consist of an \'etale cover
+and an unordered pair of distinct sheets to be identified, with
+connected quotient. Automorphisms interchanging the branches are
+included.
+
+In a versal deformation of a nodal map the local model is
+\(uv=t,\ w=u+v+v_0\). Its two critical values have squared difference
+\(16t\). At a point of \(T_j\) the model is \(w=z^3+uz+v\), for
+which the squared difference is a nonzero constant times \(u^3\).
+At a point of \(U_k\) the two critical values \(v_1,v_2\) are
+independent parameters on an ordering cover; their squared
+difference is \((v_1-v_2)^2\). The local deformation calculation
+above gives all the parameters in these models. In particular the
+reduced divisors are smooth and pairwise disjoint, and
+\begin{equation}\label{p8-eq:hurwitz-pullback}
+        \beta^*\Delta=\sum_i N_i+3\sum_j T_j+2\sum_k U_k.
+\end{equation}
+The multiplicities are orders on stack charts. Since the pullback of
+\(\Delta\) to \(C\times C\) is twice the diagonal, \(\Delta^2=4-4g\).
+Restricting \eqref{p8-eq:hurwitz-pullback} to a component of multiplicity
+\(\ell_B\) gives
+\begin{equation}\label{p8-eq:hurwitz-intersection}
+                         B^2=\frac{4-4g}{\ell_B}\,d_B .
+\end{equation}
+These are the branch intersections used in \cite[\S4.3]{bp01}.
+
+For a theta characteristic \(\theta\) define the following signs on the
+reduced divisors. On \(N_i\), let \(\widetilde f\) be the normalization
+of the cover. On \(T_j\), write \(p\) for the ramification point. Put
+\begin{equation}\label{p8-eq:hurwitz-signs}
+ s_\theta(N_i)=(-1)^{h^0(\widetilde f^*\theta)},\qquad
+ s_\theta(T_j)=(-1)^{h^0(f^*\theta(p))}.
+\end{equation}
+In each expression the line is a theta characteristic on a smooth
+curve, and its parity is locally constant. On a disconnected
+normalization \(h^0\) is the sum over its components.
+
+\begin{theorem}\label{p8-thm:boundary}
+In \(H^2(\mathcal F_m;\QQ)\) the Euler class of the oriented spin
+obstruction plane is
+\begin{equation}\label{p8-eq:hurwitz-euler}
+ e(V_\theta)=-\frac14
+    \left(\sum_i s_\theta(N_i)[N_i]+\sum_j s_\theta(T_j)[T_j]\right),
+\end{equation}
+where brackets denote the classes of the reduced divisors.
+For \(D=D_\theta\oplus D_\eta\), the finite-map contribution is
+\begin{equation}\label{p8-eq:hurwitz-finite}
+ F_m(D)=-\frac{g-1}{4}\left(
+    \sum_i d_{N_i}s_\theta(N_i)s_\eta(N_i)
+    +\frac13\sum_j d_{T_j}s_\theta(T_j)s_\eta(T_j)\right).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The cokernels over finite nodal maps extend the oriented plane on the
+smooth locus by the normal obstruction bundle construction
+\cite[Theorem~8.1 and Lemma~11.1]{lpob}. Off the \(N_i\) and \(T_j\) there are two
+distinct simple ramification points. By Theorem~\ref{p8-thm:residue}
+their residue spaces are orthogonal lines. Ordering the points and
+choosing a unit vector for each complex quadratic form gives a finite
+cover trivializing the orthogonal bundle on this entire open set,
+including the \(U_k\). Uniqueness up to homotopy of its positive
+real form and transfer imply that the rational Euler class restricts
+to zero there. By the Thom isomorphism for the disjoint smooth
+divisors, it is therefore a linear combination of the classes
+\([N_i]\) and \([T_j]\).
+
+Set \(\kappa=c_1(K_C)\). On \(N_i\) the normalization sequence of
+Corollary~\ref{p8-cor:nodal-spin-matching} gives
+\(e(V_\theta)|_{N_i}=s_\theta(N_i)a_{N_i}^*\kappa/2\).
+On \(T_j\) Theorem~\ref{p8-thm:profiles} gives
+\(e(V_\theta)|_{T_j}=s_\theta(T_j)a_{T_j}^*\kappa/6\).
+Integrating over a component \(B\) and dividing by its nonzero
+self-intersection \eqref{p8-eq:hurwitz-intersection} determines its
+coefficient. It is \(-s_\theta(B)/4\) in both cases. Finally the
+oriented cokernel for \(D\) is the direct sum of the two spin
+obstruction planes. Integrating the product of their Euler classes
+and applying \eqref{p8-eq:hurwitz-intersection} gives
+\eqref{p8-eq:hurwitz-finite}.
+\end{proof}
+\subsection{Contracted elliptic tails}\label{p8-sec:tails}
+
+Let \(N\to C\) be a complex vector bundle of rank two and degree
+\(2g-2\), and \(D\) a real Cauchy--Riemann operator on \(N\). Assume
+that the pullback operator on every smooth connected cover of \(C\)
+is injective. On an \'etale cover the index is zero, so the operator
+is invertible. Orient all normal determinants by continuation from
+complex-linear operators, and denote the determinant sign of an
+\'etale cover \(f\) by \(\sigma_D(f)\). The signed stack degree of
+the connected \'etale covers of degree \(m\) is
+\[
+ c_m(D)=\sum_{[f:Y\to C]}
+                  \frac{\sigma_D(f)}{|\operatorname{Aut}_C(f)|}.
+\]
+Write \(L_{m,H_m+1}(D)\) for the absolute normal Euler number on
+\(\overline{\mathcal M}_{H_m+1}(C,m)\) and \(F_m(D)\) for its
+integral over the finite-map locus. Put \(F_1(D)=0\), since a
+finite degree-one cover is an isomorphism. When \(D\) is the normal
+operator of a super-rigid embedded curve, the fixed-target
+comparison identifies this absolute Euler pairing with the local
+Gromov--Witten degree \cite[Theorem~1.2(2)--(3)]{zinger}.
+For $m\ge2$ the relatively oriented Euler number of
+\cite[Definition~6.2 and Remark~6.4]{bai} differs from this absolute
+number by the determinant sign of the operator on $C$.
+
+
+\begin{proposition}\label{p8-prop:tails}
+The complement of the finite-map locus is a disjoint union of
+open and closed components indexed by the connected degree-\(m\)
+\'etale covers \(f:Y\to C\). Each component has its ordinary
+fundamental class as virtual class. Their contributions give
+\begin{equation}\label{p8-eq:tails-identity}
+         L_{m,H_m+1}(D)=F_m(D)-\frac{m(g-1)}{12}\,c_m(D).
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Consider a stable map, and let \(s\) be the number of nonconstant
+components on the normalization of its domain. Write \(R\) for the
+sum of their ramification divisors, \(g_0\) for the sum of the
+genera of the normalized contracted components, and \(\Gamma\) for
+the connected dual graph. Riemann--Hurwitz and the arithmetic genus
+give
+\[
+             2=s+\frac{\deg R}{2}+g_0+b_1(\Gamma).
+\]
+If \(s=2\), both positive-degree components are \'etale and the
+graph is a tree. A contracted rational vertex must have valence at
+least three, which is impossible in a tree with at most two leaves.
+If \(s=1\) and \(\deg R=2\), the same argument excludes a contracted
+subtree. If \(s=1\) and \(\deg R=0\), the nonconstant component has
+smooth normalization \(Y\) of genus \(H_m\), and \(g_0+b_1(\Gamma)=1\).
+When \(g_0=1\) the tree consists of \(Y\) joined directly to a
+smooth genus-one component. When \(b_1(\Gamma)=1\), every contracted
+vertex has valence at least three. The identity
+\(\sum_v(\operatorname{val}(v)-2)=0\) leaves just a self-node on
+\(Y\), or one contracted rational vertex with a self-loop joined
+to \(Y\) by one edge. Thus every map with a contracted component
+consists of a smooth connected \'etale cover with a one-pointed
+stable curve of genus one attached.
+
+For fixed \(f\), gluing at \(x\in Y\) defines a proper morphism from
+\[
+ \mathcal G_f=
+  \big[(Y\times\overline{\mathcal M}_{1,1})/\operatorname{Aut}_C(f)\big]
+      \longrightarrow\overline{\mathcal M}_{H_m+1}(C,m).
+\]
+The deck group acts on \(Y\), and the pointed tail retains its stack
+stabilizers. To compute the deformation theory at
+\(Y\cup_{x=y}E\), first preserve the attaching node. The cover is
+rigid because \(df:T_Y\to f^*T_C\) is an isomorphism. Its marked
+point moves freely. The tail deforms as a pointed stable curve with
+constant image in \(C\). Varying this image makes the matching
+equation at the node transverse. The remaining obstruction is
+\(T_{f(x)}C\otimes H^1(E,\mathcal O_E)\). The boundary map from
+the smoothing line is
+\begin{equation}\label{p8-eq:tails-smoothing}
+ T_xY\otimes T_yE\ \xrightarrow{\,df_x\otimes\delta_y\,}\
+ T_{f(x)}C\otimes H^1(E,\mathcal O_E),
+\end{equation}
+up to the choice of sign for the connecting homomorphism. Indeed,
+in the plumbing \(uv=t\), the linear term on the cover gives the
+principal part \(df_x(t/v)\) on the tail. Thus \(\delta_y\) is the
+connecting homomorphism for
+\(0\to\mathcal O_E\to\mathcal O_E(y)\to T_yE\to0\). The dualizing
+sheaf is trivial for both a smooth elliptic curve and an irreducible
+one-nodal genus-one curve. Serre duality and Riemann--Roch give
+\(H^1(\mathcal O_E(y))=0\) and \(H^0(\mathcal O_E(y))=\CC\).
+Hence \eqref{p8-eq:tails-smoothing} is an isomorphism on all of
+\(\mathcal G_f\).
+
+The full stable-map theory is therefore unobstructed of complex
+dimension two along \(\mathcal G_f\), and its tangent space consists
+of the attachment and pointed-tail deformations. These are precisely
+the tangents to the source of the gluing morphism. Gluing identifies
+the stabilizers and is injective on geometric points, since the
+positive-degree component and the attaching node are intrinsic. It
+is thus a proper representable \'etale open immersion, and its image
+is closed as well. This proves the asserted component description
+and the fundamental-class claim. It also gives the properness used in
+Section~\ref{p8-sec:hurwitz}. An alternative description by lifting to
+the maximal \'etale cover appears in \cite[\S2.2]{bp01}.
+
+It remains to orient the normal obstruction. On \(Y\) the operator
+\(f^*D\) is invertible. On the constant tail the normal operator
+is \(\bar\partial\) with coefficients in \(N_{f(x)}\). Its kernel
+consists of the constants, which evaluate isomorphically onto the
+matching fiber. The normalization exact sequence at the attaching
+node consequently identifies the full normal cokernel with
+\[
+                    H^1(E,\mathcal O_E)\otimes N_{f(x)}.
+\]
+This uses the arithmetic \(H^1\) also for a nodal tail. In families
+the first factor is the dual of the Hodge line \(\mathbb E\). The
+normalization isomorphism of determinants gives the constants and the
+matching fiber their complex orientations; their determinants cancel.
+Continuing from the complex-linear normalization sequence leaves
+the factor \(\sigma_D(f)\) from the invertible cover operator
+\cite[\S2]{zinger}, \cite[Appendix~B]{bai}. Thus the full normal
+orientation is the complex orientation of
+\(\mathbb E^\vee\otimes f^*N\) multiplied by \(\sigma_D(f)\).
+
+Write \(\lambda=c_1(\mathbb E)\). On the product of the two curves
+\[
+        c_2(\mathbb E^\vee\otimes f^*N)=-\lambda\,c_1(f^*N).
+\]
+The genus-one discriminant has a simple zero at the nodal boundary
+and weight twelve, so \(12\lambda\) is the boundary class on
+\(\overline{\mathcal M}_{1,1}\). The boundary point has stabilizer
+of order two, whence \(\int\lambda=1/24\). Finally
+\(\int_Y c_1(f^*N)=m(2g-2)\). Dividing by
+\(|\operatorname{Aut}_C(f)|\) and summing proves
+\eqref{p8-eq:tails-identity}.
+\end{proof}
+
+We record the implication for the exponents of the elementary
+factors. Let \(n_{d,a}\) be the coefficients in the expansion of
+the connected local series in the connected elementary series
+\(G_a(q^d,t)\), with \(a\ge H_d\). Here $G_a$ is the
+connected Gromov--Witten series of the elementary genus-$a$ curve,
+the logarithm of its normalized partition function. A connected
+degree-$j$, genus-$h$ contribution has monomial $q^jt^{2h-2}$.
+The same counts are attached to the balanced universal factors
+in Section~\ref{p8-sec:exponents}. Write \(C_j(a)\) for the
+unsigned connected \'etale degree-\(j\) count of a genus-\(a\)
+curve, and \(F_j^{\rm elem}(a)\) for the finite-map Euler number of
+its doubled spin operator at first excess. All \'etale signs of this
+operator are positive. The elementary series begins in degree \(j\)
+at genus \(1+j(a-1)\), and its degree-one leading coefficient is one
+\cite[Propositions~3.2--3.3]{ip}, \cite[Proposition~3.46]{diw}. At genus
+\(H_m\), comparison therefore gives
+\[
+               c_m(D)=\sum_{d\mid m} n_{d,H_d} C_{m/d}(H_d).
+\]
+At genus \(H_m+1\), a proper divisor \(d\mid m\) can still contribute
+only the factor of genus \(H_d\), since increasing that genus by one
+raises the least source genus by \(m/d\). For the equal-degree
+factor of genus \(H_m\) the finite term is \(F_1^{\rm elem}(H_m)=0\).
+In each divisor term the tail multiplier in
+\eqref{p8-eq:tails-identity} is the same, since
+\((m/d)(H_d-1)=m(g-1)\). The least-genus identity cancels their sum
+against the tail contribution on the left and yields
+\begin{equation}\label{p8-eq:tails-exponent}
+          n_{m,H_m+1}=F_m(D)-
+          \sum_{\substack{d\mid m\\d<m}}
+                   n_{d,H_d}\,F_{m/d}^{\rm elem}(H_d).
+\end{equation}

@@ -1,0 +1,78 @@
+\pdfoutput=1
+\documentclass[11pt]{amsart}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,microtype}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\hypersetup{pdfauthor={Bernd Johannes Wuebben},pdftitle={Triple curves and unbounded denominators in threefold curve counting}}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\CC}{\mathbb C}
+\newcommand{\PP}{\mathbb P}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\FF}{\mathbb F}
+\newcommand{\cO}{\mathcal O}
+\DeclareMathOperator{\Tot}{Tot}
+\DeclareMathOperator{\Pic}{Pic}
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Bl}{Bl}
+\DeclareMathOperator{\conv}{conv}
+\title[Triple curves and unbounded denominators]{Triple curves and unbounded denominators in threefold curve counting}
+\author{Bernd Johannes Wuebben}
+\subjclass[2020]{14N35 (primary); 14C25, 14H30, 14H60 (secondary)}
+\keywords{Local curves, universal curve counting, Gromov--Witten invariants, triple covers, integral cycle algebra}
+\date{November 24, 2026\\This version: November 24, 2026}
+\begin{document}
+\begin{abstract}
+We exhibit a smooth projective Calabi--Yau threefold on which the
+exponents of the scalar local factors in the universal series of
+effective curves have unbounded denominators, even among homology
+classes of divisibility three. These factors are defined by scaling
+both normal directions to a curve with the same weight. For a curve of
+odd genus $2k+1$, the scalar class of its tripled zero section has
+exact denominator $3^k$ in the integral cycle algebra in Chern number
+and virtual dimension zero. We also determine the denominator in even
+genus. From even genus four onward it is smaller than the least
+product of weights needed to isolate the triple by single-fiber
+evaluations, even allowing the normal bundle to vary.
+A deformation separates the moving curves. Counting their embedded
+images in the cycle space and their contributions in every source
+genus on the same family determines the difference of the universal classes.
+\end{abstract}
+\maketitle
+\raggedbottom
+\setcounter{tocdepth}{1}
+\newpage
+\tableofcontents
+\newpage
+\input{sections/introduction}
+\input{sections/comparison_statement}
+\input{sections/arithmetic}
+\input{sections/compact}
+\input{sections/spectral_weights}
+\input{sections/spectral_deformations}
+\input{sections/spectral_comparison}
+\input{sections/evaluation}
+\input{sections/cyclic}
+\input{sections/obstructions}
+\input{sections/moving}
+\input{sections/composites}
+\appendix
+\input{sections/toric}
+\input{sections/handle}
+\input{sections/five}
+\input{sections/split_modes}
+\input{sections/cusp_pencils}
+\input{sections/references}
+\end{document}

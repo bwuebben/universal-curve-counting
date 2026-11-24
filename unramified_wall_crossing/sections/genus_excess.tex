@@ -1,0 +1,75 @@
+\section{Denominators at fixed genus excess}\label{sec:excess}
+Let \(C\) be an isolated smooth embedded index-zero curve of genus \(g\ge2\) whose normal operator is regular on all finite étale covers. Equivalently for the following argument, take a core in the all-cover super-rigid domain of Proposition~\ref{prop:rescale} and use its cutoff-dependent isolated insertions. Let \(L_{m,k}\) be the connected, fixed-target local Gromov--Witten degree at covering degree \(m\) and arithmetic source genus \(k\). Write \(h_m=1+m(g-1)\). On super-rigid curves these numbers are the absolute obstruction Euler numbers of Section~\ref{sec:factors}; the denominator argument uses the geometric elementary factorization, not a family-level numerical evaluation on analytic targets.
+
+\emph{Theorem.} Put \(T_0=1\) and let \(T_{2r}=\prod_{p-1\le2r} p^{\lfloor2r/(p-1)\rfloor}\), the product over prime \(p\). For every \(r\ge0\),
+\[\gcd(m,r)\,T_{2r}\,L_{m,h_m+r}\in\mathbb Z .\]
+For \(r>0\) this gives the uniform bound \(rT_{2r}\) on denominators in the sense of divisibility. The only possible denominator primes are at most \(2r+1\), independent of the covering degree, deck groups and genus of the core. When \(r=1\) the sharper bound is \(12/\gcd(12,g-1)\), and the residue modulo integers is determined by the signs on the étale covers of degrees dividing \(m\). The common genus-independent bounds are optimal for \(1\le r\le4\).
+
+\emph{Proof.} Use the elementary connected series \(G_a=\log Z_a\) for a core of genus \(a\ge2\), with the notation
+\[\begin{aligned}
+ y&=qt^{2a-2},\\
+ Z_a(y,t)&=\sum_{\lambda}y^{|\lambda|}
+    H_\lambda^{2a-2}\prod_{b\in\lambda}
+    \left(\frac{2(1-\cos(\ell_b t))}{(\ell_b t)^2}\right)^{a-1},
+ \qquad H_\lambda=\prod_{b\in\lambda}\ell_b .
+\end{aligned}\]
+Here \(\ell_b\) is the hook length of box \(b\), the empty partition contributes one, and \(y,t\) are treated as independent formal variables. This is Ionel--Parker's elementary series after removal of its minimal power of \(t\) in each degree. The coefficient \([y^kt^{2s}]\log Z_a\) is the connected coefficient of covering degree \(k\) at source genus \(1+k(a-1)+s\) \cite{ip} \cite{WueProduct}.
+
+Let \(\mathcal R\) be the subring of \(\mathbb Q[[y,t^2]]\) in which a coefficient of \(t^{2s}\) has \(p\)-denominator exponent at most \(\lfloor 2s/(p-1)\rfloor\) for every prime \(p\), coefficientwise in \(y\). It is a ring because these bounds are superadditive in \(s\). The coefficient of \(t^{2j}\) in \(2(1-\cos t)/t^2\) is \(2(-1)^j/(2j+2)!\). For odd \(p\) the sum of the base-\(p\) digits of the positive even integer \(2j+2\) is even, hence at least two. Legendre's formula gives \(v_p((2j+2)!)\le 2j/(p-1)\). For \(p=2\), \(v_2((2j+2)!)-1=2j+1-s_2(2j+2)\le2j\). Thus \(Z_a\) lies in \(\mathcal R\), also after scaling the variable in each factor by the integral hook length. It has \(y\)-constant one and therefore has an inverse in \(\mathcal R\) by \(y\)-adic geometric expansion. Put \(u=t^2\) and let \(b_{k,s}=[y^ku^s]\log Z_a\). Both \(y\partial_y Z_a/Z_a\) and \(u\partial_u Z_a/Z_a\) lie in \(\mathcal R\). Their coefficients give
+\[k T_{2s} b_{k,s}\in\mathbb Z,\qquad
+       s T_{2s} b_{k,s}\in\mathbb Z .\]
+Bézout's identity gives the multiplier \(\gcd(k,s)T_{2s}\). This includes \(s=0\), where it recovers the denominator bound \(k\) for unsigned connected unramified covering counts.
+
+Let \(n_{d,a}\) be the integral elementary exponents of the geometric local product. They vanish for \(a<h_d\). At degree \(m\), set \(k=m/d\). An exponent with \(a=h_d+j\) contributes to \(L_{m,h_m+r}\) with relative excess \(s=r-kj\). Negative \(s\) contributes zero. For \(s\ge0\) we have \(\gcd(k,s)=\gcd(k,r)\mid\gcd(m,r)\) and \(T_{2s}\mid T_{2r}\). Summing the elementary terms with their integer exponents proves the theorem's divisibility, including when \(r=0\).
+
+\emph{The first positive excess.} Put
+\[Z_a^0(y)=\sum_\lambda H_\lambda^{2a-2}y^{|\lambda|},
+ \qquad V_a(y)=\sum_\lambda H_\lambda^{2a-2}
+                      \Big(\sum_{b\in\lambda}\ell_b^2\Big)y^{|\lambda|}.\]
+The \(t^2\) coefficient of the elementary logarithm is
+\(-(a-1)V_a(y)/(12Z_a^0(y))\). If \(r=1\) and \(s=0\), the equality \(kj=1\) gives only \(k=j=1\), contributing the integer \(n_{m,h_m+1}\). Writing \(n_d=n_{d,h_d}\) therefore gives
+\[L_{m,h_m+1}\equiv-\frac{g-1}{12}
+   \sum_{d\mid m}d\,n_d\,[y^{m/d}]\frac{V_{h_d}(y)}{Z_{h_d}^0(y)}
+     \pmod{\mathbb Z}.\]
+The quotient has integral coefficients. Each \(n_d\) is determined by the equivariant determinant signs on the finite covers by Theorem~\ref{thm:endpoints}. This proves the stated sharper denominator and gives a computable residue in a source genus containing branched maps and ghosts.
+
+In genus two the equal-spin core has \(n_1=1\), \(n_2=0\), while the same-parity distinct-spin core has \(n_1=1\), \(n_2=-8\). Both base signs are positive. At \(m=2\) the first exponent supplies \(-13/4\) to the genus-four count at both endpoints. The difference due to \(n_2\) is \((-8)(-1/6)=4/3\). Thus the change of the genus-four Euler degree is \(1/3\) modulo \(\mathbb Z\). For the distinct-spin core the residue is \(1/12\); its reduced denominator is exactly \(12\). In particular the genus-independent bound at \(r=1\) is sharp. The first-excess congruence determines this residue modulo integers. The genus-four integral itself also depends on the degree-two branched contribution.
+
+At excess zero there is an exact statement in the other direction. For every prime \(p\), including \(2\), the connected local degree \(L_{p,h_p}\) has reduced denominator \(p\). Indeed, all nonnormal index-\(p\) covers have deck order one. The regular cyclic covers correspond to the kernels of nonzero homomorphisms \(\pi_1(C)\to\mathbb Z/p\), modulo the \(p-1\) automorphisms of the target. Their number is \(1+p+\cdots+p^{2g-1}\), congruent to one modulo \(p\). For odd \(p\) each cyclic cover has sign \(\epsilon\) by the equivariant determinant signs of Section~\ref{sec:endpoints}; for \(p=2\) both signs are one modulo two. Hence \(pL_{p,h_p}\) is prime to \(p\). The sharp denominator \(12\) one genus higher and the unbounded prime denominators at excess zero concern ordinary connected local degrees, distinct from both the denominators for scalar equivariant weights and the integral balanced exponents of Proposition~\ref{prop:factors}.
+
+\subsection{Optimal common denominators through excess four}
+
+On the equal-spin elementary genus-two curve the entire connected local series is \(G_2\) by the geometric elementary comparison. Thus individual coefficients of its hook logarithm are realized geometric values. The following entries, together with the divisibility theorem above, give both the upper and lower common denominators across all degrees and all curves in this domain.
+
+{\def\LTcaptype{table} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2308}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2308}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2308}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3077}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Excess \(r\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Covering degrees
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Exact elementary values in those degrees
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Least common denominator \(rT_{2r}\)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & 1 & \(-1/12\) & 12 \\
+2 & 1, 2 & \(1/360\), \(19/32\) & 1440 \\
+3 & 1, 3 & \(-1/20160\), \(-8278/567\) & 181440 \\
+4 & 1, 2, 4 & \(1/1814400\), \(211/48384\), \(233871691/193536\) & 14515200 \\
+\end{longtable}
+}
+
+These rational numbers can be obtained directly as follows. Let \(A_k=[y^k]Z_2\) with each sine squared expanded up to \(t^8\). Then \(b_{k,r}\) is the \(t^{2r}\) coefficient of \(A_1\) for \(k=1\), of \(A_2-A_1^2/2\) for \(k=2\), of \(A_3-A_1A_2+A_1^3/3\) for \(k=3\), and of \(A_4-A_1A_3-A_2^2/2+A_1^2A_2-A_1^4/4\) for \(k=4\). The least common multiples of their reduced denominators attain the upper bounds.
+
+Bryan and Pandharipande studied the étale contribution and the contribution of covers with two branch points in local algebraic curve theory. Their Lemmas C3--C4 include the unsigned index-\(p\) congruence at excess zero. The degree-one sine formula already gives the sharp first-excess denominator at fixed base genus. Here the input is the integral balanced product for the almost-complex curve germ, including cases with orientation-reversing covers. The bidegree divisibility, the sign-dependent residue, and the witnesses at positive excess use the elementary factors in that geometric product \cite{bp01}.
+
+The prime support of the uniform bound is sharp at \emph{every} positive excess. The degree-one coefficient on the genus-two elementary core is \(2(-1)^r/(2r+2)!\). Its reduced denominator contains every prime at most \(2r+1\), including \(2\) since \(r\ge1\). Together with the upper bound, this characterizes the union of possible denominator primes exactly in each excess \cite{pandhodge}.

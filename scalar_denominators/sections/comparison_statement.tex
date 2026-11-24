@@ -1,0 +1,101 @@
+\section{Changing the normal weights}\label{sec:statement}
+Let $C$ be a smooth connected projective curve of genus $g\ge2$, and
+let $L\oplus M$ be a balanced bundle, meaning
+$LM=K_C$ and $\deg L=\deg M=g-1$. Write $H$ for the rational
+Chern-number-zero, virtual-dimension-zero summand of Pardon's semi-Fano universal cycle algebra \cite[Definition~1.1 and Theorem~1.2]{Pardon} and
+$x_{h,1}\in H$ for its multiplicity-one scalar generator in genus $h$.
+For two nonzero integral fiber weights with ratio $z$, let
+$X_{g,m}(z)$ denote the normalized class of the multiple zero section
+of covering degree $m$. Section~\ref{sec:weights} constructs its
+Laurent polynomial in $z$. We use the logarithm for disjoint union
+and write
+\[
+ P_{m,j}=[z^j q^m]\log\Big(1+\sum_{l>0}X_{g,l}(z)q^l\Big).
+\]
+The core genus $g$ is fixed in this notation. Let $N_{k,m,j}$ be the
+coefficient of $z^j$ in the connected genus-$k$, degree-$m$ local
+Gromov--Witten residue of $L\oplus M$, with the two independent fiber
+weights as in \cite{BP}. Set $n_s=(g-1)\binom{s}{2}$ and
+$w=(2\sin(u/2))^2$.
+
+\begin{theorem}\label{thm:main}
+Let $d$ be the largest proper divisor of $m\ge2$. If
+$n_d<|j|\le n_m$, then
+\[
+ P_{m,j}=\sum_{h\ge0}a_{h,j}x_{h,1},\qquad
+ \sum_{h\ge0}a_{h,j}w^{h-1}
+       =\sum_{k\ge0}N_{k,m,j}u^{2k-2}.
+\]
+The left sum has finite support. Its coefficients vanish for
+$h<1+m(g-1)+|j|$. For each genus bound $K$, the construction in
+Theorem~\ref{thm:separate} gives $a_{h,j}$ for $h\le K$ as the
+signed number of constrained embedded curves of genus $h$ divided by
+$\prod_{i=2}^m i^{2(i-1)(g-1)}$.
+\end{theorem}
+
+For a prime $p$ one has $d=1$ and $n_d=0$. For the degree-$p$ logarithm $P_p(z)=\sum_jP_{p,j}z^j$,
+symmetry gives
+\[
+        P_p(1)-P_p(-1)=4\sum_{\substack{j>0\\j\ {\rm odd}}}P_{p,j}.
+\]
+This determines the connected scalar--antidiagonal discrepancy at $p$.
+At composite $m$ the boundary of the stated
+range has a geometric meaning. If $d>1$, a linear system of spectral
+polynomials at $j=n_d$ necessarily meets the locus of powers of
+degree-$d$ polynomials. Division of cycles then detects a nonzero
+lower-degree primitive. We give the intersection calculation in
+\S\ref{sec:weights}.
+
+Let $X$ be a smooth projective complex threefold with
+$K_X\simeq\mathcal O_X$ and $H^1(X,\mathcal O_X)=H^2(X,\mathcal O_X)=0$.
+For an effective integral class $\beta$, let $U_{X,\beta}\in H$ be
+the class of its compact cycle space. Write $F_h^{\rm sc}$ and
+$F_h^{\rm ad}$ for the scalar and balanced antidiagonal universal
+local series of a genus-$h$ core, both with constant term one.
+The exponents $e_{\beta,h}$ and $c_{\beta,h}$ are defined by
+\[
+ \sum_\beta U_{X,\beta}Q^\beta
+    =\prod_{\beta\ne0,h}F_h^{\rm sc}(Q^\beta)^{e_{\beta,h}}
+    =\prod_{\beta\ne0,h}F_h^{\rm ad}(Q^\beta)^{c_{\beta,h}}
+\]
+in the effective integral class monoid completed by ample degree.
+The $e_{\beta,h}$ are rational, and $c_{\beta,h}$ are the integral
+elementary-cluster coefficients by \cite[Theorem~1.1]{WueProduct}.
+If the image of $\alpha$ in the free
+quotient of $H_2(X;\ZZ)$ is primitive, write
+$D_{g,p}(w)$ for the difference of the scalar and antidiagonal connected
+degree-$p$ local residues of a core of genus $g$. Theorem~\ref{thm:main}
+gives the coefficient identity
+\begin{equation}\label{eq:compact-prime}
+ \sum_h(c_{p\alpha,h}-e_{p\alpha,h})w^{h-1}
+    = \sum_{p\gamma=p\alpha}\sum_{g\ge2}c_{\gamma,g}D_{g,p}(w).
+\end{equation}
+Indeed the only covering degrees at $p\alpha$ are one and $p$, and at
+every effective integral root $\gamma$ the degree-one generators of both
+products agree. For core genera zero and one the two local classes
+agree in all degrees. Finite support at each class makes~\eqref{eq:compact-prime}
+a polynomial identity after taking the difference.
+
+The first possible change is in genus $p+2$. The use of the rational
+basis $x_{h,1}$ in this argument can also be made before assigning any
+numerical invariant to a complex family: proper pullback to connected
+maps is injective on the multiplicity-one span when all source genera
+are used \cite[Sections 5--7]{WueProduct}. For integral denominators we
+use the stronger result that the $a_{h,d}:=X_{h,d}(-1)$ freely generate
+$H_{\ZZ}$, with $a_{h,1}=x_{h,1}$. This is the integral basis theorem
+of \cite[Theorem~1.1]{WueGenerators}. In particular the intersection of
+this integral algebra with the rational span of the $x_{h,1}$ is
+their free integral span: they are distinct degree-one variables
+in that polynomial presentation.
+
+The proof of Theorem~\ref{thm:main} occupies
+Sections~\ref{sec:weights}--\ref{sec:comparison}. The argument needs
+a family of targets to give the same count in two different theories.
+For a prescribed bound on source genus we vary the target and impose
+the spectral coefficient conditions until the constrained connected
+images are regular embedded curves. The cohomological insertion
+counts their signs. The relative virtual class on maps also sees all
+contracted components, and each embedded image of genus $h$ contributes
+the entire degree-one series $w^{h-1}$. This construction uses an
+algebraic relative obstruction theory on the chosen family and
+proper genus detection on the cycle spaces.

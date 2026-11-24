@@ -1,0 +1,123 @@
+\section{Comparing local curve classes}\label{sec:comparison}
+
+\subsection{Two normal weights}
+A degree-$m$ cycle in the total space of $L_+\oplus L_-$, with
+$L_+=L$ and $L_-=K_C L^{-1}$, meets a fiber of the projection to $C$
+in a multiset of length $m$. No fiber contains a compact curve.
+The elementary symmetric functions of either coordinate in this multiset
+are sections of $L_\pm^j$, $1\le j\le m$. For instance, on the
+normalization of a component the characteristic polynomial of
+multiplication by the fiber coordinate on its finite flat direct image
+extends the symmetric functions across branch values. Multiply the
+polynomials with their cycle multiplicities. Evaluation at more than
+$\max(0,m(g-1))$ distinct points therefore gives a tuple with common
+zero precisely $m[C]$. Its weights are the integers $\pm j$.
+
+For clarity, a tuple of $k$ nonzero weights $r_1,\ldots,r_k$ on the
+cycle space gives, over the finite Borel base $\PP^k$, a section of the
+pullback of $\bigoplus_i\cO(r_i)$. Pull back its relative Thom class and
+divide by $\prod_i r_i$. The support on the relative cycle space is
+compact. Adding an equivariant test after passage to the next projective
+space gives the hyperplane pushforward of this class, since the normalized
+Euler class of the added line is the hyperplane class. Concatenating two
+tuples proves independence of the tests. Varying the curve and line of
+degree $g-1$ gives the same universal class $a_{g,m}$
+\cite[\S\S2--3]{WueBalanced}. The division in this prescription explains why
+integrality of its answer requires proof.
+
+The first two weights can already distinguish the prescriptions. Over a
+curve of genus two the scalar and balanced doubles satisfy
+$a_{2,2}-x_{2,2}=-2x_{4,1}$. In the holomorphic double-cover
+calculation two smooth branches of genus four move away from the
+zero section. Their contribution fixes the sign in the comparison
+\cite[\S8]{WueProduct}.
+
+There are two operations on the resulting coefficients. Pullback by
+addition of effective cycles is the coproduct $\Delta$. Pullback by
+multiplication of a cycle by $l$ is denoted $\rho_l$. With $u_0=1$, the
+scalar and the antidiagonal classes of a fixed genus both satisfy
+\begin{equation}\label{eq:localops}
+ \Delta u_d=\sum_{i+j=d}u_i\otimes u_j,\qquad
+ \rho_l u_d=\begin{cases}u_{d/l}&l\mid d,\\0&l\nmid d.\end{cases}
+\end{equation}
+These identities include the diagonal of Borel bases in the coproduct.
+In each shifted term the two relative cohomological degrees are $d$
+and $-d$, with $d\ne0$. In Chern number zero the factor of positive
+relative cohomological degree has negative virtual dimension and vanishes
+\cite[Lemma~4.13 and Theorem~6.13]{Pardon},
+\cite[Proposition~3.1]{WueBalanced}. The augmentation is restriction to the
+empty cycle.
+
+The laws \eqref{eq:localops} alone leave a choice of integral
+coordinates. For instance one may replace $A_g(q)$ by
+$A_g(q)A_h(q^2)$ for $h\ne g$ and invert the change integrally.
+The unit of a positive elementary curve specifies the particular
+coordinates used in Theorem~\ref{thm:compact}.
+
+\subsection{Elementary curves and multiplicity one}
+We use the comparison $\Phi:H\to S$ of \cite[\S2]{WueProduct}, where $S$
+is the rational cycle algebra for smooth families of almost-complex
+six-manifolds. Over a point the characteristic function of a compact
+open set of cycles gives an insertion. Open extension in the target,
+external product for disjoint targets, and the two endpoint restrictions
+of a compactly supported class over an interval are the operations we
+will need. The geometric topology records the support and the integration
+current of the cycle. In integrable families it gives the topology of
+compact analytic cycles.
+
+We recall three results from \cite{WueProduct} and their roles in the
+comparison. First, on the elementary genus-$h$ curve of Ionel and Parker
+the unit at its $j$-fold cycle is $\Phi(a_{h,j})$
+\cite[Proposition~3.1]{WueProduct}. On the sum of two copies of a spin line,
+real rotations commute with the Lee deformation to a super-rigid normal
+operator; in complex eigenlines those rotations have weights $+1,-1$.
+The normalized Thom class extends on the finite Borel family, restricting
+at the elementary end to the unit of the isolated cycle. Second,
+a bounded-energy partition into clusters gives a \emph{product} of these
+units and their inverses \cite[\S4, Proposition~4.1]{WueProduct}. It is
+essential here to partition disconnected cycles as well as connected
+maps. We explain its local use in \S\ref{sec:basis}.
+
+Third, the classes $\Phi(x_{h,1})$ are linearly independent over $\QQ$
+\cite[Theorem~5.1]{WueProduct}. The argument tests a proposed finite
+relation at its least genus $h$. The image-cycle map on connected stable
+maps of that genus is proper over compact sets of cycles. A class supported
+on an embedded curve of larger genus has no preimage in multiplicity one.
+At genus $h$ the remaining regular embedded curve has a single preimage
+with trivial automorphism group and complex local degree one. Stability
+excludes trees of contracted rational components there. The
+compact-support argument on a smooth parameter family representing a
+putative relation promotes this local orientation calculation to
+independence \cite[Lemmas~5.2--5.3 and Proposition~6.1]{WueProduct}.
+Thus we need injectivity of $\Phi$ only on
+$V=\bigoplus_h\QQ x_{h,1}$. The argument uses a fixed genus for each
+test of a relation.
+
+\begin{lemma}\label{lem:detect}
+In $H$, the primitive elements annihilated by every $\rho_l$, $l>1$,
+are precisely $V$. Two series with constant coefficient one satisfying
+\eqref{eq:localops} through $q^m$ agree to that order if their
+images under $\Phi$ do.
+\end{lemma}
+\begin{proof}
+For the first assertion we recall the algebraic argument of
+\cite[Lemma~7.1]{WueProduct}. The scalar classes generate $H$ rationally
+by \cite[Theorem~6.13]{Pardon}. In the polynomial algebra on formal
+scalar generators change variables to the coefficients $v_{h,j}$ of
+the logarithm of $1+\sum_{j\ge1}x_{h,j}q^j$. These are primitive, and
+$\rho_l v_{h,j}$ is $v_{h,j/l}$ if $l$ divides $j$, and zero otherwise.
+These formulas already hold formally. A polynomial relation of smallest
+total degree in the new variables has zero constant term. Its reduced
+coproduct lies in the tensor square of the space of polynomials of
+strictly smaller degree. Evaluation in $H$ is injective on that space,
+hence also on its tensor square over $\QQ$. This makes the relation a
+primitive polynomial, which is linear in characteristic zero by the
+identity $f(v+w)=f(v)+f(w)$. Applying division by its largest label
+$j$ would give a nonzero relation among the $x_{h,1}$ (use the identity
+if $j=1$). Their smooth images are independent. This proves polynomial
+independence of the scalar generators. The same linearity and largest-label
+argument in $H$ now identifies its joint primitive kernel with $V$.
+For the second assertion, the first coefficient of a difference is
+primitive by addition and killed by every proper division. Its smooth
+image vanishes, and $\Phi$ is injective on $V$.
+\end{proof}

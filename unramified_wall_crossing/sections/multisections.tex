@@ -1,0 +1,463 @@
+\section{Bifurcation of multisections in every degree}\label{sec:walls}
+
+Fix a closed Riemann surface $C$ of genus $g\ge2$ and a smooth complex
+plane bundle $N$ of degree $2g-2$. We work with a fixed Dolbeault
+operator $\bar\partial_N$ on $N$. A smooth fiber map
+$B_t(x,v)\in\Lambda_x^{0,1}C\otimes N_x$, defined near the zero
+section with $B_t(x,0)=0$, determines an almost complex structure with
+holomorphic projection to $C$ and complex affine fibers. For an \'etale
+cover $f:Y\to C$, the graph of $s\in\Gamma(f^*N)$ is holomorphic
+precisely when
+\begin{equation}\label{eq:wall-section}
+  \bar\partial_{f^*N}s+f^*B_t(\cdot,s)=0.
+\end{equation}
+Here pullback in the form factor uses $df$. In a holomorphic frame,
+the horizontal $(0,1)$ lift of $\partial_{\bar z}$ has vertical
+$(1,0)$ component $-B_{t,\bar z}$. This gives the asserted structure
+and equation. Over a compact interval these structures are tamed on
+a common tube about the zero section. Indeed the differential of the
+fiberwise radial primitive, extended by a unitary horizontal
+distribution, restricts to the standard symplectic form on each fiber.
+Adding a sufficiently large multiple of base area gives tameness on
+the zero section and hence on a tube. The normal operator of the core is
+$D_t=\bar\partial_N+d_vB_t(\cdot,0)$. Every smooth path of real
+Cauchy--Riemann operators on $N$ with this symbol arises in this way.
+
+Take as $D_0,D_1$ two of the spin models of Section~\ref{sec:spin}
+with core signs $+1$, and with difference characters $0$ and
+$w\ne0$ respectively. One can arrange positive parity for a fixed
+nonzero $w$ by twisting the two spin lines simultaneously by a class
+pairing nontrivially with $w$ if necessary. The two smooth complex
+bundles are isomorphic since they have equal rank and degree. Fix a
+complex isomorphism with $N$ for each. Let $a_1$ be a simple
+nonseparating circle representing the Poincar\'e dual of $w$
+modulo two. Complete it to surface generators $a_i,b_i$ with
+relation $\prod_i[a_i,b_i]=1$. For each $m\ge2$ let
+$f_m:Y_m\to C$ be the connected \'etale cover on $m$ letters defined by
+\begin{equation}\label{eq:wall-quotient}
+ a_1\longmapsto(1\ 2),\qquad a_2\longmapsto(1\ 2\ \cdots\ m),
+ \qquad b_i,a_j\longmapsto 1\quad(j\ge3\text{ for }a_j).
+\end{equation}
+These permutations generate $S_m$, and $Y_m$ has genus
+$h_m=1+m(g-1)$. Write $d_m=|\operatorname{Aut}_C(f_m)|$, so
+$d_2=2$ and $d_m=1$ for $m\ge3$.
+
+\begin{theorem}\label{thm:walls}
+For every smooth path from $D_0$ to $D_1$, the fiberwise linear graph
+equations have primitive holomorphic multisections with projection
+$f_m$ arbitrarily close to the zero section at some parameter, for
+every $m\ge2$. Here primitive means that the graph map is simple and
+its image projects to $C$ with degree $m$.
+
+For a residual choice of path of normal operators, each $f_m$ has an
+odd finite number of transverse crossings in its trace-free summand.
+These crossings occur at different parameters for different $m$ and
+the base operator is invertible at each one. Fix such a path of first
+jets. For a residual choice of the higher fiber jets in
+\eqref{eq:wall-section}, each crossing has a branch of primitive
+multisections. In a neighborhood of the multiple cover the change,
+from the left to the right, in their signed count is
+\begin{equation}\label{eq:wall-orientation}
+  \frac{\sigma(f_m)^- - \sigma(f_m)^+}{d_m},
+\end{equation}
+where $\sigma(f_m)^\pm$ are the determinant signs of $f_m^*D_t$ on
+the adjacent sides. Multiplying each change by the sign of the base
+operator at the crossing and summing along the path gives $2/d_m$.
+
+One may instead choose the nonlinear terms in the space of fiberwise
+odd maps. A residual choice in this space gives a birth or a death at
+every one of the stated crossings. There are two nearby simple
+supports on the occupied side for $m\ge3$ and one for $m=2$.
+\end{theorem}
+
+The count in \eqref{eq:wall-orientation} concerns the specified
+projection cover at source genus $h_m$. Indeed the nonconstant part
+of an arbitrary map of projection degree $m$ has arithmetic genus at
+least $h_m$ by Riemann--Hurwitz. Equality requires a single \'etale
+component. A contracted genus-zero tree attached to it has an unstable
+leaf, and a cycle in the dual graph would increase the genus.
+The topological type of the resulting \'etale projection is discrete.
+For a single elementary wall in the space of compatible almost complex
+structures on a closed symplectic Calabi--Yau threefold, Bai and
+Swaminathan proved the local signed change $\pm2/|\operatorname{Aut}(f)|$,
+including the standard symmetric-group wall. They also give unramified
+dihedral examples in every odd degree \cite[Theorems~1.9 and~4.12,
+Examples~4.3--4.4]{bai}. Here the endpoint
+signs force walls of every degree for one path in the space of graph
+equations. We prove the local assertion in that space and retain the
+orientation of the change.
+
+\subsection*{The trace-free summand}
+Pushing the pullback normal operator down to $C$ amounts to twisting
+$D_t$ by the real permutation local system of $f_m$. That local
+system is $\RR\oplus W_m$, where $W_m$ is the sum-zero standard
+representation of $S_m$ pulled back by \eqref{eq:wall-quotient}.
+Both summands have index zero. This follows by deforming to a complex
+Dolbeault operator and using that a complexified flat real local
+system has degree zero. The complex orientations give
+\begin{equation}\label{eq:wall-relative}
+  \operatorname{sgn}(D_t^{W_m})=
+  \operatorname{sgn}(f_m^*D_t)\operatorname{sgn}(D_t)
+\end{equation}
+when both operators on the right are invertible. The endpoint formula
+of Section~\ref{sec:spin} gives $+1$ and $-1$ on the left, since the
+monodromy of $a_1$ is odd. Thus some $D_t^{W_m}$ has a nonzero
+kernel. For the linear graph equation any nonzero real multiple of
+such a kernel element is a solution on $Y_m$ with zero fiberwise
+trace.
+
+A section on $Y_m$ pulls back to a section on the normal closure
+invariant under $S_{m-1}$. If two distinct local sheets agree on an
+open disk, the corresponding translates agree identically on the
+normal closure. Indeed their difference satisfies a real linear
+Cauchy--Riemann equation, obtained by integrating the fiber derivative
+along the segment joining them in a common tube. Unique continuation
+applies. The stabilizer would then properly contain $S_{m-1}$, which
+is a maximal subgroup, so all sheets would agree identically. It
+follows that every section which does not descend has pairwise distinct
+values over a dense open set. Its graph map is simple and immersive
+because its projection is \'etale. A nonzero trace-free section cannot
+descend. Positive multiples tending to zero give distinct supports,
+as can also be seen from their distinct maximum fiber norms.
+The deck orders stated above follow from
+$\operatorname{Aut}_C(f_m)=N_{S_m}(S_{m-1})/S_{m-1}$.
+
+\subsection*{Choice of the path}
+We use equivariant Brill--Noether transversality for real
+Cauchy--Riemann operators \cite{wendl,dwbn}. Here are the precise
+hypotheses for this application. The affine parameter space of normal
+operators allows every real zeroth-order bundle map as an infinitesimal
+variation, including variations supported in any given coordinate
+disk, with arbitrary prescribed finite jet at an interior point.
+The real Cauchy--Riemann symbol satisfies Wendl's condition
+\cite[Theorem~2.5.3]{dwbn}. Off a set of infinite codimension the
+operator then satisfies the equivariant Petri condition for any
+specified finite list of inequivalent irreducible local systems
+\cite[Proposition~1.6.6 and Theorem~1.6.17]{dwbn}. The operator and
+its formal adjoint satisfy strong unique continuation by the
+Cauchy--Riemann symbol and the zeroth-order similarity principle
+(the adjoint has the conjugate symbol). In these statements
+one may take the smooth Banach perturbations with prescribed jets
+used for differential operators in \cite[Sections~2.2--2.3]{dwbn}.
+Away from this exceptional set, the joint kernel stratum for the
+trivial system and any finite selection of $W_m$ has real codimension
+$\sum_i k_i^2$, where $k_i$ is the real nullity of the $i$th twist
+\cite[Theorem~1.3.5 and Proposition~1.3.11]{dwbn}. Each standard representation is absolutely
+irreducible and of real type. The different ranks distinguish the
+$W_m$, and $W_2$ is distinguished from the trivial line by its
+nontrivial monodromy.
+
+Relative transversality for paths now gives transverse intersections
+with the corank-one strata and avoidance of the higher-codimension
+strata and of the exceptional set \cite[Proposition~1.B.5]{dwbn}. For clarity, variations of a path
+supported in a short interior parameter interval realize the operator
+variations just described at its center. Thus evaluation of paths
+at an interior point is a submersion in these perturbation spaces.
+One obtains the same residual assertion for smooth paths by the
+usual local perturbation argument: for each finite list the required
+property is open on a compact interval, by Fredholm reduction and
+endpoint invertibility, and dense in each smooth neighborhood using
+small smooth Banach perturbations there. To see openness one can
+express the condition directly as simple transverse crossings with
+no simultaneous nullities; this expression requires no condition on
+jets away from the crossing set. Intersect the resulting open dense
+sets over all finite initial lists. For each $W_m$ its crossing set
+is closed in the compact interval and each of its points is isolated,
+so it is finite. Its parity is odd by \eqref{eq:wall-relative}.
+For any prescribed degree bound this gives only finitely many of the
+selected crossings.
+
+\subsection*{Nonlinear graphs and their signs}
+Fix one of the crossings $t_*$ for a selected $f=f_m$. Let $\xi$ and
+$\eta$ span the real kernel and adjoint kernel of $f^*D_{t_*}$ and
+choose $L^2$ splittings. The crossing pairing
+$\langle\eta, f^*\dot D_{t_*}\xi\rangle_{L^2}$ is nonzero.
+Lyapunov--Schmidt reduction of \eqref{eq:wall-section} on
+$W^{1,r}(Y_m,f^*N)$, $r>2$, solves the image equation uniquely for
+the complementary part of $s=a\xi+z(t,a)$. Here $z(t,0)=0$ and
+$z_a(t_*,0)=0$. Elliptic regularity gives smooth sections. The
+remaining real equation is $aG(t,a)=0$. Its derivative $G_t(t_*,0)$
+is the crossing pairing up to the nonzero normalization of the
+cokernel coordinate. Thus all nearby nonzero solutions lie on a
+smooth branch $t=T(a)$ through $T(0)=t_*$. Their nonzero kernel
+projection rules out descent, since base sections are orthogonal to
+$\xi$ in the fiberwise permutation splitting.
+
+We verify that a higher fiber jet can give $T(a)-t_*$ a first nonzero
+Taylor coefficient, keeping the normal path fixed. Put
+$A=\dot D_{t_*}$, a real zeroth-order map. For some base point $x$
+the sum $\sum_i u_i$ over its sheets is nonzero, where
+$u_i=\langle\eta_i,A(x)\xi_i\rangle_{\RR}$ in the pulled-back
+metrics. This follows by integration of the crossing pairing. Let
+$r_1,\ldots,r_k$ be the distinct positive values of $|\xi_i|^2$ at
+$x$. The matrix $(r_j^l)_{1\le l,j\le k}$ is invertible. Since
+$u_i=0$ when $\xi_i=0$, there is an $l$ with $1\le l\le m$ such that
+$\sum_i |\xi_i|^{2l}u_i\ne0$. Add to $B$ a small real multiple of
+\begin{equation}\label{eq:wall-jet}
+        \chi(t,x)|v|^{2l} A(x)v,
+\end{equation}
+where a nonnegative cutoff localizes the pairing to a disk on which
+this sum keeps its strict sign, and equals a base cutoff at $t_*$.
+This changes the coefficient of $a^{2l+1}$ in the reduced equation
+at $t_*$ by a nonzero multiple of the perturbation, keeping lower
+coefficients fixed. Indeed substitution of $s=a\xi+O(a^2)$ gives
+the displayed pairing at that order. The induced change in $z$ starts
+at the same order, where its linear image under $f^*D_{t_*}$ has
+zero cokernel projection. If lower coefficients vanish, this changes
+the coefficient of $a^{2l}$ in $T(a)-t_*$ by a nonzero multiple as
+well, because $G_t(t_*,0)\ne0$. Finite order at most $2m$ is
+therefore an open dense condition at this crossing, including in the
+fiberwise odd subspace. The nonlinearities with a prescribed first
+jet form an affine Fr\'echet space on a closed tube; intersect these
+conditions over the countably many crossings. One may fix the germs
+at both endpoints by using parameter cutoffs in \eqref{eq:wall-jet}.
+
+Finite order implies that $a=0$ is the only solution at $t_*$ in a
+small interval of kernel coordinates. The branch has no critical
+point on either punctured half of a sufficiently small such interval.
+On regular parameter slices to either side all solutions there are
+isolated and regular. Brouwer degree of the reduced real map is
+constant on these slices. The sign of the complementary invertible
+block supplies the same orientation factor on both sides. The core
+solution contributes $\sigma(f)^\pm$, so subtraction yields the
+numerator in \eqref{eq:wall-orientation}. For \'etale projections the
+tangential map $T_{Y_m}\to f^*T_C$ is a complex isomorphism and
+cancels the source deformation factor with positive orientation. The
+section sign is consequently the determinant sign for the graph as
+a map with variable domain. The deck group acts freely on the
+non-descending sections with stabilizer $S_{m-1}$ on the normal
+closure, and its orbits parameterize their images. Deck changes
+preserve the complex determinant orientation. Division by $d_m$
+therefore gives the signed count of distinct simple curves.
+
+In an odd family the splittings may be used unchanged under $s\mapsto
+-s$. Uniqueness in the image equation gives $T(-a)=T(a)$. Its first
+nonconstant term has even order, so one side has two solutions with
+opposite kernel coordinates, and the other has none. In degree two
+the nontrivial deck transformation acts by $-1$ on the kernel. Its
+action exchanges the solutions, giving one simple support. In higher
+degree the deck group is trivial and the two supports are distinct.
+Finally at a selected crossing the sign of $D_t$ is constant.
+Multiplying \eqref{eq:wall-orientation} by this sign gives the
+left relative sign minus the right one divided by $d_m$, by
+\eqref{eq:wall-relative}. The relative sign stays constant across
+all other parameters at which $D_t^{W_m}$ is invertible, including
+base-only crossings. The sum is the difference between its endpoint
+values divided by $d_m$. This proves Theorem~\ref{thm:walls}.
+
+\subsection*{A limiting operator on an infinite cover}
+The infinitely many crossings have an analytic accumulation point even
+though each individual projection cover has only finitely many. Give
+$C$ a fixed Hermitian metric and give the pullback bundles and covers
+their lifted metrics.
+
+\begin{proposition}\label{prop:wall-limit}
+For the generic paths of Theorem~\ref{thm:walls}, there is an interior
+accumulation parameter $t_\infty$ of the selected crossing times
+and a connected infinite \'etale cover of $C$ on which the pulled-back
+$D_{t_\infty}$ has a nonzero bounded smooth solution. On this cover
+the bottom of the spectrum of the Friedrichs extension of
+$D_{t_\infty}^*D_{t_\infty}$ is zero.
+\end{proposition}
+
+\begin{proof}
+At each spin endpoint write $D=\bar\partial+R$, with $R$ the
+antilinear mass defined by the nondegenerate holomorphic symmetric
+form $\gamma:N\to K_C N^*$ and the metric, as in
+Section~\ref{sec:spin}. On any finite \'etale cover the integrated
+real cross term of $\bar\partial s$ and $Rs$ vanishes: up to a fixed
+area normalization it is the real part of the integral of
+$\bar\partial(\gamma(s,s))$, where the canonical factor is pulled
+through the covering differential. Hence
+\[
+        \|Ds\|_2^2=\|\bar\partial s\|_2^2+\|Rs\|_2^2
+                       \ge c^2\|s\|_2^2
+\]
+for the positive least singular value bound $c$ of $R$ on $C$.
+This bound is independent of the \'etale cover. An endpoint complex
+bundle identification only changes the equivalent norms by constants
+from the base. Along a fixed-symbol path the difference from the
+endpoint is zeroth order and its uniform norm lifts unchanged. There
+are therefore collars of both endpoints free of these crossings in
+all degrees. Choose $m\to\infty$ and one crossing $t_m$ for each
+$m$. A subsequence converges to an interior parameter $t_\infty$.
+
+Take $\xi_m$ in the trace-free kernel on $Y_m$, normalized to have
+maximum fiber norm one. Choose a point in the fiber of a fixed base
+point within uniformly bounded distance of a maximum point, by lifting
+a shortest path on $C$. The based covers have a subsequence converging
+on bounded sets to an infinite cover, as can be seen directly from
+\eqref{eq:wall-quotient}. Label the sheets cyclically, with the
+chosen point labelled zero. The second generator acts by unit shift
+and the first interchanges two consecutive labels. After passage to
+a subsequence this interchange either occurs at fixed integer labels
+or leaves every bounded set, in which case the first generator acts
+trivially in the limit. In either case the limiting sheet set is
+$\ZZ$ and the second generator acts by translation, so the cover is
+connected and infinite. More explicitly, words of any bounded length
+have eventually the same action at the distinguished sheet as on this
+labelled limit. The resulting covering charts on each compact part
+identify the lifted operator coefficients there, up to their smooth
+dependence on $t_m$. The genus and the compact base are fixed.
+Interior elliptic estimates on successively larger compact sets and a
+diagonal subsequence give smooth local convergence of $\xi_m$ to a
+solution $\xi$ with $|\xi|\le1$. The points of maximum remain in a
+bounded set of the based covers, so $|\xi|$ attains one somewhere.
+
+The limiting cover has area growth $O(R)$ on radius-$R$ balls. To see
+this, use a fixed finite triangulation of $C$. Its translates at each
+sheet have uniformly bounded area; after choosing a spanning tree,
+crossing any edge moves the sheet by at most a fixed number of places
+on $\ZZ$, since its monodromy is a fixed word in the surface
+generators. A metric ball of radius $R$ reaches only $O(1+R)$ sheets:
+lifting a fixed finite cover by evenly covered balls gives an edge
+word of length $O(1+R)$ for any path in that ball of length at most
+$R$. Let $\chi_R$ equal one on the radius-$R$ ball and vanish outside
+the radius-$2R$ ball, with weak gradient bounded by $2/R$.
+The Leibniz rule gives
+\[
+   \|D_{t_\infty}(\chi_R\xi)\|_2^2=O(R^{-1}),
+     \qquad \liminf_{R\to\infty}\|\chi_R\xi\|_2^2>0.
+\]
+The cutoffs belong to the form domain by compact support and smooth
+approximation. Their Rayleigh quotients tend to zero, proving the
+spectral assertion. The construction gives boundedness of $\xi$;
+its square integrability on the limiting cover is a separate question.
+\end{proof}
+
+There is also a spectral statement on the fixed base. On the Hilbert
+direct sum over $m\ge2$ of the two $L^2$ spaces of the twist $W_m$
+(sections and $(0,1)$-forms), take the self-adjoint direct sum of the
+operators
+\[
+  \mathcal A_{m,t}=
+  \begin{pmatrix}0&(D_t^{W_m})^*\\ D_t^{W_m}&0\end{pmatrix}.
+\]
+The direct sum has its natural graph domain. At a selected $t_m$ put
+an $L^2$-unit kernel section into the section component of its own
+summand. For a subsequence $t_m\to t_\infty$ these vectors are
+orthonormal, and the norm of their image under the direct sum at
+$t_\infty$ tends to zero: it is bounded by the uniform zeroth-order
+norm of $D_{t_m}-D_{t_\infty}$ on $C$. Weyl's criterion puts zero in
+the essential spectrum of this direct sum at $t_\infty$. At the two
+endpoints the preceding uniform estimate applies to every summand.
+Each twist has index zero, so its inverse and the adjoint inverse
+have uniformly bounded norms. Thus the direct sum has a spectral gap
+about zero at both endpoints.
+
+\begin{corollary}\label{cor:torus}
+For every $g\ge2$ a closed symplectic six-torus admits a smooth path
+of tame almost-complex structures fixing an embedded genus-$g$ curve
+in a primitive integral class $A$, with the bifurcations of
+Theorem~\ref{thm:walls} in all the classes $mA$, $m\ge2$.
+One may realize the fiberwise odd families and their signed changes.
+\end{corollary}
+\begin{proof}
+Use the same smoothed symplectic surface and the same complex normal
+identification for the whole path. All the graph structures agree as
+complex structures along the zero section. Compactness of the parameter
+interval gives a single tube on which they lie in the chosen chart
+about the ambient compatible extension and are tame. Apply the cutoff
+construction there, leaving them unchanged on a common smaller tube.
+For every $m$ the multisections occur arbitrarily close to the zero
+section, so they persist in this one compact realization. Their
+integral homology classes are $mA$ by the tubular retraction.
+\end{proof}
+
+\subsection{Reduction to the normal operator}\label{sec:rescale}
+
+Let $C$ be a closed embedded pseudoholomorphic curve of genus $g\ge2$
+in an almost-complex six-manifold $(X,J)$ with $c_1(TX)[C]=0$.
+Write $D$ for the normal Cauchy--Riemann operator on
+$N=TX|_C/TC$. For an integer $M\ge1$, consider the condition
+\begin{equation}\label{eq:normal-injectivity}
+  \ker(f^*D)=0
+  \quad\text{for every connected holomorphic cover }f:Y\to C
+  \text{ of degree at most }M .
+\end{equation}
+Here $Y$ is smooth and closed, ramification is allowed, and the
+identity is included. Write $J_D$ for the homogeneous almost-complex
+structure on $N$ associated with $D$. Its projection to $C$ is
+holomorphic, its fibers have their vector-space complex structures,
+and a lift over $f$ is holomorphic exactly when its section of
+$f^*N$ lies in $\ker(f^*D)$ \cite[Lemma~3.6]{dwcast}.
+
+\begin{proposition}\label{prop:rescale}
+Under \eqref{eq:normal-injectivity} there is a disk tube about $C$
+in which the only cycle of degree $m$ is $m[C]$ for $1\le m\le M$.
+Its point class $P_m(J)$ in $S$ equals $P_m(J_D)$.
+The tube can be chosen uniformly over a smooth compact interval of
+marked germs satisfying \eqref{eq:normal-injectivity} throughout,
+and these classes are constant along the interval. If the condition
+holds in every degree, the entire series of the germ has the same
+unique lift respecting the cycle operations as that of its normal
+model. This lift is constant under such deformations.
+\end{proposition}
+
+\begin{proof}
+Use the marked surface to identify the cores of the family $J_t$.
+Choose complex complements along the cores and identify the normal
+bundles with a fixed smooth complex bundle $N$ over the interval.
+In the resulting tubular charts put $s_r(x,v)=(x,rv)$ and
+$J_{t,r}=s_r^*J_t$ for $0<r\le1$. In bundle coordinates the
+tangent-to-normal block is $r^{-1}B_t(x,rv)$ with $B_t(x,0)=0$.
+It extends smoothly in all variables as
+\[
+  \int_0^1 \partial_v B_t(x,urv)[v]\,du .
+\]
+The normal-to-tangent block is multiplied by $r$ and the diagonal
+blocks are evaluated at $(x,rv)$. The limit $J_{t,0}$ is $J_{D_t}$
+by the normal rescaling formula \cite[Lemma~3.10]{dwcast}.
+For a change $F$ of tubular charts, $s_r^{-1}Fs_r$ extends at zero
+to the induced map on the quotient normal bundles. Indeed, its base
+component tends to the map on the cores and its vertical component
+tends to the vertical derivative of $F$ applied to $v$. Thus the
+identification is independent of the complement and is natural under
+complex normal isomorphisms.
+
+Realize a common disk of this compact family on the symplectic
+six-torus of Proposition~\ref{prop:factors}, with $A=[C]$ primitive.
+Indeed, in the symplectic splitting along the core the vertical
+complex structure is fixed, and each induced complex structure on
+$TC$ is compatible with its area form. The extension and cutoff in
+that proposition therefore give a smooth family tamed by one form
+$\omega$, agreeing with $J_{t,r}$ on a common closed disk of some
+radius $2a>0$.
+
+If there were no uniform isolating radius through degree $M$, there
+would be $J_{t_i,r_i}$-holomorphic cycles $Z_i$ of degrees
+$1\le m_i\le M$ with positive maximum fiber norms $b_i\to0$.
+Pass to a subsequence with $m_i=m$ and $t_i\to t$. Put $u_i=b_i/a$.
+Then $(s_{u_i}^{-1})_*Z_i$ is holomorphic for $J_{t_i,r_i u_i}$,
+also when $r_i=0$ by homogeneity. It lies in the closed disk of
+radius $a$ and meets its boundary. Dilation preserves the class
+$mA$ by the tubular retraction, so its symplectic area is
+$m\langle[\omega],A\rangle$. Geometric cycle compactness gives a
+limit for $J_{t,0}$ in the same class, with maximum norm $a$ by
+Hausdorff convergence \cite[Theorem~2.11 and Remark~2.13]{diw}.
+This is the rescaling argument of \cite[\S6]{dwcast}.
+
+Normalize an irreducible component of the limit off the zero
+section. Its projection $f$ is nonconstant, since a complex vector
+space contains no compact curve. All components thus have positive
+projection degree, counted with their multiplicities to give $m$.
+Our component gives a nonzero element of $\ker(f^*D_t)$ on a
+smooth cover of degree at most $m$ \cite[Proposition~3.12]{dwcast}.
+This contradicts \eqref{eq:normal-injectivity}. The argument uses
+cycle compactness without imposing a bound on the genus.
+
+In class $mA$ for $1\le m\le M$, containment of the support in a
+smaller open disk selects just the section $m[C]$. It is open by Hausdorff
+continuity and compact over the closed parameter rectangle. Its
+characteristic class therefore transports along either parameter
+by the interval relation \cite[\S2]{WueProduct}. Open excision
+identifies the classes obtained using smaller tubes.
+When \eqref{eq:normal-injectivity} holds for every $M$, the linear
+model has only the zero section as a compact irreducible curve,
+and each unramified pullback of $D$ is invertible by index zero.
+Proposition~\ref{prop:factors} gives its balanced lift, and
+Proposition~\ref{prop:full-transport} gives uniqueness among lifts
+respecting the cycle operations. The coefficientwise equalities
+just proved give the same lift for the original germ and for every
+member of the interval.
+\end{proof}

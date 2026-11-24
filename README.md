@@ -42,6 +42,16 @@ The 21 November revision of the conifold and counterexample papers supplies Zeno
 BibTeX citations are in [CITATION.bib](CITATION.bib).
 See the [Universal curve counting programme](https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting).
 
+## Integral generators and local curve counts
+
+1. **Integral generators for curve counting on threefolds**. Opposite circle weights give explicit integral polynomial generators and a unique product on the zero-Chern face of a compact Kähler threefold with nonnegative first Chern class on curves. [PDF](integral_factorization/main.pdf) · [LaTeX](integral_factorization/main.tex) · [Abstract and citation](https://bwuebben.github.io/papers/integral-generators-threefold-curves/) · [Zenodo](https://doi.org/10.5281/zenodo.24510962).
+2. **Triple curves and unbounded denominators in threefold curve counting**. Scalar exponents have unbounded denominators on one smooth projective Calabi–Yau threefold, even in classes of divisibility three. [PDF](scalar_denominators/main.pdf) · [LaTeX](scalar_denominators/main.tex) · [Abstract and citation](https://bwuebben.github.io/papers/triple-curves-unbounded-denominators/) · [Zenodo](https://doi.org/10.5281/zenodo.24510966).
+3. **Unramified covers and wall crossing for local Gromov–Witten invariants**. At two independent double-cover walls the alternating change in all source genera is the local invariant of their common fourfold cover. [PDF](unramified_wall_crossing/main.pdf) · [LaTeX](unramified_wall_crossing/main.tex) · [Abstract and citation](https://bwuebben.github.io/papers/unramified-local-gw-wall-crossing/) · [Zenodo](https://doi.org/10.5281/zenodo.24510972).
+4. **Branched triple covers and wall crossing for local curve counts**. A branched cubic crossing changes the genus-five multiplicity while all unramified determinant signs through degree seven agree. [PDF](ramification_and_compact_counts/main.pdf) · [LaTeX](ramification_and_compact_counts/main.tex) · [Abstract and citation](https://bwuebben.github.io/papers/branched-triples-local-wall-crossing/) · [Zenodo](https://doi.org/10.5281/zenodo.24510974).
+5. **Spin structures and local Gromov–Witten invariants of curves**. For positive maximal flat symplectic normal holonomy, a spin gluing sign determines the partition sum in every degree and source genus. [PDF](spin_partition_functions/main.pdf) · [LaTeX](spin_partition_functions/main.tex) · [Abstract and citation](https://bwuebben.github.io/papers/spin-local-gw-of-curves/) · [Zenodo](https://doi.org/10.5281/zenodo.24510976).
+
+The [shared supplement](supplementary_calculations/README.md) contains the calculations for the branched-cover and spin papers. For the numerical checks accompanying the five papers, run `python3 verify_series.py` with SageMath and uv available.
+
 ## Reproduce the calculations
 
 The computations use Python 3, SymPy 1.14.0 and SageMath (verified with 10.9).

@@ -1,0 +1,248 @@
+\section{One real obstruction at several joining nodes}\label{p14-sec:joins}
+
+Fix the root $s$ on $Z$ and its transposition $\tau$, and choose once
+and for all an even generator $s^+$ of the other eigenspace in $V$.
+Over $x_i$ write $v_i=\partial_zs(r_i)$ and $e_i=s^+(r_i)$.
+Use the quotient cubic $Y=Z/\langle\tau\rangle$. The image $y_i$
+of $r_i$ is an unramified point of $Y\to C$. Trivialize $N$ in a
+holomorphic frame for the complex-linear part of $D$, writing
+$D=\bar\partial+B(w)\,d\bar w$, with $B$ antilinear. In that
+frame put $B_i=B(x_i)$ and $L_i=N_{x_i}/\mathbb Cv_i$. We shall have
+$[B_i v_i]\ne0$ and $[e_i]\ne0$ in $L_i$. Let $\psi$ generate
+the adjoint line on $Y$ annihilating its branch columns in
+\eqref{p14-eq:lowertransverse}. In coordinate $w$ it pairs
+$a\,d\bar w$ with $\operatorname{Re}\psi(w)(a)\,dA(w)$.
+Define
+\begin{equation}\label{p14-eq:branchweights}
+ 2\overline{\beta_i}[B_i v_i]=[e_i],\qquad
+ H_i(q)=\tfrac{\pi}{2}\operatorname{Re}\psi(y_i)(qv_i),
+ \qquad w_i=H_i(\beta_i).
+\end{equation}
+Here the $w_i$ on the right are real weights. The local domain coordinate
+$z$ and the target coordinate $w$ are those used in the smoothing chart
+below. The same $s,s^+,\psi$ are used at all the joining flags.
+
+\begin{proposition}\label{p14-prop:signs}
+Join the sextic to the identity over a nonempty set $I$ of branch
+values. Under the regularity conditions below, if
+$\sum_{i\in I} w_i\ne0$, the joined map without contracted components (the bare map) is an isolated zero in the full
+finite-cover chart times the parameter interval. Its local Euler change is
+\begin{equation}\label{p14-eq:localsubsetsign}
+              a_I=\kappa(-1)^{|I|}
+                     \operatorname{sgn}\Bigl(\sum_{i\in I} w_i\Bigr),
+\end{equation}
+where $\kappa\in\{1,-1\}$ is common to all subsets at the crossing.
+All nonempty subsums are nonzero at a generic crossing. Every
+strict sign pattern of these sums can be realized on the fixed cubic.
+\end{proposition}
+
+\subsection{The derivative along the nodal stratum}
+There are $3b$ independently movable simple ramification points on
+$Z$, even when their images coincide. At each join there are two more
+complex parameters $p,q$. In coordinates on the two branches the
+family is $z y=q$, $w=(z+p)^2+y$ after translating the branch center.
+Elimination gives the algebra with basis $1,z,z^2$ and relation
+\begin{equation}\label{p14-eq:cubicpolynomial}
+                   z(z+p)^2-wz+q=0 .
+\end{equation}
+At the node the relative deformation sheaf has length three: at the
+central fiber its local algebra is the cokernel of the Jacobian of
+$(zy,z^2+y)$, or equivalently $\mathbb C[z]/(z^3)$ after eliminating
+$y$. The other simple ramification points have length one. The
+relative deformation complex is supported at these finitely many
+source points and the finite-map chart is smooth of complex dimension
+$3b+2j$, $j=|I|$. Its central stabilizer is $\langle\tau\rangle$.
+Write $P_Z=\operatorname{coker}D_Z$. Normalization and evaluation
+give the joined kernel $\mathbb Rs$ and the joined cokernel $P_I$ with
+\begin{equation}\label{p14-eq:joinedsequence}
+ 0\longrightarrow
+ (\bigoplus_{i\in I}N_{x_i})/\mathbb R(e_i)_{i\in I}
+ \xrightarrow{\iota}P_I\longrightarrow P_Z\longrightarrow0 .
+\end{equation}
+Use the convention that the ordinary forcing of a cutoff height
+with value $a$ on the sextic and zero on the identity represents
+$\iota(a)$.
+
+To identify the image in $P_Z$, split under $S_3$. The trivial
+part is zero. The sign part is the odd cokernel on the discriminant
+double $T=Z/A_3$ and has dimension $2b$. The standard part has
+multiplicity $2b+1$, its multiplicity space being
+$\operatorname{coker}D_f$. These identifications follow by stabilizing
+with forms away from the branches on each quotient. A bounded
+invariant solution descends and extends across the punctures, and
+the Fredholm indices agree by deformation to a complex-linear
+operator. The odd operator on $T$ has no smooth kernel. Augment it
+by a complex plane of odd poles $\chi a v_i/z$ at each ramification
+point above $x_i$, as in the proof of Proposition~\ref{p14-prop:realize}.
+Its resulting index is zero. We require it to be invertible. This
+is open dense with the lower graph fixed. A nonzero odd polar
+solution cannot be a real combination of the two lower heights on
+an entire open disk: the coefficients there would be constant and
+the sign representation on the punctured normal cover has zero
+intersection with the standard one. An allowed zeroth-order
+perturbation can prescribe arbitrary forcing on this solution on
+a smaller disk. The two odd adjoint contributions add. Unique
+continuation and rank increase in a finite reduction give the
+assertion.
+
+Write $B_0$ for the real space of sextic branch velocities and
+increasing time. Their derivative on $s$ embeds $B_0$ as a hyperplane
+in $P_Z$. To see this, first take the common shift of the three
+ramification points over each $x_i$. These shifts and time preserve
+$S_3$ symmetry. On the even vector their standard component is
+\eqref{p14-eq:lowertransverse}; on the odd vector the same columns span
+the odd standard summand since $\operatorname{End}_{S_3}V=\mathbb R$.
+The additional separate shifts of the fixed flags give on the sign
+part the discriminant pole columns computed above, with nonzero
+factor $1/3$ from averaging over $A_3$. Indeed a branch shift $\alpha$
+produces the principal part $-\alpha v_i/(2z)$, by differentiation
+at fixed regular target point. Subtract the principal part and use
+removability for the bounded remainder; changing the cutoff changes
+the forcing by the image of a regular section. Finally the opposite
+shifts at the two $\tau$-exchanged flags, applied to $(1,-1,0)$,
+give one third of the common shift applied to $(1,1,-2)$.
+At inertia $(13)$ and $(23)$ this follows by taking the ratios
+$1/3$ and $-1/3$ of the coordinate differences. The even vector has
+zero derivative at the remaining flag. These columns give exactly
+the cubic branch columns on the invariant quotient. The remaining
+functional $\Lambda$ is thus the half-trace to the cubic paired
+with $\psi$. Extend it to $P_I$ by \eqref{p14-eq:joinedsequence}.
+For the full $q_i=0$ derivative, each attaching column contributes
+$v_ip_i$ in matching. They are independent modulo the one diagonal
+real line since $[e_i]\ne0$. Denote this injective nodal derivative,
+including time, by $J$, and its variables by $h$.
+
+
+\subsection{The smoothing terms}
+Let $F$ be the normalized obstruction equation, $q_i$ the complex
+smoothing parameters, and $Q_i=q_i\log(1/|q_i|)$, continued by zero.
+In the matching fibers the leading displacement is
+$2\iota((\overline{Q}_i B_i v_i)_{i\in I})$. It vanishes under the
+remaining real functional $\Lambda$. On the cone where all $|q_i|$
+are comparable and the nodal parameters $h$ are
+$O(R_0\log(1/R_0))$, with $R_0=\max_i|q_i|$, the next term is
+$\Lambda F=\sum_i H_i(q_i)+o(R_0)$. It is the residue of the
+variation of the two sextic sheets on the quotient cubic.
+Appendix~\ref{app:joined-estimates} proves the two estimates,
+including uniformity at the faces where some $q_i$ vanish.
+
+\subsection{Degree and orientation}
+Choose $n\in P_I$ with $\Lambda(n)=1$. The boundary degree is that
+of the real-linear map
+\begin{equation}\label{p14-eq:linearjoin}
+ (h,q)\longmapsto Jh+2\iota\big((\bar q_iB_i v_i)_{i\in I}\big)
+                                      +n\sum_i H_i(q_i).
+\end{equation}
+Indeed first homotope by linear interpolation to this model with a
+common factor $\log(1/R_0)$ on the matching term. Replacing the separate
+logarithms there by the common one costs $O(R_0)$, uniformly up to
+the coordinate faces. At a sequence of noncentral zeros
+\eqref{p14-eq:fullestimate} and injectivity of $J$ would force
+$|h|=O(R_0\log(1/R_0))$, $R_0>0$. Projecting away the nodal
+columns, then dividing by $R_0\log(1/R_0)$, puts each limiting
+tuple $(q_i/R_0)$ on the real line spanned by $(\beta_i)$. Indeed
+the remaining matching space is $(\bigoplus L_i)/\mathbb R([e_i])$.
+Every entry of a nonzero tuple on that line is nonzero. Hence the
+comparable cone applies, and division of \eqref{p14-eq:rowestimate}
+by $R_0$ contradicts $\sum_i w_i\ne0$. On the model the common
+positive logarithmic factor can then be changed to one. This
+establishes both isolation and the asserted boundary degree.
+
+Restore the even height as a real variable, projecting to its
+evaluation vector $E_I=(e_i)$ before taking the quotient in
+\eqref{p14-eq:joinedsequence}. Eliminate $B_0$ and order the remaining
+rows as the matching fibers followed by the complementary normalized
+line. The remaining matrix is
+\[
+ \begin{pmatrix}M_I&E_I\\ H&0\end{pmatrix},\qquad
+ M_i(p_i,q_i)=v_i p_i+2\bar q_i B_i v_i,\qquad
+ H(p,q)=\sum_i H_i(q_i).
+\]
+Each $M_i$ has real sign $-1$ by complex linearity in $p_i$ and
+antilinearity in $q_i$ modulo $\mathbb Cv_i$. The Schur complement is
+$-H M_I^{-1}E_I=-\sum_iw_i$. The sign from cancellation of the
+branch-and-time block, the identity operator, and the even height is
+common to all $I$: the normalization determinant is the determinant
+on the two smooth components times the dual determinant of the
+complex matching fibers. Every added pair $(p_i,q_i)$ and matching
+fiber has real dimension four. Moving these past a fixed real line
+or past each other preserves orientation. The projective Euler link
+has Euler number twice the oriented degree, since its cokernel
+quotient is the pullback of the tangent bundle of an even-dimensional
+sphere under the normalized column. Dividing by the order-two
+stabilizer leaves the signed unit \eqref{p14-eq:localsubsetsign}.
+
+\subsection{Regularity and prescription of the weights}
+The marked cubic height difference and the derivative test in
+Section~\ref{p14-sec:kernels} give generically $[e_i]\ne0$. Adding the
+value of $B_i$ to the marked test is submersive: after forcing off
+the marks the adjoint vanishes there, the local section values and
+holomorphic jets kill the marked multipliers, and the zeroth-order
+coefficient can then vary freely at the center. The failure of
+$[B_iv_i]\ne0$ has real codimension two.
+
+With these jets fixed, adjoin to the cubic branch-augmented operator
+one real column whose residues at the unramified $y_i$, $i\in I$,
+are $\beta_iv_i$. A cutoff representative with residue $R$ there is
+$R/w-B_iR\log|w|^2$. The off-pole forcing is locally
+$O(1+|\log |w||)$ and its pairing with the remaining cubic adjoint
+is $-2\sum_iH_i(\beta_i)$. Quotient out the known smooth kernel.
+The resulting index-zero operator is invertible exactly when the sum
+is nonzero. At a defect a polar solution has nonzero coefficient on
+the new column. Its three conjugates at any chosen $x_i$, pulled
+back to $Z$, have an order-two pole at three different flags, while
+the other conjugates there have at most order one. Together with
+the bounded $s_1,s_2$ these give five independent solution germs.
+The constrained Petri argument of Lemma~\ref{p14-lem:kernelplane}
+therefore gives a rank-increasing perturbation at a defect. More
+precisely, first insert a good Petri jet on the test disk, then
+apply the annihilator argument there to the three polar columns and
+three local adjoint components. This gives open density with fixed
+graph; intersect over the finitely many subsets. Open conditions on
+a continued cubic crossing transfer to generic paths by a time
+cutoff. For the countably many kernel exclusions of
+Lemma~\ref{p14-lem:kernelplane} the same argument is applied to the
+individual compact configuration blocks before taking the intersection.
+
+Finally we explain how to prescribe the chamber on the fixed cover in
+Proposition~\ref{p14-prop:realize}. The branch model used there starts
+with $B_i=0$. Insert any bounded antilinear values with
+$[B_iv_i]\ne0$ by cutoffs on disks of radius $\rho\to0$. The
+perturbation tends to zero as an $L^p$ multiplier on the fixed
+covers for each finite $p>2$. To restore the equation on the same
+$Y$ add $2b+1$ smooth real operator variations on the regular
+frame disk. Their values on $\xi$ may be chosen to span the
+cokernel of $D_f$, by trace-free forcing and adjoint continuation.
+The implicit function theorem with a thick real normalization now
+gives coefficients tending to zero and a new normalized solution
+converging to $\xi$ in $W^{1,p}$. At ramification the pulled-back
+cutoff coefficient has the form $2\bar z\chi(z^2/\rho)B(z^2)$.
+It is uniformly Lipschitz and $O(\sqrt\rho)$, hence small in
+$C^\alpha$, $0<\alpha<1$. Interior estimates give $C^1$ convergence
+of the heights at the flags. In particular the even value stays off
+the complex derivative line, the odd height is $v_i z+O(|z|^{1+\alpha})$
+uniformly after choosing $\alpha<1-2/p$, and regular-sheet separation
+persists up to each ramification point. The branch pole columns
+converge in $L^p$ since the factor $\bar z$ cancels the conjugate
+polar denominator. Consequently \eqref{p14-eq:lowertransverse} remains
+invertible, and its branch-annihilating adjoint, normalized by time,
+converges uniformly on the cubic by the adjoint estimates. Apply the
+preceding regular-disk tests to ensure the singleton $H_i(\beta_i)$
+are nonzero and the discriminant augmentation is invertible.
+
+Given real $c_i$ with all nonempty subsums nonzero, now choose
+$\gamma_i$ with $H_i(\gamma_i)=c_i$. Insert bounded coefficients
+$\widetilde B_i$ satisfying
+$2\overline{\gamma_i}[\widetilde B_i v_i]=[e_i]$, and restore the
+fixed-cover equation in exactly the same way. The normalized cubic
+and discriminant pole columns and the time column converge on their
+fixed sources. Thus the remaining orientation choices transport
+continuously and $\beta_i\to\gamma_i$, $w_i\to c_i$. For sufficiently
+small supports all desired strict inequalities hold. Restoring the
+residual kernel exclusions on the regular disk preserves them.
+This proves both propositions, including realizability on a
+prescribed $f$. For every even $b>0$ such cubics exist over the same
+$C$: send the $b$ peripheral loops to $(12)$ and one handle
+generator to $(123)$, all other handle generators to the identity.
+The surface relation holds and compactifying gives the required
+connected holomorphic cover.

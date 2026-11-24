@@ -1,0 +1,189 @@
+\section{Cubic evaluations on a general normal bundle}\label{sec:evaluations}
+
+Let $D$ be a smooth projective curve of genus $g\geq2$, and put
+$k=\lfloor(g-1)/2\rfloor$. For a rank-two bundle $N$ over $D$, a point
+$p\in D$ and a covector $\ell\in N_p^\vee$, let $F_{p,\ell}$ be the
+product of the three values of $\ell$ on the fiber of an effective
+degree-three cycle in $\operatorname{Tot}_D N$, counted with multiplicity.
+More generally, Pardon allows any homogeneous symmetric polynomial of
+positive degree in these values \cite[(4.15)]{Pardon}. Its degree is its
+weight under scalar multiplication on $N$.
+
+\begin{theorem}\label{thm:cubic-evaluations}
+For a general stable $N$ with determinant $K_D$, the common zero of $k$
+general point products is $3[D]$. For every rank-two $N$ of degree $2g-2$,
+any tuple of the above evaluations with compact common zero set has at
+least $k$ weights divisible by three. In particular the least possible
+product of weights is $3^k$, and $3^k x_{g,3}$ is integral.
+\end{theorem}
+
+\begin{proof}
+Write $K=K_D$. The stable fixed-determinant moduli space $M$ is irreducible
+of dimension $3g-3$. On a dense open its bundles are $2$-rigid
+\cite[Theorem~2.2 and \S3]{BP06}: the pullback to each stable map
+of degree two has no nonzero section. Thus $H^0(N)=0$, and for every line
+subbundle $S\subset N$ one has $H^0(S^2)=0$. Indeed a rational square
+root of a regular section is regular, and the normalization of the spectral
+double of a nonsquare carries a nonzero section of the pullback of $N$.
+There are no compact curves in a fiber of $N$. Consequently any cubic
+cycle distinct from $3[D]$ is integral with multiplicity one. Its
+normalization gives a smooth connected triple cover $f:F\to D$. The
+normal coordinate on $F$ gives a nonzero map $T\to N$, where
+$T$ is the Tschirnhausen bundle defined by the trace splitting $f_*\cO_F=\cO_D\oplus T^\vee$.
+
+We first exclude a generically injective map $T\to N$. Write $b=\deg T$. The discriminant divisor $\Delta$
+has degree $2b$ and satisfies $\cO(\Delta)=(\det T)^2$ \cite[\S\S3--4]{Miranda}.
+An injection $T\to N$ gives an effective determinant divisor $E$ of
+degree $n=2g-2-b$, with $\Delta+2E\in|K^2|$. There are finitely many
+covers for fixed $\Delta$, by monodromy on the punctured curve. For fixed
+$T,E$ the upper modifications have at most $n$ parameters, by successive
+elementary modifications of the dual at the specified points. Stratify
+the divisors by the multiplicities at their $t$ distinct support points.
+Unless these points lie on a canonical divisor, the Abel map for
+$\Delta+2E$ has differential of rank $g$, dual to weighted evaluation of
+canonical forms. Thus the dimension, including modifications, is at most
+$t-g+n\leq2b+2n-g=3g-4$. On a canonical divisor the support has only
+finitely many choices once the divisor is given, yielding the bound
+$g-1+n=3g-3-b$. This suffices for $b>0$. If $b=0$ the cover is
+\'etale. For a noncyclic triple, $\det T$ is its nontrivial sign
+character, so $E\in|K(\det T)^{-1}|$ has $g-2$ parameters and the total
+is at most $3g-4$. For a cyclic triple $T$ splits as two lines of order
+three. These estimates involve finite-type Hurwitz and modification
+spaces since $0\leq b\leq2g-2$.
+
+For a saturated subline $S$ of degree $d\leq g-2$ the projective space
+of extensions by $S$ with quotient $KS^{-1}$ has dimension $3g-4-2d$,
+by Riemann--Roch for $S^2K^{-1}$. Stability excludes split extensions
+and larger degrees. Letting $S$ vary adds $g$ parameters, so a general
+$N$ has no subline of degree $d>k$. A map from a prescribed degree-zero
+line $R$ would saturate in $R(A)$, with $a=\deg A\geq0$. The divisor
+and extension have at most $a+3g-4-2a<\dim M$ parameters. This excludes
+all lines of order dividing three and finishes the rank-two case.
+
+For rank one, let $S$ be the saturation of the image. The normal
+coordinate in $f^*S$ has trace zero and generates the cubic field since
+the degree is prime. Its characteristic equation reduces to $y^3=s$,
+with $s\in H^0(S^3)$ nonzero, since its coefficient in $H^0(S^2)$
+vanishes. Hence $1\leq d\leq k$, degree zero having been excluded.
+Conversely each such $s$ defines an integral cubic, since a rational
+cube root would give a section of $S$. Its generic fiber recovers $S$
+by saturation and then $s$ by the equation.
+
+The cubics modulo dilation thus form a projective algebraic set
+$Z\subset\PP H^0(D,\operatorname{Sym}^3N)$. Indeed its affine
+cone consists of the tensors whose value at every point lies in the
+closed cone of pure cubes. A nonzero such tensor determines a rational
+line direction by the inverse Veronese map. In a frame adapted to its
+saturation $S$, the tensor belongs to $S^3$ across its zeros as well.
+To bound $\dim Z$, the pairs $(S,\operatorname{div}s)$ of degree $d$
+are parametrized by the finite \'etale pullback of $\operatorname{Sym}^{3d}D$
+under cubing on Picard varieties. The projective extension family over
+these pairs has dimension $3d+3g-4-2d$. The stable part maps to $M$.
+Over general $N$ the fibers have dimension at most $d-1$ and parametrize
+the degree-$d$ locus in $Z$, since inclusions up to scalar specify the
+subbundle. It follows that $\dim Z\leq k-1$, with $Z$ empty for $k=0$.
+
+On this cone the product $F_{p,\ell}$ is the linear form
+$q\mapsto\ell^{\otimes3}(q(p))$. For fixed $[q]\in Z$ its zeros in the
+surface $\PP_D(N^\vee)$ form a proper closed subset. The incidence
+of $k$ simultaneous zeros above $Z$ therefore has dimension at most
+$k-1+k<2k$. Its projection is closed by projectivity of $Z$, so general
+products cut out $3[D]$. Their joint map is proper. Indeed its norm is
+bounded below on the unit sphere of the coefficient cone. Bounded
+coefficients bound the cubic roots in a compact disk bundle. In
+$\PP_D(\cO\oplus N)$ all these cycles have the degree of
+$3[D]$ by dilation, and their projective Chow limits remain in the disk.
+Over the Borel base $\PP^k$ their joint
+integral Thom class represents $3^kx_{g,3}$ by
+\cite[Definition~4.7 and (4.16)]{Pardon}. The empty tuple over a point
+applies when $k=0$.
+
+For the lower bound suppose $k\geq1$, take any $N$ of degree $2g-2$,
+and prescribe an effective divisor $P$ of degree $k-1$. We claim that
+some $S\in A=\operatorname{Pic}^kD$ admits both a nonzero map $S\to N$
+and a nonzero section of $S^3(-P)$. Let $p:D\times A\to A$ be the
+projection, $\mathcal P$ the normalized Poincar\'e bundle and $\theta$
+the principal polarization. For $V=-Rp_*(N\otimes\mathcal P^{-1})$,
+Grothendieck--Riemann--Roch gives
+\[
+ \operatorname{ch}(V)=2k+2\theta,\qquad c_j(V)=(2\theta)^j/j!.
+\]
+Indeed $\operatorname{ch}(N)\operatorname{td}(D)=2$, and the square of
+the mixed Poincar\'e class pushes forward to $-2\theta$. On a closed
+locus where all maps $S\to N$ vanish, the differential in a two-term
+presentation is fiberwise injective. Its cokernel represents $V$ there
+by a rank-$2k$ bundle, so $c_{2k+1}(V)$ restricts to zero.
+
+If $g=2k+1$, the integral of this class on $A$ is $2^g$, and
+$\deg S^3(-P)=g$ gives a section by Riemann--Roch. If $g=2k+2$, let
+$T$ be the inverse image of the theta divisor $W_{g-1}(D)$ under
+$S\mapsto S^3(-P)$. Translation and cubing give $[T]=9\theta$, whence
+$\int_T c_{2k+1}(V)=9g\,2^{g-1}>0$. Some $S\in T$ therefore admits
+a map, and $S^3(-P)$ has a section by definition. In either case push
+the resulting spectral cubic into $N$ by $S\to N$. It is a compact
+effective cycle whose generic fiber lies off the zero section, even if the line map has
+zeros. Over each point of $P$ the entire cubic lies on the zero section.
+
+The three values of any fiber covector on this cubic are
+$z,\zeta z,\zeta^2z$, where $\zeta$ is a primitive cube root of unity.
+A homogeneous symmetric polynomial of weight prime to three
+vanishes on them, since multiplication by $\zeta$ permutes them. If
+fewer than $k$ weights are divisible by three, include their points in
+$P$, completing it to degree $k-1$. Every evaluation then vanishes on
+the entire dilation orbit of this cubic. At a base point where the three normal coordinates are nonzero
+some point product is unbounded on the orbit, contradicting compactness
+of the common zero set.
+\end{proof}
+
+\begin{corollary}\label{cor:cubic-fiber-count}
+Fix $1\leq d\leq k$ and $d-1$ distinct points with sum $P$. For general
+stable $N$ of determinant $K$ the number of pairs $(S,[s])$ with
+$S\subset N$ a degree-$d$ subline and $0\ne s\in H^0(S^3(-P))$ is
+\[
+        2^{2d+1}9^{g-2d-1}\binom{g}{2d+1}.
+\]
+\end{corollary}
+
+\begin{proof}
+Put $r=2d+1$. The pairs $(S,B)$ with $S^3(-P)=\cO(B)$,
+$B\in\operatorname{Sym}^rD$, form a smooth finite \'etale pullback $W$
+of that symmetric power. Its fundamental class pushes to
+$9^{g-r}\theta^{g-r}/(g-r)!$ on $\operatorname{Pic}^dD$ by the
+Poincar\'e formula \cite[Introduction]{Debarre}. The preceding index
+calculation with $d$ in place of $k$ gives $\int_W c_r(V)$ equal to the
+displayed number. Positivity forces a nonzero map from some $S$.
+For general $N$ each such map is saturated, since a saturation $S(A)$
+with $a=\deg A>0$ has at most $r+a+(3g-4-2d-2a)=3g-3-a$ parameters
+including the extension. The saturated extension incidence is smooth
+of dimension $3g-3$, so its general fibers over $M$ are finite and
+reduced by generic smoothness. Thus every kernel at a rank drop has
+dimension one, since its projectivization parametrizes the maps up to
+scalar. An invertible minor in the two-term presentation identifies
+the projective kernel incidence locally with the rank-drop scheme.
+Its codimension is $r$ and the Thom--Porteous formula gives its length
+as $\int_W c_r(V)$.
+\end{proof}
+
+\begin{corollary}\label{cor:any-triple}
+For every smooth curve $D$ of genus $g\ge3$ and every holomorphic
+rank-two bundle $N$ of degree $2g-2$, there is a connected smooth
+degree-three cover $f$ with $H^0(f^*N)\ne0$ and genus at most $3g+1$.
+If $H^0(N)=0$, the corresponding cyclic images in the normal bundle
+are integral and their nonzero dilates approach $3[D]$.
+\end{corollary}
+\begin{proof}
+On $\Pic^1D$ use the degree-one Picard complex in the preceding proof.
+The inverse image $W$ of the effective locus $W_3$ by cubing has
+$\int_Wc_3(V)=8\cdot9^{g-3}\binom g3>0$. If the kernel were
+everywhere zero, the rank-two actual cokernel bundle on $W$ would
+have zero third Chern class. A line $S$ with both $S\to N$ nonzero
+and a nonzero section $s$ of $S^3$ therefore exists, without any
+saturation or generality assumption. If $s$ is a meromorphic cube
+its cube root is holomorphic and gives a section of $N$, which
+pulls back to any connected \'etale cyclic triple. Otherwise normalize
+the cyclic cubic $y^3=s$. At most three zeros have order nonzero
+modulo three and each contributes two to ramification. Its genus
+is at most $3g-2+3$. The generic injection from $S$ to $N$ embeds
+the generic fiber multiset, and dilation then gives the claimed
+cycle limit.
+\end{proof}

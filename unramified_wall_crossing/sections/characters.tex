@@ -1,0 +1,49 @@
+\section{The multiplicity of a common character cover}\label{sec:characters}
+Let \(C\) be a closed Riemann surface of genus \(g\ge2\), and let \(N\) have complex rank two and degree \(2g-2\). A nonzero character \(\alpha\in H^1(C;\mathbb F_2)\) defines a flat real sign line \(E_\alpha\) and a connected étale double cover \(Y_\alpha\to C\). Fix \(r\ge1\) distinct nonzero characters \(\alpha_1,\ldots,\alpha_r\) spanning a space of dimension \(b\). Put \(K=\bigcap_i\ker\alpha_i\), \(G=\pi_1(C)/K\simeq(\mathbb Z/2)^b\), and write \(p:Z\to C\) for its connected regular cover. Thus \(Z\) has degree \(a=2^b\) and genus \(H=1+a(g-1)\). The fiber product of the \(r\) double covers has \(2^{r-b}\) components isomorphic over \(C\) to \(Z\). Indeed \(G\) acts on its fiber of \(2^r\) points by translation through the character embedding \(G\hookrightarrow(\mathbb Z/2)^r\).
+
+Suppose \(W=\bigoplus_i E_{\alpha_i}\) admits a real bundle monomorphism into \(N_{\mathbb R}\). Use the family of Theorem~\ref{thm:mixed} with this prescribed sum of kernel lines and with all the central pullback kernels determined by their monodromy invariants. Let \(D_\epsilon\) be an operator in the local chamber with signs \(\epsilon=(\epsilon_1,\ldots,\epsilon_r)\in\{+,-\}^r\) of the corresponding wall coordinates. For any additive quantity \(T\) put \(\Delta T=\sum_\epsilon(-1)^{\#\{i:\epsilon_i=-\}}T(D_\epsilon)\). Use \(D_+\) for the all-positive choice. Write \(L^C_{d,k}(D)\) for the connected fixed-target local degree in projection degree \(d\) and arithmetic source genus \(k\). Its domain includes nodal curves and contracted components. Write \(P^C(D;q)\) for the balanced product of the isolated curve germ and \(n^C_{d,h}(D)\) for its exponent at degree label \(d\) and elementary genus \(h\).
+
+\subsection{The connected transfer and the geometric product}
+
+For each finite degree bound \(M\), use corners in the sufficiently small coordinate neighborhood for that bound. In every arithmetic source genus, for \(1\le d\le M\),
+\[\Delta L^C_{d,k}=
+ \begin{cases}
+    2^{r-b} L^Z_{d/a,k}(p^*D_+),&a\mid d,\\
+    0,&a\nmid d .
+ \end{cases}\]
+In the complex cycle algebra the corresponding identity is
+\[\prod_{\epsilon} P^C(D_\epsilon;q)^{(-1)^{\#\{i:\epsilon_i=-\}}}
+   =P^Z(p^*D_+;q^a)^{2^{r-b}}\pmod {q^{M+1}} .\]
+The upstairs cutoff is \(\lfloor M/a\rfloor\). Consequently \(\Delta n^C_{d,h}\) vanishes off multiples of \(a\) and is \(2^{r-b} n^Z_{d/a,h}(p^*D_+)\) on those multiples.
+
+To verify the coefficient, fix the monodromy image of a connected stable map \(u:X\to C\) in \(G\). Write \(I(u)=\{i:u^*E_{\alpha_i}\text{ is trivial as a real local system}\}\). This includes the matching conditions around loops passing through nodes. Across wall \(i\) the determinant orientation of the normal contribution changes sign precisely for \(i\in I(u)\). The quotient obstruction bundle after removing the pulled-back central kernel and cokernel extends across the wall. Thus the alternating sum of the oriented contributions on the stratum is its all-positive value multiplied by \(\prod_i(1-(-1)^{\mathbf 1_{i\in I(u)}})\). It vanishes unless every character is trivial on the source, when the multiplier is \(2^r\). This is the character case of the obstruction comparison in Theorem~\ref{thm:mixed}.
+
+The surviving open-and-closed substack is the image of composition from connected maps to \(Z\). A specified lift of an object preserves its domain and gives a section of the pulled-back finite étale torsor. Hence the map from the stack of lifts is representable, finite étale of degree \(a\) on its image. Since \(TZ=p^*TC\), the ordinary stable-map obstruction theory pulls back, as does the oriented normal family. Dividing its Euler integral by \(a\) gives the downstairs all-positive value on this substack. This proves the factor \(2^r/a\), including when source automorphisms permute the lifts. Connected counts add on the products obtained from compact open cluster excision. At the first degree of disagreement between two balanced products, the remaining connected difference is a finite sum of the degree-one series \((2\sin(v/2))^{2h-2}\), whose lowest orders distinguish \(h\). This gives the product formula from the same fixed-target comparison.
+
+The cutoff applies to the neighborhoods used to select the corners. In a sufficiently small neighborhood of the prescribed central data, the punctured coordinate chambers are rigid through \(M\) in every source genus. This uses classification of the central kernel graphs, their disjoint embedded orbit images, and the nearest-sheet and averaging argument. The finite set of operators on the orbit covers is invertible off the relevant coordinate walls. Compactness then excludes additional kernel graphs in bounded degree. On each fixed stable-map stack the obstruction comparison may first use a smaller neighborhood, followed by continuation in the rigid chambers. Isolation of the four or more corner points in unrelated germs would give no control of this continuation. A common neighborhood for unbounded \(M\) requires an additional hypothesis.
+
+\subsection{Direct count at the least source genus}
+
+In positive degree \(d\) the least possible genus of a connected map to \(C\) is \(h_d=1+d(g-1)\). If its positive normalized components have degrees \(d_j\), each contributes at least \(1+d_j(g-1)\) to the arithmetic genus by Riemann--Hurwitz. Equality at \(h_d\) requires one positive component, no ramification and no positive-genus contracted component. A nonempty contracted rational tree attached to it would have an unstable leaf. Thus the count at \(h_d\) is over smooth connected étale covers, with the determinant sign divided by the order of the deck group.
+
+At \(d=a\), exactly one isomorphism class of connected covers lifts to every \(Y_i\). Its index-\(a\) subgroup is contained in \(K\), which also has index \(a\), hence it is \(K\). This is \(p:Z\to C\), with deck group of order \(a\). Write \(\eta=\operatorname{sgn}(p^*D_+)\). The \(r\) sign lines are distinct one-dimensional real summands on this cover. Crossing the \(i\)th wall flips its sign there. Its signed mass at the corner \(\epsilon\) is \(a^{-1}\eta(-1)^{\#\{i:\epsilon_i=-\}}\). Every other étale cover misses one character and cancels when the corners differing in that coordinate are paired. The mixed connected count at \((a,H)\) is therefore \(2^{r-b}\eta\), directly from automorphism orders and the real determinant. In degree \(ae\) the same argument identifies the least-genus mixed count with \(2^{r-b}\) times the signed groupoid count of connected étale degree-\(e\) maps to \(Z\).
+
+At label \(a\) the entire mixed connected series in the variable \(v\) is \(2^{r-b}\eta(2\sin(v/2))^{2H-2}\). Indeed the upstream label is one, and the local cluster of an invertible embedded curve has a single degree-one factor of its own genus and sign. All lower mixed exponents vanish, so the first nonzero mixed elementary exponent is
+\[\Delta n^C_{a,H}=2^{r-b}\eta .\]
+It is the only mixed elementary exponent at label \(a\). For the square on a genus-two base this gives a single exponent of magnitude one at label four and genus five.
+
+\subsection{Which multiplicities occur in a real rank-four normal bundle?}
+
+Write \(\alpha\beta\) for the cup product in \(H^2(C;\mathbb F_2)\). Every degree-one class squares to zero on an oriented closed surface. The underlying oriented real bundle \(N_{\mathbb R}\) has \(w_2=c_1(N)\bmod 2=0\). Oriented real bundles of rank at least three on a surface are classified by \(w_2\), by obstruction theory using \(\pi_1(SO(n))=\mathbb Z/2\). In the following examples this identifies the constructed oriented rank-four bundle with \(N_{\mathbb R}\) and supplies the monomorphism required in Theorem~\ref{thm:mixed}.
+
+\begin{itemize}
+\tightlist
+\item
+  For any two distinct nonzero characters the span has \(b=2\). Put \(W=E_{\alpha_1}\oplus E_{\alpha_2}\). The bundle \(W\oplus W\) is oriented and \(w_2(W\oplus W)=w_1(W)^2=0\), so \(W\) embeds. The square has multiplier one.
+\item
+  For three characters take \(\alpha,\beta,\alpha+\beta\) with \(\alpha,\beta\) independent and \(\alpha\beta=0\). Then \(w_1(W)=0\) and \(w_2(W)=\alpha\beta=0\). Taking \(W\oplus\mathbb R\) gives the embedding. In a symplectic basis \(a_i,b_i\) of \(H^1(C;\mathbb F_2)\) one can take \(\alpha=a_1\), \(\beta=a_2\) for every \(g\ge2\). The eight corners give a first mixed coefficient \(2\eta\) at label four and genus \(4g-3\).
+\item
+  For four characters take \(\alpha,\beta,\gamma,\alpha+\beta+\gamma\), with \(\alpha,\beta,\gamma\) independent. Then \(w_1(W)=0\) and \(w_2(W)=\alpha\beta+\alpha\gamma+\beta\gamma\). The choice \((a_1,a_2,b_1+b_2)\) makes the three terms evaluate to \(0,1,1\), giving \(w_2(W)=0\). Here \(W\) itself is the required real rank-four bundle. The sixteen corners give a first mixed coefficient \(2\eta\) at label eight and genus \(8g-7\).
+\end{itemize}
+
+The factor two is the largest possible power in the transfer for distinct prescribed sign characters in this rank. Indeed \(r\le4\) and \(r\le2^b-1\). For \(r=4\), the monomorphism is an isomorphism, so \(w_1(W)=\sum_i\alpha_i=0\) also forces \(b\le3\). These inequalities give \(r-b\le1\), attained by both dependent examples.

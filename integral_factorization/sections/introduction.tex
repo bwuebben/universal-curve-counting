@@ -1,0 +1,116 @@
+\section{The integral local factors}\label{sec:intro}
+
+The universal count of effective curves on a compact threefold records
+the entire space of cycles in each integral homology class. Even when
+these spaces carry integral classes, the factors used to express their
+generating series can have fractional exponents. On a smooth projective
+Calabi--Yau threefold, for example, a genus-ten factor occurs with
+exponent in $\mathbb Z+2/3$ in three times a primitive class
+\cite[Theorem~1.1]{WueCounter}, \cite[Theorem~1.2]{WueTriples}. This factor comes from scaling the two
+normal directions to a curve by the same weight. Which local factors
+recover the integral structure?
+
+Pardon constructed an algebra of effective one-cycles in families of
+complex threefolds. In its semi-Fano part every irreducible component
+has nonnegative first Chern number. Write $H_{\ZZ}$ for the summand
+in first Chern number and virtual dimension zero. Multiplication is
+external product on disjoint targets. Pardon proved that integral
+geometric elements obtained by isolating multiples of embedded curves,
+one for each genus and multiplicity, freely generate this algebra.
+The normal neighborhood used to isolate a multiple may depend on its
+multiplicity. A uniform construction by scalar dilation gives free
+generators over $\QQ$ \cite[Theorem~1.2]{Pardon}. We identify a uniform
+equivariant construction which gives free generators over $\ZZ$.
+
+Let $C$ be a smooth compact curve of genus $g$. Choose a line bundle
+$L$ of degree $g-1$ and give the two summands of
+$L\oplus(K_C\otimes L^{-1})$ weights $+1$ and $-1$. We call this
+the balanced antidiagonal model. Write $a_{g,m}$ for the normalized
+equivariant class supported on the $m$-fold zero section and
+$A_g(q)=1+\sum_{m\ge1}a_{g,m}q^m$. This class is independent of the
+choices of $C$ and $L$. The normalization divides a supported Thom
+class by a product of weights, so its construction gives an element of
+$H=H_{\ZZ}\otimes\QQ$. For equal weights write $x_{g,m}$ for the scalar
+class. The two classes agree in multiplicity one.
+
+\begin{theorem}\label{thm:basis}
+The map to the rationalization embeds $H_{\ZZ}$ as the polynomial ring
+$\ZZ[a_{g,m}:g\ge0,\ m\ge1]$. For each $(g,m)$ one can choose an
+integral geometric local curve element $y_{g,m}$ of this type so that
+\[
+ y_{g,m}-a_{g,m}\ \in\ \ZZ[a_{h,j}:h\ge0,\ 1\le j<m].
+\]
+\end{theorem}
+
+There is a geometric obstruction to comparing the two sorts of
+generators directly in the normal bundle. For $g\ge2$ choose $L$ outside
+the theta divisor. Both normal summands are acyclic, so the embedded
+zero section is regular and isolated. Yet $h^0(C,L^2)\ge g-1$.
+A nonzero section $s$ cuts out the compact double cycles $w^2=ts$ in
+the first summand. They converge to the doubled zero section as $t$
+tends to zero. Isolation of the embedded curve says little about
+isolation of its doubles.
+
+For a prescribed multiplicity $m$ we start in a holomorphic
+neighborhood in which all multiples through $m$ are isolated. We place a tube of this neighborhood in a closed symplectic six-torus.
+Bounded-area compactness keeps the cycles in the tube away from its
+boundary during a small deformation. Excision therefore lets us apply
+the compact cluster comparison to its insertion, giving a product of contributions of elementary curves, the regular local
+models of Ionel and Parker \cite{IP}. A genus-$h$ elementary curve
+contributes the balanced series $A_h$ by the geometric comparison of
+\cite[Proposition~3.1]{WueProduct}. In degree one, testing by genus
+separates the multiplicity-one classes: their fixed-genus series have
+distinct leading powers. The embedded curve has its complex orientation,
+so its genus occurs with coefficient $+1$ and every other genus with
+coefficient zero. The remaining factors have core
+class a proper multiple of the original class. In the coefficient of
+$q^m$ these corrections therefore involve only generators of
+multiplicity less than $m$. This gives the integral triangular
+comparison in Theorem~\ref{thm:basis}.
+
+For a smooth compact Kähler threefold $X$, write $\Gamma_0(X)$ for zero
+and the effective integral classes of first Chern number zero. Let
+$U_{X,\beta}$ be the characteristic function of the entire space of
+effective cycles of class $\beta$, and take $U_{X,0}=1$.
+\begin{theorem}\label{thm:compact}
+If $c_1(TX)$ is nonnegative on every compact irreducible curve, then
+\begin{equation}\label{eq:compact}
+ \sum_{\beta\in\Gamma_0(X)}U_{X,\beta}Q^\beta
+ =\prod_{\substack{\beta\in\Gamma_0(X)\\ \beta\ne0}}\prod_{h\ge0}
+           A_h(Q^\beta)^{n_{\beta,h}}
+ \quad\text{in }H_{\ZZ}[[\Gamma_0(X)]] .
+\end{equation}
+The exponents are unique integers and only finitely many occur for each
+$\beta$. The completion is by Kähler area, and the integers are independent
+of the Kähler form. When $X$ is smooth projective with trivial canonical
+bundle and $H^1(X,\cO_X)=H^2(X,\cO_X)=0$, the exponent $n_{\beta,h}$
+is the signed multiplicity of elementary clusters of class $\beta$ and
+genus $h$ in the bounded-energy cluster decomposition.
+\end{theorem}
+
+Two identities for cycles explain why the basis theorem yields a
+product. Addition records every decomposition of a cycle, and division
+by an integer records every integral root of its class. After the
+lower-area factors have been removed, the first remaining coefficient
+is primitive for addition and vanishes under every proper division.
+It is therefore an integral combination of multiplicity-one classes.
+Their coefficients give the exponents at that homology label.
+The product retains the full integral homology label, including
+torsion. Its local factors also have a numerical interpretation.
+Bryan and Pandharipande computed the local Gromov--Witten residues
+\cite{BP}, and Ionel and Parker identified the antidiagonal residue of an
+elementary curve \cite[Proposition~3.3]{IP}. Doan, Ionel and Walpuski
+proved the requisite finiteness for the symplectic cluster expansion
+\cite{DIW}. The balanced universal classes and a conditional numerical
+factorization were constructed in \cite{WueBalanced}. The geometric
+comparison of \cite{WueProduct} established the projective cluster
+formula. Here its use on a tube gives the integral presentation and
+the compact Kähler factorization. In the compact example above, the
+primitive genus-three count is $-14$. Changing back to scalar factors
+subtracts $(4720/3)(-14)$ from the genus-ten exponent, giving the stated
+fractional part \cite{WueCounter,WueTriples}.
+
+\subsection*{Acknowledgements}
+I thank John Pardon for pointing out the difficulty of comparing his
+scalar-equivariant local curve classes with the elementary curves of
+Ionel and Parker.

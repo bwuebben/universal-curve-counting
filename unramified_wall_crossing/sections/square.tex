@@ -1,0 +1,78 @@
+\section{Two double covers and their common fourfold cover}\label{sec:square}
+
+Let $C$ be a closed smooth complex curve of genus $g\ge2$, and let $N$
+have complex rank two and degree $2g-2$. For a real Cauchy--Riemann
+operator $D$ with Dolbeault symbol on $N$, let $D_u$ be its pullback
+to $u:X\to C$. On a nodal domain the sections on the normalization
+have matching values. We call $D$ \emph{rigid through degree $M$} if
+$D_u$ is injective for every connected stable map of degree between
+one and $M$. At such a parameter write
+\begin{equation}\label{eq:fixed}
+L^C_{d,k}(D)=\int_{[\overline{\mathcal M}_{k}(C,d)]^{\rm vir}}
+            e(\operatorname{coker}D_u),\qquad
+ L^C_d(D;v)=\sum_k L^C_{d,k}(D)v^{2k-2}.
+\end{equation}
+We orient the normal complex by continuation from complex-linear
+operators. Its real cokernel has rank $4(k-1)-4d(g-1)$, the virtual
+real dimension of the map space. The fixed-target comparison theorem
+identifies the integral with the contribution of the isolated
+zero section in the homogeneous normal bundle
+\cite[Theorem~1.2]{zinger}. For its balanced product we write $P_C(D;q)$;
+its construction and degreewise uniqueness are given below.
+Set $H_d=1+d(g-1)$. The sign of an invertible operator on an unramified
+cover $T$ will be written $\epsilon_T(D)$.
+
+Choose distinct nonzero classes $\alpha_1,\alpha_2\in H^1(C;\mathbb F_2)$.
+Write $Y_i$ for the double classified by $\alpha_i$. Since the characters
+are independent, $Z=Y_1\times_CY_2$ is connected. Each corner of a
+two-parameter family will be denoted by the signs of its two parameters.
+In the following displays a count at nonintegral degree is zero.
+\begin{theorem}\label{thm:square}
+There is a family on $(C,N)$ for which, at every finite cutoff $M$,
+a sufficiently small rectangle consists of four rigid open quadrants
+and the two crossing axes. For $d\le M$ and every $k$, the connected
+difference satisfies
+\[
+ L_{++}-L_{-+}-L_{+-}+L_{--}
+      = L^{Z}_{d/4,k}(D_{++}|_Z).
+\]
+Here $L_\epsilon=L^C_{d,k}(D_\epsilon)$. The quotient of the corresponding
+balanced products is
+\[
+ \frac{P_{++}P_{--}}{P_{-+}P_{+-}}=P_Z(D_{++}|_Z;q^4)
+          \pmod {q^{M+1}} .
+\]
+For $M\ge4$, the first differing exponent has label four, elementary
+genus $4g-3$, and value $\epsilon_Z(D_{++})$.
+\end{theorem}
+
+The geometric reason for the factor one is worth spelling out. Embed
+the sum $W$ of the two flat sign lines in $N_{\mathbb R}$. Indeed,
+$W\oplus W$ is oriented with $w_2=w_1(W)^2=0$; the oriented rank-four
+bundle $N_{\mathbb R}$ also has $w_2=0$ and is isomorphic to it on
+a surface. Prescribe the parallel vectors in these copies to be
+central kernel sections. Pair a variation of the normal operator with
+the first twisted cokernel while killing the second prescribed
+section, and do the converse for the other parameter. The construction
+in \S\ref{sec:family} makes these the only kernels apart from their
+pullbacks and restrictions. At a stable map each sign reverses exactly
+when its character pulls back trivially, including around loops through
+nodes. On taking the alternating sum, a map sees a multiplier four
+if it lifts to both doubles and zero otherwise. A specified map in
+the surviving locus has four lifts to $Z$ with its domain fixed.
+Representable finite \'etale pushforward divides its upstairs integral
+by four, giving the formula. The orientation and compactness statements
+needed for this computation are proved in
+\S\S\ref{sec:family}--\ref{sec:oriented}.
+
+More explicitly the increments from left to right on the two opposite
+edges are the positive-side counts in degree $d/2$ on $Y_1$, with the
+second sign positive or negative respectively. Subtracting them is
+the sign-wall calculation for $Z\to Y_1$. Subtracting the other pair
+instead uses $Z\to Y_2$ and gives the identical answer. The oriented
+sum along the entire boundary is zero. At degree four and genus
+$4g-3$ the only contributing common lift downstairs is $Z$ itself,
+of deck order four. Its four alternating masses give its sign.
+In the product this also follows from the signed degree-one contribution
+on $Z$, which is the full series
+$\epsilon_Z(D_{++})(2\sin(v/2))^{2(4g-3)-2}$.

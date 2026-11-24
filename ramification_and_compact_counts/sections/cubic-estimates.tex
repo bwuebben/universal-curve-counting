@@ -1,0 +1,948 @@
+\section{Estimates and virtual classes at a joined double cover}\label{app:lowerjoins}
+\subsection{The local equation for Theorem~\ref{p10-thm:nodes}}\label{app:double-equation}
+Fix the joining set and the branch frames of \S\ref{p10-sec:nodes}.
+\subsubsection{The deformation space and the matching equations}
+
+At one selected point the nodal map and its deformation are given by
+\begin{equation}\label{p10-eq:node-family}
+          zy=q,\qquad w=w_0+(z+p)^2+y .
+\end{equation}
+When $q=0$, the coordinate on the normalized double is $z+p$ and
+its attaching mark has coordinate $p$. Translating $w_0$ to zero and
+eliminating $y$ gives the free algebra on $1,z,z^2$ with relation
+\begin{equation}\label{p10-eq:node-cubic}
+                    z(z+p)^2-wz+q=0 .
+\end{equation}
+To see versality, use the relative cotangent complex of this
+hypersurface over the target \cite[Tag~08SL]{stacks}. Its dual on the
+central fiber is multiplication by $3z^2-w$ between two copies of
+the local ring. This element is a nonzerodivisor on the two branches.
+Its cokernel is $\CC\{z\}/(z^3)$, with basis represented by the
+variations of $q,w_0,p$, respectively. An unselected branch contributes
+one complex parameter. The first deformation sheaf has finite support
+and the complex has no other cohomology, so the fixed-target chart is
+smooth of complex dimension $b+2j$ and carries its ordinary fundamental
+class. Distinct branch disks supply independent pairs $(p_i,q_i)$.
+The stabilizer is the single involution of $Y$ over $C$. In
+\eqref{p10-eq:node-family} it acts by $(z,p,q)\mapsto(-z,-p,-q)$ at every
+join and fixes $s$.
+
+Put $P_I=\operatorname{coker} h_I^*D$. A kernel section restricts to
+zero on the identity and to a multiple of $\xi$ on $Y$. Every such pair
+matches because $\xi$ vanishes at the marked points. The normalization
+sequence for the operator thus identifies $\ker h_I^*D=K$ and gives
+\begin{equation}\label{p10-eq:node-matching}
+       0\longrightarrow\bigoplus_{i\in I}N_{x_i}
+       \longrightarrow P_I\longrightarrow P_f\longrightarrow0 .
+\end{equation}
+The smoothing calculation takes place in the individual matching fibers
+of this sequence. We give it at one point, suppressing $i$.
+
+\subsubsection{The pullback operator on the fixed target}
+
+For a map $h$ in the finite chart, let $F=h_*\mathcal O$ on $C$. It is
+a rank-three bundle by \eqref{p10-eq:node-cubic}, the ordinary quadratic
+algebra at the remaining branch points, and the sheet decomposition off
+the branch disks. Translate the moving branch centers on smaller disks
+and extend the translations by diffeomorphisms supported in larger
+disks. Identify the family of bundles smoothly, using the polynomial
+frames on the smaller disks. On the intervening collars the sheets are
+unramified and the identifications are smooth in the parameters.
+Fix $2<a<4$. In these trivializations consider the operator
+\[
+  \mathcal A_h:W^{1,a}(C,N\otimes F)\longrightarrow
+       L^a(C,\Omega_C^{0,1}\otimes N\otimes F)
+\]
+which acts by $D_t$ after evaluation on each regular sheet. The
+complex-linear part is the tensor product Dolbeault operator. In the
+polynomial frame the antilinear part applies $B$ to the coefficients
+and replaces $1,\bar z,\bar z^2$ by their quadratic interpolants at
+the three roots. This determines a measurable matrix $M_{p,q}$ almost
+everywhere. At an ordinary simple branch the sole quadratic-sheet
+factor in the interpolation of $\bar z$ is $\bar z/z$, which is bounded.
+
+Let $d$ be the diameter of the three roots and $m$ their maximum
+modulus. In a second divided difference order the two most distant
+roots first and last. The first divided differences of conjugation have
+modulus one and those of $\bar z^2$ have modulus at most $2m$. Hence
+the respective second differences are bounded by $2/d$ and $4m/d$.
+Newton interpolation bounds every entry of $M_{p,q}$ by $C(1+d^{-1})$.
+Subtracting the mean of the roots depresses \eqref{p10-eq:node-cubic} to a
+monic cubic with linear coefficient $-(w+p^2/3)$, so
+$|w+p^2/3|\le C d^2$. It follows that the matrices have uniformly bounded
+$L^{a'}$ norm for $a<a'<4$. Away from the limiting branch values they
+converge pointwise, hence they converge in $L^a$. Since
+$W^{1,a}\hookrightarrow C^0$ is compact, the antilinear part is a
+continuous family of compact perturbations of the differential part.
+
+We identify its finite-dimensional reduction with that of the actual
+pullback operator. A polynomial section in the kernel evaluates to a
+bounded solution on the normalization off the branch points and node
+preimages. Removability extends it there, and the common root gives
+equal values at the two sides of a node. Evaluation is injective by
+interpolation on the open unramified locus. This argument also applies
+to solutions with smooth forcing supported in that locus. At the
+central map the generator on the two local components is represented
+by $z u_1(w)$, where $u_1(w)=\xi(z)/z$ on the double. Oddness and
+$\bar\partial\xi(0)=0$ give $\xi(z)=v z+O(|z|^3)$ with derivative
+error $O(|z|^2)$. Thus $u_1(0)=v$ and its first weak derivatives in
+$w=z^2$ are bounded. The same division on each ordinary branch disk
+shows that this is a global coefficient solution. The two central
+kernels agree.
+
+The real indices agree by deformation to the complex-linear operators
+and the finite projection formula, including on the nodal fiber.
+Consequently the central cokernels have equal dimension. Smooth forms supported on unramified disks span both cokernels: a
+dual annihilator vanishes on these disks and hence off the nodes
+by unique continuation. In the normalized matching presentation,
+testing arbitrary endpoint values then kills the matching multipliers.
+Inside a finite common span surjecting onto both, a generic tuple of
+minimal length projects to a basis of each. Use its span $E$ as a
+stabilization. Both stabilized operators are surjective near the
+central map and their kernels have rank one, using the continuity of
+the pullback reduction on nodal curves
+\cite[Appendix~B, (B.6)--(B.9)]{bai}. Evaluation identifies the two
+lines and commutes with projection to $E$. Normalize a generator by a
+fixed real functional supported on an unramified disk and taking value
+one on $\xi$. The two obstruction maps to $E$ then coincide. Enlarging
+$E$ by further such forms gives the same identification of their
+cokernel classes, since evaluation again identifies the stabilized
+kernels of equal dimension.
+
+\subsubsection{The logarithmic term}
+
+Set $\ell=\max(|p|,|q|^{1/3})$ and write $Q=q\log(1/|q|)$ for $q\ne0$,
+with $Q=0$ at zero. The only entry of $M_{p,q}$ whose $q$-variation
+has nonintegrable first derivative is the coefficient of $z^2$ in the
+interpolant of $\bar z$. We compute its variation against a H\"older
+continuous test using Euclidean area $dA(w)$.
+
+In the disk $|w|\le A\ell^2$, for fixed large $A$, the roots have
+size $O(\ell)$ by rescaling \eqref{p10-eq:node-cubic}. The bound by a
+constant times $1+|w+p^2/3|^{-1/2}$ gives an integral $O(\ell^3)$
+there for the varying and central matrices. On the complementary
+annulus choose $r^2=w$ and set $z=rZ$. The roots in $Z$ are analytic
+near $0,1,-1$ in $p/r$ and $q/r^3$, which are uniformly small. Their
+interpolation matrix is real analytic in these parameters, with bounded
+second derivatives. The coefficient in question is multiplied by
+$\bar r/r^2$ on returning to $z$. All other nonconstant entries scale
+by factors with nonnegative power of $|r|$.
+
+At $p=q=0$ the interpolant of $\bar z$ is $(\bar r/r)z$. To first
+order in $q$, the root increments at $0,r,-r$ are $q/w,-q/(2w),-q/(2w)$.
+Subtract the old interpolant applied to those increments from their
+conjugates. The three differences are $a_0,-a_0/2,-a_0/2$ with
+$a_0=\bar q/\bar w-(\bar r/r)q/w$. Their quadratic coefficient is
+\begin{equation}\label{p10-eq:node-modes}
+            -\frac{3a_0}{2w}=-\frac32\left(
+                 \frac{\bar q}{|w|^2}-\frac{\bar r}{r}\frac{q}{w^2}
+                              \right).
+\end{equation}
+The second term has angular mode $-3$ in $w$ and hence zero mean. In
+either term subtracting the value of the test at zero costs $O(|q|)$
+in the integral by H\"older continuity. Against the constant test one,
+\eqref{p10-eq:node-modes} integrates to
+$-6\pi\bar q\log(1/\ell)+O(|q|)$.
+
+For completeness the Taylor remainders can be estimated before angular
+integration. Writing $R=|r|$, the largest is bounded by
+$C R^{-1}(|p|/R+|q|/R^3)^2$. Integration against $O(R^3\,dR)$ gives
+\[
+       O\bigl(|p|^2+|pq|/\ell+|q|^2/\ell^3\bigr)
+                        =O(|p|^2+|q|).
+\]
+The $q$-linear terms of all other entries have integral $O(|q|)$ in
+absolute value. The $p$-linear terms are bounded by $C|p|/|w|$ on
+the disk, and deleting its inner part costs $O(|p|\ell^2)$. For
+$\ell=|q|^{1/3}$ the logarithmic integral above is $-2\pi\bar Q+O(|q|)$.
+For $|q|<|p|^3$ both $|q|\log(1/\ell)$ and $|Q|$ are uniformly
+$o(|p|)$. Since $\ell^3\le |p|^3+|q|$, this proves, also on the axes,
+that $M_{p,q}-M_{0,0}$ has $L^1$ norm $O(|p|+|Q|)$ and that its
+pairing with any fixed H\"older test is its integral of its first-order
+$p$-variation plus the point mass
+\begin{equation}\label{p10-eq:node-mass}
+              -2\pi\bar Q\,\delta_x
+         \quad\text{in the }(\bar z,z^2)\text{ coefficient},
+\end{equation}
+up to $o(|p|+|Q|)$. Translating the branch center before this
+calculation leaves the matrix on the smaller disk unchanged in form.
+Variation of its smooth factors and of the data on the collars adds
+their ordinary linear terms in $s,p$ and an error
+$o(|s|+|p|+|Q|)$ in these pairings.
+
+To pass to the obstruction map, pair with a central adjoint solution.
+At the central parameter the conjugation matrix is bounded, sending
+$\bar z$ to $(\bar r/r)z$ and $\bar z^2$ to $(\bar w/w)z^2$.
+The adjoint solution, initially in $L^{a/(a-1)}$, thus lies in
+$W^{1,k}$ for every finite $k$ by elliptic estimates and Sobolev
+iteration. In particular it is H\"older continuous. The normalized
+stabilized generator converges in $W^{1,a}$ to the central one.
+In pairing the operator variation with the difference of these
+generators the multiplier has $L^1$ norm $O(|s|+|p|+|Q|)$ and the
+generator difference is $o(1)$ in $C^0$. The smooth variation of the
+principal part on the collars gives the same little-oh estimate from
+$W^{1,a}$ convergence. The central operator applied to the difference
+pairs to zero. A varying stabilizing form contributes only its smooth
+variation times its coefficient, which tends to zero. We may therefore
+apply \eqref{p10-eq:node-mass} to the central generator in the actual
+reduced equation. Its coefficient at the node is $B(x)v$.
+
+\subsubsection{Identification of the residue and the local degree}
+
+The distribution $a_1 z^2\delta_x$ represents in
+\eqref{p10-eq:node-matching} a common nonzero real multiple of the matching
+class of $a_1\in N_x$. To verify this, choose a local real-linear frame
+$S(w)$ of $D$-homogeneous sections, with $S(0)=1$. Such a frame follows
+by solving the local equation for the constant real basis vectors with
+the Cauchy integral right inverse on a sufficiently small disk, and
+renormalizing their values at zero. On the punctured disk the section
+$z^2 S(w)a_1/w$ takes the value $S(w)a_1$ on the double and zero on the
+identity. Multiply by a cutoff equal to one near zero. Its
+distributional image is the ordinary cutoff forcing plus
+$\pi a_1 z^2\delta_x$, since $\partial_{\bar w}(1/w)=\pi\delta_x$.
+The ordinary forcing represents the matching class up to the convention
+for the evaluation difference and projects to zero on $P_f$. The total
+image pairs to zero with every adjoint by integration by parts, using
+$1/w\in L^k$ for $k<2$ and the adjoint regularity just proved. This
+identifies the residue in its own matching fiber, with the same real
+scalar for every $a_1$.
+
+On the nodal stratum $q_i=0$ the normalized component maps are
+independent of the $p_i$. Their obstruction in $P_f$ has derivative
+$W_f$ in $s$. The $i$th evaluation difference has derivative
+$\pm v_i p_i$ in its moving mark, and may have a linear term in $s$.
+These derivatives follow by stabilizing the normalized component
+operators off the marks and varying the evaluation row in
+\eqref{p10-eq:node-matching}. The comparison with the fixed-target
+stabilization preserves the derivatives at the zero, since a continuous
+change of trivialization only multiplies their linear part by its
+central value.
+
+
+
+\begin{proof}[Proof of Theorem~\ref{p10-thm:nodes}]
+Choose the stabilizing forms away from all selected disks. Each disk
+contributes \eqref{p10-eq:node-mass} with its own cutoff, so none of its
+residue projects to another matching fiber. With $Q_i=q_i\log(1/|q_i|)$
+extended by zero, the combined error is
+\[
+             o\left(|s|+\sum_{i\in I}(|p_i|+|Q_i|)\right)
+\]
+because there are finitely many disjoint disks. This holds on the
+partially smoothed strata as well. After choosing a generator of $K$
+and filtering each $N_{x_i}$ by $\CC v_i$, the linear part in these
+coordinates is block triangular. Its diagonal blocks are $W_f$
+evaluated on the generator, the complex-linear maps
+$p_i\mapsto\pm v_i p_i$, and the maps
+$Q_i\mapsto c_i\bar Q_i[B(x_i)v_i]$ to $N_{x_i}/\CC v_i$ for
+nonzero real $c_i$. By \eqref{p10-eq:node-jet} the last maps are
+antilinear isomorphisms of complex lines. The radial coordinate
+change $q_i\mapsto Q_i$ preserves orientation near zero. The
+little-oh estimate gives isolation and a homotopy on every sufficiently
+small link to the invertible linear part.
+
+Normalization gives the Fredholm determinant isomorphism
+\[
+  \det h_I^*D\simeq \det f^*D\otimes\det D\otimes
+       \bigotimes_{i\in I}(\det_{\RR}N_{x_i})^* .
+\]
+It preserves the orientations obtained by deformation to the complex
+normalization sequence. The evaluation fibers have complex orientation
+and the one invertible identity component contributes $\epsilon$.
+Replacing the generator of $K$ negates an even number $4j$ of real
+matching coordinates. Each attaching block has positive sign and each
+smoothing quotient negative sign. Thus the degree with the absolute
+orientation upstairs is $(-1)^j\epsilon\eta_f$. On its link the
+cokernel is the quotient by the image of the normalized obstruction
+vector, hence pulls back the tangent bundle of the sphere of dimension
+$2b+4j$. Its Euler number gives twice the local degree. Dividing by
+the order two of the single deck group gives the asserted change.
+Distinct subsets give distinct maps since the branch values in the
+fixed target are distinct.
+
+It remains to verify genericity. On a fixed double cover mark a simple
+ramification point $r$ over $x$ and consider, on odd sections, the map
+\[
+          (D,\xi)\longmapsto(f^*D\xi,\partial_z\xi(r),B_D(x)) .
+\]
+It is a submersion at a nonzero solution. Indeed an annihilator of its
+differential has an adjoint distribution solving the homogeneous adjoint
+equation off $r$. On an unramified disk disjoint from $x$ where $\xi$ is
+nonzero on one sheet, real zeroth-order variations prescribe arbitrary
+forcing on that sheet and its negative on the other. Oddness and unique
+continuation therefore force the distribution to be supported at $r$.
+For any prescribed first holomorphic jet, choose a section whose equation
+vanishes to higher order than the distribution there. This is obtained
+by prescribing the pure holomorphic Taylor coefficients and recursively
+solving the equation for coefficients involving $\bar z$, then cutting
+off and antisymmetrizing. These variations kill the first-jet multiplier.
+The adjoint distribution now solves the homogeneous equation across $r$,
+so is smooth and zero. Free variation of $B_D(x)$ kills the remaining
+multiplier. In Sobolev spaces of sufficiently high order the linearized
+range is closed, since the section operator is Fredholm and the two
+evaluations are finite dimensional.
+
+At $v\ne0$, variation of $B$ surjects onto $N_x/\CC v$. Thus failure
+of \eqref{p10-eq:node-jet} has real codimension two. The marked projectivized
+odd incidence has index $-1$ over the operator space. Indeed, the odd
+operator has real index $-2b$, since the invariant part has index zero
+by Dolbeault descent. Varying the Hurwitz parameters adds $2b$ real
+dimensions and projectivizing removes one. The branch mark has finite
+choices. Adding a path parameter leaves the bad incidence of negative
+expected dimension. Parametric transversality, followed by countable
+intersection over covering genera and charts, gives the assertion
+relative to rigid endpoints.
+\end{proof}
+\subsection{A ramification bound and compactness}\label{p10-sec:compactness}
+Let $N$ for the moment be a Hermitian bundle of any rank over $C$.
+Fix a unitary connection $\nabla$ and a metric on $C$ in its
+conformal class. The graph equation for a lift $u$ of a finite
+holomorphic map $f:Y\to C$ is
+\[
+  \bar\partial_{f^*\nabla}u + f^*P(\cdot,u)=0.
+\]
+Here $P$ is a smooth fiber-dependent $(0,1)$-form on a bounded
+fiberwise convex tube. For a positive orthonormal pair $X,JX$ on $C$,
+let $M$ bound the fiber Lipschitz constant of $P(\cdot,\cdot)(X)$,
+uniformly in $X$. Put
+\[
+  \kappa=\bigl(\lambda_{\max}(iF_\nabla(X,JX))+2M^2\bigr)\,dA .
+\]
+We use the Hermitian product conjugate-linear in the first variable.
+For a compact family of linear normal equations one may use a common
+$M$, independent of the height of the graph.
+
+\begin{lemma}\label{p10-lem:curvature}
+Suppose $(f,u)$ is generically one-to-one on its smooth
+normalization, with distinct component images. Let $m=\deg f$,
+let $R$ be its total ramification, and suppose $n$ disjoint pairs
+of distinct normalization points are identified as nodes at which
+the graph matches. Then
+\[
+ R+2n\le \frac{m(m-1)}{2\pi}\int_C\kappa .
+\]
+In particular a connected graph with these nodes and no contracted
+components has arithmetic genus at most
+$1+m(g-1)+\frac{m(m-1)}{4\pi}\int_C\kappa$.
+\end{lemma}
+\begin{proof}
+Normalize the closure of the off-diagonal pairs in $Y\times_C Y$ over
+regular values of $f$. The resulting smooth, possibly disconnected
+curve $Z$ has projections $p_1,p_2$ and a map $b=fp_i$ of degree
+$m(m-1)$ to $C$. The section $s=p_1^*u-p_2^*u$ is nonzero somewhere on
+every component. Subtracting the two equations gives
+$|(\bar\partial_{b^*\nabla}s)(T)|\le M|s|\,|db(T)|$ for each unit
+tangent $T$. Integrating the vertical derivative of $P$ along
+the segment between the two heights writes the difference as a
+smooth real-linear zeroth-order operator applied to $s$. Its zeros
+are isolated and have finite order by the similarity principle.
+In a smooth unitary frame the leading Taylor term of order $a$ is
+$z^a v$ with $v\ne0$, since the principal equation on that term is
+$\bar\partial=0$.
+
+Away from the zeros, set $e=s/|s|$ and
+$\alpha=\operatorname{Im}\langle e,b^*\nabla e\rangle$.
+Project the derivative perpendicular to $\CC e$ and denote the
+result by $\nabla^\perp e$. Differentiation in a positive unit
+frame $T,jT$ gives
+\begin{align*}
+ d\alpha(T,jT)={}&\operatorname{Im}
+   \langle e,(b^*F_\nabla)(T,jT)e\rangle \\
+  &+2\bigl(|(\nabla^\perp e)^{1,0}(T)|^2-
+                            |(\nabla^\perp e)^{0,1}(T)|^2\bigr).
+\end{align*}
+The components parallel to $e$ have purely imaginary coefficients and
+drop out of the exterior product. The bound on $\bar\partial s$ gives
+$|(\nabla^\perp e)^{0,1}(T)|\le M|db(T)|$, whence
+$d\alpha\ge-b^*\kappa$. On a positively oriented small circle about
+a zero of order $a$, the integral of $\alpha$ tends to $2\pi a$.
+Stokes' theorem on the complement of the disks bounds the sum of the
+orders by $(2\pi)^{-1}\int_Z b^*\kappa$.
+At a point of index $k$ there are $k-1$ off-diagonal branches over
+the repeated point, one for each nontrivial $k$th root of unity.
+Each forces a zero. Each identified pair forces a zero in each
+order of the pair, at points distinct from the ramification pairs.
+This proves the inequality. Riemann--Hurwitz on the components
+and the arithmetic genus formula for a nodal curve give the last claim.
+\end{proof}
+
+\begin{proposition}\label{p10-prop:compact}
+Over a generic compact path as in Theorem~\ref{p10-thm:chambers}, the
+projectivized incidence of smooth connected cubic covers with kernel
+is compact and finite, with the genera of all covers included.
+\end{proposition}
+\begin{proof}
+Proposition~\ref{p10-prop:incidence} gives discreteness. For a sequence of
+kernel lines choose generators of fixed small maximum norm and mark
+points attaining that norm. Their embedded graphs lie in a compact
+subtube. The family of graph almost complex structures agrees there
+with a smooth family on a compact completion, tamed by a common form
+as in the proof of Proposition~\ref{p10-prop:smoothjump}. Projection
+determines the homology class and hence gives a uniform bound on
+area. Lemma~\ref{p10-lem:curvature} bounds the genus, so a subsequence
+has fixed genus. Stable-map compactness gives a limit whose marked
+point has nonzero height. Forget that mark and stabilize.
+
+A nonconstant component projects in positive degree, since the
+portion of a single fiber in the tube lies in a complex vector space.
+Invertibility on $C$ excludes a degree-one component of nonzero
+height. If a component has degree three and nonzero height, its
+parametrization is simple, since the alternative factors through
+a nonzero graph of degree one. This cubic normalization is embedded
+by Proposition~\ref{p10-prop:incidence}. Otherwise the positive components
+are a nonzero double graph and one copy of the zero section,
+both with multiplicity one. The double generator is odd. It can vanish
+only at ramification points, since a zero over a regular value would
+identify the two sheets of its embedded graph. Its derivative at a
+ramification point gives a vertical tangent, distinct from the tangent
+to the zero section.
+
+For a maximal stable contracted subcurve in a limit of smooth
+holomorphic curves, the attaching branches include a critical branch,
+two branches with coincident tangent lines, or at least three
+branches \cite[Theorem~1.1]{ekholm}. This theorem applies to the
+varying structure by extending the parameter interval to a complex
+disk, smoothly extending the family in its real coordinate, and
+using the fixed block structure $J_t\oplus i$ on the product.
+The curves are constant in the parameter direction. Each candidate
+limit above has at most two branches through any image point, and
+they are immersed with distinct tangent lines when both occur.
+Consequently there is no contracted subcurve. Neither embedded
+normalization admits a self-node. A single cubic limit therefore
+converges in the smooth-cover chart and retains its kernel line.
+In the two-component case connectedness requires direct joins at a
+nonempty subset of the ramification points. Theorem~\ref{p10-thm:nodes}
+isolates the projective kernel there even in the full smoothing
+chart. Such a point cannot be approached by smooth cubic solutions.
+Rigidity excludes endpoint limits. This proves compactness.
+\end{proof}
+
+For degree two a normalized nonzero graph has only the embedded
+degree-two possibility in the preceding proof. The same argument
+gives finiteness, also proved in \cite[Proposition~3.73]{dw}.
+The contracted components excluded in Proposition~\ref{p10-prop:compact}
+do enter the Euler class on the full stable-map space.
+\subsection{Contracted components at a reducible cubic cover}\label{p10-sec:descendants}
+
+Let $f:Y\to C$ be the double cover at a crossing as in
+Theorem~\ref{p10-thm:nodes}, and take the crossing parameter to be $0$.
+Write $r_1,\ldots,r_b$ for its ramification points, $x_i=f(r_i)$,
+and $\xi$ for a nonzero odd kernel section. For a nonempty set
+$I\subset\{1,\ldots,b\}$, let $h_I:X_I\to C$ be the finite map
+obtained from $Y\amalg C$ by identifying $r_i$ with $x_i$ for
+$i\in I$. Put
+\[
+ H=g(Y)+g(C)+|I|-1,\qquad d_I=(-1)^{|I|}\epsilon\eta_f .
+\]
+In arithmetic genus $k\ge H$, let $G_{I,k}$ consist of the stable
+maps obtained from $h_I$ by attaching connected contracted curves
+at smooth points and by inserting connected contracted curves between
+the branches of its nodes. We include all stable configurations in
+these operations. In particular an inserted curve may have rational
+components. We regard $G_{I,k}$ as a locus at $t=0$ in the product
+of the ordinary fixed-target moduli stack with the parameter interval.
+
+\begin{theorem}\label{p10-thm:descendants}
+Suppose the hypotheses of Theorem~\ref{p10-thm:nodes} hold with its
+projected jet condition at every ramification point. Then $G_{I,k}$
+is compact and isolated in the locus of stable maps with nonzero
+pullback kernel.
+Its contribution to the change of the absolute normal Euler number in
+arithmetic genus $k$ is
+\begin{equation}\label{p10-eq:desc-contribution}
+ d_I\,[v^{2k-2}]\bigl(2\sin(v/2)\bigr)^{2H-2}.
+\end{equation}
+Thus the contribution of the specified set of joining nodes to the
+connected series is $d_I x^{H-1}$, where $x=(2\sin(v/2))^2$.
+\end{theorem}
+
+We displace the nodal kernel to a signed collection of embedded
+graphs on smooth domains. Near each such graph the Euler integral is
+a constrained virtual count in the total space. Cutting its parameter
+interval at one regular value leaves the ordinary degree-one series.
+
+
+\subsubsection{The compact locus and the choice of sheets}
+A presentation by proper gluing maps makes explicit the allowable
+specializations at an attachment. Choose nonnegative integers
+$e_Y,e_C,e_i$ with $e_Y+e_C+\sum_{i\in I}e_i=k-H$.
+Take the two evaluation fibers
+\[
+ \overline{\mathcal M}_{g(Y)+e_Y,|I|}(Y,1)_{(r_i)_{i\in I}},
+ \qquad
+ \overline{\mathcal M}_{g(C)+e_C,|I|}(C,1)_{(x_i)_{i\in I}} .
+\]
+At $i$, join the corresponding marks directly if $e_i=0$ and
+insert a member of $\overline{\mathcal M}_{e_i,2}$ if $e_i>0$.
+Compose the maps to $Y$ with $f$. The union of the images over these
+finitely many choices is $G_{I,k}$. Indeed a degree-one stable map
+to a smooth curve has one nonconstant normalization, mapping
+isomorphically, and every connected contracted subcurve maximal for
+inclusion meets this normalization just once. Its markings may lie
+on contracted components. This accounts also for tails whose attaching
+points come together or specialize to a joining point. Conversely,
+cutting out all maximal contracted subcurves that join the two
+positive components, and marking the ends of each direct joining node,
+recovers such gluing data.
+
+In the lift to $N$, the positive components are the graph of $\xi$
+over $Y$ and the zero section over $C$. They are embedded and meet
+precisely over the $x_i$, with distinct complex tangent lines.
+Every contracted connected subcurve has a single image point. Thus
+its external positive branches number at most two, and two can occur
+only on opposite components. The direct nodes and the contracted
+subcurves with two ends recover $I$ intrinsically. The proper gluing
+images for distinct $I$ are therefore disjoint. Restriction to the
+positive components identifies the kernel throughout $G_{I,k}$ with
+$\RR\xi$, since the base operator is invertible and on contracted
+subcurves the sections are constants with prescribed attaching values.
+
+Choose concentric closed disks $U\subset\operatorname{int}U'$ of
+regular values disjoint from the $x_i$. Over $U'$ the three heights
+$0,\xi,-\xi$ are separated. Even if a contracted curve lies over a
+point of $U$, a nearby stable map has three pieces over $U$, each of
+total degree one. In fact at a central map the three preimages of $U'$
+with their contracted components have disjoint neighborhoods. The
+collapse maps of converging domains keep the preimage of $U$ in
+these neighborhoods, and evaluation at a regular value away from the
+limiting nodal images gives degree one in each. Order the pieces with
+the identity sheet first. These two orderings over the central locus
+extend to a finite étale cover of a neighborhood, by taking all sheet
+orderings locally and continuing the two selected ones. Its stack
+degree is two. The deck involution of $f$ exchanges the orderings
+and fixes each $r_i$. This removes the double-cover symmetry at the
+finite map and retains the isotropy of the contracted curves. We work
+on this cover until the last step of the proof.
+
+We recall the local class computing the Euler change. In a finite
+stabilization $S:E\to F$ of the normal family, projectivize $E$
+over $\RR$ and restrict $S$ to its tautological line. The pushforward
+of the resulting relative Euler class is supported on the kernel
+locus. Near $G_{I,k}$ we can exclude kernels of dimension two by
+upper semicontinuity. In the space of matrices the normal space at a
+matrix of kernel dimension one is $\operatorname{Hom}(K,P)$ for
+its kernel $K$ and cokernel $P$. The pushforward gives the Thom
+generator there, since the projective vertical differential cancels
+the image of the matrix. On the normal sphere the oriented cokernel
+is its tangent bundle after choosing a generator of $K$. The sphere
+has even dimension, and its Euler integral is two
+\cite[Lemma~6.10]{bai}. Thus the connecting class of the cokernel
+Euler class off the kernel locus equals twice the projective class
+by the Thom isomorphism in the matrix space and pullback. Its pairing
+with the fixed-target virtual class times the oriented interval is
+the terminal Euler number minus the initial one. Both this identity
+and its restriction by excision are preserved by common stabilization.
+
+\subsubsection{Displacement on the finite-map charts}
+On one labelled double sheet let $\ell_a(u)$ be the integral of a
+smooth real covector applied to $u$, against the pullback by $a$ of a
+cutoff area form supported in $\operatorname{int}U$. Choose the test
+so that $\ell_a(\xi)\ne0$. It gives the same normalization of the
+kernel through every attachment on that sheet, since pullback area
+vanishes on contracted components. Let $j_a(e)$ denote a linear
+combination of triples of smooth $N$-valued $(0,1)$-forms supported
+in $\operatorname{int}U$, pulled back separately on the corresponding
+labelled pieces. For the variable stable map $a$ put $L_{a,t}=a^*D_t$
+and consider the finite-rank perturbation
+\begin{equation}\label{p10-eq:desc-perturb}
+ T^e_{a,t}u=L_{a,t}u-\ell_a(u)j_a(e).
+\end{equation}
+For continuity of the reduction at contracted curves we explain how
+to use the nodal stabilization of \cite[Appendix~B]{bai}. Add a
+scalar $z$ with $L_{a,t}u=zj_a(e)$ and $z=\ell_a(u)$. Fix a central
+stable map. Enclose the distinct nodal values meeting the supports of
+the forcings in small disjoint disks inside $U'$. On each disk and
+each labelled piece choose a smooth primitive $b_i$ solving
+$D_t b_i=j_i(e)$ on the base. These primitives can be chosen
+smoothly in $t$ and linearly in $e$: on a small disk the Cauchy
+right inverse for $\bar\partial$ followed by the zeroth-order term
+has norm less than one after rescaling. With cutoffs equal to one on
+smaller disks about the nodal values, pull the primitives back on
+their respective labelled pieces and extend by zero. Write $b_a$ for
+their sum. The substitution $u=u'+zb_a$ changes the forcing to
+$j_a(e)-L_{a,t}b_a$ and the scalar equation to
+$z=\ell_a(u')+z\ell_a(b_a)$. The new forcing vanishes on
+neighborhoods of all the nodes. This uses the pullback identity on
+maps to $C$, including the constant components.
+
+On shrinking the chart, the remaining forms vary smoothly on compact
+thick subsets away from the necks in the sense of convergence of
+stable maps. In a domain trivialization they converge there in every
+smooth norm; pullback by $a$ involves only its first derivative.
+One may freeze these forms at the center in the nodal stabilization:
+the error tends to zero in operator norm and is absorbed by the
+uniformly bounded stabilized inverse
+\cite[Propositions~B.7.9 and~B.10.4]{pardonatlas}. At the center a minimal cokernel
+supplement $B$ gives the invertible augmented operator
+$(v,w)\mapsto(L_{a,t}v-Bw,\ell_a(v))$ since $\ell_a$ is nonzero on
+the kernel line. The area test on shrinking base disks has size at
+most a constant times their area for bounded sections, by the
+degree bound. This proves continuity also of the scalar row. On
+overlaps the substitutions are translations by the difference of
+the two sums of primitives times $z$, with the induced scalar row,
+and hence give the same projective class. Near a central normalized line, its stabilized sections
+converge on thick regions and are uniformly bounded on the domains.
+Thus the area test is continuous, and the normalization $\ell_a(u)=1$
+is available near the central projective kernel. On this slice the
+equation becomes
+\begin{equation}\label{p10-eq:desc-affine}
+                  L_{a,t}u=j_a(e),\qquad \ell_a(u)=1 .
+\end{equation}
+The first equality is a local graph equation. In the three disjoint
+fiber neighborhoods over the support of the forms, multiply the
+corresponding forcing by a smooth cutoff equal to one near that
+sheet. The resulting affine term in the horizontal-to-vertical
+block defines an almost complex structure on $N$ with holomorphic
+projection and standard fibers \cite[Lemma~5.9]{bai}. On the
+normalized graphs it gives the indicated equation even when a
+contracted curve lies over the support. Cutting off outside a larger
+disk bundle extends the structure over $\PP(N\oplus\CC)$.
+The fiberwise Fubini--Study form extended by a connection, plus a
+sufficiently large pullback of an area form on $C$, tames the family.
+
+Fix $k$. Use the same sheet data on the finite-map charts for all
+$h_J$ of genus at most $k$, $J\ne\varnothing$. By
+Theorem~\ref{p10-thm:nodes} each has an isolating closed neighborhood in
+its own genus. Independent forms on the labelled sheets span the
+cokernel at every one of their centers. To see this, present the
+operator on the normalization with one evaluation-difference row
+at each join. A dual annihilator of the sheet forms vanishes on
+a disk of each positive component. The adjoint equation and unique
+continuation give vanishing off the joins. The equation-space
+multipliers lie in the dual of $L^p$ for $p>2$, so none is supported
+at an isolated point. Sections with independently prescribed endpoint
+values then kill the remaining evaluation multipliers. Hence one
+finite-dimensional space of triples suffices for all these centers.
+
+In a minimal stabilization the normalized obstruction section takes
+values in this space of representatives, and \eqref{p10-eq:desc-affine}
+translates the section by the constant parameter $e$. If more forms
+are used, the derivative in the forcing parameters is still
+surjective. On each stratum of fixed nodal and branching type the
+section is smooth by normalization with the matching equations.
+Persistence of a node has positive complex codimension by the local
+smoothing parameters of Theorem~\ref{p10-thm:nodes}. On smooth sources
+collision of branch values also has positive complex codimension by
+the Hurwitz dimension formula. The unrestricted normalized section
+has expected real dimension zero at fixed $e$, with the path
+parameter included. Regular values therefore avoid these strata and
+give isolated zeros on smooth simply branched coverings. Compactness
+of the isolating charts makes their number finite.
+
+We may arrange also that their graphs are embedded. On a smooth
+source the vertical derivative at a simple ramification point takes
+values in a complex two-plane. Equality of heights at two distinct
+points over a regular value imposes four real conditions with two
+real parameters for the value. At a branch value the marks are
+discrete. The corresponding marked evaluation and first-derivative
+conditions are transverse under the sheet forcings. Indeed an
+annihilating distribution vanishes on the open test sheets away
+from the marks by the independent variations. The adjoint equation
+there eliminates any multiple of the normalization density by testing
+where that density is nonzero. Unique continuation leaves a
+distribution supported at the marks. In a local trivialization one
+can prescribe independent values and complex first derivatives at
+the marks with all jets of the linearized equation vanishing up to
+any specified finite order. This follows by solving recursively for
+the derivatives involving $\bar z$ from the Cauchy--Riemann symbol.
+Testing on these sections removes the point multipliers. One first
+obtains immersion, which excludes coincidences in a neighborhood
+of the diagonal. On the compact remaining marked pairs, finitely many
+additional forms give the required transversality near the finitely
+many regular solutions. Arbitrarily small regular choices in the
+smooth space of triples result, each in a finite-dimensional
+perturbation. Write $\sigma_\Gamma$ for the oriented projective
+degree of a resulting smooth solution in the chart of $h_I$.
+Conservation of the degree of the normalized obstruction section in
+that chart gives
+\begin{equation}\label{p10-eq:desc-sum}
+                        \sum_\Gamma\sigma_\Gamma=d_I
+\end{equation}
+by the oriented local calculation of Theorem~\ref{p10-thm:nodes}.
+
+\subsubsection{Removing the contracted components}
+Consider a sequence of projective zeros tending to $G_{I,k}$ with
+$e\to0$, allowing also $e=0$. Use the normalized graph equation and
+take stable limits of the nonconstant normalizations separately,
+first retaining their nodal flags. Their limiting nonconstant images
+together are the graph of $\xi$ and the zero section, each with
+multiplicity one. This follows by gluing the marked limits and
+forgetting the flags. Each nonconstant normalization retains positive
+projection degree, since every compact curve in an affine fiber is
+constant. Thus there are either one or two such normalizations.
+
+In the unmarked stable limit of each normalization there are no
+contracted components. In fact ghost bubble censorship requires a
+vanishing derivative at a positive attaching branch, equal complex
+tangent lines at a pair of attaching branches, or at least three
+positive attaching branches at one point
+\cite[Theorem~1.1]{ekholm}. The two central embeddings exclude
+all three possibilities. To use the fixed-structure theorem in a
+smooth finite-dimensional family, extend the parameters locally to
+an open subset of $\CC^m$ and put the block-diagonal almost complex
+structure on the product. The graphs on constant parameter slices
+are holomorphic for this single structure, and the attaching
+directions are unchanged. If a sequence uses successively larger
+spaces of smooth forcings, choose a subsequence whose first $n$
+seminorms differ from the limit by at most $2^{-n^2}$ at step $n$.
+Disjoint smooth bumps of width $2^{-n-3}$ centered at $2^{-n}$
+interpolate it to a smooth arc flat at zero. The same product argument
+then applies.
+
+If there are two positive normalizations, their individual unmarked
+limits are smooth embedded copies of $Y$ and $C$. An identification
+on either limit would give a self-intersection of its embedding.
+The normalizations thus converge smoothly and remain embeddings.
+Near a point of intersection of the two limiting images, project
+the difference of their two local parametrizations onto the real
+four-plane spanned by the two tangent lines. Its derivative in the
+two source variables is invertible. On smaller neighborhoods the
+inverse function theorem gives at most one intersection for
+each nearby pair, and there are none away from these neighborhoods.
+Consequently every maximal contracted subcurve has one end on
+a positive normalization or one on each. Delete the one-ended
+subcurves, replace the two-ended ones by nodes, and retain the
+direct nodes. Matching and the thick integral show that the finite
+nodal map so obtained satisfies the same normalized equation.
+After subselection its joining sites approach a fixed subset $J$.
+The flags for different connections have distinct limits on either
+component. Marked stabilization and properness of the one- and
+two-pointed contracted factors recover a limit in $G_{J,k}$, even
+when other flags coalesce with a joining flag. Hence $J=I$ and the
+finite zeros converge in the chart of $h_I$. At $e=0$ they are
+$h_I$ itself, by Theorem~\ref{p10-thm:nodes}. The regular displacements
+just chosen avoid all finite nodal zeros there.
+
+With one positive normalization, its unmarked limit is a connected
+finite union of the two central embeddings with direct nodes at some
+nonempty subset $J$. Its normalized equation is unchanged on deleting
+the other components, which are constant. For $e=0$, smooth finite
+zeros approaching $h_J$ contradict Theorem~\ref{p10-thm:nodes}. For the
+chosen regular displacements they are smooth embedded graphs from
+the chart of $h_J$. Embeddedness excludes self-nodes and forces each
+contracted connected subcurve maximal for inclusion to attach once.
+Mark these attachments before passing to the limit. Forgetting the
+marks on the positive limit recovers $X_J$. Restoring them can insert
+a rational tree over a smooth point or between the two branches of an
+existing node. Proper limits of the one-pointed tails attach to these
+trees. In particular flags approaching two distinct smooth points
+above an unjoined graph intersection stay on distinct fibers of the
+stabilization. The limit belongs to $G_{J,k}$, so again $J=I$.
+
+The zero-displacement argument proves isolation. Properness in fixed
+genus and closedness of the kernel locus give a relatively compact
+neighborhood with kernel-free boundary, which persists through
+sufficiently small perturbations. The two cases show that within it
+the displaced zeros are precisely the stable degree-one expansions
+of the smooth graphs from the chart of $h_I$. For the reverse inclusion,
+every such expansion solves \eqref{p10-eq:desc-affine} by constant
+extension. If expansions escaped the neighborhood as $e\to0$, their
+marked stable limits would lie in $G_{I,k}$ by the same gluing
+argument. This also separates the compact families over the individual
+displaced graphs.
+
+\subsubsection{The virtual class of the normalized graph equation}
+Fix one displaced graph $\Gamma$, at $t_0$, and write $a_0$ for its
+projection. The homogeneous operator $L_{a_0,t_0}$ is injective.
+Indeed $a_0$ has smooth source in the isolating finite-map chart of
+the original nodal zero. Its pullback to every degree-one expansion
+is still injective, by restriction to the positive normalization
+and matching constants on the other components. On this compact
+family the cokernel has real rank
+\[
+                   r=4\bigl(k-1-3(g(C)-1)\bigr),
+\]
+the real virtual dimension of $\overline{\mathcal M}_k(C,3)$.
+We compare the projective Euler pairing for \eqref{p10-eq:desc-perturb}
+with the virtual degree of ordinary maps to the almost complex
+total space subject to the scalar equation in \eqref{p10-eq:desc-affine}.
+
+Take an equivariant chart for maps to $C$, with stabilizing markings,
+incidence slices, horizontal perturbation forms, and obstruction
+section $s_C$. Use the same markings for maps to the total space,
+taking inverse images of the target slices. Lift the horizontal forms
+using a complex-linear splitting of projection for the graph
+structure. On a horizontally thickened map the vertical equation
+is still affine in $u$. Indeed in connection coordinates the
+off-diagonal term of the almost complex structure is affine in height
+where a sheet forcing acts, and linear elsewhere near the graph.
+The horizontal lift can be chosen affine in height there by projecting
+a connection lift to its complex-linear part. Taking the
+$(0,1)$-part on the source then gives an affine vertical equation
+with the usual Dolbeault symbol, restricting to $L_{a,t}u-j_a(e)$ on
+$s_C=0$.
+
+Choose vertical forms $B w$, $w\in W$, inducing an isomorphism from
+$W$ to the cokernel of $L_{a,t}$ at the chart center. Forms on the
+smooth interiors of every component, including contracted ones, are
+available. They span by density off the nodes in the equation spaces
+for sections with matching values. Choose equivariant representatives
+by averaging and extend them over the stabilized universal domain.
+A contracted component can require a vertical stabilizer even though
+the forcing $j_a(e)$ vanishes there. In these conventions the
+vertically stabilized equation on $s_C=0$ is
+\begin{equation}\label{p10-eq:desc-stabilized}
+                      L_{a,t}u-Bw=j_a(e).
+\end{equation}
+The derivative $(L_{a,t},-B)$ in $(u,w)$ is an isomorphism at the
+center. In the simultaneous thickening the first row is the regular
+stabilized horizontal equation, independent of the height. The
+second has this isomorphism as its vertical derivative. Projection
+therefore identifies the ambient thickening locally with the
+horizontal one, with $(u,w)$ uniquely determined on it. This holds
+over a nodal fiber by the regular perturbed-map chart and inverse
+function theorem relative to the common base of stabilized domains
+\cite[Theorem~3.5 and Lemma~5.10]{swam}. The ambient obstruction
+section on the common chart is $(s_C,w)$.
+
+On the horizontal zero set introduce $z=\ell_a(v)$ for a homogeneous
+section $v$. Eliminating the variables in
+$L_{a,t}v-Bw'=zj_a(e)$ by \eqref{p10-eq:desc-stabilized} gives
+$v=zu$, $w'=zw$. At a projective zero $w'=0$ implies $z\ne0$ by
+injectivity of $L_{a,t}$. Thus in the chart $z=1$ the residual
+equations are exactly
+\begin{equation}\label{p10-eq:desc-rows}
+                           w=0,\qquad \ell_a(u)-1=0 .
+\end{equation}
+Capping the horizontal virtual class with the localized projective
+Euler class amounts on this common thickening to multiplying the
+Thom classes of $s_C$ and of \eqref{p10-eq:desc-rows}. Their product is
+the class of the constrained ambient equation.
+
+For compatibility, on overlaps take the union of stabilizing marks
+and the sum of the horizontal and vertical perturbation spaces,
+transporting earlier forms by the forgetful maps of marked domains.
+The lifted slices and projection commute with these forgetful maps.
+An enlarged vertical space adds free variables in
+\eqref{p10-eq:desc-stabilized} paired with identical additional
+obstruction coordinates. Switching the minimal space $W$ changes
+cokernel coordinates and adds a multiple of $w$ to the scalar row.
+A change of horizontal lift adds terms vanishing on $s_C=0$.
+The resulting stabilizations and triangular row operations preserve
+the localized Thom product, since throughout the homotopies the
+joint zeros stay in the compact interior. The same sums refine triple
+intersections, equivariantly throughout, as in the ordinary
+Gromov--Witten implicit atlas \cite[\S9.2, Theorem~9.2.10]{pardonatlas}.
+The determinant orientation under projection is the product of the
+horizontal and vertical orientations, by the triangular
+linearization and homotopy to its complex symbol. Moving the scalar
+row past the horizontal virtual dimension or the vertical rank $r$
+has even parity. Its orientation convention can thus be fixed at
+the genus-$H$ crossing and used in every arithmetic genus.
+
+\subsubsection{Restriction to one parameter value}
+At $\Gamma$ let $A$ be the fixed-time normal linearization of the
+ordinary ambient equation. Its real index is zero since the ambient
+first Chern number on the graph is zero. The derivative with time and
+the integral constraint, in unparametrized normal coordinates, is
+\begin{equation}\label{p10-eq:desc-augmented}
+ (\zeta,\tau)\longmapsto
+          (A\zeta+b_0\tau,\lambda\zeta).
+\end{equation}
+Here $b_0$ is the parameter derivative and $\lambda$ the differential
+of the time-independent integral test. This operator is invertible.
+Indeed the horizontal equation at a smooth finite cover is regular
+with variable domain, as its deformation complex reduces to the
+torsion cokernel of the derivative of the cover. Eliminating that
+equation and the vertical complement leaves the transverse normalized
+equation that defined $\sigma_\Gamma$. Hence $\dim_{\RR}\ker A\le1$.
+
+If $A$ is singular, choose an unramified subdisk of a labelled sheet
+on which generators of its kernel and adjoint cokernel are nonzero.
+Such a subdisk exists by unique continuation. If $u_\Gamma(w)$
+is its height, add to the affine equation a small term
+\[
+                     \delta B_1(w)\bigl(u-u_\Gamma(w)\bigr)
+\]
+with support in this subdisk and a fiber cutoff equal to one near
+the sheet. On an unramified graph the vertical tangent projects
+isomorphically onto the normal quotient. We can therefore prescribe
+the zeroth-order normal variation so that its pairing between the
+two generators is nonzero. The one-dimensional Fredholm reduction
+makes $A$ invertible for sufficiently small $\delta\ne0$, leaves
+$\Gamma$ a solution, and preserves invertibility of
+\eqref{p10-eq:desc-augmented}. Near the graphs this is the homogeneous
+deformation \eqref{p10-eq:desc-perturb} with $L$ and $j$ replaced by
+$L+\delta B_1$ and $j+\delta B_1u_\Gamma$ on the chosen sheet.
+By compactness and continuous stabilization its size can be chosen
+to preserve vertical injectivity near the expansions and projective
+nonvanishing on the boundary of their isolated neighborhood, both in
+genus $k$ and in genus $H$. Thus it preserves the localized degrees.
+
+To see that no part of this degree lies away from the retained graph
+after the perturbation, consider a sequence of other constrained
+solutions as $\delta\to0$ in the original isolated neighborhood.
+Its compact limit is an expansion of $\Gamma$. In a tube retracting
+to that multiplicity-one curve only one nonconstant normalization
+can occur, since a positive component projects with degree a
+positive multiple of three. The unmarked normalization then converges
+smoothly by ghost bubble censorship at the embedded limit. The
+implicit function theorem for the augmented operator
+\eqref{p10-eq:desc-augmented}, with $\delta$ as parameter, gives the
+unique nearby constrained curve, namely the retained $\Gamma$
+at $t_0$. All remaining components attach to it at one point each.
+
+At the regular endpoint the nearby ordinary embedded graphs form
+a smooth family $\Gamma_t$. In a small tube retracting to
+$\Gamma$, the projection of every positive class represented by a
+holomorphic component has degree a positive multiple of three.
+A map of total projection degree three has one nonconstant component,
+of multiplicity one. At fixed genus, a sequence of its unmarked
+normalizations approaching $\Gamma$ has smooth limit. Indeed the
+limiting positive map is the embedding with multiplicity one, and
+ghost bubble censorship excludes any contracted component of the
+unmarked limit. Smooth convergence places the normalization in the
+regular chart of $\Gamma_t$.
+Compare also the embedded-cycle compactness and openness results
+of \cite[Propositions~2.21 and~2.29]{diw}. Embeddedness then implies
+that every other component belongs to a one-ended contracted subcurve.
+Consequently, after shrinking the tube and parameter interval, the
+entire fixed-genus ordinary locus near the compact family consists of
+degree-one stable maps to $\Gamma_t$.
+
+On this locus the integral constraint equals the function of time
+$\gamma(t)=\ell(\Gamma_t)-1$, since every attaching subcurve has
+zero pullback area. Invertibility of \eqref{p10-eq:desc-augmented} gives
+$\gamma'(t_0)\ne0$ by applying its scalar row to the tangent of
+the implicit family. Interpolating between $\ell_a(u)-1$ and
+$\gamma(t)$ on the common thickening preserves the localized product,
+as the two functions agree wherever $s_C=w=0$. The real Thom class
+of $\gamma$ cuts the parametrized ambient virtual class down to the
+ordinary fixed-time class with sign $\operatorname{sgn}\gamma'(t_0)$.
+
+Write $D_\Gamma$ for the regular normal operator on $\Gamma$.
+Its normal bundle has degree $2H-2$, since
+$c_1(TC)+c_1(N)=0$. Every degree-one pullback of $D_\Gamma$ is
+injective by restriction and matching. Zinger's comparison therefore
+expresses the local degree as the normal Euler pairing on the ordinary
+degree-one stable-map class of $\Gamma$ \cite[Theorem~1.2]{zinger}.
+To record its orientation, deform $D_\Gamma$ on the fixed bundle.
+For each degree-one map the pullback and base operators have the same
+kernel throughout the deformation. On cokernels restriction to the
+positive normalization is a left inverse to pullback of forms.
+Hence the quotient of their two stabilized Fredholm complexes is
+injective with vector-bundle cokernel throughout
+\cite[Appendix~B]{bai}. Its determinant is the quotient determinant.
+At the regular endpoint its Euler class gives the absolute pairing
+multiplied by the base determinant sign $\epsilon(D_\Gamma)$.
+At the Dolbeault operator of a sum of two non-effective line bundles
+of degree $H-1$ the orientation is complex. Pandharipande's
+degree-one Hodge integral \cite[Theorem~2]{pandhodge} gives its
+generating series $\bigl(2\sin(v/2)\bigr)^{2H-2}$. The oriented
+fixed-time series at the regular endpoint is therefore
+$\epsilon(D_\Gamma)x^{H-1}$.
+
+\begin{proof}[Completion of the proof of Theorem~\ref{p10-thm:descendants}]
+The product of the time-slice sign and the fixed-time determinant
+sign is $\sigma_\Gamma$, as follows by evaluating their product in
+genus $H$ at the transverse normalized graph. The scalar orientation
+and quotient determinant comparison above give the same product in
+genus $k$. Thus this graph contributes
+$\sigma_\Gamma[v^{2k-2}]x^{H-1}$ to the projective pairing upstairs.
+Summing by \eqref{p10-eq:desc-sum}, multiplying by two for the full
+Euler change, and dividing by the stack degree two of the sheet
+labelling gives \eqref{p10-eq:desc-contribution}. All isolating
+neighborhoods and perturbation sizes were chosen at fixed genus.
+In particular the formula includes tails and bridges of every
+arithmetic genus allowed by $k$.
+\end{proof}

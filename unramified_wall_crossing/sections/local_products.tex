@@ -1,0 +1,185 @@
+\section{Local elementary factors and the least source genus}\label{sec:factors}
+
+Let $S$ be the rational algebra of almost-complex cycle families
+of \cite[\S2]{WueProduct}. Its relations include open excision and transport
+of a compactly supported insertion over an interval. Multiplication
+uses disjoint union of targets. Write $H$ for the Chern-number-zero,
+virtual-dimension-zero part of Pardon's rational algebra of complex
+one-cycles \cite{pardon}, and $\Phi:H\to S$ for the comparison.
+We use $A_h$ for the balanced antidiagonal series of genus $h$ in $H$.
+It has constant term one. The series $E_h=\Phi(A_h)$ is the
+contribution of a neighborhood of an elementary curve of Ionel and
+Parker \cite[\S3]{WueProduct}. Its coefficient of degree one is
+$\Phi(x_{h,1})$, where $x_{h,1}$ is Pardon's genus-$h$ class of a
+single curve of multiplicity one.
+
+Let $C$ be a smooth embedded almost-complex curve of genus $g\ge2$
+in a six-dimensional almost-complex germ with $c_1(TX)[C]=0$.
+Assume a relatively compact tube around $C$ contains no other compact
+irreducible curve and that the normal Cauchy--Riemann operator of $C$
+is invertible on every connected finite \'etale cover, including $C$.
+These conditions hold for the germs of Section~\ref{sec:spin}.
+Choose a smaller disk tube. For $m>0$ let
+$P_m$ be the class in $S$ of the characteristic function of the point
+$m[C]$ in its degree-$m$ cycle space, and set $P=1+\sum_{m>0}P_mq^m$.
+The variable $q$ labels $m[C]$ by $m$ under the retraction of the tube to $C$. An inclusion of two such
+tubes preserves these classes by excision.
+Write $h_d=1+d(g-1)$, and let $C_k(h)$ be the groupoid cardinality of
+connected unramified degree-$k$ covers of a genus-$h$ curve. Each
+isomorphism class contributes the reciprocal of its deck group order.
+In particular $C_1(h)=1$.
+
+\begin{proposition}\label{prop:factors}
+For every such germ there are unique
+integers $n_{d,h}$, of finite support in $h$ at each $d$, such that
+\[
+                  P=\prod_{d\geq1,\ h\geq0}E_h(q^d)^{n_{d,h}} .
+\]
+They vanish when $h<h_d$. If $c_m$ is the sum of the local determinant
+signs divided by deck orders over the connected degree-$m$ covers,
+then $n_d=n_{d,h_d}$ satisfies
+\begin{equation}\label{eq:triangular}
+           c_m=\sum_{d\mid m} n_d\,C_{m/d}(h_d).
+\end{equation}
+In particular this determines a full sequence of exponents of the
+unique balanced product lifting $P$ to $H[[q]]$.
+\end{proposition}
+
+\begin{proof}
+We first realize the neighborhood in a closed symplectic six-manifold
+of vanishing first Chern class. In a product of two symplectic
+two-tori take one horizontal torus and $g-1$ distinct vertical tori.
+Smooth their $g-1$ positive transverse intersections. Locally the
+smoothing of the coordinate axes is $zw=\delta$. In a fixed outer
+annulus of each axis its graph may be cut off to the zero graph while
+remaining symplectic, since the perturbation there is $C^1$-small
+as $\delta\to0$. The annuli remove a disk from each incident torus
+and glue the two boundary circles. The intersection graph is a tree,
+so the resulting embedded symplectic surface has genus $g$. Regard it
+as a surface in the product with a third two-torus, all three areas
+chosen integral. Its class $A$ is primitive, since intersection with
+a generic vertical torus in the first two factors pairs to one with
+the four-dimensional surface class. Use the pullback of that pairing
+to the six-manifold. In particular $d\mapsto dA$ is injective.
+
+Identify the marked surface with this surface by an orientation-preserving
+diffeomorphism. The symplectic normal bundle has first Chern number
+$2g-2$. Choose a complex complement to $TC$ in the original tangent bundle along the curve and a Hermitian metric on that complement. A unitary normal identification with the model exists by the
+classification of complex bundles over a surface. A tubular embedding
+with this prescribed normal derivative carries the model's almost-complex
+structure on the zero section to an almost-complex structure compatible
+with the ambient symplectic form there. Any positive complex structure
+on the oriented tangent plane is compatible with its area form.
+Extend the compatible structure along the section to an ambient one
+by extending a metric and using polar decomposition. On a small tube
+the prescribed structure is tame and is uniformly close to the
+extension, with equality along the section. Cut off their difference
+in a chart of almost-complex structures to obtain a global tame
+structure agreeing with the given germ on a smaller tube. This
+construction uses the local almost-complex structure itself, including
+its normal derivative.
+
+Fix an energy bound. Take a smaller disk $V$ with closure in the
+isolating tube. For every sufficiently close global tame structure,
+there is no nonempty cycle contained in $\overline V$ whose support
+meets $\partial V$ in this energy range. A violating sequence would
+have a geometrically convergent subsequence by
+\cite[Theorem~2.11]{diw}. Its limit at the prescribed structure
+would be supported on $C$ and would meet $\partial V$, because
+supports converge in the Hausdorff topology. Hence, in every positive
+integral class, containment in $V$ selects a compact open and closed
+insertion over a sufficiently short closed path to a generic tame
+structure. At the first endpoint this is precisely the coefficient of
+$P$. At the second endpoint the connected supports selected by $V$
+form a union of finitely many clusters, after making the cluster
+partition subordinate to this open and closed subset
+\cite[Propositions~3.18--3.21]{diw}. All their classes are positive
+multiples of $A$ since $V$ retracts onto $C$ and the symplectic area
+is positive.
+
+Apply the geometric excision and cluster recursion of
+\cite[\S4]{WueProduct} to these selected clusters. This use of the
+recursion is local: at the generic endpoint one includes the exterior
+as an additional color to separate the supports, and retains the
+factors of the selected colors. Each recursive correction is a
+cluster in a proper multiple of its predecessor's class, by cluster
+isotopy \cite[Theorem~3.25]{diw} and its cycle-space version in
+\cite[\S4]{WueProduct}. Thus the remaining energy bound divided by the
+core energy decreases at each recursion. Its leaves give an exact
+finite product of elementary factors and inverses in $S$ at the
+given cutoff. This part of the cluster argument uses a closed
+symplectic ambient manifold and a bounded energy. The projective and
+coherent-cohomology hypotheses of the compact complex product theorem
+enter when one starts with the entire cycle series of a complex
+target and lifts that identity to $H$.
+
+At the first $q$-degree where two such products differ, the difference
+is a sum of the degree-one classes $\Phi(x_{h,1})$ with coefficients
+the differences of exponents. These classes are rationally independent
+by the finite-genus test of \cite[Theorem~5.1]{WueProduct}.
+Consequently the exponents stabilize as the cutoff increases,
+are intrinsic to the germ, and the product of the $A_h(q^d)$ with
+these exponents gives the stated lift. The uniqueness asserted here
+is among balanced products with finite genus support at each degree.
+
+Apply connected, fixed-target Gromov--Witten counts to the same
+geometric decompositions, as in \cite[\S7]{WueProduct}. Compact open
+localization, deformation of these insertions, and additivity on a
+partition hold by \cite[Lemma~3.8 and Proposition~3.10]{diw}.
+On disjoint targets the connected contributions add for normalized
+factors, since the domain has an image in exactly one target and the
+other insertion is evaluated on the empty cycle. These facts identify
+the local connected series with the sum of the elementary connected
+series with the very same integers $n_{d,h}$. This argument applies
+to the given geometric relations on fixed targets. It requires no
+enumerative pairing on arbitrary analytic parameter families.
+
+For the original germ the count in degree $m$ vanishes below
+$h_m$ by Riemann--Hurwitz, and at equality every stable map is a smooth unramified cover:
+the arithmetic genus bound rules out multiple nonconstant components
+and positive-genus ghosts, and a contracted rational tree would have
+an unstable leaf. The tangent deformation complex of an unramified
+map cancels against source deformations via $df$. The remaining
+operator is the pulled-back normal operator, invertible by hypothesis.
+Thus its determinant sign divided by the deck order gives the local
+degree, and the sum is $c_m$. For a balanced elementary core of
+genus $h\ge2$, the same argument gives vanishing below
+$1+k(h-1)$ in degree $k$. At equality both spin lines coincide,
+so every cover has sign $+1$ and the count is $C_k(h)$.
+In degree one an elementary genus-$h$ factor starts at source genus
+$h$ with coefficient one for every $h\ge0$
+\cite[Proposition~3.3]{ip}. Now induct on $m$.
+An elementary factor from $d<m$ enters degree $m$ only for $d\mid m$,
+and by induction it has genus $h\ge h_d\ge2$. Thus its least possible
+source genus in degree $m$ is
+$1+(m/d)(h-1)\ge h_m$. Comparing the degree-one terms of the remaining
+genus factors in order of increasing genus gives $n_{m,h}=0$ for
+$h<h_m$. At equality the contributions from proper divisors occur
+only for $h=h_d$. They have the values just computed, which proves
+\eqref{eq:triangular}.
+\end{proof}
+
+
+\begin{corollary}\label{cor:cutoff}
+For a homogeneous normal operator rigid through degree $M$, the same
+construction gives the insertion of each pure multiple through $M$
+and a unique balanced lift
+\[
+ P_T(D;q)=\prod_{j=1}^M\prod_s A_s(q^j)^{n^T_{j,s}(D)}
+          \pmod {q^{M+1}} .
+\]
+Connected fixed-target integrals on these compact insertions
+distinguish the truncated products.
+\end{corollary}
+\begin{proof}
+A compact irreducible curve in the tube projects with positive degree,
+since a fiber is a complex vector space. Its normalization gives a
+kernel graph. Hence rigidity excludes all other curves through $M$,
+which suffices for the finite-energy argument above. The connected
+integrals respect open excision and continuation of the selected
+compact clusters. In their product, a connected domain in a disjoint
+union lies in one target. If two lifts first differ at label $j$, the
+connected difference at that label is a finite sum
+$\sum_s a_s(2\sin(v/2))^{2s-2}$. These functions have distinct
+lowest powers, hence all $a_s$ vanish if the integrals agree.
+\end{proof}

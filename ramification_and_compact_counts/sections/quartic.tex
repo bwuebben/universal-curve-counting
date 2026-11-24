@@ -1,0 +1,35 @@
+\section{The first genera above a ramified double wall}\label{sec:quartic}
+Let \(f:Y\to C\) be an ordinary double crossing with a single odd kernel line of embedded graph, \(b=2\ell>0\) simple branch values, and sign \(\eta_f\). Put \(h=H_2+\ell\). Use the generic nonvanishing of the projected antilinear jet at each branch, the classification of smooth central kernels as pullbacks of the fixed graph line, and invertibility of the unramified upper normal twists used below. For clarity about genericity, on a regular disk one varies the real order-zero tensor while annihilating the graph vector. Perturbing a good Petri jet, locally solving for a nearby section, and using a complex gauge sending it to the prescribed section preserves that vector. The adjoint test on irreducible monodromy systems then leaves only its sign-character summand; the moving branch positions are included only at genuinely ramified punctures of each system. The fixed graph, polar and quartic transversality proofs for the complete residual intersection are given in Calculations G1--G3 of \cite{WueSupplement}.
+For any regular point of \(C\) put
+\[
+ B_m=\sum_{[u:T\to C]}\frac{m}{|\operatorname{Aut}_C(u)|}\epsilon(u^*D_0)
+\]
+over connected unramified covers of degree \(m\). Denote by \(A\) the normal operator of the graph in its homogeneous target, \(T=\tfrac12\sum_{\lambda\ne0}\epsilon(A^\lambda)\) over the sign twists of \(Y\), and \(N_-=\#\{\lambda\ne0:\epsilon(A^\lambda)=-1\}\).
+
+\begin{proposition}
+For \(d\ge3\) there is no change below \(k_d=H_d+\ell+1\). At this genus the connected and elementary jumps, respectively, are
+\[
+ -b\eta_f B_{d-2}+\mathbf1_{(d,\ell)=(4,1)}\eta_f T,\qquad
+ -b\eta_f B_{d-2}-\mathbf1_{(d,\ell)=(4,1)}\eta_f N_- .
+\]
+The comparison is coefficientwise. For elementary exponents the endpoints admit the balanced lift.
+\end{proposition}
+\begin{proof}
+On the positive normalizations denote the total degree of the nonzero ones over \(Y\) by \(a\), their number together with the zero-height positive components by \(n\), and their total ramification over their respective targets \(Y,C\) by \(R\). If \(G\) sums the contracted genera and \(\beta\) is the graph Betti number, the genus identity is \(k-H_d=n-1+a\ell+R/2+G+\beta\). When \(n\ge2\), equality at the minimum forces \(n=2,a=1,R=G=\beta=0\). Thus a single branch of \(Y\) joins a pointed étale cover at zero height. The smoothing degree is \(-\eta_f\epsilon(u^*D_0)\) per marked orbit, by the one-node logarithmic calculation of \S\ref{p10-sec:nodes} on that sheet. The deck action is free on the marked fiber. Summing yields the first term. When \(n=1\) equality forces \((d,\ell)=(4,1)\) and an unramified upper double. Its odd determinant is that of the graph normal twist and its covering involution divides the count by two. This adds \(\eta_f T\). Proper-divisor contributions from a genus excess \(e\) are supported above excess \(je\) on a \(j\)-fold multiple. Only the exceptional pair requires subtraction at equality, namely \(\eta_f(2^{2h}-1)/2\), the elementary double of the lower curve. Since \(T-(2^{2h}-1)/2=-N_-\), the claim follows.
+\end{proof}
+
+Modulo two the pointed sum counts index-\(m\) subgroups of \(\pi_1(C)\). Its parity is odd precisely for \(m\) a square or twice a square, by the surface-group parity theorem of M\"uller and Puchta \cite[Theorem~1]{mp}. Outside the exception the jump in these degrees is an odd multiple of \(b\). For a cubic crossing the central classification of \S\ref{sec:heptic} gives no changes in degrees one, two, four or five. At \(d=6+m,\ 3\nmid d\), the first possible genus is \(H_d+3\ell+1\), with a sextic closure joined to a pointed unramified \(m\)-cover. A normalized section that reaches the zero section is a negative eigenvector of a peripheral transposition; its stabilizer as a vector in the permutation plane is trivial. Its component must therefore cover the sextic closure. Applying the genus identity with this component gives the stated bound and forces just one join at equality. The adjoint and polar equations yield odd local degree for each pointed cover, with the upper determinant included. More precisely, writing \(a_i\) for the signed degree with one identity sheet at the \(i\)-th branch, each pointed upper cover \(u\) contributes \(a_i\epsilon(u^*D_0)\epsilon(D_0)\). Hence the complete first-genus jump is \(\epsilon(D_0)B_m\sum_i a_i\) for both connected and elementary counts. Calculations H2--H3 of \cite{WueSupplement} derive the discriminant adjoint line and its sign. The complete series at \(d=7\) is Theorem~\ref{p14-thm:wall}.
+
+\subsection{The next quartic genus}
+Set \(k_0=h+2g-1,\ k_1=k_0+1\), and put \(S_C=B_2\). At each lower ramification point \(r\), let \(E_r\) be the integral of the Euler class of the pole-augmented upper obstruction line along the ramification divisor of the marked double-cover surface. The upper section is allowed the simple pole fixed by the projected derivative at \(r\). Write \(F_2(D)\) for the corresponding ordinary upper finite-map Euler integral over the two-branch surface. For \(\ell\ge2\) the complete elementary coefficient at \(k_1\) is
+\[
+ \Delta n_{4,k_1}=\eta_f\left[(2S_C+1)\binom b2-2bF_2(D_0)-\sum_r E_r
+                   -\mathbf1_{\ell=2}N_-\right].
+\]
+Two distinct flags give the binomial term. Each marked surface contributes \(-\eta_f(2F_2+E_r)\). A tower reaches this genus only for four lower branch values. For two lower branch values the two copies of the lower graph vary in their relative real height. Displace on one common path. Denote by \(D_\theta\) the base operator displaced in this direction and by \(A_\delta\) the displaced upper graph operator. Define
+\[
+ R=\eta_f\left[\epsilon(A_\delta)F_2(A_\delta)-4F_2(D_\theta)
+                   -\sum_r E(D_\theta;r)\right].
+\]
+Then \(\Delta n_{4,k_1}=R+\eta_f[2S_C+1+(h-1)2^{2h-3}]\).
+In both cases the full connected coefficient is recovered by adding the lower degree-two factor and the next Taylor coefficient of the preceding degree-four factor. The detailed two-height calculation in the companion proves independence of the sign of displacement. Its interior chart has transverse degree \(-3\). The common-parameter perturbation excludes smoothings at unequal and zero heights; the equal-height endpoint uses the graph operator and includes all contracted expansions of its regular towers. The same comparison gives an upper ordinary odd Euler jump \(-3b\eta_A\) with at least three smooth crossings near each lower branch after a generic perturbation. For \(2k-1\) prescribed plus-axis poles the signed degree in genus \(2g-1+k\) is \((-1)^{k+1}(2k-1)2^{2g}/4\). The pole residue and its stack normalization are worked out in the accompanying calculations on marked covers and polar crossings.

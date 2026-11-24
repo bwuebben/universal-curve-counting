@@ -1,0 +1,89 @@
+# F8. The quartic contribution one genus above the minimum at a two-branch wall
+
+Fix a transverse embedded odd lower double graph $f:Y\to C$ with exactly two simple branch values, on a genus-$g$ target, $g\ge2$. Write $h=2g$ for the genus of $Y$, $\eta_f$ for the absolute crossing sign and $D_t=D_0+tK$ for the transverse path of [Calculation F4](separating-the-two-heights-on-a-common-parameter.md). Assume $D_0$ is invertible and the projected antilinear jets at both ramification points are nonzero. Use the regularity conditions of [Calculation E1–097](../polar/a-ramified-double-joined-to-an-unramified-cover.md) on unramified upper covers, and those of [Calculation F5](excluding-smoothings-at-the-zero-height-end.md) and [Calculation F6](regularity-of-the-upper-double-family-on-the-graph.md) on branched upper doubles and prescribed poles. The latter require that the only exceptional upper incidences be the ones forced at $f$ and at the two split doubles on its graph. They hold simultaneously after an arbitrarily small generic perturbation preserving the prescribed lower graph, as the respective tests use the same permitted lower variations.
+
+Let $D_\theta$ be the lower-target operator at $\theta=\delta(\chi(0)-\chi(2))$ and $A_\delta$ the graph-normal operator produced on $Y$ by the normalized height perturbation of Calculation F4. Take either sign of sufficiently small $\delta\ne0$. For an operator $L$ on either target write $F_2(L)$ for the absolute cokernel Euler integral on its unmarked finite two-branch double-cover surface. Write $E(D_\theta;r)$ for the prescribed-pole Euler integral at the flag $(f(r),\mathbb C k_z(r))$. Write $\epsilon(A_\delta)$ for its base determinant sign.
+
+**Theorem.** The residual weight in genus $2h$ of the specified lower graph, as defined in [Calculation F2](contracted-expansions-of-a-regular-unramified-tower.md), is
+$$
+ R=\eta_f\left(\epsilon(A_\delta)F_2(A_\delta)-4F_2(D_\theta)
+                        -\sum_{r}E(D_\theta;r)\right).                         \tag{1}
+$$
+The right side is the same in both displaced chambers and computes the local change for any smooth lower path crossing the same operator with the same transverse orientation. In particular the contribution to the primitive coefficient, after subtraction of the proper divisor and the preceding genus term, is the integer
+$$
+ \delta n_{4,2h}^{\mathrm{inc}}
+       =R+\eta_f\big(2 S_C+1+(h-1)2^{2h-3}\big),                               \tag{2}
+$$
+where $S_C$ is the signed sum over connected unramified doubles of $C$. These formulas concern the incidence of the given lower graph. Other quartic crossings along a path enter its total separately.
+
+## The nonlinear equation near an equal-height join
+
+The remaining comparison is at a split nodal double of the graph joined at a lower ramification point. Work on the labeled chart of [Calculation F7](excluding-unequal-heights-near-the-split-tower.md). Let $a,b$ be its positive thick normalization tests. Since the full perturbed equation is scale-equivariant, take $(a+b)/2=1$ and put $h_0=a-b$. Write $m=(p+s)/2$, $n=(p-s)/2$, $Q=|q|$, $\rho_0=\sqrt Q$ and $L=|m|+\rho_0$. Keep $q,m$ fixed in all the comparisons below. The exact symmetric tower has
+$$
+   x_*=m^2+2q,\quad p=s=m,\quad u_1=u_2=t_1=t_2=0,\quad a=b=1.
+$$
+It has actual section equal to the appropriate signed lower height $k_i(w)$ on every labeled sheet of the test disk. The profiles $k_i$ here denote the original lower heights, so their common squared norm is $k(w)^2>0$.
+
+Enlarge the compact test set on this disk to contain the supports of $K$ and of the area form defining $I$. Denote by $d$ the supremum there of the differences between the actual section and $a_i k_i$ on the corresponding sheets, with $a_1=a,a_2=b$ according to its labeled pair. In particular $I=I_0+O(d)$, where $I_0=(a^2+b^2)/2$. Freeze the coefficients at the two effective times
+$$
+     \theta_i=t+\delta\chi(a_i^2/I_0).
+$$
+The true forcing minus the frozen linear forcing has norm at most $e=C_0|\delta|d$ since its support is thick, $k$ is bounded below there, and $I,I_0$ stay away from zero. The frozen normalized solution with the same tests differs from the actual solution by $O(e)$ in section sup norm, and each frozen row is $O(e)$, by the uniform stabilized inverse. It is important here to compare to the symmetric tower at the same $q,m$: an error independent of $h_0$ would lose control of heights approaching equality faster than the geometric parameters.
+
+Put
+$$
+ B_0=|x-x_*|+|u_1|+|u_2|+|\theta_1|+|\theta_2|,\qquad
+ U_0=\max_i|\lambda_i-(2q,0,0)| ,
+ \qquad \lambda_i=(x-p_i^2,u_i,\theta_i).
+$$
+Thus $B_0\le C(U_0+(|m|+|n|)|n|)$; the nodal component data of the exact smoothed tower are $(2q,0,0)$ on both sides. The following estimates hold without a lower bound on $Q$ or on $|h_0|$:
+$$
+      |n|\le C(|h_0|L+e),\qquad B_0\le C(|h_0|L^2+e),\qquad
+                    d\le C(|h_0|L^2+e).                                      \tag{3}
+$$
+
+For the first two, subtract the exact symmetric component rows from the two divided frozen rows, using the same central frames. The normalized row of a single smooth component is $E(\lambda)$ with invertible derivative $W_f$. The polar term after division, $-2(a_j/a_i)W_r(q)$, changes by $O(|h_0|Q)$. The remainder estimates proved by differentiating at fixed $q$ in Calculation F7 give $O(Q)(B_0+|n|)+o(Q)|h_0|$ for the difference. Indeed the interpolation from the symmetric tower to the current inputs keeps $q$ fixed, moves the attaching coordinates by $\pm n$ and the remaining parameters by at most $B_0$; the amplitude derivatives of the divided remainder are $o(Q)$ and its other parameter derivatives are $O(Q)$. Inverting the single-component derivative near zero and absorbing $O(Q)U_0$ gives
+$$
+               U_0\le C(|h_0|Q+Q|n|+e).                                       \tag{4}
+$$
+Write $\varepsilon=\max(|p|,|s|)\le |m|+|n|$ and $\Lambda_0=\max|\lambda_i|$. The first matching plane for the nodal comparison has linear term $-h_0 m-(a+b)n$ and Taylor error bounded by
+$$
+ C\big(|h_0|(\varepsilon^3+\varepsilon\Lambda_0)
+       +|n|(\varepsilon^2+\Lambda_0)+\varepsilon|\lambda_1-\lambda_2|\big).
+$$
+The smoothed matching correction in Calculation F7, (3), is bounded by $C((|h_0|+|\lambda_1-\lambda_2|)(Q+\varepsilon\rho_0)+|n|(\rho_0+Q))$. Insert $|\lambda_1-\lambda_2|\le2U_0$ from (4), use $\Lambda_0=o(1)$, and absorb the small multiples of $|n|$ into its leading block $a+b=2$. This gives the first bound in (3). The comparison between $B_0$ and $U_0$ now gives the second bound; in particular $n^2=O(h_0^2 L^2+e^2)$.
+
+For the last bound in (3), on the test disks the nodal trial of Calculation F7 equals $a_i$ times the single-component normalized solution at $\lambda_i$. Its matching cutoff vanishes there. After subtracting $a_i$ times that trial at the exact tower, the difference on the disk is $O(U_0)$ in fixed target coordinates. The error from trial to frozen reconstructed section is also compared at the same $q,m$. The sup estimates in the proof of Calculation F7, (3), for the differentiated glued residual give, after this subtraction,
+$$
+     C\left[(|h_0|+B_0)(Q+\varepsilon\rho_0)
+                    +|n|(\rho_0+Q)\right].
+$$
+The term from rescaling the symmetric trial correction by $a_i$ is included in the $|h_0|$ term. Along the interpolation one may replace $\varepsilon$ by $|m|+|n|$. This use of section sup bounds, in addition to the obstruction bounds, is why the estimates use the actual stabilized inverse. The symmetric reconstructed section on the test disk is exactly $k_i$. Adding the $O(e)$ distance to the true section and using (4) and the first two bounds in (3) gives the last bound.
+
+Since $e=C_0|\delta|d$, (3) absorbs $e$ to give $d+B_0=O(|h_0|L^2)$. If $h_0=0$, the two inputs are equal and all departures from the exact tower vanish, including both effective times. The unique frozen solution equals the actual one. If $h_0\ne0$, then $\chi'(1)>0$ gives $|\theta_1-\theta_2|\ge c|\delta h_0|$ since $I_0=(a^2+b^2)/2$ and $a+b=2$. As this difference is bounded by $B_0$, we obtain $|\delta|=O(L^2)$. Consequently every frozen obstruction row is $O(|h_0|L^4)$. Calculation F7 now excludes unequal heights unless the geometric displacements and both effective times are zero. In the latter case the same time difference forces $\delta=0$. At $\delta=0$ this is exactly the original projective interval at the unsmoothed ramification join. This proves the uniform comparison, including $q=0$. It yields the unchanged tower at equal heights and no additional branch of perturbed solutions approaching this corner.
+
+## The supported class and its evaluation
+
+The residual set consists of the two compact marked upper surfaces, the two closed height intervals, and the compact finite double surface on the embedded graph with its projective identifications. The genus budget and list of the disjoint contracted and unramified sectors are those of [Calculation E3](../polar/a-ramified-double-joined-to-an-unramified-cover.md) and [the proof](contracted-expansions-of-a-regular-unramified-tower.md). In particular a one-ended contracted expansion of an unramified tower belongs to the separate compact sector of Calculation F2. All points of the residual set have finite maps to $C$, including the finite double collisions, apart from the marked trivalent bridges described in [Calculation E6](../polar/the-quartic-contribution-at-a-marked-double-cover.md). The bridge charts there have unobstructed horizontal equations. Elsewhere finite maps have unobstructed relative deformations, including ordinary nodes: the normalized ramification jets move independently in the relative tangent complex, and at an unramified flag its marked motion can vary its target value. At two critical flags their distinct local branch deformations vary the two marked evaluations. The normalization sequence then supplies the independent node smoothings. Thus the horizontal virtual class near this set is the ordinary class in the fixed-target charts of complex dimension six.
+
+At zero height Calculation F5 isolates the marked families uniformly through displacement, also when the limiting upper cover is $f$. On the open interval Calculations F1 and F4 give isolation at zero displacement and removal for nonzero displacement on compact subintervals. At equal height the preceding comparison treats the two split radial joins, and the uniform normal comparison of Calculation F6 treats all other points of the compact finite surface. These statements concern every sequence approaching the respective points as $\delta\to0$, with original time allowed to vary. They give an isolating neighborhood of the compact residual set and, for all sufficiently small $\delta\ne0$, excision into the marked and finite-tower families. Indeed a sequence of additional zeros approaching that set would have a convergent subsequence with limit in one of the charts just treated. The intervals were joined to both surfaces before applying the perturbation.
+
+For clarity at a point with two-dimensional kernel, the local class for the absolute Euler change is twice the projectivized relative class. In a finite stabilization of index $-12$ the matrix ranks drop by at least two on a set of real codimension at least $2(12+2)=28$. In the universal space of real matrices removal of these strata does not change the relative cohomology in degree thirteen of the matrix space modulo its injective locus. This follows from the exact sequence for nested supports and the codimension bound on each smooth rank stratum. On the remaining simple-kernel stratum the connecting class of the oriented cokernel Euler class equals twice the pushed-forward Thom class of the tautological projective equation, by its even-sphere link. Hence the equality pulls back across the full stabilized family even where its rank drops by two. The same argument on local orientation systems, or over the oriented determinant cover, descends by the determinant convention. Stabilization preserves the Thom classes. Finite quotient charts use the usual rational equivariant weights. The homogeneous perturbation on projectivization defines a homotopy of this local class on the isolating neighborhood. It can be computed by solving the uniformly supplemented equation or on the signed $I=1$ double cover. The tensor is supported over a fixed target disk. An upper node can lie over that disk. In a plumbing chart the differential of the total holomorphic map is bounded on each half in the larger source coordinate, with the same bound at the ends of a marked bridge by the charts of Calculation E6. The section sup estimate controls the nonlinear coefficient and its section derivative there. The two half-disks of shrinking radius have vanishing weighted target mass, and their pulled-back area tends uniformly to zero. Thus the integral $I$, its section derivative, and the zeroth-order equation term extend continuously in the stabilized norms across the node. On the support under consideration $I$ stays bounded below. The resulting Lipschitz bound times $|\delta|$ gives contraction in the complementary section variable and the required finite-dimensional section homotopy. On overlaps common stabilization and the positive normalization give the same class. This is the local calculation of Article IV, §§2–3 and Appendices A–B with the higher rank-drop stratum retained.
+
+After displacement Calculation F5 gives $-\eta_f(4F_2(D_\theta)+\sum_r E(D_\theta;r))$ for the marked surfaces. Calculation F6 gives $\eta_f\epsilon(A_\delta)F_2(A_\delta)$ for the compact finite-tower family with normalization and all stack factors. This proves (1). With increasing $\delta$ the marked expression changes by $+3$ at each flag and the weighted tower changes by $-6$ in total. Thus the signed chamber differences cancel, also directly verifying agreement of the two expressions for the original residual.
+
+**Choice of the original time direction.** Let $\widetilde D_t$ be any smooth fixed-symbol path through this $D_0$ whose time column completes the lower branch map with the same sign. Interpolate the path to $D_0+tK$ by their convex combination, keeping the central operator fixed. In the one-dimensional quotient by the branch columns the interpolated time class stays nonzero, with a uniform lower bound. It suffices to isolate the *undisplaced* central incidence throughout this compact homotopy of paths. This check uses only one time on the two components. In Calculations F1 and F5 the coefficient on both sides of the neck is the same smooth $B_t(w)$; all centered estimates, including (3) of Calculation F5, apply with uniform smooth bounds in the homotopy parameter. In the frozen proof of Calculation F7 the exchange interpolation keeps a common time fixed, so no difference of neck coefficients from independent times arises. Differentiating this common lower time varies the smooth factor on both copies; in the glued trial the terms with its derivative have the same cross-term bounds as the terms with the original smooth factor. Thus the fixed-$q$ derivative estimates and the conclusions of Calculation F7 at zero row tolerance apply uniformly to this subfamily. Equivalently the limiting contradiction at a split join uses the same branch and matching equations for a convergent subsequence of paths in the interpolation. Equal-height zeros descend to the normalized lower crossing. On the compact upper surface away from those joins the parameter-enlarged target argument of Calculation F6 uses the interpolated inhomogeneous time column; its projection is uniformly transverse, while the kernel and radial normalization at the common central operator are unchanged. One may include the interpolation parameter as another constant complex-disk coordinate tangent to the fixed submanifold in that argument. The remaining marked and open-interval neighborhoods use the same compactness and uniformly transverse lower columns as above. A common isolating neighborhood and short original time interval now follow by compactness of the parameter segment and of the central support. Homotopy invariance of the relative class identifies the two local changes. The disk-supported path is used to *evaluate* (1), and changes of its test tensor preserving the crossing orientation give the same value.
+
+## Primitive coefficient and ordinary crossing counts
+
+Put $H=2h-1$ and $J_f(H)=\eta_f(T-2S_C)$ as in Calculation F2. Adding its already isolated sectors to (1) gives the full connected supported coefficient $R-(H-1)J_f(H)/12+\eta_f(2S_C+1)$ at genus $2h$. Its subtraction of the degree-two proper divisor and of the minimum-genus primitive sine coefficient gives (2). All assertions are for a fixed lower wall and the specified genus.
+
+One can evaluate the new class by signed ordinary and prescribed-pole crossings of double covers on the two fixed targets. Use the reference paths and signs $W_4,W_2$ of [Calculation E5](../polar/polar-kernels-on-two-branched-double-covers.md), specifying the target of $W_4$ by its operator. In the prescribed-pole count on $C$ keep the lower flag fixed. Then
+$$
+ \frac{R}{\eta_f}=
+ \frac{2^{2h}(h-1)(h-2)}{16}+W_4(A_\delta)
+ -\epsilon(D_0)\left(
+       \frac{2^{2g}g(g-1)}4+4W_4(D_\theta)
+                         +\sum_r W_2(D_\theta;r)\right).                      \tag{5}
+$$
+Here $\epsilon(D_\theta)=\epsilon(D_0)$ by base invertibility. Every constant in (2) and (5) is integral for $g\ge2$. For a genus-two target, the fixed constants in (5) are $96$ on $Y$ and $8$ on $C$, and the further offset in (2) is $\eta_f(2S_C+97)$. Neither the hypotheses nor the sign of the lower crossing determine the individual upper chamber numbers; the crossing counts specify the further operator data in the formula.

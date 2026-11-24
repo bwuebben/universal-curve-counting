@@ -1,0 +1,182 @@
+\section{Spin structures and the signs of covers}\label{sec:spin}
+
+Let $C$ be a closed Riemann surface of genus $g\ge2$, and write $K_C$
+for its canonical bundle. A theta characteristic is a holomorphic line
+bundle $L$ with a specified isomorphism $L^{\otimes2}\simeq K_C$.
+Given two theta characteristics $L_1,L_2$, put $E=L_1\oplus L_2$.
+The two square maps define a nondegenerate holomorphic symmetric
+pairing $\gamma:E\otimes E\to K_C$, with the summands orthogonal.
+Fix a Hermitian metric $h$ on $E$. Applying its conjugate-linear
+identification $E^*\to E$ to $\gamma(s,\cdot)$ and conjugating the
+one-form factor gives a conjugate-linear map
+$R:E\to\Lambda^{0,1}T^*C\otimes E$. Our endpoint operator is
+\[
+                 D=\bar\partial_E+R .
+\]
+A real Cauchy--Riemann operator with the same symbol differs from $D$
+by a real bundle homomorphism of order zero.
+
+Give the total space of $E$ the almost-complex structure for which
+the projection is holomorphic, each fiber has its complex linear
+structure, and the graph equation over a holomorphic map
+$f:\Sigma\to C$ is $D_f s=0$. Here $D_f$ is the pullback real
+Cauchy--Riemann operator, with $df$ applied to the differential
+factor of $R$. In holomorphic bundle coordinates its horizontal lift
+of $\partial_{\bar z}$ has vertical $(1,0)$ part $-R_{\bar z}(v)$
+at $(z,v)$. The ambient first Chern number on the zero section is
+$2-2g+\deg E=0$.
+
+\begin{lemma}\label{lem:spin-gap}
+For $D=\bar\partial_E+R$, the zero section is the only compact
+irreducible curve in the total space. With metrics pulled back from
+$C$, there exists $b>0$ such that on every finite \'etale cover $f$
+the pulled-back operator $D_f$ has index zero and satisfies
+\[
+                       \|D_f s\|_{L^2}\ge b\|s\|_{L^2}.
+\]
+The same inequality, with $b/2$, holds simultaneously on all such
+covers after a zeroth-order perturbation of pointwise operator norm
+less than $b/2$.
+\end{lemma}
+
+\begin{proof}
+For a compact curve projecting nonconstantly to $C$, let $f:\Sigma\to C$
+be the projection of its normalization and let $s$ be its vertical
+coordinate. The form $\alpha=df^*\gamma(s,s)$ on $\Sigma$ is globally
+defined, where $df^*$ denotes pullback on the one-form factor.
+Holomorphicity of $\gamma$ and symmetry give
+$\bar\partial\alpha=2\,df^*\gamma(\bar\partial s,s)$, with exterior
+multiplication in the differential factors. In coordinates $u$ on
+$\Sigma$, $z$ on $C$, and $\gamma=G\,dz$, the equation for the graph
+therefore gives
+\[
+  \bar\partial\alpha
+    =-2\,|G(s,\cdot)|_{h^*}^{2}\,|\partial_u f|^2\,d\bar u\wedge du .
+\]
+Stokes' theorem implies $s=0$ on the unramified locus and hence on
+$\Sigma$. A compact curve in a single complex vector space is constant.
+
+For an \'etale cover and an arbitrary smooth section, the mixed
+$L^2$ inner product of $\bar\partial s$ with $R_f s$ is a fixed
+constant multiple of $\int_\Sigma\bar\partial\alpha$. Indeed, in a
+conformal coordinate the factor in the cotangent metric cancels the
+factor in the volume form. Thus for every real $a$,
+\begin{equation}\label{eq:spin-norm}
+ \|\bar\partial s+a R_f s\|_2^2
+   =\|\bar\partial s\|_2^2+a^2\|R_f s\|_2^2 .
+\end{equation}
+The least singular value of $R$ has a positive minimum $b$ on $C$
+and retains that bound under \'etale pullback. Riemann--Hurwitz
+gives $g(\Sigma)-1=(\deg f)(g-1)$ on each connected cover.
+Riemann--Roch then gives complex Dolbeault index zero for $f^*E$,
+and hence real index zero for $D_f$. The perturbation bound follows
+from the triangle inequality.
+\end{proof}
+
+Let $P_f$ be the real permutation local system on the sheets of $f$.
+The evaluation of $w_1(P_f)$ on a loop is the parity of its
+monodromy permutation. Write $\ell_w=L_2L_1^{-1}$ for the flat
+sign line determined by $w\in H^1(C;\ZZ/2)$, using its specified
+square trivialization, and set
+\[
+            \epsilon=(-1)^{h^0(C,L_1)+h^0(C,L_2)} .
+\]
+We orient the determinant line of a real Cauchy--Riemann operator
+by continuation of the complex orientation through the affine
+operator space. At an invertible operator its comparison with the
+canonical orientation of the determinant of the zero spaces is a
+sign.
+
+\begin{proposition}\label{prop:spin-sign}
+For any finite \'etale cover $f$ of degree $m$, the determinant sign of
+$D_f$ is
+\begin{equation}\label{eq:spin-sign}
+        \sigma(f)=\epsilon^m
+        (-1)^{\langle w\smile w_1(P_f),[C]\rangle}.
+\end{equation}
+For each $w\ne0$ there are pairs with this $w$ and either value of
+$\epsilon$. A pair of identical theta characteristics gives $w=0$
+and $\epsilon=1$. These pairs can all be realized on the same
+smooth complex rank-two bundle over $C$.
+\end{proposition}
+
+\begin{proof}
+First follow $\bar\partial+aR_f$ from $a=0$ to $a=1$ on the source.
+Identify the complex cokernel of $\bar\partial$ with
+$H^0(f^*E)^*$ by Serre duality and the pulled-back symmetric pairing,
+using $f^*K_C=K_\Sigma$. The map from the kernel to the cokernel
+induced by the derivative $R_f$ is a conjugate-linear isomorphism.
+Indeed, its Serre pairing on two holomorphic sections is a nonzero
+constant times the integrated Hermitian product of their images under
+the symmetric isomorphism. The corresponding real determinant has
+sign $(-1)^{h^0(f^*E)}$. Splitting off complex complements gives a
+finite-dimensional reduced map $a[R_f]+O(a^2)$ with that sign for
+small $a>0$. Equation~\eqref{eq:spin-norm} extends it to $a=1$.
+This is the two-line version of the spin determinant computation
+of Lee and Parker \cite[Theorem~3.1]{lp}.
+
+Let $q_L$ be the spin quadratic refinement of the mod-two intersection
+form on $H_1(C;\ZZ/2)$. Spin parity equals its Arf invariant, and
+twisting by $w$ adds intersection with $x=\operatorname{PD}(w)$
+to $q_L$. The Arf formula in a symplectic basis therefore gives
+\[
+       h^0(L\ell_w)+h^0(L)=q_L(x)\pmod2
+\]
+\cite{atiyah,johnson}. For $w\ne0$, choose a simple nonseparating
+circle $c$ representing $x$. Its preimage consists of disjoint
+circles $c_i$ covering $c$ with degrees $n_i$. For a simple circle
+the quadratic refinement is one plus the evaluation of the spin
+double cover on the tangentially framed circle
+\cite[Theorems~1A and~3A]{johnson}. The tangent framing pulls back
+along the degree-$n_i$ cover. Hence
+\[
+       q_{f^*L}([c_i])=n_i q_L(x)+n_i-1\pmod2 .
+\]
+The union represents $\operatorname{PD}(f^*w)$ and all pairwise
+intersection terms vanish. Summing and using $\sum_i n_i=m$ gives
+$m q_L(x)$ plus the parity of the permutation around $c$.
+This proves~\eqref{eq:spin-sign} for $L=L_1$. For $w=0$ the two
+parities on the cover coincide. On a disconnected cover the
+determinants multiply.
+
+Twisting both theta characteristics by a sign line whose class
+evaluates nontrivially on $x$ reverses $q_{L_1}(x)$ and preserves
+$w$. This realizes both signs for $w\ne0$. All the resulting bundles
+have rank two and degree $2g-2$, which determine their smooth
+complex bundle isomorphism class on a surface. After any such
+identification the operators are joined by a smooth path of
+zeroth-order perturbations. Complex bundle isomorphisms preserve
+the determinant convention.
+\end{proof}
+
+The sign formula also gives the determinant of the twist $D^U$ by
+any flat real orthogonal local system $U$ of rank $r$. The pairing
+on $U$ and the argument for~\eqref{eq:spin-norm} give invertibility.
+For a theta characteristic $L$ the orthogonal mod-two index formula
+is
+\[
+ h^0(L\otimes U_{\CC})\equiv
+ r h^0(L)+q_L(\operatorname{PD}(w_1(U)))
+              +\langle w_2(U),[C]\rangle \pmod2
+\]
+\cite[Lemma~5.8]{bspectral}. Adding this equality for $L=L_1,L_2$
+cancels the second Stiefel--Whitney terms. Thus
+\begin{equation}\label{eq:spin-twist}
+        \operatorname{sign}(D^U)
+            =\epsilon^r(-1)^{\langle w\smile w_1(U),[C]\rangle}.
+\end{equation}
+
+Finally, for a connected stable map of covering degree $m>0$ in an
+endpoint tube, let $d_i$ be the positive degrees of its nonconstant
+normalized components. Each has genus at least $1+d_i(g-1)$.
+The arithmetic genus is the sum of the normalized genera and the
+first Betti number of the dual graph. Its minimum $1+m(g-1)$
+therefore requires one nonconstant component, \'etale over $C$,
+and a tree of components of which every contracted one is rational.
+Any nonempty contracted subtree has an unstable leaf for unmarked
+maps. The maps at the minimum are precisely the connected \'etale
+covers. The derivative $df$ identifies the tangent deformation
+complex in the target curve with the source deformation complex
+with its complex orientation. The remaining normal operator $D_f$
+is invertible. The regular local contribution of this map in the
+fixed target is consequently $\sigma(f)/|\operatorname{Aut}_C(f)|$.

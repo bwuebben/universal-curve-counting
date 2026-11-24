@@ -1,0 +1,370 @@
+\section{Signed Hurwitz numbers and their elementary multiplicities}\label{p8-sec:characters}
+
+Let $a,b$ be the theta characteristics of the two normal lines,
+$w=ba^{-1}\in H^1(C;\ZZ/2)$ their difference, and
+$\epsilon=(-1)^{h^0(a)+h^0(b)}$. Put $H_m=1+m(g-1)$ and
+$c_m=L_{m,H_m}$. For a cell $u$ of a partition $\lambda$, let
+$h(u)$ denote its hook length and $c(u)$ its column minus its row.
+Write $H_\lambda=\prod_{u\in\lambda}h(u)$. Let $\mathcal P_w$
+consist of all partitions if $w=0$ and all self-conjugate partitions
+if $w\ne0$, including the empty partition in either case. Set
+\[
+ Z_w(y)=\sum_{\lambda\in\mathcal P_w}
+               H_\lambda^{\,2g-2}y^{|\lambda|}.
+\]
+
+\begin{theorem}\label{p8-thm:hooks}
+The connected local counts at the first two possible source genera
+satisfy $c_m=\epsilon^m[y^m]\log Z_w(y)$ and
+\begin{equation}
+ L_{m,H_m+1}
+ =-\frac{\epsilon^m(g-1)}{12}[y^m]\,
+  \frac{\displaystyle\sum_{\lambda\in\mathcal P_w}
+         H_\lambda^{\,2g-2}\!
+         \left(\sum_{u\in\lambda}h(u)^2\right)y^{|\lambda|}}
+       {Z_w(y)}.
+ \label{p8-eq:character-first-excess}
+\end{equation}
+\end{theorem}
+
+For equal spin structures the right side is the first correction
+in the balanced hook formula. The restriction to self-conjugate
+partitions comes from a sign on one handle of the target.
+
+\subsubsection{The spin sign of a collision}
+At a nodal cover let $f:Y\to C$ be its \'etale normalization,
+including all components. At a smooth cover with one triple
+ramification point let $f:Y\to C$ be the cover itself. Write
+$R$ for the ramification divisor of $f$, so $R=0$ in the first
+case and $R=2r$ in the second. The two signs in the boundary
+intersection are the parities of
+\[
+       f^*a\otimes\mathcal O_Y(R/2),\qquad
+       f^*b\otimes\mathcal O_Y(R/2).
+\]
+For an odd branch these are the spin structures of spin Hurwitz
+theory \cite{eop}. Their product has a simpler expression.
+
+\begin{lemma}\label{p8-lem:odd-branch-sign}
+Let $\alpha\in H^1(C;\ZZ/2)$ be the sign character of the sheet
+permutations of $f$. Then the product of the two spin signs equals
+\begin{equation}
+       \epsilon^m(-1)^{\langle w\smile\alpha,[C]\rangle}.
+ \label{p8-eq:odd-branch-sign}
+\end{equation}
+\end{lemma}
+\begin{proof}
+The bundle $E=f_*\mathcal O_Y(R/2)$ has rank $m$ and carries the
+orthogonal form $\operatorname{Tr}(uv)$. Around $x=z^3$ its ramified
+summand has basis $z^{-1},1,z$ over $\CC\{x\}$. The matrix of the
+trace form in this basis has antidiagonal entries $3$ and all
+other entries zero. The remaining sheets have the ordinary
+permutation form. Thus the pairing extends nondegenerately over the
+branch value. On its complement the determinant character of $E$
+is the permutation sign. A 3-cycle is even, so this character
+extends across the missing point and $w_1(E)=\alpha$.
+
+For an orthogonal bundle of rank $m$ over a spin curve the
+mod-two index formula is
+\[
+ h^0(a\otimes E)\equiv
+ m h^0(a)+q_a(w_1(E))+\langle w_2(E),[C]\rangle\pmod2,
+\]
+where $q_a(v)=h^0(a\otimes v)-h^0(a)\pmod2$
+\cite{ati,baraglia}. By the projection formula the left side is
+the parity on $Y$. Adding this identity for $a$ and $b$ cancels
+$w_2(E)$. Since $q_b(v)-q_a(v)=\langle w\smile v,[C]\rangle$,
+the result follows. The same calculation applies to a disconnected
+source by direct sum.
+\end{proof}
+
+\subsubsection{One signed handle and one marked collision}
+We remove the common factor $\epsilon^m$ in degree $m$ until the
+end of the calculation. For $w\ne0$ choose a simple nonseparating
+circle representing its Poincar\'e dual as the first generator in a
+surface presentation, disjoint from the branch value. The remaining
+sign in~\eqref{p8-eq:odd-branch-sign} is $\operatorname{sgn}(A_1)$
+for its sheet permutation $A_1$. Take $\chi=\operatorname{sgn}$ in
+this case and $\chi=1$ for $w=0$. For $G=S_m$ put
+\[
+ K_\chi=\sum_{A,B\in G}\chi(A)\,ABA^{-1}B^{-1}\in\CC[G].
+\]
+On an irreducible representation $V$ of dimension $d$ and character
+$\psi$, this central element has scalar
+\[
+ \frac{|G|}{d^2}\sum_{A\in G}\chi(A)|\psi(A)|^2
+  =\left(\frac{|G|}{d}\right)^2
+       {\bf1}_{\,V\otimes\chi\simeq V}.
+\]
+Indeed the sum over $B$ of the conjugates of $A^{-1}$ acts by
+$|G|\overline{\psi(A)}/d$, and the last equality is character
+orthogonality. The other $g-1$ handles contribute $K_1$.
+
+The identity coefficient of $K_\chi K_1^{g-1}$ counts the labelled
+\'etale covers with this sign. It equals the regular trace divided
+by $|G|$. Relabelling sheets divides by $|G|$ once more, giving
+the inverse automorphism weights. The summand of $V$ is therefore
+$(|G|/d)^{2g-2}$ when $V\otimes\chi\simeq V$. For
+$V=V_\lambda$ the hook-length formula gives $|G|/d=H_\lambda$,
+and tensoring with sign transposes $\lambda$. The resulting
+disconnected series is $Z_w$. Decomposition into connected
+components gives the formula for $c_m$, as in \cite[Appendix~F]{WueUnramified}.
+
+Denote by $N_m$ the signed mass over one fixed target point of
+\'etale covers with two distinct sheets identified to give a
+connected nodal cover. Denote by $T_m$ the signed mass of connected
+covers with a single 3-cycle over that point. Both masses still omit
+$\epsilon^m$. Before imposing connectivity the first mark has
+$\binom m2$ choices on each labelled fiber. After gluing, the marked
+component is unique, and all its companions are unmarked \'etale
+covers. Removing their generating function gives
+\begin{equation}
+    \sum_{m\ge1}N_m y^m=\frac{y^2 Z_w''(y)}{2Z_w(y)}.
+ \label{p8-eq:character-nodal}
+\end{equation}
+In particular this includes a node joining two distinct components
+of the normalization. For the triple mark the handle product is
+multiplied by the class sum of all 3-cycles. The Jucys--Murphy
+elements $J_j=\sum_{i<j}(ij)$ satisfy
+\[
+     \sum_j J_j^2=\binom m2\,1+\sum_{\tau\text{ a 3-cycle}}\tau .
+\]
+Indeed the nondiagonal terms of $J_j^2$ list the 3-cycles with
+largest letter $j$, each once. In the Young basis the $J_j$ act
+by the contents of the cells containing $j$ \cite{jucys}. Removing
+the unmarked components as above now gives
+\begin{equation}
+ \sum_{m\ge1}T_m y^m
+  =\frac{1}{Z_w(y)}\sum_{\lambda\in\mathcal P_w}
+      H_\lambda^{\,2g-2}
+      \left(\sum_{u\in\lambda}c(u)^2-\binom{|\lambda|}{2}\right)
+      y^{|\lambda|}.
+ \label{p8-eq:character-triple}
+\end{equation}
+
+\begin{proof}[Proof of Theorem~\ref{p8-thm:hooks}]
+The two collision intersections give the finite contribution
+$-\epsilon^m(g-1)(3N_m+T_m)/12$. The contracted elliptic tails add
+$-m(g-1)c_m/12$. Since $y(\log Z_w)'=y Z_w'/Z_w$, the three
+terms over the common denominator $Z_w$ have total insertion on
+a partition of size $m$ equal to
+\[
+ 3\binom m2+\sum_{u\in\lambda}c(u)^2-\binom m2+m
+ =m^2+\sum_{u\in\lambda}c(u)^2
+ =\sum_{u\in\lambda}h(u)^2 .
+\]
+The last equality is the hook-content square identity \cite{menon}.
+Restoring $\epsilon^m$ proves~\eqref{p8-eq:character-first-excess}.
+\end{proof}
+
+\subsubsection{Degree three}
+Write $s=2g-2$. In degree three the partitions $(3),(2,1),(1^3)$
+have hook products $6,3,6$, respectively. Only $(2,1)$ is
+self-conjugate. Equations~\eqref{p8-eq:character-nodal}
+and~\eqref{p8-eq:character-triple}, including the lower coefficients in
+the division by $Z_w$, give
+\[
+\begin{array}{c|cc}
+ &N_3&T_3\\ \hline
+ w=0   &6\cdot6^s+3\cdot3^s-2\cdot2^s &(4^g-1)3^s\\
+ w\ne0 &3^{2g-1}&-3^s .
+\end{array}
+\]
+Thus the finite contribution for equal spins is
+$-(g-1)(22\cdot6^s+8\cdot3^s-6\cdot2^s)/12$, and for distinct
+spins it is $-2\epsilon(g-1)3^s/3$. At this prime degree the
+proper divisor one contributes $\epsilon$ times the finite degree
+of the balanced genus-$g$ core. The degree-one finite contribution
+at positive excess is zero. Cancellation of the elliptic tails
+therefore gives, for $a\ne b$,
+\begin{equation}
+        n_{3,H_3+1}
+       =\frac{\epsilon(g-1)}{6}
+          \left(11\cdot6^{\,2g-2}-3\cdot2^{\,2g-2}\right).
+ \label{p8-eq:cubic}
+\end{equation}
+For $g=2$ the ordinary collision masses are $235$ and $135$,
+with finite contribution $-70$. For distinct spins they are $27$
+and $-9$ before restoring $\epsilon$, with finite contribution
+$-6\epsilon$. Their difference gives $n_{3,5}=64\epsilon$.
+\subsection{Elementary exponents and unramified quotients}\label{p8-sec:exponents}
+
+Let $F_h(q)$ be the balanced antidiagonal local factor of genus $h$ in
+the rational universal algebra of complex one-cycles of virtual dimension
+zero \cite{pardon,WueProduct}. We use the convention that $F_h$ has
+constant term one. Its image in the algebra of almost-complex cycle
+families is the elementary cluster of genus $h$ of Ionel and
+Parker \cite{ip,WueProduct}. For the isolated spin germ, the characteristic
+insertions at the compact cycles $m[C]$ have a unique balanced lift
+\cite[Proposition~3.1]{WueUnramified}
+\begin{equation}\label{p8-eq:lifted-product}
+  \widetilde P=\prod_{d\ge1,\ h\ge H_d}F_h(q^d)^{n_{d,h}}.
+\end{equation}
+The exponents are integral and have finite support in $h$ at fixed
+$d$. This uses geometric decomposition after compact realization and
+the multiplicity-one detection theorem of \cite{WueProduct}. Along the
+fixed-target cluster decompositions, connected Gromov--Witten degrees
+add on disjoint targets. Thus the same exponents give the expansion
+of the connected series in the elementary logarithms. The use of
+fixed-target degrees in this expansion relies on that geometric
+comparison. In particular no evaluation of arbitrary analytic
+parameter families is required here.
+
+Put $n_d=n_{d,H_d}$. In this notation the tail cancellation of
+\eqref{p8-eq:tails-exponent} subtracts the equal-spin finite-map integrals
+on unramified covers. We next express the subtraction in terms of
+the individual maps to $C$.
+
+\subsubsection{A count using the maximal unramified quotient}
+Fix a target point $x$. Let $\mathcal B_m(x)$ denote the isomorphism
+classes of the finite maps over the nodal and triple divisors with
+collision value $x$. Such an object has one distinguished node or one
+triple ramification point. Write $k(f)=1$ in the nodal case and
+$k(f)=3$ in the triple case, and write $\tau(f)$ for the product of
+the two spin parities in~\eqref{p8-eq:intro-divisor}. All automorphisms
+in this section fix the target. Put $\Gamma=\pi_1(C)$ and regard
+$H(f)=f_*\pi_1(Y)$ as a conjugacy class of subgroups. This is the factorization by the image of the fundamental group used
+by Bryan and Pandharipande \cite[\S2.2, Proposition~2.3]{bp01}.
+It uses
+the connected nodal space $Y$ itself when $f$ has a node.
+The connected cover of $C$ corresponding to $H(f)$ is finite:
+$f$ lifts to it, and the lift is holomorphic locally on every
+component. A nonconstant holomorphic map from a compact component
+to a connected Riemann surface forces that surface to be compact.
+Composition of degrees shows that $[\Gamma:H(f)]$ divides $m$.
+This cover is the maximal unramified quotient of $f$, in the sense
+that every factorization through an unramified connected cover
+factors through it after making compatible choices of base points.
+For finite-index $H\le\Gamma$ write $\sigma(H)$ for the determinant
+sign of the spin pair on its unramified cover.
+
+\begin{theorem}\label{p8-thm:transfer}
+For every $m\ge1$,
+\[
+ n_{m,H_m+1}
+  =\frac{g-1}{4}\!
+     \sum_{f\in\mathcal B_m(x)}
+     \frac{\sigma(H(f))-\tau(f)}
+          {k(f)\,|\operatorname{Aut}_C(f)|}.
+\]
+In particular the difference of the exponents for two spin pairs
+is obtained by taking the corresponding difference in these
+boundary and unramified signs on the same covers.
+\end{theorem}
+\begin{proof}
+By the orbit formula for the determinant signs \cite[Theorem~16.1]{WueUnramified}, there are
+integers $b_K$ indexed by conjugacy classes of finite-index subgroups
+such that
+\[
+ \sigma(H)=\sum_{[K]} b_K |(\Gamma/K)^H|,
+ \qquad n_d=\sum_{[\Gamma:K]=d} b_K .
+\]
+In the second sum each conjugacy class is used once. The first formula
+is the fixed-point count, or mark, of a unit in the completed Burnside
+ring; only subgroups of index dividing $[\Gamma:H]$ contribute.
+For a fixed cover $z:Z\to C$ corresponding to $K$ of index $d$,
+the number of lifts of $f$ to $Z$ is $|(\Gamma/K)^{H(f)}|$.
+The groupoid of such lifts over an object $f$ has mass this number
+divided by $|\operatorname{Aut}_C(f)|$, by orbit-stabilizer.
+Here $Z$ is a fixed target, so its deck group does not divide this
+number. Counting the same lifted maps on $Z$ allows the collision
+value to be any of the $d$ preimages of $x$. The mass at each such
+value is the same, by continuation along the connected curve $Z$.
+An unramified change of target preserves the node or the triple
+point and hence the weight $1/k(f)$. All boundary signs in the
+equal-spin elementary pair on $Z$ are positive. By
+Theorem~\ref{p8-thm:boundary} and $H_d-1=d(g-1)$ we obtain
+\[
+ F_{m/d}^{\rm elem}(H_d)=
+ -\frac{g-1}{4}
+  \sum_{f\in\mathcal B_m(x)}
+  \frac{|(\Gamma/K)^{H(f)}|}
+       {k(f)\,|\operatorname{Aut}_C(f)|}
+\]
+whenever $d\mid m$. For $d\nmid m$ the fixed sets are empty.
+Multiply by $b_K$, sum, and apply~\eqref{p8-eq:tails-exponent} and
+the signed boundary formula for $D$.
+\end{proof}
+
+\begin{corollary}\label{p8-cor:prime-growth}
+Let $a\ne b$ and let $p$ be an odd prime. The signs of $n_{p,H_p}$
+and $n_{p,H_p+1}$ are $-\epsilon$ and $\epsilon$, respectively, and
+\[
+ |n_{p,H_p+1}|\ > \frac{g-1}{4}\binom{p}{2}\,|n_{p,H_p}| .
+\]
+For each $g$ there is a path of tame structures on a closed
+symplectic six-torus for which the isolated positive-sign core at
+its two ends has different local elementary exponents at both these
+source genera for every odd prime $p$.
+\end{corollary}
+\begin{proof}
+Every collision in prime degree has $H(f)=\Gamma$. Otherwise its
+maximal unramified quotient would have degree $p$ and the lift degree
+one. A finite flat degree-one cover of a smooth curve is an
+isomorphism, inconsistent with either collision. Thus its unramified
+sign in Theorem~\ref{p8-thm:transfer} is $\epsilon$. The boundary sign
+is $\epsilon^p$ times the permutation sign around a loop Poincar\'e
+dual to the difference $ba^{-1}$, by the parity formula in
+Section~\ref{p8-sec:characters}. Consequently each negative permutation
+sign contributes with sign $\epsilon$. Let $U_-$ be the inverse-deck
+mass of connected unramified covers with that negative sign. Each
+one supplies $\binom p2$ unordered pairs in the fiber at $x$ whose
+identification forms a node of the same character. Their total mass
+is $\binom p2 U_-$. In least genus $n_{p,H_p}=-2\epsilon U_-$ by
+the unramified formula. Also $U_->0$: choose surface generators
+with the chosen loop first, send it to a transposition, send the
+generator of another handle to a $p$-cycle, and send all remaining
+generators to the identity. The source is connected and the surface
+relation holds. These nodes alone give the weak inequality. There is also a nodal cover
+with disconnected normalization of degrees $1$ and $p-1$. Choose a
+connected cyclic $(p-1)$-cover whose sign on the chosen loop is negative
+by sending the loop to a full cycle. Join one of its sheets to the
+degree-one sheet at $x$. The resulting map has the same negative
+permutation sign, giving a further positive mass after multiplication
+by $\epsilon$. This proves the strict inequality.
+The path and its primitive core class are supplied by the compact
+spin realization of \cite[\S15]{WueUnramified}. Its ends are the equal
+spin germ and a distinct-spin germ of the same positive sign. The
+equal-spin germ has only the genus-$g$ elementary factor in degree
+one. The displayed comparison concerns the endpoints; it requires
+no assignment of a branched count to a single parameter of the path.
+\end{proof}
+
+One may express the result as a comparison of integral universal
+products. Let $z$ be an indeterminate and let $Q_h(z)\in\ZZ[z]$ be the
+polynomial with $Q_h(4\sin^2(t/2))=4\sin^2(ht/2)$. It is integral
+by the cosine recurrence, with $Q_h(0)=0$ and $Q_1(z)=z$.
+With $\mathcal P_w$ the partition set of \S\ref{p8-sec:characters} for the spin difference $w$, put
+\[
+ \mathcal Z(q,z)=\sum_{\lambda\in\mathcal P_w}
+     (\epsilon q)^{|\lambda|}\prod_{s\in\lambda}Q_{h(s)}(z)^{g-1}.
+\]
+This has a unique formal expansion as an integral product of ordinary
+balanced hook series of genera $h$ evaluated at $q^d$. Indeed, in
+degree $d$ subtract the already determined factors of smaller degree
+by multiplying by their inverses. The resulting coefficient is an
+integral polynomial in $z$ divisible by $z^{d(g-1)}$. The degree-one
+terms of the balanced factors are the distinct monomials $z^{h-1}$,
+so its coefficients give the required integer exponents for this
+degree. The divisibility is preserved under products and inversion,
+and each degree requires only finitely many genera. Using these
+exponents as in~\eqref{p8-eq:lifted-product} gives a balanced element
+in the completed universal algebra.
+\begin{corollary}\label{p8-cor:quotient}
+This element agrees with $\widetilde P$ modulo the subgroup of
+balanced products generated, with degree completion, by the
+$F_h(q^d)$ with $h\ge H_d+2$.
+\end{corollary}
+\begin{proof}
+Substitute $q=y t^{-2(g-1)}$ and $z=4\sin^2(t/2)$ in the formal
+product. There are no negative powers of $t$ after this normalization.
+The constant and quadratic coefficients in $t$ in its connected
+logarithm are the unramified connected counts and
+\eqref{p8-eq:character-first-excess}: a box of hook length $k$ contributes a
+relative quadratic term $-(g-1)k^2/12$. These are exactly the
+corresponding numerical coefficients of the geometric product.
+Triangularity in covering degree and then in source genus, as in
+\eqref{p8-eq:tails-exponent}, identifies its integer exponents in both
+genera. Applying those exponents in the universal factors proves the
+claim. Thus the two lowest genera can also be recovered directly from the collision and tail geometry, independently of the all-genus comparison in Theorem~\ref{thm:spin}.
+\end{proof}

@@ -1,0 +1,246 @@
+\section{The Euler class of a single spin operator}\label{sec:spin-residues}
+A single spin line yields a real Euler class before pairing the two normal directions. This class retains local collision data which disappear from the closed partition function. We compute it first on the finite-map component and then include the stable maps with a contracted elliptic tail.
+Let $C$ be a smooth closed complex curve of genus $g\ge2$, and let
+$\theta$ be a theta characteristic on $C$, a holomorphic line with an
+isomorphism $\theta^2\simeq K_C$. If $f:Y\to C$ is a holomorphic
+cover, its pullback spin operator on $L=f^*\theta$ is the real
+Cauchy--Riemann operator obtained by adding the metric conjugate of
+$df:L\to K_YL^{-1}$ to $\bar\partial_L$. Lee and Parker
+\cite{lpob} constructed its real obstruction bundle on the space of
+stable maps. Its restriction to unramified covers has rank zero, and
+the orientation of a regular cover is its spin parity. Ramification
+produces a bundle of positive rank. We determine its Euler class on
+the first Hurwitz spaces on which this occurs.
+
+Write $H_m=1+m(g-1)$. In degree $m\ge2$ and source genus $H_m+1$, the
+connected unmarked finite maps form a compact smooth stack surface
+$\mathcal F_m$. Its general point is a cover with two simple
+ramification points. For a connected boundary divisor $B$ of nodal
+covers put $s_\theta(B)=(-1)^{h^0(\widetilde f^*\theta)}$, where
+$\widetilde f$ is the normalization of a member. For a divisor of
+covers with a single triple ramification point $p$, put
+$s_\theta(B)=(-1)^{h^0(f^*\theta(p))}$. Both are parities of theta
+characteristics. Our divisor formula is
+\begin{equation}\label{p8-eq:intro-divisor}
+       e(\operatorname{coker}D_\theta)
+          =-\frac14\sum_{B} s_\theta(B)[B]
+             \quad\text{in }H^2(\mathcal F_m;\QQ).
+\end{equation}
+Here $B$ runs over the reduced divisors of the two indicated types.
+At two simple ramification points over the same value the obstruction
+has rational Euler class zero. The equality holds before integrating
+against another class.
+
+\subsection{The spin obstruction and the residue pairing}\label{p8-sec:residue}
+
+Let \(f:Y\to C\) be a finite map of smooth compact curves and fix an
+isomorphism \(\theta^2\simeq K_C\). Put \(L=f^*\theta\) and
+\(P=K_YL^{-1}\). The differential of \(f\) gives a holomorphic map
+\(\sigma:L\to P\) whose divisor is the ramification divisor \(R\).
+Write \(\deg R=2r\). A Hermitian metric on \(L\) gives a conjugate-linear
+identification \(c:P\to\Lambda^{0,1}T^*Y\otimes L\). The real spin
+operator and the complex space of ramification residues are
+\begin{equation}\label{p8-eq:residue-operator}
+ D_\theta=\bar\partial_L+c\sigma,\qquad
+ \mathcal E_f=H^0(Y,P/\sigma L).
+\end{equation}
+The identity
+\(\|D_\theta u\|^2=\|\bar\partial u\|^2+\|c\sigma u\|^2\)
+follows from Stokes' theorem applied to \(\sigma u^2\). In particular
+\(D_\theta\) is injective and its cokernel \(V_\theta\) has real rank
+\(2r\). We orient it by continuing the complex determinant orientation
+along \(\bar\partial_L+t c\sigma\), \(0\le t\le1\), with the dual
+determinant convention for a cokernel \cite[\S12]{lpob}.
+
+\begin{theorem}\label{p8-thm:residue}
+Over a family of finite maps with smooth domains and fixed total
+ramification \(2r\), the complexification of \(V_\theta\) identifies
+with the complex orthogonal bundle \(\mathcal E\) whose form is
+\begin{equation}\label{p8-eq:ramification-residues}
+ b(v,v')=\sum_{p\in R_{\rm red}}\operatorname{Res}_p
+                         \frac{vv'}{\sigma}.
+\end{equation}
+More precisely, up to the universal normalization of the Serre pairing,
+\(V_\theta\) identifies with a positive real form of \(\mathcal E\).
+At each map the image \(S=H^0(P)/\sigma H^0(L)\) is a maximal
+isotropic subspace. Projection from \(V_\theta\) to
+\(\mathcal E/S=S^*\) is a real isomorphism of orientation sign
+\((-1)^{h^0(L)}\).
+\end{theorem}
+
+\begin{proof}
+Resolve \([L\xrightarrow{\sigma}P]\) by its Dolbeault complex. In
+degrees zero, one and two the terms are \(\Omega^0(L)\),
+\(\Omega^{0,1}(L)\oplus\Omega^0(P)\) and \(\Omega^{0,1}(P)\).
+The differentials, written in local coefficients, are
+\[
+ d_0u=(\bar\partial u,\sigma u),\qquad
+ d_1(\beta,v)=\bar\partial_Pv-\sigma\beta .
+\]
+The sheaf map is injective and its cokernel has finite support.
+Hence the middle cohomology is \(\mathcal E_f\) and all other
+cohomology vanishes. On the middle term take the symmetric bilinear
+pairing
+\[
+     B\big((\beta,v),(\beta',v')\big)
+                      =\int_Y(\beta v'+\beta'v),
+\]
+with the one-form factors in a fixed order. Integration by parts
+identifies the \(B\)-annihilator of \(\operatorname{im}d_0\) with
+\(\ker d_1\). On cohomology \(B\) is \eqref{p8-eq:ramification-residues}
+up to a constant. Indeed, lift local representatives of \(v\) at the
+zeros of \(\sigma\) by a cutoff to a smooth section \(\widetilde v\)
+of \(P\). A closed middle cochain representing \(v\) is then
+\((\bar\partial\widetilde v/\sigma,\widetilde v)\). Pairing two such
+lifts and applying Stokes off disks about the zeros gives the sum of
+the boundary integrals of \(vv'/\sigma\). At a zero of order \(d\),
+the local form on \(\CC[z]/(z^d)\) takes the coefficient of \(z^{d-1}\)
+in the product, after multiplication by a unit. It is nondegenerate,
+and distinct support points are orthogonal.
+
+The conjugate-linear involution
+\[
+                J(\beta,v)=(c(v),c^{-1}(\beta))
+\]
+makes \(B(\,\cdot\,,J\,\cdot\,)\) a positive Hermitian \(L^2\)
+metric after a constant normalization. In a holomorphic frame of
+squared norm \(h\), \(J\) sends the local coefficients \((\beta,v)\)
+to \((h^{-1}\overline v,h\overline\beta)\). The harmonic middle
+space is the Hermitian orthogonal complement of
+\(\operatorname{im}d_0+J\operatorname{im}d_0\). In particular it is
+\(J\)-invariant. Projection to the first factor identifies the
+\(J\)-fixed part of the middle term with \(\Omega^{0,1}(L)\), and
+sends \((1+J)d_0u/2\) to \(D_\theta u/2\). A fixed vector real
+orthogonal to all these projections is Hermitian orthogonal to
+\(\operatorname{im}d_0\), by testing both \(u\) and \(iu\). It is
+then also orthogonal to \(J\operatorname{im}d_0\). Thus the real
+cokernel identifies with the fixed harmonic space. Elliptic
+stabilization gives the identification in families since the harmonic
+dimension is constant. Equivalently the orthogonal structure group of
+\(\mathcal E\) reduces from \(\mathrm O(2r,\CC)\) to
+\(\mathrm O(2r,\RR)\).
+
+The residue theorem makes \(S\) isotropic, and Riemann--Roch gives
+\(\dim_\CC S=r\). The long exact sequence identifies
+\(\mathcal E_f/S\) with the annihilator of \(\sigma H^0(L)\) in
+\(H^1(L)=H^0(P)^*\). On a harmonic class it is the map
+\((\beta,v)\mapsto[\beta]\). The image of the zeroth-order term \(c\sigma\) on the Dolbeault kernel is the Hermitian dual of \(\sigma H^0(L)\) in \(H^1(L)\).
+Consequently the map from the fixed harmonic space to \(S^*\)
+is the cokernel projection of Lee and Parker
+\cite[Lemma~12.1 and Proposition~12.2]{lpob}. Its sign is
+\((-1)^{h^0(L)}\), from conjugating the complex kernel before taking
+its determinant. This last comparison is at a single map and uses
+no constant-rank assumption on the Dolbeault cohomology of nearby maps.
+\end{proof}
+
+Write \(\kappa=c_1(K_C)\) and use rational cohomology. On a stratum
+of fixed ramification profile we may pass to a finite cover ordering
+the ramification points. Denote by \(\operatorname{ev}_p\) evaluation
+at a marked ramification point \(p\). The following formula concerns
+the restriction to this stratum.
+
+\begin{theorem}\label{p8-thm:profiles}
+If a ramification index is even, \(e(V_\theta)=0\). If all indices
+are odd, write \(R=2D\), \(A=L(D)\), and put
+\(I=H^0(Y,L(D)/L)\). Then
+\begin{equation}\label{p8-eq:odd-profile-euler}
+                 e(V_\theta)=(-1)^{h^0(A)}c_r(I).
+\end{equation}
+For a fixed target an index \(2s+1\ge5\) also gives zero. If the
+ramification consists of \(r\) points of index three, the restriction
+to the ordered stratum is
+\begin{equation}\label{p8-eq:triple-profile-euler}
+             e(V_\theta)=(-1)^{h^0(A)}6^{-r}
+                           \prod_{p\in R_{\rm red}}\operatorname{ev}_p^*\kappa .
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+At an even index the corresponding orthogonal residue summand has odd
+complex rank. A sum of complex orthogonal bundles admits a positive
+real form obtained by taking a positive real form in each summand.
+Any two such reductions are isomorphic, since the space of reductions
+in each fiber is contractible. After orienting the summands on a
+finite cover, the Euler class thus has the Euler class of an
+odd-rank oriented real bundle as a factor. The latter vanishes over
+\(\QQ\). Transfer gives the assertion on the original stratum.
+
+For odd indices \(A^2=K_Y\) by Riemann--Hurwitz. Multiplication by
+\(\sigma\) identifies \(P\) with \(L(2D)\). In this description \(I\)
+is a maximal isotropic subbundle of \(\mathcal E\), since the local
+meromorphic representatives in \(I\) have product with no residue
+in \eqref{p8-eq:ramification-residues}. The two maximal isotropics have
+\[
+                     k=\dim(S\cap I)=h^0(A)-h^0(L).
+\]
+This is the residue construction for a theta characteristic
+\cite[\S1]{mumford}. The line \(A\) is the theta characteristic of the
+oddly ramified cover used in spin Hurwitz theory \cite[\S1]{lp}.
+For two maximal isotropics meeting in dimension \(k\), the real
+projections from a positive real form to their duals induce
+orientations which differ by \((-1)^{r-k}\). To see this, move the
+pair through maximal isotropics with intersection of dimension \(k\)
+to a pair in hyperbolic coordinate form. In the \(r-k\) exchanged
+coordinates the projections differ by complex conjugation. Applying
+Theorem~\ref{p8-thm:residue} and \(c_r(I^*)=(-1)^r c_r(I)\) gives the
+sign \((-1)^{h^0(L)+r-k+r}=(-1)^{h^0(A)}\). The bundle \(I\) exists
+over the entire profile stratum. The parity of the theta
+characteristic \(A\) is locally constant, so the pointwise orientation
+comparison proves \eqref{p8-eq:odd-profile-euler} across jumps of \(h^0(L)\).
+
+At an index \(2s+1\) point with image \(x\), the filtration by pole
+order on \(I\) has graded lines
+\(\theta_x\otimes(T_pY)^{\otimes j}\), \(1\le j\le s\). The
+leading nonzero jet of \(f\) identifies \((T_pY)^{\otimes(2s+1)}\)
+with \(T_xC\). The first Chern classes of the graded lines are
+therefore
+\[
+              \left(\frac12-\frac{j}{2s+1}\right)
+                         \operatorname{ev}_p^*\kappa .
+\]
+When \(s\ge2\), two such factors already have product zero since
+\(\kappa^2=0\) on \(C\). For \(s=1\) the factor is
+\(\operatorname{ev}_p^*\kappa/6\), giving
+\eqref{p8-eq:triple-profile-euler}.
+\end{proof}
+
+On the stratum with \(r\ge2\) distinct triple critical values,
+the product in \eqref{p8-eq:triple-profile-euler} itself vanishes in
+ordinary cohomology. It pulls back from the top cohomology of the
+noncompact ordered configuration space of \(r\) points on \(C\).
+A prescribed coincidence of two values gives zero by \(\kappa^2=0\).
+The class of a family meeting the boundary can nevertheless have a
+contribution supported there.
+
+\begin{corollary}\label{p8-cor:nodal-spin-matching}
+On a stratum of finite nodal maps with fixed dual graph, label the
+components, the nodes, and the two preimages of each node on a finite
+cover. Let \(V_{\theta,i}\) be the oriented cokernel on the \(i\)-th
+normalized component and let \(\operatorname{ev}_j\) send a map to
+the image \(x_j\) of its \(j\)-th node.
+Then the restriction of the nodal Euler class is
+\[
+             \prod_i e(V_{\theta,i})\,
+             \prod_j\operatorname{ev}_j^*c_1(\theta).
+\]
+An unramified component contributes its index-zero determinant sign.
+\end{corollary}
+
+\begin{proof}
+In the \(W^{1,p}\) domain with \(p>2\), the nodal domain is the
+kernel of the surjection taking the differences of values over the
+nodes, with target \(\bigoplus_j\theta_{x_j}\). The spin operators
+on the normalized components are injective. The exact sequence of
+kernels and cokernels therefore gives
+\[
+ 0\longrightarrow\bigoplus_j\theta_{x_j}\longrightarrow
+ V_{\theta,\mathrm{nod}}\longrightarrow\bigoplus_iV_{\theta,i}
+ \longrightarrow0.
+\]
+The determinant isomorphism gives the matching lines their complex
+orientations, by continuation from the complex-linear normalization
+sequence \cite{zinger}. All ranks in the sequence are even, so
+reordering the factors preserves the product orientation. Interchange
+of the two branches at a node tensors its matching line with a flat
+sign line and leaves its rational first Chern class unchanged.
+\end{proof}

@@ -1,0 +1,303 @@
+\section{Virtual degree and the universal class on the same family}\label{sec:comparison}
+
+Let $X\to S$ be the smooth algebraic family of threefolds obtained in
+Theorem~\ref{thm:separate}. At a transverse solution the image is a
+smooth embedded curve $D\subset X_s$ of multiplicity one. Its normal
+bundle $N_D$ has degree $2h-2$, where $h$ is the genus of $D$.
+The deformations over $S$ constructed in \S\ref{sec:deformations}
+surject onto the obstruction space $H^1(D,N_D)$. Indeed, the
+deformations with the projection cover fixed already span the vertical
+obstruction space, and the cover itself is unobstructed. The quotient
+by deformations of the cover gives the obstruction space of the
+embedded map. We first compute the contribution from all connected
+maps with image cycle $[D]$.
+
+\subsection{The relative virtual class}
+
+Let $\mathcal H$ be an open neighborhood of $[D]$ in the relative Hilbert
+scheme of smooth connected proper curves in $X/S$. It can be taken
+inside the Hilbert scheme of a projective completion by restricting
+to curves contained in $X$. Shrink $\mathcal H$ so that the normal obstruction
+map remains surjective. Write $p:\mathcal C\to \mathcal H$ for the universal
+curve and $N$ for its relative normal bundle in $X\times_S \mathcal H$.
+Let $\mathcal M_k(X/S)$ be the stack of connected unmarked stable
+maps of arithmetic genus $k$ to fibers of $X\to S$. We use its
+vertical stable-map obstruction theory over the stack of prestable
+curves times $S$, with the fundamental class of the smooth parameter
+space. This gives a virtual class on the quasi-projective target
+open of \S\ref{sec:deformations}.
+
+\begin{proposition}\label{prop:moving-embedded-curve}
+The scheme $\mathcal H$ is smooth of dimension $\dim S$. For $k\ge h$, let
+\[
+ q:\mathcal D=\overline{\mathcal M}_{k}(\mathcal C/\mathcal H,1)\longrightarrow \mathcal H
+\]
+be the proper stack of degree-one maps to its fibers. Composition
+with the universal embedding identifies $\mathcal D$ with the open
+part of $\mathcal M_k(X/S)$ over the multiplicity-one images
+parametrized by $\mathcal H$. The virtual class of this open part, pushed
+forward by $q$, is $b_{k,h}[\mathcal H]$, where
+\begin{equation}\label{eq:embedded-degree-one}
+ b_{k,h}=[u^{2k-2}]\bigl(2\sin(u/2)\bigr)^{2h-2}.
+\end{equation}
+For $k<h$ the inverse image of this image locus is empty.
+\end{proposition}
+
+\begin{proof}
+For a smooth embedding the tangent complex relative to $S$ is
+$Rp_*N$. This follows by canceling the tangent of the source in the
+deformation complex of the map. The absolute obstruction at $[D]$
+is the cokernel of the map $T_sS\to H^1(D,N_D)$. Its vanishing
+gives smoothness, and $\chi(D,N_D)=0$ gives the asserted dimension.
+In particular the derived space of smooth embedded maps over the
+varying target is classical here. Its absolute tangent is $T_\mathcal H$.
+
+Write $\pi:\mathcal F\to\mathcal D$ for the universal source,
+$a:\mathcal F\to\mathcal C$ for the universal map, and
+$\iota:\mathcal D\to\mathcal M_k(X/S)$ for composition. The cone of
+the induced morphism of virtual tangent complexes is
+\begin{equation}\label{eq:comparison-normal-cone}
+ \operatorname{Cone}\bigl(q^*Rp_*N\longrightarrow R\pi_*a^*N\bigr).
+\end{equation}
+To see the arrow, work first over the stack of prestable sources.
+With the target curve fixed the vertical tangent is
+$R\pi_*a^*T_{\mathcal C/\mathcal H}$, and with the threefold fixed it is
+$R\pi_*a^*(T_{X/S}|_{\mathcal C})$. Their quotient is
+$R\pi_*a^*N$. Allowing the embedded curve to move adds the
+triangle for $T_\mathcal H\to T_S|_\mathcal H$, whose fiber is $Rp_*N$.
+A normal displacement of the embedded curve acts on the composite
+by pullback under $a$. The two tangent triangles therefore give
+\eqref{eq:comparison-normal-cone}. Adding the common motion of the
+prestable source leaves the cone unchanged. Composition with the
+universal embedding is a morphism of the derived mapping stacks.
+Upon truncation it induces the maps of stable-map obstruction
+theories, including their maps to the intrinsic cotangent complexes
+\cite[\S\S1, 2.2]{STV}. The construction is
+relative to the parameter scheme and local in the target along the
+proper source.
+
+At a geometric point $a:F\to D$ of $\mathcal D$, the normalization
+of the unique positive component maps isomorphically to $D$.
+It has no self-node, since two distinct points on the normalization
+have distinct images. Each connected contracted subcurve attaches
+to this component at just one point, for the same reason. Functions
+on a contracted connected fiber are constant and take the value at
+the attachment. Hence $a_*\mathcal O_F=\mathcal O_D$ and
+$R^1a_*\mathcal O_F$ is a sheaf of finite length $k-h$, by the
+Euler characteristics. In particular $k\ge h$. The unit
+$\mathcal O_D\to Ra_*\mathcal O_F$ and the projection formula
+identify the fiber of \eqref{eq:comparison-normal-cone} with
+\[
+ H^0(D,N_D\otimes R^1a_*\mathcal O_F)[-1].
+\]
+Both terms in \eqref{eq:comparison-normal-cone} are perfect and
+commute with derived base change along the flat universal curves.
+A perfect complex whose geometric fibers are concentrated in one
+degree with constant rank is a vector bundle in that degree.
+Thus \eqref{eq:comparison-normal-cone} is $W[-1]$ for a bundle
+$W$ of rank $2(k-h)$ on $\mathcal D$.
+
+The relative tangent complex of the derived composition morphism
+restricts to $W[-2]$ on the classical truncation. For an ordinary
+square-zero extension the relative infinitesimal automorphism,
+tangent and obstruction groups in degrees $-1,0,1$ consequently
+vanish. The classical morphism $\iota$ is formally \'etale and locally
+of finite presentation, hence \'etale. Each image determines its
+point of $\mathcal H$ uniquely, and the stabilizers on both sides consist of
+the same automorphisms of the map from $F$. Thus $\iota$ is a
+representable \'etale monomorphism, and identifies $\mathcal D$
+with the asserted open substack.
+
+On this common classical stack the vector bundle stack of the
+obstruction theory of $\mathcal D$ embeds in the one for
+$\mathcal M_k(X/S)$ with quotient $W$. By compatibility the
+embedding of the intrinsic normal cone for the latter theory factors
+through its embedding for the former. The zero-section Gysin maps
+therefore give \cite[\S\S4--5]{BF}
+\begin{equation}\label{eq:comparison-excess}
+ \iota^*[\mathcal M_k(X/S)]^{\rm vir}
+       =c_{2(k-h)}(W)\cap[\mathcal D]^{\rm vir}.
+\end{equation}
+Here the class on the right uses the smooth family of target curves
+over $\mathcal H$. The equality holds on the stacks, including the stabilizers
+of all contracted subcurves.
+
+The right side of \eqref{eq:comparison-excess} has dimension
+$\dim \mathcal H$. Its proper pushforward is a multiple of $[\mathcal H]$ on each
+connected component. To compute the multiple, intersect with a point
+$[D]\in \mathcal H$. Refined base change gives the usual virtual class of
+$\overline{\mathcal M}_k(D,1)$ \cite[Proposition~7.2]{BF}.
+On this fiber the class of $R\Gamma(D,N_D)$ in $K$-theory vanishes
+because it is a constant class of rank zero. Consequently the
+coefficient is
+\[
+ \int_{[\overline{\mathcal M}_{k}(D,1)]^{\rm vir}}
+             c_{2(k-h)}(-R\pi_*a^*N_D).
+\]
+In rational cohomology Grothendieck--Riemann--Roch on the universal
+source shows that this expression depends only on the rank and
+degree of $N_D$. We may use $A\oplus K_DA^{-1}$ for a degree-$(h-1)$
+line $A$ outside the theta divisor. Both summands are acyclic,
+and a section of their pullback to $F$ is determined by its
+restriction to the positive component. The integral is thus the
+local degree-one contribution computed by
+Pandharipande \cite[Theorem~2]{Pand}. Multiplying his series in
+the excess genus by $u^{2h-2}$ gives \eqref{eq:embedded-degree-one}.
+\end{proof}
+
+\subsection{The local class in families of cycles}
+
+Let $\sigma:B\to S$ be the transverse smooth section of
+Theorem~\ref{thm:separate}. Give its normal bundle the orientation
+of the vertical tangent of $S\to B$, and give the tests their complex
+orientations. At a solution with image $D$, let $\epsilon(D)$ be
+the local intersection sign on $\mathcal H$ of the parameter graph and the
+tests. The total real codimension is $2\dim_{\mathbb C} \mathcal H$.
+The parameter graph is transverse before the tests are imposed, so
+its inverse image in $\mathcal H$ is the regular space of embedded curves in
+the family over $B$. Its transverse-fiber-product orientation agrees
+with the determinant orientation of the parametrized map equation,
+by the tangent exact sequence for the graph. Interchanging the
+normal to the graph and the tests gives no sign, as their real ranks
+are even. Proposition~\ref{prop:moving-embedded-curve} and the
+projection formula now give $\epsilon(D)b_{k,h}$ for the
+unnormalized algebraic contribution at this solution.
+
+\begin{lemma}\label{lem:signed-embedded-cycle}
+In the smooth family colimit the local unnormalized test class at
+this solution equals $\epsilon(D)\Phi(x_{h,1})$.
+\end{lemma}
+
+\begin{proof}
+Embedded connected curves of multiplicity one form an open subset
+of the space of cycles, with their embedded-map topology
+\cite[Proposition~2.21]{DIW}. Thus the transverse solution can be
+excised in cycle space. To identify its class we first deform the
+complex structure of the marked target germ so that the curve
+becomes regular in that target, keeping the curve and its test
+values fixed.
+
+Write $V=H^0(D,N_D)$ and $U=H^0(D,K_D\otimes N_D^\vee)$, both
+of dimension $l$ by Riemann--Roch. If $l>0$, choose points
+$p_1,\dots,p_l$ on unramified sheets over distinct points of the
+base curve away from the test fibers. Choose covectors $\lambda_i$
+and vectors $v_i$ in the respective normal fibers so that both maps
+\[
+ V\longrightarrow\mathbb C^l,\quad
+       s\longmapsto(\lambda_i s(p_i))_i,\qquad
+ U\longrightarrow\mathbb C^l,\quad
+       \eta\longmapsto(\eta(p_i)(v_i)/dx)_i
+\]
+are isomorphisms. Here $x$ is a local coordinate on the base.
+Inductively, nonzero sections in the two remaining evaluation
+kernels are simultaneously nonzero on some unramified sheet. At
+such a point choose the vector and covector to reduce each kernel
+dimension by one. Extend these data in local frames. Multiply the
+endomorphisms $v_i\lambda_i$ by smooth $(0,1)$-forms supported in
+small disks about $p_i$, normalized to pair to one with $dx$, and
+denote their sum by $A$. Under Serre duality the matrix of
+$J:V\to H^1(D,N_D)$, $s\mapsto[As]$, tends to the product of the
+two evaluation matrices, one transposed, as the disks shrink. Hence
+it is invertible for a fixed choice of the disks. Splitting off the
+invertible complement of kernel and cokernel in $\bar\partial_{N_D}$
+gives the matrix $tJ+O(t^2)$ on these finite-dimensional
+spaces for $\bar\partial_{N_D}+tA$. This operator is invertible for all
+sufficiently small $t>0$.
+
+Over the chosen base disks take disjoint holomorphic submersion
+charts about the sheets. Use the base coordinate $x$ and vertical
+coordinates $y$ in which the marked sheet is $y=y_i(x)$.
+Over the support of the perturbation a sufficiently small target
+tube meets only these charts. Write $A=A_i(x)d\bar x$ on the
+chosen sheet and use zero on the other sheets. Replace its local
+graph equation by
+\[
+        \partial_{\bar x}y=-tA_i(x)(y-y_i(x)).
+\]
+The coefficient vanishes near the boundary of the base disk, so
+the change glues on the tube. Its holomorphic dependence on $y$
+makes the horizontal $(0,1)$ vector field commute with the two
+vertical $(0,1)$ coordinate fields. Hence the resulting almost
+complex structure is integrable. Along the marked sheet the added vector
+field vanishes and its normal linearization is the prescribed
+change of Dolbeault operator. Extend the change smoothly over a
+parameter neighborhood in $B$, with a parameter cutoff. All framed
+test fibers are unchanged. For $l=0$ the fixed target was already
+regular.
+
+At $t=0$ the differential of the parametrized map equation together
+with the tests is invertible in an unparametrized slice. The implicit
+function theorem therefore isolates the retained solution on a small
+closed interval of $t$. By the open embedding into the relative
+cycle space its local Thom class extends by zero over the interval,
+with the same sign. At the regular endpoint the local family of
+curves projects diffeomorphically to $B$, preserving orientation
+since the fixed-fiber normal operator is an invertible complex
+operator. The test class is now the base Gysin image of the unit of
+the isolated curve, multiplied by $\epsilon(D)$.
+
+Deform the holomorphic embedding to its normal bundle. The curve
+stays regular along this deformation, with the same normal
+Dolbeault operator up to isomorphism at the positive parameters.
+The implicit function theorem and embedded-cycle openness isolate
+its compact section along the full interval. At the normal endpoint
+a compact degree-one cycle is a section, since the vector-space
+fibers have no compact positive curves. Acyclicity makes the zero
+section the only such cycle. Its unit is the empty-tuple
+representative of the multiplicity-one class of genus $h$ and Chern
+number zero \cite[Definition~4.7]{Pardon}. The two local
+deformations and the base Gysin map identify the asserted class
+\cite[\S\S2--3]{WueProduct}.
+\end{proof}
+
+\subsection{Extraction by source genus}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Fix $K$ and use Theorem~\ref{thm:separate} for all connected source
+genera through $K$. For each $h\le K$ let $a_h^{(K)}$ be the sum
+of $\epsilon(D)$ over the finitely many connected embedded solutions
+of genus $h$, divided by $W_{g,m}$. The parameter graph and the
+tests form a single compactly supported intersection class on the
+algebraic family, isotopic to the graph and tests at the original
+algebraic section. Hence the pairing computed in
+\S\ref{sec:weights} is the sum of the local pairings in
+Proposition~\ref{prop:moving-embedded-curve}. For every $k\le K$
+this gives
+\begin{equation}\label{eq:connected-algebraic-extraction}
+             N_{k,m,j}=\sum_{h\le k} a_h^{(K)} b_{k,h}.
+\end{equation}
+Here and below a smaller source genus cannot map to a
+multiplicity-one image of larger genus.
+
+In the smooth family over the moving graph the same test classes
+give a compactly supported homotopy on cycles. For fixed $k\le K$
+the image-cycle map from connected genus-$k$ stable maps is proper
+\cite[\S5]{WueProduct}. Outside neighborhoods of the finitely many
+embedded solutions through genus $K$, the compact constrained set
+misses its closed image. The pullback of that part of the test
+class is therefore zero. Over each retained solution
+Lemma~\ref{lem:signed-embedded-cycle} applies before this
+pullback, including when the inverse image contains contracted
+components. Finally, the product terms subtracted in the logarithm
+require positive images in disjoint targets and have zero connected
+pullback. Thus
+\begin{equation}\label{eq:connected-universal-extraction}
+          T_k(P_{m,j})=\sum_{h\le k} a_h^{(K)}T_k(x_{h,1}).
+\end{equation}
+
+In the range of weights of the theorem, the primitive-division
+lemma gives a finite expansion $P_{m,j}=\sum_h a_{h,j}x_{h,1}$
+in the complex cycle algebra, as in \S\ref{sec:weights}. Since
+$T_k(x_{h,1})=0$ for $h>k$ and $T_k(x_{k,1})\ne0$
+\cite[\S\S5--6]{WueProduct}, induction on $k$ in
+\eqref{eq:connected-universal-extraction} identifies
+$a_{h,j}=a_h^{(K)}$ for $h\le K$. Equation
+\eqref{eq:connected-algebraic-extraction} therefore holds with the
+coefficients of the complex universal class for every $k$, since
+$K$ was arbitrary. Substitution of \eqref{eq:embedded-degree-one}
+gives the asserted sine expansion. The fixed-genus residue of
+\S\ref{sec:weights} vanishes for $k<1+m(g-1)+|j|$, and
+$b_{h,h}=1$. The same induction in
+\eqref{eq:connected-algebraic-extraction} gives the stated lower
+bound on the genus of a nonzero coefficient.
+\end{proof}

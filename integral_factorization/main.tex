@@ -1,0 +1,48 @@
+\pdfoutput=1
+\documentclass[11pt]{amsart}
+\usepackage{amsmath,amssymb,amsthm,microtype}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\hypersetup{pdfauthor={Bernd Johannes Wuebben},pdftitle={Integral generators for curve counting on threefolds}}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}\newtheorem{example}[theorem]{Example}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\CC}{\mathbb C}
+\newcommand{\PP}{\mathbb P}
+\newcommand{\cO}{\mathcal O}
+\newcommand{\tot}{\operatorname{Tot}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\title[Integral generators for curve counting]{Integral generators for curve counting on threefolds}
+\author{Bernd Johannes Wuebben}
+\subjclass[2020]{14N35 (primary); 14C25, 14J32, 53D45 (secondary)}
+\keywords{Calabi--Yau threefolds, universal curve counting, local curves, integral generators, conifold transitions}
+\date{November 24, 2026\\This version: November 24, 2026}
+\begin{document}
+\begin{abstract}
+Pardon's integral curve-counting algebra has geometric generators
+whose local models may depend on the covering multiplicity. In first
+Chern number and virtual dimension zero we give a single model in
+each genus for all multiplicities. On a genus-$g$ curve take two line
+bundles of degree $g-1$ with canonical determinant and act on them
+with opposite weights. The equivariant classes of the multiple zero
+sections freely generate the integral algebra. The comparison with an
+isolated holomorphic multiple is triangular in multiplicity, with
+leading coefficient one given by the complex orientation of the embedded
+curve. The resulting factors give a unique product with integral
+exponents for effective cycles of Chern number zero on every compact
+Kähler threefold whose first Chern class is nonnegative on curves.
+\end{abstract}
+\maketitle
+\input{sections/introduction}
+\input{sections/comparison}
+\input{sections/basis}
+\input{sections/compact}
+\input{sections/applications}
+\input{sections/references}
+\end{document}

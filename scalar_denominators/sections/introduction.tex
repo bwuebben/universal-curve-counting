@@ -1,0 +1,130 @@
+\section{Introduction}
+
+On a single smooth projective Calabi--Yau threefold, the scalar
+local factors in the universal series of effective curves can occur
+with exponents of arbitrarily large denominator. This already happens
+in classes of divisibility three. To see what is being factored, assign
+to each effective integral homology class the unit of its compact
+space of cycles. Form the generating series of these units. A choice
+of local model for the multiples of an embedded curve gives a factor
+for each class and genus. Scaling the two normal directions with
+opposite weights in a balanced bundle gives integral exponents
+\cite{WueProduct,WueGenerators}. Scaling both directions with weight one gives
+the scalar factors introduced by Pardon \cite{Pardon}.
+The same spaces of cycles enter both products.
+
+The compact example of \cite[Theorem~1.1]{WueCounter} concerns a
+threefold containing a Hirzebruch surface. A primitive class on the surface has genus-three multiplicity
+$-14$. At three times this class the genus-ten scalar exponent has
+fractional part $2/3$. There are two
+questions here. What denominator does the local class of a tripled
+curve carry? Can a single compact target realize increasingly large
+denominators once the covering degree has been fixed?
+
+For the local question let $C$ be a smooth projective curve of genus
+$g$ and $N$ a rank-two normal bundle of degree $2g-2$. The tripled zero
+section is the effective cycle $3[C]$ in the total space of $N$.
+An evaluation at a point of $C$ applies a fiber covector to the three
+sheets of a cubic cycle and takes a homogeneous symmetric polynomial
+in the three values. Its degree is its weight under scalar dilation.
+A tuple with compact common zero locus gives an integral supported
+Thom class. Dividing it by the product of the weights gives Pardon's
+scalar class $x_{g,3}$ \cite[Definition~4.7]{Pardon}. Its denominator
+is the least positive integer that takes it into $H_{\ZZ}$, the part
+of the integral algebra of semi-Fano cycles in first Chern number and
+virtual dimension zero. Here semi-Fano means that each irreducible
+component has nonnegative first Chern number. We use the integral
+generators of \cite[Theorem~1.1]{WueGenerators}, obtained by giving opposite
+weights to two normal lines of degree $g-1$ whose product is $K_C$.
+
+\begin{theorem}\label{thm:cubic}
+In genera zero and one the scalar and opposite-weight classes coincide
+in every degree. For $g\ge2$ the denominator of the scalar triple is
+\[
+ \operatorname{den}(x_{g,3})=
+ \begin{cases}
+  3^k, &g=2k+1,\\[2pt]
+  3^{\max\{0,\,k-2-v_3(2k+1)\}}, &g=2k+2,
+ \end{cases}
+\]
+where $v_3$ is the valuation at three. For a fixed curve of genus
+$g\ge2$, the least product of weights, over all rank-two bundles of
+degree $2g-2$ and all tuples of homogeneous single-fiber evaluations
+with compact common zero locus on cubic cycles, is
+$3^{\lfloor(g-1)/2\rfloor}$. A general stable bundle with determinant
+$K_C$ attains the minimum.
+\end{theorem}
+
+For example, on a genus-four curve the best choice of normal bundle
+allows a single evaluation of weight three. The resulting supported
+class is divisible by three in $H_{\ZZ}$, so the normalized class is
+integral. In genus five the minimum is nine and the class itself has
+denominator nine. Computing a minimum weight product thus gives a
+sharp geometric bound on the normalization, while computing the class
+denominator requires the divisibility of the numerator as well.
+For use below we write $s_{g-1}$ for the exponent of three in
+$\operatorname{den}(x_{g,3})$ and put $s_0=0$.
+
+Let $e_{\beta,h}(Y)$ denote the exponent of the scalar genus-$h$
+factor at an effective class $\beta$. On our compact threefold we
+find infinitely many of these individual exponents to which the
+odd-genus formula applies exactly.
+
+\begin{theorem}\label{thm:arith-compact}
+There is a smooth projective Calabi--Yau hypersurface $Y$ containing
+a first Hirzebruch surface with negative section $s$ and ruling $f$.
+For each $a=12j+3$, $j\ge0$, put $\alpha_a=as+(a+1)f$ and
+$k=(a(a-1)/2-1)/2$. The class $\alpha_a$ is primitive and
+$e_{3\alpha_a,9k+1}(Y)$ has exact denominator $3^k$. The first of
+these exponents, in genus ten, has fractional part $2/3$.
+\end{theorem}
+
+The local Gromov--Witten theory of Bryan and Pandharipande \cite{BP}
+computes numerical residues for two normal weights. A numerical
+residue alone does not identify a class in a universal cycle algebra.
+To make the comparison, we vary a balanced sum of two normal lines
+in a family of algebraic targets and impose conditions on the
+characteristic polynomials of the sheets. At prime covering degree
+the nonconstant coefficients in the ratio of the two weights can be
+computed on embedded images, after deformation at each prescribed
+bound on source genus. Intersection on the cycle space counts each
+of these images with its sign. On the same family, stable maps with
+that image include maps with contracted components, whose degree-one
+series is $(2\sin(u/2))^{2h-2}$ for an image of genus $h$.
+Theorem~\ref{thm:main} consequently identifies the difference of the
+scalar and opposite-weight logarithms in prime degree. For triples,
+the lower-degree terms are integral, so the cubic trace in
+\S\ref{sec:arithmetic} determines the denominator of the full class.
+A stable-pair calculation on the Hirzebruch surface singles out a
+primitive genus with multiplicity prime to three. Its contribution
+survives in the scalar exponent of Theorem~\ref{thm:arith-compact}.
+The general formula in \S\ref{sec:compact} sums over all effective
+integral roots of the triple class.
+
+The genus-ten example distinguishes three measurements of the triple.
+For a genus-three core the scalar-minus-opposite-weight cubic
+logarithm has coefficient $4720/3$ at $(2\sin(u/2))^{18}$. Changing
+variables and taking the coefficient of $u^{18}$ instead gives the
+fixed source-genus-ten residue $23593/5$. It is the former coefficient
+that multiplies $-14$ in the change of the compact exponents.
+A different comparison uses the point class of an isolated triple in a
+nonlinear neighborhood of the curve. For a general stable normal bundle of
+canonical determinant there are eight one-parameter families of
+embedded cyclic triples in genus three. A general quadratic term
+obstructs all eight, and the isolated triple exceeds the scalar class
+by $8x_{10,1}/3$, where $x_{10,1}$ is the class of a simple genus-ten
+curve (Theorems~\ref{thm:classification} and~\ref{thm:isolated}).
+This describes the moving covers behind the failure of triple
+rigidity studied in \cite{BP06}.
+
+In composite degree the characteristic polynomials can be proper
+powers. We prove the comparison outside the weights where these
+powers occur and compute the correction from doubled images. This
+determines the scalar-to-opposite-weight conversion in degree four
+for every core genus and in degree six for a genus-two core
+(\S\ref{sec:composite}). Appendices~\ref{app:split}
+and~\ref{app:pencils} treat individual split cubic weights and
+the contribution of cuspidal cubics over a genus-five curve.
+
+\subsection*{Acknowledgements}
+I thank John Pardon for a helpful discussion of equivariant local curve classes.

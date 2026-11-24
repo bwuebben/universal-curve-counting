@@ -1,0 +1,69 @@
+\pdfoutput=1
+\documentclass[11pt]{amsart}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{microtype,xcolor}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\hypersetup{pdfauthor={Bernd Johannes Wuebben},pdftitle={Branched triple covers and wall crossing for local curve counts}}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\PP}{\mathbb P}
+\newcommand{\CC}{\mathbb C}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\cO}{\mathcal O}
+\DeclareMathOperator{\sgn}{sgn}
+\raggedbottom
+\setcounter{tocdepth}{1}
+\title[Branched triple covers and wall crossing]{Branched triple covers and wall crossing for local curve counts}
+\author{Bernd Johannes Wuebben}
+\subjclass[2020]{53D45 (primary); 14H30, 14N35, 32Q65 (secondary)}
+\keywords{Local Gromov--Witten invariant, branched covering, sextic Galois closure, symplectic Calabi--Yau threefold}
+\date{November 24, 2026\\This version: November 24, 2026}
+\begin{document}
+\begin{abstract}
+A branched triple cover of a genus-two curve can change the local
+curve count while preserving all determinant signs on unramified covers
+of degrees at most seven. At the crossing the degree-three elementary
+multiplicity in genus five changes by two in absolute value. At a generic
+transverse crossing on a prescribed simply branched triple cover with
+symmetric monodromy over a curve of genus at least two, we determine
+the local Gromov--Witten change in degree seven and every source genus. Each nonempty subset of
+branch values gives a nodal map joining the sextic Galois closure to the
+original curve. Its contribution is the degree-one series of a smooth
+curve, with sign determined by the number of nodes and the sum of
+their branch weights, up to a common orientation sign. On a fixed
+symplectic six-torus the other curves compensate each change in the
+same integral homology class and elementary genus.
+\end{abstract}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\input{sections/introduction}
+\input{sections/chamber-summary}
+\input{sections/cover-crossings}
+\input{sections/cubic}
+\input{sections/chamber-examples}
+\input{sections/heptic}
+\input{sections/joined-nodes}
+\input{sections/contracted-components}
+\input{sections/heptic-smooth}
+\input{sections/compact-compensation}
+\appendix
+\input{sections/smooth-double-estimates}
+\input{sections/cubic-estimates}
+\input{sections/joining-estimates}
+\input{sections/calibration}
+\input{sections/quartic}
+\input{sections/references}
+\end{document}

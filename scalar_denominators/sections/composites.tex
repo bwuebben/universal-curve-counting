@@ -1,0 +1,257 @@
+\section{Composite degrees and the contributions of multiple images}
+\label{sec:composite}
+Write $p_{h,d}^\epsilon=[q^d]\log F_h^\epsilon(q)$ for a universal
+connected class and $S_{h,d}^\epsilon$ for its numerical connected
+residue, $\epsilon=\mathrm{sc},\mathrm{ad}$. The power-locus bound in
+Theorem~\ref{thm:main} excludes cycles that are proper integral multiples of another entire cycle. A cycle can still have an individually repeated component. We now retain the double of an entire cycle and determine its contribution.
+In the formulas below $j$ may have either sign.
+
+\begin{theorem}\label{thm:doubleimage}
+Suppose $m\ge2$, $|j|\le n_m$ and $|j|>n_{m/e}$ for every divisor
+$e\ge3$ of $m$. For even $m$ write
+$P_{m/2,j}=\sum_h b_h x_{h,1}$, interpreting a weight outside the
+Laurent range as zero. For odd $m$ set $b_h=0$. Then there is a
+finite polynomial $R$ such that
+\[
+ P_{m,j}=\sum_h b_hp_{h,2}^{\rm sc}+\iota(R),\qquad
+ R=\sum_kN_{k,m,j}u^{2k-2}-\sum_h b_h S_{h,2}^{\rm sc}.
+\]
+The coefficient of $w^{h-1}$ in $R$ vanishes if
+$h<1+m(g-1)+|j|$. In particular this computes every nonconstant
+quartic weight in every core genus and the sextic weights $|j|>g-1$.
+\end{theorem}
+
+\begin{proof}
+On the projective base for the $j$th coefficient the translated
+spectral tests avoid $e$th powers for each $e\ge3$ by the
+codimension computation of Section~\ref{sec:weights}. Avoidance
+persists in a collar of the compact incidence. If $m$ is even, all
+proper multiples in degree $m/2$ are similarly excluded, so
+Theorem~\ref{thm:main} supplies the $b_h$ when $m/2>1$.
+In degree one the only weight is zero. Proper division by two
+sends $P_{m,j}$ to $P_{m/2,j}$ and $p_{h,2}^{\rm sc}$ to $x_{h,1}$.
+All remaining proper divisions vanish on both sides. The logarithms
+are primitive. It follows from multiplicity-one detection that the
+remainder has the form $\iota(R)$ for a unique finite Laurent
+polynomial with exponents at least $-1$.
+
+Fix a bound $K$ on source genus. In the separation argument of
+Theorem~\ref{thm:separate} keep every tuple of distinct components
+with normalization genus sum at most $K$, including the root of a
+double whose own degree-two covers have minimum genus above $K$.
+At each step order by total reduced degree, the genus sum and then
+minus the number of distinct images. Lemma~\ref{lem:weighted-specialization}
+makes the first remaining stratum compact after the neighborhoods
+already treated have been excised. The shear and jet argument makes
+its normalized images embedded and pairwise disjoint. A connected
+support is therefore a simple embedded curve or a double of one.
+The equations on a reduced Hilbert chart are those of its
+\emph{weighted} cycle. Its transverse solutions are finite.
+
+Before excising a doubled solution, fix its reduced curve $D'$ and
+vary the normal bundle. Here $\det N_{D'}=K_{D'}$, after trivializing
+a constant line. At an unramified fiber away from the tests choose
+a framed chart, a uniformizer $t$, a linear form $\ell$ separating
+all sheets $y_i$, and the monic polynomial
+$S(T)=\operatorname{Norm}(T-\ell(y))$ of their union on the chart.
+For a constant area bivector choose $v=\iota_\ell\Omega$, so
+$\ell(v)=0$. The transition
+\[
+ y\longmapsto y+v S(\ell(y))
+          \sum_{a=1}^{B}\sum_{l=0}^{r-1}c_{al}t^{-a}\ell(y)^l
+\]
+is an automorphism of the punctured chart with determinant one.
+It fixes each sheet. Its first normal derivative on sheet $i$ is
+given by $v\otimes\ell$ times $S'(\ell(y_i))$ times the displayed
+polynomial. The Vandermonde determinant is a unit modulo $t^B$ and
+three generic forms span $\mathfrak{sl}_2$ in this way.
+For large $B$ these principal parts map onto
+$H^1(D',\operatorname{End}_0 N_{D'})$; using the union of disjoint
+sheet values makes the jets independent for several marked curves.
+The same framed parameter bundles and base cutoffs as in
+Lemma~\ref{lem:shear-jets} realize these jets in one algebraic
+target family, with a smooth section over the compact parameter base.
+
+A good normal bundle is accessible even from an unstable one.
+For an ample enough line $Q$, the initial bundle and any prescribed
+good bundle of this determinant both admit quotients $Q$ (a general
+section of the globally generated $N^*Q$ has no zeros). They belong
+to one irreducible extension space
+$\operatorname{Ext}^1(Q,K_{D'}Q^{-1})$. The open set of stable
+two-rigid bundles there is dense by \cite[Theorem~2.2]{BP06}.
+The preceding Kodaira--Spencer map is onto and deformations of
+fixed-determinant bundles on a curve have no second obstructions.
+Thus the parameter family is smooth over the bundle stack locally
+and can realize an arbitrarily small change into this open.
+The regular cut and its sign persist. Each root then has acyclic
+normal bundle and extends uniquely on a relative Hilbert chart.
+Any other nearby cycle of multiplicity at most two, recentered
+and dilated to unit normal height, would limit to a compact
+off-section cycle in the normal bundle. The disk mass bound follows
+from the fixed projected class and a common closed taming form.
+The normalization of a positive component would supply a nonzero
+normal section on a cover of degree at most two. Two-rigidity excludes
+this case. This proves isolation on the full cycle space, uniformly
+on a smaller parameter neighborhood. The separation induction can
+now proceed with these compact neighborhoods excised.
+
+Over the isolated chart the doubled point is the scalar class with
+empty evaluation tuple. Its connected pullback tests give those of
+$p_{h,2}^{\rm sc}$: the product in the logarithmic subtraction
+vanishes on connected domains. The local intersection degree for the
+divided insertion is the same sign, since doubling maps the reduced
+section homeomorphically to the doubled section. Testing the divided
+insertion successively in genera through $K$ identifies its normalized
+signed totals with $b_h$. The same triangular test on the residual
+simple intersections identifies their totals with $[w^{h-1}]R$
+through $K$.
+
+For the virtual pairing the difference of tangent complexes at a
+map $f$ to the moving reduced curve is
+$\operatorname{Cone}(q^*Rp_*N\to R\pi_*f^*N)$, with the notation of
+Proposition~\ref{prop:moving-embedded-curve}. The first term vanishes
+by acyclicity. Two-rigidity and cohomology and base change make the
+second a bundle of rank $2(k-2h+1)$ in degree one on the whole
+proper stack of degree-two maps, including its nodal boundary.
+Its top Chern class pushes to the scalar degree-two connected residue
+times the base class: on a single fiber the equality follows by
+equivariant localization, where only the top Chern number survives
+in virtual dimension zero. Simple intersections contribute
+$w^{h-1}$ by the same proposition. The fixed-genus pairings thus
+give the asserted equality for arbitrary $K$. A nonzero double
+coefficient has $h\ge1+(m/2)(g-1)+|j|$; its covers start at
+$1+m(g-1)+2|j|$. Together with the spectral genus bound for the
+original cut, this proves the support assertion.
+\end{proof}
+
+\subsection{The exceptional sextic coefficient}
+For a genus-two core $n_6=15$. At $j=1$ the compact base is
+$\PP^{16}\times\PP^{14}$. A cube of a trace-free quadratic
+$T^2+b$ has coefficients in orders three through six equal to
+$0,a_2^2/3,0,a_2^3/27$ where $a_2=3b$. The independent sections
+enforcing these four conditions on the second factor have ranks
+$2,3,4,5$, total $14$, and positive top Chern number. They cut
+transversely for general translations and avoid the further condition
+$a_2=0$. For general $M$ the sole divisor of $M^2$ has two distinct
+points, so each reduced quadratic is smooth of genus four. Properness
+of multiplication of cycles and openness near a smooth embedded
+cycle show that throughout a small collar every pure triple in the
+cut has such a root. Pure sixth powers are absent.
+
+Repeat the preceding proof, retaining doubles and triples separately.
+At a tripled root, first vary the normal bundle to the general stable
+locus on the genus-four curve. Theorem~\ref{thm:isolated} shows that
+288 cyclic families remain in the normal bundle. At a fresh unramified
+fiber the same interpolation with $S(\ell(y))^2$ fixes the first
+normal jets while prescribing quadratic terms on every sheet. In
+particular it realizes the determinant-one shears of
+Proposition~\ref{prop:isolation} simultaneously at the finitely many
+curves. A general quadratic change now isolates each tripled root
+while preserving the reduced transverse cut. These changes precede
+excision. The full relative germ near the multiple is its moving
+section by the uniform isolation in that proposition. Thus no
+remaining connected support through the chosen bound is lost.
+
+The two proper divisions give
+\[
+ \rho_2P_{6,1}=30x_{5,1}-5x_{6,1}+\tfrac49x_{7,1},\qquad
+ \rho_3P_{6,1}=\tfrac12 x_{4,1}.
+\]
+Indeed, subtract $P_{3,3}=x_{7,1}/18$ from one quarter of the
+genus-two cubic row, and apply the quadratic row in
+\eqref{eq:arith-two}. Let $b_5=30,b_6=-5,b_7=4/9$ and put the other
+$b_h$ equal to zero. The two divided tests measure the root signs
+separately without automorphism factors. Fix $K\ge13$ and apply the
+connected pullback tests up to genus $K$. The undivided test at
+each tripled root uses $J_3=x_{4,3}+96x_{13,1}$, and its
+fixed-target test has the same extra $96w^{12}$. Consequently
+\[
+ P_{6,1}=\tfrac12p_{4,3}^{\rm sc}+\sum_h b_hp_{h,2}^{\rm sc}
+           +\iota\!\left( [z]S_{2,6}(z)-\tfrac12 S_{4,3}^{\rm sc}
+                                      -\sum_h b_hS_{h,2}^{\rm sc}\right).
+\]
+Here $[z]$ means Laurent weight one; the remainder in parentheses
+includes $48w^{12}$ in addition to the normalized simple-image counts.
+This use of the nonlinear germ is essential: tests on a moving
+reduced chart need not isolate the cubic amplitude in the linear
+bundle, even when they do detect the amplitude at a fixed base point.
+Indeed the derivative in the moving base coordinates at the root is
+invertible. The implicit function theorem solves the test equations
+as the amplitude moves.
+
+\subsection{Conversion to opposite-weight factors}\label{sec:rows}
+Define $t_{g,d,h}$ by
+$F_g^{\rm sc}(q)=\prod_{d,h}F_h^{\rm ad}(q^d)^{t_{g,d,h}}$.
+Let $D_{g,d}=S_{g,d}^{\rm sc}-S_{g,d}^{\rm ad}$. Subtracting the
+proper divisors in the logarithm gives
+\begin{align*}
+ \sum_h t_{g,4,h}w^{h-1}
+   &=D_{g,4}-\sum_h t_{g,2,h}S_{h,2}^{\rm ad},\\
+ \sum_h t_{2,6,h}w^{h-1}
+   &=D_{2,6}-2S_{4,3}^{\rm ad}
+              -120S_{5,2}^{\rm ad}+20S_{6,2}^{\rm ad}-2S_{7,2}^{\rm ad}.
+\end{align*}
+The quartic formula follows since the sum over the doubled images
+in Theorem~\ref{thm:doubleimage} is the entire quadratic change.
+For the sextic the positive odd weights three and one contribute
+$1/18$ and $4/9$, respectively, to the genus-seven double, giving
+$4(1/18+4/9)=2$. The other doubles and the triple come from weight
+one alone. The remaining proper factors convert scalar lower
+logarithms into opposite-weight logarithms by Theorem~\ref{thm:main}.
+
+For a genus-two core the quartic row in genera six through eleven is
+\[
+     (6860,-1470,1302,-317,40,-2).
+\]
+Its first positive Laurent coefficient starts at $1715w^5$.
+The sextic row in genera eight through twenty-two is
+\[
+\begin{array}{c|rrrrr}
+ h&8&9&10&11&12\\ \hline
+ t_{2,6,h}&34606024&61350344&125323022&-36417600&62126672\\[2pt]
+ h&13&14&15&16&17\\ \hline
+ t_{2,6,h}&-41880636&22703802&-9395788&2975620&-715462\\[2pt]
+ h&18&19&20&21&22\\ \hline
+ t_{2,6,h}&128364&-16652&1476&-80&2
+\end{array}
+\]
+For reproducibility, in each degree $d$ form the disconnected
+partition trace $Z_d$ of \cite[Sections~4--8]{BP} and recover
+$S_d=Z_d-d^{-1}\sum_{i=1}^{d-1}iS_iZ_{d-i}$. With $r=e^{iu}$ this
+calculation takes place over $\QQ(r)$. Multiply the transposition
+matrix by the unit and its iterates, express the other partition
+operators in the resulting cyclic basis, and form the handle and
+inverse caps as in Appendix~\ref{app:handle}. At $z=-1$ use
+the hook sum, where the transposition operator need not be cyclic.
+For odd weights $1,3,\ldots,2l-1$ the columns
+$z^j+z^{-j}$ are $y=z+z^{-1}$ times polynomials of successive
+degrees in $y^2$. Interpolate $S_d(z)-S_d(-z)$ at $z=1,\ldots,l$,
+with $l=3$ for the quartic and $l=8$ for the sextic. An additional
+pair of weights verifies each row. Substitution $w=2-r-r^{-1}$
+gives the displayed polynomials. For instance the sole nonintegral
+coefficient of $D_{2,6}$ is $376348226/3$ at $w^9$. The cubic
+subtraction there is $563480/3$ and the sum of the double terms
+to be subtracted is $-61440$, giving $125323022$.
+
+In a compact class $m\alpha$ with $\alpha$ primitive in the free
+quotient, substitution of the factors gives
+\[
+ c_{m\alpha,h}-e_{m\alpha,h}
+ =\sum_{d\mid m,\ d>1}\ \sum_{d\gamma=m\alpha}\sum_g
+       e_{\gamma,g}t_{g,d,h}
+\]
+over effective integral roots. For example, at $(m,h)=(6,8)$ one gets
+\[
+192\sum_{2\delta=6\alpha}c_{\delta,4}
+ +14448\sum_{3\delta=6\alpha}c_{\delta,3}
+ +34606024\sum_{6\gamma=6\alpha}c_{\gamma,2}.
+\]
+Indeed the further balanced double of a cubic change starts at
+$w^8$ and the further triple of a quadratic change starts at $w^9$.
+A genus at least three at a sixth root contributes no term of degree
+seven in $w$, by Riemann--Hurwitz. For $m=4$ the corresponding identity at output genus six is
+$24\sum_{2\delta=4\alpha}c_{\delta,3}
++6860\sum_{4\gamma=4\alpha}c_{\gamma,2}$. Here
+$J_2=24w^5-2w^6$ and the further double of a genus-four correction
+starts at $w^6$. No formula here identifies the inner modes on
+arbitrary higher power loci.

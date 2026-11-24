@@ -1,0 +1,109 @@
+\section{Two double covers and four local counts}\label{sec:intro}
+
+Take two independent unramified double covers of a smooth curve $C$.
+Each can acquire a normal deformation while $C$ itself stays rigid.
+Suppose the first deformation occurs on one axis of a parameter plane
+and the second on the other. Crossing the first axis changes the local
+curve count. How much does that change depend on which side of the
+second axis we cross? The answer is a local invariant on the connected
+fourfold cover formed by taking the fiber product of the two doubles.
+
+We hold the curve $C$ and its complex rank-two normal bundle $N$ fixed,
+where $C$ has genus $g\ge2$ and $\deg N=2g-2$. The parameter varies a
+real Cauchy--Riemann operator $D$ on $N$. A section in the kernel of
+its pullback to a cover is an infinitesimal normal deformation there.
+At a parameter where the pullback operator has zero kernel on every
+connected stable map of positive degree at most $M$, the
+zero section has a local Gromov--Witten contribution in each degree
+$d\le M$ and each arithmetic source genus $h$. Write it as $L^C_{d,h}$.
+It counts connected stable maps to $C$ with the Euler class of their
+normal obstruction bundle. The covers on which we prescribe a kernel
+are unramified. The stable maps in the count can have branch points,
+nodes, and contracted components.
+
+Let $Z$ be the common fourfold cover. Theorem~\ref{thm:square}
+constructs a family with the two prescribed walls. Label its chambers
+by the signs of the two parameters. For $d\le M$, in a sufficiently
+small rectangle about the crossing, one has
+\[
+  L^C_{d,h}(++)-L^C_{d,h}(-+)-L^C_{d,h}(+-)+L^C_{d,h}(--)
+                    = L^Z_{d/4,h}(++) .
+\]
+The right side is zero unless four divides $d$. Its operator is the
+pullback of the positive-corner operator. A map changes sign across
+an axis precisely when it lifts to the corresponding double. In the
+alternating difference only maps lifting to both doubles survive,
+each with multiplier four. Such a map has exactly four lifts to $Z$
+with its domain fixed. This accounts for the coefficient one on the
+right, including the automorphism weights of the maps. For example,
+over a curve of genus two the first common lift has degree four and
+genus five. Its contribution to the difference in that genus is its
+determinant sign.
+
+\subsection*{From signs on covers to an equality of invariants}
+Parker computed the determinant signs carried by the irreducible real
+representations of a covering group \cite[\S1.2]{parker}.
+Bryan and Pandharipande stratified the space of maps to a curve by
+the intermediate covers to which they lift \cite[\S2.2]{bp01}.
+Wendl's super-rigidity theorem and his analysis of nonabelian
+bifurcations, and Doan and Walpuski's study of the double-cover wall,
+describe how normal kernels arise \cite[\S2.4]{wendl},
+\cite[Theorem~1.3]{dw}. To obtain the displayed equality one must
+realize both walls without other kernels intervening, then compare
+the two normal Euler classes over the entire compactified space of maps.
+
+There is a compactness issue even for the two doubles. A bound on the
+degree does not bound the source genus, so a separate neighborhood for
+each moduli space would give less than the formula asserts.
+A normal section has a graph whose area is bounded by its covering
+degree. A sequence of unexpected sections therefore has a limit as a
+cycle. The sheets of its support are separated. Lifting to the nearest
+sheet and averaging the sections there produces a kernel on a fixed
+intermediate cover. The prescribed kernels account for all such
+limits (Section~\ref{sec:family}). For the Euler class comparison we
+fix the monodromy image of each map. Parallel kernel vectors match
+across a node exactly when their values on its two branches agree.
+Removing these vectors leaves a continuous reduced obstruction bundle
+across the wall. Its orientation comparison supplies the determinant
+sign in the integral (Section~\ref{sec:oriented}).
+
+The same argument applies on a finite principal unramified $G$-cover.
+The kernels may be prescribed by pairwise inequivalent nontrivial
+irreducible real representations of real type, provided their
+associated flat bundles together embed in the underlying real bundle
+of $N$. On a map with monodromy image $H$, the sign of each crossing
+is given by the parity of the dimension of its $H$-fixed subspace.
+Writing these signs in the basis of transitive $G$-sets expresses the
+mixed difference as a sum over intermediate covers
+(Theorem~\ref{thm:mixed}). Section~\ref{sec:factors} proves the
+corresponding identity for the local factors in the universal cycle
+algebra, using the integral generators of \cite[Theorem~1.1]{WueGenerators}.
+In the two-double example the mixed connected count in its least
+source genus has exact denominator $p^j$ in degree $4p^j$, for every
+prime $p$ and every $j\ge1$ (Theorem~\ref{thm:prime}).
+
+\subsection*{Endpoints and examples}
+At the minimum source genus the Riemann--Hurwitz formula leaves only
+unramified maps. At two arbitrary rigid endpoints, the determinant signs at both ends
+therefore give the change in that genus. Equivalently, multiplying
+each initial covering sign by its endpoint ratio gives its final sign. In higher genus we prove a transport formula along
+paths made up of the realized unramified crossings and rigid segments.
+Its initial data are the full series on the intermediate covers
+(Theorem~\ref{thm:endpoints}). Thus a path calculation can start
+with an independently computed chamber. For positive maximal normal holonomy, Appendices~\ref{sec:maximal}--\ref{sec:flat-sign}
+identify the full series when the orthogonal bundle is orientable and
+compute the finite-cover signs in both cases. The absolute all-genus
+calculation for a nonorientable orthogonal bundle is given in
+\cite[Theorem~1.1]{WueSpin}.
+
+For an elliptic base the suspension of a symplectic return map gives
+a separate description. Its horizontal tori are the finite orbits of
+the return map. When the finite orbits are isolated as a set in the
+sense of Section~\ref{sec:elliptic-series}, the fixed-point indices
+of the iterates recover the local cycle exponents by M\"obius inversion.
+A projective example has sixteen torsion-distinct sections with the
+same double class. In higher genus one generic path between specified
+spin operators forces a bifurcation in every covering degree $m\ge2$
+(Theorem~\ref{thm:walls}). Along a subsequence, the domains converge
+to an infinite cover carrying a nonzero bounded solution of the
+limiting operator (Proposition~\ref{prop:wall-limit}).

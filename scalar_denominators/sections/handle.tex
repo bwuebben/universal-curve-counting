@@ -1,0 +1,114 @@
+\section{The scalar handle in the partition basis}\label{app:handle}
+We use the multiplication operator of
+\cite[Appendix, equations (29) and (31)]{BP}, the cap of its Lemma 6.3,
+and the starred normalization of its Section 6.4.1.
+Put $r=e^{iu}$. Initially keep general nonzero weights $t_1,t_2$, and put
+\[
+ k=t_1t_2,\qquad
+ a=-(t_1+t_2)\frac{r-1}{r+1},\qquad
+ b=-3(t_1+t_2)\frac{r^2-1}{r^2+r+1}.
+\]
+In the partition basis $1=e_{111}$, $x=e_{21}$, $y=e_3$,
+multiplication by $x$ is
+\begin{equation}\label{eq:M}
+ M=\begin{pmatrix}0&-3k&0\\1&a&-2k\\0&3&b\end{pmatrix}.
+\end{equation}
+Since $M1=x$ and $M^21=-3k+ax+3y$, the unit is cyclic. Consequently
+\begin{equation}\label{eq:algebra}
+ \begin{gathered}
+ L_1=I,\qquad L_x=M,\qquad L_y=\frac{M^2-aM+3kI}{3},\\
+ \mathcal A=\QQ(t_1,t_2,r)[x]/\bigl((x-b)(x^2-ax+3k)+6kx\bigr).
+ \end{gathered}
+\end{equation}
+Indeed $My=-2kx+by$ gives the stated relation. Multiplication also gives
+\[
+ y^2=2k^2-\frac{2kb}{3}x+\frac{b^2-ab-3k}{3}y.
+\]
+
+The starred Frobenius pairing in this basis is
+\begin{equation}\label{eq:metric}
+ D=\operatorname{diag}\left(-\frac1{6k^3},\frac1{2k^2},-\frac1{3k}\right).
+\end{equation}
+In general its partition entry is
+$1/(\mathfrak z(\lambda)(-k)^{\ell(\lambda)})$, where
+$\mathfrak z(\lambda)=\prod_j j^{m_j}m_j!$ and $m_j$ is the
+multiplicity of $j$ in $\lambda$. The Appendix Fock pairing differs
+by $(-1)^d$ in degree $d$; its multiplication-operator convention
+has the same sign. Thus \eqref{eq:M} is the multiplication matrix
+in the starred normalization,
+and the handle operator is
+\begin{equation}\label{eq:handle}
+ G=-6k^3I+2k^2M^2-3kL_y^2.
+\end{equation}
+This is multiplication by the Euler element, the sum of each basis
+element times its dual. In the quotient algebra it equals
+\[
+ -18k^3+2k^2(a+b)x+(9k^2+kab-kb^2)y.
+\]
+
+Raising the level-$(-1,0)$ cap covector with \eqref{eq:metric}
+and removing its half-integral phase gives the vector
+\begin{equation}\label{eq:cap}
+ \widetilde\eta_\lambda
+ =(-1)^d t_1^{\ell(\lambda)}
+   \prod_{j=1}^{\ell(\lambda)}(1-r^{-\lambda_j})^{-1},
+ \qquad d=3.
+\end{equation}
+Let $\widetilde A=\sum_\lambda\widetilde\eta_\lambda L_\lambda$
+and let $\widetilde{\bar A}$ interchange $t_1,t_2$. If $A^*$ is
+the unscaled starred level operator, then
+$\widetilde A=r^{d/2}A^*$. The balanced-level operator is therefore
+\begin{equation}\label{eq:B}
+ B=r^3G\widetilde A^{-1}\widetilde{\bar A}^{-1},\qquad
+ [q^3]F_g=\tr(B^{g-1})\quad(t_1=t_2=1).
+\end{equation}
+All operators commute because they act by multiplication.
+The closed starred normalization has exponent
+$d(2-2g+(g-1)+(g-1))=0$, so no further phase multiplies the
+ordinary GW coefficient in \eqref{eq:B}.
+
+\begin{proposition}\label{prop:trace}
+At scalar weights the characteristic polynomial of $B$ is
+\begin{equation}\label{eq:charpoly}
+ \begin{split}
+ \det(TI-B)={}&T^3-w^3(w^2+50w+81)T^2\\
+ &+\frac43w^6(w-6)(w^2+54w-243)T\\
+ &-\frac43w^9(w-4)(w-3)^2(w^2+54w-243).
+ \end{split}
+\end{equation}
+In particular,
+\begin{equation}\label{eq:scalar-traces}
+ \begin{split}
+ [q^3]F_2&=81w^3+50w^4+w^5,\\
+ [q^3]F_3&=2673w^6+9612w^7+2534w^8+\frac{292}{3}w^9+w^{10}.
+ \end{split}
+\end{equation}
+\end{proposition}
+\begin{proof}
+Substitute $t_1=t_2=1$ into \eqref{eq:M}--\eqref{eq:B} and reduce
+using $r^2-(2-w)r+1=0$. The three elementary symmetric functions
+of $B$ are respectively
+\[
+ \begin{gathered}
+ w^3(w^2+50w+81),\qquad
+ \frac43w^6(w-6)(w^2+54w-243),\\
+ \frac43w^9(w-4)(w-3)^2(w^2+54w-243).
+ \end{gathered}
+\]
+These give \eqref{eq:charpoly}; the trace and the identity
+$\tr(B^2)=(\tr B)^2-2\sigma_2(B)$ give \eqref{eq:scalar-traces}.
+The calculation can also be made entirely in \eqref{eq:algebra}:
+invert $\widetilde\eta^2$, multiply by $r^3$ times the Euler
+element, and take the resultant of its characteristic equation with
+the monic cubic defining $\mathcal A$. This uses the same printed
+algebraic data and avoids a matrix inverse.
+\end{proof}
+
+At antidiagonal weights the same construction has eigenvalues $U,U,V$,
+where
+\begin{equation}\label{eq:UV}
+ U=w^3(4-w)(3-w)^2,\qquad V=w^3(3-w)^2.
+\end{equation}
+These are the three hook-length contributions of \cite[Corollary~7.3]{BP}. The leading scalar coefficient
+$2673=6^4+3^4+6^4$ also agrees with the unramified degree-three
+cover count for a genus-three base.

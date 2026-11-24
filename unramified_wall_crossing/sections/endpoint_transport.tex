@@ -1,0 +1,78 @@
+\section{Transport on the tower of finite covers}\label{sec:endpoints}
+Fix the curve and the identification of its normal bundle. For a rigid
+operator through degree $M$ put $\mathbf P(D)=(P_T(D|_T;q))_T$ for
+all connected unramified covers $T$ of degree $a\le M$, each retained
+through degree $\lfloor M/a\rfloor$. The degree-one coefficient on $T$
+is $\epsilon_T(D)x_{g(T),1}$.
+\begin{theorem}\label{thm:endpoints} For two endpoint operators $D_0,D_1$ rigid through degree $M$ on every connected stable-map space there is a unique integral Burnside ring unit through the cutoff whose marks are the ratios $\epsilon_T(D_1)/\epsilon_T(D_0)$ on all visible covers. Its action on the entire assignment $\mathbf P(D_0)$ gives the least-source-genus contribution at every label of $\mathbf P(D_1)$ on every such cover. It gives the full assignment, in every source genus, if a connecting path through the cutoff consists of rigid segments and finitely many of the realized unramified wall comparisons of Theorem~\ref{thm:mixed}. All finite concatenations of such comparisons compose, including after changing the finite monodromy group. With the curve marked, their transport depends only on the endpoints. A homotopy may leave this class if the two boundary paths being compared each satisfy the hypotheses.
+
+\end{theorem}
+
+The theorem determines the transformation between chambers from finite étale determinants and the \emph{initial} insertion on every cover. The finite determinants give relative signs, and the geometry of the initial chamber supplies the rest of its series. This qualification matters even if every crossing in a particular path is unramified.
+
+\subsection{The action and its filtration}
+
+Write \(\Pi=\pi_1(C)\). A finite quotient \(G\) of \(\Pi\) corresponds to a connected principal cover \(Z\). Write \(T_K=Z/K\) for \(K\le G\). We may choose \(G\) so that \(Z\) dominates every connected cover of degree at most \(M\): intersect the cores of all such subgroups of \(\Pi\). Finite generation makes this a finite intersection, as degree-\(d\) covers are obtained from homomorphisms to \(S_d\). We may refine the resulting quotient further, for example to include the finitely many groups on a path. A subgroup of \(G\) is visible if \([G:K]\le M\). An assignment consists of conjugacy-invariant series \(P_K\) with constant coefficient one, defined on visible subgroups through degree \(\lfloor M/[G:K]\rfloor\).
+
+For a finite \(G\)-set \(X\), restrict it to \(K\) and take one point \(x\) of each \(K\)-orbit. Put
+\begin{equation}
+(T_X\mathbf P)_K(q)=
+       \prod_{x\in K\backslash X}P_{K_x}(q^{[K:K_x]}),                   \label{eq:action}
+\end{equation}
+using factor one for an invisible stabilizer. The retained exponent multiplies the relative projection degree, so the total degree on \(C\) is preserved. Disjoint unions of sets give products and virtual differences give quotients. Each \(T_b\), \(b\in A(G)\), is an endomorphism of the abelian group of assignments. With the group law written multiplicatively,
+\[T_{b+c}\mathbf P=(T_b\mathbf P)(T_c\mathbf P),\qquad
+ T_{bc}=T_b\circ T_c,\qquad T_1=\mathrm{id}.\]
+Indeed a \(K\)-orbit of pairs in \(X\times Y\) is determined by a \(K\)-orbit of \(x\) and a \(K_x\)-orbit of \(y\); its degree is \([K:K_x][K_x:(K_x)_y]\). This proves composition for actual sets and hence virtual sets. The operation preserves integral coefficients and balanced products with integral exponents by \eqref{eq:action}. For a single orbit it pulls the insertions from the appropriate components of an actual fiber product of covering curves.
+
+The span of the orbits \([G/H]\) with \([G:H]>M\) is an ideal \(I_{>M}\): a point stabilizer in any product is contained in a conjugate of \(H\). Such orbits act trivially in the additive sense (\(T_b\mathbf P=1\)). Their marks vanish on visible subgroups. Conversely, if the marks of a virtual set vanish on all visible subgroups, descend in order of subgroup size. At \(K\) its as-yet undetermined orbit coefficient is multiplied by the nonzero diagonal \(|N_G(K)/K|\), and orbits for subgroups of smaller size have zero \(K\)-mark. This proves that the kernel is exactly \(I_{>M}\). Application of \(T_b\) multiplies the degree-one coefficient at \(K\) by the mark \(m_K(b)\), since only \(K\)-fixed points of the restricted virtual set contribute. Thus its action on the degree-one part of one geometric assignment recovers all visible marks. Write \(A_{\le M}(G)=A(G)/I_{>M}\).
+
+\subsection{The unit from the endpoint operators}
+
+Parker's finite-group generalized sign already assigns each real isotypic crossing the fixed-subgroup signs used here, multiplies them, and treats change of the finite covering quotient. His algebra uses actual stabilizers with multiplication by intersection. Formula \eqref{eq:unit} expresses the relative signs by Burnside marks through a degree cutoff. Formula \eqref{eq:tower} uses them on the complete stable-map contributions over intermediate covers \cite{parker}.
+
+Take \(A_t\) on \(Z\) to be the pullback of any path from \(D_0\) to \(D_1\). The path in this paragraph need not be rigid. The Fredholm complexes decompose into real isotypic parts; write \(U\) for an irreducible real \(G\)-representation and take the operator on its multiplicity space over \(\operatorname{End}_G(U)\). For each visible \(K\), the operator on \(T_K\) is the \(K\)-fixed part by unramified descent. Every type with \(U^K\ne0\) for such a \(K\) therefore has an invertible multiplicity operator at both endpoints, even if \(|G|>M\) and the full operator upstairs is singular there. Its real index at the endpoints is zero. The space of allowed operators on \(C\) is affine, so the relative determinant parity of this block between the endpoints is independent of the chosen path. Concretely, pull its real determinant line over that affine space and compare the canonical trivializations at the invertible endpoints using continuous orientation transport. On complex and quaternionic multiplicity spaces this sign is always positive. The complex orientation persists throughout the path and agrees with the canonical trivialization at both invertible ends.
+
+For a real-type \(U\) visible in this sense, let \(e_U\in\{0,1\}\) record this sign. The element \(v_U=1-\chi^G(S(U))\) has mark \((-1)^{\dim U^K}\) at each subgroup, so \(v_U^2=1\). Set
+\begin{equation}
+u_{01}=\prod_{U\text{ visible of real type}}v_U^{e_U}
+                      \quad\text{in }A_{\le M}(G).                       \label{eq:unit}
+\end{equation}
+On the \(K\)-fixed operator the real-type multiplicity block occurs in \(\dim U^K\) copies. Ratios of endpoint determinant signs multiply in this direct sum. Other blocks preserve orientation. Hence \(m_K(u_{01})=\epsilon_{T_K}(D_1)/\epsilon_{T_K}(D_0)\). In particular \(u_{01}^2=1\), \(u_{02}=u_{12}u_{01}\) for three endpoints, and uniqueness follows from the preceding mark calculation. This construction is valid even if the path between regular endpoints encounters ramified kernels. It uses only determinants on the finite unramified covers.
+
+For complete quotients dominating the degree cutoff, refinement merely reindexes visible covers. More explicitly, under a surjection \(G'\to G\) of such quotients every visible subgroup of \(G'\) is the inverse image of one in \(G\). The marks determine the same truncated unit there. For endpoints rigid in every degree there is also a unit on each finite quotient with \emph{all} its marks, by \eqref{eq:unit} without truncation. Under \(G'\to G\) the fixed points of the kernel give a ring map \(A(G')\to A(G)\); its mark at \(K\) is the upstairs mark at the inverse-image subgroup. The units are compatible under these maps. Thus they define a unit in the completed Burnside ring of almost finite continuous \(\widehat\Pi\)-sets, which can be evaluated at each bounded degree using the quotients above. This is the fixed-point convention of Theorem~\ref{thm:marks} and \cite{dress}.
+
+\subsection{Least-genus comparison for every pair of regular endpoints}
+
+For a cover \(T_K\) and relative degree \(e\), the least possible source genus is \(1+e(g(T_K)-1)\). Only connected unramified covers occur there, including in the stable-map compactification (Section~\ref{sec:prime}). Because \(G\) dominates the whole cutoff, each such map is represented by a covering \(T_L\to T_K\) for some \(L\le K\). Its sign at the new endpoint equals its old sign times \(m_L(u_{01})\). Its deck weight over \(T_K\) is \(1/|N_K(L)/L|\). Alternatively, the number of its lifts when a transitive component of a restricted \(G\)-set is used in \eqref{eq:action} is the corresponding \(L\)-mark. Composition is representable finite étale and its pushforward weights lifts with exactly these cardinalities. The degree substitution gives the same least source genus at either target by Riemann--Hurwitz. Summing over covers, \eqref{eq:action} multiplies each old signed mass by \(m_L(u_{01})\). Additivity in the logarithm of the local series yields precisely the new least-genus connected coefficient.
+
+This gives the corresponding equality of all least-genus elementary exponents by proper-divisor induction in Proposition~\ref{prop:factors}. In particular the full change of these exponents, for arbitrary regular endpoints, can be recovered from the signs on the finite covers without an analysis of ramified strata along an intervening path.
+
+\subsection{Full transfer on the unramified domain}
+
+On a rigid segment all assignments are constant by excision and continuation in the fixed marking. On one simultaneous crossing apply Theorem~\ref{thm:mixed} on every visible target. On a refined target the restrictions of the wall representations may contain equivalent, trivial or non-real-type summands. The proof uses the exact monodromy strata and the pullback of the downstairs reduced obstruction complex. It gives the same mark \((-1)^{\dim V_i^L}\) on a stable map of refined monodromy \(L\) on reversing one crossing coordinate, regardless of the decomposition of the restricted representation. The subgroup \(L\) indexes a cover through which the map lifts, so its index in \(G\) divides the total degree and is visible. The center classification on that cover is precisely the pullback-invariant description of Theorem~\ref{thm:mixed}. No regularity of the entire refined Galois cover in degree \(|G|>M\) is needed. The connected transfer therefore holds on \(T_K\) with its restricted Burnside element. The elementary product identity follows from the first differing degree and the fixed-target genus test on \(T_K\).
+
+In particular write \(B_i=\chi^G(S(V_i))\), inflating from the actual wall group if needed. Changing one coordinate from positive to negative gives \(\mathbf P_-=T_{1-B_i}\mathbf P_+\) by \eqref{eq:action} and the single-coordinate transfer. This equality is symmetric since \((1-B_i)^2=1\). Its effect on the degree-one marks identifies the multiplier with the endpoint determinant unit \eqref{eq:unit}. Composing over a path proves
+\begin{equation}
+\mathbf P(D_1)=T_{u_{01}}\mathbf P(D_0).          \label{eq:tower}
+\end{equation}
+Two paths using different covers can be compared in their common refinement with the full degree cutoff. The unit of a closed marked path of this kind has every visible mark equal to one and is the identity. Thus full numerical and universal corrections along these paths satisfy the same relations, even for several walls on one support. These are equalities in the integral balanced lattice; the operations do not require an enumerative evaluation on arbitrary analytic families.
+
+For general regular endpoints the quotient
+\[\mathbf R_{01}=\mathbf P(D_1)/(T_{u_{01}}\mathbf P(D_0)),
+       \qquad \mathbf R_{02}=\mathbf R_{12}\,T_{u_{12}}\mathbf R_{01}\]
+has integral elementary exponents and vanishing least-genus exponents on every visible target. It equals one on the unramified domain of \eqref{eq:tower}.
+
+The conditional character of the higher-genus conclusion can be seen
+on the standard representation of \(S_3\) at a simply branched cubic
+of a genus-two curve with two branch values. A connected unramified
+subgroup of the closed surface pulls back to a subgroup of the
+punctured surface group containing all conjugates of the peripheral
+loops. Its image contains the normal closure of a transposition,
+hence all of \(S_3\). The standard plane has no fixed vector there.
+Thus if this plane supplies the full central kernel, every unramified
+sign through any fixed cutoff persists across the crossing.
+In the ramified example of \cite[Theorems~1.1--1.2]{WueBranched}, the
+genus-five degree-three exponent changes by two in absolute value;
+the genus-thirteen degree-seven exponent changes by one. These last
+two numerical values require its ramified deformation calculation.
+The proof of the transport theorem above is independent of that example.

@@ -1,0 +1,70 @@
+\section{Integral products on compact threefolds}\label{sec:compact}
+
+Let $\Gamma$ be an additive commutative monoid with an additive degree
+$E:\Gamma\to\mathbb R_{\ge0}$, positive away from zero, with finite
+sublevel sets. Multiplication in $H[[\Gamma]]$ is the convolution for
+addition in $\Gamma$. An element has only finitely many decompositions
+into nonzero summands: at its degree there are finitely many possible
+sublabels and these have a positive minimum degree. For a series
+$P=\sum P_\beta Q^\beta$ with $P_0=1$, compatibility with the
+two geometric operations means
+\begin{equation}\label{eq:twolaws}
+ \Delta P_\beta=\sum_{\gamma+\delta=\beta}P_\gamma\otimes P_\delta,
+ \qquad
+ \rho_l P_\beta=\sum_{l\gamma=\beta}P_\gamma\quad(l>1).
+\end{equation}
+The second sum ranges over every root in $\Gamma$. Distinct integral
+classes may have the same multiple.
+
+\begin{proposition}\label{prop:criterion}
+A compatible series has all its coefficients in $H_{\ZZ}$ if and only if it has
+a product expansion in the factors $A_h(Q^\beta)$ with integral
+exponents, finitely supported in $h$ at each $\beta\ne0$. In that case
+the exponents are unique.
+\end{proposition}
+\begin{proof}
+A single factor satisfies \eqref{eq:twolaws} by \eqref{eq:localops}.
+Equivalently the second identity says that applying $\rho_l$
+coefficientwise gives the substitution $Q^\gamma\mapsto Q^{l\gamma}$;
+this identity and the coproduct identity persist under products and
+inversion. All factors and their inverses have integral coefficients
+by Theorem~\ref{thm:basis}.
+
+Conversely divide out the factors already found at smaller degree.
+At a first remaining degree the coefficient $R_\beta$ of the residual
+integral series is primitive. Indeed in the first sum of
+\eqref{eq:twolaws} every proper summand has smaller degree. For the
+same reason every term on the right of the second identity vanishes.
+Lemma~\ref{lem:detect} puts $R_\beta$ in $V$. By the integral
+polynomial basis and $a_{h,1}=x_{h,1}$ we have
+$V\cap H_{\ZZ}=\bigoplus_h\ZZ x_{h,1}$. The coefficients in that direct
+sum are precisely the required exponents at $\beta$. Dividing out the
+corresponding factors changes no other label of this degree.
+Finite sublevel sets give the expansion and the same recursion proves
+uniqueness.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:compact}]
+On a compact Kähler threefold the mass of an effective cycle for the
+Kähler metric is its area. Bounded-area cycles form a compact space
+and their integral homology label is locally constant in the geometric
+topology \cite[Theorem~2.11 and Remark~2.13]{DIW}. The image of a
+compact space in this discrete group is finite, even when the group has
+torsion. The cycles of fixed class give a compact open and closed
+locus. A nonzero effective class has positive area. Nonnegativity of
+$c_1(TX)$ implies that all components of a cycle in $\Gamma_0(X)$
+have zero first Chern number. In particular the unit of the whole
+locus is an integral semi-Fano insertion.
+
+Addition of cycles pulls this unit back to the sum of the exterior
+products of the units on the class loci for all splittings of $\beta$.
+Multiplication by $l$ pulls it back to the units on all class loci
+with $l\gamma=\beta$. These are precisely \eqref{eq:twolaws}, so
+Proposition~\ref{prop:criterion} proves \eqref{eq:compact}. On a compact
+manifold the areas of complex tangent lines under two Kähler metrics
+are uniformly comparable. This identifies the two completions, and
+uniqueness gives the same exponents. Under the projective hypotheses,
+the geometric product of \cite[Theorem~1.1]{WueProduct} has exactly these
+local factors and signed cluster multiplicities. Its rationalization
+agrees with \eqref{eq:compact}; uniqueness identifies the integers.
+\end{proof}

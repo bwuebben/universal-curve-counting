@@ -1,0 +1,98 @@
+\subsection{Two spin endpoints}\label{p10-sec:examples}
+
+Let $A,B$ be distinct theta characteristics on $C$ with
+$H^0(C,A)=H^0(C,B)=0$. For a theta characteristic $S$, take the
+positive spin operator $D_S$ associated with a lift of the
+uniformizing representation to $\mathrm{SL}(2,\RR)$. In a spin frame
+on the upper half-plane it is given by
+\[
+                D_S u=\bar\partial u+
+                    \frac{i\bar u}{2\operatorname{Im}z}\,d\bar z .
+\]
+The choice of lift specifies the signs in the transition functions of
+the frame. On the same underlying smooth complex rank-two bundle
+consider the ordered endpoints
+\[
+               D_-=D_A\oplus D_A,\qquad D_+=D_A\oplus D_B .
+\]
+They are rigid in every degree. Indeed, on a finite cover $f$, the
+equation for one spin summand makes $d(u^2 f^*dz)$ a nonnegative area
+form whose density is positive wherever $u\ne0$ and $df\ne0$.
+Integration forces $u=0$ on every positive-degree component, and nodal
+matching gives vanishing on each attached contracted subcurve. This
+also proves base injectivity when the antilinear term is multiplied by
+any positive scalar. At scalar zero each base Dolbeault operator is
+invertible by non-effectivity and Riemann--Roch. Hence the two endpoint
+determinants have sign $\epsilon=+1$. To connect the operators in the
+base-invertible locus, turn off the antilinear term on the second
+summand, join the two Dolbeault operators in the complement of the
+theta divisor in $\operatorname{Pic}^{g-1}(C)$, and restore the term
+on $B$. The complement is path connected since the divisor has real
+codimension two. Trivialize the smooth bundles along the interval and
+perturb the path relative to its endpoints.
+
+We evaluate the two endpoints using the absolute partition formula
+of \cite[Theorem~1.1]{WueSpin}. Write $c=g-1$ and
+$X_k=(2\sin(kv/2))^2$. At the repeated spin the disconnected
+degree-$d$ coefficient is the sum over partitions $\lambda\vdash d$
+with hook weight $\prod_{a\in\lambda}X_{h(a)}^c$. At the distinct
+pair with positive determinant the same weights are summed over just
+the self-conjugate partitions. These two absolute evaluations are
+the input from spin theory. The signed number of crossings between
+them follows from Theorem~\ref{p10-thm:chambers}.
+
+Let $Z_d^-$ and $Z_d^+$ be the respective disconnected coefficients,
+requiring positive degree on every connected component. For $d\le3$
+the partition sums read
+\[
+\begin{array}{c|cc}
+ d & Z_d^- & Z_d^+ \\ \hline
+ 1 & x^c & x^c \\
+ 2 & 2(xX_2)^c & 0 \\
+ 3 & 2(xX_2X_3)^c+(x^2X_3)^c & (x^2X_3)^c .
+\end{array}
+\]
+Indeed the row and column of size three have hooks $1,2,3$, while
+$(2,1)$ has hooks $1,1,3$. The logarithm of the disconnected series
+has degree-two coefficient $Z_2-Z_1^2/2$ and degree-three coefficient
+$Z_3-Z_1Z_2+Z_1^3/3$. Using $X_2=x(4-x)$ and $X_3=x(3-x)^2$ gives
+the connected differences in the order $D_+$ minus $D_-$,
+\begin{align*}
+       x^{-2c}\Delta L_2 &=-2(4-x)^c,\\
+       x^{-3c}\Delta L_3 &=2(4-x)^c\bigl(1-(3-x)^{2c}\bigr).
+\end{align*}
+
+\begin{corollary}\label{p10-cor:spin-counts}
+For every generic path between these ordered endpoints in the
+base-invertible locus, the signed polynomial of smooth cubic crossings is
+\begin{equation}\label{p10-eq:spin-crossings}
+       W_3(x)=\bigl(4-x(1-x)^2\bigr)^c
+                         -\bigl((4-x)(3-x)^2\bigr)^c .
+\end{equation}
+The largest normalization genus with nonzero signed count is $6c$.
+Every such path contains at least $8c$ smooth cubic cover--parameter
+pairs in that genus.
+\end{corollary}
+
+\begin{proof}
+Insert $W_2(x)=-2(4-x)^c$ and the cubic difference into
+\eqref{p10-eq:chambers}. The terms in $(4-x)^c$ cancel, giving
+\eqref{p10-eq:spin-crossings}. The two cubics on the right, before taking
+$c$th powers, have common leading coefficient $-1$ and difference
+$-8(x-2)^2$. Their difference of $c$th powers thus has degree $3c-1$
+and leading coefficient $-8c(-1)^{c-1}$. By Riemann--Hurwitz, a
+cubic cover with $2l$ simple branch values has genus $1+3c+l$.
+Taking $l=3c-1$ proves both assertions.
+\end{proof}
+
+On a genus-two target one can take any two distinct even theta
+characteristics. Each has degree one, hence at most one independent
+section, and even parity forces non-effectivity. Here
+$W_2(x)=-8+2x$ and $W_3(x)=-32+32x-8x^2$. The signed counts of smooth
+cubics are $-32$, $+32$, and $-8$ in normalization genera four, five,
+and six, respectively. In particular the half-coefficient of $x^2$ in
+$x^{-3}\Delta L_3$ is $-10$, and subtracting the double-cover term in
+\eqref{p10-eq:chambers} raises the signed four-branch count to $-8$.
+Every such path therefore contains at least $72$ smooth cubic
+cover--parameter pairs across these three genera. In higher genera
+the signed count vanishes.

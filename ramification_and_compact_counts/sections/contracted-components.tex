@@ -1,0 +1,418 @@
+\section{Contracted components and the degree-seven wall formula}\label{p14-sec:virtual}
+
+Let $Z\to C$ be the sextic Galois closure. Put $b=2l$ for the
+number of branch values and $h_j=1+7(g-1)+3l+j$.
+Fix a nonempty set $I$ of these values. Choose the negative root
+line of one inertia transposition $\tau$ in the standard representation.
+Over each value in $I$ join the $\tau$-fixed point of $Z$ to the
+point of the zero section. Denote the resulting finite map by $a_I^0$
+and its signed local degree from Proposition~\ref{p14-prop:signs} by $a_I$.
+Its arithmetic genus is $h_{|I|}$. We write $G_{I,k}$ for the locus
+obtained from $a_I^0$ by attaching one-pointed contracted curves at
+smooth points or inserting two-pointed contracted curves at its nodes,
+with total arithmetic genus $k$.
+
+\begin{proposition}\label{p14-prop:virtual-joins}
+At a cubic crossing satisfying the kernel and smoothing hypotheses of
+Sections~\ref{p14-sec:kernels} and~\ref{p14-sec:joins}, the contribution of
+$G_{I,k}$ to the change of the degree-seven local invariant is
+\[
+       a_I [v^{2k-2}]\bigl(2\sin(v/2)\bigr)^{2h_{|I|}-2}.
+\]
+A single interval about the crossing suffices to compute the changes
+for all $k$ on the same two sides.
+\end{proposition}
+
+\subsection{The central locus}
+By Section~\ref{p14-sec:kernels}, a central degree-seven map carrying a
+projective height has positive normalizations \(Z\) and \(C\), each
+with multiplicity one. Its matching height on \(Z\) spans the negative
+line of one transposition. Its embedded graph meets the zero section
+once over each branch value, with distinct complex tangent lines.
+
+Each connected contracted subcurve at a node or at a smooth point has
+one image. Maximal such subcurves have at most two positive branches,
+one on each normalization when there are two. The joining values are
+therefore recovered from the map with its projective kernel.
+For fixed $k$, $G_{I,k}$ is compact. Take stable degree-one maps to
+the two normalizations with marks evaluated at the indicated flags.
+Glue their marks directly or insert stable two-pointed curves of
+positive genus. Summing these proper gluing maps over the finitely
+many genus distributions gives the stated locus, including a tail
+specializing to a bridge. Distinct joining sets have disjoint images
+in the projective incidence. The unique matching height line is
+spanned by the chosen root on $Z$ extended by zero on $C$.
+
+\subsection{Displacing the line of sections}
+For a stable map $a$ to $C$ write $L_{a,t}=a^*D_t$. Near its
+one-dimensional kernel, take a finite-dimensional stabilization and
+projectivize its domain over the reals. The zero on the tautological
+line represents the local degeneracy class: the derivative in the
+projective directions cancels the image directions of the linear map.
+In the transverse matrix space, with a generator of the kernel chosen,
+the cokernel on the linking sphere is its tangent bundle. The rank off
+the central locus is $r=4(k-1-7(g-1))$, the real virtual dimension of
+the moduli of maps to $C$. The Euler number of this even-dimensional
+link is two. Thus the relative projective class capped with the
+fixed-target virtual class times the oriented parameter interval,
+and multiplied by two, computes the terminal minus initial Euler
+number \cite[\S6.2, Lemma~6.10 and Appendix~B]{bai}.
+
+Choose a closed disk strictly inside a larger disk of regular values.
+On the central map the seven sheets over the larger disk are distinct
+as pieces of the normalization, including possible contracted
+attachments. For nearby maps the preimage of the smaller disk stays
+in seven disjoint neighborhoods. Each has degree one by conservation
+of degree at an ordinary value avoiding all attaching points. Order
+these pieces using an identification of the sextic with the fixed
+model over $C$ taking a chosen joining flag to its fixed representative.
+There are two such identifications, interchanged by $\tau$. In the
+finite covering of all sheet orderings these choices and their
+complement are disjoint closed sets over the compact central locus.
+Shrinking the neighborhood extends the selection to a stack cover of
+degree two, retaining the automorphisms of contracted components.
+
+On one distinguished nonzero sheet choose a real covector density on
+the disk with integral $\ell_a(s)\ne0$ on the chosen root $s$.
+Integration uses pulled-back area, so constant components give zero.
+Normalize by $\ell_a(u)=1$. For independent smooth vector-valued
+$(0,1)$-forms on the seven sheets, compactly supported in that disk,
+write $j_a$ for their sheetwise pullback. Replace $L_{a,t}u$ by
+$L_{a,t}u-\ell_a(u)j_a$. On the normalized slice the equation is
+\begin{equation}\label{p14-eq:virtual-affine}
+                      L_{a,t}u=j_a,\qquad \ell_a(u)=1 .
+\end{equation}
+This defines a continuous perturbation in nodal stabilizations.
+Indeed introduce $z=\ell_a(u)$, solve $D_t p=j$ locally on each
+disk containing a nodal value on each sheet, and replace $u$ by
+$u'+za^*p$, using cutoffs equal to one near the nodes. The new forcing
+vanishes there, and the scalar row becomes
+$z=\ell_a(u')+z\ell_a(a^*p)$. These substitutions are invertible
+row and variable changes. On thick parts the remaining forcing converges
+smoothly, and on a shrinking disk the area test on bounded sections is
+bounded by seven times its area times the supremum of the integrand.
+These are precisely the continuous perturbations of the stabilized
+inverse in \cite[Appendix~B]{bai} and
+\cite[Propositions~B.7.9 and B.10.4]{pardonatlas}.
+To obtain a single ambient almost complex structure, split the tangent
+bundle of the total space by a complex connection and write
+\(D_t=\nabla^{0,1}+A_t\). Over the support disk take disjoint cutoffs
+\(\chi_m\) equal to one near the seven normalized sheet graphs.
+Write \(F_{t,j}(x,n)=A_t(x)n-\sum_m\chi_m(x,n)j_m(x)\), a fiber-valued
+antilinear one-form in the base direction. The block formula
+\[
+ (X,V)\longmapsto\big(j_CX,\ iV+2iF_{t,j}(x,n)X\big)
+\]
+squares to minus the identity. With
+\(\bar\partial u=(\nabla u+i\nabla u\, j)/2\), its graph equation
+near these sheets is \eqref{p14-eq:virtual-affine} before imposing the
+scalar row. The construction is independent of the source, including
+its contracted components. It extends the homogeneous graph
+correspondence of \cite[Lemma~5.9]{bai}. For a compact completion first cut off \(A_t(x)n\) radially,
+identically one on a tube containing the normalized central graphs
+and their sufficiently small displacements. Use the connection
+structure near the divisor at infinity in the projective bundle.
+A closed coupling form positive on the projective fibers, plus a
+sufficiently large multiple of the base area form, tames this compact
+family. All comparisons take place in the smaller tube. In the
+bundle tube the area of a closed graph is bounded by its projection
+degree times a constant.
+
+On a finite-map chart the sheetwise forms surject onto the cokernel:
+a dual solution annihilating them vanishes on an open set of each
+positive normalization, and hence everywhere off its nodal flags by
+unique continuation. The equation-space dual in the $L^p$ formulation
+has no point masses. Sections with prescribed independent values at
+the flags then eliminate the dual node-matching rows. Finitely many
+forms suffice near the finitely many bare joins. On each smooth
+stratum of the finite-map chart the displaced problem is transverse
+for a regular choice. A persistent node or a collision of simple
+branch values has positive complex codimension, whereas the full
+normalized problem with time has index zero. Hence the displaced
+zeros are finite, smooth, simply branched covers. Their graphs may
+also be taken embedded. A double point over a common value imposes
+four real conditions with at most two real parameters for that value.
+At a simple ramification point a zero vertical derivative imposes four
+conditions. For transversality of these marked problems the same
+adjoint test vanishes off the marks. Prescribe arbitrary independent
+values and holomorphic first jets there, solving the symbol equation
+recursively for the antiholomorphic derivatives of a formal jet.
+Testing against these jets eliminates the distributions at the marks.
+Immersion excludes the diagonal in the marked-pair test, and finitely
+many further forms then suffice by compactness. By conservation of
+the local degree their signs in the labelled chart sum to $a_I$.
+Here and below all displacements at the finitely many joins are made
+using the same ordered disk and orientations.
+
+\subsection{Isolation and contracted components}
+Consider a convergent sequence of normalized graph solutions
+approaching $G_{I,k}$, with displacements tending to zero. Take stable
+limits of the positive normalizations separately, first retaining the
+attaching marks. Their nonconstant limits together are the root graph
+and the zero section, each once. Every positive component has positive
+projection degree, so there are at most two such normalizations.
+On forgetting marks, their individual stable limits have no contracted
+component. Indeed the theorem of Ekholm and Shende
+\cite[Theorem~1.1]{ekholm} would require a vanishing derivative,
+equal complex tangent lines at two preimages, or three attaching
+preimages of one point. The two central embeddings exclude each
+possibility. The theorem applies to these bare maps because the
+displaced equation is an ordinary graph equation. For finitely many
+smooth perturbation parameters, put the varying structures and the
+standard complex structure of an even-dimensional parameter ball
+(adjoining one dummy coordinate if needed) in block diagonal form
+on the product. Maps in constant slices are holomorphic for this one
+structure, with the same attaching tangents.
+
+If there are two positive normalizations, each converges smoothly
+to one of the embeddings. Each nearby pair can meet at most once
+near each central intersection: projecting the difference of the two
+parametrizations to the real four-plane of the limiting tangents has
+invertible derivative in the two local source parameters. Away from
+these neighborhoods the limiting images are disjoint. Deleting the
+one-ended contracted blocks and replacing the two-ended ones by nodes
+now gives a finite map satisfying the same equation. Its joining
+flags remain distinct. Properness of the marked factors shows that
+their limiting subset is $I$. At zero displacement the local isolation
+at each bare join forces precisely the central finite map. A regular
+displacement has no finite nodal zero there.
+
+With one positive normalization its unmarked limit has direct joins
+at a nonempty set $J$. The bare isolation for $J$ again excludes a
+sequence of smooth finite zeros at zero displacement. At a regular
+displacement these zeros belong to the smooth embedded graphs just
+constructed. Each remaining contracted block on such a graph attaches
+once. On restoring marks to its limit one can insert rational trees
+at smooth points or at existing nodes, and the one-pointed tails
+can specialize to these trees. Distinct smooth points over an unjoined
+intersection have disjoint fibers under marked stabilization. Hence
+no additional joining value results: $J=I$. Conversely, every
+degree-one expansion of a displaced graph solves
+\eqref{p14-eq:virtual-affine}, and any of its limits at zero displacement
+lies in $G_{I,k}$ by the marked description. This proves fixed-genus
+isolation and identifies its entire displaced zero set. In particular
+a bridge in a limit is counted with its own joining subset.
+
+\subsection{The virtual class at a displaced graph}
+Write $\Gamma$ for one of the embedded displaced graphs and $t_0$ for
+its parameter. On its smooth projection the undisplaced homogeneous
+operator is injective by isolation in the finite-map chart. This
+remains true on each degree-one expansion by restriction and matching.
+In a chart for maps to $C$ choose stabilizing marks, incidence slices,
+horizontal perturbations and obstruction section $s_C$. Use the same
+data for maps to the total space, lifting the slices by inverse
+image and the horizontal forms by a complex-linear splitting of
+projection. The splitting may be chosen affine in height near each
+sheet by taking the complex-linear part of a connection lift.
+Choose an equivariant supplement $BW$ to the image of $L_{a,t}$ at
+the chart center, with representatives on the smooth parts of all
+components including contracted ones. On $s_C=0$ the stabilized
+vertical equation is
+\[
+                         L_{a,t}u-Bw=j_a .
+\]
+Its derivative in $(u,w)$ is invertible. Projection identifies the
+regular simultaneous thickening with the horizontal one over the common
+family of stabilized domains \cite[Theorem~3.5 and Lemma~5.10]{swam}.
+The residual ambient obstruction rows are $s_C$ and $w$. For the
+homogeneous projective equation introduce $z=\ell_a(v)$ as before.
+Its stabilized solution is $(v,w')=z(u,w)$ and injectivity forces
+$z\ne0$ at a projective zero. In the chart $z=1$ the joint rows are
+therefore
+\[
+                       s_C=0,\qquad w=0,\qquad\ell_a(u)-1=0 .
+\]
+Their Thom product computes both the compactly supported projective
+pairing and the constrained ambient class. To compare charts, take
+the union of stabilizing marks and direct sums of perturbations.
+Adding a vertical supplement pairs its new variable with the same
+new obstruction coordinate. Changing horizontal lifts adds rows
+vanishing on $s_C=0$, and eliminating a different vertical
+supplement adds a multiple of $w$ to the scalar row. These changes
+give the same localized Thom product on common refinements
+\cite[\S9.2]{pardonatlas}. Both $r$ and the horizontal virtual
+dimension are even. The scalar orientation fixed on the smooth
+finite-map chart thus applies at every arithmetic genus.
+
+In unparametrized normal coordinates at $\Gamma$ the augmented
+linearization with time and the area test is
+$(\xi,\dot t)\mapsto(A\xi+B_0\dot t,\lambda\xi)$.
+It is invertible by transversality of the normalized finite-map
+zero: the horizontal deformation complex of a smooth cover has
+torsion cokernel sheaf and no obstruction. The fixed-time operator
+$A$ has index zero. If it has a kernel, the augmented isomorphism
+makes both kernel and cokernel lines. In an unramified disk where
+their generators are nonzero, add a small zeroth-order term linear in
+the height minus the height of $\Gamma$. The vertical tangent there
+is the normal quotient, so the variation can have nonzero pairing
+on these lines. This fixes the graph and makes $A$ invertible,
+preserving the augmented isomorphism. In the affine presentation this
+changes the homogeneous operator and the forcing by the corresponding
+linear and constant terms. Compactness of the degree-one expansions
+permits this homotopy inside the isolating chart. Any extra constrained
+graphs approaching the retained one would have one nonconstant
+normalization: in its retracting tube each positive component projects
+in a positive multiple of seven. Ghost censorship at the embedded
+multiplicity-one limit gives smooth convergence of the bare
+normalization, contrary to uniqueness for the augmented equation.
+
+The nearby ordinary graphs form a regular family $\Gamma_t$.
+The same normalization and compactness argument shows that its
+fixed-genus locus in a small tube consists of degree-one expansions.
+On these maps the area test is the function
+$\gamma(t)=\ell(\Gamma_t)-1$, with $\gamma'(t_0)\ne0$ by the
+augmented isomorphism. Replacing the scalar row by $\gamma$ preserves
+its Thom product with the two other rows since the functions agree
+on their zero set. The time slice contributes
+$\operatorname{sgn}\gamma'(t_0)$ times the ordinary fixed-time
+degree-one class. The normal bundle of $\Gamma$ has degree
+$2h_{|I|}-2$, since $c_1(TC)+c_1(N)=0$. Its regular normal
+operator pulls back injectively to every degree-one map. Zinger's
+comparison identifies the local invariant with the normal Euler class
+on the moduli of degree-one maps \cite[Theorem~1.2]{zinger}.
+To transport the sign to a complex-linear reference, quotient the
+pullback Fredholm complex by the complex on the base curve $\Gamma$.
+Restriction to the unique positive normalization splits the pullback
+on cokernels, and matching identifies the two kernels throughout any
+deformation. The quotient thus has vector-bundle cokernel with its
+quotient determinant orientation \cite[Appendix~B]{bai}.
+At an invertible end the remaining orientation is the base determinant
+sign. At a Dolbeault reference on two non-effective degree
+$h_{|I|}-1$ lines the Hodge integral gives the series
+$(2\sin(v/2))^{2h_{|I|}-2}$ \cite[Theorem~2]{pandhodge}.
+The product of the time and normal signs is the sign of the original
+displaced zero, by evaluating in its own smooth genus. Summing these
+signs and cancelling the factor two from the Euler link against the
+degree two of the labelling proves the asserted coefficient at fixed
+$k$. Isotropy on contracted curves is included in the degree-one
+virtual class.
+
+\subsection{One interval for exact degree seven}
+We record the genus estimate needed to pass to a common interval. For
+a compact smooth family of homogeneous normal operators on $C$ there
+is a constant $K\ge0$ such that a simple graph projecting in degree
+$d$ has normalization genus at most $1+d(g-1)+Kd(d-1)$. Indeed, take
+the normalization of the off-diagonal part of the ordered fiber
+square of its projection. The difference of the two heights is
+generically nonzero on each component. For a fixed unitary connection
+and $M$ a uniform norm bound on the zeroth-order term, it satisfies
+$|\bar\partial_\nabla s|\le M|s|\,|df|$, up to a fixed metric
+constant, for the induced projection $f$. Its isolated zeros have
+positive integral orders by the similarity principle. Off these
+zeros let $e=s/|s|$ and $\alpha=\operatorname{Im}\langle
+e,\nabla e\rangle$. The curvature identity expresses $d\alpha$ as
+the curvature evaluated on $e$ plus twice the difference of the squared
+norms of the orthogonal $(1,0)$ and $(0,1)$ derivatives of $e$.
+The latter $(0,1)$ norm is bounded by $M|df|$. Thus
+$d\alpha\ge-f^*\kappa$ for one positive area form $\kappa$ on $C$
+uniform over the family. Stokes on the complements of the zeros bounds
+their total order by $d(d-1)\int_C\kappa/(2\pi)$.
+A ramification point of index $a$ gives $a-1$ distinct off-diagonal
+branches over the repeated point, all with zero difference. The genus
+bound follows by Riemann--Hurwitz.
+
+Suppose a connected stable map of exact degree $d$ has a nonzero
+height. For its positive normalizations let $d_i$ be the degree of
+the simple graph and $m_i$ the covering multiplicity, including graphs
+of height zero. Thus $\sum_i m_i d_i=d$. Replace each covering by a
+connected unramified cover of the simple normalization with the same
+multiplicity. Such a cover exists since its base has genus at least
+two. The new genus is at most
+$1+m_i d_i(g-1)+K m_i d_i(d_i-1)$. Reconnect along a tree of equal
+graph values, taken from the original matching after collapsing each
+connected contracted block to its image. Lift each selected flag to
+its replacement. If flags coincide there, place them on a constant
+rational component attached at that point with one node for each of
+the coincident flags. This keeps the dual graph a tree and the
+resulting map stable. Its degree is $d$, its height is nonzero, and
+its genus is at most $dg+Kd(d-1)$. The replacement is used only to
+detect existence of a kernel.
+
+Apply this test at $d=7$ on a compact subarc. In each of the finitely
+many genera below the bound the central compact loci just described
+exhaust all projective zeros. Fixed-genus isolation and compactness
+give a kernel-free punctured interval. Intersecting the finitely many
+intervals and applying the test proves the assertion in every genus
+at exact degree seven. The Euler integrals are then constant on each
+punctured side coefficient by coefficient. This finishes the proof of
+Proposition~\ref{p14-prop:virtual-joins}. Since the only proper divisor
+of seven is one, and the base operator stays invertible, the
+degree-one factor has constant exponent. Subtraction of its unchanged
+contribution in the connected series gives
+$\Delta n_{7,h_j}=\sum_{|I|=j}a_I$ at super-rigid endpoints, with
+all other degree-seven exponent changes zero. This proves Theorem~\ref{p14-thm:wall}.
+\subsection{The possible changes in elementary multiplicity}\label{p14-sec:chambers}
+Write \(c_j=\Delta n_{7,h_j}\). With a common choice of sign as in
+Theorem~\ref{p14-thm:wall}, the set of attainable vectors on the given cubic
+is the image of the complement of the real hyperplanes
+\[
+       H_I=\{w\in\RR^b:\, w_I=0\},\qquad
+       w_I=\sum_{i\in I}w_i,\qquad \varnothing\ne I\subseteq E ,
+\]
+under \(w\mapsto ((-1)^j\sum_{|I|=j}\sgn w_I)_{1\leq j\leq b}\).
+These hyperplanes form the resonance arrangement \cite{kuehne}. Several
+chambers may determine the same vector. The sharp binomial bound used
+in Theorem~\ref{p14-thm:torus} follows at once from this description:
+\[
+       |c_j|\leq\binom bj,\qquad
+       \max_{w}\sum_{j=1}^{b}|c_j|=2^b-1 .
+\]
+Indeed choosing all weights positive gives equality for every \(j\)
+simultaneously. Such a choice is realizable by
+Proposition~\ref{p14-prop:realize} and the branch variations of
+\S\ref{p14-sec:joins}.
+
+\begin{proposition}\label{p14-prop:lattice}
+The subgroup generated by the changes on a prescribed cubic is
+\[
+       2\ZZ^b+\ZZ\left(\binom b1,\ldots,\binom bb\right).
+\]
+Its index in \(\ZZ^b\) is \(2^{b-1}\).
+\end{proposition}
+\begin{proof}
+Every summand has absolute value one, so the reduction of any
+attainable vector modulo two is the displayed binomial vector.
+For each nonempty \(I\) choose a point of \(H_I\) outside the finitely
+many other hyperplanes. Crossing there changes only \(\sgn w_I\).
+The difference of the two attainable vectors is a signed double
+coordinate vector in coordinate \(|I|\). These differences give all of
+\(2\ZZ^b\); the last binomial coefficient is one, so the reduction
+of the generated subgroup has order two.
+\end{proof}
+
+There is a more restrictive relation on chambers meeting the full-sum
+hyperplane \(H_E\) at a point on no proper-subset hyperplane.
+Complementation pairs each proper subset \(I\) with a subset of
+opposite sum on \(H_E\). Since \(b=2\ell\), the two cardinalities
+have the same parity. On either side of this point it follows that
+\[
+             c_{b-j}=-c_j\quad(1\leq j<b),\qquad c_\ell=0 .
+\]
+Only \(c_b\) changes when crossing \(H_E\) there. Consequently neither
+of these two chambers attains the unrestricted binomial bound.
+For example, at \(b=2\) they give \((0,1)\) and \((0,-1)\). The
+same-sign chambers give \((-2,1)\) and \((2,-1)\). Expanding
+\(x=v^2-v^4/12+O(v^6)\) gives, for \(g=2\), the connected
+genus-thirteen coefficient \(c_2-11c_1/12\). Thus the two chambers
+with nonzero \(c_1\) give \(17/6\) and \(-17/6\).
+
+The subgroup from chambers adjacent to \(H_E\) also has a simple
+description. In the free coordinates \((c_1,\ldots,c_{\ell-1},c_b)\)
+it is
+\[
+ 2\ZZ^\ell+\ZZ\left(\binom b1,\ldots,\binom b{\ell-1},1\right).
+\]
+Indeed two proper-subset hyperplanes have the same restriction to
+\(H_E\) only when their indexing sets agree or are complements:
+their indicator vectors must be proportional modulo the constant vector.
+Cross one generic restricted hyperplane in \(H_E\), and move both
+endpoints slightly to the same side of \(H_E\). This gives twice any
+coordinate with \(j<\ell\), up to sign. Crossing \(H_E\) itself gives
+twice the last coordinate. Reduction modulo two finishes the argument
+also for \(\ell=1\). Here the subgroup describes sums of changes over
+several crossings; an individual crossing must satisfy the subset-sign
+formula.
+
+\begin{proof}[Proof of Theorem~\ref{thm:invisible}]
+Such covers exist by the Riemann existence theorem: send the two peripheral loops to the same transposition and one handle generator to a three-cycle, with its partner trivial. The product relation and transitivity hold. The construction of \S\ref{p14-sec:kernels} realizes the crossing on any prescribed such cover. The standard two-plane of \(S_3\) is the central kernel on its normal closure. The fundamental group of an unramified cover, restricted to the punctured base, contains the normal closure of the peripheral loops. Its image therefore contains the normal closure of a transposition, which is \(S_3\). The two-plane has no invariants. Lemma~\ref{p14-lem:kernelplane} gives an invertible pullback on each unramified cover at the center. There are finitely many covers of the bounded degree, so their determinants remain invertible on a common interval. The smooth cubic calculation of \S\ref{p10-sec:incidence} gives the first change. Theorem~\ref{p14-thm:wall} gives the second from the single subset containing both branch values.
+\end{proof}

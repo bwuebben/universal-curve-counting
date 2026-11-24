@@ -1,0 +1,150 @@
+\section{An isolated multiple and the integral basis}\label{sec:basis}
+
+Fix a genus $g$ and a multiplicity $m$. We will compare two
+representatives associated with these integers. On the equivariant
+side the curve and its balanced bundle are fixed throughout the
+construction. On the geometric side the entire holomorphic neighborhood
+may depend on $m$.
+
+\begin{lemma}\label{lem:germ}
+There is a fixed complex threefold germ about a genus-$g$ curve $C$
+with acyclic normal bundle in which every $j[C]$, $1\le j\le m$, is
+isolated. Its unit $J_m$ is an integral geometric local curve element of
+type $(g,m,0)$, and $J_1=x_{g,1}$.
+\end{lemma}
+\begin{proof}
+For $g\ge2$ take the divisorial deformation of a bundle neighborhood
+constructed in the proof of \cite[Lemma~6.7]{Pardon}. Its embedded curve
+is unobstructed and has normal bundle of index zero, so it has no
+infinitesimal deformations in the fixed threefold. The $m$-multiple lies
+in the interior semi-regular locus where the semi-chart of multiples of
+deformations of $C$ is open \cite[Lemma~6.3 and Definition~6.6]{Pardon}.
+At Chern number zero its fixed-target dimension is zero. After restriction
+to a tube retracting onto $C$, every component has Chern number zero.
+The point $m[C]$ is therefore open in the entire cycle space of the
+germ. The inverse image of that point under addition of $(m-j)[C]$ is
+$\{j[C]\}$, proving the lower-degree assertions. The complex point
+orientation gives the geometric generator. Deformation to the normal
+bundle preserves the regular embedded curve in degree one. Its local
+chart is a section over the deformation parameter by the implicit
+function theorem. On the normal bundle the unit in degree one is
+the class with empty evaluation tuple, namely $x_{g,1}$.
+
+In genus zero take $\cO(-1)^{\oplus2}$. In genus one take
+$L\oplus L^{-1}$ with $L$ of infinite order in $\mathrm{Pic}^0(C)$.
+A nonzero fiber coordinate on a finite cover is impossible by negative
+degree in genus zero. In genus one it would trivialize a pulled-back
+line, whose norm would make $L$ torsion. In both cases every compact
+curve is supported on the zero section, and $J_j=a_{g,j}=x_{g,j}$ by
+the empty-tuple construction.
+\end{proof}
+
+\begin{proposition}\label{prop:tube}
+For a germ in Lemma~\ref{lem:germ} of genus $g\ge2$, there exist integers
+$n_{e,h}$ of finite support, $1\le e\le m$, for which
+\begin{equation}\label{eq:tube}
+ 1+\sum_{j=1}^m J_jq^j =
+ \prod_{e,h} A_h(q^e)^{n_{e,h}}\pmod {q^{m+1}},
+ \qquad n_{1,h}=\delta_{gh}.
+\end{equation}
+\end{proposition}
+\begin{proof}
+We place a small tube of the germ in a closed symplectic six-torus.
+In a product of two symplectic elliptic curves take one horizontal torus
+and $g-1$ distinct vertical translates. Smoothing the $g-1$ transverse
+positive intersections gives a symplectic genus-$g$ surface. Its class
+pairs once with a vertical torus, hence stays primitive in the product
+with a third elliptic curve. Denote the resulting class by $A$ and take
+an integral symplectic form. An orientation-preserving identification
+of the surfaces may be used to identify their complex tangent structures
+along the core by choosing an appropriate compatible complex structure
+on its symplectic tangent plane. Their complex normal bundles are
+isomorphic, since both have rank two and degree $2g-2$. Choose a tubular
+identification with this normal derivative, taking the complex normal
+complement to the symplectic orthogonal. The transported integrable
+structure is compatible along the core and tame on a small tube.
+Extending a compatible structure along the surface and then using a
+cutoff in a chart of tame structures realizes the given germ inside
+the closed target.
+
+Set $b=\omega(A)>0$ and bound energy by $mb$. There is a tube $V$
+with compact closure in this realization such that the only bounded
+nonempty cycles in $\overline V$ are $j[C]$ for $j\le m$. Otherwise
+a sequence of tubes shrinking to $C$ contains counterexamples. Retraction
+to $C$ and positivity of area give class $jA$ with $1\le j\le m$.
+Take a subsequence of fixed class. Bounded-area cycle compactness
+\cite[Theorem~2.11]{DIW} forces a limit $j[C]$. Convergence of currents
+and supports in the integrable tube contradicts isolation in the
+holomorphic cycle space. Inside such an isolating tube take $V$ with
+compact closure and with $C$ in its interior. Every bounded cycle
+contained in $\overline V$ lies in the larger isolating tube, so none
+can meet $\partial V$. This property persists under small
+perturbations by the same compactness argument. Containment in $V$
+therefore defines a compact open and closed locus over a short closed
+path to a generic tame structure. Its unit transports $\Phi(J_j)$
+in each class $jA$.
+
+At the generic endpoint, the bounded connected supports are disjoint
+embedded curves. Partition the supports in $V$ into finitely many
+clusters, including the exterior as a separate part
+\cite[Propositions~3.18 and~3.21]{DIW}. In each part the union of
+the underlying curves is compact by closed incidence. Distinct parts have
+disjoint unions, and hence disjoint open target neighborhoods. A
+disconnected cycle then decomposes uniquely into cycles in the respective
+neighborhoods, including empty cycles. The unit for the union is the
+product of the corresponding series, with the convolution performed in
+integral homology. This is the excision argument of \cite[\S4]{WueProduct}.
+When a path is considered in the ambient threefold, we keep only the
+finitely many labels occurring below the energy cutoff. Indeed the
+bounded cycle space over the closed path is compact and the integral
+homology label is locally constant. Products and inverses of these
+series still have finite support at the cutoff, since their positive
+degrees have a positive minimum.
+
+For one of these clusters, of class $eA$, apply the cluster isotopy theorem
+\cite[Theorem~3.25]{DIW} in the geometric form of
+\cite[\S4, proof of Proposition~4.1]{WueProduct}. On a regular arc a
+subdivision changes the chosen factor only by factors in proper
+multiples. At a fold, compact continuation of the outer insertion gives
+the product of the two inner factors equal to one modulo such corrections.
+Consequently a crossing inverts the distinguished factor, modulo a
+finite product of corrections. At the elementary endpoint its factor is
+$\Phi(A_h(q^e))$. Iterate on the correction clusters; their core classes
+are $keA$, $k>1$, and $\lfloor m/(ke)\rfloor<\lfloor m/e\rfloor$.
+This gives a finite signed product in $S$ at the required cutoff. The
+use of disjoint target neighborhoods in excision is what allows these
+geometric identities to include the cycles with several components.
+
+Addition and division for the isolated units satisfy
+\eqref{eq:localops} up to $m$: the decompositions of $j[C]$ are precisely
+$i[C]+(j-i)[C]$. The product on the right of \eqref{eq:tube} obeys
+the same laws because substitution, multiplication and inversion
+preserve them. Lemma~\ref{lem:detect} lifts the identity from $S$ to $H$.
+In degree one it gives $x_{g,1}=\sum_h n_{1,h}x_{h,1}$, so independence
+makes the asserted leading exponent positive and equal to one.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:basis}]
+Take the coefficient of $q^m$ in \eqref{eq:tube}. The unique unshifted
+factor is $A_g(q)$. Any other factor starts in degree $e\ge2$ and only
+uses coefficients of multiplicities at most $\lfloor m/e\rfloor<m$.
+The binomial coefficients in all integer powers, including negative
+powers, are integers. Hence $J_m=a_{g,m}+P_{g,m}$ with $P_{g,m}$
+an integral polynomial in lower multiplicities. Choose one germ for
+each pair $(g,m)$ as in Lemma~\ref{lem:germ}. Pardon's integral
+generation theorem permits \emph{any one such choice for each type}
+\cite[Theorem~6.13]{Pardon}. Nonnegative Chern numbers exclude other
+types from this summand. Induction in $m$, simultaneously for all $g$,
+identifies the subalgebra of $H$ generated by these integral images with
+$\ZZ[a_{g,m}]$.
+
+To see that it is a polynomial ring, apply the least-degree relation
+argument of Lemma~\ref{lem:detect} to formal balanced generators.
+Their logarithmic coordinates are primitive and have the same division
+law, and their degree-one images are again the independent $x_{g,1}$.
+There is no rational polynomial relation. The triangular equations with
+leading coefficient one imply that the chosen $J_m$ for all types
+also have algebraically independent images over $\QQ$. Since those
+classes generate the original integral summand, its rationalization map
+has zero kernel. This proves the stated integral identification.
+\end{proof}

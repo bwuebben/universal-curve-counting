@@ -1,0 +1,139 @@
+\section{Triple ramification and multisections of a spin line}\label{p8-sec:graphs}
+
+The triple-ramification divisors give a test for the appearance of
+actual curves. A multisection here is the image of a curve in the
+total space of a line or vector bundle whose projection to the base
+is finite and surjective. We call its parametrization simple if it
+has generic degree one onto its image.
+
+\begin{theorem}\label{p8-thm:algebraic-graphs}
+Let $C$ be any smooth projective curve of genus $g\ge2$, and let
+$\theta^2=K_C$. On every connected component of the space of connected
+degree-$m$ covers of $C$ with exactly one triple ramification point
+and no other ramification, there is a cover $f:Y\to C$ such that
+\[
+                       h^0(Y,f^*\theta)>h^0(C,\theta).
+\]
+For every $m\ge3$ the holomorphic total space of $\theta$ consequently
+contains simple multisections of degree $m$ with smooth normalization
+of genus $H_m+1$ and a single triple ramification point over $C$.
+Their supports can be chosen arbitrarily close to the zero section.
+\end{theorem}
+\begin{proof}
+Let $T$ be such a connected component. It is a proper curve finite
+in coarse space over $C$ by Section~\ref{p8-sec:hurwitz}. We may pass
+to a connected finite level cover so that the family
+$\pi:\mathcal Y\to T$ is a smooth projective family over a smooth
+curve. For example, a symplectic level structure of level at least
+three on the first homology of the smooth sources rigidifies their
+automorphisms. Write $f:\mathcal Y\to C$ also for the evaluation map,
+$p:T\to\mathcal Y$ for the ramification section, $E=p(T)$, and
+$K=c_1(f^*K_C)$. The number $K\cdot E$ is strictly positive since
+$T\to C$ moves the branch value. Relative Riemann--Hurwitz and the
+first nonzero jet along $p$ give
+\[
+ c_1(\omega_\pi)=K+2E,\qquad K^2=0,\qquad E^2=-K\cdot E/3.
+\]
+Put $L=f^*\theta$. Grothendieck--Riemann--Roch for this smooth family
+gives the degree of its negative determinant of cohomology as
+\begin{align*}
+ \deg c_1(-R\pi_*L)
+ &=-\int_{\mathcal Y}
+    \left(\tfrac12c_1(L)^2
+       -\tfrac12 c_1(L)c_1(\omega_\pi)
+       +\tfrac1{12}c_1(\omega_\pi)^2\right)\\
+ &=\tfrac16 K\cdot E-\tfrac13 E^2=\tfrac5{18}K\cdot E .
+\end{align*}
+
+Suppose that every section on every fiber is a pullback. By cohomology
+and base change $\pi_*L$ is then the constant bundle with fiber
+$H^0(C,\theta)$. Relative duality and Riemann--Roch show that
+$S=\pi_*(\omega_\pi L^{-1})/(df)\pi_* L$ is a line bundle, with
+$\deg S^*=\deg c_1(-R\pi_*L)$. By the residue pairing $S$ is
+isotropic in the rank-two orthogonal residue bundle. That bundle has
+the global isotropic line $I=\pi_*(L(E)/L)$ of degree $K\cdot E/6$.
+The two isotropic directions in an orthogonal plane are distinct; once
+one is chosen, the other is a line paired perfectly with it.
+Connectedness therefore forces $\deg S^*=\pm K\cdot E/6$.
+Both values contradict the degree $5K\cdot E/18$. This argument
+uses only the algebraic isotropics and includes effective $\theta$.
+
+For each $m\ge3$ choose standard surface generators. On the first
+handle use $(12),(23)$, and on the second use $(1\,2\,\ldots\,m)$
+and the identity, with the remaining generators trivial. The
+commutator product is a $3$-cycle, and these permutations generate
+$S_m$. Filling the puncture gives a connected cover with the required
+ramification. Its Hurwitz component consists of covers with the same
+full monodromy. Take the additional section just proved to exist.
+Its graph $(f,s)$ is simple: the normalization of its image gives an
+intermediate cover, whereas the natural action of $S_m$ on $m$
+sheets is primitive. A normalized image of degree one over $C$
+would make $s$ a pullback, and the other possibility makes the graph
+generically injective. The graphs of positive scalar multiples of
+$s$ have different maximum fiber norms and converge to the zero
+section. Their normalizations have the stated genus by
+Riemann--Hurwitz.
+\end{proof}
+
+\begin{theorem}\label{p8-thm:path-graphs}
+Let $a,b$ be distinct non-effective theta characteristics on $C$.
+Identify their underlying smooth complex lines, and take any
+continuous path of real Cauchy--Riemann operators on this line
+between their spin operators. Suppose the operators on $C$ are
+invertible throughout. In every degree $m\ge3$ there is an interior
+parameter at which a smooth cover $f:Y\to C$ with full symmetric
+monodromy and a single triple ramification point has nonzero
+pullback kernel. Its kernel sections give simple almost-complex
+multisections accumulating at the zero section. Such paths and
+pairs exist in every base genus $g\ge2$. A single split path on
+a closed symplectic six-torus realizes these multisections in all
+degrees $m\ge3$.
+\end{theorem}
+\begin{proof}
+Choose the first generator in the preceding permutation construction
+to represent the Poincar\'e dual of the nonzero difference $ba^{-1}$
+modulo two. Its monodromy is odd. On the corresponding compact
+triple divisor $T$, the ratio of the two induced spin parities is
+$-1$ by Section~\ref{p8-sec:characters}, since both embedded spin lines
+have even parity. By Theorem~\ref{p8-thm:profiles} the oriented
+obstruction planes at the two endpoints have opposite nonzero Euler
+degrees on $T$. If every pullback along the path were injective
+there, the constant-rank smooth-domain Fredholm family would give
+an oriented plane bundle over $T\times[0,1]$. Its two Euler degrees
+would be equal. This proves the existence of a nonzero section.
+It cannot descend since the base operator has zero kernel. In using
+primitivity for its graph, normalization of a simple image is the
+usual factorization for a nonconstant pseudoholomorphic map.
+The projection from the normalization to $C$ is holomorphic.
+A degree-one projection is an isomorphism, and the resulting graph
+over $C$ solves the base equation. This proves simplicity just as
+in the holomorphic case. The positive real multiples again give
+distinct supports. The assertion permits the same parameter to
+serve more than one degree.
+
+To construct a path, decrease the zeroth-order term of the spin
+operator on $a$ to zero. Every strictly positive amplitude is
+injective by the spin norm identity, and $\bar\partial_a$ is
+invertible by non-effectivity and index zero. Join the complex
+operators by a path in the complement of the theta divisor of
+$\operatorname{Pic}^{g-1} C$, which is connected. A family of
+representatives along the interval identifies the underlying
+smooth lines. Reverse the amplitude deformation at $b$.
+For existence in each genus take a hyperelliptic curve
+$y^2=\prod_{i=1}^{2g+2}(x-e_i)$, with ramification points $W_i$
+and divisor $H$ over infinity. For $|A|=g+1$ the line
+$\mathcal O_C(\sum_{i\in A}W_i-H)$ squares to $K_C$ and has no
+sections. Indeed, an invariant meromorphic function with at most
+these simple poles and vanishing over infinity is zero. An
+anti-invariant one is $yP(x)/\prod_{i\in A}(x-e_i)$ for a polynomial
+$P$, and vanishing over infinity again forces zero. Replacing one
+element of $A$ changes the line, since two distinct points on $C$
+are not linearly equivalent. Finally keep one spin summand fixed
+and put the path in the other summand of the normal bundle of
+degree $2g-2$. The graph equation defines a path of almost-complex
+germs with the prescribed projections. The compact realization
+of \cite[Proposition~3.1 and \S15]{WueUnramified} extends the family from a fixed small
+tube to tame structures on a symplectic six-torus. For each kernel
+section a sufficiently small multiple lies in this tube, giving
+a curve in the class $m[C]$ with the specified normalization.
+\end{proof}

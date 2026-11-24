@@ -1,0 +1,78 @@
+\pdfoutput=1
+\pdftrailerid{}
+\documentclass[11pt]{amsart}
+\usepackage{amsmath,amssymb,amsthm,microtype}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{array,booktabs,calc,longtable}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\hypersetup{pdfauthor={Bernd Johannes Wuebben},pdftitle={Unramified covers and wall crossing for local Gromov--Witten invariants}}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\CC}{\mathbb C}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\PP}{\mathbb P}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\title[Unramified covers and wall crossing]{Unramified covers and wall crossing for local Gromov--Witten invariants}
+\author{Bernd Johannes Wuebben}
+\subjclass[2020]{53D45 (primary); 14N35, 32Q65, 57R91 (secondary)}
+\keywords{Local Gromov--Witten invariants, unramified covers, real Cauchy--Riemann operators, wall crossing, Burnside ring}
+\date{November 24, 2026\\This version: November 24, 2026}
+\begin{document}
+\begin{abstract}
+Let two independent unramified double covers of an embedded curve acquire
+normal deformations along transverse walls. We construct such a family
+over every curve of genus at least two with a complex rank-two normal
+bundle of degree twice the genus minus two. The alternating difference of
+the local Gromov--Witten invariants in its four chambers equals the local
+invariant on the common fourfold cover, in every source genus.
+At each fixed covering-degree bound one neighborhood suffices for all genera.
+On a finite principal unramified cover we realize simultaneous crossings
+for pairwise inequivalent nontrivial irreducible representations of real
+type, provided their associated flat bundles together embed in the
+underlying real normal bundle. Fixed vectors determine the signs, and the
+result is a sum of local invariants on intermediate covers. Along a path
+of these crossings the determinant signs transport the initial series on
+the covers in all genera. For arbitrary rigid endpoints, the signs at
+both endpoints determine the change in the least source genus, the genus
+of an unramified cover of the given degree.
+\end{abstract}
+\maketitle
+\setcounter{tocdepth}{1}
+\newpage
+\tableofcontents
+\newpage
+\input{sections/opening}
+\input{sections/square}
+\input{sections/local_products}
+\input{sections/family}
+\input{sections/orientations}
+\input{sections/characters}
+\input{sections/endpoint_transport}
+\input{sections/prime_powers}
+\input{sections/elliptic}
+\input{sections/character_spectrum}
+\input{sections/one_wall_partition}
+\input{sections/dihedral_kernels}
+\input{sections/finite_groups}
+\input{sections/spin_endpoints}
+\input{sections/multisections}
+\input{sections/signed_cover_counts}
+\appendix
+\input{sections/quartic_signs}
+\input{sections/genus_excess}
+\input{sections/horizontal_suspensions}
+\input{sections/maximal_holonomy}
+\input{sections/cayley_signs}
+\input{sections/flat_cover_signs}
+\input{sections/references}
+\end{document}

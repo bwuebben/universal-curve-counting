@@ -1,0 +1,49 @@
+\pdfoutput=1
+\documentclass[11pt]{amsart}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{microtype,xcolor}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\hypersetup{pdfauthor={Bernd Johannes Wuebben},pdftitle={Spin structures and local Gromov--Witten invariants of curves}}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\PP}{\mathbb P}
+\newcommand{\CC}{\mathbb C}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\cO}{\mathcal O}
+\DeclareMathOperator{\sgn}{sgn}
+\raggedbottom
+\setcounter{tocdepth}{1}
+\title[Spin structures and local curve invariants]{Spin structures and local\\ Gromov--Witten invariants of curves}
+\author{Bernd Johannes Wuebben}
+\subjclass[2020]{53D45 (primary); 14H30, 14H60, 14N35 (secondary)}
+\keywords{Local Gromov--Witten invariants, spin structures, relative Gromov--Witten invariants, branched covers}
+\date{November 24, 2026\\This version: November 24, 2026}
+\begin{document}
+\begin{abstract}
+We compute the local Gromov--Witten invariants of a curve of genus at least two with positive maximal flat symplectic normal holonomy, in every covering degree and source genus. The orthogonal bundle of the harmonic reduction determines which partitions occur. When it is orientable, the series agrees with the antidiagonal local-curve series of Bryan and Pandharipande. When it is nonorientable, only self-conjugate partitions contribute. The determinant sign on the embedded curve multiplies the degree variable in this sum. The restriction on partitions comes from the change of orientation at the relative contacts when two spin structures are glued across a nonseparating node. On the closure of the locus of triple covers with four simple branch points over a genus-two curve, we compute the intersection matrix of the ten classes measuring the difference between the real spin Euler class and the corresponding complex Chern class, one for each even spin structure.
+\end{abstract}
+\maketitle
+%\newpage
+%\tableofcontents
+%\newpage
+\input{sections/introduction}
+\input{sections/degeneration}
+\input{sections/elementary}
+\input{sections/residue}
+\input{sections/branch}
+\input{sections/characters}
+\input{sections/intersections}
+\input{sections/multisections}
+\input{sections/references}
+\end{document}

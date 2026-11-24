@@ -1,0 +1,75 @@
+\section{The signed character formula for horizontal curves}\label{sec:flat-sign}
+Let \(C\) be a marked closed Riemann surface of genus \(g\ge2\). Take the flat rank-four normal model given by the sum of two lifts of the same uniformizing representation. Write \(\theta_1,\theta_2\) for their theta characteristics, \(e\in H^1(C;\mathbb F_2)\) for the flat two-torsion line \(\theta_2\theta_1^{-1}\), and
+\[\epsilon=(-1)^{h^0(\theta_1)+h^0(\theta_2)}.\]
+For any finite degree-\(m\) étale cover \(f:D\to C\), let \(P_f\) be the real permutation local system on its sheets. Its first Stiefel--Whitney class \(w_1(P_f)\) is the sign of the monodromy permutation. The determinant orientation on the map to the marked core has sign
+\begin{equation}
+\sigma(f)=\epsilon^m
+     (-1)^{\langle e\smile w_1(P_f),[C]\rangle}.
+ \label{eq:flat-signature}
+\end{equation}
+For a disconnected cover the orientation is the product of its component orientations. The formula determines the connected, fixed-target local Gromov--Witten degrees at minimum covering genus in every degree. For a fixed marked base, the regular degree-one signs of the pulled-back germs on \(2g\) double covers together with the original sign determine \eqref{eq:flat-signature} for every cover.
+
+\subsection{The fixed-target degree}
+
+The local threefold has a neighborhood in which the unique reduced compact curve is the core. For a connected stable map of degree \(m\) to this curve, each positive-degree normalized component of degree \(m_i\) has genus at least \(1+m_i(g-1)\). The arithmetic genus is the sum of the normalized component genera and the first Betti number of the dual graph. Equality with \(1+m(g-1)\) therefore requires a single nonconstant component, étale over \(C\), with a tree dual graph and no positive-genus contracted components. A nonempty contracted rational tree would have an unstable leaf. Thus all maps in this degree and minimum source genus are precisely the smooth connected étale covers. Such maps form a finite groupoid. In the disconnected convention each connected component must have positive degree, and total Euler characteristic \(m(2-2g)\) forces equality on every connected component. See Section~\ref{sec:maximal}.
+
+For an étale cover the source deformation complex cancels the tangent summand \(T_D\simeq f^*T_C\) with its complex orientation. Each real normal line operator is injective by the exact-area calculation on a pullback and has real index zero since \(\deg f^*\theta_i=g(D)-1\). Thus there is no obstruction. Its determinant sign is \((-1)^{h^0(f^*\theta_i)}\). Indeed the étale domain has its pulled-back uniformization, so the path to the spin Dolbeault operator of Section~\ref{sec:maximal} applies on \(D\). At the Dolbeault endpoint the derivative from its complex kernel to its cokernel is the conjugate-linear isomorphism given, up to a nonzero complex scalar, by the positive Hermitian pairing. Its real determinant has the stated sign. The two normal signs multiply. Deck transformations act on the determinant of the regular point with its canonical zero-dimensional orientation. Its fixed-target local GW degree is consequently \(\sigma(f)/|\operatorname{Aut}_C(f)|\). Adding positively oriented complex transverse tests in independent parameter directions multiplies the orientation by \(+1\). For smooth tests of either orientation, the additional factor is their ordinary local degree. The local curve orientation here is the product of two spin parities. The usual spin Hurwitz number weights a cover by the parity of one spin structure \cite{lprec}.
+
+Along a path of marked maximal symplectic holonomies the restriction to any one finite-index surface subgroup remains maximal. Its fixed-fiber normal operator stays injective and has index zero. Its sign therefore stays constant even if the intervening model has no splitting into line operators. The degrees computed here are chamber invariants for paths containing one of the stated models.
+
+\subsection{Transfer of the quadratic refinement}
+
+Let \(q_\theta:H_1(C;\mathbb F_2)\to\mathbb F_2\) be the spin quadratic refinement of the intersection pairing, and write \(x=\mathrm{PD}(e)\). Spin parity is the Arf invariant, and twisting \(\theta\) by \(e\) adds the linear form of intersection with \(x\) to \(q_\theta\). The symplectic-basis formula for the Arf invariant gives
+\[h^0(\theta\otimes e)+h^0(\theta)\equiv q_\theta(x)\pmod2.\]
+These conventions give \(q=0\) on a simple circle with bounding induced spin structure. For a simple oriented circle \(c\), \(q_\theta([c])\) is one plus the evaluation of the spin double cover on the tangentially framed circle \cite{johnson} \cite{atiyah}.
+
+Suppose \(e\ne0\). Represent \(x\) by a simple nonseparating circle \(c\), for example by lifting \(x\) to a primitive integral homology class and choosing a corresponding simple representative. Its inverse image represents \(\mathrm{PD}(f^*e)\) and is a union of disjoint circles \(c_i\) of degrees \(\ell_i\). With pulled-back metrics the tangent framing on \(c_i\) covers the tangent framing on \(c\) with degree \(\ell_i\). Consequently
+\[q_{f^*\theta}([c_i])=1+\ell_i(q_\theta(x)+1)
+                =\ell_i q_\theta(x)+\ell_i-1\pmod2.\]
+Intersection terms vanish on the disjoint lifts. The sum of \(\ell_i-1\) is \(m\) minus the number of cycles of the monodromy around \(c\), hence is the exponent of its permutation sign. Applying the preceding parity identity on the source with \(\theta=f^*\theta_1\) proves \eqref{eq:flat-signature}. For \(e=0\) both spin structures agree, and both sides equal \(+1\). This uses only transfer of an unramified embedded circle. The more general parity problem for odd branched coverings involves the lifting of the full covering monodromy \cite{eop}.
+
+\subsection{The character sum in every degree}
+
+Let \(c_m\) be the sum of \(\sigma(f)/|\operatorname{Aut}_C(f)|\) over connected covers of degree \(m\). Let \(b_m\) be the corresponding sum over all covers, with \(b_0=1\). On a union of \(r\) equal connected components the automorphism order is the product of the \(r\) deck group orders times \(r!\). Permuting the factors of index zero introduces no determinant sign. The decomposition into connected components gives
+\begin{equation}
+B(t)=1+\sum_{m\ge1} b_m t^m
+       =\exp\left(\sum_{m\ge1} c_m t^m\right).
+ \label{eq:flat-log}
+\end{equation}
+For a partition \(\lambda\vdash m\), let \(d_\lambda\) be the dimension of its complex irreducible representation of \(S_m\), and \(\lambda'\) its transpose. Then
+\begin{equation}
+b_m=\epsilon^m
+  \sum_{\substack{\lambda\vdash m\\e=0\ {\rm or}\ \lambda=\lambda'}}
+            (m!/d_\lambda)^{2g-2},\qquad m\ge1 .
+ \label{eq:flat-partitions}
+\end{equation}
+In particular \eqref{eq:flat-log}--\eqref{eq:flat-partitions} compute each \(c_m\) by one formal logarithm. Each \(b_m\) is an integer since \(m!/d_\lambda\) is the hook-length product of \(\lambda\).
+
+Here is the character calculation including its normalization. Label one fiber of the cover, set \(G=S_m\), \(n=|G|\), and choose the first surface generator to be the circle \(c\) when \(e\ne0\). The signs after removing \(\epsilon^m\) are \(\chi(a_1)\), where \(\chi=\operatorname{sgn}\) for \(e\ne0\) and \(\chi=1\) for \(e=0\). A tuple \((a_i,b_i)_{i=1}^g\) defines a labeled cover exactly when \(\prod_i[a_i,b_i]=1\). Dividing the weighted tuple count by \(n\) gives the required automorphism-weighted count, by orbit--stabilizer under relabeling.
+
+In the complex group algebra put
+\[K_\chi=\sum_{a,b\in G}\chi(a)\,[a,b],
+  \qquad [a,b]=aba^{-1}b^{-1}.\]
+This is central. On an irreducible unitary representation \(V\) of dimension \(d\) and character \(\psi\), the sum over \(b\) conjugating \(a^{-1}\) is \(n\overline{\psi(a)}I/d\). Taking the trace and dividing by \(d\) hence gives the scalar of \(K_\chi\) as
+\[\frac n{d^2}\sum_a\chi(a)|\psi(a)|^2
+   =\left(\frac nd\right)^2
+       \mathbf 1_{V\otimes\chi\simeq V}.\]
+The identity coefficient of \(K_\chi K_1^{g-1}\) is its regular trace divided by \(n\). Dividing once more by \(n\) for relabeling, the contribution of \(V\) is \((n/d)^{2g-2}\) precisely when \(V\otimes\chi\simeq V\). The sign character sends \(V_\lambda\) to \(V_{\lambda'}\), proving \eqref{eq:flat-partitions}. The untwisted calculation is the ordinary surface-group character formula \cite{med}.
+
+In degree one, \(b_1=c_1=\epsilon\). In degree two there is no self-conjugate partition. Thus if \(e\ne0\), then \(b_2=0\) and \(c_2=-1/2\). Directly, the connected double covers correspond to the nonzero characters \(a\in H^1(C;\mathbb F_2)\) and have deck order two. The sum of \((-1)^{\int_C e\smile a}\) over those characters is \(-1\). For \(e=0\) the corresponding counts are \(b_2=2^{2g-1}\) and \(c_2=(2^{2g}-1)/2\). In degree three the only self-conjugate partition is \((2,1)\), of dimension two. Thus for \(e\ne0\) we get \(b_3=\epsilon^3 3^{2g-2}\) and \(c_3=\epsilon^3(3^{2g-2}+1/3)\). As a direct finite check, at \(g=2\), with the overall factor \(\epsilon^m\) removed, enumeration of the quadruples in \(S_m^4\) with \([a_1,b_1][a_2,b_2]=1\) and weight \(\operatorname{sgn}(a_1)\) gives disconnected counts \(1,0,9\) and transitive counts \(1,-1/2,28/3\) for \(m=1,2,3\) after division by \(m!\).
+
+\subsection{Which marked chamber data are detected}
+
+For the connected double cover classified by \(a\ne0\), the orientation of the embedded degree-one core in the pulled-back threefold is \((-1)^{\langle e\smile a,[C]\rangle}\) by \eqref{eq:flat-signature}. There is no deck denominator for that embedded map to its own target. By nondegeneracy of the mod-two intersection form, the signs on the covers for a basis of \(H^1(C;\mathbb F_2)\) recover \(e\). The mark on the original base gives \(\epsilon\). Equality of degree-one universal insertions on each of these corresponding marked targets forces equality of their signs by the regular-point detection argument in Section~\ref{sec:maximal}. These finitely many measurements suffice for all individual étale signs and all the fixed-target degrees \eqref{eq:flat-log}--\eqref{eq:flat-partitions}. The unlabelled sequence \eqref{eq:flat-partitions} uses only \(\epsilon\) and whether \(e=0\).
+
+On a marked genus-\(g\) base there are \(1+2(2^{2g}-1)\) different realizable sign profiles of this form. At \(e=0\) only \(\epsilon=+1\) occurs. For \(e\ne0\), twisting both theta characteristics by a class \(a\) with \(\int_C e\smile a=1\) reverses \(\epsilon\) and preserves \(e\). Distinct profiles obstruct a deformation through marked maximal germs. This conclusion distinguishes finitely tested chambers and leaves possible additional invariants within a sign profile. The degrees \(c_m\) concern the minimum source genus in a fixed target. The full multiplicity-\(m\) universal insertion also includes information from other source genera and parametrized targets.
+
+\subsection{All positive maximal flat holonomies}
+
+Let \(\rho:\pi_1(C)\to\mathrm{Sp}(4,\mathbb R)\) have positive maximal Chern number \(2g-2\), possibly arising from the linearization of a nonlinear flat germ along a marked section. Fix a reference theta characteristic \(\theta\). Let \(F\) be its orthogonal Cayley bundle, \(w=w_1(F)\), and \(\epsilon_\rho\) the determinant sign of the embedded core. Then \eqref{eq:flat-signature} holds with \((e,\epsilon)\) replaced by \((w,\epsilon_\rho)\) for every étale cover. The disconnected degrees are given by \eqref{eq:flat-partitions} with all partitions when \(w=0\) and only the self-conjugate partitions when \(w\ne0\), with overall factor \(\epsilon_\rho^m\). The logarithm \eqref{eq:flat-log} gives the connected degrees. See Section~\ref{sec:cayley}.
+
+For \(w\ne0\), the representation component contains a pair of uniformizing spin lifts whose difference character is \(w\). For each fixed connected étale \(f\), restriction of the deformation path to its finite-index surface subgroup stays maximal. All normal operators on that cover are invertible throughout the path, by exactness of the vertical area form and index zero. Thus the sign computed on the mixed-spin representative carries over. For \(w=0\) the oriented splitting in Section~\ref{sec:cayley} has parameter \(c=|\deg N|\), with \(\epsilon_\rho=(-1)^c\). On a degree-\(m\) cover the two oriented lines pull back and the absolute degree becomes \(mc\). The sign is \((-1)^{mc}=\epsilon_\rho^m\), as required. Deforming a nonlinear flat germ to its derivative preserves the core, its unramified normal operators and their orientations. Products give the disconnected case.
+
+One can also apply the rank-two orthogonal spin index on every connected source. The parity exponent on the base is \(q_\theta(\mathrm{PD}(w))+\int_C w_2(F)\), which for an oriented \(F\) is its oriented plane degree modulo two. On the degree-\(m\) source the second term multiplies by \(m\). The first term changes by the circle-transfer calculation above, giving again the sign \(\epsilon_\rho^m(-1)^{\int_C w\smile w_1(P_f)}\). This check also works when \(w\ne0\) downstairs and \(f^*w=0\) \cite{bspectral}.
+
+For all positive maximal germs, the \(2g\) double-cover signs recover \(w\) and the base test supplies \(\epsilon_\rho\). These \(2^{2g+1}\) possible profiles are all realized. The nonzero \(w\) profiles were constructed above, and the oriented components with \(c=0,1\) give the two signs at \(w=0\). The unlabelled numerical degrees have precisely four possibilities at fixed \(g\): \(c_1\) determines \(\epsilon_\rho\), and \(c_2\) distinguishes \(w=0\) from \(w\ne0\). These numerical distinctions use ordinary regular fixed-target degrees. The classification of full unmarked universal series on the nonoriented components in Section~\ref{sec:cayley} uses an additional geometric and mapping-class argument.
