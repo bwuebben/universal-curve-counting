@@ -161,17 +161,17 @@
       "author": "Bernd Johannes Wuebben",
       "orcid": "0009-0002-4588-3284",
       "date": "2026-11-25",
-      "revision_date": "2026-11-25",
+      "revision_date": "2026-11-26",
       "status": "Preprint",
       "pdf": "circle_exchange/main.pdf",
       "pages": 16,
-      "sha256": "8ba3191f2f5c96bf6b5a31522b28ea0c24860c0f9907f7ad2c83839d99b1828b",
+      "sha256": "f709ad933af0723eb2e04746c769adf93e60cda58d89ad01c3d182af96f2d3cf",
       "doi": "10.5281/zenodo.24549724",
       "concept_doi": "10.5281/zenodo.24549724",
-      "version_doi": "10.5281/zenodo.24549725",
+      "version_doi": "10.5281/zenodo.24562568",
       "archive_url": "https://doi.org/10.5281/zenodo.24549724",
       "website_url": "https://bwuebben.github.io/papers/circle-exchange-local-curves/",
-      "version": "1.0"
+      "version": "2.0"
     }
   ]
 }

@@ -1,10 +1,12 @@
 # The topological string on balanced local curves from two circle actions on a Calabi–Yau fivefold
 
-Bernd Johannes Wuebben · November 25, 2026 · [Publication and citation](https://bwuebben.github.io/papers/circle-exchange-local-curves/) · [Zenodo](https://doi.org/10.5281/zenodo.24549724).
+Bernd Johannes Wuebben · November 25, 2026 · Revised November 26, 2026 · [Publication and citation](https://bwuebben.github.io/papers/circle-exchange-local-curves/) · [Zenodo](https://doi.org/10.5281/zenodo.24549724).
 
 [Read the manuscript](main.pdf) · [LaTeX source](main.tex) · [Bibliography](references.bib)
 
 The central theorem compares two external circles of a local Calabi–Yau fivefold over a fixed smooth positive-genus curve. Its new content is the integral comparison on the common space of cycles, in every degree and across the balanced Picard family. The known fixed-target hook formula enters once, to evaluate the coefficient in the original presentation. The rotated calculation derives it on the surviving plane Hilbert schemes. In genus two the applications identify the connected class on the collision diagonal and evaluate a first variation of its underlying degree-two family index at the lowest grading.
+
+Theorem 1.2 gives the integral first variation at the lowest original grading for every positive exchanged grading. At the second exchanged grading its Chern character is twelve times the principal polarization of the Picard variety.
 
 ## Build
 

@@ -187,16 +187,31 @@ one would also have to establish a normalizable state in the wrapped
 theory with the continuum of two separated branes open and derive its
 spin.
 
-There is a further test for which even exact numerical agreement on
-every target would give no information. Vary the product $\kappa$ of
-the two normal weights on $X$, compensating on the plane so the fivefold
-volume remains invariant. In curve degree two we compare the term linear
-in $1-\kappa$ at the lowest original grading $q^{-3}$. On $X$ it comes
-from two ribbons, one in each normal line. On $X'$ it comes from
-divisors on the curve. At the exchanged grading $t^2$ the two kinds of
-divisors give $4\theta$ and $8\theta$ in cohomology, where $\theta$ is
-the principal polarization of $\operatorname{Pic}^1(C)$. The ribbons
-give the same $12\theta$. The integral class giving this coefficient has rank zero on every
-individual target. Section~\ref{sec:variation} establishes the integral
-identity at $q^{-3}$ for every positive power of $t$ in this first
-variation.
+Varying the product $\kappa$ of the normal weights on $X$ detects
+the principal polarization of the Picard variety. Give the four lines
+in \eqref{eq:fixed} the weights $t,\kappa/t,q,\kappa^{-1}/q$, so their
+product remains one. Write $\delta=1-\kappa$.
+
+\begin{theorem}[First variation in genus two and curve degree two]\label{thm:picard-variation}
+Let $C$ have genus two, let $B=\operatorname{Pic}^1(C)$, and put
+$A=R\pi_*\mathcal L$ for the normalized Poincar\'e line on
+$C\times B$, with $\pi:C\times B\to B$. With the ordered orientations
+of Theorem~\ref{thm:exchange}, the original and rotated family indices
+have the same coefficient of $\delta q^{-3}t^k$ for every $k\geq1$.
+Its value in $K^0(B)$ is
+\[
+       -2\bigl(1+2\,\mathbf1_{2\mid k}\bigr)\psi^k(A),
+\]
+where $\psi^k$ is the $k$th Adams operation. On $X$ one takes the
+$q^{-3}$ coefficient and expands its first variation at $t=0$.
+On $X'$ one takes the $t^k$ coefficient and expands its first
+variation at $q=0$.
+\end{theorem}
+
+At $k=2$ the Chern character of this class is $12\theta$, where
+$\theta$ is the principal polarization of $B$. On $X$ it comes from
+two ribbons, one in each normal line. On $X'$ the two types of divisor
+contribute $4\theta$ and $8\theta$. Restriction to any individual
+target gives zero because $\chi(C,L)=0$ for every $L\in B$.
+Section~\ref{sec:variation} gives both calculations at the lowest
+original grading $q^{-3}$.

@@ -54,7 +54,7 @@ The [shared supplement](supplementary_calculations/README.md) contains the calcu
 
 ## Topological strings and curve counting
 
-**The topological string on balanced local curves from two circle actions on a Calabi–Yau fivefold**. On a balanced local curve the variable grading the Euler characteristic of a stable pair becomes a plane rotation weight when the external circle of the fivefold is exchanged. The equality holds on the common space of cycles in every positive curve degree and throughout the Picard family. [PDF](circle_exchange/main.pdf) · [Source and calculations](circle_exchange/README.md) · [Abstract and citation](https://bwuebben.github.io/papers/circle-exchange-local-curves/) · [Zenodo](https://doi.org/10.5281/zenodo.24549724).
+**The topological string on balanced local curves from two circle actions on a Calabi–Yau fivefold**. On a balanced local curve the variable grading the Euler characteristic of a stable pair becomes a plane rotation weight when the external circle of the fivefold is exchanged. The equality holds on the common space of cycles in every positive curve degree and throughout the Picard family. The November 26 revision states the genus-two first variation at the lowest original grading as Theorem 1.2. [PDF](circle_exchange/main.pdf) · [Source and calculations](circle_exchange/README.md) · [Abstract and citation](https://bwuebben.github.io/papers/circle-exchange-local-curves/) · [Zenodo](https://doi.org/10.5281/zenodo.24549724).
 
 ## Reproduce the calculations
 
