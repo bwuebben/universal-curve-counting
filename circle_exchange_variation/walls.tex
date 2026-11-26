@@ -1,0 +1,131 @@
+\section{The first variation on the product threefold}\label{sec:walls}
+\subsection{The graded moment equations}
+
+Retain the $q$-antidiagonal circle and decompose $E=\sum_i q^i E_i$. At the central parameter the dimension vector is $v_i=\#\{(x,y)\in\lambda:y-x=i\}$. Put $e_i=\deg E_i$ and $k=\sum e_i$. The $q$-fixed framed matrix data are the doubled linear quiver on the occupied integers with a single framing at vertex zero. There is a bundle map in each direction along each edge, a map from the trivial framing and a map back to it. A path applied to the framing is a global section. Stability means the framing generates over the function field of $C$. The moment equation at vertex $i$ can now be deformed to $a_i\,1_{E_i}$, with independent scalars of volume weight $c$. The original single-parameter deformation is the diagonal $a_i=x$.
+
+On the central fiber the equivalence between generically cyclic framed ADHM bundles and stable pairs is \cite[Theorem~1.9]{Di}. The two plane coordinates act as the two matrices and the stable-pair section gives the framing. The return arrow vanishes for a cyclic commuting pair, and extends by density from the generic point. For the deformation retain this arrow and the full moment relation $[X,Y]+ij=a$. On a smooth parameter base use the relative obstruction theory obtained by pushing the infinitesimal gauge, arrow-and-framing, and moment complex along $C$. The transpose of the last arrow is the infinitesimal stabilizer by the trace symplectic form, with the moment character included. Consequently the first kernel vanishes and the last cokernel is supported at finitely many curve points, by generic cyclicity. The push has tangent amplitude $[0,1]$. More precisely, let $S=\AAo^2_{x,y}$ with the parameter map $a=(a_i)$ specified below, let $G=\prod_i{\rm GL}(v_i)$, and let $A$ be the affine space of graded arrows and the two framing maps for vector spaces of ranks $v_i$. Write $\mathfrak g^*$ for the moment target, using the trace pairing. Over $S$ take
+\[
+ \mathfrak X=\big[(A\times S)\mathop{\times}^{\mathbf R}_{\mathfrak g^*} \{0\}\,/G\big],
+ \qquad (A\times S)\longrightarrow \mathfrak g^*,\quad (z,s)\longmapsto\mu(z)-a(s).
+\]
+The relative derived moduli is the open locus of generically cyclic maps of the specified bundle degrees in $\underline{\rm Map}_S(C\times S,\mathfrak X)$. Indeed an $S$-test object gives bundles on its product with $C$, their arrows and a derived solution of the moment relation. For any derived $S'\to S$, this same description on each $S'$-test object identifies the base change with maps to $\mathfrak X\times_S^{\mathbf R}S'$. The stability condition and degrees restrict on classical fibers. Thus the asserted fiber squares are derived Cartesian even for nontransverse parameters. The relative tangent is the curve pushforward of the three-term gauge, arrow and moment complex above. On the central fiber its fixed virtual tangent is the zero-$q$ part of
+\[
+R\rho_*[E+cE^\vee-(1-q)(1-c/q)\operatorname{End} E],
+\]
+and its fixed virtual sheaf is the induced fixed stable-pair sheaf. This follows by taking equivariant weight zero in the equivariant Koszul complex of the pair: its gauge term is $\End E$, its arrow and framing term is $(q+c/q)\End E+E+cE^\vee$, and its moment term is $c\End E$. Alternatively the intrinsic Fulton class formula \cite[Theorem~4.2]{Th} identifies the virtual sheaves on the identical fixed scheme with identical virtual cotangent classes. The nonzero-$q$ part of this expression defines moving Euler insertions on the entire parameter family, even at parameters specified only on the fixed quiver. The ordered determinant also extends by determinants of cohomology and the external line pairing. At $c=1$ it is $\mathcal D(E)^{-1}\langle\det E,LK^{-1}\rangle$ up to constant lines, $\mathcal D=\det R\rho_*$. The counting sign is $(-1)^k$. These statements require no deformation of an ungraded stable-pair space in the independent vertex parameters.
+
+Choose vertex parameters $a_i=x+y\eta_i$ with $x,y$ both of character $c$. Choose $\eta_i$ so that all averages on distinct consecutive intervals are distinct. For $y\ne0$ each value of $x$ lies on at most one wall $\sum_{a\le i<d}a_i=0$. For $y=0$ and $x\ne0$ all these sums are nonzero. The same construction works with only one vertex.
+
+\subsection{Reflections and properness}
+
+Introduce spectral parameters $s_i$ with $a_i=s_i-s_{i+1}$ and bits
+\[
+b_i={\bf1}_{i\le0}-v_i+v_{i-1}.
+\]
+Here the finite range of indices runs from the first occupied vertex to one past the last, with outside dimensions zero. The $b_i$ are zero or one, from the diagonal counts of a Young diagram. At a vertex with $a_i\ne0$ reflection exchanges $s_i,s_{i+1}$ and $b_i,b_{i+1}$. On bundles it replaces $E_i$ by the kernel of $A:H\to E_i$, where $H=E_{i-1}\oplus E_{i+1}\oplus\mathcal O^{\mathbf1_{i=0}}$. For the signed outbound map $B_i:E_i\to H$ the moment equation is $AB_i=a_i1$. Thus $H=B_iE_i\oplus\ker A$ in families. Replace the two maps by inclusion and $-a_i$ times projection for the complementary summand, so their product on $H$ changes from $B_i A$ to $B_i A-a_i1_H$. The neighboring parameters become $a_{i\pm1}+a_i$ and the vertex parameter becomes $-a_i$. Signs on the incident arrows implement the chosen moment signs. This construction is involutive up to canonical isomorphism. It preserves generic cyclicity: it gives an equivalence on representations with the framing vertex retained and on their subquotients, by the same split kernel construction. One may impose the moment relation at the framing vertex as well: its scalar there is forced by the sum of traces, since the framing has rank one. The construction bypasses that vertex. In particular the degree charges $e_{i-1}-e_i$ are interchanged at the same two positions. This is the nonzero-parameter reflection for a deformed preprojective algebra, applied to vector bundles.
+
+When no spectral values coincide, sort the bits with all ones first. All gauge ranks then vanish, and the unique generically cyclic representation has zero degree. Suppose exactly $s_a=s_d$, $a<d$. All swaps are allowed except interchanging these two labels. Unless $b_a=0,b_d=1$ one can still sort to the vacuum. In the exceptional case put all other ones first, then the two equal labels in their given order, then all other zeros. The only remaining gauge vertex is the framed one and it has rank one. At the wall the one equation is $ij=0$. In a transverse family it is $ij=a'_0$, where $a'_0=s_a-s_d$ up to the fixed sign convention. The gauge line at positive degree is $\mathcal O(D)$, its section gives the effective divisor $D$, and the return map is zero. Transporting the degree charges back gives
+\[
+e_i=d_0\,\mathbf1_{a\le i<d},\qquad d_0=|D|>0,\qquad k=(d-a)d_0 .
+\]
+On this component the same inverse reflections give, in ordinary $K$-theory over the full divisor family,
+\[
+[E_i]=v_i+\mathbf1_{a\le i<d}([\mathcal O(D)]-1).
+\]
+Indeed the reflection relation for classes is $[E_i']=[H]-[E_i]$. Its coefficient of $\mathcal O(D)-1$ transforms by the same simple reflection as the degree. All calculations at $y\ne0$ here are after forgetting the volume action.
+
+\begin{lemma}\label{lem:proper}
+At fixed ranks and degrees the graded moment family is proper over the parameter plane. At positive total degree it is proper over the $y$-line.
+\end{lemma}
+\begin{proof} The finite-dimensional, cyclic, \emph{constant} framed representations with dimension $v$ form an \'etale family over the $(x,y)$-plane. Cyclicity implies trivial infinitesimal stabilizer and surjective moment differential, and the relative tangent dimension is $2(v_0-\sum v_i^2+\sum v_i v_{i+1})=0$. The dimension identity follows from $b_i^2=b_i$ and summation, or from the absence of weight zero in the monomial Hilbert tangent. The stable free gauge quotient carries its tautological bundles. There is exactly one geometric point over every parameter: off intersections use the reflections just given and the unique cyclic framed rank-one or vacuum representation. At the origin a cyclic framed ADHM point has zero return map and is a homogeneous colength-$m$ ideal; its monomial scheme is determined by $v$. Thus this \'etale family is an isomorphism to the parameter plane (an \'etale universally injective map is an open immersion). Denote its cyclic bundles and arrows by $T_i$. Their constant pullbacks are the minimal bundles on the curve.
+
+For a generically cyclic bundle representation over a field, words on the framing embed the minimal $T_i\otimes\mathcal O_C$ into $E_i$, generically isomorphically. Indeed the generic representation is the unique stable point, canonically identified by its framing. Relations among words extend across missing curve points by torsion-freeness. The dual inclusions have finite quotient of length $e_i$. This description holds over nonreduced bases. Locally choose a basis of words for the constant cyclic bundle. The corresponding sections of $E_i$ satisfy the same relations on the locus of generation, by uniqueness of the framed cyclic representation there. This open is schematically dense relatively: its complement is fiberwise finite, and a local determinant that is regular on each curve fiber is regular on the flat bundle. Relations therefore extend on the whole family. The dual word map gives a length-$e_i$ flat quotient, by the fiberwise injection criterion. Conversely kernels of such quotients are bundles, and the incidence conditions that the dual arrows preserve them and the dual return section lies in the kernel are closed. Dualizing recovers the framed maps with their relations; the word sections ensure generic generation. Equivalently the valuative criterion reads as follows: over a discrete valuation ring extend the colored dual quotients by the proper relative Quot schemes of the $T_i^\vee$. The extended kernels are bundles by flatness and torsion-freeness on curve fibers. The dual arrows preserve them by closedness of composition to the finite flat quotients. The dual of the minimal return map factors through the extended kernel by the same argument. The section extends from the minimal bundle automatically. The moment equations hold by density and flatness. Each fiber generates generically as it contains the minimal word sections. Uniqueness follows from the forced word maps in any extension and separatedness of Quot. Finite type and separatedness of the stable framed moduli can also be seen on the bounded word charts: the ranks and the degrees are fixed, the generically independent word sections put each dual bundle in a finite length Quot of a trivial bundle, and the arrow and relation spaces over the resulting bounded families are of finite type. The moduli is proper over the parameter plane at fixed degrees. For $k>0$ its support is on a finite union of lines finite over $y$. The structural morphism to the $y$-line is therefore proper as well, including nilpotent thickenings. One may use a common power of the product of the wall equations to cut out the scheme-theoretic image.
+
+\end{proof}
+
+\subsection{Taking the first variation by a transverse line}
+
+\begin{lemma}\label{lem:basechange}
+For $k>0$, dividing the central index by $\delta$ and setting $c=1$
+gives the ordinary-volume index over the line $y=1$, with the
+restricted moving factors and ordered root.
+\end{lemma}
+\begin{proof}
+Let $\mathfrak M$ denote the relative derived moment family. The two
+successive base changes, with $a$ equal to $0$ or $1$, are
+\[
+\begin{CD}
+ \mathfrak M_{y=a}@>>> \mathfrak M\\
+ @VVV @VVV\\
+ \AAo^1_x @>{y=a}>> \AAo^2_{x,y}
+\end{CD}
+\qquad
+\begin{CD}
+ \mathfrak M_{x=y=0}@>>>\mathfrak M_{y=0}\\
+ @VVV @VVV\\
+ \{0\}@>{x=0}>>\AAo^1_x .
+\end{CD}
+\]
+The two squares are derived Cartesian by the functor of maps just described.
+Their restricted obstruction theories are those of the indicated fibers:
+the curve is fixed and proper and the gauge--moment complex has
+perfect pushforward compatible with base change.
+The virtual pullbacks thus commute with the proper pushforwards and
+with tensoring by the perfect insertions \cite[Theorem~2.6]{Q}.
+Push the fixed virtual family on the plane to the $y$-line, including the moving Euler and root insertions coefficientwise in $q$ and the constant Picard base $B$. At $y=0$ this gives the virtual index of the total diagonal $x$-family by virtual base change and proper pushforward. The latter is supported over $x=0$ for $k>0$. Restriction along $x=0$ multiplies its pushed index by $1-c^{-1}$: filter each sheaf by the nilpotent parameter and resolve the origin of the character-$c$ line by its two-term Koszul complex. The insertions are restrictions of perfect classes, with the moving Euler inverse expanded at $q=0$. Consequently the central family index divided by $\delta$ at $c=1$ is the ordinary-volume push from this total $x$-family. There is no residual factor from the number of vertices. Using a single transverse line at this stage fixes the normal character, independent of the length of a wall.
+
+After division, forget the volume action. The fibers $y=0$ and $y=1$ of the pushed class agree by homotopy invariance on $B\times\mathbb A^1_y$ and virtual base change. Thus one may calculate on the affine line $y=1$, where the surviving wall points are distinct. Near each contributing point, the ordinary moduli on the $x$-line is the smooth scheme $C^{(d_0)}$. The reflections above are isomorphisms over the open set where their parameters are invertible. In the remaining rank-one problem, $H^0(C,\mathcal O(-D))=0$ in all fibers, and the degree is positive. Relative cohomology and base change force the return map to vanish also in families. Hence $a'_0=0$ scheme-theoretically. This uses the simple zero of the transverse linear parameter.
+
+\end{proof}
+
+\subsection{Contribution of one wall}
+
+Let $p_D:D\to C^{(d_0)}$ be the universal divisor projection. Write $V=\sum v_iq^i$, $W=\sum_{a\le i<d}q^i$, $h=d-a$, $U=p_{D*}\mathcal O_D$, $T=p_{D*}\mathcal O_D(D)$, $J=\det U$, and $F^*=F(q^{-1})$ for a Laurent polynomial. The quotient on the wall has class $V+W(\mathcal O(D)-1)$. Inserting this into the framed tangent at $c=1$ gives the increment $TH-UH^*$ with
+\[
+H=W[1-(1-q)(1-q^{-1})(V-W)^*]=\sum_j h_jq^j .
+\]
+The empty tangent is $-b$ times the Hilbert tangent, which has no weight zero. One has $h_0=1$, $H(1)=h$ and $H'(1)=W'(1)$. The fixed tangent over the transverse line is therefore $T-U+1$ in $K$-theory. Since the underlying scheme is smooth with tangent $T$, its obstruction bundle has class $U-1$. Its virtual sheaf is $\lambda_{-1}((U/1)^\vee)$. This determines the fixed virtual sheaf without asking a reflection to identify the moving stable-pair obstruction theories.
+
+Here are the coefficient and hook identities explicitly. Put $\mu_i=v_i-\mathbf1_{a\le i<d}$. Summing the second differences of $\mu_i$ gives
+\[
+h_0=\mathbf1_{a\le0<d}-(\mu_a-\mu_{a-1})+(\mu_d-\mu_{d-1})=1 .
+\]
+The sum of the coefficients of the positive powers of $q$ in $H$ equals
+\[
+p=\sum_{j=a}^{d-1}(\mathbf1_{j>0}+\mu_j-\mu_{j-1})
+=\#\{i:a<i<d,\ b_i=0\}.
+\]
+The inversion pairs $b_a=0,b_d=1$ are in bijection with boxes of $\lambda$. In fact the zero corresponding to row $y$ is at $a=y-\lambda_y+1$ and the one corresponding to column $x$ is at $d=\lambda'_x-x$, with rows and columns starting at zero and lengths denoted by $\lambda_y,\lambda'_x$. These positions are the vertical and horizontal steps of the partition boundary, or follow by substituting the diagonal counts in the bit formula. The inversion condition is precisely $(x,y)\in\lambda$. It gives $h=d-a=h_{(x,y)}$, and the intervening zeros are the rows below $y$ reaching column $x$, so $p=\ell_{(x,y)}$.
+
+Write $N_D(F)=\det p_{D*}(F|_D)/\det U$ for the norm of a line. Lemma~\ref{lem:root} gives the relative ordered root at $c=1$, which is $(\det W)^{-d_0}J^h N_D(L^h)$ by the two divisor sequences and the Deligne pairing. Reflect the dual positive-weight Euler denominators of $TH-UH^*$ about $q=0$. The character $(\det W)^{-d_0}$ cancels by $H'(1)=W'(1)$. Since $\det T=J^{-1}N_D(K)^{-1}$, their determinants leave $J\,N_D(L^hK^{-p})$ after the root. Their sign, the counting sign $(-1)^{hd_0}$, and conversion of $J\lambda_{-1}((U/1)^\vee)$ together give $-1$. Indeed the positive moving rank increment is $d_0(2p-h+1)$ and the last sign is $(-1)^{d_0-1}$. The empty quotient contributes $Z_\lambda$. The remaining normalized symmetric powers at $q^i$, $i>0$, have inputs
+\[
+h_i(T-U^\vee)+h_{-i}(T^\vee-U).
+\]
+These have rank zero and are dualized by transposing the marked box and shape. Let $F_\gamma$ denote the gamma filtration on the ordinary $K$-ring of $C^{(d_0)}$. A rank-zero class and its dual have opposite images in $F_\gamma^1/F_\gamma^2$, detected by their determinants. The positive-degree coefficients of the normalized symmetric algebra have rank zero, and dualizing its inputs dualizes its coefficients. Thus each nonconstant correction cancels with its transpose modulo $F_\gamma^2$. The norm lines in the two terms have the same $N_D(L^h)$; the discrepancy in powers of $N_D(K)$ does not alter the cancellation in the first filtration quotient. At an invariant marked box $h_i=h_{-i}$, and each input already has zero rank and trivial determinant. Multiplication by $\lambda_{-1}(U/1)$ in filtration $d_0-1$ kills all remaining corrections on the smooth $d_0$-dimensional symmetric power. Indeed $F_\gamma^{d_0+1}$ maps to zero by the dimension filtration on this smooth $d_0$-fold. This calculation precedes the family norm insertion and requires no division by an integer. For any line $F$ on $C\times B$ one has
+\[
+R\pi_*\bigl(\lambda_{-1}(U/1)N_D(F)\bigr)=\psi^{d_0}D(F).
+\]
+Indeed let $\nu:C^{d_0}\to C^{(d_0)}$ be the ordered cover, and $V_0$ the standard representation of $\mathfrak S_{d_0}$, the permutation representation modulo constants. The covariants of the permutation representation in $\nu_*\OO$ give $U$. Their exterior powers agree with the covariants of the exterior powers: locally this is Solomon's theorem \cite{So} for the product of symmetric groups on the coordinates at each support point. Split off the invariant line. The norm pulls back to $F^{\boxtimes d_0}$, so relative K\"unneth computes the push as the alternating sum of the Schur functors of $D(F)$ for the representations $\bigwedge^j V_0$. Their characters correspond to hooks $(d_0-j,1^j)$ and the integral symmetric-function identity $\sum(-1)^j s_{(d_0-j,1^j)}=p_{d_0}$ gives the Adams operation, with graded tensor permutations for $D(F)$.
+
+Summing the surviving inversions for $k=hd_0$ proves the formula.
+
+\subsection{First order in the constant exchanged grading}
+
+The two character expansions also agree at $t^0$ on the first integral infinitesimal neighbourhood of $\sigma=1$, $\sigma^2=\kappa$. For a transpose orbit let $z_n=[q^n]\sum_{\lambda\in\mathcal O}Z_\lambda(q)$. On either side the coefficient of $q^nt^0$ there is
+\[
+z_n+nz_n(\sigma-1)\pmod{(\sigma-1)^2}.
+\]
+In particular no half-integral parameter derivative is needed.
+
+For the rotated empty quotient the exact contribution of one shape is
+\[
+(-1)^{mb}q^{-b\sum h_x}\kappa^{-b\sum(\ell_x+1/2)}
+\prod_x(1-\kappa^{\ell_x}q^{h_x})^b(1-\kappa^{\ell_x+1}q^{h_x})^b .
+\]
+This follows from the constant virtual tangent $-b$ times the Hilbert tangent and the ordered root $c^{mb/2}$. Denote it by $Z_\lambda(q,\kappa)$. Interchanging arms and legs shows $Z_\lambda(q,\kappa)=Z_{\lambda^T}(\kappa q,\kappa^{-1})$ on the cover, with inversion of $\sigma$ understood. Thus the orbit sum at $q^n$ is a Laurent polynomial $H_n(\sigma)$ satisfying $H_n(\sigma)=\sigma^{2n}H_n(\sigma^{-1})$.
+
+For the original calculation at $t^0$ the antidiagonal fixed-scheme product identification at the reference spin line extends equivariantly for the remaining torus. All fixed maps and the fixed orientation carry total power zero of the varying Picard line. Reflection of the nonzero moving Euler factors leaves only their scalar powers of $\sigma$ in the $t^0$ coefficient. Hence this coefficient is an integer Laurent polynomial times $[\mathcal O_B]$, and can be computed on the reference target. At fixed $n$ remove its external factor $\sigma^n$ and consider the symmetrized virtual index at variable $t$. It is invariant under simultaneous inversion of both torus characters. Indeed on a proper full-torus fixed component with fixed virtual dimension $d$, apply weak virtual Serre duality to the determinant-root and inverse moving Euler insertion. Dualizing the moving Euler contributes its determinant and the sign $(-1)^{\mathrm{rk}N^{\rm vir}}$, by the line identity $1-z=-z(1-z^{-1})$. The determinant cancels against the square of the total root and the fixed virtual canonical bundle. The resulting total sign is $(-1)^{d+\mathrm{rk}N^{\rm vir}}=1$ by the virtual dimension of the local Calabi--Yau threefold theory. Ordinary virtual Serre duality on the fixed scheme applies coefficient by coefficient with the torus weights recorded as scalars; equivalently one can clear the Euler denominators \cite[Proposition~3.10]{FG}.
+
+The target also admits the coordinate swap because both normal lines at the reference point are the same spin line. The ordered polarization changes by a hyperbolic summand and the external factor does not depend on which normal coordinate was chosen. On the orbit sum the swap takes $t$ to $\kappa/t$. Composing it with inversion takes $(t,\sigma)$ to $(t/\kappa,\sigma^{-1})$, preserving the chamber at $t=0$. Restoring the external factor and extracting the constant term therefore gives the same reciprocity $H_n(\sigma)=\sigma^{2n}H_n(\sigma^{-1})$ on the original side. On both sides $H_n(1)=z_n$. Differentiating at one yields $2H'_n(1)=2nz_n$ in the integers, which gives the stated coefficient before multiplying by the unit class of $B$.
+
+In fact, after extracting the common factor $\sigma^{-mb}$ the two full characters are Laurent-polynomial in $\kappa$ coefficientwise and agree modulo $(1-\kappa)^2$ over $K^0(B)$ at all gradings. For the original root the exponent of $\sigma$ is $n+\operatorname{rk}P=2n+m^2b$ up to even powers. For the rotated root its half-character exponent comes from $c^{k+mb/2}$, since $\chi(EM)=k$ and $\chi(E^\vee)=-k-mb$. All other character weights come from the original torus. Thus multiplication by $\sigma^{mb}$ removes the determinant cover on both sides. At $k>0$ the proof computed the quotient by $1-\kappa$ itself, so equality of that quotient at one implies the required congruence directly in the Laurent ring. At $k=0$ the coefficients are scalar integers, and the equality of values and first derivatives in $\sigma$ gives equality of the first derivatives of the corresponding polynomials in $\kappa$ after removing the common factor. Here cancellation of two is in $\mathbb Z$ only. This yields the all-grading first-order comparison without any assumption about two-torsion of the Picard $K$-group.

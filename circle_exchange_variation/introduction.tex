@@ -1,0 +1,119 @@
+\section{The two family indices}
+Circle exchange compares the stable-pair theories on the fixed threefolds of two different fiber rotations of a fivefold. Let $C$ be a smooth projective complex curve of genus $g=b+1\ge1$,
+let $B=\Pic^b(C)$, and let $L$ be the Poincar\'e line on $C\times B$
+trivialized at a chosen point of $C$. Put $K=K_C$, $M=K/L$ and
+$D(F)=R\pi_*F$ for the projection $\pi:C\times B\to B$. Products
+and quotients of lines denote tensor products and duals. For a
+threefold whose normal bundle over $C$ is $L\oplus M$, the equivariant
+stable-pair index can be compared with that of the product
+$C\times\AAo^2$. The comparison varies $L$ over $B$ on both sides.
+
+Consider a double curve in genus two. At the minimum Euler grading
+the full normal torus fixes two pairs over each $L$, the ribbons in
+the two normal directions. They have Euler characteristic $-3$. Write $q$ for the original Euler grading, $t$
+for the exchanged grading, and $\delta=1-\kappa$ for the change in
+the volume character. At $q^{-3}t^2$ the coefficient of $\delta$ is
+$-6\psi^2 D(L)$, where $\psi^j$ denotes the integral Adams operation.
+This class has rank zero. Its Chern character in rational singular
+cohomology is $12\theta$, where $\theta$ is the principal polarization
+of $\Pic^1(C)$. Indeed Grothendieck--Riemann--Roch in cohomology gives
+$\operatorname{ch}D(L)=-\theta$.
+Passing to the numerical index of a single target loses this coefficient.
+The calculation at $q^{-3}$ raises two questions. Does the variation
+agree at every Euler grading and in arbitrary curve degree? How much
+of the comparison persists when $\kappa$ is free?
+
+The two rotations act on the ordered summands of the fivefold
+\[
+ \operatorname{Tot}_{C\times B}
+ (tL\oplus(\kappa/t)M\oplus q\OO\oplus(c/q)\OO),\qquad
+ c=\kappa^{-1},\quad \sigma^2=\kappa .
+\]
+The original threefold uses the first two summands, the rotated one
+the last two. A stable pair is a section of a pure one-dimensional
+sheaf with proper support and zero-dimensional cokernel. Its degree
+$m$ is the multiplicity over $C$. In the original index a pair of
+Euler characteristic $j$ is counted with $(-q)^j$. In the rotated
+index the corresponding monomial is $(-t)^k$, where
+$k=\chi(\mathcal F)+mb$. We call $[t]$ the one-mark coefficient: on the product threefold a single box of the monomial quotient acquires a divisor of length one. The modified virtual structure sheaf uses
+the ordered external lines in each presentation, as specified in
+Section~\ref{sec:geometry}. Denote the resulting pushforwards to $B$
+by $\Iorig,\Irot$. In a partition $\lambda$ write $a_x,\ell_x,h_x$
+for the arm, leg and hook length $1+a_x+\ell_x$ of a box $x$. Set
+\[
+ Z_\lambda(q)=\prod_{x\in\lambda}[(1-q^{h_x})(1-q^{-h_x})]^b,\qquad
+ D_m=bm(m+1)/2.
+\]
+
+\begin{theorem}\label{thm:first}
+For every $m\ge1$, both $\sigma^{mb}\Iorig$ and $\sigma^{mb}\Irot$
+belong to $q^{-D_m}K^0(B)[\kappa^{\pm1}][[q,t]]$ and are congruent
+modulo $(1-\kappa)^2$. For $k>0$ the common first variation is
+\begin{equation}\label{eq:first}
+ [\delta t^k]\mathcal I_m
+ =-\sum_{\lambda\vdash m}Z_\lambda(q)
+ \sum_{\substack{x\in\lambda\\h_x\mid k}}
+ \psi^{k/h_x}D(L^{h_x}K^{-\ell_x}).
+\end{equation}
+The formula holds after restriction to any orbit of diagrams under
+transposition. Here the positive-$t$ coefficient is divided by
+$1-\kappa$ before specializing $\sigma=1$. At $t^0$, on such an
+orbit, put $z_j=[q^j]\sum_\lambda Z_\lambda(q)$. The coefficient of
+$q^j$ in either unnormalized character is
+$z_j(1+j(\sigma-1))$ modulo $(\sigma-1)^2$.
+\end{theorem}
+
+For the second comparison set $u=q$, $v=c/u$, $p=K$, $s=p/c$,
+$R(z)=(1-sz)/(1-z)$ and $d_{ij}=u^iv^j$, with $(0,0)$ the
+northwest box, $i$ increasing to the right and $j$ downwards. Denote the removable and addable boxes of $\lambda$
+by $\mathcal R_\lambda$ and $\mathcal A_\lambda$. Define
+\begin{align}
+ Z_\lambda(q,\kappa)
+ &=(-1)^{mb}q^{-b\sum_x h_x}\kappa^{-b\sum_x(\ell_x+1/2)}
+ \prod_x(1-\kappa^{\ell_x}q^{h_x})^b
+         (1-\kappa^{\ell_x+1}q^{h_x})^b,\label{eq:empty}\\
+ G_\lambda
+ &=R(u)R(v)\sum_{r\in\mathcal R_\lambda}
+ \frac{\prod_{h\in\mathcal R_\lambda\setminus\{r\}}R(d_r/d_h)}
+ {\prod_{a\in\mathcal A_\lambda}R(cd_r/d_a)}.\label{eq:corners}
+\end{align}
+
+\begin{theorem}\label{thm:mark}
+At unrestricted volume, for every $m\ge1$, the contributions of each
+$\lambda\vdash m$ to $[t]\Iorig$ and $[t]\Irot$ agree at every Euler
+grading. Their common sum in $q^{-D_m}K^0(B)[\sigma^{\pm1}][[q]]$ is
+\begin{equation}\label{eq:mark}
+ [t]\mathcal I_m
+ =\sum_{\lambda\vdash m} Z_\lambda(q,\kappa)\,
+ D\bigl(L(1-c)G_\lambda\bigr).
+\end{equation}
+The summand is the contribution of the indicated diagram. Its
+quotients are expanded at $q=0$ before pushforward.
+\end{theorem}
+
+\begin{corollary}\label{cor:strip}
+For each $\lambda$ the localized family characters agree at
+$q^{-b\sum_{x\in\lambda}h_x+n}t^k$ whenever $n,k\ge0$ and
+$\min(n,k)\le1$.
+\end{corollary}
+
+In \cite[Theorem~1.1]{W} the two characters at $\kappa=1$ agree
+already on the common space of cycles. They are supported on the
+section $m[C]$. After pushforward to $B$, Theorem~\ref{thm:first} shows that the
+equality persists modulo $(1-\kappa)^2$ with the common normalization. It also extends
+the genus-two, degree-two calculation of \cite[Theorem~1.2]{W},
+which treated the lowest Euler grading and every $k>0$.
+Theorem~\ref{thm:mark} instead retains the entire volume character
+at $k=1$. Both theorems here concern classes on $B$. Lifting these
+refined equalities to the common space of cycles is a further question.
+
+The two computations of \eqref{eq:first} have different fixed loci.
+On the local curve the fixed virtual sheaf has dimension zero. On
+the product threefold a moment-map deformation separates the boxes
+into walls whose moduli are symmetric powers of $C$. For
+\eqref{eq:mark} the distinction occurs already on a disk. One
+expression is a Macdonald descendant of the vertex of
+\cite{DS}, the other is the sum of individual modifications at the
+corners. Their equality follows by telescoping the contributions of
+pairs of boundary steps. Keeping both divisors of marks in the
+descent gives the stated Picard classes.

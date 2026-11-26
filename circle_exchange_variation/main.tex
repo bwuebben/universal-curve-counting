@@ -1,0 +1,56 @@
+\documentclass[11pt]{amsart}
+\ifdefined\pdftrailerid\pdftrailerid{}\fi
+\usepackage[margin=1.2in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,amscd,mathtools}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\hypersetup{pdftitle={The first variation and the one-mark coefficient of circle exchange for balanced local curves},pdfauthor={Bernd Johannes Wuebben}}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{example}[theorem]{Example}
+\newcommand{\Iorig}{\mathcal I_m^{\mathrm{orig}}}
+\newcommand{\Irot}{\mathcal I_m^{\mathrm{rot}}}
+\newcommand{\OO}{\mathcal O}
+\newcommand{\AAo}{\mathbb A}
+\newcommand{\CC}{\mathbb C}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\PP}{\mathbb P}
+\DeclareMathOperator{\Pic}{Pic}
+\DeclareMathOperator{\Hilb}{Hilb}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\rk}{rk}
+\title[Refined circle exchange for balanced local curves]{The first variation and the one-mark coefficient of circle exchange for balanced local curves}
+\author{Bernd Johannes Wuebben}
+\subjclass[2020]{14N35, 14C35, 14H60, 05E05}
+\keywords{Stable pairs, local curves, equivariant $K$-theory, Picard varieties, Macdonald operators}
+\date{November 26, 2026}
+\begin{document}
+\begin{abstract}
+For a balanced local curve of positive genus we prove a first-order
+circle-exchange identity for the two stable-pair indices over its
+Picard variety. After their common determinant normalization, the
+indices agree modulo $(1-\kappa)^2$ in integral family $K$-theory
+in every curve degree and both counting gradings, where $\kappa$ is
+the threefold volume character. At positive exchanged grading the
+first variation is a sum over hooks of Adams operations on the
+derived pushforwards of powers of the Poincar\'e line twisted by
+powers of the canonical bundle. With $\kappa$ unrestricted, the
+entire coefficient of exchanged grading one agrees separately for
+each Young diagram and is given by a sum over its removable boxes.
+The first comparison deforms the graded moment equations to walls
+with symmetric powers of the curve as fixed loci. The second
+evaluates a product of two Macdonald currents and descends the
+resulting disk identity to the Picard family.
+\end{abstract}
+\maketitle
+\input{introduction}
+\input{geometry}
+\input{original}
+\input{walls}
+\input{disk}
+\input{currents}
+\input{descent}
+\input{references}
+\end{document}

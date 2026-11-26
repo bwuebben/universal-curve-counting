@@ -1,0 +1,101 @@
+\section{Polarizations and the common expansion}\label{sec:geometry}
+Let $\rho$ denote projection off the curve on any stable-pair
+parameter space, and $E$ the pushforward of the sheaf to the curve.
+This projection on the support is finite, being affine and proper.
+Purity and flatness of the family make $E$ a vector bundle of rank
+$m$. We take the relative Euler characteristic on the proper torus-fixed
+locus with its virtual structure sheaf, times the inverse moving
+Euler $\lambda_{-1}((T^{\rm mov})^\vee)^{-1}$ and the ordered
+determinant line of \cite{NO,W}. All obstruction theories are relative
+to $B$. Equivariant $K$-theoretic virtual localization is used in the
+sense of \cite{Q}. We give the two lines explicitly, suppressing
+constant one-dimensional vector spaces with trivial character.
+
+\begin{lemma}\label{lem:root}
+Write $\mathcal D(E)=\det R\rho_*E$ and use angular brackets for the
+Deligne pairing on the curve. With $N=tL$, the original polarization,
+virtual tangent and modified determinant at Euler characteristic $j$
+are
+\[
+ P=R\rho_*[E-(1-N)\End E],\qquad
+ T^{\rm vir}=P-\kappa P^\vee,\qquad
+ \sigma^{j+\rk P}(\det P)^{-1}.
+\]
+On the rotated space the virtual tangent and modified determinant are
+\[
+ R\rho_*[E+cE^\vee-(1-q)(1-c/q)\End E],\qquad
+ c^{k+mb/2}\mathcal D(E)^{-1}\langle\det E,L/K\rangle .
+\]
+The counting signs are $(-1)^j$ and $(-1)^k$, respectively.
+\end{lemma}
+\begin{proof}
+The two coordinate Koszul resolutions give the endomorphism terms,
+and the section and its Serre dual give the two linear terms.
+In the first presentation curve duality pairs the two halves since
+$N(\kappa K/N)=\kappa K$. The chosen square root of
+$\det(T^{\rm vir})^{-1}$ is $\sigma^{\rk P}/\det P$ and the ordered
+external ratio contributes $\sigma^j$ after removing the counting
+variable. Riemann--Roch gives $\rk P=j+m^2b$.
+
+In the second presentation the endomorphism term with its two
+Koszul factors has trivial determinant. The determinant of the
+linear terms, combined with the external ratio, has underlying
+square
+\[
+ \frac{\mathcal D(EL)}{\mathcal D(EM)\mathcal D(E)\mathcal D(E^\vee)}.
+\]
+For a line $H$, the identity
+$\mathcal D(EH)/\mathcal D(E)=
+ (\mathcal D(H)/\mathcal D(\OO))^m\langle\det E,H\rangle$
+follows from the determinant definition of the Deligne pairing and
+additivity (or a splitting of $E$). Curve duality gives
+$\mathcal D(E^\vee)=\mathcal D(EK)$ and
+$\mathcal D(M)=\mathcal D(L)$. Substitution gives the square of
+$\mathcal D(E)^{-1}\langle\det E,L/K\rangle$ up to a constant line.
+Taking this ordered expression chooses the root in families. Its
+character exponent is $(\chi(EM)-\chi(E^\vee))/2=k+mb/2$.
+\end{proof}
+
+\begin{lemma}\label{lem:ring}
+In either presentation all coefficients belong to
+$q^{-D_m}K^0(B)[\sigma^{\pm1}][[q,t]]$. Multiplication by $\sigma^{mb}$
+makes the powers of $\sigma$ even.
+\end{lemma}
+\begin{proof}
+First localize only at the antidiagonal subtorus of the internal
+plane. Every geometric fixed support lies over the zero section,
+since the connected torus fixes each point in a finite support
+fiber. The stable-pair support morphism is proper, by the projective
+bundle compactification and restriction to cycles disjoint from
+infinity. Thus the fixed scheme is proper over $B$, also with its
+nilpotents. Each nonzero moving weight has a unit extremal Euler
+coefficient, a signed line. Its Laurent expansion can be pushed
+forward coefficientwise with the residual volume equivariance still
+present. On $B$ this gives Laurent polynomials in $\sigma$.
+Successive localization agrees with full-torus localization. It
+suffices to check the bounds after inverting $1-\sigma^r$,
+$r>0$, since these are non-zero-divisors even over a ring with
+additive torsion.
+
+On the original full fixed locus the box $(i,j)$ gives the
+bundle $L^{-i}M^{-j}\OO(D_{ij})$ with its coordinate character.
+Thus the Euler exponent is $-b\sum h_x+\sum|D_{ij}|$.
+Here $\sum h_x=\sum(1+i+j)\le m(m+1)/2$ by a linear extension of the
+diagram. Reflecting a negative $t$-weight in a quotient of two Euler
+classes with the same bundle changes its constant by a volume unit.
+There are no negative $t$ powers. On the rotated side $k=\sum |D_{ij}|$.
+To bound the $q$ exponent, forget volume weights in the \emph{ranks}
+of the moving tangent. Put
+$V=\sum q^{j-i}$ and $P_1=\sum |D_{ij}|q^{j-i}$, and write
+$X^*=X(q^{-1})$. The change from the empty tangent has rank polynomial
+\[
+ F=P_1-P_1^*-(1-q)(1-q^{-1})(P_1V^*-VP_1^*).
+\]
+Its coefficients are antisymmetric and $\sum_{i>0}i[q^i]F=P_1'(1)$.
+The reflected moving Euler has this change in its lowest exponent.
+The determinant root changes it by $-P_1'(1)$, while the ordered
+external lines have equal degrees. The empty tangent is $-b$ times
+the Hilbert tangent, with positive exponents $h_x$, giving the bound.
+The two root exponents in Lemma~\ref{lem:root} differ from $-mb$ by
+even integers in the $\sigma$ variable. This proves the assertion.
+\end{proof}

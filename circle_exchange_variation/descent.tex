@@ -1,0 +1,80 @@
+\section{Descent to the Picard family}\label{sec:descent}
+\begin{proposition}\label{prop:descent}
+Fix a diagram $\lambda$ and nonnegative integers $n,k$. If the two
+affine vertices agree on all $x^a y^d$ with $0\le a\le n$ and
+$0\le d\le k$, their contributions to the coefficient of
+$q^{-b\sum h+n}t^k$ agree in the localized family group.
+\end{proposition}
+\subsection{The two effective divisors}
+Write $U_A(H)$ for the push of $H|_A$ down a finite flat divisor,
+$N_A(H)=\det U_A(H)/\det U_A(\OO)$, and $J_A=\det U_A(\OO)$.
+
+
+Remove the common scalar
+\[
+ q^{-b\sum h}(-1)^{|\lambda|b}c^{b\sum(l+1/2)}.
+\]
+On the original side the empty remainder is $\prod E_c(Y^h s^{-l})$, where $Y=tL$ and $E_c(H)=\lambda_{-1}R\pi_*(cH)/\lambda_{-1}R\pi_*H$. On the rotated side it is $\prod E_s(q^h c^{-l})$. These are the empty Hilbert tangent pairs with the orientation of Lemma~\ref{lem:root}. In the rotated expression $R\pi_*(s q^h c^{-l})$ has underlying rank $b$ and the denominator rank $-b$, giving the empty product \eqref{eq:empty}.
+
+For fixed excess $n$ on the original side take the double nested schemes $Z_{\lambda,d}$ of effective divisors $D_i$ ordered along all the arrows, with $\sum |D_i|=n$. They map finitely to $C^{(n)}$ by $D=\sum D_i$: the map is a restriction of the finite addition map from the product of symmetric powers. We use the scheme-theoretic incidence loci. The fully fixed virtual structure sheaf is their ordinary structure sheaf by \cite[Theorem~6.1]{MR}. This applies in the Picard family by pullback of the fully fixed theory: the box sheaves are the fixed divisor lines tensored by the indicated powers of $L$ and $K_C/L$. In a weight-zero morphism between two boxes the twists cancel against the identical coordinate monomial. They cancel in the section, arrow and commutativity terms and their differentials, so the relative fixed obstruction theory is pulled back from the reference curve calculation. On the rotated product the fixed schemes and their fixed theory are independent of $L$.
+
+After removal of the empty scalar, the localized integrand can be encoded on $C^{(n)}\times C^{(k)}\times B$ before any family integration. The first color $n$ records the divisor $D$ above. The following description specifies the operations that define the second color; it also proves locality, which is needed for descent.
+
+\begin{enumerate}\item Subtract the empty tangent before forming the relative determinant or fixed-weight Euler factor. The difference of each curve input is a sum of $V(A-B)-V$, where $V$ is a monomial line and $A,B$ are box divisors or zero. Its push is $U_A(V(A-B))-U_B(V)$ by the divisor sequences. The ordinary fixed structure sheaf is kept. In the inverse moving Euler use the full two-torus moving part. Fixed characters of the perfect obstruction theory are omitted there, also when several boxes have the same content.
+\item The relative original determinant is the inverse determinant of the change of the Koszul polarization, with the prescribed scalar character and counting sign. The change has rank $n$. On the rotated side the modified root relative to the empty box module is $c^k(\det R\pi_*\Delta E)^{-1}N_{\sum D_i}(L/K_C)$ including the box characters in $E$, with the counting sign $(-1)^k$. This follows from the rank-$m$ determinant identity in the proof of Lemma~\ref{lem:root}; its root formula before splitting boxes applies to any rank-$m$ bundle. All relative determinants thus involve finite divisor data. Reflection of a negative counting weight brings its usual signed determinant. The $q$-degree of the rotated leading monomial stays $-b\sum h$ by the rank-derivative calculation in the proof of Lemma~\ref{lem:ring}, which also allows repeated contents.
+\item After reflection, the remaining nonzero counting weights are positive. Restore the empty Euler factors from the beginning of this section at this step. Each positive-weight factor is the symmetric algebra of a signed sum of $t^lR\pi_*H$ with $l>0$ and $H$ a line of the form $V(A-B)$ or $V$. Duals are converted using relative curve duality. For each signed summand choose a marked divisor $M_\alpha$ of length $e_\alpha$ and weight $l_\alpha$, and send the tuple to $M=\sum l_\alpha M_\alpha$ of length $k$. A positive summand supplies $N_{M_\alpha}(H)$, a negative summand $N_{M_\alpha}(H)\det U_{M_\alpha}(1)[e_\alpha]$ in graded notation. Relative K\"unneth and the alternating covariants on the ordered cover give this formula with any base, since the alternating polynomials in each local coordinate are the Vandermonde times the symmetric polynomials. Push the product of these insertions and the preceding fixed factors along the two finite maps $(D_i),(M_\alpha)\mapsto(D,M)$. On the rotated side the stable-pair modifications give the second color $k$ and the positive $q$-weights the first color $n$. Coefficientwise pushforward from the two symmetric powers to $B$ recovers the original two family calculations.
+
+\end{enumerate}
+
+There may be factors of nonzero volume weight and zero counting weight. Before descent expand each such inverse Euler as a series in the volume double-cover character at zero, reflecting a negative weight first. With $n,k$ fixed there are finitely many fixed and marked length tuples. Each Laurent coefficient is a finite sum of operations on finite divisor bundles. This auxiliary expansion never requires division by a weight-zero Euler. It also avoids a nilpotence assumption on representation rings of stacks with stabilizers. After pullback to the projective family the expansion agrees with the usual rational axial localization, by the same line Euler identities. A Laurent polynomial with coefficients in $K^0(B)$ is detected by its expansion; localization at $1-\sigma^j$ is injective on these polynomials, including in the presence of additive torsion.
+
+\subsection{Detection on colored punctual strata}
+
+Use the atlas of two monic polynomials $f,g$ of degrees $n,k$. The arrows are changes of common \'etale coordinate modulo $(fg)^2$ separating the distinct support points, together with changes of frames for input lines. The target polynomials are the characteristic polynomials of the new coordinate on each quotient. Indeed substitution gives an isomorphism on the free rank-$2(n+k)$ algebras modulo $(fg)^2$: it does so on geometric fibers by separation and the derivative condition, then on families by Nakayama. Composition is substitution with the induced frame change. These arrows form a smooth groupoid (the allowed substitutions and frames are open conditions in vector bundles); denote its quotient stack by $\mathfrak D_{n,k}$. A family of pairs of effective divisors on a smooth curve maps to this stack. Locally on $C^{(n)}\times C^{(k)}\times B$ choose a common coordinate separating the support with nonvanishing derivative, and frames on the second neighborhood. The induced chart on the pair of symmetric powers is \'etale, as seen on completed local rings by coprime decomposition. With the smooth $B$ factor this gives flat pullback. Frame choices form a smooth torsor. The canonical bundle uses the differential of the coordinate on the divisor, which is determined modulo $fg$ by the substitution modulo $(fg)^2$. Constant nongeometric characters are recorded equivariantly. The nested conditions descend: divisibility of two monic factors means containment of their marked ideals, a closed condition compatible with base change and coordinate substitution. Thus their structure sheaves, also at a box with two predecessors, descend. Each relative bundle in the three steps uses a subdivisor of $D+M$, its conormal line, or the restriction of another divisor ideal; the product of any two such ideals contains the ideal of $2(D+M)$. For example $\mathcal O(-B)|_A$ is represented by $(f_B)/(f_Af_B)$. Norms $N_{M_\alpha}(V(A-B))$ are consequently defined on these data even at cross-color intersections.
+
+In a stratum a support point now has type $(a_i,b_i)\ne(0,0)$. Its stabilizer consists of the disk jets and frame changes, with permutations of \emph{equal pairs}. The conormal at a single point has degrees $2,\ldots,a_i$ and $2,\ldots,b_i$, together with degree one when both colors occur. The latter is the difference of the two centers of the monic factors. The other coefficients come from centering each nonempty factor. Thus every central dilation weight of the conormal is positive. More precisely, the stabilizer at a configuration is, modulo its connected unipotent radical, the product of the dilation and frame tori at its points extended by permutations of identical types. Its integral coherent $K$-group is the representation group of this quotient, since the radical acts trivially on simple representations. Filter the stack by opens of at least $e$ support points. The new strata introduced at each stage are disjoint regular closed substacks there: the centered coefficients and, for two colors, the difference of centers form local regular parameters. By coherent localization a class vanishing on the preceding open is $i_*\alpha$ from the new closed strata; for these noetherian stacks coherent extension follows from \cite{Ry}. Its derived restriction is $\lambda_{-1}(N^\vee)\alpha$. The Euler has lowest simultaneous dilation term one with all others of positive degree, and so acts injectively even on the integral representation group with permutations. Induction detects the class by its derived restrictions. This argument is made before substituting $K_C$ for $p$.
+
+On disjoint disks the nested ideals factor by coprime decomposition and so do the marked factors, with direct sums over choices of length allocations. The relative determinant of a rank-$d$ change occurs with shift $[d]$ from the counting sign, and every reflected Euler determinant likewise carries its rank shift. These are graded determinants under splitting. In particular the permutation actions are the tensor actions with Koszul signs; divisor norms split without an extra sign. Frame-independent scalar powers of the characters split because their exponents are additive for direct sums. The classes on the stratum are therefore products of the punctual classes with their full permutation actions. This description applies in each bounded-below axial expansion and includes the incidence of marks and fixed divisors.
+
+For type $(a,b)$ its derived restriction at the single point is the corresponding affine coefficient of $A$ multiplied by $(p;p)_a(p;p)_b$, the cotangent Euler of the two symmetric powers. Indeed on that atlas the fixed stable-pair data are precisely the reverse plane partitions, and proper finite pushforward followed by affine localization gives the marked and nested expression above divided by these two Euler factors. The fiber character of the Poincar\'e line enters through $y=tL$ on the original side and the norm of $L$ on the rotated side, giving the same power $L^b$ at this point (here $b$ denotes the second local length). The full single-support comparison can therefore be done over the rational function field in independent $p,c$. After equality there, the integral torus representations in each axial coefficient agree. On a permutation cycle the supertrace is the punctual supercharacter with the torus entries multiplied along the cycle, so these equalities also give equality in the integral representation group including its permutation part. Applying stratum detection, flat pullback by the projective family's decorated divisors and proper pushforward proves the reduction.
+
+\subsection{The marked curve and its index}
+For $k\le1$ each support point has type $(a,0)$ or $(a,1)$.
+Lemma~\ref{lem:boundary} and \eqref{eq:local} give every coefficient
+required by Proposition~\ref{prop:descent}. Exchanging $(x,c)$
+and $(y,s)$ gives the other strip, proving Corollary~\ref{cor:strip}.
+
+For the explicit coefficient in Theorem~\ref{thm:mark}, use the
+rotated fixed locus. A single modification has length one at a
+removable box $r$. The moduli scheme of that mark is $C$, since
+in families a degree-one effective divisor is a section and all the
+framed monomial inclusions are forced. Put $W=d_r^{-1}$ and
+$E_0=\sum_h d_h^{-1}$. The quotient increases by
+$W(\OO(D)-1)$ at the universal mark $D$. The two divisor exact
+sequences in Lemma~\ref{lem:root} give the tangent increment
+\[
+ K^{-1}H-cH^\vee,\qquad H=W[1-(1-u)(1-v)(E_0-W)^*],
+\]
+and the signed relative determinant $-cW^{-1}L$. Indeed the
+determinant of cohomology contributes $(WK^{-1})^{-1}$ and the
+pairing contributes $L/K$. On the disk $\det(\Delta H)=p^{-1}W$
+so the signed factor $-s^{-1}/\det(\Delta H)$ agrees after removing
+$L$. The mark has tangent $K^{-1}$, omitted from its projective
+moving Euler. Hence multiplying the punctual contribution by
+$1-p$ restores the tangent Euler \emph{before} setting $p=K$.
+After this cancellation the insertion on the mark is the
+$r$-summand of $(1-c)LG_\lambda$. Any remaining axial denominator
+has nonzero $q$ degree: removable and addable contents strictly
+interlace. Reflection to positive degree has a unit leading line.
+Pushing to $B$ and multiplying by the empty factor \eqref{eq:empty}
+proves \eqref{eq:mark} coefficientwise over the integral ring.
+
+For the genus-two double the row and column give
+$R(q)/R(q^2)$ and $R(c/q)/R((c/q)^2)$, respectively. Their empty
+factors differ. At $q^{-2}t$ their sum is
+\[
+ D\bigl(L(c-1)(1+K+c^2/K+c^2)\bigr).
+\]
+Since $(K-1)^2=0$ on the curve, the first two coefficients in
+$\delta$ are $4D(L)$ and $8D(L)-2D(L(K-1))$.
+Thus the one-mark formula also detects a nonlinear volume term.

@@ -56,6 +56,11 @@ The [shared supplement](supplementary_calculations/README.md) contains the calcu
 
 **The topological string on balanced local curves from two circle actions on a Calabi–Yau fivefold**. On a balanced local curve the variable grading the Euler characteristic of a stable pair becomes a plane rotation weight when the external circle of the fivefold is exchanged. The equality holds on the common space of cycles in every positive curve degree and throughout the Picard family. The November 26 revision states the genus-two first variation at the lowest original grading as Theorem 1.2. [PDF](circle_exchange/main.pdf) · [Source and calculations](circle_exchange/README.md) · [Abstract and citation](https://bwuebben.github.io/papers/circle-exchange-local-curves/) · [Zenodo](https://doi.org/10.5281/zenodo.24549724).
 
+
+## Refined circle exchange
+
+**The first variation and the one-mark coefficient of circle exchange for balanced local curves**. For a balanced local curve of positive genus, the first variation of the two stable-pair indices agrees in integral Picard-family K-theory in every degree and both gradings. At unrestricted volume, their entire coefficient of exchanged grading one agrees for each Young diagram and is a sum over removable boxes. [PDF](circle_exchange_variation/main.pdf) · [Source and exact checks](circle_exchange_variation/README.md) · [Abstract and citation](https://bwuebben.github.io/papers/refined-circle-exchange-local-curves/) · [Zenodo](https://doi.org/10.5281/zenodo.24570158).
+
 ## Reproduce the calculations
 
 The computations use Python 3, SymPy 1.14.0 and SageMath (verified with 10.9).

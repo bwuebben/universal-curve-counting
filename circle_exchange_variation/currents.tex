@@ -1,0 +1,122 @@
+\section{A Macdonald current at one exchanged mark}\label{sec:currents}
+In this section put $x=u$, $v=c/u$, and use $R(z)=(1-sz)/(1-z)$
+with $p$ still independent. We shall prove
+\begin{equation}\label{eq:local}
+ \frac{[y]A_{\lambda;c,s}(u,y)}{A_{\lambda;c,s}(u,0)}
+ =\frac{[y]A_{\lambda;s,c}(y,u)}{A_{\lambda;s,c}(0,u)}
+ =\frac{1-c}{1-p}G_\lambda .
+\end{equation}
+Lemma~\ref{lem:boundary} identifies the denominators.
+\subsection{The single modification on the exchanged side}
+
+
+At excess one a reverse plane partition is supported on a removable box \(r\). Put \(E=\sum_{h\in\lambda}d_h^{-1}\) and \(W=d_r^{-1}\). Replacing \(W\) by \(W/p\) in the polarized character changes it by
+\[
+ \Delta H=p^{-1}W+(1-u)\big((E-W)/W-p^{-1}W(E-W)^*\big).
+\]
+The relative oriented factor is \(s^{-1}R(\Delta H)\), where a sum of weights is evaluated multiplicatively. Using \(R(z)R(1/(sz))=s\), a box \(h\ne r\) contributes \(R(w)R(cw)/(R(uw)R(vw))\), \(w=d_r/d_h\), and the framing contributes \(1/R(c d_r)\). To take the boundary of this product, use the Laurent identity
+\[
+ (1-u)(1-v)E=c-c\sum_{a\in\mathcal{A}}d_a^{-1}
+                       +\sum_{h\in\mathcal{R}}d_h^{-1}.
+\]
+First form the product with independent numerator variable \(z\) in place of \(d_r\). Remove the entire \(r\)-box factor before setting \(z=d_r\); the two copies of \(R(z/d_r)\) cancel. The answer is the \(r\)-summand of \eqref{eq:corners} divided by \(R(c)=(1-p)/(1-c)\). This proves the second equality in \eqref{eq:local} directly from the oriented fixed-pair polarization.
+
+\subsection{The insertion on the original side}
+
+Let \(X_i\) be the sum of roots \(s^j p^{d_{i+j,j}}\) on content \(i\) of a height array \(d\); a star inverts its roots. Denote by brackets the expectation in the height sum at \(y=0\), divided by its hook product. Extracting the linear coefficient of the insertion of Section~\ref{sec:disk} gives \((1-c)/(1-p)\) times \(\langle O\rangle\), where
+\begin{equation}
+O=sX_1+X_{-1}^*
+     +\sum_i (X_i-X_{i+1})(X_i^*-sX_{i-1}^*).
+ \label{eq:obs}
+\end{equation}
+In fact \eqref{eq:obs} is the coefficient of \(y\) in \(sV+V^*-(1-y)(1-s/y)VV^*\), \(V=\sum_i y^i X_i\).
+
+Put \(J_i=\max(0,-i)\), \(L_i=J_i+\#\{\text{boxes of content }i\}\). The southeast boundary from \((0,\operatorname{height}\lambda)\) to \((\operatorname{width}\lambda,0)\) has vertices \((i+L_i,L_i)\) with monomials \(Z_i=u^i c^{L_i}\). A horizontal step is denoted by \(-\), a downward one by \(+\). Thus \(Z_{i+1}/Z_i=u\) at a minus step and \(1/v\) at a plus step. A removable box is precisely a minus followed by a plus. The slice partition \(\mu_i\) lists the heights on content \(i\) in decreasing order.
+
+We use the Macdonald inner product with parameters \((p,s)\). In the power sums \(b_n\), write \(\partial_n=\partial/\partial b_n\). The right vacuum is the constant polynomial $1$ and the left vacuum takes the constant in all $b_n$. In increasing step order the normalized boundary measure is the vacuum matrix element of
+\[
+ \Gamma_-(Z_i)=\exp\!\sum_{n>0} Z_i^{-n}\partial_n,\qquad
+ \Gamma_+(Z_i)=\exp\!\sum_{n>0}\frac{1-s^n}{1-p^n} b_n Z_i^n/n ,
+\]
+using the indicated operator at each step and dividing by the vacuum expectation. An insertion on slice \(i\) acts immediately before step \(i\). This is the \emph{termwise} interlacing-partition expansion of Dinkins--Smirnov, Propositions 6--7 and \S{}3.7. Indeed their shifted node parameter is \(\widehat z_i=u c^{L_i-L_{i-1}}=Z_i/Z_{i-1}\), and a minus to its left and plus to its right give the Cauchy factor \(F_s(Z_{\rm right}/Z_{\rm left})\). The common scale of the \(Z_i\) cancels \cite[\S3]{DS}.
+
+Define the diagonal eigenvalues \(P_i,N_i\) on slice \(i\) by
+\[
+ P_i=(s-1)X_i+s^{J_i},\qquad N_i=-(s-1)X_i^*/s+s^{-J_i}.
+\]
+Write \(\Delta P_i=P_i-P_{i+1}\), \(\nabla N_i=N_i-sN_{i-1}\). Then
+\begin{equation}
+O=-\frac{s}{(s-1)^2}\sum_i \Delta P_i\,\nabla N_i .
+ \label{eq:diff}
+\end{equation}
+Indeed the difference of \(s^{J_i}\) is \((s-1)s^{-i-1}\) for \(i<0\) and zero otherwise. The backward difference of \(s^{-J_i}\) is \(1-s\) for \(i>0\) and zero otherwise. Their product vanishes. The two cross terms telescope to the framing terms of \eqref{eq:obs}. Only $-\operatorname{height}(\lambda)<i<\operatorname{width}(\lambda)$ is needed. Outside the path the slice is the vacuum. At its left endpoint $\nabla N_{-\operatorname{height}(\lambda)}=0$, and at its right endpoint $\Delta P_{\operatorname{width}(\lambda)}=0$.
+
+The normalized first Macdonald operator is the constant term in \(z\) of
+\[
+ \eta(z)=\exp\!\sum_{n>0}(1-s^{-n})b_n z^n/n\
+          \exp\!\sum_{n>0}(p^n-1)z^{-n}\partial_n.
+\]
+On \(\mu\) its eigenvalue is \(1+(s-1)\sum_{j\ge1}(p^{\mu_j}-1)s^{-j}\). Let \(\xi(w)\) be the same current with \(p,s\) inverted. Both are diagonal in the same monic Macdonald basis: inversion rescales the inner product on homogeneous degree \(d\) by \((s/p)^d\), preserving triangularity and orthogonality. The two zero modes, multiplied by \(s^{L_i}\) and \(s^{-L_i}\), respectively, give \(P_i,N_i\) since the descending heights have root prefactors \(s^{L_i-j}\) \cite[Proposition~2.6]{Ko}.
+
+\subsection{The two residues}
+
+For \(j\ge i\) place \(\xi(w)\) at slice \(i\) and \(\eta(z)\) at slice \(j\), in that order also when the slices coincide. Commuting translations past multiplications gives
+\[
+ \langle N_i P_j\rangle=\operatorname{CT}_{w,z}
+     N_i(w)P_j(z)K(z/w),\qquad
+ K(h)=\frac{(1-h)(1-h/(ps))}{(1-h/p)(1-h/s)} ,
+\]
+where
+\begin{equation}
+\begin{split}
+ P_j(z)&=\prod_{\beta<j,\,-}\frac{1-z/(sZ_\beta)}{1-z/Z_\beta}
+          \prod_{\alpha\ge j,\,+}\frac{1-z/Z_\alpha}{1-z/(sZ_\alpha)},\\
+ N_i(w)&=s^i\prod_{\beta<i,\,-}\frac{1-Z_\beta/(sw)}{1-Z_\beta/w}
+          \prod_{\alpha\ge i,\,+}\frac{1-Z_\alpha/(cw)}{1-Z_\alpha/(pw)} .
+\end{split}
+ \label{eq:wick}
+\end{equation}
+The first expression absorbs \(s^{L_j}\) using the number of future pluses, and the second absorbs \(s^{-L_i}\) using the \(i+L_i\) past minuses. These formulas use the ordered two-current product, so shifts in a coefficient of a difference operator at another slice never need to be interchanged.
+
+To evaluate the constant term, take \(u\) small with \(p,c\) generic and fixed. At a slice use circles between the scale of the future step parameters and that of the past steps, with the \(z\)-circle sufficiently smaller than the \(w\)-circle when the two slices coincide. All geometric expansions from the commutations converge on such circles, including both denominator expansions of \(K(z/w)\). Shrink the \(z\)-circle, then enlarge the \(w\)-circle. The zero pole contributes \(P_j(0)=1\); all other inner residues are
+\[
+ A_{j,\alpha}=\operatorname{Res}_{z=sZ_\alpha} P_j(z)\,dz/z
+ \quad(\alpha\ge j,\,+).
+\]
+The outside constant is \(N_i(\infty)=s^i\); the other outer contributions are
+\[
+ B_{i,\beta}=-\operatorname{Res}_{w=Z_\beta} N_i(w)\,dw/w
+ \quad(\beta<i,\,-).
+\]
+The poles of \(K\) are outside the shrinking contour in \(z\) and inside the expanding contour in \(w\). A pair of residues therefore carries just \(K(sZ_\alpha/Z_\beta)\). The calculation holds as a rational identity and hence coefficientwise in the specified expansion.
+
+In \eqref{eq:diff} the constant inner term has zero forward difference and the constant outer term has zero backward difference. Extend the two residue arrays by zero when their step is absent. Each pair \(\beta<\alpha\) contributes, before its common factors, the finite sum
+\begin{equation}
+\sum_{i=\beta+1}^{\alpha}(A_i-A_{i+1})(B_i-sB_{i-1}),
+ \qquad A_i=A_{i,\alpha},\quad B_i=B_{i,\beta}.
+ \label{eq:sum}
+\end{equation}
+Put \(t_0=Z_\alpha/Z_\beta\) and \(a=Z_i/Z_\beta\). From \eqref{eq:wick},
+\begin{equation}
+(a-st_0)A_{i+1}=(a-t_0)A_i,\qquad
+ (a-u)B_i=(a-su)B_{i-1}.
+ \label{eq:rec}
+\end{equation}
+For the first relation either type of step gives \(P_{i+1}(z)/P_i(z)=(1-z/(sZ_i))/(1-z/Z_i)\). For the second, before evaluation at \(w=Z_\beta\), the ratio \(N_i/N_{i-1}\) is \((1-sw/Z_{i-1})/(1-w/Z_{i-1})\) at a preceding minus, and \((1-pw/Z_{i-1})/(1-cw/Z_{i-1})\) at a preceding plus. Inserting \(Z_i/Z_{i-1}=u\) or \(1/v\) gives \eqref{eq:rec} in both cases. The cleared relations hold at both endpoints, where \(A_{\alpha+1}=B_\beta=0\).
+
+For \(t_0\ne u\), \eqref{eq:rec} implies
+\begin{equation}
+(A_i-A_{i+1})(B_i-sB_{i-1})
+ =\frac{(s-1)t_0}{t_0-u}
+       (A_{i+1}B_i-A_iB_{i-1}).
+ \label{eq:tel}
+\end{equation}
+One can multiply out and use the cleared relations, including at \(a=u,t_0\). The sum telescopes to zero. Since \(t_0=u^{\alpha-\beta}c^{L_\alpha-L_\beta}\), for independent \(u,c\) equality \(t_0=u\) is possible exactly when \(\alpha=\beta+1\) and the intervening step is horizontal. Thus only the turns belonging to removable boxes survive.
+
+At such a turn write \(Z_\alpha=c d_r\), \(Z_\beta=Z_\alpha/u\). Equation \eqref{eq:sum} consists of \(A_{\alpha,\alpha}B_{\alpha,\beta}\). The residues of the two adjacent steps in \eqref{eq:wick} are \(s-1\) and \(-s^\alpha(s-1)/s\), cancelling the multiplier in \eqref{eq:diff} up to \(s^\alpha\). The factors from the two other occurrences of the adjacent steps are \(R(u)^{-1}R(u/p)\); \(K(su)=R(u)/R(u/p)\) cancels these. For each earlier minus, the two factors give \(s^{-1}R(Z_\beta/Z_\gamma)/R(Z_\alpha/Z_\gamma)\); for each later plus they give \(sR(Z_\alpha/Z_\gamma)/R(cZ_\beta/Z_\gamma)\). There are \(\alpha+L_\alpha-1\) earlier minuses and \(L_\alpha-1\) later pluses, cancelling the remaining power \(s^\alpha\).
+
+Along a horizontal run the factor from an earlier minus is
+\[
+ \frac{R(Z_\alpha/Z_{\gamma+1})}{R(Z_\alpha/Z_\gamma)} .
+\]
+Along a downward run the later plus factors give the inverse ratio. The two runs incident to \(r\) supply \(R(u)\) and \(R(v)\) after excluding the two adjacent steps. All other peaks supply \(R(d_r/d_h)\). Each valley, including the two outer endpoints, gives \(1/R(c d_r/d_a)\). This proves exactly \eqref{eq:corners} for the original descendant and finishes \eqref{eq:local}.

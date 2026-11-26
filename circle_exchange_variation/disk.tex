@@ -1,0 +1,108 @@
+\section{The stable-pair vertex on a disk}\label{sec:disk}
+We work temporarily on an affine line with cotangent character $p$.
+The parameters $p,c$ are independent and $s=p/c$. The Poincar\'e
+weight is included in $y$; on the curve $x=q$ and $y=tL$ in a
+local frame. The coefficient of $x^ny^k$ measures excess above
+the minimal Euler grading of this particular diagram. We give both
+the unsigned boundary measure and the determinant factors that
+relate it to the geometric vertex.
+\subsection{The polarized character}
+
+
+A reverse plane partition is a weakly increasing nonnegative array $d_{ij}$ on the boxes $(i,j)$, with $(0,0)$ at the root. Write $|d|=\sum d_{ij}$. Set
+\[
+ E_d=\sum_{(i,j)\in\lambda} y^{j-i}s^{-j}p^{-d_{ij}},
+ \qquad H_y(E)=\frac{E-(1-y)EE^\vee}{1-p},
+ \qquad \Delta H_d=H_y(E_d)-H_y(E_0).
+\]
+A dual inverts all characters. Write $(z;p)_d=\prod_{i=0}^{d-1}(1-zp^i)$ and use the reciprocal shifted product for negative $d$. Put $R_c(w)=(1-cw)/(1-w)$ and extend by products to finite virtual characters. The full formula is
+\[
+ A_{\lambda;c,s}(x,y)=
+ \prod_{\square\in\lambda} F_c(y^{h_\square}s^{-l_\square})
+ \sum_{d} x^{|d|}c^{-|d|} R_c(\Delta H_d),
+ \qquad F_c(z)=\sum_{j\ge0}\frac{(c;p)_j}{(p;p)_j}z^j .
+\]
+The factors in $R_c$ are read at $y=0$ after reflecting negative powers. The finite difference $\Delta H_d$ is a Laurent polynomial. Its rank is $|d|$, by the divided difference of the framing term; the rank contribution from the endomorphism differences vanishes.
+
+The classification of fully torus-fixed local pairs gives these arrays. The sheaf is a weight line with divisor $d_{ij}[0]$ at each box, and the multiplication arrows are their canonical inclusions. In particular the inequalities at a box with two predecessors apply simultaneously. For the one-leg correspondence and virtual character see \cite[Theorem~6.1 and \S6.2]{MR}. In our variables the original tangent is the polarized character $H-c^{-1}H^\vee$. For the rotated vertex one substitutes the plane weights $x,c/x$ instead, and obtains $H-s^{-1}H^\vee$ since
+\[
+ (1-x)+c(1-x^{-1})=(1-x)(1-c/x),\qquad
+ (1-p^{-1})^{-1}=-p/(1-p).
+\]
+The relative symmetrized Euler, counting sign and external determinant give $c^{-|d|}R_c(\Delta H_d)$ originally, and $s^{-|d|}R_s(\Delta H_d)$ with switched inputs on the rotated disk. Indeed the internal root gives $(\det\Delta H_d)^{-1}c^{-|d|/2}$ originally. Inverting the dual Euler supplies $(-1)^{|d|}\det\Delta H_d$ and the Euler ratio. The external determinant supplies $x^{|d|}c^{-|d|/2}$ and the counting sign cancels the previous sign. For the rotated disk the external line weights are $y,s/y$ and the same calculation gives $y^{|d|} s^{-|d|/2}$ for the external ratio. The relative determinants of the finite framing change cancel in that ratio. The empty products come from the positive half of the Hilbert tangent. These statements concern the disk characters after the empty scalar on the projective curve is removed.
+
+There are no invariant Euler factors in this prescription. For a framing contribution to the coefficient of $y^0c^0$ only the root matters, and its nonempty difference has exponents $p^{-d},\ldots,p^{-1}$. In the unshifted endomorphism terms $y^0c^0$ comes from identical boxes and has zero height difference. In the $y$-shifted endomorphism term it comes from a horizontal adjacent pair, with shift parent height minus child height at most zero, giving only strictly negative powers. Thus $1$ does not occur. For a term with $c^{-1}$ the power of $s$ must be $+1$, so the raw divided difference must contain $p^{-1}$ to give $p^0$. There is no such framing term. In the unshifted endomorphisms the two boxes are a southeast diagonal step apart, and in the $y$-shifted term they are a vertical step apart. Both height differences are nonnegative, and the associated divided differences contain powers at least zero. This rules out $c^{-1}$ at axial exponent zero. In particular both $R_c$ and its exchanged counterpart can be evaluated for generic independent $p,c$. The argument uses the order on all boxes and applies to a repeated content.
+
+\begin{lemma}\label{lem:boundary}
+The two boundary series are
+\[
+ A_{\lambda;c,s}(x,0)=\prod_{z\in\lambda}F_s(x^{h_z}c^{-\ell_z}),
+ \qquad A_{\lambda;c,s}(0,y)=\prod_{z\in\lambda}F_c(y^{h_z}s^{-\ell_z}).
+\]
+Moreover the summands on the first boundary are the interlacing
+partition weights of \cite[Propositions~6--7]{DS} at the shifted
+parameters specified below.
+\end{lemma}
+\begin{proof}
+The second series is the empty height array. For the first use
+the following specialization of \cite[Theorem~1]{DS}.
+Write a box as $u=(i,j)$ with $i$ increasing to the right and $j$ increasing downwards, starting at zero. Put $a_u=i-j$. Let $d_u$ be its height, increasing weakly rightwards and downwards. Put
+\[
+ B(z;D)=\frac{(sz;p)_D}{(pz;p)_D},
+ \qquad r_u=y^{a_u}s^j ,
+\]
+with the usual reciprocal convention for a negative lower index. For a monomial contribution of weight $w$ and height difference $D$ in the polarization,
+\[
+ R_c\!\left(w\frac{p^{-D}-1}{1-p}\right)=c^D B(w^{-1};D).
+\]
+This follows by reversing the $D$ factors for $D>0$ and taking reciprocals at shifted weights for $D<0$. The powers of $c$ cancel the external $c^{-|d|}$ because the total rank is $|d|$. The three factors left for a fixed array are
+\[
+ \prod_u B(r_u;d_u)
+ \prod_{u,v}
+ \frac{B(y^{-1}r_u/r_v;d_u-d_v)}
+      {B(r_u/r_v;d_u-d_v)} .
+\]
+
+
+At $y=0$, a factor with a positive $y$ exponent tends to one, and a factor with a negative exponent tends to $(s/p)^D=c^{-D}$. The framing therefore contributes $c^{-\sum_{a_u<0}d_u}$ from the latter group. For the ordered pairs, the numerator and denominator have negative powers simultaneously if $a_u<a_v$. The extra numerator terms with $a_u=a_v$ contribute total exponent zero, since $\sum_{a_u=a_v}(d_u-d_v)=0$. The factors with zero exponent are the framing at content zero, the endomorphisms at each content and the arrows from content $a$ to $a+1$. Their roots at content $a$ are $s^j$ with
+\[
+ j=\max(0,-a),\ldots,\max(0,-a)+v_a-1,\qquad
+ v_a=\#\{u:a_u=a\}.
+\]
+These are precisely the three groups of Pochhammer factors in equation (19) of the cited hook-product paper, with $(q,\hbar)=(p,s)$ and framing parameter one. The weak height inequalities are their interlacing conditions (Proposition 7 and its proof). Thus the remaining sum equals their series $Z$ at
+\[
+ z_a=x\,c^{-\mathbf 1_{a<0}} .
+\]
+This reduction works with repeated contents. It retains the endomorphism factors between all distinct roots on a common diagonal.
+
+In \cite[Theorem~1]{DS} each box contributes $F_s(\prod_{a=L}^{U}\widehat z_a)$, where $\widehat z_a=(s/p)^{v_{a-1}-v_a+\mathbf1_{a=0}}z_a$. The contents along the hook at $(i,j)$ fill the interval $[L,U]=[i-j-\ell,i-j+\operatorname{arm}]$ once each. Here the multiplicity diagram is indexed with positive contents to the right. Equivalently, the two endpoints record the last box in the column and the last box in the row. Reflecting the drawing interchanges the two descriptions of hooks and preserves the set of these intervals. The exponent of $c^{-1}$ in their product is
+\[
+ v_{L-1}-v_U+\#\{a\in[L,U]:a\le0\}.
+\]
+The last row on diagonal $U$ has index $j$, and the boxes on diagonal $L-1$ run from row $\max(0,1-L)$ through $j+\ell$, with the empty interval permitted. Consequently
+\[
+ v_U=j+1-\max(0,-U),\qquad
+ v_{L-1}=j+\ell+1-\max(0,1-L).
+\]
+Substitution gives exactly $\ell$. There are $h$ powers of $x$. This proves the first formula over $\mathbb Q(p,c)[[x]]$. The analytic parameter range in the hook-product theorem suffices, since each Taylor coefficient is rational in the independent parameters.
+\end{proof}
+\subsection{The coefficient of the first positive weight}
+Write $X_i$ for the alphabet $\{s^jp^{d_{i+j,j}}\}$ on diagonal $i$
+and $V=\sum_i y^i X_i$. A star on a character inverts all its weights.
+Set $P(V)=V-(1-y^{-1})VV^*$ and
+\[
+ T(V)=sP(V)+P(V)^*=sV+V^*-(1-y)(1-s/y)VV^* .
+\]
+Relative to the height measure at $y=0$, the positive-weight part
+of the insertion in $A$ is the symmetric algebra on
+$(1-c)T(V)_{>0}/(1-p)$. To see this, put
+$G(z)=(sz;p)_\infty/(pz;p)_\infty$. A factor $B(z;D)$ of positive
+$y$ degree is $G(z)/G(zp^D)$, and a factor of negative degree is
+$c^{-D}F_c(1/(zp^D))/F_c(1/z)$. The monomials and the degree-zero
+Pochhammer factors give the boundary measure of Lemma~\ref{lem:boundary}
+term by term. The other factors give the symmetric algebra on the
+positive weights of $(1-c)(T(V)-T(V_{\rm empty}))/(1-p)$.
+At empty heights these missing weights of $T$ are
+$\sum_z y^{h_z}s^{-\ell_z}$ by the arm--leg tangent formula, precisely
+the prefactor in $A$. In particular the linear insertion is
+$(1-c)[y]T(V)/(1-p)$.

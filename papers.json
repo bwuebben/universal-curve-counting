@@ -172,6 +172,23 @@
       "archive_url": "https://doi.org/10.5281/zenodo.24549724",
       "website_url": "https://bwuebben.github.io/papers/circle-exchange-local-curves/",
       "version": "2.0"
+    },
+    {
+      "title": "The first variation and the one-mark coefficient of circle exchange for balanced local curves",
+      "author": "Bernd Johannes Wuebben",
+      "orcid": "0009-0002-4588-3284",
+      "date": "2026-11-26",
+      "revision_date": "2026-11-26",
+      "status": "Preprint",
+      "pdf": "circle_exchange_variation/main.pdf",
+      "pages": 21,
+      "sha256": "981d86bb72d238b6ea934e4e94485b669cde29f6193239983d08957b3e8e6ec3",
+      "doi": "10.5281/zenodo.24570158",
+      "concept_doi": "10.5281/zenodo.24570158",
+      "version_doi": "10.5281/zenodo.24570159",
+      "archive_url": "https://doi.org/10.5281/zenodo.24570158",
+      "website_url": "https://bwuebben.github.io/papers/refined-circle-exchange-local-curves/",
+      "version": "1.0"
     }
   ]
 }
