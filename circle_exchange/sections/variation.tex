@@ -1,0 +1,240 @@
+\section{Varying the threefold volume character}\label{sec:variation}
+
+Moving away from the volume-preserving torus of the threefold gives a
+test of circle exchange that the numerical index of a single curve cannot
+detect. Let \(C\) have genus two, \(B=\operatorname{Pic}^1(C)\), and
+\(\pi:C\times B\to B\). Choose a Poincar\'e line \(\mathcal L\) trivialized
+over one point of \(C\), and put
+\(\mathcal M=K_C\mathcal L^{-1}\), \(A=R\pi_*\mathcal L\).
+Give the four lines \(\mathcal L,\mathcal M,\mathcal O,\mathcal O\)
+weights \(t,\kappa/t,q,\kappa^{-1}/q\), in that order. Their product
+remains one on the fivefold. Write \(\delta=1-\kappa\) and retain the
+orientation of the ordered external lines in the modified pair index.
+
+Let \(\mathcal I_2^{\rm orig}\) and \(\mathcal I_2^{\rm rot}\) denote
+the degree-two family characters with these weights in the original
+and rotated presentations. For \(k\geq 1\) their first variations satisfy
+\begin{equation}
+ [\delta q^{-3} t^k]\,\mathcal I_2^{\rm orig}
+ =[\delta q^{-3} t^k]\,\mathcal I_2^{\rm rot}
+ =-2\bigl(1+2\,\mathbf 1_{2\mid k}\bigr)\psi^k(A)
+ \quad\text{in }K^0(B),
+ \label{eq:circle-volume-edge}
+\end{equation}
+where \(\psi^k\) is the Adams operation. In the original presentation
+one takes the \(q^{-3}\) term, varies \(\kappa\), and expands the
+result at \(t=0\). After exchange, \(t\) counts pairs. One fixes \(k\),
+takes the variation, and expands at \(q=0\). In the latter expansion
+there are no powers below \(q^{-3}\) at this order. We give the two
+calculations because the fixed loci that produce the same class
+have different dimensions.
+
+\subsection{The two minimal ribbons}
+
+At the lowest Euler characteristic, \(n=-3\), a torus-fixed degree-two
+pair is the structure sheaf of a ribbon in either normal direction.
+Indeed its generic cyclic quotient of length two has monomial basis
+\(1,x\) or \(1,y\). The corresponding ribbon in a line \(F\) has
+pushforward \(\mathcal O_C\oplus F^{-1}\), of Euler characteristic
+\(-3\). A zero divisor of the section or of the multiplication between
+the two weight lines raises the Euler characteristic. Thus each
+choice gives one fixed copy of \(B\).
+
+These two ribbons also occur as limits of smooth covers. For a
+genus-two splitting as in \cite[Proposition~8.1]{wuebben-geometric},
+the degree-two cycles form two one-parameter families, one in each
+normal line. Their nonzero members are smooth genus-four curves.
+In a fiber coordinate \(z\) on either line, the family has equation
+\(z^2=a s\), where \(s\) is a section of the square of that line
+with two simple zeros. At \(a=0\) the central ribbon has equation
+\(z^2=0\). The index calculation below keeps its scheme structure
+and its equivariant deformation weights.
+
+Write \(F=\mathcal L,\ p=t\) on the first ribbon and
+\(F=\mathcal M,\ p=\kappa/t\) on the second. The equations for the
+ribbon are the other normal coordinate and the square of the first.
+Tensoring the corresponding normal lines with
+\(\mathcal O_C\oplus(pF)^{-1}\) and using relative Serre duality gives
+the virtual tangent \(H-\kappa H^\vee\), with polarization
+\[
+ H=p R\pi_*F+p^2 R\pi_*F^2,\qquad \operatorname{rk}H=1 .
+\]
+For this polarization the symmetrized inverse Euler class, the
+external determinant and the sign of \((-q)^{-3}\) give
+\[
+ \kappa^{-1}
+ \frac{\lambda_{-1}(\kappa^{-1}H)}{\lambda_{-1}(H)} ,
+ \qquad
+ \lambda_{-1}(V)=\sum_j(-1)^j\mathop{\bigwedge}\nolimits^j V .
+\]
+The ratio at \(\kappa=1\) is identically one, so varying \(p=\kappa/t\)
+in both its arguments contributes zero. A root \(w\) of \(H\)
+contributes \(-w/(1-w)\) to its first variation. The expansions for
+\(w=tx\) and \(w=t^{-1}x\) have opposite signs in positive degree
+and involve \(x^k\) and \(x^{-k}\), respectively. Using
+\(R\pi_*\mathcal M=-A^\vee\), the resulting positive coefficients are
+\begin{equation}
+ -2\psi^k(A)+\mathbf1_{2\mid k}\,
+       \psi^{k/2}(D_M^\vee-D_L),\qquad
+ D_L=R\pi_*\mathcal L^2,\quad D_M=R\pi_*\mathcal M^2 .
+ \label{eq:circle-unsimplified-edge}
+\end{equation}
+Here and below the second term is included only for even \(k\).
+
+\subsection{The fixed pairs after circle exchange}
+
+The rotated threefold is \(C\times\mathbb A^2\). Write
+\(u=q,\ v=\kappa^{-1}/q,\ c=uv\), so \(1-c^{-1}=\delta\).
+A fixed row is specified by effective divisors \(P,Q\) on \(C\).
+The section vanishes on \(P\) in the inner weight line, and the
+map to the outer line vanishes on \(Q\). The pushforward to \(C\) and
+the counting degree are
+\[
+ E=\mathcal O(P)\oplus u^{-1}\mathcal O(P+Q),
+ \qquad k=2\deg P+\deg Q .
+\]
+The transposed row exchanges \(u\) and \(v\). Thus the fixed loci are
+products of symmetric powers of \(C\). The virtual tangent of a row
+is the pushforward along \(C\) of the following character, obtained
+by resolving the pair in the two plane directions:
+\[
+ E+c E^\vee-(1-u)(1-v)\operatorname{End}E .
+\]
+For a universal divisor \(D\) of length \(d\), let \(p_D\) be its
+projection to \(S_d=\operatorname{Sym}^d C\). Set
+\(U_D=p_{D*}\mathcal O_D\) and
+\(T_D=p_{D*}\mathcal O_D(D)=T_{S_d}\). The divisor sequences give
+the weight-one and weight-\(c\) terms
+\(T_P+T_Q-c(U_P+U_Q)\). The unit in \(U_D\) splits by the normalized
+trace for \(d>0\). Each nonempty divisor therefore supplies a factor
+\(1-c^{-1}\). All remaining moving weights are nontrivial at \(c=1\)
+for generic \(q\). When both divisors are nonempty the first
+variation vanishes, including along their incidence locus.
+
+It remains to divide by the one factor \(1-c^{-1}\) on a pure
+component and set \(c=1\). Write \(U=U_D,\ T=T_D,\ J=\det U\), and
+write \(N(F)\) for the norm to \(S_d\) of a line \(F\) restricted
+to \(D\). Finite duality gives
+\(\det T=J^{-1}N(K_C)^{-1}\). The residual fixed obstruction
+contributes \(\lambda_{-1}((U/\mathbf1)^\vee)\).
+The moving tangent and modified root on the two components are
+\begin{equation}
+\begin{array}{c|rrrr|l}
+ &q^{-2}&q^{-1}&q&q^2&\text{modified root}\\ \hline
+ P=0,\ Q=D&T-1&-T-1&U-1&-U-1&q^d J N(\mathcal L)\\
+ P=D,\ Q=0&-1&T-1&-U-1&-1&q^d J^2 N(\mathcal L^2).
+\end{array}
+\label{eq:circle-pure-moving}
+\end{equation}
+For example, subtract the minimal tangent
+\(-(u+v+u^2+v/u)\) from the virtual tangent above. The divisor
+sequences give \(T(1+v/u-v)+Uu(1-u-v)\) for the first row and
+\(T(1+u^{-1})-cU(1+u)\) for the second.
+
+For clarity, the orientation in the last column can be computed
+before restricting to a fixed component. Write
+\(\mathcal D(F)=\det R\pi_*F\), with the projection now taken over
+the pair family, and let \(\langle\, ,\,\rangle\) be the Deligne
+pairing on the curve. The modified root, up to constant
+vector-space lines, is
+\[
+ c^{k+1}\mathcal D(E)^{-1}
+             \langle\det E,\mathcal L K_C^{-1}\rangle .
+\]
+Indeed the endomorphism term multiplied by \((1-u)(1-v)\) has
+trivial determinant. For rank-two \(E\) and a line \(F\) one has
+\(\mathcal D(EF)/\mathcal D(E)
+=\langle\det E,F\rangle
+ (\mathcal D(F)/\mathcal D(\mathcal O))^2\).
+This identity and Serre duality
+\(\mathcal D(E^\vee)=\mathcal D(EK_C)\),
+\(\mathcal D(\mathcal L)=\mathcal D(\mathcal M)\)
+give the stated root on squaring, with external character exponent
+\((\chi(E\mathcal M)-\chi(E^\vee))/2=k+1\).
+Restriction to the universal divisors gives the norm lines in
+\eqref{eq:circle-pure-moving}. The counting sign \((-1)^k\) is
+still to be included.
+
+A summand \(q^a V\) of the virtual tangent with \(a>0\) and virtual
+rank \(r\) has inverse Euler class with leading term
+\((-1)^r q^{ar}\det V\) at \(q=0\). A negative weight has leading
+term one. The two rows of \eqref{eq:circle-pure-moving} start at
+\(q^{-3}\), since the exponent from the root and positive weights is
+\(d+(d-1)+2(-d-1)=-3\) in the first and
+\(d+(-d-1)+2(-1)=-3\) in the second. At \(q=\infty\) the extreme
+exponent is \(3\) for each row, which gives the same lower bound
+for their transposes. To extract the coefficient put
+\[
+ \Phi_d(F)=R\pi_{S_d*}\bigl(N(F)\lambda_{-1}(U/\mathbf1)\bigr),
+ \qquad \pi_{S_d}:S_d\times B\longrightarrow B .
+\]
+Combining the leading determinants with
+\(J\lambda_{-1}((U/\mathbf1)^\vee)
+=(-1)^{d-1}\lambda_{-1}(U/\mathbf1)\) and the counting sign gives
+\(-\Phi_d(\mathcal L)\) from each outer divisor, at \(k=d\).
+The common divisor and its transpose, at \(k=2d\), give respectively
+\(-\Phi_d(\mathcal L^2)\) and
+\(-\Phi_d(\mathcal L^2K_C^{-1})\). The factor \(N(K_C)^{-1}\)
+in the transpose comes from \(\det T\) at the opposite end of
+the \(q\)-expansion.
+
+\subsection{Adams operations and the Picard polarization}
+
+These symmetric-product indices admit an integral evaluation,
+\begin{equation}
+ \Phi_d(F)=\psi^d(R\pi_*F).
+ \label{eq:circle-symmetric-adams}
+\end{equation}
+To see it, let \(h:C^d\to S_d\) be the ordered cover, let
+\(V=\mathbb C^d\) be the permutation representation, and put
+\(V_0=V/\mathbf1\). Marking one point of a divisor gives
+\(U=(h_*\mathcal O\otimes V)^{\mathfrak S_d}\).
+Exterior powers of these covariants identify with the covariants of
+the exterior powers. Locally at a divisor of multiplicities \(d_i\)
+this is Solomon's exterior algebra theorem for the product
+\(\prod_i\mathfrak S_{d_i}\) acting on the local coordinates of the
+ordered points \cite{solomon}. Splitting off the constant vector
+gives the same statement for \(U/\mathbf1\) and \(V_0\).
+The norm pulls back to \(F^{\boxtimes d}\). Relative K\"unneth now
+expresses the pushforward in \eqref{eq:circle-symmetric-adams}
+as the alternating sum of the Schur operations corresponding to
+\(\bigwedge^jV_0\), with the usual Koszul signs on the tensor powers
+of \(R\pi_*F\). Their partitions are the hooks \((d-j,1^j)\).
+The integral symmetric-function identity
+\(p_d=\sum_{j=0}^{d-1}(-1)^j s_{(d-j,1^j)}\)
+identifies the sum with the Adams operation. Together with
+\(D_M^\vee=-R\pi_*(\mathcal L^2K_C^{-1})\), this gives
+\eqref{eq:circle-unsimplified-edge} directly in the rotated
+presentation.
+
+There is one more simplification in even counting degree. On
+\(S_2\), \(J\) is the trace-free line of the ordered double cover,
+so \(J^2=\mathcal O(-i(C))\) for the doubled-point divisor
+\(i:C\to S_2\). Its restriction \(i^*J=K_C\) is the conormal
+of the diagonal on the ordered cover. Multiplication by a line
+minus one lowers the dimension of the support filtration on the
+smooth surface \(S_2\). Hence \((J-1)^3=0\) in \(K^0(S_2)\), and
+the divisor sequence gives
+\[
+ 4(J-1)=(J-1)(2+J+J^{-1})
+        =(J^2-1)(1+J^{-1})=-i_*(1+K_C^{-1}).
+\]
+Tensor with \(N(\mathcal L)\) and push to \(B\). Since \(U/\mathbf1=J\)
+and \(i^*N(\mathcal L)=\mathcal L^2\), equation
+\eqref{eq:circle-symmetric-adams} gives
+\(4\psi^2(A)=R\pi_*(\mathcal L^2(1+K_C^{-1}))\).
+Applying \(\psi^{k/2}\) proves \eqref{eq:circle-volume-edge}
+integrally.
+
+Finally let \(\theta\) be the principal polarization, with sign
+fixed by \(\pi_*(\gamma^2)/2=-\theta\) for the mixed K\"unneth
+component \(\gamma\) of \(c_1(\mathcal L)\). The degree-one line has
+Euler characteristic zero on \(C\), and the chosen normalization
+removes the base component of its first Chern class. Riemann--Roch
+therefore gives \(\operatorname{ch}(A)=-\theta\) in \(H^{\mathrm{even}}(B,\mathbb Q)\). The cohomological Chern
+character of \eqref{eq:circle-volume-edge} is
+\(2k(1+2\,\mathbf1_{2\mid k})\theta\). At \(k=2\) the two outer
+components give \(4\theta\) and the common-divisor components give
+\(8\theta\). Their sum \(12\theta\) measures the response of the
+family to varying the threefold volume character. Restriction to
+any one target retains only its rank, which is zero.

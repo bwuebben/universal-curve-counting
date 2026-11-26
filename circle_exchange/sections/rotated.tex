@@ -1,0 +1,233 @@
+\section{The rotated threefold}\label{sec:rotated}
+
+Choose the circle with character \(t\) as the external circle. Its fixed
+threefold is \(X'=C\times S\), where \(S=\mathbb A^2\) carries the two
+weights \(q,q^{-1}\). A curve can now move off the origin of \(S\) by a
+constant translation. We compute on this noncompact moduli space before
+pushing its index to cycles.
+
+\subsection{Deforming the framed matrix equation}
+
+Let \(\mathcal O_{X'}\to F\) be a stable pair of curve degree \(m>0\) and
+Euler characteristic \(n\). Its proper support projects finitely to \(C\).
+Indeed, the projection is affine and its restriction to the support is
+proper. Purity then makes \(E=p_*F\) a vector bundle of rank \(m\),
+where \(p:X'\to C\). Riemann--Roch gives
+\begin{equation}
+ k=\deg E=n+m(g-1).
+ \label{eq:rotated-excess}
+\end{equation}
+The two coordinates of \(S\) act on \(E\), and the section of the pair
+gives a distinguished vector \(i:\mathcal O_C\to E\). Over the function
+field of \(C\), the vector generates \(E\) under the coordinate actions.
+
+The framed ADHM description of the stable-pair theory adds a covector
+\(j:E\to\mathcal O_C\) and writes the relation as a matrix equation
+\cite[Theorem~1.9 and \S7]{diaconescu}. Write \(x,y\) for the two
+endomorphisms. We deform the equation, with its scalar part included, to
+\begin{equation}
+ [x,y]+ij=a\,1_E,\qquad a\in\mathbb A^1 .
+ \label{eq:rotated-adhm}
+\end{equation}
+Framing fixes the copy of \(\mathcal O_C\), and we divide by changes of
+basis of \(E\). The stable open is specified by generic generation by
+the words in \(x,y\) applied to \(i\). At \(a=0\) this is
+Diaconescu's presentation of the stable-pair moduli. Under the opposite
+weights on \(x,y\), the parameter \(a\) is invariant.
+
+At \(a\ne0\), fix any point of \(C\). The span of the words applied to
+\(i\) is invariant under \(x,y\). On its quotient the commutator would be
+\(a\) times the identity. Taking the trace forces this quotient to vanish.
+Dually, the common kernel of the covectors \(j\,w(x,y)\), for all words
+\(w\), is invariant and contained in \(\ker j\). The same trace argument
+on this subspace makes it zero. Words of length at most \(m-1\) suffice
+in each argument, since an increasing span which stops growing is already
+invariant. These words are global sections on \(C\). Consequently \(E\)
+and \(E^\vee\) are both globally generated and \(\deg E=0\). At \(a=0\)
+there are still \(m\) words generically independent on \(i\). Their
+determinant is a nonzero section of \(\det E\), so \(k\ge0\).
+
+For \(k>0\) this calculation implies the integral identity
+\begin{equation}
+ [\mathcal O^{\mathrm{vir}}_{P_n(X',m)}]=0
+ \qquad\text{in }G_0^{\mathbb C^\times_q}(P_n(X',m)).
+ \label{eq:rotated-vanishing}
+\end{equation}
+We give the specialization argument, since the equivariant weight of
+\(a\) matters here. Use the derived zero locus of
+\eqref{eq:rotated-adhm} modulo changes of frame and take its stable space
+of sections over the fixed curve. Relative to the \(a\)-line its tangent
+complex is the derived push from \(C\) of the complex in degrees
+\(-1,0,1\)
+\begin{equation}
+ \operatorname{End}E
+ \longrightarrow (\operatorname{End}E)q\oplus
+  (\operatorname{End}E)q^{-1}\oplus E\oplus E^\vee
+ \longrightarrow \operatorname{End}E .
+ \label{eq:rotated-deformation}
+\end{equation}
+The first arrow is the infinitesimal change of basis and the second is
+the differential of the moment map. Generic cyclicity makes the first
+injective over the function field. The trace symplectic pairing on the
+framed matrix space identifies its transpose, up to sign, with the
+second arrow, which is therefore generically surjective. On \(C\) the
+first kernel sheaf vanishes and the last cokernel has finite support.
+Pushing to the parameter space gives tangent amplitude \([0,1]\).
+This is the fixed-domain quasimap obstruction theory
+\cite[\S4.3]{okounkov}. Stabilizers are trivial by generic cyclicity.
+Boundedness at fixed \(k\) follows by dualizing \(m\) generically
+independent word sections. The resulting subbundle away from finitely
+many points, \(E^\vee\subset\mathcal O_C^m\), has quotient of length
+\(k\), hence belongs to a finite-type Quot scheme.
+
+For clarity, the comparison on the central fiber can be made at the
+level of virtual structure sheaves. If \(\pi\) forgets the \(C\)-factor
+of the universal family, the stable-pair virtual tangent has class
+\begin{equation}
+ R\pi_*\!\left(E+E^\vee-
+       (\operatorname{End}E)(1-q)(1-q^{-1})\right).
+ \label{eq:rotated-tangent}
+\end{equation}
+The Koszul resolution for the two plane coordinates gives the quadratic
+term in \(E\) in the trace-free pair complex. The two linear terms come
+from the section and its dual, with the product of the two plane weights
+equal to one. This agrees with the alternating class of
+\eqref{eq:rotated-deformation} on the same moduli scheme. The
+\(K\)-theoretic Fulton class formula expresses the virtual structure
+sheaf of a quasi-projective scheme in terms of its intrinsic Fulton
+class and its virtual cotangent class
+\cite[Theorem~4.2 and Corollary~4.5]{thomas}. Its cone filtration and
+exterior powers preserve the \(q\)-linearizations, with a separate
+auxiliary grading for the filtration. Thus the comparison holds in
+integral equivariant coherent \(K\)-theory. See also the local-curve
+application in \cite[\S9]{monavari}.
+
+The virtual structure sheaf on the central fiber is the refined pullback
+of the relative virtual family along \(a=0\), by derived base change
+or virtual specialization \cite{qu}. For \(k>0\) the underlying space
+of the entire family lies over zero. Filter a coherent sheaf there by
+powers of \(a\). Every successive quotient is a sheaf on the central
+fiber, and its refined pullback has two equal Tor terms in adjacent
+degrees, since \(a\) has weight zero. The pullback thus kills every
+class of the total family. This proves \eqref{eq:rotated-vanishing},
+even when the parameter acts nilpotently on its ordinary structure
+sheaf.
+
+\subsection{The plane Hilbert scheme and its orientation}
+
+At \(k=0\) the determinant of the \(m\) independent word sections has
+degree zero and no zero. These sections trivialize \(E\) on \(C\).
+The coordinate operators and the cyclic vector of the stable pair are
+then constant, and give a cyclic length-\(m\) quotient of the coordinate
+ring of \(S\). This identification works in families. Locally on the
+parameter scheme choose words that form a basis on one fiber over a
+point of \(C\). At the chosen parameter they form a basis on the entire
+curve. Properness of \(C\) allows one to shrink the parameter scheme
+until they form a basis everywhere. Since \(C\) is projective and
+connected, the matrix entries then descend to the parameter scheme,
+also over nonreduced bases. It follows that
+\begin{equation}
+ P_{-mb}(X',m)\simeq H_m=\operatorname{Hilb}^m(S),
+ \qquad
+ \xi\longmapsto [\mathcal O_{X'}\longrightarrow
+                          \mathcal O_{C\times\xi}] .
+ \label{eq:rotated-hilbert}
+\end{equation}
+
+For these constant cyclic data the framed complex on \(C\) is pulled
+back from the tangent bundle \(T H_m\). The virtual tangent is
+\(R\Gamma(C,\mathcal O_C)\otimes T H_m\). Its degree-zero cohomology is
+the ordinary tangent bundle of the smooth Hilbert scheme. Its
+obstruction bundle is \(H^1(C,\mathcal O_C)\otimes T H_m\). The
+symplectic form on \(H_m\) is invariant under the antidiagonal circle
+and trivializes the tangent determinant. We use the resulting relative
+orientation, suppressing fixed one-dimensional vector spaces from \(C\),
+which have trivial circle character.
+
+There is also a determinant contribution from the two external lines
+\cite{no}. Let \(V\) be the rank-\(m\) tautological bundle on \(H_m\),
+let \(\pi_B:C\times B\to B\), and put \(A=R\pi_{B*}\mathcal L\).
+Relative duality gives \(R\pi_{B*}\mathcal M=A^\vee[-1]\).
+The unweighted ratio of the two determinants on \(H_m\times B\) is
+\begin{equation}
+ D=\frac{\det(V\otimes A)}{\det(V\otimes A^\vee[-1])}.
+ \label{eq:rotated-external-determinant}
+\end{equation}
+Here both complexes on \(B\) have virtual rank zero and the same
+determinant. Thus \(D\) is trivial and we take its trivial square root.
+This argument uses perfect complexes throughout, including where the
+individual spaces of sections of \(\mathcal L\) jump. The external
+prefactor is \((-t)^{n+mb}\), hence is one on \(H_m\). The modified
+class on the minimum component is therefore the pullback from \(H_m\)
+of
+\begin{equation}
+ \mathcal F_m=\lambda_{-1}(T^\vee H_m)^g,\qquad
+ \lambda_{-1}(U)=\sum_i(-1)^i[\wedge^i U].
+ \label{eq:rotated-exterior}
+\end{equation}
+
+The effect of balance can be tested on an actual family of coincident
+points. With \(B=\operatorname{Pic}^d C\) set \(\delta=d-(g-1)\).
+The two ranks in \eqref{eq:rotated-external-determinant} become
+\(\delta,-\delta\), whereas their determinants still agree. Thus
+\(D=(\det V)^{2\delta}\) with oriented root \((\det V)^\delta\).
+The punctual Hilbert square is a \(\mathbb P^1\) of one-dimensional
+quotients of the cotangent plane at the origin. On this line the
+length-two algebra has the constants and the universal quotient
+\(\mathcal O(1)\) as its two graded pieces. The degree of the root on
+this collision family is \(\delta\). The choice \(d=g-1\) is therefore
+detected by the disappearance of the twist on the Hilbert scheme
+itself.
+
+\subsection{Comparison on the space of cycles}
+
+The \(q\)-fixed ideals of \(H_m\) are the monomial ideals
+\(\xi_\lambda\) for partitions \(\lambda\) of \(m\). To see that the
+one-parameter subgroup has no further fixed components, first observe
+that every fixed zero-cycle of \(S\) is concentrated at the origin.
+The punctual Hilbert scheme is projective, so every connected component
+of the fixed locus contains a point fixed by the full coordinate torus.
+Those points are monomial ideals. At \(\xi_\lambda\) the tangent weights
+restrict to
+\begin{equation}
+ \big\{q^{h(s)},q^{-h(s)}:s\in\lambda\big\},
+ \label{eq:rotated-hook-weights}
+\end{equation}
+by the arm and leg formula \cite[Lemma~5.4.5]{haiman}. They are all nontrivial, so
+each such point is isolated and reduced in the fixed locus.
+
+The infinitesimal \(q\)-rotation is an equivariant section of \(T H_m\).
+Its linearization at a fixed ideal is invertible by
+\eqref{eq:rotated-hook-weights}. Its zeros are therefore simple and its
+Koszul complex resolves their structure sheaf. Since \(g\ge1\), one
+exterior Euler factor in \eqref{eq:rotated-exterior} resolves the fixed
+points. The other \(g-1\) factors restrict to them. This proves the
+identity
+\begin{equation}
+ \mathcal F_m
+   =\sum_{|\lambda|=m}[\mathcal O_{\xi_\lambda}]
+        \prod_{s\in\lambda}
+            \big((1-q^{h(s)})(1-q^{-h(s)})\big)^{g-1}
+ \quad\text{in }G_0^{\mathbb C^\times_q}(H_m).
+ \label{eq:rotated-integral-concentration}
+\end{equation}
+In particular no character denominator is needed for the transverse
+plane, even for an elliptic curve, when each point contributes one.
+
+Let \(s_m:B\to W_m\) be the section of the common fivefold cycle space
+which assigns the zero-section cycle \(m[C]\). Hilbert--Chow sends each
+\(\xi_\lambda\) to the origin of \(\operatorname{Sym}^m S\) with
+multiplicity \(m\), so its associated curve has cycle \(m[C]\).
+These pushforwards are proper on the displayed representatives.
+Equivalently one can embed both threefold cycle spaces in \(W_m\).
+Compactification by compatible projective bundles makes containment
+in each closed subbundle a closed condition on cycles, and one then
+restricts to the open locus disjoint from infinity.
+
+Writing \(Z_m(q)\) for \eqref{eq:hook}, the rotated pushforward is
+\((s_m)_*(Z_m(q)\mathcal O_B)\) in \(G_0^{q,t}(W_m)\). In the original presentation
+section~\ref{sec:original} gives the same class after summing the
+Euler-characteristic grading with its external weight. This proves
+the circle exchange of Theorem~\ref{thm:exchange}. One grading has
+become an ordinary rotation of the plane, and its hook weights now
+come from the tangent spaces to punctual ideals.

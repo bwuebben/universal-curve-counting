@@ -1,0 +1,96 @@
+\section{The connected index at a collision}\label{sec:collision}
+
+Set $g=2$. The plane Hilbert square parametrizes both pairs of distinct
+points and length-two schemes supported at a single point. To extract the
+connected contribution we compare its index with the symmetric square
+of the degree-one index, on the space of cycles itself. All constructions below can be pulled back
+over $B$; we suppress its trivial structure-sheaf factor.
+
+Let $h:H=\operatorname{Hilb}^2(S)\to W=\operatorname{Sym}^2(S)$ be
+the Hilbert--Chow morphism, $p:S^2\to W$ the finite quotient and
+$i:S\to W$ the map $x\mapsto 2[x]$. Put
+\begin{equation}
+ K_1=\lambda_{-1}(T_S^\vee)^2,\qquad
+ K_2=\lambda_{-1}(T_H^\vee)^2 .
+\end{equation}
+Here $\lambda_{-1}(U)=\sum_j(-1)^j[\bigwedge^j U]$. Its even and odd
+summands give the signs in a permutation of two such factors. The
+connected class is
+\begin{equation}
+ D_+=h_*K_2-\bigl(p_*(K_1\boxtimes K_1)\bigr)^{\mathfrak S_2}
+                    \quad\in G_0^q(W).
+ \label{eq:connected-class}
+\end{equation}
+The invariant summand is exact over $\mathbb C$. Over two distinct points,
+$h$ is an isomorphism, and on the ordered cover the tangent bundle is the
+direct sum of the tangent bundles at the two points. Exchanging them acts
+on the exterior algebra with the graded permutation sign. Thus the two
+terms of \eqref{eq:connected-class} restrict to the same class there.
+The localization sequence for coherent sheaves makes $D_+$ the pushforward
+of an integral class on $i(S)$.
+
+Write $y=q+q^{-1}$, $e=(1-q)(1-q^{-1})=2-y$, and
+$e_2=(1-q^2)(1-q^{-2})=4-y^2$. The degree-one index is $e$.
+At the two ideals $(z_1^2,z_2)$ and $(z_1,z_2^2)$, in plane coordinates
+$z_1,z_2$, the four tangent weights on $H$ are
+$q,q^{-1},q^2,q^{-2}$. Equivariant localization divides out one
+cotangent Euler factor and leaves $ee_2$ at each ideal.
+Their sum is $2e^2(4-e)$, the disconnected genus-two double already
+obtained from the antidiagonal Gromov--Witten evaluation
+\cite[\S6]{wuebben-antidiagonal}.
+For the independent pair the identity permutation has trace $e^2$;
+the transposition has trace $\psi^2(e)=e_2$, where the Adams operation
+$\psi^2$ replaces $q$ by $q^2$. Taking invariants averages these traces.
+The connected index is therefore
+\begin{align}
+ F_2(q)=\chi_q(D_+)
+ &=2ee_2-\tfrac12(e^2+e_2)
+   =2(y-2)(y^2-3) \nonumber\\
+ &=2q^{-3}-4q^{-2}+4-4q^2+2q^3 .
+ \label{eq:double-character}
+\end{align}
+The lift to the collision diagonal is determined as well.
+Equivariant homotopy invariance identifies $G_0^q(S)$ with the Laurent
+character ring times $[\mathcal O_S]$. The localized Euler characteristic
+of $A(q)[\mathcal O_S]$ is $A(q)/e$. Since this map is injective, the
+class constructed in \eqref{eq:connected-class} is
+\begin{equation}
+                  D_+=i_*\big(e F_2(q)[\mathcal O_S]\big) .
+\end{equation}
+Each punctual ideal contributes $+1$ at $q^{-3}$ and $-2$ at
+$q^{-2}$. The graded symmetric square is $(e^2+e_2)/2=4-2y$.
+At $q^{-2}$ the identity and the transposition have coefficients $+1$
+and $-1$, respectively, so their average vanishes. Thus the two
+punctual ideals account for both leading coefficients of the connected
+index. The subtraction changes the constant and the $q^{\pm1}$ terms.
+
+For completeness one can make the connected subtraction in all degrees
+at the level of characters. Introduce a curve variable $Q$ and put
+$Z=1+\sum_{m\ge1}Q^m Z_m(q)$. Define integer Laurent polynomials
+$F_m=\sum_j a_{m,j}q^j$ successively by
+\begin{equation}
+ Z=\prod_{m\ge1}\prod_{j\in\mathbb Z}(1-Q^m q^j)^{-a_{m,j}} .
+ \label{eq:euler-product}
+\end{equation}
+After dividing by the previously determined factors, the coefficient
+of $Q^m$ fixes $F_m$ integrally. Each $Z_m$ is invariant under inversion
+of $q$, so uniqueness gives $F_m\in\mathbb Z[2-q-q^{-1}]$.
+For $g>1$ each $Z_m$ is divisible by $e^{g-1}$, since every hook Euler
+factor is divisible by $e$. The same divisibility holds for $F_m$ by
+induction. Indeed the nonconstant contributions from lower degrees in
+the symmetric-algebra expansion contain an Adams image of a previous
+$F_d$, and $2-q^r-q^{-r}$ is divisible by $e$. This proves divisibility
+over $\mathbb Q$; division by the monic polynomial $e^{g-1}$ in
+$\mathbb Z[e]$ proves it integrally. For $g=1$ the hook sum gives the
+ordinary partition numbers and the Euler product has $F_m=1$.
+
+Writing $F_m=\sum_{h\ge1} n_{m,h} e^{h-1}$ and putting $q=\exp(iu)$
+gives the local Gopakumar--Vafa form \cite{gv,bryanpandharipande},
+\begin{equation}
+ \log Z=\sum_{m,h,r\ge1} \frac{n_{m,h}}{r}
+        \bigl(2\sin(ru/2)\bigr)^{2h-2} Q^{mr}.
+\end{equation}
+In the example \eqref{eq:double-character}, $F_2=-2e+8e^2-2e^3$.
+The construction \eqref{eq:connected-class} realizes this
+symmetric-algebra subtraction by an actual support calculation in
+coherent $K$-theory.

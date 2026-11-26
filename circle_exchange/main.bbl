@@ -1,0 +1,130 @@
+
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
+
+\bibitem{no}
+N.~Nekrasov and A.~Okounkov, \emph{Membranes and sheaves},
+  \href{https://doi.org/10.14231/AG-2016-015}{\emph{Algebr. Geom.} {\bfseries
+  3} (2016) 320} [\href{https://arxiv.org/abs/1404.2323}{{\ttfamily
+  1404.2323}}].
+
+\bibitem{holmesschuler}
+D.~Holmes and Y.~Schuler, \emph{Experiments with membranes, maps and sheaves},
+  \href{https://arxiv.org/abs/2609.03152}{{\ttfamily 2609.03152}}.
+
+\bibitem{gv}
+R.~Gopakumar and C.~Vafa, \emph{{M}-theory and topological strings {II}},
+  \href{https://arxiv.org/abs/hep-th/9812127}{{\ttfamily hep-th/9812127}}.
+
+\bibitem{dw}
+M.~Dedushenko and E.~Witten, \emph{Some details on the {Gopakumar--Vafa} and
+  {Ooguri--Vafa} formulas},
+  \href{https://doi.org/10.4310/ATMP.2016.v20.n1.a1}{\emph{Adv. Theor. Math.
+  Phys.} {\bfseries 20} (2016) 1}
+  [\href{https://arxiv.org/abs/1411.7108}{{\ttfamily 1411.7108}}].
+
+\bibitem{wuebben-antidiagonal}
+B.J.~Wuebben, ``Antidiagonal local curves and integral exponents in universal
+  curve counting.'' \href{https://doi.org/10.5281/zenodo.24432700}{Zenodo
+  preprint}, 2026.
+\newblock 10.5281/zenodo.24432700.
+
+\bibitem{wuebben-integral}
+B.J.~Wuebben, ``Integral generators for curve counting on threefolds.''
+  \href{https://doi.org/10.5281/zenodo.24510962}{Zenodo preprint}, 2026.
+\newblock 10.5281/zenodo.24510962.
+
+\bibitem{pt}
+R.~Pandharipande and R.P.~Thomas, \emph{Curve counting via stable pairs in the
+  derived category},
+  \href{https://doi.org/10.1007/s00222-009-0203-9}{\emph{Invent. Math.}
+  {\bfseries 178} (2009) 407}
+  [\href{https://arxiv.org/abs/0707.2348}{{\ttfamily 0707.2348}}].
+
+\bibitem{bryanpandharipande}
+J.~Bryan and R.~Pandharipande, \emph{The local {Gromov--Witten} theory of
+  curves}, \href{https://doi.org/10.1090/S0894-0347-06-00545-5}{\emph{J. Amer.
+  Math. Soc.} {\bfseries 21} (2008) 101}
+  [\href{https://arxiv.org/abs/math/0411037}{{\ttfamily math/0411037}}].
+
+\bibitem{monavari}
+S.~Monavari, \emph{Double nested {Hilbert} schemes and the local stable pairs
+  theory of curves},
+  \href{https://doi.org/10.1112/S0010437X22007606}{\emph{Compos. Math.}
+  {\bfseries 158} (2022) 1799}
+  [\href{https://arxiv.org/abs/2108.10827}{{\ttfamily 2108.10827}}].
+
+\bibitem{refined}
+S.~Monavari, \emph{The refined local {Donaldson--Thomas} theory of curves},
+  \href{https://doi.org/10.2140/gt.2026.30.3423}{\emph{Geom. Topol.} {\bfseries
+  30} (2026) 3423} [\href{https://arxiv.org/abs/2506.14359}{{\ttfamily
+  2506.14359}}].
+
+\bibitem{gps}
+A.~Giacchetto, R.~Pandharipande and Y.~Schuler, \emph{Membranes and maps},
+  \href{https://arxiv.org/abs/2609.02409}{{\ttfamily 2609.02409}}.
+
+\bibitem{ht}
+D.~Huybrechts and R.P.~Thomas, \emph{Deformation-obstruction theory for
+  complexes via {Atiyah} and {Kodaira--Spencer} classes},
+  \href{https://doi.org/10.1007/s00208-009-0397-6}{\emph{Math. Ann.} {\bfseries
+  346} (2010) 545} [\href{https://arxiv.org/abs/0805.3527}{{\ttfamily
+  0805.3527}}].
+
+\bibitem{kiemli}
+Y.-H.~Kiem and J.~Li, \emph{Localizing virtual structure sheaves by
+  cosections}, \href{https://doi.org/10.1093/imrn/rny235}{\emph{Int. Math. Res.
+  Not.} {\bfseries 2020} (2020) 8387}
+  [\href{https://arxiv.org/abs/1705.09458}{{\ttfamily 1705.09458}}].
+
+\bibitem{kiemsavvas}
+Y.-H.~Kiem and M.~Savvas, \emph{Localizing virtual structure sheaves for almost
+  perfect obstruction theories},
+  \href{https://doi.org/10.1017/fms.2020.59}{\emph{Forum Math. Sigma}
+  {\bfseries 8} (2020) e61} [\href{https://arxiv.org/abs/2007.06820}{{\ttfamily
+  2007.06820}}].
+
+\bibitem{qu}
+F.~Qu, \emph{Virtual pullbacks in {$K$}-theory},
+  \href{https://doi.org/10.5802/aif.3194}{\emph{Ann. Inst. Fourier} {\bfseries
+  68} (2018) 1609} [\href{https://arxiv.org/abs/1608.02524}{{\ttfamily
+  1608.02524}}].
+
+\bibitem{diaconescu}
+D.-E.~Diaconescu, \emph{Moduli of {ADHM} sheaves and the local
+  {Donaldson--Thomas} theory},
+  \href{https://doi.org/10.1016/j.geomphys.2011.12.018}{\emph{J. Geom. Phys.}
+  {\bfseries 62} (2012) 763} [\href{https://arxiv.org/abs/0801.0820}{{\ttfamily
+  0801.0820}}].
+
+\bibitem{okounkov}
+A.~Okounkov, \emph{Lectures on {$K$}-theoretic computations in enumerative
+  geometry},  in \emph{Geometry of Moduli Spaces and Representation Theory},
+  vol.~24 of \emph{IAS/Park City Mathematics Series}, (Providence, RI),
+  pp.~251--380, American Mathematical Society (2017),
+  \href{https://doi.org/10.1090/pcms/024/05}{DOI}
+  [\href{https://arxiv.org/abs/1512.07363}{{\ttfamily 1512.07363}}].
+
+\bibitem{thomas}
+R.P.~Thomas, \emph{A {$K$}-theoretic {Fulton} class},  in \emph{Facets of
+  Algebraic Geometry, Volume 2}, vol.~473 of \emph{London Mathematical Society
+  Lecture Note Series}, pp.~367--380, Cambridge University Press (2022),
+  \href{https://doi.org/10.1017/9781108877855.012}{DOI}
+  [\href{https://arxiv.org/abs/1810.00079}{{\ttfamily 1810.00079}}].
+
+\bibitem{haiman}
+M.~Haiman, \emph{Combinatorics, symmetric functions and {Hilbert} schemes},
+  \href{https://doi.org/10.4310/CDM.2002.v2002.n1.a2}{\emph{Curr. Dev. Math.}
+  {\bfseries 2002} (2002) 39}.
+
+\bibitem{wuebben-geometric}
+B.J.~Wuebben, ``A geometric product formula for universal curve counting on
+  {Calabi--Yau} threefolds.''
+  \href{https://doi.org/10.5281/zenodo.24455518}{Zenodo preprint}, 2026.
+\newblock 10.5281/zenodo.24455518.
+
+\bibitem{solomon}
+L.~Solomon, \emph{Invariants of finite reflection groups},
+  \href{https://doi.org/10.1017/S0027763000011028}{\emph{Nagoya Math. J.}
+  {\bfseries 22} (1963) 57}.
+
+\end{thebibliography}\endgroup

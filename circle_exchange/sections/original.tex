@@ -1,0 +1,198 @@
+\section{The index on the split threefold}\label{sec:original}
+
+Take \(q\) as the external circle. Its fixed threefold over
+\(L\in B=\operatorname{Pic}^{b}(C)\) is the total space of
+\(L\oplus K_C L^{-1}\), where \(b=g-1\). The internal circle
+\(T=\mathbb C^\times_t\) rotates these two lines with opposite weights.
+We shall compute the class of the index on the space of cycles.
+This requires keeping the dependence on \(L\). For example, a section of
+\(L\) translates the curve inside its threefold, and the number of
+independent translations can jump as \(L\) varies.
+
+Write \(\mathcal L\) for the normalized Poincar\'e line on \(C\times B\),
+\(\mathcal M=K_C\mathcal L^{-1}\), and
+\(X=\operatorname{Tot}_{C\times B}(\mathcal L t\oplus\mathcal M t^{-1})\).
+Let \(\mathcal P=P_n(X/B,m)\) parametrize stable pairs
+\(\mathbb I=[\mathcal O_X\to\mathcal F]\) in the fibers of \(X\to B\).
+The sheaf has proper pure one-dimensional support, generic degree \(m>0\)
+over \(C\), Euler characteristic \(n\), and a section with
+zero-dimensional cokernel~\cite{pt}.
+Let \(h:\mathcal P\to W_m\) send a pair to its support cycle in the
+fivefold, and let \(s_m:B\to W_m\) denote the cycle \(m[C]\).
+The support morphism is proper. Indeed, compactifying \(X\) to the
+projective bundle with infinity divisor \(D_\infty\) gives the projective
+stable-pair support morphism. Its restriction over cycles disjoint
+from \(D_\infty\) parametrizes pairs on \(X\), since purity forces the
+whole sheaf support to lie on its cycle. The inclusion of cycles on the
+fixed threefold into the fivefold cycle space is closed.
+
+\subsection{The orientation and the support of the index}
+
+Push the universal sheaf down to \(C\times\mathcal P\) and call the result
+\(E\). The projection of the support is proper and affine, hence finite.
+Purity makes every fiber of \(E\) over \(\mathcal P\) torsion-free on \(C\).
+Flatness over \(\mathcal P\) then makes \(E\) a vector bundle of rank \(m\).
+For the projection \(\rho:C\times\mathcal P\to\mathcal P\), set
+\begin{equation}
+ P=R\rho_*E-
+ R\rho_*\bigl(\operatorname{End}(E)(1-\mathcal L t)\bigr).
+ \label{eq:originalpolarization}
+\end{equation}
+This is a polarization of the relative virtual tangent class:
+\begin{equation}
+ T^{\rm vir}_{\mathcal P/B}=P-P^\vee,\qquad
+ \operatorname{rk}P=n+m^2b .
+ \label{eq:originaltangent}
+\end{equation}
+Indeed the two normal coordinates give a Koszul resolution for the
+self-Ext term, whose class before pushforward is
+\(\operatorname{End}(E)(1-\mathcal Lt)(1-\mathcal M t^{-1})\).
+Duality on \(C\) pairs its two halves and pairs the two terms linear in
+\(E\) in the framed deformation complex. Riemann--Roch gives the rank
+in~\eqref{eq:originaltangent}. We use \((\det P)^{-1}\) as the square
+root of the relative virtual canonical bundle. The two ordered external
+lines are trivial as bundles in this presentation, so their determinant
+ratio introduces no further line. Write
+\(\widehat{\mathcal O}^{\rm vir}=(\det P)^{-1}\mathcal O^{\rm vir}\)
+with the signed counting variable \(-q\)~\cite{no}.
+
+Let \(F=\mathcal P^T\) and \(i:F\to\mathcal P\) denote its inclusion.
+A fixed pair has its entire reduced support on the zero section. Indeed,
+every fiber of its support over \(C\) is finite, so the connected torus
+fixes each point of that fiber. The origin is the only fixed point in
+each affine-plane fiber. In particular \(F\) is proper over \(B\),
+by properness of the support morphism and invariance of properness
+under nilpotent thickenings. Fixed supports can themselves have
+nontrivial scheme structure.
+
+To obtain an \emph{integral} lift of the virtual sheaf to \(F\), consider
+the vector field induced by the normal rotation. Relative Calabi--Yau
+duality identifies \(\operatorname{Ob}_{\mathcal P/B}\) with
+\(\Omega_{\mathcal P/B}\), and contraction with the vector field gives
+a cosection. We check that it descends to the absolute obstruction
+sheaf. Write \(\xi\) for the Euler field on \(X\) and
+\(D=\iota_\xi\operatorname{At}_{X/B}(\mathbb I)\) for the corresponding
+degree-one endomorphism. A Picard tangent represented by
+\(\alpha\in H^1(C,\mathcal O_C)\) varies the transition functions of
+\(\mathcal L\) and \(\mathcal M\) inversely. Its Kodaira--Spencer class
+is therefore \(\alpha\xi\), and its obstruction is the trace-free part
+of \(\alpha D\), up to the common infinitesimal-action sign~\cite{ht}.
+Its pairing with \(D\) vanishes. In the Serre trace, commuting \(D\)
+past the even block \(\alpha D\) preserves the sign, whereas commuting
+it past the odd scalar \(\alpha\) changes the sign. This calculation
+also applies over nonreduced parameter schemes. For the proper Serre
+trace one can use the projective bundle compactification. The trace-free
+endomorphism complex vanishes near infinity, where \(\mathbb I\) is the
+identity line. The relative canonical bundle on the compactification is
+\(\mathcal O(-3D_\infty)\), and the section of
+\(\mathcal O(3D_\infty)\) identifies the twisted trace-free complex
+with the untwisted one in the derived category. Multiplication by this
+section has degree zero and leaves the cyclic sign unchanged.
+
+Thus the cosection kills the image of \(T_B\) in the relative obstruction
+sheaf and descends through the absolute obstruction sequence. Its zero
+scheme is \(F\): on a homogeneous function of weight \(j\) the orbit
+derivation is multiplication by \(j\), and the nonzero weights
+generate the fixed-scheme ideal in characteristic zero.
+Equivariant cosection localization now gives
+\begin{equation}
+ \gamma\in G_0^T(F),\qquad i_*\gamma=[\mathcal O_{\mathcal P}^{\rm vir}].
+ \label{eq:originalintegrallift}
+\end{equation}
+Here \(G_0^T\) denotes the group of equivariant coherent sheaves with
+integer coefficients. We use the absolute virtual sheaf induced by the
+relative theory over the smooth base and the relative orientation
+fixed above~\cite{kiemli,kiemsavvas}.
+
+\subsection{The fixed class over the Picard variety}
+
+On \(F\), decompose \(P=P_0+P_{\rm mov}\) into its zero and nonzero
+weights. The moving virtual normal class is
+\(P_{\rm mov}-P_{\rm mov}^\vee\).
+To compute \(\gamma\) without losing torsion in the Picard family,
+choose a two-term bundle resolution
+\([N^{-1}\to N^0]\) of the moving cotangent complex on \(F\).
+One can choose it weight by weight since \(F\) is quasi-projective and
+\(T\) acts trivially on it. For \(e(V)=\lambda_{-1}(V)\), the
+self-intersection and composition identities in virtual pullback
+give~\cite[proof of Theorem 3.3 and Lemma 3.6]{qu}
+\begin{equation}
+             e(N^0)\gamma=e(N^{-1})[\mathcal O_F^{\rm vir}].
+ \label{eq:originalintegralcancel}
+\end{equation}
+Indeed virtual self-intersection applied to \(i_*\gamma\) gives the
+left side. Applied to the virtual sheaf on \(\mathcal P\), the same
+pullback adjoins \(N^{-1}[1]\) to the fixed obstruction theory and
+gives the right side. Both operations precede division by torus
+characters: the factors in~\eqref{eq:originalintegralcancel} are the
+Koszul classes for zero sections.
+
+On each component a moving bundle has Euler polynomial in \(t\) with
+invertible extremal coefficients, up to sign and a line bundle.
+Hence multiplication by it on \(G_0(F)[t^{\pm1}]\) is injective
+even in the presence of additive torsion. The identity
+\(1-a=-a(1-a^{-1})\) applied to the lines of a splitting of the
+moving polarization gives
+\[
+ \frac{e(N^{-1})}{e(N^0)}
+     =(-1)^{\operatorname{rk}P_{\rm mov}}\det P_{\rm mov}.
+\]
+Clearing the Euler factors and using injectivity in
+\eqref{eq:originalintegralcancel} identifies the oriented lift
+integrally as
+\begin{equation}
+ (\det P)^{-1}\gamma=
+ (-1)^{\operatorname{rk}P_{\rm mov}}
+       (\det P_0)^{-1}[\mathcal O_F^{\rm vir}].
+ \label{eq:originalfixedlift}
+\end{equation}
+In particular its internal rotation weight is zero.
+
+It remains to determine how this class varies with \(L\).
+Fix \(L_0\in B\) and put \(A=\mathcal L\otimes L_0^{-1}\).
+An equivariant stable pair on the fiber at \(L_0\) gives a pair on the
+varying threefold by tensoring each weight-\(j\) summand \(E_j\) with
+\(A^j\). Both normal actions have precisely the required changes of
+weight and the section has weight zero. The inverse construction uses
+\(A^{-1}\). The degree of \(A\) on each curve is zero, so this preserves
+\(n\). Stable pairs have trivial automorphisms and a fixed family has a
+unique compatible linearization. The construction commutes with
+arbitrary base change and gives \(F\simeq F(L_0)\times B\).
+
+This identification includes the fixed obstruction theory. In local
+frames of \(A\), the weight-zero relative derived endomorphisms, the
+trace and the maps induced by the section glue with total power
+\(A^0\). The same identification respects their obstruction morphism:
+the relative Atiyah class in the pair-parameter directions is taken
+with \(A\) held fixed on \(C\times B\).
+Thus the relative fixed virtual sheaf is pulled back from \(F(L_0)\).
+The terms of \(P_0\) also have total power \(A^0\), and the moving
+rank in~\eqref{eq:originalfixedlift} is constant on each product
+component. Proper pushforward of the oriented fixed class therefore
+gives a numerical coefficient \(c_{m,n}\) times \([\mathcal O_B]\).
+On \(F_{\rm red}\) the support map factors through \(s_m\). Filtering
+coherent sheaves by the nilradical permits the same pushforward
+calculation even if the map on \(F\) has infinitesimal components
+normal to \(s_m(B)\). Consequently
+\begin{equation}
+  h_*[\widehat{\mathcal O}_{\mathcal P}^{\rm vir}]
+     =(s_m)_*\bigl(c_{m,n}[\mathcal O_B]\bigr)
+     \quad\text{in }G_0^T(W_m).
+ \label{eq:originalsupport}
+\end{equation}
+
+It suffices now to evaluate \(c_{m,n}\) on one fiber. The antidiagonal
+local-curve stable-pair formula at levels \((b,b)\)
+gives~\cite{monavari,refined}
+\begin{equation}
+ \sum_n c_{m,n}(-q)^n
+   =\sum_{\lambda\vdash m}\ \prod_{u\in\lambda}
+     \bigl((1-q^{h(u)})(1-q^{-h(u)})\bigr)^b ,
+ \label{eq:originalhook}
+\end{equation}
+where \(h(u)\) is one plus the number of boxes to the right and below
+\(u\) in its row and column. The sign follows from
+\((1-q^h)(1-q^{-h})=-(q^{h/2}-q^{-h/2})^2\). In degree one this
+gives \(((1-q)(1-q^{-1}))^b\). For \(g\geq1\) every summand is an
+integral Laurent polynomial. Equation~\eqref{eq:originalsupport}
+identifies the family class to which this numerical formula belongs.

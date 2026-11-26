@@ -52,6 +52,10 @@ See the [Universal curve counting programme](https://bwuebben.github.io/research
 
 The [shared supplement](supplementary_calculations/README.md) contains the calculations for the branched-cover and spin papers. For the numerical checks accompanying the five papers, run `python3 verify_series.py` with SageMath and uv available.
 
+## Topological strings and curve counting
+
+**The topological string on balanced local curves from two circle actions on a Calabi–Yau fivefold**. On a balanced local curve the variable grading the Euler characteristic of a stable pair becomes a plane rotation weight when the external circle of the fivefold is exchanged. The equality holds on the common space of cycles in every positive curve degree and throughout the Picard family. [PDF](circle_exchange/main.pdf) · [Source and calculations](circle_exchange/README.md) · [Abstract and citation](https://bwuebben.github.io/papers/circle-exchange-local-curves/) · [Zenodo](https://doi.org/10.5281/zenodo.24549724).
+
 ## Reproduce the calculations
 
 The computations use Python 3, SymPy 1.14.0 and SageMath (verified with 10.9).

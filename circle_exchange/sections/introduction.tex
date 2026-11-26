@@ -1,0 +1,202 @@
+\section{Introduction}\label{sec:intro}
+
+Fix the total wrapping charge of membranes on a curve. What accounts
+for the dependence of the topological-string partition function on its
+coupling at that charge? In the stable-pair calculation on a local
+Calabi--Yau threefold, this dependence is encoded by a variable $q$
+that grades the Euler characteristic of the sheaf: a pair of Euler
+characteristic $n$ has weight $(-q)^n$. In the fivefold description
+proposed by Nekrasov and Okounkov \cite{no}, the same $q$ is the
+fugacity for a circle rotating the two complex directions normal to
+the threefold. Selecting a different circle in the fivefold can change
+the threefold on which one counts. Can the rotation weights of the new
+geometry recover the Euler-characteristic series of the old one?
+
+We answer this question for two explicit circles over a smooth curve
+of positive genus. One fixes a local Calabi--Yau threefold in which the
+curve has two normal line bundles of equal degree. The other fixes
+the product of the curve with a plane. On the product threefold, $q$
+rotates the plane, and a different variable counts the stable pairs.
+We show why this second counting variable disappears and how the
+weights of the plane rotation reproduce the entire $q$-dependence in
+each curve degree. The two calculations agree already on the space of
+curves in the fivefold, as the normal line bundle varies. This is a
+case of the independence of the external circle formulated by Holmes
+and Schuler \cite[Conjecture~1.7 and Examples~1.13--1.14]{holmesschuler}.
+
+The distinction between the two variables of the topological string
+will be important. We write $Q^m$ for curve degree $m$ and $q=e^{iu}$
+for the exponential of the string coupling $u$. The wrapping variable $Q$ is common to both descriptions. In the Gopakumar--Vafa formula, the dependence on $u$
+at fixed total degree comes from spin traces and repeated windings of
+wrapped particles \cite{gv,dw}. Here we derive that dependence by
+comparing two geometric indices. The doubled curve in
+section~\ref{sec:collision} will let us ask how much this calculation
+can tell us about a particle of charge two.
+
+\subsection{Two threefolds in one fivefold}
+Fix a smooth projective complex curve $C$ of genus $g\geq1$, put $b=g-1$,
+and let $B=\operatorname{Pic}^{b}(C)$. Over $C\times B$ choose the
+Poincar\'e line $\mathcal L$, trivialized along a chosen point of $C$,
+and set $\mathcal M=K_C\otimes\mathcal L^{-1}$. For a line bundle $U$
+and a torus character $w$, write $Uw$ for the bundle with fiber weight $w$.
+Our family of fivefolds and its two fixed threefolds are
+\begin{align}
+ Z&=\operatorname{Tot}_{C\times B}
+       (\mathcal Lt\oplus\mathcal Mt^{-1}\oplus\mathcal Oq\oplus\mathcal Oq^{-1}),
+       \nonumber\\
+ X=Z^{\mathbb C_q^\times}
+   &=\operatorname{Tot}_{C\times B}(\mathcal L\oplus\mathcal M),
+ &X'=Z^{\mathbb C_t^\times}
+   &= C\times B\times S,\qquad S=\mathbb A^2 .
+ \label{eq:fixed}
+\end{align}
+The dimensions are relative to $B$. Here a circle is a fiber rotation,
+written algebraically as its complexification $\mathbb C^\times$. On $X$
+the internal circle rotates the two line bundles with weights $t,t^{-1}$.
+On $X'$ it rotates the plane with weights $q,q^{-1}$. Both external
+circles preserve the fivefold volume form. The canonical line of $X'$ is
+the pullback of $K_C$; its two normal lines in $Z$ supply the compensating
+determinant.
+
+The first fixed threefold is the balanced antidiagonal local curve used
+to construct universal curve-counting classes supported on the multiples
+of its zero section \cite[\S2]{wuebben-antidiagonal}. As the multiplicity
+and genus vary, including genus zero, these classes freely generate the
+part of Pardon's integral curve-counting algebra in first
+Chern number and virtual dimension zero
+\cite[Theorem~1.1]{wuebben-integral}. Embedding this model in $Z$ supplies
+a second fixed threefold and a common space of cycles on which to
+compare the two stable-pair indices.
+
+A stable pair consists of a pure one-dimensional sheaf $\mathcal F$ with
+proper support and a section $\mathcal O\to\mathcal F$ whose cokernel is
+zero-dimensional \cite{pt}. Its curve degree $m$ is the degree of its
+fundamental cycle over $C$, and $n=\chi(\mathcal F)$.
+We use the modified virtual structure sheaf of \cite{no}.
+The virtual structure sheaf counts with the deformation and obstruction
+spaces of the pair. Its modification uses a square root of the virtual
+canonical line and the determinant of cohomology from the two ordered
+external lines. Exchanging the circles changes those lines as well as the
+fixed threefold. We specify both roots in sections~\ref{sec:original}
+and~\ref{sec:rotated}. Throughout the comparison we work relative to the
+fixed curve, without integrating over $B$.
+
+\subsection{The common index}
+
+Curve degree one illustrates the exchange. On the product threefold a
+copy of $C$ can sit at any point of the plane. At the minimum Euler
+characteristic $1-g$, these translates are all the pairs. Their
+deformations are the two plane translations, and their obstructions
+are $g$ copies of the same two directions, one for each element of a
+basis of $H^1(C,\mathcal O_C)$. The only fixed translate sits at the
+origin. Cancelling the deformation factor against one obstruction
+factor leaves the rotation character
+\[
+             Z_1(q)=\big[(1-q)(1-q^{-1})\big]^{g-1}.
+\]
+For a genus-two curve this is $2-q-q^{-1}$. In the original threefold
+the three powers of $q$ belong to three Euler characteristics. In the
+plane they all come from rotations at a single fixed pair. The
+all-degree theorem extends this observation to nonreduced curves and
+keeps track of their support.
+
+Let $W_m$ be the relative Chow space of compact effective one-cycles of
+degree $m$ in $Z/B$. Stable pairs on either fixed threefold determine
+points of this space by taking their fundamental cycles in $Z$.
+Write $s_m:B\to W_m$ for the section $m[C]$. The group
+$G_0^{q,t}(W_m)$ records equivariant coherent sheaves modulo exact
+sequences, with their integral multiplicities and torus characters.
+Let $\mathcal I_m^{(q)}$ and $\mathcal I_m^{(t)}$ be the series of the
+proper direct images of the modified sheaves in the two presentations.
+Our counting convention gives weight $(-q)^n$ in the first. In the
+second the weight is $(-t)^{n+mb}$, including the shift for the ordered
+external line of degree $b$. The theorem in particular makes both sums
+finite in this group.
+
+\begin{theorem}\label{thm:exchange}
+For the family \eqref{eq:fixed}, with the ordered determinant orientations
+above, the two stable-pair indices have the same class in
+$G_0^{q,t}(W_m)$ for each $m\geq 1$. More precisely,
+\begin{equation}
+ \mathcal I_m^{(q)}=\mathcal I_m^{(t)}
+ =(s_m)_*\bigl(Z_m(q)[\mathcal O_B]\bigr),\qquad
+ Z_m(q)=\sum_{\lambda\vdash m}
+      \prod_{\square\in\lambda}
+        \big[(1-q^{h(\square)})(1-q^{-h(\square)})\big]^{g-1}.
+ \label{eq:hook}
+\end{equation}
+Here $h(\square)$ is one plus the number of boxes to the right and below
+$\square$ in its row and column. The equality holds over the full Picard
+variety, including the locus where the number of sections of the normal
+bundle jumps.
+\end{theorem}
+
+On a fixed target the character $Z_m(q)$ is known. Bryan and
+Pandharipande obtained the local Gromov--Witten partition function
+\cite{bryanpandharipande}, and Monavari's stable-pair formulas give
+its $q$-character \cite{monavari,refined}. For the related comparison
+with fivefold Gromov--Witten theory, Giacchetto, Pandharipande and
+Schuler derive a degree-one local-curve correspondence from their
+membrane conjectures \cite{gps}. The content of
+Theorem~\ref{thm:exchange} is that two moduli problems give the
+same integral class supported on $m[C]$. Equality of the Laurent
+polynomials on individual targets would leave this undetermined:
+a nonzero class on the Picard variety can have rank zero at every
+point.
+
+The two sides account for the equality in different ways. On $X$
+the infinitesimal rotation of the normal lines gives a cosection of
+the obstruction sheaf. It concentrates the virtual sheaf on invariant
+pairs. Their fixed deformation theory, with its determinant orientation,
+is constant over $B$, even where the dimension of the space of normal
+sections jumps (section~\ref{sec:original}).
+
+On $X'$ the two plane coordinates act as endomorphisms of a rank-$m$
+bundle $E$ on $C$. Its degree $k=n+m(g-1)$ is precisely the exponent
+of the exchanged counting variable. Write $x,y$ for the endomorphisms.
+The framed matrix equation admits the deformation
+\[
+                      [x,y]+ij=a\,1_E ,
+\]
+where $i$ is the section of the pair, $j$ a covector, and $a$ a scalar.
+At $a\ne0$, taking traces on invariant quotients and subspaces forces
+the words in $x,y$ applied to $i$ and to $j$ to generate $E$ and
+$E^\vee$, respectively. Both bundles are therefore generated by global
+sections. Their degrees must both be nonnegative, so $k=0$.
+For $k>0$, specialization back to the original equation makes the
+virtual structure sheaf vanish on the stable-pair space itself. At
+$k=0$ the matrix data are constant along $C$ and specify a length-$m$
+subscheme of the plane. The tangent weights of its Hilbert scheme
+supply the hook lengths in \eqref{eq:hook}
+(section~\ref{sec:rotated}). This accounts for the loss of the
+$t$-grading and the survival of the $q$-dependence in the same calculation.
+
+\subsection{What the doubled curve detects}
+In genus two, degree two is the first place where two independent
+degree-one objects contribute at the same total charge as a connected
+double. Over two distinct points of the plane the index sheaf factors.
+This prescribes the graded symmetric square to subtract for the
+independent pair. The remaining class is supported where the two
+points coincide. There the rotation has two fixed length-two schemes,
+one for each coordinate direction in which a point can thicken. Each
+contributes $+1$ at $q^{-3}$ and $-2$ at $q^{-2}$. The graded symmetric
+square contributes zero at both powers, giving the connected
+coefficients $2$ and $-4$ (section~\ref{sec:collision}).
+To interpret the latter as the spin trace of a charge-two particle,
+one would also have to establish a normalizable state in the wrapped
+theory with the continuum of two separated branes open and derive its
+spin.
+
+There is a further test for which even exact numerical agreement on
+every target would give no information. Vary the product $\kappa$ of
+the two normal weights on $X$, compensating on the plane so the fivefold
+volume remains invariant. In curve degree two we compare the term linear
+in $1-\kappa$ at the lowest original grading $q^{-3}$. On $X$ it comes
+from two ribbons, one in each normal line. On $X'$ it comes from
+divisors on the curve. At the exchanged grading $t^2$ the two kinds of
+divisors give $4\theta$ and $8\theta$ in cohomology, where $\theta$ is
+the principal polarization of $\operatorname{Pic}^1(C)$. The ribbons
+give the same $12\theta$. The integral class giving this coefficient has rank zero on every
+individual target. Section~\ref{sec:variation} establishes the integral
+identity at $q^{-3}$ for every positive power of $t$ in this first
+variation.

@@ -1,0 +1,51 @@
+\documentclass[11pt,letterpaper]{article}
+\pdfoutput=1
+\usepackage{jheppub}
+\usepackage{mathtools,amssymb,amsthm}
+\newtheorem{theorem}{Theorem}[section]
+\hypersetup{pdftitle={The topological string on balanced local curves from two circle actions on a Calabi-Yau fivefold},
+ pdfauthor={Bernd Johannes Wuebben},
+ pdfsubject={Stable-pair indices of local Calabi-Yau fivefolds},
+ pdfkeywords={topological strings, M-theory, stable pairs, local curves}}
+\title{The topological string on balanced local curves\\
+from two circle actions on a Calabi--Yau fivefold}
+\author{Bernd Johannes Wuebben}
+\affiliation{New York, NY, USA}
+\emailAdd{wuebben@gmail.com}
+\date{November 25, 2026}
+\makeatletter
+\def\@fpheader{}
+\preprint{\small\shortstack[r]{\@date\\This version: November 25, 2026}}
+\makeatother
+% The JHEP title already breaks before the ruled contents page.
+\renewcommand{\afterTocRuleSpace}{\newpage}
+\abstract{In the membrane proposal of Nekrasov and Okounkov, the
+variable that counts the Euler characteristic of a stable pair on a
+threefold is a rotation fugacity of an ambient Calabi--Yau fivefold.
+We prove the predicted exchange of these roles for two circle actions
+over a smooth curve of positive genus. One fixes a local Calabi--Yau
+threefold with two normal lines of equal degree. The other fixes the
+product of the curve with a plane. With the orientations determined
+by the ordered normal lines, their stable-pair indices agree in every
+positive curve degree as integral classes on the common space of cycles,
+throughout the Picard variety of splittings. On the product threefold
+a deformation of the matrix equations makes the virtual contribution
+vanish above the minimum Euler characteristic. At the minimum, the
+rotation weights of plane Hilbert schemes reproduce the known local-curve
+partition function. For a doubled genus-two curve the connected index
+is supported where the two transverse points coincide. A first variation
+of the rotation weights detects the same nonzero multiple of the Picard
+theta class in both descriptions, although the corresponding coefficient
+vanishes on every individual target.}
+\keywords{Topological Strings, M-Theory, Differential and Algebraic Geometry}
+\begin{document}
+\maketitle
+\input{sections/introduction}
+\input{sections/original}
+\input{sections/rotated}
+\input{sections/collision}
+\input{sections/variation}
+\input{sections/discussion}
+\bibliographystyle{JHEP}
+\bibliography{references}
+\end{document}
