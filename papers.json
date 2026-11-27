@@ -189,6 +189,23 @@
       "archive_url": "https://doi.org/10.5281/zenodo.24570158",
       "website_url": "https://bwuebben.github.io/papers/refined-circle-exchange-local-curves/",
       "version": "1.0"
+    },
+    {
+      "slug": "quadratic-cubic-circle-exchange",
+      "title": "The quadratic and cubic coefficients of circle exchange for balanced local curves",
+      "author": "Bernd Johannes Wuebben",
+      "orcid": "0009-0002-4588-3284",
+      "date": "2026-11-27",
+      "status": "Preprint",
+      "pdf": "circle_exchange_coefficients/main.pdf",
+      "pages": 22,
+      "sha256": "13872836441290a346a4a2a1437108b5423cf00a4c9498b9b6659b81248b21bc",
+      "doi": "10.5281/zenodo.24579580",
+      "concept_doi": "10.5281/zenodo.24579580",
+      "version_doi": "10.5281/zenodo.24579581",
+      "archive_url": "https://doi.org/10.5281/zenodo.24579580",
+      "website_url": "https://bwuebben.github.io/papers/quadratic-cubic-circle-exchange/",
+      "version": "1.0"
     }
   ]
 }

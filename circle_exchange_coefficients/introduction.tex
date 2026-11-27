@@ -1,0 +1,51 @@
+\section{Introduction}\label{sec:intro}
+
+A choice of circle action on a Calabi--Yau fivefold can determine both a fixed threefold and the variable that counts the Euler characteristic of its stable pairs. Changing that circle can therefore exchange a counting variable with a character of the normal torus. Nekrasov and Okounkov formulated this principle in their proposed correspondence between membranes on fivefolds and sheaves on threefolds \cite[\S\S 1--2]{NO}. For a balanced local curve the two fixed threefolds have different deformation theories. One is a local Calabi--Yau threefold varying in a Picard family. The other is the product of the curve with an affine plane. We compare their family indices through degree three in the exchanged counting variable, with the volume character free.
+
+\subsection{The two threefolds and their gradings}
+Let $C$ be a smooth projective complex curve of genus $g\geq 1$, let $b=g-1$, and put $B=\Pic^b(C)$. Choose a point of $C$ and let $L$ denote the Poincar\'e line bundle on $C\times B$ trivialized over that point. We write $K$ for the pullback of $K_C$. Both summands of $L\oplus K L^{-1}$ have degree $b$ on $C$, which is the balance condition. On the total space of
+\[
+         tL\;\oplus\;(\kappa/t)K L^{-1}
+             \;\oplus\;q\OO\;\oplus\;(\kappa^{-1}/q)\OO
+\]
+the products of the two pairs of fiber characters are inverse to one another. The subgroups act on the four summands by $(1,1,z,z^{-1})$ and $(z,z^{-1},1,1)$, respectively. The first fixes the total space of the first pair of lines. The second fixes $C\times\mathbb A^2$ over $B$. In both cases the external directions enter the determinant of the stable-pair index. On the product threefold this is how the index retains the dependence on $L$.
+
+A stable pair consists of a pure one-dimensional sheaf $\mathcal F$ of proper support and a section with zero-dimensional cokernel. Its curve degree $m$ is the generic length over $C$. Denote the two oriented modified stable-pair indices pushed forward to $B$ by $\mathcal I_m^{\rm orig}$ and $\mathcal I_m^{\rm rot}$. We use the ordered external lines above and the determinant square root of \cite[Lemma~2.1]{W1} on the cover $\sigma^2=\kappa$. The first index counts $\mathcal F$ with $(-q)^{\chi(\mathcal F)}$. The second counts with $(-t)^k$, where $k=\chi(\mathcal F)+mb$. On a torus-fixed pair on the product threefold, $k$ is the sum of the degrees of the effective divisors that modify its monomial summands. Two units can belong to the same summand, or to different summands with incident support. The quadratic and cubic coefficients are the coefficients of $t^2$ and $t^3$.
+
+\begin{theorem}\label{thm:familyintro}
+Let $m\ge1$ and $D_m=bm(m+1)/2$. In the common expansion at $q=t=0$,
+\[
+ \sigma^{mb}\mathcal I_m^{\rm orig}\equiv
+ \sigma^{mb}\mathcal I_m^{\rm rot}\pmod {t^4}
+ \qquad\text{in }q^{-D_m}K^0(B)[\kappa^{\pm1}][[q,t]].
+\]
+The congruence means equality of the coefficients of $t^k$ for $0\leq k\leq 3$ at each Euler characteristic.
+\end{theorem}
+
+The coefficient ring is the algebraic $K$-group of the entire Picard variety. Passing to the rank on a fiber can lose the class under comparison. For example, in genus two and curve degree two the coefficient of $(1-\kappa)q^{-3}t^2$ of the unnormalized index, expanded about $\sigma=1$, is $-6\psi^2 R\pi_*L$, where $\pi:C\times B\to B$ and $\psi^2$ is the second Adams operation \cite[Theorem~1.1]{W1}. This class has rank zero and first Chern character $12\theta$ in rational cohomology, for $\theta$ the principal polarization. Theorem~\ref{thm:familyintro} retains the full volume character at this grading, at all higher Euler powers of the same curve degree, and in every positive curve degree.
+
+\subsection{A local identity for each partition}
+The two full-torus localization formulas are indexed by partitions $\lambda$ of $m$. Write $h_u$ and $\ell_u$ for the hook and leg lengths at a box $u$, and put $H_\lambda=\sum_{u\in\lambda}h_u$. The lowest Euler power for this partition is $-bH_\lambda$. On a formal disk the excess above that minimum has counting variable $x$ and the number of exchanged marks has variable $y$. Write $p$ for the cotangent character of the disk, $c=\kappa^{-1}$ and $s=p/c$. Let $A_{\lambda;c,s}(x,y)$ be the stable-pair vertex of equation~\eqref{eq:A}, including its hook product on each coordinate axis. Exchanging the external circles sends $(x,y,c,s)$ to $(y,x,s,c)$.
+
+\begin{theorem}\label{thm:diskintro}
+For every Young diagram $\lambda$ and every $n,k\ge0$ with $\min(n,k)\le3$,
+\[
+ [x^ny^k]A_{\lambda;c,s}(x,y)
+       =[x^ny^k]A_{\lambda;s,c}(y,x)
+       \qquad\text{in }\QQ(p,c).
+\]
+For fixed $k\le3$ the two coefficients of $y^k$, divided by the common coefficient of $y^0$, agree as rational functions of $p,c,x$.
+\end{theorem}
+
+Equality along the axes follows from the hook product of Dinkins and Smirnov \cite{DS}. The first exchanged coefficient was computed in \cite[Theorem~1.2 and \S6]{W1}. The same paper proved agreement to first order about volume one in both gradings. At volume one the earlier comparison holds on the common space of cycles \cite[Theorem~1.1]{W0}. Theorem~\ref{thm:familyintro} concerns the pushforwards to $B$. Its diagramwise form compares the localized contributions at $q^{-bH_\lambda+n}t^k$ when $\min(n,k)\le3$. Since the minima depend on $\lambda$, the integral degree sum is taken at a common absolute Euler power. The local identity retains the independent character $p$ throughout the disk calculation.
+
+\subsection{How the terms match}
+In the rotated vertex, extracting $y^k$ leaves a finite sum over weakly increasing arrays of nonnegative heights on $\lambda$ with total height $k$. For $k=2$ there are three possibilities. A corner can be raised twice, two corners can each be raised once, or the two raised boxes can form a removable domino. In the original vertex $x$ records the total height, which is unbounded even at $y^2$. Extracting $y^2$ there inserts a symmetric function of the diagonal heights into the Macdonald measure of the partition. Thus the two sides of Theorem~\ref{thm:diskintro} have summation indices of different sizes.
+
+The Macdonald operators write the insertion as a sum of products acting at successive diagonals of $\lambda$. Each diagonal lies between two steps on its southeast boundary. A positive current can be evaluated on the downward steps to its right and a negative current on the horizontal steps to its left. To do this simultaneously for several insertions one must change their order. In the quadratic term the change has two residues. After summing the locations of the insertions, their contributions are exactly the two orientations of a domino. The terms already in the desired order give two separate corners and a corner of height two. The second Adams operation supplies the coefficient for selecting a step twice.
+
+To sum the possible insertion positions at cubic order, we first group the currents by sign. The resulting sum is invariant under permuting the parameters attached to two adjacent diagonals. Moving the parameter of a selected downward step to the first position forces a corresponding horizontal step at the same corner. Repeating this argument identifies all the terms in the grouped sum. We prove the permutation identity for abstract boundary weights: after its denominators are cleared, the degrees in the two Macdonald parameters are at most 17 and 29. Exact interpolation on an $18\times 30$ grid, together with bounds in the other variables, proves the identity for independent characters. The calculation involves at most three labels of each sign, however many boxes the original diagram has.
+
+Changing the currents back to their original order requires a separate contour calculation. With three marks, a pair of currents can interact with the field remaining after the first residue. In addition to a shift by $p$, the remaining integral has a pole at a boundary weight divided by $c$. Its contribution appears both in the product of three ordinary insertions and in the term with a second Adams operation. Each contribution can be nonzero even on a diagram consisting of a single row of two boxes. The two cancel after summing the positions on the boundary. The surviving terms include three successive boxes, a domino and another mark, and stacks at removable corners. The proof requires both the cancellation and the enumeration of the possible contour residues.
+
+Section~\ref{sec:disk} sets the conventions for the two disk calculations. Sections~\ref{sec:quadratic} and~\ref{sec:cubic} compare their coefficients of orders two and three. Section~\ref{sec:family} descends the identity across divisors of coinciding marks to the Picard variety. At fourth order two second Adams insertions can cross. The comparison of their residues for arbitrary diagrams lies beyond the results proved here.

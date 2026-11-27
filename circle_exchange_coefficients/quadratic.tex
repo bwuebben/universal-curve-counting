@@ -1,0 +1,425 @@
+\section{The quadratic disk coefficient}\label{sec:quadratic}
+
+\begin{theorem}\label{thm:quadraticdisk}
+For every Young diagram the two disk vertices, divided by their common
+value at $y=0$, have the same coefficient of $y^2$ in $\QQ(p,c,x)$.
+\end{theorem}
+
+A reverse plane partition of size two has two distinct maximal boxes of
+height one, a maximal box of height two, or a removable domino of height one.
+We recover the first two terms by collecting the currents of each sign.
+Interchanging two currents of opposite signs gives the domino term.
+
+\subsection{Interchanging two currents}
+Write $R=R_s$, and use the residues of \eqref{eq:onebody}. Thus $A_i^\alpha$ is the signed inner residue of $P_i(z)$ at
+$sZ_\alpha$ and $B_i^\beta$ is the signed outer residue of $N_i(w)$ at
+$Z_\beta$. Thus $\alpha$ is a downward step at or after $i$ and $\beta$
+a horizontal step before $i$. A residue outside its indicated range is
+zero. Use the differences $\Delta A_i=A_i-A_{i+1}$,
+$\nabla B_i=B_i-sB_{i-1}$. Set
+\[
+\begin{aligned}
+ r_z(X)&=\frac{X-z}{X-sz},& S(u)&=\frac{R(u)}{R(cu)},\\
+ M(u,n)&=\frac{(u;p)_n}{(su;p)_n},&
+ Q_{m,n}(u)&=\frac{M(u,m+n)}{M(u,m)M(u,n)} .
+\end{aligned}
+\]
+Here $(u;p)_{-n}=1/(p^{-n}u;p)_n$ for $n>0$. We use the transport laws
+\begin{equation}\label{eq:qtrans}
+ A_{i+1}^\alpha=r_{Z_\alpha}(Z_i)A_i^\alpha,\qquad
+ B_{i-1}^\beta=r_{xZ_\beta}(Z_i)B_i^\beta .
+\end{equation}
+For the first, $P_{i+1}(z)/P_i(z)=(1-z/(sZ_i))/(1-z/Z_i)$ at either
+type of step. For the second, $N_i(w)/N_{i-1}(w)$ equals
+$R(w/Z_{i-1})$ at a preceding horizontal step and $R(cw/Z_{i-1})$
+at a preceding downward step. The increments of $Z_i$ are $x$ and $x/c$,
+respectively. Both relations hold at the physical endpoints by clearing
+denominators.
+
+Let $G_{11}$ be the following evaluation of $C_1^2$. Expand the slice
+differences of each factor. Evaluate the two negative fields on their
+horizontal prefixes in increasing slice order, and the two positive fields
+on their downward suffixes in decreasing slice order. On ties use center
+order and then label order in the chronological word, reversing that order
+for the suffix action. The finite Macdonald difference operators retain all
+prior shifts of their own alphabet. For each branch with horizontal
+multiplicities $m_\beta$ and downward multiplicities $n_\alpha$, insert
+\[
+                 \prod_{\beta,\alpha}
+                 Q_{-m_\beta,n_\alpha}(Z_\alpha/Z_\beta).
+\]
+This prescription includes all pairs of selected roots. Constants in a
+negative or positive field cancel in its own slice difference: their
+values are $s^i$ on the prefix and $1$ on the suffix, and the constant
+operator shifts no variable. Thus each nonzero branch selects two roots
+of each sign.
+
+For $k\le j$, let $E_{NP}$ evaluate the pair $N_j,P_k$ by the indicated
+prefix and suffix with its $Q$ factor, including constant choices.
+Let $E_{PN}$ instead apply $P_k$ on the prefix and $N_j$ on the suffix,
+with their positive and negative shifts. The latter evaluates the
+chronological pair. Put $\omega=(1-s)(1-p^{-1})/(1-s/p)$.
+\begin{lemma}\label{lem:quadraticinterchange}
+For independent boundary roots,
+\begin{equation}\label{eq:qmiddle}
+ E_{NP}-E_{PN}=
+ \omega(1-s)\sum_{k\le h<j}
+ \prod_{\substack{k\le r<j\\r\ne h}}R(Z_h/Z_r)\,(\Phi_{h,j}-1),
+\end{equation}
+where at a horizontal step $\Phi_{h,j}=\prod_{d\ge j,\,D}S(Z_h/Z_d)$,
+and at a downward step $\Phi_{h,j}=\prod_{b<j,\,H}S(Z_h/(cZ_b))$.
+Here and below $H,D$ restrict a step index to the indicated type.
+\end{lemma}
+\begin{proof}
+Put $f(u)=u/(1-u)$. Direct division gives
+$Q_{-1,1}(u)-1=\omega(f(u)-f(su/p))$.
+Place all downward roots sufficiently close to zero and all horizontal
+roots sufficiently far from zero for one annulus to separate their poles,
+also after multiplication by $s$ and $p$. Expand
+\[
+       \omega\CT_w\big[(P_k(sw)-P_k(pw))N_j(w)\big].
+\]
+The constant modes cancel. Pairing negative powers of $P_k$ from an inner
+downward pole with positive powers of $N_j$ from an outer horizontal
+pole gives the product of their signed residues times $Q_{-1,1}-1$.
+In the opposite pairing the inner pole of $N_j$ is at $Z_d/p$ and the
+outer pole of $P_k$ is at $Z_b$. The geometric sums give
+$\omega(f(sZ_d/(pZ_b))-f(Z_d/Z_b))$, with the opposite sign.
+The products of the separate means in the two evaluations agree. Thus
+the displayed constant term is their difference. Rational continuation
+allows arbitrary independent roots, even when a horizontal step in
+$[k,j)$ follows a downward step in that interval.
+
+At the cut $j$ the one-body products simplify to
+\[
+ P_j(sw)N_j(w)=\prod_{d\ge j,\,D}S(w/Z_d),\qquad
+ P_j(pw)N_j(w)=\prod_{b<j,\,H}S(w/Z_b).
+\]
+Changing $j$ to $k$ in $P_j(z)$ multiplies it by
+$\prod_{k\le r<j}(1-z/Z_r)/(1-z/(sZ_r))$.
+Enlarge the first contour. The value at infinity is $s^{j-k}$, and
+the outer residues occur at $Z_h$ for horizontal $h$ in the interval,
+with coefficient $(1-s)\prod_{r\ne h}R(Z_h/Z_r)\Phi_{h,j}$.
+Shrink the second contour. The value at zero is one and the inner
+residues at $Z_h/c$ for downward $h$ have coefficient
+$-(1-s)\prod_{r\ne h}R(Z_h/Z_r)\Phi_{h,j}$.
+Finally $\sum_h\prod_{r\ne h}R(Z_h/Z_r)=(1-s^{j-k})/(1-s)$,
+by partial fractions of $\prod_{k\le r<j}R(w/Z_r)$.
+\end{proof}
+
+For centers $i<t$ the outermost fields are the earlier negative and the
+later positive, up to commuting operators on a slice. If these choose
+$\beta,\alpha$, sum their two slice differences first. Their factor is
+\[
+   \gamma^2\nabla B_i^\beta\,\Delta A_t^\alpha\,
+                      Q_{-1,1}(Z_\alpha/Z_\beta).
+\]
+For the two middle fields replace $Z_\beta,Z_\alpha$ by
+$\widetilde Z_\beta=pZ_\beta,\widetilde Z_\alpha=pZ_\alpha$.
+Indeed the outer negative sends $1/Z_\beta$ to $p^{-1}/Z_\beta$;
+the outer positive sends $Z_\alpha$ to $pZ_\alpha$.
+Both selected roots are present at every middle cut on the appropriate
+side. Their joint vacuum factor is the ratio $Q_{-1,1}$ above.
+Successive normalized Cauchy factors multiply according to
+$M(u,n)M(p^nu,m)=M(u,n+m)$. Applying this identity to each
+horizontal--downward pair puts all remaining branch factors at the
+two shifted roots, for either assignment of the middle fields.
+In particular it also holds when another field selects the same root.
+When the middle slices have their negative first, the two evaluations
+agree. For the opposite order use Lemma~\ref{lem:quadraticinterchange}
+with these shifted roots. Equal centers admit an order with both negative
+fields first.
+
+\begin{lemma}\label{lem:quadraticdomino}
+Write $h=\beta+1$, $a=\beta+2$, and use the outer shifts at $\beta,a$
+in $\Phi_{h,a}$. Then
+\begin{multline}\label{eq:qdomino}
+ l_1\langle C_2\rangle+
+ \frac{l_1^2}{2}\big(\langle C_1^2\rangle-G_{11}\big)\\
+ =l_1\gamma\sum_{\beta\,H,\,a\,D}
+ B_{\beta+1}^\beta A_a^a\,Q_{-1,1}(Z_a/Z_\beta)\,\Phi_{h,a}.
+\end{multline}
+\end{lemma}
+\begin{proof}
+For each middle negative slice $j=t,t-1$ and positive slice $k=i,i+1$
+the correction is supported at $k\le h<j$. In particular $\beta<i\le
+h<t\le\alpha$. Write
+\[
+ U_k=\prod_{k\le r<h}R(Z_h/Z_r),\qquad
+ V_j=\prod_{h<r<j}R(Z_h/Z_r),\qquad U_{h+1}=V_h=0 .
+\]
+At fixed $h,\beta,\alpha$ the left position sum is
+$\sum_{i=\beta+1}^{h}(U_i-U_{i+1})\nabla B_i^\beta$.
+By \eqref{eq:qtrans} the two transport parameters are $a'=Z_h$,
+$b'=xZ_\beta$. If $a'\ne b'$ the identity
+\begin{equation}\label{eq:qprimitive}
+ (1-r_{a'})(1-sr_{b'})
+       =\frac{(s-1)a'}{a'-b'}(r_{a'}-r_{b'})
+\end{equation}
+writes the summand as a forward difference of
+$(s-1)a'U_i B_{i-1}^\beta/(a'-b')$, with both boundary values zero.
+In the remaining case comparison of the $x$-degrees forces $h=\beta+1$,
+and the sum is $B_h^\beta$.
+
+For the right position sum separate $V_j\Phi_{h,j}-V_j$.
+The subtracted part uses $B_h^\beta V_t=B_{t-1}^\beta$,
+by \eqref{eq:qtrans}, including the extended zero at $t=h$.
+Hence after taking the $t,t-1$ difference, multiplying by
+$\Delta A_t^\alpha Q_{-1,1}$ and summing, this bare part is
+$\langle C_2\rangle/\gamma$: the negative difference for $C_2$
+occurs one slice earlier than for $C_1$.
+For $W_t=V_t\Phi_{h,t}$ put $W_h=0$. Then
+$W_{t-1}=r_{Z_{h+1}}(Z_t)W_t$ up to $t=\alpha$.
+In fact, writing $z=Z_h/Z_{t-1}$, the forward quotient $W_t/W_{t-1}$
+away from birth is $R(z)$ or $R(cz)$ for $h$ horizontal,
+according as $t-1$ is horizontal or downward. For $h$ downward it is
+$R(z/c)$ or $R(z)$, respectively. These are the asserted relations
+since $Z_t/Z_{t-1}$ is $x$ or $x/c$; the cleared relation at birth has
+zero numerator. All crossed steps lie strictly between the shifted
+exterior roots. Applying \eqref{eq:qprimitive} a second time leaves only
+$\alpha=h+1$ with value $A_\alpha^\alpha\Phi_{h,\alpha}$.
+The chronological evaluation uses the negative of \eqref{eq:qmiddle}.
+The two orders of distinct centers cancel the factorial $2$, and
+$l_1\gamma\omega(1-s)=-1$. This gives \eqref{eq:qdomino}.
+\end{proof}
+
+\subsection{The two currents of each sign}
+It remains to evaluate $(l_1^2G_{11}+l_2\langle\psi^2C_1\rangle)/2$.
+Temporarily give the two selected downward steps distinct labels
+$A=\{a,d\}$, their values $Z_\alpha$, and the two horizontal steps
+distinct labels $B=\{b,e\}$, their values $xZ_\beta$. Remove the
+opposite-sign $Q$ factors, which depend only on these four selections.
+Remove also $(l_1\gamma)^2$ and the one-body weights taken at the left
+cut for positives and the right cut for negatives. By
+\eqref{eq:qtrans} the remaining one-body factors are products of the
+$r_z(X)$ over the intervening slice weights $X$. For a set $J$ write
+$r_J(X)=\prod_{z\in J}r_z(X)$.
+
+Use $(q_+,V_+,m_+)=(p,s,1)$ and $(q_-,V_-,m_-)=(p^{-1},s^{-1},s)$.
+For either sign define
+\[
+ K_\pm(t)=\frac{(1-t)(1-q_\pm t/V_\pm)}
+                    {(1-q_\pm t)(1-t/V_\pm)},\qquad
+ E_\pm(u,v)=\frac{V_\pm(u-v)(v-u)}
+                  {(V_\pm u-v)(V_\pm v-u)} .
+\]
+Two distinct selections $u,v$ in chronological order supply
+$K_\pm(v/u)$. Indeed dividing the second shifted singleton coefficient by
+its unshifted value cancels all factors except that of the first
+selected root; reverse the action for a suffix. The coefficient of the
+elementary operator $e_2$ divided by the two singletons is $E_\pm$,
+by multiplying their two mutual spectator factors and the elementary
+prefactor $V_\pm$. Thus the coefficient for $p_2=e_1^2-2e_2$ is
+$K_\pm(v/u)+K_\pm(u/v)-2E_\pm(u,v)$. The conversion of a second
+power sum to two signed singleton factors contributes
+$(V_\pm+1)/(V_\pm-1)$. The product of the two conversion factors times
+$-s^2/(s^2-1)^2$ is precisely $\gamma^2$.
+
+Here are the complete densities for one center of slice weight $X$.
+For one pair put $d_X(a,b)=(1-r_a(X))(1-sr_b(X))$.
+For $u,v$ of one sign write $k=K_\pm(v/u)$, $h=K_\pm(u/v)$,
+$r_u=r_u(X)$, $r_v=r_v(X)$, $m=m_\pm$, and set
+\begin{align*}
+ T_\pm(u,v;X)
+ &= (k+h)(1+m^2r_ur_v)-2m
+ \begin{cases}r_u h+r_v k&(+),\\r_u k+r_v h&(-),\end{cases}\\
+ H_\pm(u,v;X)&=(k+h-2E_\pm(u,v))(1-m^2r_ur_v).
+\end{align*}
+Indeed both fields at the native slice or both at the displaced slice
+retain label order. With just one displaced field, that field is later
+for the positive sign and earlier for the negative sign; there are two
+labelings. The Adams field makes its slice choice only once.
+For two complete pairs at $X$ the density is therefore
+\[
+ D_X(A,B)=\tfrac12 T_+(A;X)T_-(B;X)
+             +\frac{l_2}{2l_1^2}H_+(A;X)H_-(B;X).
+\]
+
+\begin{lemma}\label{lem:twoslicetwo}
+Through degree two the sum over assignments to centers is invariant
+under permutations of the slice weights, after removing the exterior
+one-body and opposite-sign factors.
+\end{lemma}
+\begin{proof}
+Consider two consecutive weights $X,Y$. When both pairs are assigned
+to these centers, their sum is
+\begin{align}
+ N(X,Y)={}&r_A(X)D_Y(A,B)+r_B(Y)D_X(A,B)\notag\\
+ &+\sum_{\substack{u\in A\\v\in B}}
+ K_+(u'/u)K_-(v'/v) r_v(Y)r_{u'}(X)
+                   d_X(u,v)d_Y(u',v'),                      \label{eq:qtwoslice}
+\end{align}
+where primes denote complementary labels. The first term has both pairs
+at $Y$, the second both at $X$, and the sum one at each. The factors
+joining assignments before or after these two centers depend only on
+their union. When one pair occupies the two-center window, its entry is
+$r_b(Y)d_X(a,b)+r_a(X)d_Y(a,b)$, symmetric by \eqref{eq:qprimitive}
+and continuation.
+
+For two pairs we give the finite calculation of
+$N(X,Y)-N(Y,X)$. Clear $\prod_{z\in A\cup B}(X-sz)(Y-sz)$.
+The resulting polynomial has degree at most four in each slice
+variable: each root occurs at most once per variable in any summand
+of \eqref{eq:qtwoslice}. By simultaneous scaling take $A=(1,d)$,
+$B=(b,e)$. In the field $\QQ(p,s,d,b,e)$ put
+\[
+       \frac{l_2}{l_1^2}=\frac{(s+p)(1-p)}{(s-p)(1+p)} .
+\]
+For $X=-i$, $Y=-j$, the numerators of the difference reduce to the
+following entries, in increasing order of $j$,
+\[
+\begin{array}{c|cccc}
+ i\ \backslash\ j&2&3&4&5\\ \hline
+ 1&0&0&0&0\\
+ 2&&0&0&0\\
+ 3&&&0&0\\
+ 4&&&&0
+\end{array}
+\]
+One can reproduce the table by initializing the two terms on the first
+line of \eqref{eq:qtwoslice}, adding its four terms for
+$(u,v)=(1,b),(1,e),(d,b),(d,e)$, and subtracting the evaluation
+with $i,j$ interchanged. All the denominators at these nodes are
+nonzero rational functions. Antisymmetry gives the lower triangle
+and the diagonal. Interpolation on five nodes in each variable proves
+the identity; thus transposing any two adjacent slice weights preserves
+the sum.
+\end{proof}
+
+We explain the specialization to repeated selections before permuting
+the physical slice weights. If a downward step occurs twice, use the
+two positive labels $pZ_\alpha,Z_\alpha$ in that chronological order.
+For a repeated horizontal step use $xZ_\beta,pxZ_\beta$, in that
+order. In the distinct-label identity divide by the ordered kernel for
+the pair and specialize to this string. The kernel has a simple pole,
+whereas its reverse and the elementary coefficient $E_\pm$ are
+regular. A surviving pair must thus have the indicated order, with
+weight one in place of its internal kernel. The divided coefficient
+for $p_2$ is also one: a repeated shift occurs once in $e_1^2$ and
+never in $e_2$. If both signs repeat, the two normalizing factors
+involve independent variables. Consequently the specialization
+reproduces the actual Macdonald action. At the second use of one
+variable its one-body coefficient is taken at the shifted root,
+omitting its own spectator in both coefficients. These weights propagate
+as in \eqref{eq:qtrans} at the respective labels on the active cuts.
+The common product of opposite-sign factors is legitimate also for
+strings, since
+\[
+     Q_{-m,n}(w)=\prod_{i=0}^{m-1}\prod_{j=0}^{n-1}
+                       Q_{-1,1}(p^{j-i}w).
+\]
+
+Take a window containing all the physical births $X=xZ_\beta=Z_{\beta+1}$
+and deaths $X=Z_\alpha$. An assignment to center $i$ has exterior
+transport $\prod_{k<i}r_a(X_k)$ for each positive and
+$\prod_{k>i}r_b(X_k)$ for each negative, restricted to this window;
+$D_{X_i}$ and $d_{X_i}$ include transport at the center itself.
+For a repeated step the shifted copy may be continued beyond the
+physical endpoint by its transport law. Every positive string uses
+its unshifted copy last and every negative string uses that copy first
+in actual slice order. An unshifted copy beyond its allowed range
+therefore forces the zero $r_z(z)$, and the continuation introduces
+no extra assignment. No physical transport denominator vanishes,
+since $Z_i$ has $p$-degree zero and $sz$ has positive $p$-degree.
+The specialized symmetry in Lemma~\ref{lem:twoslicetwo} also permits
+coincident labels of opposite signs: its only label denominators
+apart from transports involve labels of the same sign.
+
+Suppose a selected downward step at $\alpha$ occurs more often than
+the horizontal step at $\alpha-1$, counted with multiplicity zero if
+absent. Move $X=Z_\alpha$ to the first center. Its unshifted positive
+cannot occur later and thus all its copies must be assigned here.
+A negative from any other step cannot be used here, since its
+unshifted birth now occurs later. This center has insufficient negative
+multiplicity. It follows that all nonzero assignments have matching
+multiplicities at adjacent horizontal--downward pairs. Indeed an
+excess at some downward step exists whenever the multiplicities fail
+to match, since both totals are two. In the original slice order,
+the first such turn must use all its positive copies there and receives
+only its own negatives. The same argument at the next turn pins every
+selected field to its corner.
+
+\subsection{Identification of the height weights}
+For a consecutive portion of the boundary starting with a horizontal
+step $\beta$ and ending with a downward step $a$, let $w_i$ be the
+box weights of the marked layers (including $p^{-1}$ for a second
+layer) and set $z_i=c/w_i$. Relative to the weight on this portion
+alone, the height polarization supplies the factor
+\begin{equation}\label{eq:qexternal}
+ \prod_i\left(
+  \prod_{t<\beta,\,H}\frac{R(z_i/(xZ_t))}{R(z_i/Z_t)}
+  \prod_{t>a,\,D}\frac{R(z_i/Z_t)}{R(cz_i/(xZ_t))}
+ \right).
+\end{equation}
+To see this, the boundary term in the height polarization gives
+$R(z_i/Z_t)$ at each horizontal--downward turn and its inverse at
+each downward--horizontal turn, including the two terminal valleys.
+Telescope along the horizontal runs to the left of the portion, and
+along the downward runs to its right. The two-layer interaction
+depends only on the ratio of the marked weights, so cancels in taking
+this relative factor.
+
+At the turn $\beta,a=\beta+1$ selected twice, let $A,B$ be the two
+one-body residues there, and $\widetilde A,\widetilde B$ the values for
+the second use of the same variable. Both the ordinary square and
+the second power sum contribute
+$\gamma^2 AB\widetilde A\widetilde B Q_{-2,2}(x)$ before their
+respective symmetric-algebra scalars. Their exterior factors are
+\eqref{eq:qexternal} for $z_1=Z_a$, $z_2=pZ_a$. On the one-box
+diagram their common product reduces to
+\[
+ \frac{s^2Q_{-2,2}(x)}{R(x)R(px)R(c/x)R(pc/x)}=1,
+\]
+by $R(z)R(1/(sz))=s$ and the definition of $M$. The coefficient on
+this portion is $(l_1^2+l_2)/2=(1-c)(1-pc)/((1-p)(1-p^2))$,
+the weight of a height-two box.
+
+For distinct turns write $t=Z_{\alpha_2}/Z_{\alpha_1}$ with the
+earlier turn first. The product of their separate one-mark weights
+must be multiplied by
+\[
+ K_+(t)K_-(t)Q_{-1,1}(xt)Q_{-1,1}(x/t)
+     =R\big((p^{-1}-1)(1-x)(t+t^{-1})\big).
+\]
+Here $R$ is extended multiplicatively over a virtual character.
+The identity follows by inserting the four fractions and reflecting
+the factors in $t^{-1}$ with $R(z)R(1/(sz))=s$. The right side is
+precisely the cross term of the height polarization. The two orders of
+the marked pairs cancel the factorial in the ordinary square.
+The second Adams operation cannot put a single insertion at two
+different turns.
+
+Finally the right side of \eqref{eq:qdomino} is supported on the words
+$HHD$ and $HDD$. In both cases the two layer parameters in
+\eqref{eq:qexternal} are $z_1=Z_{\beta+1}$, $z_2=Z_a$.
+For every exterior horizontal $t$ the two residues
+$B_{\beta+1}^\beta,A_a^a$ supply $R(Z_\beta/Z_t)/R(Z_a/Z_t)$.
+For every exterior downward $t$ they supply $R(Z_a/Z_t)/R(cZ_\beta/Z_t)$.
+The additional factor $\Phi_{\beta+1,a}$ multiplies the latter by
+$S(Z_{\beta+1}/Z_t)$ on $HHD$, and the former by
+$S(Z_{\beta+1}/(cZ_t))$ on $HDD$. Inserting the step increments gives
+exactly \eqref{eq:qexternal}. The scalar on each isolated portion can
+be seen directly in the following table. In the middle column $z=x$
+for the horizontal domino and $z=c/x$ for the vertical one.
+\[
+\begin{array}{c|c|c}
+ \text{portion}&l_1\gamma B_{\beta+1}^\beta A_a^a
+       Q_{-1,1}(Z_a/Z_\beta)\Phi_{\beta+1,a}
+       &\text{height weight}\\ \hline
+ HHD&l_1(1-cz)/(1-pz)&l_1(1-cx)/(1-px)\\
+ HDD&l_1(1-cz)/(1-pz)&l_1(1-c^2/x)/(1-pc/x)
+\end{array}
+\]
+For example, set $Z_\beta=1$, $Z_{\beta+1}=x$ and
+$Z_a=x^2$ or $x^2/c$, respectively. The horizontal residue at any cut
+has own factor $1-s$, factors $R(Z_\beta/Z_t)$ for the other
+horizontal steps before that cut and $1/R(cZ_\beta/Z_t)$ for its
+downward steps. The downward residue has own factor $s-1$, factors
+$1/R(Z_a/Z_t)$ on the horizontal prefix and $R(Z_a/Z_t)$ on the other
+downward steps of the suffix. These products give the middle column.
+For the last column the two-box row has removable box weight $x^{-1}$,
+addable weights $x^{-2},x/c$, and layer sum $1+x^{-1}$; the column
+has the same products with $x$ and $c/x$ interchanged, evaluated with
+the corresponding two box weights in the given polarization.
+Together these calculations account for every size-two reverse plane
+partition and prove Theorem~\ref{thm:quadraticdisk}.

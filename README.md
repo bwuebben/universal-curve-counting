@@ -61,6 +61,8 @@ The [shared supplement](supplementary_calculations/README.md) contains the calcu
 
 **The first variation and the one-mark coefficient of circle exchange for balanced local curves**. For a balanced local curve of positive genus, the first variation of the two stable-pair indices agrees in integral Picard-family K-theory in every degree and both gradings. At unrestricted volume, their entire coefficient of exchanged grading one agrees for each Young diagram and is a sum over removable boxes. [PDF](circle_exchange_variation/main.pdf) · [Source and exact checks](circle_exchange_variation/README.md) · [Abstract and citation](https://bwuebben.github.io/papers/refined-circle-exchange-local-curves/) · [Zenodo](https://doi.org/10.5281/zenodo.24570158).
 
+**The quadratic and cubic coefficients of circle exchange for balanced local curves**. The two modified stable-pair indices agree through exchanged degree three, over the Picard variety, for every positive genus and curve degree at arbitrary volume character. The disk comparison is proved separately for each Young diagram. [PDF](circle_exchange_coefficients/main.pdf) · [Source and exact calculations](circle_exchange_coefficients/README.md) · [Paper page](https://bwuebben.github.io/papers/quadratic-cubic-circle-exchange/) · [Zenodo](https://doi.org/10.5281/zenodo.24579580).
+
 ## Reproduce the calculations
 
 The computations use Python 3, SymPy 1.14.0 and SageMath (verified with 10.9).

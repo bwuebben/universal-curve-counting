@@ -1,0 +1,108 @@
+\section{The disk vertex and the diagonal operators}\label{sec:disk}
+
+A box of $\lambda$ has coordinates $(i,j)$, starting with $(0,0)$ at the northwest corner, with $i$ increasing to the right and $j$ downwards. The content is $i-j$. A reverse plane partition $d$ is a nonnegative height $d_{ij}$ at each box, weakly increasing to the right and down. Its size is $|d|=\sum d_{ij}$. For a character $U$, the dual $U^*$ inverts each weight. On a finite virtual sum $U=\sum m_w w$ put
+\[
+ R_a(U)=\prod_w\left(\frac{1-aw}{1-w}\right)^{m_w},
+ \qquad F_a(z)=\sum_{j\ge0}\frac{(a;p)_j}{(p;p)_j}z^j,
+ \qquad (a;p)_j=\prod_{v=0}^{j-1}(1-ap^v).
+\]
+We use the same notation $R_a(z)$ for a single weight.
+
+\subsection{The two expansions}
+Set $E_d=\sum_{(i,j)\in\lambda} y^{j-i}s^{-j}p^{-d_{ij}}$ and
+\[
+       H_y(E)=\frac{E-(1-y)EE^*}{1-p}.
+\]
+The change $H_y(E_d)-H_y(E_0)$ has finite Laurent support. The common convention for the disk vertex is
+\begin{equation}\label{eq:A}
+ A_{\lambda;c,s}(x,y)=
+ \prod_{u\in\lambda}F_c(y^{h_u}s^{-\ell_u})
+ \sum_d x^{|d|}c^{-|d|}
+ R_c\big(H_y(E_d)-H_y(E_0)\big).
+\end{equation}
+At fixed height, collect equal Laurent monomials before evaluating $R_c$. Reflect negative powers of $y$ before Taylor expansion at the origin. A weight-$w$ summand of a monomial pair on the disk is a copy of the divisor line with fiber $wp^{-d}$ at the origin. The two coordinate multiplication arrows give the height inequalities, including both arrows into a box with two predecessors. The formula uses the fixed virtual structure sheaf and the relative determinant at these divisors \cite[Theorem~6.1]{Mon}, \cite[\S5]{W1}. The factor $c^{-|d|}$ includes the ordered external determinant.
+
+Write $Z=A_{\lambda;c,s}(x,0)=A_{\lambda;s,c}(0,x)$ for the axis series of \eqref{eq:family-axis} and set
+\[
+ T_k=Z^{-1}[y^k]A_{\lambda;c,s}(x,y),\qquad
+ U_k=Z^{-1}[y^k]A_{\lambda;s,c}(y,x).
+\]
+The sums for $T_k$ extend over all original heights. On the other side put $v=c/x$, $w_{ij}=x^{-i}v^{-j}$, and $E=\sum_{\lambda}w_{ij}$. For the exchanged heights $e$, define
+\[
+ Q_e=\sum_{(i,j)\in\lambda}w_{ij}
+            \sum_{0\le a<e_{ij}}p^{-a},\quad
+ B_\lambda=\sum_{\rm removable}w_{ij}-c\sum_{\rm addable}w_{ij},
+ \quad D=(p^{-1}-1)(1-x).
+\]
+A removable box is one whose deletion leaves a partition, and an addable box is one whose addition does so. Then
+\begin{equation}\label{eq:W}
+ U_k=\sum_{|e|=k}W(e),\qquad
+ W(e)=R_s\big(B_\lambda Q_e^*+D Q_eQ_e^*\big).
+\end{equation}
+To obtain this form, substitute $E+(p^{-1}-1)Q_e$ into $H_x$ and subtract $H_x(E)$. The difference is
+\[
+ p^{-1}Q_e+(1-x)(EQ_e^*-p^{-1}Q_eE^*)+D Q_eQ_e^* .
+\]
+Reflect the first and third linear terms using $R_s(z)R_s(1/(sz))=s$, and use $(1-x)(1-v)E-c=B_\lambda$, obtained by summing the rows of the diagram. The constant from reflection cancels $s^{-|e|}$. At a monomial of weight $1$ or $1/s$ the reflected product means its value in the original finite polarization in \eqref{eq:A}, with determinants and equal factors combined before taking the value. This convention also applies to the products of adjacent box weights below.
+
+\subsection{The boundary measure}
+Put $J_i=\max(0,-i)$, let $v_i$ be the number of boxes of content $i$, and set $L_i=J_i+v_i$. The vertices $(i+L_i,L_i)$ form the southeast boundary from $(0,\operatorname{height}\lambda)$ to $(\operatorname{width}\lambda,0)$. Write $Z_i=x^ic^{L_i}$. Along a horizontal step (H) the ratio $Z_{i+1}/Z_i$ equals $x$, and along a downward step (D) it equals $x/c$. A slice at $i$ is the content diagonal immediately before step $i$. Its alphabet of weights for the height $d$ is
+\[
+ X_i=\sum_{(i+j,j)\in\lambda}s^j p^{d_{i+j,j}},
+ \qquad V=\sum_i y^i X_i .
+\]
+Write $\langle\,\cdot\,\rangle$ for the expectation in the height measure of \eqref{eq:A} at $y=0$, divided by $Z$. The termwise interlacing expansion identifies this measure with the Macdonald process of parameters $(p,s)$. For a horizontal step use the specialization $1/Z_\beta$ and for a downward step $Z_\alpha$. A horizontal step followed by a downward step contributes $F_s(Z_\alpha/Z_\beta)$ to the vacuum matrix element. Multiplication over such pairs gives $Z$ by the hook-product formula \cite[\S3, Propositions~6--7]{DS}, \cite[Lemma~5.1]{W1}.
+
+Put $C_h=[y^h]\{sV+V^*-(1-y)(1-s/y)VV^*\}$ for $h\ge1$ and $l_j=(1-c^j)/(1-p^j)$, with $l=l_1$. Extracting the positive axial weights in \eqref{eq:A} gives
+\begin{equation}\label{eq:desc}
+ \sum_{k\ge0}y^k T_k
+ =\left\langle\exp\left(\sum_{h,j\ge1}
+             \frac{l_j}{j}\,y^{hj}\psi^j C_h\right)\right\rangle .
+\end{equation}
+Here $\psi^j$ raises every character in $C_h$ to the $j$th power before taking expectations. Indeed the positive part of the finite-height ratio is the symmetric algebra on $(1-c)/(1-p)$ times the change in the positive weights of the displayed character from the empty heights. At empty heights those weights are $\sum_u y^{h_u}s^{-\ell_u}$, supplied by the prefactor of \eqref{eq:A}. The remaining degree-zero factors give the interlacing measure \cite[\S5.2--5.3]{W1}. The exponential in \eqref{eq:desc} takes place over the disk character field.
+
+\subsection{Ordering the insertions}
+Write
+\[
+ P_i=(s-1)X_i+s^{J_i},\quad N_i=(s^{-1}-1)X_i^*+s^{-J_i},
+ \quad \gamma=-\frac{s}{(s-1)^2}.
+\]
+These are the eigenvalues of the scaled first Macdonald operators of the slice and of its dual. The differences give
+\begin{equation}\label{eq:Ch}
+ C_h=\gamma\sum_i (N_{i+1-h}-sN_{i-h})(P_i-P_{i+1}).
+\end{equation}
+For $E_j'=\sum_iX_{i+j}X_i^*$ the quadratic part is
+$E_{h-1}'-(1+s)E_h'+sE_{h+1}'$. The mixed terms with $s^{\pm J_i}$ telescope to $sX_h+X_{-h}^*$, and the two constant differences have disjoint supports. This proves \eqref{eq:Ch} even at the first and last occupied diagonals. We call the summation index $i$ in $C_1$ its center. A cut is the position immediately before an actual boundary step. A term centered at $i$ chooses its positive field at cut $i$ or $i+1$ and its negative field at cut $i$ or $i-1$. Thus several labeled insertions can share a cut even when their centers differ.
+
+For use in products, insert the currents in increasing slice order. At a common slice the zero modes are diagonal in the same Macdonald basis, so we may put negatives before positives there. With $b_n$ the power-sum coordinate, the field with positive zero mode has creation and annihilation factors
+\[
+ \exp\!\sum_{n>0}(1-s^{-n})b_n z^n/n,\qquad
+ \exp\!\sum_{n>0}(p^n-1)z^{-n}\partial_{b_n}.
+\]
+For the negative field invert $p$ and $s$. The two fields are scaled by $s^{L_i}$ and $s^{-L_i}$, respectively, to give the eigenvalues above \cite[Propositions~2.6--2.7]{Ko}. Moving an annihilation factor past a creation factor gives the kernel
+\begin{equation}\label{eq:K}
+ K_{a,b}(h)=\frac{(1-h)(1-ah/b)}{(1-ah)(1-h/b)},\qquad
+ h=\frac{\text{later spectral variable}}{\text{earlier spectral variable}} .
+\end{equation}
+Here $a=p$ or $p^{-1}$ as the earlier field is positive or negative, and $b=s$ or $s^{-1}$ as the later field is positive or negative. The expansion is in nonnegative powers of $h$. Commutation with the boundary steps leaves the following one-variable factors:
+\begin{equation}\label{eq:onebody}
+\begin{aligned}
+ P_i(z)&=\prod_{\beta<i,\mathrm H}\frac{1-z/(s Z_\beta)}{1-z/Z_\beta}
+          \prod_{\alpha\ge i,\mathrm D}\frac{1-z/Z_\alpha}{1-z/(sZ_\alpha)},\\
+ N_i(w)&=s^i\prod_{\beta<i,\mathrm H}\frac{1-Z_\beta/(sw)}{1-Z_\beta/w}
+          \prod_{\alpha\ge i,\mathrm D}\frac{1-Z_\alpha/(cw)}{1-Z_\alpha/(pw)} .
+\end{aligned}
+\end{equation}
+Their boundary contributions on shrinking $z$ and expanding $w$ are
+\[
+ A_i^\alpha=\Res_{z=sZ_\alpha}P_i(z)\,dz/z,\qquad
+ B_i^\beta=-\Res_{w=Z_\beta}N_i(w)\,dw/w .
+\]
+An unavailable step has coefficient zero. The constants at the two ends, $1$ and $s^i$, cancel in the forward and backward differences in \eqref{eq:Ch}. One can first take the downward roots small, the horizontal roots large, and nested spectral radii between them. Calculations made in separate compatible annuli are continued as rational identities before specializing $Z_i=x^ic^{L_i}$.
+
+Higher Adams insertions act by the Newton polynomials in the elementary Macdonald operators. For clarity, in an alphabet $a_1,\dots,a_m$ their order-$h$ elementary operator with parameters $(u,v')$ is
+\[
+ (v')^{\binom h2}
+ \sum_{|I|=h}\prod_{i\in I,j\notin I}\frac{v'a_i-a_j}{a_i-a_j}\,T_{u,I},
+\]
+where $T_{u,I}$ multiplies the selected variables by $u$. Its eigenvalue on a partition $\mu$ is $e_h((u^{\mu_j}(v')^{m-j})_{1\le j\le m})$ \cite[\S2.2]{BC}. The preceding horizontal alphabet may be used from the left and the following downward alphabet from the right. Inverting both parameters preserves the monic Macdonald basis by homogeneity of its scalar product. Passing to normalized moments conjugates a shift by the corresponding vacuum factors $F_s$; their shifted ratios are finite products. In particular an earlier shift acts on the coefficients of every later operator. Equivalently, the ordered constant term contains one copy of \eqref{eq:K} for each ordered pair of fields. Sections~\ref{sec:quadratic} and~\ref{sec:cubic} use these two descriptions to compare the complete expectations with \eqref{eq:W}.

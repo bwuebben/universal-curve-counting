@@ -1,0 +1,626 @@
+\section{The cubic coefficient}\label{sec:cubic}
+
+\begin{theorem}\label{thm:cubicdisk}
+For every Young diagram the two vacuum-normalized disk coefficients of
+exchanged degree three satisfy $T_3=U_3$ in $\mathbb Q(p,c,x)$.
+\end{theorem}
+
+Write $M$ for the chronological moment, and $G$ for the moment obtained by
+putting the negatives before the positives, preserving the order within
+each sign. The argument begins by removing the scalar part of a change of order. We then prove the adjacent-slice permutation identity and compute the residues produced on restoring the original order.
+
+\subsection{Removing the longer gaps}
+Put $\mathcal C_h=l_1 C_h$ and $a_0=(1-s)^2(1-1/p)/(1-s/p)$, so
+$l_1\gamma a_0=-1$. The scalar term in the difference of orders of a
+positive at $k$ and a later negative at $j$ is
+\[
+ b(k,j)=a_0(1-s^{j-k})/(1-s)\quad (k<j),\qquad b(k,j)=0\quad(k\ge j).
+\]
+In a word of ordinary fields subtract this scalar at every inverted
+pair by inclusion and exclusion. More precisely, set
+\[
+ M^\circ(w)=\sum_D(-1)^{|D|}\prod_{(k,j)\in D}b(k,j)\,M(w\setminus D),
+\]
+where $D$ ranges over matchings and $w\setminus D$ deletes both ends
+of every matched pair. A single deletion in a signed sum joins
+two intervals, since
+\[
+ b(i,j)-s b(i,j-1)-b(i+1,j)+s b(i+1,j-1)=a_0{\bf1}_{j=i+1}.
+\]
+The two untouched ends give the current of the joined interval. The
+relative scalar is $l_1\gamma a_0=-1$. Consequently the six directed
+single edges on three labeled insertions contribute $M(\mathcal C_1\mathcal C_2)$ to
+$M^\circ(\mathcal C_1^3)/6$. The six directed paths of length two contribute
+$M(\mathcal C_3)$. This proves that the whole third coefficient is
+\begin{equation}\label{eq:cubic-moment}
+ \tfrac16 M^\circ(\mathcal C_1^3)+\tfrac12 l_2 M(\mathcal C_1\psi^2 C_1)
+                         +\tfrac13 l_3 M(\psi^3 C_1).
+\end{equation}
+Here $\psi^j$ is the $j$th Adams operation on the diagonal eigenvalues.
+No subtraction is made in the second summand. The two fields of the
+last summand are already in grouped order.
+
+\subsection{Permuting the slice parameters}
+We give explicitly the identity used to sum the slices. The two
+alphabets $A,B$ below label positive and negative residues respectively.
+The label of a positive variable of value $v$ is $v/s$, and that of
+a negative variable of value $w$ is $xw$. Passing a slice parameter $X$
+in the forward positive or backward negative direction multiplies
+the corresponding one-body weight by
+$r_z(X)=(X-z)/(X-sz)$. Initially take distinct indeterminates in each
+alphabet. Put $r_J(X)=\prod_{z\in J}r_z(X)$.
+
+For one sign let $(q,V)=(p,s)$ or $(1/p,1/s)$ as appropriate and write
+\[
+ K(t)=\frac{(1-t)(1-qt/V)}{(1-qt)(1-t/V)},\qquad
+ E(J)=\prod_{\{z,w\}\subset J}
+       \frac{-V(z-w)^2}{(Vz-w)(Vw-z)} .
+\]
+We also write $K_{q,V}$ to display the parameters, and
+$K(I,J)=\prod_{z\in I,w\in J}K(w/z)$. Let $S(J)$ be the sum, over
+the orders on $J$, of the products of the corresponding ordered pair
+factors. For a power sum put
+\[
+ P(J)=
+ \begin{cases}
+ 1,&|J|=1,\\
+ S(J)-2E(J),&|J|=2,\\
+ S(J)-3\sum_{u\in J}K(\{u\},J\setminus\{u\})E(J\setminus\{u\})+3E(J),
+   &|J|=3 .
+ \end{cases}
+\]
+These are Newton's formulas. The Cauchy determinant of an elementary
+operator, divided by the singleton factors, is precisely $E(J)$
+\cite[Props.~2.6--2.7]{Ko}.
+
+For a partition $\nu=(j_1,\ldots,j_m)$ of $r$ in a fixed order, define
+$T^\pm_\nu(A;X)$ as follows, using the appropriate sign throughout.
+Sum over ordered decompositions $A=J_1\sqcup\cdots\sqcup J_m$ with
+$|J_i|=j_i$, and over the two cuts for each group. Start with
+$\prod_iP(J_i)$. The displaced cut of a positive group contributes
+$-r_{J_i}(X)$, that of a negative group $-s^{j_i}r_{J_i}(X)$.
+Multiply the pair factors $K(J_i,J_j)$ in cut order. Thus at one
+center the positive at the center precedes a displaced positive, and
+a displaced negative precedes the negative at the center. Use list
+order at ties. For $|A|=|B|=r$ put
+\begin{equation}\label{eq:cubic-density}
+ D_X(A,B)=\sum_{\nu\vdash r} w_\nu T^+_\nu(A;X)T^-_\nu(B;X),
+ \qquad w_\nu=\prod_{j\ge1}\frac{1}{m_j!}
+              \left(\frac{l_j}{j l_1^j}\right)^{m_j},
+\end{equation}
+where $m_j$ is the multiplicity of $j$; the empty entry is one.
+This is the contribution of a single slice after removal of its
+one-body factors, the common opposite-sign contractions and
+$(l_1\gamma)^r$. Indeed the scaled power sum has relative coefficient
+$(V^j-1)/(V-1)^j$. The product for the two signs, times
+$-s^j/(s^j-1)^2$, is $\gamma^j$.
+
+For functions of paired, equally large alphabets let $*$ denote the
+product obtained by summing over ordered decompositions
+$(A,B)=(A_1,B_1)\sqcup(A_2,B_2)$ with $|A_i|=|B_i|$, inserting
+$K_+(A_1,A_2)K_-(B_1,B_2)$ between the factors. The signs specify the
+two choices of $(q,V)$. Write $R_X^+,R_X^-$ for multiplication by
+$r_A(X),r_B(X)$, respectively. Pair factors make $*$ associative,
+and $R_X^\pm$ preserve it.
+\begin{lemma}\label{lem:cubic-slices}
+In degrees at most three,
+\begin{equation}\label{eq:cubic-commute}
+ (R_Y^-D_X)*(R_X^+D_Y)=(R_X^-D_Y)*(R_Y^+D_X).
+\end{equation}
+Consequently the sum of the slice assignments is symmetric in their
+parameters, after extracting the one-body weights at the two outer cuts.
+\end{lemma}
+
+\begin{proof}
+The factors across the two slices are just the transports past $X$
+for positives on the second slice and past $Y$ for negatives on the
+first. Earlier centers precede later centers in the same-sign order,
+including ties at the displaced cuts. The transports from outside the
+pair depend only on its combined alphabets. Hence the second assertion
+follows by adjacent transpositions.
+
+Here are finite interpolation details for the new homogeneous part
+of degree three. For each sign, index ten entries by pairs of partitions
+$(\nu,\mu)$ with $|\nu|+|\mu|=3$. The positive entry $F^+_{XY}$ is
+\[
+ \sum_{I\sqcup J=A,\ |I|=|\nu|}
+       r_J(X)K_+(I,J)T^+_\nu(I;X)T^+_\mu(J;Y).
+\]
+The negative entry $F^-_{XY}$ uses $B$, $K_-$, $T^-$ and $r_I(Y)$
+in place of $r_J(X)$. Put $w_{\nu\mu}=w_\nu w_\mu$. The two sides of
+\eqref{eq:cubic-commute} agree exactly when the rows
+\[
+ (F^+_{XY},-F^+_{YX}),\qquad
+ (w_{\nu\mu}F^-_{XY},w_{\nu\mu}F^-_{YX})
+\]
+are orthogonal. The index $(\nu,\mu)$ runs through each of the two
+ten-entry blocks. The following finite rational calculation suffices.
+Take $Y=-1$, $X=-2,\ldots,-8$, $2\le p\le19$ and $21\le s\le50$,
+with integral $X,p,s$. For each sign use every triple from the thirteen
+primes from $11$ to $59$ as its labels. Form the two $286$ by $20$
+rational matrices with the displayed rows. At each of the $3780$
+choices of $(X,p,s)$ a row basis of the first matrix times the
+transpose of the second is zero. The supplementary computation
+implements these sums over subsets and uses rational row reduction.
+
+For each unordered same-sign pair $z,w$ clear
+$(z-pw)(w-pz)(z-sw)(w-sz)$. Each pair occurs in at most one ordered
+or elementary factor of each summand. The resulting pair contribution
+has degree at most two in each of $p,s$, four in each label. Clear also
+$(X-sz)(Y-sz)$ for each label. The degrees are thus at most ten per
+label and six per slice parameter. Negative displaced cuts supply at
+most $s^3$. The only extra scalars are
+\[
+ \frac{l_2}{l_1^2}=\frac{(s+p)(1-p)}{(s-p)(1+p)},\qquad
+ \frac{l_3}{l_1^3}=\frac{(s^2+sp+p^2)(1-p)^2}
+                           {(s-p)^2(1+p+p^2)} .
+\]
+At most one occurs per summand. Clearing
+$(s-p)^2(1+p)(1+p+p^2)$ gives final bounds $17$ in $p$ and $29$
+in $s$. All grid denominators are nonzero. Symmetry in each alphabet
+gives every ordering of its three distinct labels. With the other
+two fixed, eleven nodes remain for each label; successively interpolating
+therefore removes the distinct-node restriction and proves the identity
+in the six labels. The seven slice values suffice for $X$.
+Homogeneity under common rescaling restores $Y$, and the $18$ by
+$30$ character grid finishes the proof. The lower degrees follow from Lemma~\ref{lem:twoslicetwo} and its degree-one calculation.
+\end{proof}
+
+\subsection{The change of order}
+At a step $h$ write $\tau_h=Z_{h+1}/x$, which is $Z_h$ on an H step
+and $Z_h/c$ on a D step. In the interchange of a positive at cut $k$
+with a negative at $j>k$ a boundary residue is indexed by $k\le h<j$.
+The two fields then have values $z_h=s Z_h$, $w_h=\tau_h$. Put
+$S(v)=R(v)/R(cv)$ and
+\[
+ \begin{split}
+ W_h(k,j)&=\prod_{k\le t<j,\ t\ne h} R(Z_h/Z_t),\\
+ \Phi_{h,j}&=
+ \begin{cases}
+ \prod_{d\ge j,\ {\rm D}} S(Z_h/Z_d),&h\ {\rm H},\\
+ \prod_{b<j,\ {\rm H}} S(Z_h/(cZ_b)),&h\ {\rm D}.
+ \end{cases}
+ \end{split}
+\]
+For chronological minus grouped order the residue has weight
+$-a_0W_h(k,j)\Phi_{h,j}$. To check its action on the other fields,
+expand the mixed kernel in the two orders. Its difference of expansions
+is supported at $z=sw,pw$. At $sw$ the creation exponential of the
+pair cancels and only contractions to its right remain; at $pw$ the
+annihilation exponential cancels and only contractions to its left
+remain. For a remaining field of sign $e=\pm1$ and value $u$, these
+products are, respectively,
+\[
+ U_e(t)=K_{p,s^e}(t/s)K_{1/p,s^e}(t),\quad t=u/Z_h,\qquad
+ V_e(t)=K_{p^e,s}(pt)K_{p^e,1/s}(t),\quad t=Z_h/(cu).
+\]
+The mixed kernel is unchanged as a rational function upon reversing
+both the signs' order and the spectral ratio. Thus these same
+products may be obtained by retaining all cross contractions in the
+given same-sign order, even on the side where their product is one.
+The two endpoints of the fused contour give $b(k,j)$ times the
+moment with the pair deleted. The contour calculation may first be made
+with independent boundary parameters, the horizontal ones sufficiently
+large and the downward ones sufficiently small relative to all the
+nested field circles. Its rational residues can then be specialized
+to the $Z_h$ of the diagram.
+
+\begin{lemma}\label{lem:cubic-poles}
+After the scalar deletions in \eqref{eq:cubic-moment}, the strictly
+inverted fields have either one or two boundary residues as above.
+The remaining nonconstant choices are ordinary boundary residues and
+their successive $p$-shifts, with one possible additional choice. At
+an H residue it is a second negative with value $Z_h/c$; at a D
+residue it is a second positive with value $sZ_h/c$. Either additional
+choice occurs with just one inverted pair.
+\end{lemma}
+
+\begin{proof}
+Consider first the ordinary cube. Number the fields of each sign in
+their actual cut order, taking negatives first at ties. Every center
+has its negative before its own positive, so each prefix contains at
+least as many negatives as positives. The only candidate inversions are
+$a=P_1N_2$, $d=P_2N_3$ and $b=P_1N_3$. Those among $a,d$ present
+are adjacent disjoint pairs. Expand each as reversed order plus its
+difference; after the two reversals only $b$ can require a swap.
+There is one single difference for each inverted pair, and a double
+difference precisely when both $a$ and $d$ occur. In the three possible
+single differences the remaining words have orders
+\[
+ N_1[a]N_3P_2P_3,\qquad N_1N_2[b]P_2P_3,\qquad
+ N_1N_2P_1[d]P_3 .
+\]
+In a double difference the intervals are disjoint since $N_2$
+precedes $P_2$. The remaining fields are $N_1,P_3$.
+In inclusion and exclusion, a matching using exactly one end of the
+interchanged pair gives the same deleted word in both orders. The
+matching of the pair itself subtracts its endpoint constant. Applying
+this twice subtracts the two single constants and adds back their
+product in the double difference. The resulting two boundary residues
+retain their mutual contraction. For an earlier H and a later D it is
+$U_+(pt)U_-(t)$, $t=Z_g/(cZ_h)$, where $g$ is the D step; otherwise
+it is one. In the first case the outer H contour and inner D contour
+move apart, so their mutual poles are never crossed.
+
+In a single difference shrink the remaining positive contours from last
+to first and enlarge the negatives from first to last. Their mutual
+mixed poles stay on the other side. Repeating an ordinary boundary
+selection gives its next $p$-shift by
+\[
+ R(t)K_{1/p,1/s}(t)=R(t/p)=R(t)K_{p,s}(1/t).
+\]
+At most one negative remains to the right of an H residue. At its
+cut the one-body factor at $h$ and the two contractions with the pair
+give, for $t=u/Z_h$,
+\[
+ R(t)U_-(t)=
+ \frac{(1-t/s)(1-pt)(1-t/c)}
+      {(1-ct)(1-t/p)(1-t)} .
+\]
+Thus the three choices at this scale have $t=1,p,1/c$. The other
+negative in this word has cut at most $k$ and cannot also select $h$.
+At a D residue at most one positive remains on the left. With
+$t=u/(sZ_h)$ the product is
+\[
+ R(t)K_{p,s}(1/t)K_{p,1/s}(1/(pt)).
+\]
+It has the same three possible poles. The opposite orientations lie
+outside the selected direction of contour motion. At distinct steps
+the spectral monomials have distinct $x$-degrees.
+
+The coincident choices $t=1$ cancel in pairs. On H the dressing of the
+later negative at coincidence is $-1$, while the earlier negative is
+undressed when the later one is fused. For the two eligible cuts $j_1,j_2$
+the $j$-dependent part of the fused weight and the unfused H residue at
+$Z_h$ have the same backward ratio $r_{x Z_h}(Z_j)$. Their products
+agree upon exchanging $j_1,j_2$. All other factors have the same
+evaluated variables and the same order for each sign. On D the
+corresponding common forward ratio is $r_{Z_h}(Z_k)$ and the earlier
+positive's dressing is again $-1$. This also gives cancellation at a
+tie between two equally eligible fields. The endpoint weights of an
+unfused ordinary positive and negative are $1$ and $s^j$ respectively.
+Each contraction with the deleted endpoint tends to one. The primary
+inequalities and the order of all the remaining fields are unchanged
+when this field is deleted. In the sum over the candidate inversions
+each such labeled inversion occurs once, so the two cuts of the
+endpoint contribute $1-1$ or $s^i-s\,s^{i-1}$. For two inversions
+the unfused fields are exterior and the same cancellation applies.
+
+For the mixed summand apply $p_2=e_1^2-2e_2$ to the member of
+the inverted pair coming from the second Adams operation.
+Write $E_V(t)=-V(1-t)^2/((V-t)(Vt-1))$ for the two-variable
+determinant factor, and put
+\[
+ S_{q,V}(t)=K_{q,V}(t)+K_{q,V}(1/t)-2E_V(t),\qquad
+ \rho_V=(V^2-1)/(V-1)^2 .
+\]
+When the higher field is negative, each primary boundary residue is
+multiplied by
+\begin{equation}\label{eq:cubic-mixed}
+ \rho_{1/s}\,\CT_u N_j(u)
+ K_{p,1/s}(u/z_h)S_{1/p,1/s}(u/w_h).
+\end{equation}
+For a higher positive the multiplier is
+$\rho_s\CT_u P_k(u)K_{1/p,s}(u/w_h)S_{p,s}(u/z_h)$.
+The exterior negative and positive at the two centers may first be
+evaluated on their prefix and suffix. Each chosen exterior root is
+outside $[k,j)$, and its finite shift replaces that root by its
+shifted value in the one-body factors. Equivalently, one retains
+its regular contractions with the middle variables. The term with
+no shift cancels in the corresponding signed difference.
+
+Here is the contour order in \eqref{eq:cubic-mixed}. For two elementary
+negatives take $0<|p|<|s|<1$ and equal radii for the two negative
+variables. The determinant denominators $w_i-sw_j$ have their
+prescribed expansions on these circles. Move the ordinary probe past
+both. The two choices of the variable it meets cancel $1/2!$. At
+$z=sw,pw$, with $t=u/w$ for the remaining variable, the respective
+products $E_{1/s}(t)K_{p,1/s}(t/s)$ and $E_{1/s}(t)K_{p,1/s}(t/p)$
+are
+\[
+ \frac{s(t-1)(pt-1)}{(st-1)(pt-s)},\qquad
+ \frac{s(t-p)(t-1)}{(t-s)(st-p)} .
+\]
+The first has all its poles outside the unit circle, so $w$ can move
+outwards, and the second has all its poles inside, so $w$ can move
+inwards. Each gives one at the corresponding endpoint. For elementary
+positives take $1<|s|<|p|$ and replace $t$ by $1/t$, moving the negative
+probe. Both calculations continue rationally. For $e_1^2$ cross the
+two ordinary fields successively. The two possibilities give
+$K(t)+K(1/t)$ with the same mixed factor. Their two endpoint constants
+cancel those of $2e_2$. This proves the stated contour formulas.
+
+The function $S_{q,V}$ has a double zero at $1$ and is zero at $0$ and
+$\infty$. At H set $t=u/Z_h$ in \eqref{eq:cubic-mixed}. The same-sign
+denominators allow $p,1/p,s,1/s$. The mixed numerator cancels $1/p,s$,
+and the one-body zero cancels $1/s$. The double zero at $1$ cancels
+both the coincident poles. Besides ordinary H steps, the outward
+contour thus has just $u=pZ_h,Z_h/c$. At D the extra scales stay on
+the inside of this outward contour. The inward computation for a
+higher positive interchanges H and D, giving $u=psZ_h,sZ_h/c$ at D;
+its one-body zero is at $u=Z_h$. This exhausts the mixed term and
+proves the lemma.
+\end{proof}
+
+\subsection{Summing the residues}
+Record the step of each positive and each negative. An inverted pair
+selects the same step for both signs. At an H step only this pair can
+supply a positive, and at a D step only this pair can supply a negative.
+For a choice with ordinary shifts, the assigned spectral values are
+\[
+  s p^t Z_h\quad\hbox{on the positive side},\qquad
+  p^t \tau_h\quad\hbox{on the negative side},\qquad 0\le t<m
+\]
+at a step of multiplicity $m$ for the indicated sign. In the additional
+choice of Lemma~\ref{lem:cubic-poles} replace $p$ by $1/c$ on the
+single displaced value at its primary step.
+
+\begin{lemma}\label{lem:cubic-pin}
+In the signed sum over all cuts, a nonzero assignment must have as
+many positives at $i$ as negatives at $i-1$ for every $i$. In this
+case all the fields with these indices lie at their common center $i$.
+\end{lemma}
+
+\begin{proof}
+We first identify the dependence on the cuts. At a primary step $h$
+split $W_h(k,j)=U_k^h V_j^h$ into the products over $k\le t<h$ and
+$h<t<j$, extending $U_{h+1}^h=V_h^h=0$. Give the positive the factor
+$U_k^h$ and the negative $V_j^h\Phi_{h,j}$. The two transport ratios are
+\[
+ U_{i+1}^h/U_i^h=r_{Z_h}(Z_i),\qquad
+ (V_{i-1}^h\Phi_{h,i-1})/(V_i^h\Phi_{h,i})=r_{Z_{h+1}}(Z_i).
+\]
+For the second ratio a horizontal primary gives forward factors
+$R(v)$ or $R(v)/S(v)$ through H or D, with $v=Z_h/Z_{i-1}$.
+A downward primary gives $R(v/c)$ or $R(v)$. Substitution of the
+two possible steps proves the identity, including its cleared endpoint.
+For all other one-body factors the same relations follow by dividing
+$P_{i+1}/P_i$ or $N_{i-1}/N_i$ at the assigned spectral value.
+
+The cut-independent factors are the one-body weights at the two outer
+cuts, the primary residue constants and the mixed kernels at their
+assigned values (with the primary kernel omitted). What remains is
+\eqref{eq:cubic-density} with its transports, applied to the labels
+$p^t Z_h$ and $p^t Z_{h+1}$ of either sign. To see that all allocations
+occur with their stated coefficients, temporarily distinguish all
+slots of each sign. A fixed primary at $h$ requires exactly the strict
+inversion $k\le h<j$. Once its two slots are assigned, these endpoint
+conditions are independent. For ordinary fields each allowed single
+pair occurs once in the three inversions of the preceding proof. Two
+disjoint inversions necessarily use $a,d$, giving the single double
+difference. Their four mutual contractions have just the product of
+the two same-sign and two mixed kernels, as in that proof. For an
+inverted second power sum the two possible singleton choices and the
+simultaneous elementary choice have precisely the coefficients of
+$P(J)$ by \eqref{eq:cubic-mixed}. An allocation in a single bilinear
+insertion cannot straddle a primary step, since its negative cut is
+at most its positive cut. Thus including all three partitions of
+three in the density adds no spurious primary terms. The factorials
+of indistinguishable insertions are the $m_j!$ in
+\eqref{eq:cubic-density} after summing the labeled allocations.
+These arguments also cover the grouped term, which has no primary.
+An ordinary unshifted cutoff is enforced by its zero transport at the
+physical end of its interval.
+
+For an ordinary repeated selection, specialize the labels of a length
+$m$ string to $z,pz,\ldots,p^{m-1}z$. First divide the distinct-label
+density by the ordered kernels of the consecutive copies, and take
+the limit with independent consecutive ratios. There is one simple
+pole on each such divisor for decreasing levels in positive cut order
+and increasing levels in negative cut order. Reverse order and
+membership in a single elementary subset are regular. Nonconsecutive
+copies in a common subset cannot survive either, because the missing
+intermediate copy must be strictly between them. All other same-sign
+factors are regular, including the pair at distance two. Hence the
+limit keeps exactly the ordered $p$-shifts; the difference between the
+divided kernel and its logarithmic residue is a cut-independent
+scalar. For a step carrying a primary, at most one sign is repeated.
+Its upper mixed kernel is regular for an ordinary $p$-shift.
+Equivalently this procedure reproduces successive singleton shifts of
+one Macdonald variable, while an elementary subset shifts distinct
+variables only. The same-sign orders are unaffected by the inserted
+mixed kernels. The physical support of each upper slot is automatic,
+since its unshifted positive is used last, or its unshifted negative first.
+
+For the additional choice at H or D no same-sign limiting operation is
+needed. The mixed kernel at that pole is replaced by its logarithmic
+residue, $(1-1/p)(1-s)/(1-s/p)$ at H and its negative at D. The
+opposite same-sign order has zero factor
+$K_{1/p,1/s}(c)=0$ at H or $K_{p,s}(1/c)=0$ at D. Consequently
+the base negative precedes the additional negative at H, and the
+additional positive precedes the base positive at D, unless both
+are in one simultaneous elementary subset. In the latter case the
+two share their cut and retain $E(J)$. The label of the additional
+slot is the label of its base divided by $c$. Transporting it throughout
+the interval adds no choices: its base has the genuine endpoint zero
+and the opposite strict order vanishes. The formula is therefore the
+same distinct-label density, specialized at regular same-sign
+arguments, with the same endpoint constraints.
+
+Now extract the initial positive and final negative one-body weights
+in a finite window containing all selected steps and their successor
+vertices. In this window the cut sum is invariant under reordering
+the parameters $Z_i$ by Lemma~\ref{lem:cubic-slices}. This remains
+true after the repeated-label limits. Transport denominators cannot
+vanish at a physical slice: if $Z_i$ and the base label have the
+same $x$-degree, their ratio is one, before the specified powers of
+$p$ or $1/c$ are inserted. Suppose more positives occur at $i$ than
+negatives at $i-1$, and bring $Z_i$ to the first slice. Its unshifted
+positive cannot pass this slice because $r_{Z_i}(Z_i)=0$. All its
+upper positives must occur there as well. A negative based at another
+vertex cannot be used here, since the backward transport of its base
+would cross its own zero and the base must occur first. There are too
+few available negatives for equal degrees of both signs on this slice.
+If any multiplicity disagrees there is such an excess somewhere.
+When all multiplicities agree, proceed in physical order. At the first
+occupied vertex all its positives must have been used by this cut
+and only its own negatives can yet be used. Their common center and
+native cut are forced. Removing these slots and proceeding to the
+next vertex proves the assertion.
+\end{proof}
+
+The ordinary matched residues have a simple interpretation. Consecutive
+occupied contents are joined across their shared primary step. An
+occupied interval opens at H and closes at D and consists of the
+southeast-most box on each intervening content. A multiplicity greater
+than one requires an H birth and a D death, hence is possible only at
+a removable corner. Conversely, at size three each layer contains
+at most one box on each diagonal: two on the same diagonal force a
+square of four. The connected components of the bottom layer are
+therefore border strips with successive contents, and an upper box
+at a nonremovable corner would force its neighbor to have height
+at least two, requiring at least four boxes in total. This gives the bijection between
+the ordinary matched patterns and the reverse plane partitions of
+size three.
+
+\subsection{Weights of the surviving heights}
+We compare their full weights. For a layer at content $i$ and height
+$t$ counted from zero put $z=p^tZ_i$. Its positive and negative
+variables have values $sz,z/x$, even when one of them was fixed
+by fusion with a neighboring layer. For two such layers in increasing
+content order their four regular cross contractions have product
+\begin{equation}\label{eq:cubic-cross}
+ \begin{split}
+ \mathcal K(y)={}&K_{1/p,1/s}(y)K_{p,s}(y)
+          K_{1/p,s}(sxy)K_{p,1/s}(y/(sx))\\
+       ={}&R\big((p^{-1}-1)(1-x)(y+y^{-1})\big),\qquad
+             y=z_{\rm later}/z_{\rm earlier}.
+ \end{split}
+\end{equation}
+In the last expression $R$ acts multiplicatively on a character. The
+identity follows by expanding the four binomial quotients. It gives
+exactly the cross term of the quadratic height polarization between
+the two layers, whose characters are $c/z_{\rm earlier}$ and
+$c/z_{\rm later}$.
+
+At a single corner of content $i$ a stack of $k\le3$ copies can use
+only $e_1^j$ in each Newton power, since an elementary subset cannot
+shift the same root twice. Its scalar is
+\[
+ h_k[l]=[v^k]\exp\!\sum_{j\ge1} l_j v^j/j
+       =\prod_{t=1}^k(1-cp^{t-1})/(1-p^t).
+\]
+The last equality follows by comparing the generating function at $v$
+and $pv$. The selected H and D variables give opposite finite Cauchy
+shifts, which cancel their mutual bridge. Each layer $z=p^tZ_i$ has
+the exterior factor
+\begin{equation}\label{eq:cubic-outside}
+ \prod_{b<i-1,\ {\rm H}}\frac{R(z/(xZ_b))}{R(z/Z_b)}
+ \prod_{d>i,\ {\rm D}}\frac{R(z/Z_d)}{R(cz/(xZ_d))}.
+\end{equation}
+Indeed the horizontal Macdonald and downward Cauchy singleton
+factors at an earlier $b$ give $s^{-1} R(z/(xZ_b))/R(z/Z_b)$,
+and the two factors at a later $d$ give
+$sR(z/Z_d)/R(cz/(xZ_d))$. The counts of the two types cancel
+the negative normalization $s^i$ for each layer. On the one-box
+diagram the height weighs $s^{-k}\prod_{t=1}^k R(p^{-t})=h_k[l]$.
+On a general diagram each exterior step contributes to the linear
+part of the polarization separately for each layer, giving
+\eqref{eq:cubic-outside}. This proves the equality for a single stack;
+\eqref{eq:cubic-cross} now treats disjoint stacks and interactions
+between separate border strips.
+
+For completeness we compute the one-layer weight of a connected
+three-box strip. Write $\beta,\alpha$ for its opening H and closing
+D, $b=Z_\beta$, $d=Z_\alpha$. Its internal H and D step weights are
+denoted by $u$ and $v$, respectively. Delete the strip, leaving
+$\mu\subset\lambda$. If $Q$ is the sum of its box characters and
+$E_\mu$ the sum of those of $\mu$, reflection
+$R(y)R(1/(sy))=s$ in the polarization gives its weight
+\[
+ R\big(\big[(1-x)(1-c/x)E_\mu-c\big]Q^*\big).
+\]
+In fact the unreflected increment is
+$Q/p+(1-x)(E_\mu Q^*-QE_\mu^*/p)$; the scalar from
+reflecting the first term cancels $s^{-|\,\lambda/\mu\,|}$.
+Each step outside $[\beta,\alpha]$ gives
+\eqref{eq:cubic-outside}, with $e<\beta$ for the H steps and $f>\alpha$ for the D steps in its
+corresponding product, for each of the three layer parameters $z$.
+On the residue side the opening and closing singletons furnish
+$R(Z_\beta/Z_e)/R(Z_\alpha/Z_e)$ at an earlier H step $e$ and
+$R(Z_\alpha/Z_f)/R(cZ_\beta/Z_f)$ at a later D step $f$.
+Multiplication by the intervening $\Phi$ factors gives the same
+exterior products by the two step recursions for $Z_i$.
+
+It remains to compare on the isolated strip. The two endpoints and
+their mutual kernel reduce to the scalar $l_1$, since
+$l_1\gamma a_0=-1$. Every internal H leaves $1/R(cd/u)$ and every
+internal D leaves $1/R(c^2 b/v)$ after cancellation against its
+endpoint contractions. For an H preceding a D their two factors
+from $\Phi$ and the mutual contraction $U_+(pt)U_-(t)$,
+$t=v/(cu)$, have product $S(v/u)S(cu/v)$. These identities follow
+on substituting the displayed $U_e$ and $S$. Thus the character
+whose image under $R$ gives the residue is
+\begin{equation}\label{eq:cubic-ribbon-patch}
+ -c-\sum_u cd/u-\sum_v c^2b/v+
+       (1-c)\sum_{u\ {\rm before}\ v}(v/u+cu/v).
+\end{equation}
+One can check the height expression on the four possible patches
+directly. Put $Y=d+\sum u+\sum v$. Removing the strip divides the
+intervening vertex weights by $c$ and exchanges the initial H and
+final D. Telescoping $(1-x)(1-c/x)E_\mu-c$ along the horizontal
+steps of the remaining patch gives the height character
+$c\big((x^{-1}-1)\sum u^{-1}-1/d\big)Y$.
+Substitution of the two step ratios gives the following common
+values for this character and \eqref{eq:cubic-ribbon-patch}:
+\[
+\begin{array}{c|l}
+ {\rm HH}&-c(1+x+x^2)\\
+ {\rm HD}&-c-x^2-c^2/x^2+(1-c)(x+c/x)\\
+ {\rm DH}&-c-cx-c^2/x\\
+ {\rm DD}&-c(1+c/x+c^2/x^2).
+\end{array}
+\]
+This also exhibits the mutual factor on the strip with internal
+word HD. The analogous one-internal-letter calculation is the
+domino of the preceding section.
+
+There remains the domino with a doubled corner. At this corner
+the first negative and the last positive are the base fields. Keep
+the other two variables independent while taking the residue of the
+base domino. Taking their same-sign residues next shifts each
+spectrum by $p$, as in the single stack. The mixed kernel with
+the neighbor stays regular: its later-to-earlier ratio in
+$K_{p,1/s}$ is $p/s$ on HHD and $1/p^2$ on HDD. The local
+factor at the corner is thus the ratio $W_2/W_1$ of the stack
+and singleton weights already calculated. The upper layer still
+interacts with the neighbor, giving \eqref{eq:cubic-cross}. Hence
+the result in the two cases is
+\[
+ W_{\rm domino}\frac{W_2}{W_1}\,\mathcal K(y),\qquad
+ y=px\quad({\rm HHD}),\qquad y=x/(cp)\quad({\rm HDD}).
+\]
+The quadratic height character gives exactly this expression by
+adding the upper layer. Together these calculations account for
+every ordinary matched pattern.
+
+\begin{proof}[Completion of the proof of Theorem~\ref{thm:cubicdisk}]
+For an additional pole of Lemma~\ref{lem:cubic-poles},
+Lemma~\ref{lem:cubic-pin} leaves only a doubled removable end of a
+domino. At that center one sign has an ordinary $p$-string. On the
+other sign take $(q,V,t)=(1/p,1/s,1/c)$ on H and $(p,s,c)$ on D,
+where $t$ is the ratio of the later to the earlier value in the
+permitted order. For two ordinary insertions the unique order on
+the $p$-string and the zero of the reverse-order kernel on the other
+sign leave just $l_1^2 K_{q,V}(t)/2$. For one second power sum the
+ordinary string again allows just its singleton order, while the
+other sign contributes its two-variable Newton factor. The sum,
+after removal of their common factors, is
+\[
+ \tfrac12\big[(l_1^2+l_2)K_{q,V}(t)-2l_2 E_V(t)\big]=0 .
+\]
+Indeed in both cases $K_{q,V}(t)/E_V(t)=
+2l_2/(l_1^2+l_2)$ by substitution. This removes all the additional
+residues. The ordinary matched residues give the complete height sum,
+which proves the theorem.
+\end{proof}
+
+For example on the two-box row the contribution of the additional
+pole in the mixed summand, including its coefficient in
+\eqref{eq:cubic-moment}, is
+\[
+ \frac{c(c+1)p(x+1)(x-1)^2(c-1)^2(x-c^2)}
+ {2(1-p)(x-pc)(px-c)(pc-1)(px^2-c)} .
+\]
+At $c=3,x=5$ its residue and constant coefficient in $1-p$ are
+$-576/11$ and $-16704/121$. Both are canceled by the ordinary cube.

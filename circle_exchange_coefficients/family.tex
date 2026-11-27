@@ -1,0 +1,104 @@
+\section{Descent to the Picard variety}\label{sec:family}
+
+Let $C$ be a smooth projective complex curve of genus $g=b+1\geq1$,
+$B=\operatorname{Pic}^{b}(C)$, and $L$ the Poincar\'e line on
+$C\times B$, trivialized over a chosen point of $C$.
+Use the ordered determinant lines of \cite[Lemma~2.1]{W1} for
+the two stable-pair indices. Write $q$ for the original Euler
+variable, $t$ for the exchanged grading, $c=\kappa^{-1}$ and
+$\sigma^2=\kappa$. For a partition $\lambda$ of $m$, set
+$H_\lambda=\sum_{v\in\lambda}h_v$, where $h_v$ and $\ell_v$
+denote the hook length and leg length. The scalar removed from each
+of its two contributions in passing to the disk calculation is
+\begin{equation}\label{eq:family-scalar}
+ (-1)^{mb}q^{-bH_\lambda}
+ c^{\,b\sum_{v\in\lambda}(\ell_v+1/2)}.
+\end{equation}
+Here $c^{1/2}=\sigma^{-1}$. Thus disk degree $(n,k)$ corresponds
+to $q^{-bH_\lambda+n}t^k$ on the curve.
+
+There is a second normalization in the current calculation. With
+$p$ the disk cotangent character and $s=p/c$, the common series of
+exchanged degree zero is
+\begin{equation}\label{eq:family-axis}
+ A_{\lambda;c,s}(x,0)= A_{\lambda;s,c}(0,x)
+ =\prod_{v\in\lambda}F_s(x^{h_v}c^{-\ell_v}),\qquad
+ F_s(z)=\sum_{i\geq0}\frac{(s;p)_i}{(p;p)_i}z^i .
+\end{equation}
+Here $(a;p)_i=\prod_{j=0}^{i-1}(1-ap^j)$.
+The hook product is \cite[Lemma~5.1]{W1}. Its constant term is one.
+Consequently an identity of rational functions in $p,c,x$ for a
+coefficient divided by \eqref{eq:family-axis} gives equality of the
+full coefficient as a power series in $x$, on multiplying by
+\eqref{eq:family-axis}.
+
+\begin{proposition}\label{prop:family}
+Fix $d\geq0$ and a partition $\lambda$ of $m$. Suppose the two disk
+series $A_{\lambda;c,s}(x,y)$ and $A_{\lambda;s,c}(y,x)$ agree
+through $y$-degree $d$ in $\mathbb Q(p,c)[[x,y]]$. Then the
+contributions of $\lambda$ to the two family indices agree in
+\[
+ K^0(B)[\sigma^{\pm1},(1-\sigma^j)^{-1}\ (j\geq1)]
+\]
+at every $q^{-bH_\lambda+n}t^k$ with $\min(n,k)\leq d$ and
+$n,k\geq0$. If the hypothesis holds for every $\lambda\vdash m$,
+the two degree-$m$ indices, multiplied by $\sigma^{mb}$, agree
+modulo $t^{d+1}$ in
+\[
+ q^{-bm(m+1)/2}\,K^0(B)[\kappa^{\pm1}][[q,t]].
+\]
+Here $K^0(B)$ denotes integral algebraic $K$-theory.
+\end{proposition}
+
+\begin{proof}
+The involution $(x,y,c)\mapsto(y,x,p/c)$ gives the disk identity
+also through $x$-degree $d$. For any $(n,k)$ in either strip it
+therefore gives every coefficient of the rectangle
+$0\leq a\leq n$, $0\leq e\leq k$.
+We recall how the two-divisor descent of
+\cite[Proposition~7.1]{W1} uses these coefficients.
+After removal of \eqref{eq:family-scalar}, the nested divisors of the
+fixed boxes and the insertions from the moving factors give classes
+on $C^{(n)}\times C^{(k)}\times B$. On disjoint supports their
+restrictions are exterior products, with the graded permutation
+action on equal pairs of multiplicities.
+
+In an affine coordinate, the derived restriction at a single point
+of multiplicities $(a,e)$ is the disk coefficient times
+\[
+    z^e(p;p)_a(p;p)_e ,
+\]
+where $z$ is the character of the frame of $L$. The two finite
+products are the cotangent Euler classes of the symmetric powers
+of the affine line at their origins. Hence the comparison is made
+while $p$ and $z$ are independent characters. Expanding the
+zero-counting-degree Euler inverses in the volume character, every
+coefficient of the restriction is an integral torus character.
+It follows that the two restrictions agree integrally. On a cycle
+of a permutation of equal support types the supertrace is the
+punctual supercharacter evaluated on the product of the torus
+entries around that cycle. This includes the cycles of lengths two
+and three at the corresponding exchanged degrees.
+
+The derived restrictions detect the two classes on the stack of
+coordinate jets and frames used in \cite[\S7.2]{W1}. Indeed,
+filter by number of distinct support points. The conormal Euler
+of each stratum in its step of the filtration has constant term
+one and all other terms of positive simultaneous dilation weight.
+It acts injectively on the integral representation group of the
+stabilizer, including permutations of equal types. Coherent
+localization and the self-intersection formula then give detection
+by induction. Pullback to the two symmetric powers uses the actual
+cotangent and Poincar\'e lines of the curve. Proper pushforward to
+$B$ and restoration of \eqref{eq:family-scalar} give the asserted
+diagram equality.
+
+Finally, \cite[Lemma~2.2]{W1} puts each normalized degree sum in
+the indicated Laurent polynomial ring coefficientwise. At fixed
+$q^j t^k$ with $k\leq d$ a diagram occurs at excess
+$n=j+bH_\lambda$ if this is nonnegative. Each such diagram has
+been compared. Localization at $1-\sigma^i$, $i>0$, is injective
+on $K^0(B)[\sigma^{\pm1}]$, by its extremal unit coefficient,
+and $\kappa\mapsto\sigma^2$ is injective there as well. The
+summed equality thus holds with the stated integral coefficients.
+\end{proof}

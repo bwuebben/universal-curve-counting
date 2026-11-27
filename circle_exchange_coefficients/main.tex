@@ -1,0 +1,41 @@
+\pdfoutput=1
+\documentclass[11pt]{amsart}
+\ifdefined\pdftrailerid\pdftrailerid{}\fi
+\usepackage[margin=1.2in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\hypersetup{pdftitle={The quadratic and cubic coefficients of circle exchange for balanced local curves},pdfauthor={Bernd Johannes Wuebben}}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\DeclareMathOperator{\Pic}{Pic}
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\CT}{CT}
+\DeclareMathOperator{\Res}{Res}
+\newcommand{\OO}{\mathcal O}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\CC}{\mathbb C}
+\title[Quadratic and cubic circle exchange]{The quadratic and cubic coefficients of circle exchange for balanced local curves}
+\author{Bernd Johannes Wuebben}
+\subjclass[2020]{14N35 (primary), 14C35, 05E05 (secondary)}
+\keywords{Stable pairs, local curves, equivariant $K$-theory, Macdonald operators, Picard varieties}
+\date{November 27, 2026}
+\begin{document}
+\begin{abstract}
+Exchanging two circle actions on a Calabi--Yau fivefold gives stable-pair indices on a balanced local curve and on the product of its base curve with an affine plane. After a common determinant normalization, we prove that the two modified indices agree through cubic order in the exchanged counting variable, in integral $K$-theory over the Picard variety parametrizing one normal summand. The comparison holds for every smooth projective complex curve of positive genus and every positive curve degree, at every Euler characteristic and arbitrary volume character. On the formal disk we identify the quadratic and cubic coefficients separately for each Young diagram, with the cotangent character also free. One presentation is a Macdonald expectation and the other is a finite sum over reverse plane partitions. At quadratic order the residues from interchanging currents give the two orientations of a domino. At cubic order an exact polynomial interpolation proves that two adjacent diagonal parameters can be interchanged in the sum with currents grouped by sign. Restoring the original order produces an additional pole whose contributions from the ordinary currents and the second Adams operation cancel identically.
+\end{abstract}
+\maketitle
+\input{introduction}
+\input{disk}
+\input{quadratic}
+\input{cubic}
+\input{family}
+\input{references}
+\end{document}
